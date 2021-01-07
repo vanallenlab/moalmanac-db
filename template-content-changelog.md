@@ -1,5 +1,5 @@
 # Template for Content Changelog
-Use the following template for monthly entries in the content changelog. You can also look at [prior releases](https://github.com/vanallenlab/moalmanac-admin/releases) for examples, too. Items should be sorted by descending evidence level and then alphabetically by feature name. 
+Use the following template for monthly entries in the content changelog. You can also look at [prior releases](/content-changelog.md) for examples, too. Items should be sorted by descending evidence level and then alphabetically by feature name. 
 
 ## {Month} {Year} release
 {Overall description of release}.
