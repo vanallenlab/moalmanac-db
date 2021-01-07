@@ -1,6 +1,19 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## December 2020 release
+Added entries:
+- (FDA) _RET_ somatic variants associated with sensitivity to pralsetinib in advanced or metastatic medullary thyroid cancer. 
+- (FDA) _RET_ fusions associated with sensitivity to pralsetinib in advanced or metastatic thyroid cancer.
+- (Inferential) _CDK274_ amplifications associated with sensitivity to chemotherapy in combination with pembrolizumab in locally recurrent or metastatic triple-negative breast cancer.
+
+Edited entries:
+- (Guideline) _CDK4_ amplifications associated with sensitivity to palbociclib in well-differentiated and dedifferentiated liposarcoma, updated source. 
+- (Guideline) _KIT_ somatic variants associated with sensitivity to sunitinib in thymic carcinomas, updated source. 
+
+Removed entries:
+- (Preclinical) _CDKN2B_ deletions associated with sensitivity to EPZ015666.
+
 ## November 2020 release
 This release focuses on FDA approvals since March 2020. In addition to the following changes, the citation style for all FDA approved associated have been updated to match [American Medical Association (AMA) style formatting](https://mdanderson.libanswers.com/faq/26246).
 
