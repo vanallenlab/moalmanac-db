@@ -1,0 +1,43 @@
+feature	readable_name	attribute	readable_attribute	type
+rearrangement	Rearrangement	rearrangement_type	Rearrangement Type	text
+rearrangement	Rearrangement	gene1	Gene 1	gene
+rearrangement	Rearrangement	gene2	Gene 2	gene
+rearrangement	Rearrangement	locus	Locus	text
+somatic_variant	Somatic Variant	gene	Gene	gene
+somatic_variant	Somatic Variant	chromosome	Chromosome	text
+somatic_variant	Somatic Variant	start_position	Start Position	integer
+somatic_variant	Somatic Variant	end_position	End Position	integer
+somatic_variant	Somatic Variant	reference_allele	Reference Allele	text
+somatic_variant	Somatic Variant	alternate_allele	Alternate Allele	text
+somatic_variant	Somatic Variant	cdna_change	cDNA Change	text
+somatic_variant	Somatic Variant	protein_change	Protein Change	text
+somatic_variant	Somatic Variant	variant_annotation	Variant Annotation	text
+somatic_variant	Somatic Variant	exon	Exon	integer
+somatic_variant	Somatic Variant	rsid	Reference SNP	text
+germline_variant	Germline Variant	gene	Gene	gene
+germline_variant	Germline Variant	chromosome	Chromosome	text
+germline_variant	Germline Variant	start_position	Start Position	integer
+germline_variant	Germline Variant	end_position	End Position	integer
+germline_variant	Germline Variant	reference_allele	Reference Allele	text
+germline_variant	Germline Variant	alternate_allele	Alternate Allele	text
+germline_variant	Germline Variant	cdna_change	cDNA Change	text
+germline_variant	Germline Variant	protein_change	Protein Change	text
+germline_variant	Germline Variant	variant_annotation	Variant Annotation	text
+germline_variant	Germline Variant	exon	Exon	integer
+germline_variant	Germline Variant	rsid	Reference SNP	text
+germline_variant	Germline Variant	pathogenic	Pathogenic	boolean
+copy_number	Copy Number	direction	Direction	text
+copy_number	Copy Number	gene	Gene	gene
+copy_number	Copy Number	cytoband	Cytoband	text
+microsatellite_stability	Microsatellite Stability	status	Status	text
+mutational_signature	Mutational Signature	cosmic_signature_number	Cosmic Signature	integer
+mutational_burden	Mutational Burden	classification	Classification	text
+mutational_burden	Mutational Burden	minimum_mutations	Mutations	integer
+mutational_burden	Mutational Burden	mutations_per_mb	Mutations per Mb	integer
+neoantigen_burden	Neoantigen Burden	classification	Classification	text
+neoantigen_burden	Neoantigen Burden	minimum_neoantigens	Neoantigens	integer
+knockdown	Knockdown	technique	Technique	text
+knockdown	Knockdown	gene	Gene	gene
+silencing	Silencing	technique	Technique	text
+silencing	Silencing	gene	Gene	gene
+aneuploidy	Aneuploidy	event	Event	text

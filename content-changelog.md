@@ -1,0 +1,35 @@
+# Content Changelog
+The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
+
+## November 2020 release
+This release focuses on FDA approvals since March 2020. In addition to the following changes, the citation style for all FDA approved associated have been updated to match [American Medical Association (AMA) style formatting](https://mdanderson.libanswers.com/faq/26246).
+
+Added entries:
+- (FDA) _ATM_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _BARD1_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _BRAF_ p.V600K, p.V600E associated with sensitivity to encorafenib in melanoma.
+- (FDA) _BRAF_ p.V600E associated with sensitivity to cetuximab + encorafenib in colorectal cancer. 
+- (FDA) _BRCA1_ and _BRCA2_ somatic and germline variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _BRCA1_ and _BRCA2_ somatic and germline variants associated with sensitivity to niraparib in ovarian, fallopian tube, and peritoneal cancer.
+- (FDA) _BRCA1_ and _BRCA2_ somatic variants associated with sensitivity to bevacizumab and olaparib in advanced ovarian, fallopian tube, and peritoneal cancer. 
+- (FDA) _BRIP1_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _CD274_ copy number amplifications associated with sensitivity to atezolizumab in non-small cell lung cancer. 
+- (FDA) _CDK12_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _CHEK1_ and _CHEK2_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _ERBB2_ copy number amplifications associated with sensitivity to capecitabine + trastuzumab + tucatinib in breast cancer. 
+- (FDA) _ERBB2_ copy number amplifications associated with sensitivity to chemotherapy + hyaluronidase-zzxf + pertuzumab + trastuzumab in breast cancer.
+- (FDA) _ERBB2_ copy number amplifications associated with sensitivity to docetaxel + hyaluronidase-zzxf + pertuzumab + trastuzumab in metastatic breast cancer.
+- (FDA) _EZH2_ p.Y646*, p.Y646F, p.Y646N, p.A682G, and p.A692V associated with sensitivity to tazemetostat in relapsed or refractory follicular lymphoma. 
+- (FDA) _FANCL_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _FGFR2_ fusions associated with sensitivity to pemigatinib in cholangiocarcinoma. 
+- (FDA) High-TMB (> 10 coding mutations per Mb) associated with sensitivity to pembrolizumab in any unresectable or metastatic solid tumor.
+- (FDA) _MET_ somatic splice site, deletion, and nonsense variants associated with sensitivity to capmatinib and crizotinib in non-small cell lung cancer.
+- (FDA) _PALB2_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _RAD51B_, _RAD51C_, _RAD51D_, and _RAD51L_ somatic variants associated with sensitivity to olaparib in metastatic castration-resistant prostate cancer.
+- (FDA) _RET_ fusions associated with sensitivity to pralsetinib in non-small cell lung cancer.
+- (FDA) _RET_ somatic variants associated with sensitivity to selpercatinib in medullarly thyroid cancer.
+- (FDA) _RET_ fusions associated with sensitivity to selpercatinib in non-small cell lung cancer and thyroid cancer.
+- (Inferential) COSMIC Signature 3, associated with Homologous Recombination Deficiency (HRD), associated with sensitivity to bevacizumab and olaparib in advanced ovarian, fallopian tube, and peritoneal cancer. 
+
+Edited entries:
+- (Clinical trial) _ATM_ frameshift, nonsense, and splice site somatic variants associated with sensitivity to BAY1895344 in any solid tumor. Updated disease context from "Advanced metastatic" to "Advanced or metastatic".
