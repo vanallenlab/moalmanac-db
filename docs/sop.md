@@ -154,7 +154,7 @@ Abstracts and journal articles will complete fields as follows,
 The description for abstracts or journal articles should contain a few sentences briefing readers of the assertion(s) made in the publication. These will be displayed in the clinical actionability reports produced by the method. For example, 
 > BRAF V600E mutations were associated with sensitivity to the BRAF inhibitor PLX-4032 in a study of 109 microdissected pancreatic ductal adenocarcinoma patients.
 
-The citation for abstracts or journal articles should follow the [American Medical Association (AMA)](https://owl.purdue.edu/owl/research_and_citation/ama_style/index.html) style format. [Online tools](https://www.coreultrasound.com/citation/) exist to generate such citations from PubMed IDs, URLs, or DOIs, but please double check the entries. 
+The citation for abstracts or journal articles should follow the [American Medical Association (AMA)](https://owl.purdue.edu/owl/research_and_citation/ama_style/index.html) style format. [Online tools](https://citation.crosscite.org/) exist to generate such citations from PubMed IDs, URLs, or DOIs, but please double check the entries. 
 
 For example, 
 > Witkiewicz AK, Mcmillan EA, Balaji U, et al. Whole-exome sequencing of pancreatic cancer defines genetic diversity and therapeutic targets. Nat Commun. 2015;6:6744.
