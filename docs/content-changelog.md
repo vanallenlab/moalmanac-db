@@ -1,6 +1,14 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## February 2021 release
+Added entries:
+
+Edited entries:
+- (Preclinical) _KRAS_ somatic variants associated with sensitivity to trametinib + fgfr1 inhibition. Recorded therapy name to be alphabetical and changed inhibitor to be lowercase.
+
+Removed entries:
+
 ## December 2020 release
 Added entries:
 - (FDA) _RET_ somatic variants associated with sensitivity to pralsetinib in advanced or metastatic medullary thyroid cancer. 
