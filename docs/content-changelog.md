@@ -7,6 +7,8 @@ Added entries:
 Edited entries:
 - (Preclinical) _KRAS_ somatic variants associated with sensitivity to trametinib + fgfr1 inhibition. Recorded therapy name to be alphabetical and changed inhibitor to be lowercase.
 
+Mutational signature version has been added as a feature definition for mutational signatures. All catalogued assertions of this feature type are currently using Mutational Signatures (v2).
+
 Removed entries:
 
 ## December 2020 release
