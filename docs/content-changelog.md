@@ -16,6 +16,8 @@ Edited entries:
 
 Mutational signature version has been added as a feature definition for mutational signatures. All catalogued assertions of this feature type are currently using Mutational Signatures (v2).
 
+Several assertions from clinical guideline sources for multiple myeloma and myelodysplasia were incorrectly reported as clinical evidence. These have been updated to be guidelines.
+
 Removed entries:
 
 ## December 2020 release
