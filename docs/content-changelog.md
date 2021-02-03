@@ -5,11 +5,11 @@ The following changes have been made to the content catalogued within the Molecu
 In addition to the content changes listed below, this release added a therapeutic strategy (`therapy_strategy`) for all sensitive and resistance relationships. 
 
 Added entries:
-
-Edited entries:
 - (FDA) _EGFR_ p.L858R and sensitivity to osimertinib in non-small cell lung cancer.
 - (FDA) _EGFR_ exon 19 deletions and sensitivity to osimertinib in non-small cell lung cancer.
 - (FDA) HER2-positive breast cancer and sensitivity to margetuximab-cmkb + chemotherapy. 
+
+Edited entries:
 - (Guideline) _ABL1_ p.T315I suggesting sensitivity to Omacetaxine in CML has been recategorized from a targeted therapy to chemotherapy.
 - (Guideline) MSI-High associated with resistance to 5-Fluorouracil in colorectal adenocarcinoma. 5-Fluorouracil was reclassified as a chemotherapy therapy type instead of targeted therapy.
 - (Guideline) _TET2_ somatic variants suggesting sensitivity to azacitidine was changed from a targeted therapy to chemotherapy.
