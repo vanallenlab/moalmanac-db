@@ -1,6 +1,15 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## May 2021 release
+Added entries:
+- (FDA) _ERBB2_ amplifications and sensitivity to pembrolizumab in combination with fluoropyrimidine, trastuzumab, and platinum-based chemotherapy in gastric or gastroesophageal junction adenocarcinoma.
+- (Inferential) _CD274_ amplifications and sensitivity to pembrolizumab in gastric or gastroesophageal junction adenocarcinoma.
+
+Edited entries:
+- (Clinical evidence) _NF1_ germline variants associated with radiation therapy was not labeled with a clinical assertion. "1" has been set for adverse_event_risk.
+- (Inferential) _ERBB2_ amplification and sensitivity to trastuzumab was changed to an inferential assertion from FDA. The description was also updated for these entries.
+
 ## February 2021 release
 In addition to the content changes listed below, this release added a therapeutic strategy (`therapy_strategy`) for all sensitive and resistance relationships. 
 
