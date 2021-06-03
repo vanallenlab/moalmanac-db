@@ -1,6 +1,12 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## June 2021 release
+Added entries:
+- (FDA) _EGFR_ exon 20 insertion somatic variants and sensitivity to amivantamab-vmjw in metastatic non-small cell lung cancer.
+- (FDA) _FGFR2_ fusions and sensitivity to infigratinib in cholangiocarcinoma.
+- (FDA) _KRAS_ p.G12C and sensitivity to sotorasib in non-small cell lung cancer.
+
 ## May 2021 release
 Added entries:
 - (FDA) _ERBB2_ amplifications and sensitivity to pembrolizumab in combination with fluoropyrimidine, trastuzumab, and platinum-based chemotherapy in gastric or gastroesophageal junction adenocarcinoma.
