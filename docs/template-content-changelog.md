@@ -7,7 +7,7 @@ Use the following template for monthly entries in the content changelog. You can
 Added entries:
 - ({Evidence level of source}) {molecular feature(s)} {assertion} in {disease context} {ontology}.
 
-Edited entries:
+Revised entries:
 - ({Evidence level of source}) {molecular feature(s)} {assertion} in {disease context} {ontology}. {description of change}.
 
 Removed entries:
