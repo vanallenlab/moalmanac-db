@@ -2,6 +2,8 @@
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
 ## October 2021 release
+Added entries:
+- (FDA) _EGFR_ exon 20 insertion variants and sensitivity to mobocertinib in non-small cell lung cancer.
 
 Revised entries:
 - (FDA) TMB-High and sensitivity to pembrolizumab in any solid tumor was revised to correct a spelling error in the description.
