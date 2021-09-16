@@ -1,6 +1,12 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## October 2021 release
+
+Revised entries:
+- (FDA) TMB-High and sensitivity to pembrolizumab in any solid tumor was revised to correct a spelling error in the description.
+- (FDA) _BCR_-_ABL1_ and sensitivity to bosutinib in CML was revised to update the hyperlink for the package insert.
+
 ## September 2021 release
 Added entries:
 - (FDA) _IDH1_ p.R132C, p.R132H and sensitivity to ivosidenib in acute myeloid leukemia and cholangiocarcinoma.
