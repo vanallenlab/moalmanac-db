@@ -6,8 +6,10 @@ Added entries:
 - (FDA) _EGFR_ exon 20 insertion variants and sensitivity to mobocertinib in non-small cell lung cancer.
 
 Revised entries:
+- (FDA) _BRCA1/2_ pathogenic germline variants and sensitivity to talazoparib was revised to properly cite the package insert and correct a spelling error in the description.
+- (FDA) _BCR_-_ABL1_ and sensitivity to bosutinib in chronic myelogenous leukemia was revised to update the hyperlink for the package insert.
+- (FDA) _BRAF_ p.V600E and sensitivity to encorafenib in melanoma was revised to update the hyperlink for the package insert. 
 - (FDA) TMB-High and sensitivity to pembrolizumab in any solid tumor was revised to correct a spelling error in the description.
-- (FDA) _BCR_-_ABL1_ and sensitivity to bosutinib in CML was revised to update the hyperlink for the package insert.
 
 ## September 2021 release
 Added entries:
