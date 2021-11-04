@@ -1,6 +1,17 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## November 2021 release
+Added entries:
+- (FDA) _BCR-ABL1_ and sensitivity to asciminib in chronic phase chronic myeloid leukemia. 
+- (Clinical evidence) _SPOP_ missense somatic variants and favorable prognosis in de-novo metastatic castration-sensitive prostate cancer. 
+- (Clinical evidence) _SPOP_ missense somatic variants and sensitivity to abiraterone in metastatic castration-resistant prostate cancer
+- (Clinical evidence) _SPOP_ missense somatic variants and sensitivity to anti-androgen therapy.
+- (Inferential) _CD274_ amplification and sensitivity to atezolizumab in non-small cell lung cancer. 
+
+Revised entries:
+- (FDA) _FGFR2_ fusions and sensitivity to erdafitnib's description was revised to match the standard's described in our [S.O.P.](https://github.com/vanallenlab/moalmanac-db/blob/main/docs/sop.md).
+
 ## October 2021 release
 Added entries:
 - (FDA) _EGFR_ exon 20 insertion variants and sensitivity to mobocertinib in non-small cell lung cancer.
