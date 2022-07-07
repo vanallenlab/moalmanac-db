@@ -1,6 +1,15 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## June 2022 release
+Added entries:
+- (FDA) _IDH1_ p.R132C, p.R132H and sensitivity to ivosidenib either with azacitidine or as a monotherapy in acute myeloid leukemia.
+
+## March 2022 release
+Revised entries:
+- (FDA) _KRAS_ p.G12C and sensitivity to sotorasib's description was revised to remove underscores.
+- (Preclinical) _KRAS_ somatic variants and sensitivity to FGFR1 inhibitor + trametinib was revised to remove a trailing space from the therapy name.
+
 ## November 2021 release
 Added entries:
 - (FDA) _BCR-ABL1_ and sensitivity to asciminib in chronic phase chronic myeloid leukemia. 
