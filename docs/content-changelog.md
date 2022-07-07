@@ -3,7 +3,9 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## June 2022 release
 Added entries:
+- (FDA) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with trametinib in any solid tumor.
 - (FDA) _IDH1_ p.R132C, p.R132H and sensitivity to ivosidenib either with azacitidine or as a monotherapy in acute myeloid leukemia.
+- (FDA) MSI-H and sensitivity to pembrolizumab in endometrial carcinoma.
 
 ## March 2022 release
 Revised entries:
