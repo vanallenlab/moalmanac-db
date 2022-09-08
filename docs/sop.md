@@ -3,7 +3,7 @@
 ## Table of Contents
 * [About the Molecular Oncology Almanac](#about-the-molecular-oncology-almanac)
 * [Access](#access)
-    * [Github](#github)
+    * [GitHub](#github)
     * [Molecular Oncology Almanac - Browser](#molecular-oncology-almanac---browser)
     * [Application Program Interface (API)](#application-program-interface-api)
 * [Versioning and release information](#versioning-and-release-information)
@@ -23,12 +23,12 @@ The underlying database of this method is dependent on expert curation of the cu
 [Return to Table of Contents](#table-of-contents)
 
 ## Access
-Content catalogued by the Molecular Oncology Almanac can be accessed through Github, the web portal, or the API.
+Content catalogued by the Molecular Oncology Almanac can be accessed through GitHub, the web portal, or the API.
 
-### Github
-The Molecular Oncology Almanac Database is maintained through [Github](https://github.com/vanallenlab/moalmanac-db). Releases are created for each version of the database, documented with content release notes.  
+### GitHub
+The Molecular Oncology Almanac Database is maintained through [GitHub](https://github.com/vanallenlab/moalmanac-db). Releases are created for each version of the database, documented with content release notes.  
 
-This content is then converted into an SQL database for use with the [browser](#molecular-oncology-almanac---browser) and into a document based format for use with the [method](https://github.com/vanallenlab/moalmanac), with code from their respective Github repositories.
+This content is then converted into an SQL database for use with the [browser](#molecular-oncology-almanac---browser) and into a document based format for use with the [method](https://github.com/vanallenlab/moalmanac), with code from their respective GitHub repositories.
 
 ### Molecular Oncology Almanac - Browser
 A web based browser was created for browsing the knowledge base with Python, Flask, and SQLAlchemy and hosted on Google Compute Engine, herein referred to Molecular Oncology Almanac Browser or browser. The front page lists the total number of molecular features and assertions catalogued as well as the total number of cancer types, evidence levels, and therapies entered. A central search box allows for searching across multiple search terms such as evidence, gene, feature types, or feature type attributes (protein changes, genomic positions, etc.). The browser also features an about page, which contains a hyperlink to download the contents of the knowledge base. Users may submit entries for consideration into the database with a web form, accessible through the “Submit entry” menu item. 
