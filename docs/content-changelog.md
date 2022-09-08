@@ -1,6 +1,10 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## September 2022 release
+Added entries:
+- (FDA) _FGFR1_ rearrangements and sensitivity to pemigatinib in myeloid/lymphoid neoplasms.
+
 ## August 2022 release
 Added entries:
 - (FDA) _ALK-EML4_ and sensitivity to crizotinib in inflammatory myofibroblastic tumors.
