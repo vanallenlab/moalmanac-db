@@ -1,6 +1,13 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## October 2022 release
+Added entries:
+- (FDA) _FGFR2_ rearrangements and sensitivity to futibatinib in intrahepatic cholangiocarcinoma.
+
+Revised entries:
+- (Clinical evidence) _SPOP_ variants and favorable prognosis in prostate adenocarcinoma was changed to sensitivity to abiraterone. Additionally, the doi url was revised to correctly point to the citation.
+
 ## September 2022 release
 Added entries:
 - (FDA) _FGFR1_ rearrangements and sensitivity to pemigatinib in myeloid/lymphoid neoplasms.
