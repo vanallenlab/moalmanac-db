@@ -7,7 +7,7 @@
     * [Molecular Oncology Almanac - Browser](#molecular-oncology-almanac---browser)
     * [Application Program Interface (API)](#application-program-interface-api)
 * [Versioning and release information](#versioning-and-release-information)
-* [Cataloging assertions](#cataloging-relationships)
+* [Cataloging relationships](#cataloging-relationships)
     * [Evidence](#evidence-sources)
       * [FDA approvals](#fda-approvals)
       * [Guidelines](#guidelines)
@@ -53,7 +53,7 @@ Content changes should be summarized as a new entry in the [content changelog](/
 [Return to Table of Contents](#table-of-contents)
 
 ## Cataloging relationships
-Molecular Oncology Almanac catalogues relationships which assert a connection between molecular features and clinical information or action. These are organized by [feature type](#molecular-features) within the [content](/content/) folder of this repository as tab delimited files. 
+Molecular Oncology Almanac catalogues relationships that assert a connection between molecular features and clinical information or action. These are organized by [feature type](#molecular-features) as [records](/molecular-oncology-almanac.json).
 
 ### Evidence sources
 
@@ -91,7 +91,7 @@ You can stay up to date on FDA approvals by visiting or subscribing to:
 - [FDA Oncology on Twitter (@FDAOncology)](https://twitter.com/FDAOncology)
 - [American Association of Cancer Research (AACR) alerts]()
 
-###### Populating fields
+###### Fields
 FDA approvals will complete fields as follows,
 - `description`, see below
 - `source_type` with `FDA`
@@ -117,7 +117,7 @@ For example,
 ##### Guidelines
 PDFs should be saved as `{publication year}.{version}-{tumor type}.pdf` in the `database/guidelines` folder. 
 
-###### Populating fields
+###### Fields
 Guidelines will complete fields as follows,
 - `description`, see below 
 - `source_type` with `Guideline`
@@ -140,7 +140,7 @@ For example,
 ##### Abstracts and Journal articles
 PDFs should be saved as `{publication year}-{first author last name}.pdf` in the `database/papers` folder. In the event that another paper is already named by this convention, a modifier may be added to the filename, such as adding a main idea after another dash; for example, `2014-VanAllen-ERCC2.pdf`.
 
-###### Populating fields
+###### Fields
 Abstracts and journal articles will complete fields as follows,
 - `description`, see below 
 - `source_type` with `Journal`
@@ -162,18 +162,84 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ### Molecular features
-Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields associated with each type of molecular feature (feature type) are defined in the database/feature_definitions.tsv file. For example, copy number alterations are defined by a gene, direction, and cytoband. Relationships are entered into the appropriate feature type file present in the [content](/content/) folder of this repository. Molecular Oncology Almanac currently catalogues the following feature types:
-- [Aneuploidy](/content/copy_number.tsv)
-- [Copy number alterations](/content/copy_number.tsv)
-- [Germline variants](/content/gerlmine_variant.tsv)
-- [Knockdowns](/content/knockdown.tsv)
-- [Microsatellite stability](/content/microsatellite_stability.tsv)
-- [Mutational burden](/content/mutational_burden.tsv)
-- [Mutational signatures](/content/mutational_signature.tsv)
-- [Neoantigen burden](/content/neoantigen_burden.tsv)
-- [Rearrangements](/content/rearrangement.tsv)
-- [Silencing](/content/silencing.tsv)
-- [Somatic variants](/content/somatic_variant.tsv)
+Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband. Molecular Oncology Almanac currently catalogues the following feature types:
+- [Aneuploidy](#aneuploidy)
+- [Copy number alterations](#copy-number-alterations)
+- [Germline variants](#germline-variants)
+- [Knockdowns](#knockdowns)
+- [Microsatellite stability](#microsatellite-stability)
+- [Mutational burden](#mutational-burden)
+- [Mutational signatures](#mutational-signatures)
+- [Neoantigen burden](#neoantigen-burden)
+- [Rearrangements](#rearrangements)
+- [Silencing](#silencing)
+- [Somatic variants](#somatic-variants)
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Aneuploidy
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Copy number alterations
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Germline variants
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Knockdowns
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Microsatellite stability
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Mutational burden
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Mutational signatures
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Neoantigen burden
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Rearrangements
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Silencing
+
+##### Fields
+
+[Return to Table of Contents](#table-of-contents)
+
+#### Somatic variants
+
+##### Fields
 
 [Return to Table of Contents](#table-of-contents)
 
