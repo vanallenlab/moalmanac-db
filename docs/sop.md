@@ -55,8 +55,9 @@ Content changes should be summarized as a new entry in the [content changelog](/
 ## Cataloging relationships
 Molecular Oncology Almanac catalogues relationships that assert a connection between molecular features and clinical information or action. These are organized by [feature type](#molecular-features) as [records](/molecular-oncology-almanac.json).
 
-### Evidence sources
+All records contained within the database consist of [evidence](#evidence-sources), [molecular features](#molecular-features), and the [clinical relevance](#assertions). 
 
+### Evidence sources
 Molecular Oncology Almanac is a _source centric_ knowledge base, all items must be tied to a line of evidence. Sources should be filled out with the following information unless specified as optional: 
 
 #### Fields
@@ -162,7 +163,9 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ### Molecular features
-Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband. Molecular Oncology Almanac currently catalogues the following feature types:
+Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband. 
+
+The following feature types are currently cataloged in our knowledge base: 
 - [Aneuploidy](#aneuploidy)
 - [Copy number alterations](#copy-number-alterations)
 - [Germline variants](#germline-variants)
@@ -178,20 +181,51 @@ Molecular Oncology Almanac catalogues several feature types that are associated 
 [Return to Table of Contents](#table-of-contents)
 
 #### Aneuploidy
+Aneuploidy captures genome-wide events such as whole-genome doubling. 
 
 ##### Fields
+Molecular data for aneuploidy events should be captured in the following field,
+- `event` (Required), the type of aneuploidy event being described.
+
+For example, 
+> {'event': 'Whole-genome doubling'}
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Copy number alterations
+Copy number alterations capture changes to the number of copies of a particular gene present in the genome of an individual. 
 
 ##### Fields
+Molecular data for copy number alterations should be captured in the following fields,
+- `gene` (Required), gene symbol associated with the alteration
+- `cytoband` (Optional), cytoband associated with the alteration
+- `direction` (Optional), direction of the alteration; Amplification or Deletion
+
+For example,
+> {'gene': 'CCND1', 'cytoband': '11p13', 'direction': 'Amplification'}
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Germline variants
+Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants)
 
 ##### Fields
+Molecular data for germline variants should be captured in the following fields,
+- `gene` (Required), gene symbol associated with the alteration
+- `exon` (Optional), 
+- `chromosome` (Optional), 
+- `start_position` (Optional), 
+- `end_position` (Optional),
+- `reference_allele` (Optional),
+- `alternate_allele` (Optional),
+- `cdna_change` (Optional),
+- `protein_change` (Optional),
+- `variant_annotation` (Optional),
+- `rsid` (Optional),
+- `pathogenic` (Optional), 
+
+For example,
+> 
 
 [Return to Table of Contents](#table-of-contents)
 
