@@ -175,7 +175,6 @@ The following feature types are currently cataloged in our knowledge base:
 - [Mutational signatures](#mutational-signatures)
 - [Neoantigen burden](#neoantigen-burden)
 - [Rearrangements](#rearrangements)
-- [Silencing](#silencing)
 - [Somatic variants](#somatic-variants)
 
 [Return to Table of Contents](#table-of-contents)
@@ -197,7 +196,7 @@ Copy number alterations capture changes to the number of copies of a particular 
 
 ##### Fields
 Molecular data for copy number alterations should be captured in the following fields,
-- `gene` (Required), gene symbol associated with the alteration
+- `gene` (Required), Hugo gene symbol associated with the alteration
 - `cytoband` (Optional), cytoband associated with the alteration
 - `direction` (Optional), direction of the alteration; Amplification or Deletion
 
@@ -207,49 +206,76 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 #### Germline variants
-Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants)
+Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
 
 ##### Fields
 Molecular data for germline variants should be captured in the following fields,
-- `gene` (Required), gene symbol associated with the alteration
-- `exon` (Optional), 
-- `chromosome` (Optional), 
-- `start_position` (Optional), 
-- `end_position` (Optional),
-- `reference_allele` (Optional),
-- `alternate_allele` (Optional),
-- `cdna_change` (Optional),
-- `protein_change` (Optional),
-- `variant_annotation` (Optional),
-- `rsid` (Optional),
-- `pathogenic` (Optional), 
+- `gene` (Required), Hugo gene symbol associated with the variant
+- `exon` (Optional), exon number within gene associated with the variant's genomic location
+- `chromosome` (Optional), chromosome associated with the variant's genomic location
+- `start_position` (Optional), lowest numeric position of variant on the genomic reference sequence
+- `end_position` (Optional), highest numeric position of the variant on the genomic reference sequence
+- `reference_allele` (Optional), the plus strand reference allele at this position
+- `alternate_allele` (Optional), the discovery allele
+- `cdna_change` (Optional), relative positive of the base pair in the cDNA sequence as a fraction
+- `protein_change` (Optional), relative position of affected amino acid in the protein
+- `variant_annotation` (Optional), translational effect of the variant allele
+- `rsid` (Optional), the rs-ID from the dbSNP database
+- `pathogenic` (Optional), integer 1 if the citation reports the variant as pathogenic
 
 For example,
-> 
+> {'gene': 'POLE2', 'exon': '17', 'chromosome': '14', 'start_position': '50117073', 'end_position': '50117073', 'reference_allele': '-', 'alternate_allele': 'A', 'cdna_change': 'c.1406dup', 'protein_change', 'p.L469Ffs*17', 'variant_annotation': 'Frameshift', 'rsid': 'rs776517397', 'pathogenic': ''}
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Knockdowns
+Knockdowns are an experimental technique to reduce expression of a gene. 
 
 ##### Fields
+Molecular data for knockdowns should be captured in the following fields,
+- `gene` (Required), Hugo gene symbol associated with the knockdown
+- `technique` (Required), specific protocol or technique reported by the source that was used to perform the experiment
+
+For example,
+> {'gene': 'ATM', 'technique': 'shRNA'}
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Microsatellite stability
+The number of repeated DNA bases within a microsatellite](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/microsatellite-instability) may differ from the inherited genome in some cancers, and occurs when mismatch repair is malfunctioning. This phenomena is called microsatellite instability due to the not stable length of microsatellites. 
 
 ##### Fields
+Molecular data for microsatellite events should be captured in the following fields,
+- `status` (Required), the test result from an MSI screening - MSI-High (MSI-H), MSI-Low (MSI-L), or MSI-Stable (MSS)
+
+For example,
+> {'status': 'MSI-High'} 
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Mutational burden
+The number of coding somatic variants per megabase is of interest due to reported response to immunotherapy. This metric is calculated by dividing the number of called nonsynonymous somatic variants by the number of bases that were evaluated for variant. The denominator should also reflect bases [that were sufficiently powered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3833702/) to call variants at their location.  
+
+Reporting of tumor mutational burden is [not standardized and is impacted by the sequencing modality](https://pubmed.ncbi.nlm.nih.gov/31832578/). While most sources report TMB categorically (e.g., High or Low), sources differ by how they categorize. Some may report a minimum number of mutations, others the mutations per megabase, or sometimes only share the categorical call. 
 
 ##### Fields
+Molecular data for tumor mutational burden should be captured in the following fields,
+- `classification` (Required), High or Low
+- `minimum_mutations` (Optional), an integer value of the minimum number of mutations required to be classified as tumor mutational burden high (TMB High) by the citation
+- `mutations_per_mb` (Optional), an integer or float value of the minimum number of mutations per megabase required to be classified as tumor mutational burden high (TMB High) by the citation
+
+For example,
+> {'classification': 'High', 'mutations_per_mb': '10'}
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Mutational signatures
+Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), primarily version 2 at the moment.
 
 ##### Fields
+Molecular data for mutational signatures should be captured in the following fields,
+- `cosmic_signature_number` (Required), the integer associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures_v2/), as reported by the citation. 
+- `cosmic_signature_version` (Required), the integer associated with the version of COSMIC mutational signatures, as reported by the citation.
 
 [Return to Table of Contents](#table-of-contents)
 
@@ -260,20 +286,39 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 #### Rearrangements
+Rearrangements change the structure of chromosomes and can be accomplished through a variety of mechanisms such as deletions, duplications, inversions, and translocations, the last of which may result in a fusion if it is involves more than one gene.
 
 ##### Fields
+Molecular data for rearrangements should be captured in the following fields,
+- `gene1` (Required), 5' gene involved in the rearrangement
+- `gene2` (Optional), 3' gene involved in the rearrangement
+- `rearrangement_type` (Optional), type of rearrangement - Fusion or Translocation
+- `locus` (Optional), genomic location of translocation
 
-[Return to Table of Contents](#table-of-contents)
-
-#### Silencing
-
-##### Fields
+For example,
+> {'gene1': 'BCR', 'gene2': 'ABL1', 'rearrangement_type': 'Fusion'}
 
 [Return to Table of Contents](#table-of-contents)
 
 #### Somatic variants
+Somatic variants are mutations that are not present in a patient's inherited genome. The fields are largely similar to those required for [germline variants](#germline-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
 
 ##### Fields
+Molecular data for germline variants should be captured in the following fields,
+- `gene` (Required), Hugo gene symbol associated with the variant
+- `exon` (Optional), exon number within gene associated with the variant's genomic location
+- `chromosome` (Optional), chromosome associated with the variant's genomic location
+- `start_position` (Optional), lowest numeric position of variant on the genomic reference sequence
+- `end_position` (Optional), highest numeric position of the variant on the genomic reference sequence
+- `reference_allele` (Optional), the plus strand reference allele at this position
+- `alternate_allele` (Optional), the discovery allele
+- `cdna_change` (Optional), relative positive of the base pair in the cDNA sequence as a fraction
+- `protein_change` (Optional), relative position of affected amino acid in the protein
+- `variant_annotation` (Optional), translational effect of the variant allele
+- `rsid` (Optional), the rs-ID from the dbSNP database
+
+For example,
+> {'gene': 'EGFR', 'exon': '20', 'chromosome': '7', 'start_position': '55249071', 'end_position': '55249071', 'reference_allele': 'C', 'alternate_allele': 'T', 'cdna_change': 'c.2369C>T', 'protein_change', 'p.T790M', 'variant_annotation': 'Missense', 'rsid': 'rs121434569'}
 
 [Return to Table of Contents](#table-of-contents)
 
