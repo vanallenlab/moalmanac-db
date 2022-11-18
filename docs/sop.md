@@ -9,10 +9,20 @@
 * [Versioning and release information](#versioning-and-release-information)
 * [Cataloging relationships](#cataloging-relationships)
     * [Evidence](#evidence-sources)
-      * [FDA approvals](#fda-approvals)
-      * [Guidelines](#guidelines)
-      * [Abstracts and journal articles](#abstracts-and-journal-articles)
+        * [FDA approvals](#fda-approvals)
+        * [Guidelines](#guidelines)
+        * [Abstracts and journal articles](#abstracts-and-journal-articles)
     * [Molecular features](#molecular-features)
+        * [Aneuploidy](#aneuploidy)
+        * [Copy number alterations](#copy-number-alterations)
+        * [Germline variants](#germline-variants)
+        * [Knockdowns](#knockdowns)
+        * [Microsatellite stability](#microsatellite-stability)
+        * [Mutational burden](#mutational-burden)
+        * [Mutational signatures](#mutational-signatures)
+        * [Neoantigen burden](#neoantigen-burden)
+        * [Rearrangements](#rearrangements)
+        * [Somatic variants](#somatic-variants)
     * [Assertions](#assertions)
 
 ## About the Molecular Oncology Almanac
@@ -165,6 +175,7 @@ For example,
 ### Molecular features
 Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband. 
 
+#### Types of molecular features
 The following feature types are currently cataloged in our knowledge base: 
 - [Aneuploidy](#aneuploidy)
 - [Copy number alterations](#copy-number-alterations)
@@ -179,10 +190,10 @@ The following feature types are currently cataloged in our knowledge base:
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Aneuploidy
+##### Aneuploidy
 Aneuploidy captures genome-wide events such as whole-genome doubling. 
 
-##### Fields
+###### Fields
 Molecular data for aneuploidy events should be captured in the following field,
 - `event` (Required), the type of aneuploidy event being described.
 
@@ -191,10 +202,10 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Copy number alterations
+##### Copy number alterations
 Copy number alterations capture changes to the number of copies of a particular gene present in the genome of an individual. 
 
-##### Fields
+###### Fields
 Molecular data for copy number alterations should be captured in the following fields,
 - `gene` (Required), Hugo gene symbol associated with the alteration
 - `cytoband` (Optional), cytoband associated with the alteration
@@ -205,10 +216,10 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Germline variants
+##### Germline variants
 Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
 
-##### Fields
+###### Fields
 Molecular data for germline variants should be captured in the following fields,
 - `gene` (Required), Hugo gene symbol associated with the variant
 - `exon` (Optional), exon number within gene associated with the variant's genomic location
@@ -228,10 +239,10 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Knockdowns
+##### Knockdowns
 Knockdowns are an experimental technique to reduce expression of a gene. 
 
-##### Fields
+###### Fields
 Molecular data for knockdowns should be captured in the following fields,
 - `gene` (Required), Hugo gene symbol associated with the knockdown
 - `technique` (Required), specific protocol or technique reported by the source that was used to perform the experiment
@@ -241,10 +252,10 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Microsatellite stability
+##### Microsatellite stability
 The number of repeated DNA bases within a microsatellite](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/microsatellite-instability) may differ from the inherited genome in some cancers, and occurs when mismatch repair is malfunctioning. This phenomena is called microsatellite instability due to the not stable length of microsatellites. 
 
-##### Fields
+###### Fields
 Molecular data for microsatellite events should be captured in the following fields,
 - `status` (Required), the test result from an MSI screening - MSI-High (MSI-H), MSI-Low (MSI-L), or MSI-Stable (MSS)
 
@@ -253,12 +264,12 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Mutational burden
+##### Mutational burden
 The number of coding somatic variants per megabase is of interest due to reported response to immunotherapy. This metric is calculated by dividing the number of called nonsynonymous somatic variants by the number of bases that were evaluated for variant. The denominator should also reflect bases [that were sufficiently powered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3833702/) to call variants at their location.  
 
 Reporting of tumor mutational burden is [not standardized and is impacted by the sequencing modality](https://pubmed.ncbi.nlm.nih.gov/31832578/). While most sources report TMB categorically (e.g., High or Low), sources differ by how they categorize. Some may report a minimum number of mutations, others the mutations per megabase, or sometimes only share the categorical call. 
 
-##### Fields
+###### Fields
 Molecular data for tumor mutational burden should be captured in the following fields,
 - `classification` (Required), High or Low
 - `minimum_mutations` (Optional), an integer value of the minimum number of mutations required to be classified as tumor mutational burden high (TMB High) by the citation
@@ -269,26 +280,26 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Mutational signatures
+##### Mutational signatures
 Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), primarily version 2 at the moment.
 
-##### Fields
+###### Fields
 Molecular data for mutational signatures should be captured in the following fields,
 - `cosmic_signature_number` (Required), the integer associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures_v2/), as reported by the citation. 
 - `cosmic_signature_version` (Required), the integer associated with the version of COSMIC mutational signatures, as reported by the citation.
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Neoantigen burden
+##### Neoantigen burden
 
-##### Fields
+###### Fields
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Rearrangements
+##### Rearrangements
 Rearrangements change the structure of chromosomes and can be accomplished through a variety of mechanisms such as deletions, duplications, inversions, and translocations, the last of which may result in a fusion if it is involves more than one gene.
 
-##### Fields
+###### Fields
 Molecular data for rearrangements should be captured in the following fields,
 - `gene1` (Required), 5' gene involved in the rearrangement
 - `gene2` (Optional), 3' gene involved in the rearrangement
@@ -300,10 +311,10 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-#### Somatic variants
+##### Somatic variants
 Somatic variants are mutations that are not present in a patient's inherited genome. The fields are largely similar to those required for [germline variants](#germline-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
 
-##### Fields
+###### Fields
 Molecular data for germline variants should be captured in the following fields,
 - `gene` (Required), Hugo gene symbol associated with the variant
 - `exon` (Optional), exon number within gene associated with the variant's genomic location
