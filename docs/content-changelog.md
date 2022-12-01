@@ -5,7 +5,7 @@ The following changes have been made to the content catalogued within the Molecu
 In this release, we have removed neoantigen burden as a cataloged feature type and combined Silencing with Knockdown feature types. 
 
 Added entries:
-- 
+- (FDA) _RET_ fusions and sensitivity to selpercatinib in any solid tumor.
 
 Revised entries:
 - (Preclinical) _PPARGC1A_ knockdown with CRSPR-Cas9 and not favorable prognosis in melanoma was changed from the feature type Silencing to Knockdown.
