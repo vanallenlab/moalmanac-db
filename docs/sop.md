@@ -7,12 +7,21 @@
     * [Molecular Oncology Almanac - Browser](#molecular-oncology-almanac---browser)
     * [Application Program Interface (API)](#application-program-interface-api)
 * [Versioning and release information](#versioning-and-release-information)
-* [Cataloging assertions](#cataloging-relationships)
+* [Cataloging relationships](#cataloging-relationships)
     * [Evidence](#evidence-sources)
-      * [FDA approvals](#fda-approvals)
-      * [Guidelines](#guidelines)
-      * [Abstracts and journal articles](#abstracts-and-journal-articles)
+        * [FDA approvals](#fda-approvals)
+        * [Guidelines](#guidelines)
+        * [Abstracts and journal articles](#abstracts-and-journal-articles)
     * [Molecular features](#molecular-features)
+        * [Aneuploidy](#aneuploidy)
+        * [Copy number alterations](#copy-number-alterations)
+        * [Germline variants](#germline-variants)
+        * [Knockdowns](#knockdowns)
+        * [Microsatellite stability](#microsatellite-stability)
+        * [Mutational burden](#mutational-burden)
+        * [Mutational signatures](#mutational-signatures)
+        * [Rearrangements](#rearrangements)
+        * [Somatic variants](#somatic-variants)
     * [Assertions](#assertions)
 
 ## About the Molecular Oncology Almanac
@@ -53,21 +62,22 @@ Content changes should be summarized as a new entry in the [content changelog](/
 [Return to Table of Contents](#table-of-contents)
 
 ## Cataloging relationships
-Molecular Oncology Almanac catalogues relationships which assert a connection between molecular features and clinical information or action. These are organized by [feature type](#molecular-features) within the [content](/content/) folder of this repository as tab delimited files. 
+Molecular Oncology Almanac catalogues relationships that assert a connection between molecular features and clinical information or action. These are organized by [feature type](#molecular-features) as [records](/molecular-oncology-almanac.json).
+
+All records contained within the database consist of [evidence](#evidence-sources), [molecular features](#molecular-features), and the [clinical relevance](#assertions). 
 
 ### Evidence sources
-
 Molecular Oncology Almanac is a _source centric_ knowledge base, all items must be tied to a line of evidence. Sources should be filled out with the following information unless specified as optional: 
 
 #### Fields
-- `description`, a free text description of the source and assertion.
-- `source_type`, the type of source. As of this writing, four exist: Abstract, Clinical trial, FDA, Guideline, and Journal. 
-- `citation`, the citation for the source.
-- `url`, a URL at which the source was accessed.
-- `doi` (optional), if the source is an abstract or journal article, please include the [DOI](https://www.doi.org/).
-- `pmid` (optional), if a [PubMed ID (pmid)](https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/) exists for the source, please include it. 
-- `nct` (optional), if the source is a clinical trial, please include the [NCT code](https://clinicaltrials.gov/ct2/help/glossary/ct-identifier-nct#:~:text=A%20unique%20identification%20code%20given,known%20as%20the%20NCT%20Number.).  
-- `last_updated`, the date in which the entry was last updated. 
+- `description` (required, string), a free text description of the source and assertion.
+- `source_type` (required, string), the type of source. As of this writing, four exist: Abstract, Clinical trial, FDA, Guideline, and Journal. 
+- `citation` (required, string), the citation for the source.
+- `url` (required, string), a URL at which the source was accessed.
+- `doi` (optional, string), if the source is an abstract or journal article, please include the [DOI](https://www.doi.org/).
+- `pmid` (optional, integer), if a [PubMed ID (pmid)](https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/) exists for the source, please include it. 
+- `nct` (optional, string), if the source is a clinical trial, please include the [NCT code](https://clinicaltrials.gov/ct2/help/glossary/ct-identifier-nct#:~:text=A%20unique%20identification%20code%20given,known%20as%20the%20NCT%20Number.).  
+- `last_updated` (required, date), the date in which the entry was last updated. 
 
 #### Types of sources
 The Molecular Oncology Almanac database primarily cites FDA approvals, clinical guidelines, and journal articles. 
@@ -91,7 +101,7 @@ You can stay up to date on FDA approvals by visiting or subscribing to:
 - [FDA Oncology on Twitter (@FDAOncology)](https://twitter.com/FDAOncology)
 - [American Association of Cancer Research (AACR) alerts]()
 
-###### Populating fields
+###### Fields
 FDA approvals will complete fields as follows,
 - `description`, see below
 - `source_type` with `FDA`
@@ -117,7 +127,7 @@ For example,
 ##### Guidelines
 PDFs should be saved as `{publication year}.{version}-{tumor type}.pdf` in the `database/guidelines` folder. 
 
-###### Populating fields
+###### Fields
 Guidelines will complete fields as follows,
 - `description`, see below 
 - `source_type` with `Guideline`
@@ -140,7 +150,7 @@ For example,
 ##### Abstracts and Journal articles
 PDFs should be saved as `{publication year}-{first author last name}.pdf` in the `database/papers` folder. In the event that another paper is already named by this convention, a modifier may be added to the filename, such as adding a main idea after another dash; for example, `2014-VanAllen-ERCC2.pdf`.
 
-###### Populating fields
+###### Fields
 Abstracts and journal articles will complete fields as follows,
 - `description`, see below 
 - `source_type` with `Journal`
@@ -162,18 +172,156 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ### Molecular features
-Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields associated with each type of molecular feature (feature type) are defined in the database/feature_definitions.tsv file. For example, copy number alterations are defined by a gene, direction, and cytoband. Relationships are entered into the appropriate feature type file present in the [content](/content/) folder of this repository. Molecular Oncology Almanac currently catalogues the following feature types:
-- [Aneuploidy](/content/copy_number.tsv)
-- [Copy number alterations](/content/copy_number.tsv)
-- [Germline variants](/content/gerlmine_variant.tsv)
-- [Knockdowns](/content/knockdown.tsv)
-- [Microsatellite stability](/content/microsatellite_stability.tsv)
-- [Mutational burden](/content/mutational_burden.tsv)
-- [Mutational signatures](/content/mutational_signature.tsv)
-- [Neoantigen burden](/content/neoantigen_burden.tsv)
-- [Rearrangements](/content/rearrangement.tsv)
-- [Silencing](/content/silencing.tsv)
-- [Somatic variants](/content/somatic_variant.tsv)
+Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband. 
+
+#### Types of molecular features
+The following feature types are currently cataloged in our knowledge base: 
+- [Aneuploidy](#aneuploidy)
+- [Copy number alterations](#copy-number-alterations)
+- [Germline variants](#germline-variants)
+- [Knockdowns](#knockdowns)
+- [Microsatellite stability](#microsatellite-stability)
+- [Mutational burden](#mutational-burden)
+- [Mutational signatures](#mutational-signatures)
+- [Rearrangements](#rearrangements)
+- [Somatic variants](#somatic-variants)
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Aneuploidy
+Aneuploidy captures genome-wide events such as whole-genome doubling. 
+
+###### Fields
+Molecular data for aneuploidy events should be captured in the following field,
+- `event` (required, string), the type of aneuploidy event being described
+
+For example, 
+> {'event': 'Whole-genome doubling'}
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Copy number alterations
+Copy number alterations capture changes to the number of copies of a particular gene present in the genome of an individual. 
+
+###### Fields
+Molecular data for copy number alterations should be captured in the following fields,
+- `gene` (required, string), Hugo gene symbol associated with the alteration
+- `cytoband` (optional, string), cytoband associated with the alteration
+- `direction` (optional, string), direction of the alteration; `Amplification` or `Deletion`
+
+For example,
+> {'gene': 'CCND1', 'cytoband': '11p13', 'direction': 'Amplification'}
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Germline variants
+Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
+
+###### Fields
+Molecular data for germline variants should be captured in the following fields,
+- `gene` (required, string), Hugo gene symbol associated with the variant
+- `exon` (optional, integer), exon number within gene associated with the variant's genomic location
+- `chromosome` (optional, integer), chromosome associated with the variant's genomic location
+- `start_position` (optional, integer), lowest numeric position of variant on the genomic reference sequence
+- `end_position` (optional, integer), highest numeric position of the variant on the genomic reference sequence
+- `reference_allele` (optional, string), the plus strand reference allele at this position
+- `alternate_allele` (optional, string), the discovery allele
+- `cdna_change` (optional, string), relative positive of the base pair in the cDNA sequence as a fraction
+- `protein_change` (optional, string), relative position of affected amino acid in the protein
+- `variant_annotation` (optional, string), translational effect of the variant allele
+- `rsid` (optional, string), the rs-ID from the dbSNP database
+- `pathogenic` (optional, boolean), integer `1` if the citation reports the variant as pathogenic and otherwise left blank
+
+For example,
+> {'gene': 'POLE2', 'exon': '17', 'chromosome': '14', 'start_position': '50117073', 'end_position': '50117073', 'reference_allele': '-', 'alternate_allele': 'A', 'cdna_change': 'c.1406dup', 'protein_change', 'p.L469Ffs*17', 'variant_annotation': 'Frameshift', 'rsid': 'rs776517397', 'pathogenic': ''}
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Knockdowns
+Knockdowns are an experimental technique to reduce expression of a gene. 
+
+###### Fields
+Molecular data for knockdowns should be captured in the following fields,
+- `gene` (required, string), Hugo gene symbol associated with the knockdown
+- `technique` (required, string), specific protocol or technique reported by the source that was used to perform the experiment
+
+For example,
+> {'gene': 'ATM', 'technique': 'shRNA'}
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Microsatellite stability
+The number of repeated DNA bases within a microsatellite](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/microsatellite-instability) may differ from the inherited genome in some cancers, and occurs when mismatch repair is malfunctioning. This phenomena is called microsatellite instability due to the not stable length of microsatellites. 
+
+###### Fields
+Molecular data for microsatellite events should be captured in the following fields,
+- `status` (required, string), the test result from an MSI screening - MSI-High (MSI-H), MSI-Low (MSI-L), or MSI-Stable (MSS)
+
+For example,
+> {'status': 'MSI-High'} 
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Mutational burden
+The number of coding somatic variants per megabase is of interest due to reported response to immunotherapy. This metric is calculated by dividing the number of called nonsynonymous somatic variants by the number of bases that were evaluated for variant. The denominator should also reflect bases [that were sufficiently powered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3833702/) to call variants at their location.  
+
+Reporting of tumor mutational burden is [not standardized and is impacted by the sequencing modality](https://pubmed.ncbi.nlm.nih.gov/31832578/). While most sources report TMB categorically (e.g., High or Low), sources differ by how they categorize. Some may report a minimum number of mutations, others the mutations per megabase, or sometimes only share the categorical call. 
+
+###### Fields
+Molecular data for tumor mutational burden should be captured in the following fields,
+- `classification` (required, string), `High` or `Low`
+- `minimum_mutations` (optional, integer), an integer value of the minimum number of mutations required to be classified as tumor mutational burden high (TMB High) by the citation
+- `mutations_per_mb` (optional, integer), an integer or float value of the minimum number of mutations per megabase required to be classified as tumor mutational burden high (TMB High) by the citation
+
+For example,
+> {'classification': 'High', 'mutations_per_mb': '10'}
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Mutational signatures
+Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), primarily version 2 at the moment.
+
+###### Fields
+Molecular data for mutational signatures should be captured in the following fields,
+- `cosmic_signature_number` (required, integer), the integer associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures_v2/), as reported by the citation. 
+- `cosmic_signature_version` (required, integer), the integer associated with the version of COSMIC mutational signatures, as reported by the citation.
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Rearrangements
+Rearrangements change the structure of chromosomes and can be accomplished through a variety of mechanisms such as deletions, duplications, inversions, and translocations, the last of which may result in a fusion if it is involves more than one gene.
+
+###### Fields
+Molecular data for rearrangements should be captured in the following fields,
+- `gene1` (required, string), 5' gene involved in the rearrangement
+- `gene2` (optional, string), 3' gene involved in the rearrangement
+- `rearrangement_type` (optional, string), type of rearrangement - Fusion or Translocation
+- `locus` (optional, string), genomic location of translocation
+
+For example,
+> {'gene1': 'BCR', 'gene2': 'ABL1', 'rearrangement_type': 'Fusion'}
+
+[Return to Table of Contents](#table-of-contents)
+
+##### Somatic variants
+Somatic variants are mutations that are not present in a patient's inherited genome. The fields are largely similar to those required for [germline variants](#germline-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
+
+###### Fields
+Molecular data for germline variants should be captured in the following fields,
+- `gene` (required, string), Hugo gene symbol associated with the variant
+- `exon` (optional, integer), exon number within gene associated with the variant's genomic location
+- `chromosome` (optional, string), chromosome associated with the variant's genomic location
+- `start_position` (optional, integer), lowest numeric position of variant on the genomic reference sequence
+- `end_position` (optional, integer), highest numeric position of the variant on the genomic reference sequence
+- `reference_allele` (optional, string), the plus strand reference allele at this position
+- `alternate_allele` (optional, string), the discovery allele
+- `cdna_change` (optional, string), relative positive of the base pair in the cDNA sequence as a fraction
+- `protein_change` (optional, string), relative position of affected amino acid in the protein
+- `variant_annotation` (optional, string), translational effect of the variant allele
+- `rsid` (optional, string), the rs-ID from the dbSNP database
+
+For example,
+> {'gene': 'EGFR', 'exon': '20', 'chromosome': '7', 'start_position': '55249071', 'end_position': '55249071', 'reference_allele': 'C', 'alternate_allele': 'T', 'cdna_change': 'c.2369C>T', 'protein_change', 'p.T790M', 'variant_annotation': 'Missense', 'rsid': 'rs121434569'}
 
 [Return to Table of Contents](#table-of-contents)
 
@@ -189,8 +337,8 @@ The assertion of a relationship describes the claim made by a source and connect
 - `therapy_name` (optional, string), associated with therapeutic sensitivity or resistance. The generic drug name should be used, if applicable, and catalogued as a proper noun. Required for assertions related to therapeutic sensitivity or resistance. In the case that an assertion contains two or more therapies, join them into a single string with ` + ` with both items capitalized; for example, `Dabrafenib + Trametinib`. Multiple therapies should be listed in alphabetical order.
 - `therapy_strategy` (optional, string), associated therapeutic strategy or mechanism of action of the assertion. Required for assertions related to therapeutic sensitivity or resistance. In the case that an assertion contains two or more therapies or a utilized therapeutic strategy has multiple mechanisms, join them into a single string with ` + ` with both items capitalized; for example, `CDK4/6 inhibition + MEK inhibition`. Multiple strategies should correspond to the order of the listed therapies. Multiple strategies associated with a single therapy should be listed in alphabetical order.
 - `therapy_type` (optional, string), categorical value for the therapy type of the associated therapy based on the categories presented by the [National Institute of Health](https://www.cancer.gov/about-cancer/treatment/types). As of this writing, we have catalogued: `Targeted therapy`, `Immunotherapy`, `Chemotherapy`, `Radiation therapy`, `Hormone therapy`. `Combination therapy` is entered for any therapies that utilize two or more therapy types; for example, `Dabrafenib + Trametinib` is catalogued as a `Targeted therapy` while `Ipilimumab + Vemurafenib` is catalogued as a `Combination therapy`. 
-- `therapy_sensitivity` (optional, int), `1` if the relationship asserts sensitive to a therapy, `0` if the relationship asserts not sensitive to a therapy, and blank otherwise.
-- `therapy_resistance` (optional, int), `1` if the relationship asserts resistance to a therapy, `0` if the relationship asserts not resistive to a therapy, and blank otherwise.
-- `favorable_prognosis` (optional, int), `1` if the relationship asserts a disease prognosis that is favorable, `0` if the relationship asserts a disease prognosis that is not favorable, and blank otherwise
+- `therapy_sensitivity` (optional, integer), `1` if the relationship asserts sensitive to a therapy, `0` if the relationship asserts not sensitive to a therapy, and blank otherwise.
+- `therapy_resistance` (optional, integer), `1` if the relationship asserts resistance to a therapy, `0` if the relationship asserts not resistive to a therapy, and blank otherwise.
+- `favorable_prognosis` (optional, integer), `1` if the relationship asserts a disease prognosis that is favorable, `0` if the relationship asserts a disease prognosis that is not favorable, and blank otherwise
 
 [Return to Table of Contents](#table-of-contents)

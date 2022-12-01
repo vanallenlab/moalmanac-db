@@ -1,6 +1,19 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## December 2022 release
+In this release, we have removed neoantigen burden as a cataloged feature type and combined Silencing with Knockdown feature types. 
+
+Added entries:
+- (FDA) _RET_ fusions and sensitivity to selpercatinib in any solid tumor.
+
+Revised entries:
+- (Preclinical) _PPARGC1A_ knockdown with CRSPR-Cas9 and not favorable prognosis in melanoma was changed from the feature type Silencing to Knockdown.
+- (Preclinical) _USP11_ knockdown with siRNA and sensitivity to olaparib in osteosarcoma was changed from the feature type Silencing to Knockdown.
+
+Removed entries:
+- (Clinical evidence) High Neoantigen Burden and sensitivity to pembrolizumab in non-small cell lung cancer.
+
 ## October 2022 release
 Added entries:
 - (FDA) _FGFR2_ rearrangements and sensitivity to futibatinib in intrahepatic cholangiocarcinoma.

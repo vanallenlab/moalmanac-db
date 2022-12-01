@@ -26255,31 +26255,6 @@
         "last_updated": "9/16/21"
     },
     {
-        "feature_type": "Neoantigen Burden",
-        "classification": "High",
-        "minimum_neoantigens": "",
-        "disease": "Non-Small Cell Lung Cancer",
-        "oncotree_term": "Non-Small Cell Lung Cancer",
-        "oncotree_code": "NSCLC",
-        "context": "",
-        "therapy_name": "Pembrolizumab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy",
-        "therapy_sensitivity": 1,
-        "therapy_resistance": "",
-        "favorable_prognosis": "",
-        "predictive_implication": "Clinical evidence",
-        "preferred_assertion": "",
-        "description": "In a cohort of 34 non-small cell lung cancer patients treated with pembrolizumab, an increased candidate neoantigen burden was associated with a higher chance of DCB and an improved PFS (median 14.5 vs. 3.5 months).",
-        "source_type": "Journal",
-        "citation": "Rizvi NA, Hellmann MD, Snyder A, et al. Cancer immunology. Mutational landscape determines sensitivity to PD-1 blockade in non-small cell lung cancer. Science. 2015;348(6230):124-8.",
-        "url": "https://doi.org/10.1126/science.aaa1348",
-        "doi": "10.1126/science.aaa1348",
-        "pmid": 25765070,
-        "nct": "",
-        "last_updated": "3/12/17"
-    },
-    {
         "feature_type": "Knockdown",
         "technique": "shRNA",
         "gene": "ATM",
@@ -26505,7 +26480,7 @@
         "last_updated": "4/16/19"
     },
     {
-        "feature_type": "Silencing",
+        "feature_type": "Knckdown",
         "technique": "CRSPR-Cas9",
         "gene": "PPARGC1A",
         "disease": "Melanoma",
@@ -27013,7 +26988,7 @@
         "last_updated": "8/4/22"
     },
     {
-        "feature_type": "Silencing",
+        "feature_type": "Knockdown",
         "technique": "siRNA",
         "gene": "USP11",
         "disease": "Osteosarcoma",
@@ -27930,5 +27905,32 @@
         "pmid": "",
         "nct": "",
         "last_updated": "10/6/22"  
+    },
+    {
+        "feature_type": "Rearrangement",
+        "gene1": "RET",
+        "gene2": "",
+        "rearrangement_type": "Fusion",
+        "locus": "",
+        "disease": "Any solid tumor",
+        "context": "",
+        "oncotree_term": "Any solid tumor",
+        "oncotree_code": "",
+        "therapy_name": "Selpercatinib",
+        "therapy_strategy": "RET inhibition",
+        "therapy_type": "Targeted therapy",
+        "therapy_sensitivity": 1,
+        "therapy_resistance": "",
+        "favorable_prognosis": "",
+        "predictive_implication": "FDA-Approved",
+        "description": "The U.S. Food and Drug Administration (FDA) has granted accelerated approval to Retevmo (selpercatinib) for the treatment of adult patients with locally advanced or metastatic solid tumors with a RET gene fusion that have progressed on or following prior systemic treatment or who have no satisfactory alterantive treatment options.",
+        "preferred_assertion": "",
+        "source_type": "FDA",
+        "citation": "Eli Lily and Company. Retevmo (selpercatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213246s008lbl.pdf. Revised September 2022. Accessed December 1, 2022.",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213246s008lbl.pdf",
+        "doi": "",
+        "pmid": "",
+        "nct": "",
+        "last_updated": "12/1/22"  
     }
 ]
