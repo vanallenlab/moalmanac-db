@@ -1,6 +1,13 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## January 2023 release
+In this release, we add two recent precision oncology approvals from the FDA.
+
+Added entries:
+- (FDA) _IDH1_ p.R132C, p.R132G, p.R132H, p.R132L, and p.R132S and sensitivity to olutasidenib in acute myeloid leukemia.
+- (FDA) _KRAS_ p.G12C and sensitivity to adagrasib in non-small cell lung cancer.
+
 ## December 2022 release
 In this release, we have removed neoantigen burden as a cataloged feature type and combined Silencing with Knockdown feature types. 
 
