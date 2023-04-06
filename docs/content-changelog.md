@@ -1,7 +1,7 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
-## March 2023 release
+## April 2023 release
 Added entries:
 - (FDA) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with trametinib for pediatric patients with low-grade glioma.
 
