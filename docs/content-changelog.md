@@ -1,6 +1,15 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## Osteosarcoma update
+- (Preclinical) _CCNE1_ copy number amplifications and sensitivity to dinaciclib in osteosarcoma.
+- (Preclinical) _CDK4_ copy number amplifications and sensitivity to palbociclib in osteosarcoma.
+- (Preclinical) _FGFR1_ copy number amplifications and sensitivity to AZ4547 and PD173074 in osteosarcoma.
+- (Preclinical) _MYC_ copy number amplifications and sensitivity to AT7519 in osteosarcoma.
+- (Preclinical) _PTEN_ copy number deletions and sensitivity to MK-2206 and rapamycin in osteosarcoma.
+- (Preclinical) _RB1_ somatic variants and sensitivity to olaparib in osteosarcoma.
+- (Preclinical) _TP53_ somatic variants and sensitivity to NSC59984 in osteosarcoma.
+
 ## July 2023 release
 Added entries:
 - (FDA) _BRCA1_ and _BRCA2_ somatic and germline variants and sensitivity to olaparib in combination with abiraterone and prednisone or prednisolone for patients with metastatic castration-resistant prostate cancer. 
