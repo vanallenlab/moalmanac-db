@@ -1,6 +1,16 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## July 2023 release
+Added entries:
+- (FDA) _BRCA1_ and _BRCA2_ somatic and germline variants and sensitivity to olaparib in combination with abiraterone and prednisone or prednisolone for patients with metastatic castration-resistant prostate cancer. 
+- (FDA) _BRCA1_ and _BRCA2_  germline variants and sensitivity to olaparib for patients with metastatic pancreatic adenocarcinoma. 
+- (FDA) _BRCA1_ and _BRCA2_ germline variants and sensitivity to olaparib for the treatment of adult patients with HER2-negative high risk early breast cancer. 
+- (FDA) _ATM_, _ATR_, _BRCA1_, _BRCA2_, _CDK12_, _CHEK2_, _FANCA_, _MLH1_, _MRE11A_, _NBN_, _PALB2_, and _RAD51C_ somatic variants and sensitivity to talazoparib in combination with enzalutamide for patients with metastatic castration-resistant prostate cancer.
+
+Revised entries:
+- (FDA) _BRCA1_ and _BRCA2_ germline variants and sensitivity to olaparib in breast cancer. Revised description to add additional approval details from FDA drug label.
+
 ## April 2023 release
 Added entries:
 - (FDA) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with trametinib for pediatric patients with low-grade glioma.
