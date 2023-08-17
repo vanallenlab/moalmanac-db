@@ -7,7 +7,7 @@ Added entries:
 
 Revised entries:
 - (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, resolved typo in description.
-
+- All prior entries have been revised to have `last_updated` date be in ISO date format of `YYYY/MM/DD`
 
 ## July 2023 release
 Added entries:
