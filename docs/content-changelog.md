@@ -1,6 +1,14 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## September 2023 release
+Added entries:
+- 
+
+Revised entries:
+- (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, resolved typo in description.
+
+
 ## July 2023 release
 Added entries:
 - (FDA) _BRCA1_ and _BRCA2_ somatic and germline variants and sensitivity to olaparib in combination with abiraterone and prednisone or prednisolone for patients with metastatic castration-resistant prostate cancer. 
