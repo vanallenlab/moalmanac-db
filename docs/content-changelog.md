@@ -9,7 +9,7 @@ Added entries:
 Revised entries:
 - (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, resolved typo in description.
 - (FDA) _RET_ fusions and sensitivity to pralsetinib, received regular approval from FDA after being previously granted accelerated approval. 
-- All prior entries have been revised to have `last_updated` date be in ISO date format of `YYYY/MM/DD`
+- All prior entries have been revised to have `last_updated` date be in ISO 8601 date standard of `YYYY-MM-DD`
 
 ## July 2023 release
 Added entries:
