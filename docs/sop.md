@@ -77,7 +77,8 @@ Molecular Oncology Almanac is a _source centric_ knowledge base, all items must 
 - `doi` (optional, string), if the source is an abstract or journal article, please include the [DOI](https://www.doi.org/).
 - `pmid` (optional, integer), if a [PubMed ID (pmid)](https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/) exists for the source, please include it. 
 - `nct` (optional, string), if the source is a clinical trial, please include the [NCT code](https://clinicaltrials.gov/ct2/help/glossary/ct-identifier-nct#:~:text=A%20unique%20identification%20code%20given,known%20as%20the%20NCT%20Number.).  
-- `last_updated` (required, date), the date in which the entry was last updated in `YYYY/MM/DD` format
+- `publication_date` (required, date), the date in which the source was published in `YYYY-MM-DD` format
+- `last_updated` (required, date), the date in which the entry was last updated in `YYYY-MM-DD` format
 
 #### Types of sources
 The Molecular Oncology Almanac database primarily cites FDA approvals, clinical guidelines, and journal articles. 
