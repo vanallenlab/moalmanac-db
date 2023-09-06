@@ -3,10 +3,12 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## September 2023 release
 Added entries:
-- 
+- (FDA) _BRCA1_ somatic and germline variants and sensitivity to abiraterone acetate in combination with niraparib for patients with metastatic castration-resistant prostate cancer.
+- (FDA) _BRCA2_ somatic and germline variants and sensitivity to abiraterone acetate in combination with niraparib for patients with metastatic castration-resistant prostate cancer.
 
 Revised entries:
 - (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, resolved typo in description.
+- (FDA) _RET_ fusions and sensitivity to pralsetinib, received regular approval from FDA after being previously granted accelerated approval. 
 - All prior entries have been revised to have `last_updated` date be in ISO date format of `YYYY/MM/DD`
 
 ## July 2023 release
