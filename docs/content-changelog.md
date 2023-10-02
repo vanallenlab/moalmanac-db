@@ -3,13 +3,20 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## October 2023 release
 Added entries:
+- (Preclinical) _ATM_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
+- (Preclinical) _BAP1_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
+- (Preclinical) _BARD1_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
 - (Preclinical) _CCNE1_ copy number amplifications and sensitivity to dinaciclib in osteosarcoma.
 - (Preclinical) _CDK4_ copy number amplifications and sensitivity to palbociclib in osteosarcoma.
+- (Preclinical) _CHEK2_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
+- (Preclinical) _FANCA_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
 - (Preclinical) _FGFR1_ copy number amplifications and sensitivity to AZ4547 and PD173074 in osteosarcoma.
 - (Preclinical) _MYC_ copy number amplifications and sensitivity to AT7519 in osteosarcoma.
 - (Preclinical) _PTEN_ copy number deletions and sensitivity to MK-2206 and rapamycin in osteosarcoma.
-- (Preclinical) _RB1_ somatic variants and sensitivity to olaparib in osteosarcoma.
+- (Preclinical) _RB1_ somatic variants and sensitivity to olaparib and palbociclib in osteosarcoma.
+- (Preclinical) _TP53_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
 - (Preclinical) _TP53_ somatic variants and sensitivity to NSC59984 in osteosarcoma.
+
 
 ## September 2023 release
 Added entries:
