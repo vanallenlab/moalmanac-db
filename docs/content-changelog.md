@@ -1,6 +1,21 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## November 2023 release
+
+Revised entries:
+- (Clinical evidence) BRCA2 variants and sensitivity to olaparib in uterine leimyosarcoma was updated to correctly list the URL of the citation.
+- (Preclinical) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with either omipalisib (PI3K/Akt/mTOR) or bevacizumab (VEGF/VEGFR) was revised to add clinical context and expand upon the relationship description. 
+- (Preclinical) _CDKN2A_ deletion and sensitivity to palbociclib in uterine leiomyosarcoma from Williams et al. 2020 was updated for source details.
+- (Preclinical) The PubMed ID associated with PPARGC1A Knockdown in melanoma being associated with unfavorable prognosis was updated. 
+- (Inferential) Signature 10 and associations with immunotherapy from PubMed 28630051 were revised to associate the correct URL and DOI. 
+- (Inferential) _POLD1_ somatic variants and sensitivity to pembrolizumab in colorectal cancer had a period within the NCT code, and it has been removed. 
+- (Inferential) The citation for _PTEN_ copy number deletions and sensitivity to sapanisertib in combination with alpelisib for uterine leiomyosarcoma was revised to include an apostrophe in the article title. 
+
+Removed entries,
+- (Clinical trial) _EGFR_ variants and sensitivity to Durvalumab + Gefitinib in NSCLC was removed [per further studies](https://pubmed.ncbi.nlm.nih.gov/33012782/) observing a negative finding.
+- (Preclinical) _BRAF_ p.V600E and sensitivity to GANT61 was removed because the study findings were independent of melanoma cell line BRAF or NRAS status.
+
 ## October 2023 release
 Added entries:
 - (Preclinical) _ATM_ copy number deletions and sensitivity to talazoparib in osteosarcoma.
