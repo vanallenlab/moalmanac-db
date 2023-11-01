@@ -6,6 +6,7 @@ This month's knowledge base release
 
 Added entries:
 - (FDA) _BCR_::_ABL1_ and sensitivity to bosutinib for pediatric patients with CML.
+- (FDA) _BRAF_ p.V600E and sensitivity to encorafenib in combination with binimetinib for adult patients with NSCLC.
 - (FDA) _IDH1_ p.R132C, p.R132H, and somatic variants and sensitivity to ivosidenib for patients with myelodysplastic syndromes (MDS). 
 
 Revised entries:
