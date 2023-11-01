@@ -2,17 +2,19 @@
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
 ## November 2023 release
+This month's knowledge base release 
 
 Added entries:
-- 
+- (FDA) _BCR_::_ABL1_ and sensitivity to bosutinib for pediatric patients with CML.
+- (FDA) _IDH1_ p.R132C, p.R132H, and somatic variants and sensitivity to ivosidenib for patients with myelodysplastic syndromes (MDS). 
 
 Revised entries:
+- (FDA) _NTRK1/2/3_ fusions and sensitivity to entrectinib were revised due to the FDA's approval for adult or pediatric patients older than 1 month with any solid tumor.
 - (Preclinical) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with either omipalisib (PI3K/Akt/mTOR) or bevacizumab (VEGF/VEGFR) was revised to add clinical context and expand upon the relationship description.  
 - All Mutational Signature relationships (17) have been updated from version 2 to version 3.4. 
 - The citation text was updated for Johung et al. 2013 (PMID: 23897899), Luo et al. 2016 (PMID: 27580028), Cuppens et al. 2017 (PMID: 28232476), and Willliams et al. 2020 (PMID: 28283584), 
 - The DOI and URL were updated for Mouw et al. 2017 (PMID: 28630051) and Seligson et al. 2018 (PMID: 30541756)
 - The NCT code was updated for Le et al. 2015 (PMID: 26028255)
-
 
 Removed entries,
 - (Clinical trial) _EGFR_ variants and sensitivity to Durvalumab + Gefitinib in NSCLC was removed [per further studies](https://pubmed.ncbi.nlm.nih.gov/33012782/) observing a negative finding.
