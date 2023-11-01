@@ -3,14 +3,16 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## November 2023 release
 
+Added entries:
+- 
+
 Revised entries:
-- (Clinical evidence) BRCA2 variants and sensitivity to olaparib in uterine leimyosarcoma was updated to correctly list the URL of the citation.
-- (Preclinical) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with either omipalisib (PI3K/Akt/mTOR) or bevacizumab (VEGF/VEGFR) was revised to add clinical context and expand upon the relationship description. 
-- (Preclinical) _CDKN2A_ deletion and sensitivity to palbociclib in uterine leiomyosarcoma from Williams et al. 2020 was updated for source details.
-- (Preclinical) The PubMed ID associated with PPARGC1A Knockdown in melanoma being associated with unfavorable prognosis was updated. 
-- (Inferential) Signature 10 and associations with immunotherapy from PubMed 28630051 were revised to associate the correct URL and DOI. 
-- (Inferential) _POLD1_ somatic variants and sensitivity to pembrolizumab in colorectal cancer had a period within the NCT code, and it has been removed. 
-- (Inferential) The citation for _PTEN_ copy number deletions and sensitivity to sapanisertib in combination with alpelisib for uterine leiomyosarcoma was revised to include an apostrophe in the article title. 
+- (Preclinical) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with either omipalisib (PI3K/Akt/mTOR) or bevacizumab (VEGF/VEGFR) was revised to add clinical context and expand upon the relationship description.  
+- All Mutational Signature relationships (17) have been updated from version 2 to version 3.4. 
+- The citation text was updated for Johung et al. 2013 (PMID: 23897899), Luo et al. 2016 (PMID: 27580028), Cuppens et al. 2017 (PMID: 28232476), and Willliams et al. 2020 (PMID: 28283584), 
+- The DOI and URL were updated for Mouw et al. 2017 (PMID: 28630051) and Seligson et al. 2018 (PMID: 30541756)
+- The NCT code was updated for Le et al. 2015 (PMID: 26028255)
+
 
 Removed entries,
 - (Clinical trial) _EGFR_ variants and sensitivity to Durvalumab + Gefitinib in NSCLC was removed [per further studies](https://pubmed.ncbi.nlm.nih.gov/33012782/) observing a negative finding.
