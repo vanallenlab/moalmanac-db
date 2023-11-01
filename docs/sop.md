@@ -280,12 +280,11 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Mutational signatures
-Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), primarily version 2 at the moment.
+Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), and currently supports single base substitutions (SBS) signatures from version 3.4. 
 
 ###### Fields
 Molecular data for mutational signatures should be captured in the following fields,
-- `cosmic_signature_number` (required, integer), the integer associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures_v2/), as reported by the citation. 
-- `cosmic_signature_version` (required, integer), the integer associated with the version of COSMIC mutational signatures, as reported by the citation.
+- `cosmic_signature` (required, string), the string associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures/sbs/), either as reported by the citation or mapped from a prior version. 
 
 [Return to Table of Contents](#table-of-contents)
 
