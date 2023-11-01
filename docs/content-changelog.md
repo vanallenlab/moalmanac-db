@@ -14,11 +14,12 @@ Revised entries:
 - (Preclinical) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with either omipalisib (PI3K/Akt/mTOR) or bevacizumab (VEGF/VEGFR) was revised to add clinical context and expand upon the relationship description.  
 - All Mutational Signature relationships (17) have been updated from version 2 to version 3.4. 
 - The citation text was updated for Johung et al. 2013 (PMID: 23897899), Luo et al. 2016 (PMID: 27580028), Cuppens et al. 2017 (PMID: 28232476), and Willliams et al. 2020 (PMID: 28283584), 
-- The DOI and URL were updated for Mouw et al. 2017 (PMID: 28630051) and Seligson et al. 2018 (PMID: 30541756)
+- The DOI and URL were updated for Tesser-Gamba et al. 2012 (PMID: 22154052), Hunter et al. 2014 (PMID: 24937673), Wagle et al. 2014 (PMID: 24265154), Mak et al. 2015 (PMID: 25450872), Fondello et al. 2016 (PMID: 27399807), Hugo et al. 2016 (PMID: 26997480), Ke et al. 2016 (PMID: 27717507), Sung et al. 2016 (PMID: 27793752), George et al. 2017 (PMID: 28228279), Mouw et al. 2017 (PMID: 28630051), Aldubayan et al. 2018 (PMID: 29478780), Seligson et al. 2018 (PMID: 30541756), De Bono et al. 2019, Tewari et al. 2021 (PMID: 34496240). 
 - The NCT code was updated for Le et al. 2015 (PMID: 26028255)
 
 Removed entries,
 - (Clinical trial) _EGFR_ variants and sensitivity to Durvalumab + Gefitinib in NSCLC was removed [per further studies](https://pubmed.ncbi.nlm.nih.gov/33012782/) observing a negative finding.
+- (Clinical trial) _KRAS_ p.G12C and sensitivity to AMG 510 was removed because there are now associated FDA approvals and we will be phasing out abstracts from the knowledge base.
 - (Preclinical) _BRAF_ p.V600E and sensitivity to GANT61 was removed because the study findings were independent of melanoma cell line BRAF or NRAS status.
 
 ## October 2023 release
