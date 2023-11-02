@@ -18,7 +18,11 @@ Revised entries:
 - The NCT code was updated for Le et al. 2015 (PMID: 26028255)
 
 Removed entries,
+- (Guideline) _BCR::ABL1_ and sensitivity to dasatinib, imatinib, and nilotinib in CML to reduce redundency from other CML guideline entries. 
 - (Guideline) _BRAF_ p.V600E and sensitivity to dabrafenib in combination with trametinib in patients with NSCLC. This citation was incorrectly categorized as a Guideline as it references an FDA approval, which has since been added to the knowledge base.  
+- (Guideline) _BRCA1/2_ germline variants and sensitivity to pazopanib in ovarian cancer because the underlying source does not mention this relationship in the context of BRCA1/2. 
+- (Guideline) _BRCA2_ germline variants and sensitivity to olaparib in ovarian cancer, as there was a duplicate record.
+- (Guideline) _KIT_ variants and poor prognosis in head and neck mucosal melanoma, as the citation suggests that head and neck mucosal melanoma has a poor prognosis independent of _KIT_ status.
 - (Clinical trial) _EGFR_ variants and sensitivity to Durvalumab + Gefitinib in NSCLC was removed [per further studies](https://pubmed.ncbi.nlm.nih.gov/33012782/) observing a negative finding.
 - (Clinical trial) _KRAS_ p.G12C and sensitivity to AMG 510 was removed because there are now associated FDA approvals and we will be phasing out abstracts from the knowledge base.
 - (Preclinical) _BRAF_ p.V600E and sensitivity to GANT61 was removed because the study findings were independent of melanoma cell line BRAF or NRAS status.
