@@ -14,7 +14,9 @@ Added entries:
 - (Guideline) _NRAS_ p.G12A, p.G12C, p.G12D, p.G12R, p.G12S, p.G12V, p.G13A, p.G13D, p.G13R, p.G13V, p.Q61E, p.Q61H, p.Q61L, p.Q61P, and p.Q61R and poor prognosis for patients with MDS. 
 - (Guideline) _SETBP1_ p.I865N and poor prognosis for patients with MDS.
 - (Guideline) _SF3B1_ p.I704S and poor prognosis for patients with MDS. 
+- (Guideline) _SRSF2_ p.P95A, p.P95H, p.P95L, p.P95R, and p.P95_R102del and poor prognosis for patients with MDS. 
 - (Guideline) _TP53_ missense, nonsense, splice site, and frameshift variants and poor prognosis for patients with MDS. 
+- (Guideline) _U2AF1_ p.S34A, p.S34F, p.S34Y, p.Q157P, p.Q157R and poor prognosis for patients with MDS.
 
 Revised entries:
 - (FDA) _NTRK1/2/3_ fusions and sensitivity to entrectinib were revised due to the FDA's approval for adult or pediatric patients older than 1 month with any solid tumor.
