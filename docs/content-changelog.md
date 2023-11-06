@@ -2,7 +2,7 @@
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
 ## November 2023 release
-This month's data release features recent FDA approvals, updates of mutational signatures from version 2 to 3.4, updates to the source fields for several citations, removal of several entries, revising format of all clinical guideline citations, and the `publication_date` field has been populated for all current database records.  
+This month's data release features recent FDA approvals, updates of mutational signatures from version 2 to 3.4, updates to the source fields for several citations, removal of several entries, revising format of all clinical guideline citations, and the `publication_date` field has been populated for all current database records.   
 
 Added entries:
 - (FDA) _BCR_::_ABL1_ and sensitivity to bosutinib for pediatric patients with CML.
