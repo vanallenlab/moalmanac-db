@@ -98,9 +98,9 @@ The brand and generic name are needed to cite the source properly and the generi
 The PDF should be saved as `{revised year}-{revised month}-{generic drug name}.pdf` in the `database/fda-labels` folder. 
 
 You can stay up to date on FDA approvals by visiting or subscribing to:
+- [FDA press announcements](https://www.fda.gov/news-events/fda-newsroom/press-announcements)
 - [FDA Hematology/Oncology (Cancer) Approvals & Safety Notifications](https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications), a summary list of all approvals by year.
 - [FDA Oncology on Twitter (@FDAOncology)](https://twitter.com/FDAOncology)
-- [American Association of Cancer Research (AACR) alerts]()
 
 ###### Fields
 FDA approvals will complete fields as follows,
