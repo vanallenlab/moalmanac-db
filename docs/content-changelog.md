@@ -6,9 +6,10 @@ Added entries:
 - 
 
 Revised entries:
-- _EGFR_ p.L858R entries now all contain information for exon and rsid values.
-- _ABL1_ p.T315I entries were revised to have consistent exon and rsid values. 
+- _EGFR_ p.L858R entries now all contain information for exon and rsid values
+- _ABL1_ p.T315I entries were revised to have consistent exon and rsid values
 - _NRAS_ p.G12C entries now include an rsid
+- The OncoTree terms and codes were swapped for _ATK1_ missense variants and p.E17K and sensitivity to MK-2206 in breast cancer and _ATM_ knockdowns in colorectal cancer
 
 ## November 2023 release
 This month's data release features recent FDA approvals, updates of mutational signatures from version 2 to 3.4, updates to the source fields for several citations, removal of several entries, revising format of all clinical guideline citations, and the `publication_date` field has been populated for all current database records. 
