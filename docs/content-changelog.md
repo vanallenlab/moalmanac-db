@@ -1,6 +1,15 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## December 2023 release
+Added entries:
+- 
+
+Revised entries:
+- _EGFR_ p.L858R entries now all contain information for exon and rsid values.
+- _ABL1_ p.T315I entries were revised to have consistent exon and rsid values. 
+- _NRAS_ p.G12C entries now include an rsid
+
 ## November 2023 release
 This month's data release features recent FDA approvals, updates of mutational signatures from version 2 to 3.4, updates to the source fields for several citations, removal of several entries, revising format of all clinical guideline citations, and the `publication_date` field has been populated for all current database records. 
 
