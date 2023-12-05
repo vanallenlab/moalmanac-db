@@ -3,13 +3,13 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## December 2023 release
 Added entries:
-- 
+- (FDA) _ROS1_ rearrangements and sensitivity to repotrectinib in patients with nsclc.
 
 Revised entries:
+- (FDA) _NTRK1/2/3_ rearrangements and sensitivity to larotrectinib were changed from translocation to fusion rearrangement type.
 - _EGFR_ p.L858R entries now all contain information for exon and rsid values
 - _ABL1_ p.T315I entries were revised to have consistent exon and rsid values
 - _NRAS_ p.G12C entries now include an rsid
-- _NTRK1/2/3_ rearrangements and sensitivity to larotrectinib were changed from translocation to fusion rearrangement type.
 - The OncoTree terms and codes were swapped for _ATK1_ missense variants and p.E17K and sensitivity to MK-2206 in breast cancer and _ATM_ knockdowns in colorectal cancer
 
 ## November 2023 release
