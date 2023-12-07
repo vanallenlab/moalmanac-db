@@ -14,6 +14,9 @@ Revised entries:
 - _NRAS_ p.G12C entries now include an rsid
 - The OncoTree terms and codes were swapped for _ATK1_ missense variants and p.E17K and sensitivity to MK-2206 in breast cancer and _ATM_ knockdowns in colorectal cancer
 
+Removed entries:
+- (Clinical evidence) _PTEN_ deletions and resistance to pembrolizumab in uterine leimyoma (Peng et al. 2016) had a duplicate entry in the knowledge base, which has been removed.
+
 ## November 2023 release
 This month's data release features recent FDA approvals, updates of mutational signatures from version 2 to 3.4, updates to the source fields for several citations, removal of several entries, revising format of all clinical guideline citations, and the `publication_date` field has been populated for all current database records. 
 
