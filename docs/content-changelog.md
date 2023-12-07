@@ -3,10 +3,11 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## December 2023 release
 Added entries:
+- (FDA) _PIK3CA_ and _AKT_ somatic variants and _PTEN_ loss of function variants and sensitivity to capivasertib in combination with fulvestrant for patients with breast cancer.
 - (FDA) _ROS1_ rearrangements and sensitivity to repotrectinib in patients with nsclc.
 
 Revised entries:
-- (FDA) _ERBB2_ amplification and sensitivity to pembrolizumab in combination with trastuzumab, fluoropyrimidine- and platinum- containing chemotherapy for patients with gastric or gastroesophageal junction (GEJ) adenocarcinoma.
+- (FDA) _ERBB2_ amplification and sensitivity to pembrolizumab in combination with trastuzumab, fluoropyrimidine- and platinum- containing chemotherapy for patients with gastric or gastroesophageal junction (GEJ) adenocarcinoma received an updated indication from the FDA. 
 - (FDA) _NTRK1/2/3_ rearrangements and sensitivity to larotrectinib were changed from translocation to fusion rearrangement type.
 - _EGFR_ p.L858R entries now all contain information for exon and rsid values
 - _ABL1_ p.T315I entries were revised to have consistent exon and rsid values
