@@ -99,7 +99,7 @@ The PDF should be saved as `{revised year}-{revised month}-{generic drug name}.p
 
 You can stay up to date on FDA approvals by visiting or subscribing to:
 - [FDA press announcements](https://www.fda.gov/news-events/fda-newsroom/press-announcements)
-- [FDA Hematology/Oncology (Cancer) Approvals & Safety Notifications](https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications), a summary list of all approvals by year.
+- [FDA Hematology/Oncology (Cancer) Approvals & Safety Notifications](https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications), a summary list of all approvals by date.
 - [FDA Oncology on Twitter (@FDAOncology)](https://twitter.com/FDAOncology)
 
 ###### Fields
@@ -137,14 +137,14 @@ Guidelines will complete fields as follows,
 - `last_updated`, with the last updated time
 - `doi`, `pmid`, and `nct` will be left blank
 
-The description for guidelines should brief readers on the assertion(s) made in the publication. For example, 
-> Translocations predict sensitivity to tyrosine kinase inhibitors such as imatinib, dasatinib, and nilotinib. Secondary mutations can cause resistance to these agents. Dasatinib or Bosutinib are second-line and subsequent therapies for cytogenetic or hematologic resistance to TKIs.
+The description for guidelines should brief readers on the relationship, following the [NCCN's referencing guidance](https://www.nccn.org/docs/default-source/business-policy/nccn-referencing-guidance.pdf), 
+> [Generic name (brand name)] is recommended by the National Comprehensive Cancer Network® (NCCN®) as a treatment option for [setting and cancer type]
 
-The citation for guidelines should follow the [American Medical Association (AMA)](https://mdanderson.libanswers.com/faq/26180) style format:
-> {Source}. {Tumor type} (Version {version number}.{year}). {URL}. Accessed {month date} {day date}, {year date}.
+The citation for guidelines should follow the [NCCN's referencing guidance](https://www.nccn.org/docs/default-source/business-policy/nccn-referencing-guidance.pdf): 
+> Referenced with permission from the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Guideline Name V.X.202X. © National Comprehensive Cancer Network, Inc. 202X. All rights reserved. Accessed Month and Day, Year]. To view the most recent and complete version of the guideline, go online to NCCN.org.
 
 For example,
-> National Comprehensive Cancer Network. Chronic Myelogenous Leukemia (Version 1.2016). https://www.nccn.org/professionals/physician_gls/pdf/cml.pdf. Accessed November 5, 2016.
+> Referenced with permission from the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Myelodysplastic Syndromes V.2.2023. © National Comprehensive Cancer Network, Inc. 2023. All rights reserved. Accessed November 2, 2023. To view the most recent and complete version of the guideline, go online to NCCN.org.
 
 [Return to Table of Contents](#table-of-contents)
 

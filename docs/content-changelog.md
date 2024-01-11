@@ -1,6 +1,13 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## January 2024 release
+Added entries:
+- (FDA) _ERBB2_ amplification and sensitivity to neratinib in combination with capecitabine for patients with breast cancer.
+
+Revised entries:
+- (FDA) _ERBB2_ amplification and sensitivity to neratinib for patients with breast cancer, received an updated description and citation.
+
 ## December 2023 release
 Added entries:
 - (FDA) _PIK3CA_ and _AKT_ somatic variants and _PTEN_ loss of function variants and sensitivity to capivasertib in combination with fulvestrant for patients with breast cancer.
