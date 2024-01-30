@@ -6,6 +6,7 @@ Added entries:
 - (FDA) _BRAF_ p.V600E/K and sensitivity to vemurafenib for patients with Erdheim-Chester disease. 
 
 Revised entries:
+- (FDA) _BRCA1/2_ somatic variants and sensitivity to rucaparib in fallopean tube cancer had the oncotree term updated to High-Grade Serous Fallopian Tube Cancer.
 - (FDA) _FGFR3_ fusions, p.R248C, p.S249C, p.G370C, and p.Y373C and sensitivity to erdafitinib for patients urothelial carcinoma received an updated approval.
 - "Oncogenic Mutations" was removed from the `variant_annotation` field from all 10 records with that value.
 
