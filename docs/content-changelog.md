@@ -2,6 +2,9 @@
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
 ## February 2024 release
+Added entries:
+- (FDA) _BRAF_ p.V600E/K and sensitivity to vemurafenib for patients with Erdheim-Chester disease. 
+
 Revised entries:
 - (FDA) _FGFR3_ fusions, p.R248C, p.S249C, p.G370C, and p.Y373C and sensitivity to erdafitinib for patients urothelial carcinoma received an updated approval.
 
