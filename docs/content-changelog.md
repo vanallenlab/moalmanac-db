@@ -7,6 +7,7 @@ Added entries:
 
 Revised entries:
 - (FDA) _FGFR3_ fusions, p.R248C, p.S249C, p.G370C, and p.Y373C and sensitivity to erdafitinib for patients urothelial carcinoma received an updated approval.
+- "Oncogenic Mutations" was removed from the `variant_annotation` field from all 10 records with that value.
 
 Removed entries:
 - (FDA) _FGFR2_ fusions and sensitivity to erdafitinib for patients urothelial carcinoma. The FDA amended their prior accelerated approval for erdafitinib, removing susceptible _FGFR2_ alterations from the indication.
