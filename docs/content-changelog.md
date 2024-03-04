@@ -4,7 +4,12 @@ The following changes have been made to the content catalogued within the Molecu
 ## March 2024 release
 Added entries:
 - (FDA) _EGFR_ exon 20 insertions and sensitivity to amivantamab in combination with carboplatin and pemetrexed for patients with non-small cell lung cancer.
-- 
+- (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib in combination with cisplatin and pemetrexed for patients with locally advanced or metastatic non-small cell lung cancer.
+- (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib for patients with metastatic non-small cell lung cancer.
+
+Revised entries:
+- (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, updated citation and publication date to reflect March 2017 approval (from accelerated approval) date for this indication.
+- (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib an an adjuvant therapy for patients with metastatic non-small cell lung cancer, updated publication date from 2020-12-01 to 2020-12-11.
 
 ## February 2024 release
 Added entries:
