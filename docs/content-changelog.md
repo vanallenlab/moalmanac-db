@@ -15,7 +15,7 @@ Revised entries:
 - (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, updated citation and publication date to reflect March 2017 approval (from accelerated approval) date for this indication.
 - (FDA) _EGFR_ exon 20 insertions and sensitivity to amivantamab-vmjw, updated publication date from 2021-05-01 to 2021-05-21. 
 - (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib as an adjuvant therapy for patients with metastatic non-small cell lung cancer, updated publication date from 2020-12-01 to 2020-12-11.
-- (FDA) _MET_ exon 14 splice site and deletion variants (exon 14 skipping) and sensitivity to crizotinib for patients with metastatic non-small cell lung cancer was updated to reflect the change from accelerated approval to approval in August 2022.
+- (FDA) _MET_ exon 14 splice site and deletion variants (exon 14 skipping) and sensitivity to capmatinib for patients with metastatic non-small cell lung cancer was updated to reflect the change from accelerated approval to approval in August 2022.
 - (FDA) _ROS1_ fusions and sensitivity to crizotinib, updated publication date from 2016-06-01 to 2016-03-11.
 
 Removed entries:
