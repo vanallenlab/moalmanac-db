@@ -6,10 +6,17 @@ Added entries:
 - (FDA) _EGFR_ exon 20 insertions and sensitivity to amivantamab in combination with carboplatin and pemetrexed for patients with non-small cell lung cancer.
 - (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib in combination with cisplatin and pemetrexed for patients with locally advanced or metastatic non-small cell lung cancer.
 - (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib for patients with metastatic non-small cell lung cancer.
+- (FDA) _MET_ splice site and deletion variants (exon 14 skipping) and sensitivity to tepotinib for patients with metastatic non-small cell lung cancer. 
 
 Revised entries:
 - (FDA) _EGFR_ p.T790M and sensitivity to osimertinib, updated citation and publication date to reflect March 2017 approval (from accelerated approval) date for this indication.
 - (FDA) _EGFR_ exon 19 deletions or p.L858R and sensitivity to osimertinib an an adjuvant therapy for patients with metastatic non-small cell lung cancer, updated publication date from 2020-12-01 to 2020-12-11.
+
+Removed entries:
+- (FDA) _MET_ exon 14 nonsense variants and sensitivity to cabmatinib in patients with non-small cell lung cancer.
+- (Guideline) _MET_ exon 14 nonsense variants and sensitivity to crizotinib in patients with non-small cell lung cancer.
+
+The U.S. FDA also granted accelerated approval to [lifileucel for patients with unresectable or metastatic melanoma](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-lifileucel-unresectable-or-metastatic-melanoma), but a drug label is not yet present for lifileucel.
 
 ## February 2024 release
 Added entries:
