@@ -1,6 +1,11 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## March 2024 release
+Added entries:
+- (FDA) _EGFR_ exon 20 insertions and sensitivity to amivantamab in combination with carboplatin and pemetrexed for patients with non-small cell lung cancer.
+- 
+
 ## February 2024 release
 Added entries:
 - (FDA) _BRAF_ p.V600E/K and sensitivity to vemurafenib for patients with Erdheim-Chester disease. 
