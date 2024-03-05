@@ -11,7 +11,7 @@
     * [Evidence](#evidence-sources)
         * [FDA approvals](#fda-approvals)
         * [Guidelines](#guidelines)
-        * [Abstracts and journal articles](#abstracts-and-journal-articles)
+        * [Journal articles](#journal-articles)
     * [Molecular features](#molecular-features)
         * [Aneuploidy](#aneuploidy)
         * [Copy number alterations](#copy-number-alterations)
@@ -71,10 +71,10 @@ Molecular Oncology Almanac is a _source centric_ knowledge base, all items must 
 
 #### Fields
 - `description` (required, string), a free text description of the source and assertion.
-- `source_type` (required, string), the type of source. As of this writing, four exist: Abstract, Clinical trial, FDA, Guideline, and Journal. 
+- `source_type` (required, string), the type of source. As of this writing, four exist: Clinical trial, FDA, Guideline, and Journal. 
 - `citation` (required, string), the citation for the source.
 - `url` (required, string), a URL at which the source was accessed.
-- `doi` (optional, string), if the source is an abstract or journal article, please include the [DOI](https://www.doi.org/).
+- `doi` (optional, string), if the source is a journal article, please include the [DOI](https://www.doi.org/).
 - `pmid` (optional, integer), if a [PubMed ID (pmid)](https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/) exists for the source, please include it. 
 - `nct` (optional, string), if the source is a clinical trial, please include the [NCT code](https://clinicaltrials.gov/ct2/help/glossary/ct-identifier-nct#:~:text=A%20unique%20identification%20code%20given,known%20as%20the%20NCT%20Number.).  
 - `publication_date` (required, date), the date in which the source was published in `YYYY-MM-DD` format
@@ -148,11 +148,11 @@ For example,
 
 [Return to Table of Contents](#table-of-contents)
 
-##### Abstracts and Journal articles
+##### Journal articles
 PDFs should be saved as `{publication year}-{first author last name}.pdf` in the `database/papers` folder. In the event that another paper is already named by this convention, a modifier may be added to the filename, such as adding a main idea after another dash; for example, `2014-VanAllen-ERCC2.pdf`.
 
 ###### Fields
-Abstracts and journal articles will complete fields as follows,
+Journal articles will complete fields as follows,
 - `description`, see below 
 - `source_type` with `Journal`
 - `citation`, see below
@@ -162,10 +162,10 @@ Abstracts and journal articles will complete fields as follows,
 - `pmid`, with the PubMed ID for the article, if it exists
 - `nct`, with the National Clinical Trial code if the article is related to a clinical trial. Otherwise this field may be left blank.
 
-The description for abstracts or journal articles should contain a few sentences briefing readers of the assertion(s) made in the publication. These will be displayed in the clinical actionability reports produced by the method. For example, 
+The description for journal articles should contain a few sentences briefing readers of the assertion(s) made in the publication. These will be displayed in the clinical actionability reports produced by the method. For example, 
 > BRAF V600E mutations were associated with sensitivity to the BRAF inhibitor PLX-4032 in a study of 109 microdissected pancreatic ductal adenocarcinoma patients.
 
-The citation for abstracts or journal articles should follow the [American Medical Association (AMA)](https://owl.purdue.edu/owl/research_and_citation/ama_style/index.html) style format. [Online tools](https://citation.crosscite.org/) exist to generate such citations from PubMed IDs, URLs, or DOIs, but please double check the entries. 
+The citation for journal articles should follow the [American Medical Association (AMA)](https://owl.purdue.edu/owl/research_and_citation/ama_style/index.html) style format. [Online tools](https://citation.crosscite.org/) exist to generate such citations from PubMed IDs, URLs, or DOIs, but please double check the entries. 
 
 For example, 
 > Witkiewicz AK, Mcmillan EA, Balaji U, et al. Whole-exome sequencing of pancreatic cancer defines genetic diversity and therapeutic targets. Nat Commun. 2015;6:6744.
