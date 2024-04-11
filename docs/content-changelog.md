@@ -12,7 +12,7 @@ Revised entries:
 Removed entries:
 - 
 
-All records were also updated to have a `_deprecated` field, which will is a boolean value to hide the record from appearing on https://moalmanac.org. 
+All records were also updated to have a `_deprecated` field, which is a boolean value to hide the record from appearing on https://moalmanac.org. 
 
 ## March 2024 release
 Added entries:
