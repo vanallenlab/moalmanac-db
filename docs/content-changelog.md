@@ -3,7 +3,10 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## April 2024 release
 Added entries:
-- 
+- (FDA) ABL1 p.T315I and sensitivity to ponatinib for patients with acute lymphoid leukemia.
+- (FDA) ABL1 p.T315I and sensitivity to ponatinib for patients with chronic myeloid leukemia.
+- (FDA) BCR::ABL1 and sensitivity to ponatinib in combination with chemotherapy for patients with acute lymphoid leukemia.
+- (FDA) BCR::ABL1 and sensitivity to ponatinib for patients with acute lymphoid leukemia.
 
 Revised entries:
 - The therapeutic strategy for two records with `ROS inhibition` were changed to `ROS1 inhibition`
