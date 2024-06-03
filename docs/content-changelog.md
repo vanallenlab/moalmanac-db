@@ -10,6 +10,7 @@ Revised entries:
 - (FDA) _RET_ fusions and sensitivity to selpercatinib for patients with solid tumors is now indicated for pediatric patients aged 2 and older, in addition to adult patients.
 - (FDA) _RET_ fusions and sensitivity to selpercatinib for patients with thyroid cancer is now indicated for pediatric patients aged 2 and older, revised from age 12 or older. 
 - (FDA) _RET_ variants and sensitivity to selpercatinib for patients with medullary thyroid cancer is now indicated for pediatric patients aged 2 and older, revised from age 12 or older.
+- (FDA) _RET_ fusion and sensitivity to selpercatinib for patients with non-small cell lung cancer's description and publication date were revised. 
 
 ## April 2024 release
 Added entries:
