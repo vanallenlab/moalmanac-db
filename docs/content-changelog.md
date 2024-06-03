@@ -1,6 +1,16 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## June 2024 release
+Added entries:
+- (FDA) _ALK_ fusions and sensitivity to alectinib for patients with non-small cell lung cancer.
+- (FDA) _BRAF_ p.V600E/K (p.V600 variants), rearrangements, and fusions and sensitivity to tovorafenib for patients with low-grade glioma.
+
+Revised entries:
+- (FDA) _RET_ fusions and sensitivity to selpercatinib for patients with solid tumors is now indicated for pediatric patients aged 2 and older, in addition to adult patients.
+- (FDA) _RET_ fusions and sensitivity to selpercatinib for patients with thyroid cancer is now indicated for pediatric patients aged 2 and older, revised from age 12 or older. 
+- (FDA) _RET_ variants and sensitivity to selpercatinib for patients with medullary thyroid cancer is now indicated for pediatric patients aged 2 and older, revised from age 12 or older.
+
 ## April 2024 release
 Added entries:
 - (FDA) ABL1 p.T315I and sensitivity to ponatinib for patients with acute lymphoid leukemia.
