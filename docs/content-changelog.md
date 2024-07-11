@@ -1,6 +1,14 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## July 2024 release
+Added entries:
+- (FDA) _KRAS_ p.G12C and sensitivity to adagrasib in combination with cetuximab for patients with colorectal cancer received accelerated approval. 
+- (FDA) _NTRK1/2/3_ gene fusions and sensitivity to repotrectinib for patients with solid tumors received accelerated approval.
+
+Revised entries:
+- (FDA) _RET_ fusions and sensitivity to selpercatinib for patients with thyroid cancer received traditional approval from the FDA, from accelerated approval.
+
 ## June 2024 release
 Added entries:
 - (FDA) _ALK_ fusions and sensitivity to alectinib for patients with non-small cell lung cancer.
