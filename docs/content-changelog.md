@@ -3,6 +3,7 @@ The following changes have been made to the content catalogued within the Molecu
 
 ## July 2024 release
 Added entries:
+- (FDA) _KRAS_ p.G12C and sensitivity to adagrasib in combination with cetuximab for patients with colorectal cancer received accelerated approval. 
 - (FDA) _NTRK1/2/3_ gene fusions and sensitivity to repotrectinib for patients with solid tumors received accelerated approval.
 
 Revised entries:
