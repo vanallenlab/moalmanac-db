@@ -1,6 +1,11 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## September 2024 release
+Added entries:
+- (FDA) _IDH1_ and _IDH2_ somatic variants and sensitivity to vorasidenib for patients with astrocytoma and oligodendroglioma. Specifically, _IDH1_ p.R132C, p.R132G, p.R132H, p.R132L, p.R132S, and _IDH2_ p.R172K and p.172G.
+- (FDA) _EGFR_ p.L858R and exon 19 deletions and sensitivity to lazertinib in combination with amivantamab for patients with non-small cell lung cancer.
+
 ## July 2024 release
 Added entries:
 - (FDA) _KRAS_ p.G12C and sensitivity to adagrasib in combination with cetuximab for patients with colorectal cancer received accelerated approval. 
