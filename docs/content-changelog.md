@@ -1,6 +1,10 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## October 2024 release
+Revised entries:
+- (Clinical evidence) The PMID for Bostner et al. was incorrected listed as "7486065" instead of "17486065". The evidence category was also changed from Clinical evidence to Clinical trial. Thank you, [Cameron Grisdale](https://github.com/vanallenlab/moalmanac-browser/issues/45)! 
+
 ## September 2024 release
 Added entries:
 - (FDA) _IDH1_ and _IDH2_ somatic variants and sensitivity to vorasidenib for patients with astrocytoma and oligodendroglioma. Specifically, _IDH1_ p.R132C, p.R132G, p.R132H, p.R132L, p.R132S, and _IDH2_ p.R172K and p.172G.
