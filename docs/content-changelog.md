@@ -12,7 +12,7 @@ Revised entries:
 - (FDA) Six records for capivasertib in combination with fulvestrant incorrectly categorized fulvestrant as a targeted therapy. It has been updated to be a hormone therapy, and the `therapy_type` for each of these records has been updated to be "Combination therapy".
 - (Clinical evidence) The PMID for Bostner et al. was incorrected listed as "7486065" instead of "17486065". The evidence category was also changed from Clinical evidence to Clinical trial. Thank you, [Cameron Grisdale](https://github.com/vanallenlab/moalmanac-browser/issues/45)! 
 
-Fulvestrant was incorrectly categorized as a targeted therapy on several records, and has been recategorized as a hormone therapy.
+Four records listed therapy type either as "Targeted therapy + Chemotherapy", "Targeted therapy + Chemotherapy + Chemotherapy", or "Chemotherapy + Targeted therapy + Chemotherapy" instead of "Combination therapy". These records have been updated.
 
 ## September 2024 release
 Added entries:
