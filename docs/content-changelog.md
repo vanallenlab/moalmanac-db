@@ -2,6 +2,9 @@
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
 ## October 2024 release
+Added entries:
+- (FDA) _EGFR_ p.L858R and exon 19 deletions and sensitivty to amivantamab-vmjw in combination with carboplatin and pemetrexed for patients with non-small cell lung cancer
+
 Revised entries:
 - (Clinical evidence) The PMID for Bostner et al. was incorrected listed as "7486065" instead of "17486065". The evidence category was also changed from Clinical evidence to Clinical trial. Thank you, [Cameron Grisdale](https://github.com/vanallenlab/moalmanac-browser/issues/45)! 
 
