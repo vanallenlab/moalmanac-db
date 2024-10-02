@@ -8,8 +8,11 @@ Added entries:
 
 Revised entries:
 - (FDA) [_RET_ somatic variants and sensitivity to selpercatinib for the treatment of patients with medullary thyroid cancer received an approval from the FDA, previously accelerated approval.](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-medullary-thyroid-cancer-ret-mutation)
-- (FDA) The description of three records corresponding to FDA approved indications for osimertinib were edited for clarity. 
+- (FDA) The `description` of three records corresponding to FDA approved indications for osimertinib were edited for clarity. 
+- (FDA) Six records for capivasertib in combination with fulvestrant incorrectly categorized fulvestrant as a targeted therapy. It has been updated to be a hormone therapy, and the `therapy_type` for each of these records has been updated to be "Combination therapy".
 - (Clinical evidence) The PMID for Bostner et al. was incorrected listed as "7486065" instead of "17486065". The evidence category was also changed from Clinical evidence to Clinical trial. Thank you, [Cameron Grisdale](https://github.com/vanallenlab/moalmanac-browser/issues/45)! 
+
+Fulvestrant was incorrectly categorized as a targeted therapy on several records, and has been recategorized as a hormone therapy.
 
 ## September 2024 release
 Added entries:
