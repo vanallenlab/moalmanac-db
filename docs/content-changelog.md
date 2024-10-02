@@ -7,6 +7,7 @@ Added entries:
 - (FDA) _EGFR_ p.L858R and exon 19 deletions and sensitivty to osimertinib for the treatment of patients with non-small cell lung cancer
 
 Revised entries:
+- (FDA) The description of three records corresponding to FDA approved indications for osimertinib were edited for clarity. 
 - (Clinical evidence) The PMID for Bostner et al. was incorrected listed as "7486065" instead of "17486065". The evidence category was also changed from Clinical evidence to Clinical trial. Thank you, [Cameron Grisdale](https://github.com/vanallenlab/moalmanac-browser/issues/45)! 
 
 ## September 2024 release
