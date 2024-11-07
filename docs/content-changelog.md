@@ -1,6 +1,14 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## November 2024 release
+Added entries:
+- (FDA) [_BCR_::_ABL1_ and sensitivity to asciminib](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-asciminib-newly-diagnosed-chronic-myeloid-leukemia) for patients with chronic myeloid leukemia in chronic phase.
+- (FDA) _BCR_::_ABL1_ and _ABL1_ p.T315I and sensitivity to asciminib for patients with chronic myeloid leukemia in chronic phase.
+
+Revised entries:
+- (FDA) _BCR_::_ABL1_ and sensitivity to asciminib for patients with previously treated chronic myeloid leukemia in chronic phase was generalized to be for previously treatmented patients, instead of specifically for previously treated with two or more TKIs.
+
 ## October 2024 release
 Added entries:
 - (FDA) [_EGFR_ p.L858R and exon 19 deletions and sensitivty to amivantamab-vmjw in combination with carboplatin and pemetrexed for the treatment of patients with non-small cell lung cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-amivantamab-vmjw-carboplatin-and-pemetrexed-non-small-cell-lung-cancer-egfr-exon-19).
