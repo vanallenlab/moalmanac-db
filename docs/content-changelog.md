@@ -1,6 +1,11 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## December 2024 release
+Added entries:
+- (FDA) [_KMT2A_ translocations and sensitivity to revumenib](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-revumenib-relapsed-or-refractory-acute-leukemia-kmt2a-translocation) for patients with acute leukemia, entered as acute myeloid leukemia and acute lymphoid leukemia.
+- 
+
 ## November 2024 release
 Added entries:
 - (FDA) [_BCR_::_ABL1_ and sensitivity to asciminib](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-asciminib-newly-diagnosed-chronic-myeloid-leukemia) for patients with chronic myeloid leukemia in chronic phase.
