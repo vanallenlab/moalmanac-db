@@ -1,6 +1,14 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## January 2024
+Revised entries:
+
+- `pmid` was set to integers for X records with the following `pmid` values:
+- `url` was pointing to an older product label for one record with the following `citation`: "Puma Biotechnology, Inc. Nerlynx (neratinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/208051s009lbl.pdf. Revised June 2021. Accessed January 11, 2024."
+- `doi` for three records was incorrectly listed as "10.1016/j.humpath.2011803" and instead of "10.1016/j.humpath.2011.08.003". The `url` for these records was based on the incorrect `doi`, and was also corrected.
+- `citation` was incorrectly listed for one record with the `url` "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s088lbl.pdf". The citation was updated.
+
 ## December 2024 release
 Added entries:
 - (FDA) [_KMT2A_ translocations and sensitivity to revumenib](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-revumenib-relapsed-or-refractory-acute-leukemia-kmt2a-translocation) for adult and pediatric patients 1 year and older with acute leukemia, entered as acute myeloid leukemia and acute lymphoid leukemia.
