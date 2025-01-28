@@ -135,7 +135,7 @@ def load_json(file: str) -> list[dict]:
         file (str): Path to the JSON file.
 
     Returns:
-        dict: Parsed data from the JSON file.
+        list[dict]: Parsed data from the JSON file.
 
     Raises:
         FileNotFoundError: If the file does not exist.
