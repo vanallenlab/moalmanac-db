@@ -35,7 +35,7 @@ class Dereference:
     @classmethod
     def integer(cls, records: list[dict], referenced_key: str, referenced_records: list[dict], new_key_name: str) -> list[dict]:
         """
-        Dereferences a key for each record in records, presuming that the corresponding value is an integer.
+        Dereferences a key for each record in records, where the key's value references a single record (i.e. is an integer).
 
         Args:
             records (list[dict]): list of dictionaries that require a key to be dereferenced.
