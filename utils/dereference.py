@@ -9,7 +9,7 @@ class Dereference:
     """
 
     @staticmethod
-    def get_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> list[dict]:
+    def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> list[dict]:
         """
         Retrieves records where a specific field matches a given value.
 
@@ -53,7 +53,7 @@ class Dereference:
             if not referenced_key in keys:
                 raise KeyError(f"Key '{referenced_key}' not found in {record}.")
 
-            referenced_record = cls.get_by_key_value(
+            referenced_record = cls.fetch_records_by_key_value(
                 records=referenced_records,
                 key='id',
                 value=record[referenced_key]
@@ -94,7 +94,7 @@ class Dereference:
 
             _values = []
             for value in record[referenced_key]:
-                _value = cls.get_by_key_value(
+                _value = cls.fetch_records_by_key_value(
                     records=referenced_records,
                     key='id',
                     value=value
