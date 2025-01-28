@@ -73,7 +73,7 @@ class Dereference:
     @classmethod
     def list(cls, records: list[dict], referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> list[dict]:
         """
-        Dereferences a key for each record in records, presuming that the corresponding value is a list.
+        Dereferences a key for each record in records, where the key's value can store multiple records (i.e. is a list).
 
         Args:
             records (list[dict]): list of dictionaries that require a key to be dereferenced.
