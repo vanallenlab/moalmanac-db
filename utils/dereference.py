@@ -39,9 +39,9 @@ class Dereference:
 
         Args:
             records (list[dict]): list of dictionaries that require a key to be dereferenced.
-            referenced_key (str): name of the key in records to dereference.
+            referenced_key (str): name of the key in `records` to dereference.
             referenced_records (str): list of dictionaries that the referenced_key refers to.
-            new_key_name (str): name of the key in records to replace referenced_key after dereference.
+            new_key_name (str): key to store dereferenced record in `records`. this key replaces referenced_key.
 
         Raises:
             KeyError: If the referenced_key is not found in the record.
