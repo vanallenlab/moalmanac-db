@@ -8,7 +8,7 @@ Utility scripts for use with the Molecular Oncology Almanac (moalmanac) database
 
 # Scripts
 ## dereference.py
-`dereference.py` creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing referenced JSON files. By default, these are located in the `referenced/` folder of this repository.
+`dereference.py` creates a single JSON file for the moalmanac database by dereferencing referenced JSON files. By default, these are located in the `referenced/` folder of this repository.
 
 ### Usage
 Optional arguments:
