@@ -1,7 +1,7 @@
-# moalmanac-db utils
-Utility scripts for use with the Molecular Oncology Almanac (moalmanac) database. 
+# Utility scripts for the Molecular Oncology Almanac database
+This directory contains a collection of utility scripts designed to facilitate the management and processing of the Molecular Oncology Almanac (moalmanac) database. 
 
-**The default arguments for scripts in this directory assume that you are running them from the root directory of this repository.**
+**Note: The default arguments for scripts within this directory assume execution from the root directory of this repository.**
 
 # Table of contents
 - [dereference.py](#dereferencepy)
