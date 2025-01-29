@@ -156,9 +156,9 @@ def write_json_dict(data: dict, keys_list: list[str], file:str) -> None:
     Write json from input object of dictionary
 
     Args:
-        data (dict): A object of type dictionary, though one key value should be a list of dictionaries (records)
+        data (dict): A object of type dictionary, though one key value should be a list of dictionaries (records).
         keys_list (list[str]): A list of keys that are of type list[dict] (records).
-        file (str): The output file path
+        file (str): The output file path.
 
     Raises:
         TypeError: If the keys provided with keys_list are not a list of dictionaries.
@@ -192,8 +192,8 @@ def write_json_records(data: list[dict], file:str) -> None:
     Writes json from input object of list[dict]
 
     Args:
-        data (list[dict]): A object of type list with elements as dictionaries
-        file (str): The output file path
+        data (list[dict]): A object of type list with elements as dictionaries.
+        file (str): The output file path.
 
     Raises:
         TypeError: If the input is not a list of dictionaries.
@@ -221,6 +221,17 @@ def write_json_records(data: list[dict], file:str) -> None:
 
 
 def main(input_paths, output):
+    """
+    Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
+    referenced JSON files. By default, these are located in the referenced/ folder of this repository.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+        output (str): The output file to write the dereferenced JSON to.
+
+    Returns:
+        list[dict]: Dereferenced database.
+    """
     about = load_json(file=input_paths['about'])
     agents = load_json(file=input_paths['agents'])
     biomarkers = load_json(file=input_paths['biomarkers'])
@@ -325,6 +336,8 @@ def main(input_paths, output):
         keys_list=['content'],
         file=output
     )
+
+    return dereferenced
 
 
 if __name__ =="__main__":
