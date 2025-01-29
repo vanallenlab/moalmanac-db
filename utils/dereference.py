@@ -1,36 +1,12 @@
 import argparse
-import json
-import typing
+
+from . import json_utils
 
 
 class Dereference:
     """
     Functions to dereference, depending on the field type to dereference
     """
-
-    @staticmethod
-    def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> list[dict]:
-        """
-        Retrieves records where a specific field matches a given value.
-
-        Args:
-            records (list[dict]): A list of dictionaries to search.
-            value (any): The value to match.
-            key (str): The field to check (default: "id").
-            warn (bool): Whether to warn and exit if the number of results is not 1 (default: True).
-
-        Returns:
-            list[dict]: A list of matching records.
-
-        Raises:
-            ValueError: If the number of results is not exactly 1 and warnings are enabled.
-        """
-        results = [record for record in records if record.get(key) == value]
-
-        if warn and len(results) != 1:
-            ValueError(f"Warning: Expected 1 result for {key} == {value}, found {len(results)}.")
-
-        return results
 
     @classmethod
     def integer(cls, records: list[dict], referenced_key: str, referenced_records: list[dict], new_key_name: str) -> list[dict]:
@@ -53,7 +29,7 @@ class Dereference:
             if not referenced_key in keys:
                 raise KeyError(f"Key '{referenced_key}' not found in {record}.")
 
-            referenced_record = cls.fetch_records_by_key_value(
+            referenced_record = json_utils.fetch_records_by_key_value(
                 records=referenced_records,
                 key='id',
                 value=record[referenced_key]
@@ -94,7 +70,7 @@ class Dereference:
 
             _values = []
             for value in record[referenced_key]:
-                _value = cls.fetch_records_by_key_value(
+                _value = json_utils.fetch_records_by_key_value(
                     records=referenced_records,
                     key='id',
                     value=value
@@ -102,122 +78,6 @@ class Dereference:
                 _values.append(_value[0])
             record[referenced_key] = _values
         return records
-
-
-    @staticmethod
-    def rename_key(dictionary: dict, old_key: str, new_key: str) -> None:
-        """
-        Renames a key in a dictionary.
-
-        Args:
-            dictionary (dict): The dictionary to modify.
-            old_key (str): The key to rename.
-            new_key (str): The new key name.
-
-        Raises:
-            KeyError: If the old_key does not exist in the dictionary.
-            ValueError: If the new_key already exists in the dictionary.
-        """
-        if old_key not in dictionary:
-            raise KeyError(f"Key '{old_key}' not found in the dictionary.")
-
-        if new_key in dictionary:
-            raise ValueError(f"Key '{new_key}' already exists in the dictionary.")
-
-        dictionary[new_key] = dictionary.pop(old_key)
-
-
-def load_json(file: str) -> list[dict]:
-    """
-    Loads and parses a JSON file.
-
-    Args:
-        file (str): Path to the JSON file.
-
-    Returns:
-        list[dict]: Parsed data from the JSON file.
-
-    Raises:
-        FileNotFoundError: If the file does not exist.
-        json.JSONDecodeError: If the file contains invalid JSON.
-    """
-    try:
-        with open(file, "r") as fp:
-            data = json.load(fp)
-        return data
-    except FileNotFoundError as e:
-        raise FileNotFoundError(f"File not found: {file}") from e
-    except json.JSONDecodeError as e:
-        raise json.JSONDecodeError(f"Invalid JSON in file: {file}", e.doc, e.pos)
-
-
-def write_json_dict(data: dict, keys_list: list[str], file:str) -> None:
-    """
-    Write json from input object of dictionary
-
-    Args:
-        data (dict): A object of type dictionary, though one key value should be a list of dictionaries (records).
-        keys_list (list[str]): A list of keys that are of type list[dict] (records).
-        file (str): The output file path.
-
-    Raises:
-        TypeError: If the keys provided with keys_list are not a list of dictionaries.
-        ValueError: If the JSON serialization fails.
-    """
-
-    if not isinstance(data, dict):
-        raise TypeError("The input data must be of type dict")
-
-    for key in keys_list:
-        if not all(isinstance(item, dict) for item in data[key]):
-            raise TypeError(f"All elements in the list must be dictionaries for key {key}.")
-
-    try:
-        # Serialize python object (data) to a JSON formatted string
-        json_object = json.dumps(data, indent=4)
-    except (TypeError, ValueError) as e:
-        raise ValueError(f"Failed to serialize the object to JSON: {e}")
-
-    try:
-        # Write json string to the specified file
-        with open(file, "w") as outfile:
-            outfile.write(json_object)
-        print(f"JSON successfully written to {file}")
-    except IOError as e:
-        raise IOError(f"Failed to write to file {file}: {e}")
-
-
-def write_json_records(data: list[dict], file:str) -> None:
-    """
-    Writes json from input object of list[dict]
-
-    Args:
-        data (list[dict]): A object of type list with elements as dictionaries.
-        file (str): The output file path.
-
-    Raises:
-        TypeError: If the input is not a list of dictionaries.
-        ValueError: If the JSON serialization fails.
-    """
-    if not isinstance(data, list):
-        raise TypeError("The input data must be of type list")
-
-    if not all(isinstance(item, dict) for item in data):
-        raise TypeError("All elements in the list must be dictionaries.")
-
-    try:
-        # Serialize python object (data) to a JSON formatted string
-        json_object = json.dumps(data, indent=4)
-    except (TypeError, ValueError) as e:
-        raise ValueError(f"Failed to serialize the object to JSON: {e}")
-
-    try:
-        # Write json string to the specified file
-        with open(file, "w") as outfile:
-            outfile.write(json_object)
-        print(f"JSON successfully written to {file}")
-    except IOError as e:
-        raise IOError(f"Failed to write to file {file}: {e}")
 
 
 def main(input_paths, output):
@@ -232,18 +92,18 @@ def main(input_paths, output):
     Returns:
         list[dict]: Dereferenced database.
     """
-    about = load_json(file=input_paths['about'])
-    agents = load_json(file=input_paths['agents'])
-    biomarkers = load_json(file=input_paths['biomarkers'])
-    contributions = load_json(file=input_paths['contributions'])
-    diseases = load_json(file=input_paths['diseases'])
-    documents = load_json(file=input_paths['documents'])
-    genes = load_json(file=input_paths['genes'])
-    indications = load_json(file=input_paths['indications'])
-    organizations = load_json(file=input_paths['organizations'])
-    propositions = load_json(file=input_paths['propositions'])
-    statements = load_json(file=input_paths['statements'])
-    therapies = load_json(file=input_paths['therapies'])
+    about = json_utils.load(file=input_paths['about'])
+    agents = json_utils.load(file=input_paths['agents'])
+    biomarkers = json_utils.load(file=input_paths['biomarkers'])
+    contributions = json_utils.load(file=input_paths['contributions'])
+    diseases = json_utils.load(file=input_paths['diseases'])
+    documents = json_utils.load(file=input_paths['documents'])
+    genes = json_utils.load(file=input_paths['genes'])
+    indications = json_utils.load(file=input_paths['indications'])
+    organizations = json_utils.load(file=input_paths['organizations'])
+    propositions = json_utils.load(file=input_paths['propositions'])
+    statements = json_utils.load(file=input_paths['statements'])
+    therapies = json_utils.load(file=input_paths['therapies'])
 
     # biomarkers; references genes.json
     dereferenced_biomarkers = Dereference.list(
@@ -331,7 +191,7 @@ def main(input_paths, output):
     }
 
     # Write
-    write_json_dict(
+    json_utils.write_dict(
         data=dereferenced,
         keys_list=['content'],
         file=output
