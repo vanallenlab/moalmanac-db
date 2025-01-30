@@ -1,7 +1,6 @@
 import unittest
 
-import json_utils
-import test_utils
+import json_utils # Local import
 
 class Base(unittest.TestCase):
     @classmethod
@@ -10,7 +9,6 @@ class Base(unittest.TestCase):
         Import json files from referenced/ and make them available to inherited test classes
         """
         cls.input_paths = {
-            'about': 'referenced/about.json',
             'agents': 'referenced/agents.json',
             'biomarkers': 'referenced/biomarkers.json',
             'contributions': 'referenced/contributions.json',
@@ -31,6 +29,10 @@ class Base(unittest.TestCase):
 
 
 class TestDataIntegrity(Base):
+    """
+    Assess that there are no errors with data entry
+    """
+
     def test_document_url_matches_citation(self):
         """
         Assess if `url` field matches the url contained in the `citation` for documents where the url should be
@@ -55,9 +57,7 @@ class TestDataIntegrity(Base):
     def test_no_mismatch_between_document_for_indication_and_statement(self):
         """
         Assess if document associated with indications and associated statements differ
-        While statement['reportedIn'] is of type list,
         """
-
         with self.subTest():
             for statement in self.data['statements']:
                 statement_documents = statement['reportedIn']
@@ -82,14 +82,42 @@ class TestDataIntegrity(Base):
                     )
 
     def test_missing_id_values(self):
-        # Logic to check for missing ID values
-        pass
+        """
+        Assess if any id values are missing from any referenced records
+        """
+        for record_type, records in self.data.items():
+            with self.subTest(record_type=record_type):
+                idx_values = [record['id'] for record in records]
+                idx_range = list(range(0, len(records)))
+                if not idx_values == idx_range:
+                    missing_ids = [idx for idx in idx_range if idx not in idx_values]
+                    missing_ids_str = ", ".join(str(idx) for idx in missing_ids)
+                    self.fail(
+                        f"Missing id values detected.\n"
+                        
+                        f"  - Affected ID(s): {missing_ids_str}\n"
+                        f"  - Total affected: {len(missing_ids)}"
+                    )
 
 
 class TestDateConsistency(Base):
-    def test_accessed_date_vs_publication_date(self):
-        # Logic to ensure accessed date is equal to or more recent than publication date
-        pass
+    """
+    Assess that various keys containing values for dates align as they should
+    """
+    def test_document_accessed_date_vs_publication_date(self):
+        """
+        Assess that the accessed date is more recent than the publication date for each document
+        """
+        with self.subTest():
+            failed_records = [document for document in self.data['documents'] if not (document['access_date'] >= document['publication_date'])]
+            if failed_records:
+                failed_record_ids = ", ".join(str(record['id']) for record in failed_records)
+                self.fail(
+                    f"Access date before publication date detected.\n"
+                    f"  - File: documents\n"
+                    f"  - Affected ID(s): {failed_record_ids}\n"
+                    f"  - Total affected: {len(failed_records)}"
+                )
 
     def test_last_updated_vs_first_published(self):
         # Logic to check if last_updated dates come before first published dates
@@ -106,8 +134,31 @@ class TestDateConsistency(Base):
 
 class TestFormatting(Base):
     def test_ending_periods(self):
-        # Logic to ensure all indications and descriptions end with periods
-        pass
+        """
+        Ensure that all indications and descriptions end with periods
+        """
+        # tuples of file (records; list[dict]) and key for each record in records
+        tests = [
+            ('indications', 'description'),
+            ('indications', 'indication')
+        ]
+
+        for record_type, key in tests:
+            with self.subTest(record_type=record_type, key=key):
+                failed_records = []
+                for record in self.data[record_type]:
+                    if record[key][-1] != '.':
+                        failed_records.append(record['id'])
+
+                if failed_records:
+                    failed_record_ids = ", ".join(str(record_id) for record_id in failed_records)
+                    self.fail(
+                        f"Descriptions and indications that do not end with a period detected.\n"
+                        f"  - File: {record_type}\n"
+                        f"  - Key: {key}\n"
+                        f"  - Affected ID(s): {failed_record_ids}\n"
+                        f"  - Total affected: {len(failed_records)}"
+                    )
 
     def test_spelling_errors(self):
         # Logic to print all strings and value counts to look for misspellings
@@ -115,10 +166,8 @@ class TestFormatting(Base):
 
     def test_trailing_spaces(self):
         """
-        Assess if any values have trailing spaces in any of the json key pairs
+        Assess if any strings values have trailing spaces in any of the json key pairs
         """
-
-        # Logic to check for trailing spaces in indications or descriptions
         tests = [
             # tuples of file (records; list[dict]) and key for each record in records
             # the key should be present in each record
@@ -138,10 +187,10 @@ class TestFormatting(Base):
             ('documents', 'url'),
             ('documents', 'url_drug'),
             ('genes', 'label'),
+            ('indications', 'description'),
             ('indications', 'indication'),
             ('indications', 'initial_approval_date'),
             ('indications', 'initial_approval_url'),
-            ('indications', 'description'),
             ('indications', 'raw_biomarkers'),
             ('indications', 'raw_cancer_type'),
             ('indications', 'raw_therapeutics'),
@@ -159,7 +208,11 @@ class TestFormatting(Base):
 
         for record_type, key in tests:
             with self.subTest(record_type=record_type, key=key):
-                failed_records = test_utils.Test.find_trailing_spaces(records=self.data[record_type], key=key)
+                failed_records = []
+                for record in self.data[record_type]:
+                    if record[key] != record[key].rstrip():
+                        failed_records.append(record['id'])
+
                 if failed_records:
                     failed_record_ids = ", ".join(str(failed_record) for failed_record in failed_records)
                     self.fail(
