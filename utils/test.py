@@ -31,7 +31,7 @@ class Base(unittest.TestCase):
 
 
 class TestDataIntegrity(Base):
-    def test_url_matches_document(self):
+    def test_document_url_matches_citation(self):
         """
         Assess if `url` field matches the url contained in the `citation` for documents where the url should be
         contained within the citation.Currently, this is relevant for documents where the subtype is one of the
@@ -52,13 +52,34 @@ class TestDataIntegrity(Base):
                     f"  - Total affected: {len(failed_records)}"
                 )
 
-    def test_publication_date_consistency(self):
-        # Logic to ensure publication date in citation matches publication date field
-        pass
+    def test_no_mismatch_between_document_for_indication_and_statement(self):
+        """
+        Assess if document associated with indications and associated statements differ
+        While statement['reportedIn'] is of type list,
+        """
 
-    def test_no_mismatch_between_document_and_statement(self):
-        # Logic to check for mismatches between documents in indications and statements
-        pass
+        with self.subTest():
+            for statement in self.data['statements']:
+                statement_documents = statement['reportedIn']
+                proposition = json_utils.fetch_records_by_key_value(
+                    records=self.data['propositions'],
+                    key='id',
+                    value=statement['proposition_id']
+                )
+                proposition = proposition[0]
+
+                indication = json_utils.fetch_records_by_key_value(
+                    records=self.data['indications'],
+                    key='id',
+                    value=proposition['indication_id']
+                )
+                indication = indication[0]
+
+                if indication['document_id'] not in statement_documents:
+                    self.fail(
+                        f"Document ID mismatch between indication and statement detected.\n"
+                        f"  - Affected ID(s): statement {statement['id']} and indication {indication['id']}"
+                    )
 
     def test_missing_id_values(self):
         # Logic to check for missing ID values
@@ -76,6 +97,10 @@ class TestDateConsistency(Base):
 
     def test_document_access_date(self):
         # Logic to ensure document access date is earlier than first published
+        pass
+
+    def test_publication_date_consistency(self):
+        # Logic to ensure publication date in citation matches publication date field
         pass
 
 
