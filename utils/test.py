@@ -6,6 +6,9 @@ import test_utils
 class Base(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        """
+        Import json files from referenced/ and make them available to inherited test classes
+        """
         cls.input_paths = {
             'about': 'referenced/about.json',
             'agents': 'referenced/agents.json',
@@ -29,8 +32,25 @@ class Base(unittest.TestCase):
 
 class TestDataIntegrity(Base):
     def test_url_matches_document(self):
-        # Logic to check if URL within citation matches the document URL
-        pass
+        """
+        Assess if `url` field matches the url contained in the `citation` for documents where the url should be
+        contained within the citation.Currently, this is relevant for documents where the subtype is one of the
+        following:
+            - Regulatory approval
+        """
+        relevant_subtypes = [
+            'Regulatory approval'
+        ]
+        relevant_records = [record for record in self.data['documents'] if record['subtype'] in relevant_subtypes]
+        with self.subTest():
+            failed_records = [record for record in relevant_records if record['url'] not in record['citation']]
+            if failed_records:
+                failed_record_ids = ", ".join(str(record['id']) for record in failed_records)
+                self.fail(
+                    f"URL mismatch between url key value and url contained within citation detected.\n"
+                    f"  - Affected ID(s): {failed_record_ids}\n"
+                    f"  - Total affected: {len(failed_records)}"
+                )
 
     def test_publication_date_consistency(self):
         # Logic to ensure publication date in citation matches publication date field
@@ -69,6 +89,10 @@ class TestFormatting(Base):
         pass
 
     def test_trailing_spaces(self):
+        """
+        Assess if any values have trailing spaces in any of the json key pairs
+        """
+
         # Logic to check for trailing spaces in indications or descriptions
         tests = [
             # tuples of file (records; list[dict]) and key for each record in records
@@ -117,7 +141,7 @@ class TestFormatting(Base):
                         f"Trailing spaces detected.\n"
                         f"  - File: {record_type}\n"
                         f"  - Key: {key}\n"
-                        f"  - Affected IDs: {failed_record_ids}\n"
+                        f"  - Affected ID(s): {failed_record_ids}\n"
                         f"  - Total affected: {len(failed_records)}"
                     )
 
