@@ -1,6 +1,6 @@
 import argparse
 
-from . import json_utils
+import json_utils # Local import
 
 
 class Dereference:
@@ -80,17 +80,18 @@ class Dereference:
         return records
 
 
-def main(input_paths, output):
+def main(input_paths):
     """
     Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
     referenced JSON files. By default, these are located in the referenced/ folder of this repository.
 
     Args:
         input_paths (dict): Dictionary of paths to referenced JSON files.
-        output (str): The output file to write the dereferenced JSON to.
 
     Returns:
-        list[dict]: Dereferenced database.
+        dict: Dereferenced database, with keys:
+            - about (dict): Dictionary containing database metadata, from referenced/about.json.
+            - content (list[dict]): List of dictionaries containing dereferenced database.
     """
     about = json_utils.load(file=input_paths['about'])
     agents = json_utils.load(file=input_paths['agents'])
@@ -184,20 +185,10 @@ def main(input_paths, output):
         new_key_name='proposition'
     )
 
-    # Create final object
-    dereferenced = {
+    return {
         'about': about,
         'content': dereferenced_statements
     }
-
-    # Write
-    json_utils.write_dict(
-        data=dereferenced,
-        keys_list=['content'],
-        file=output
-    )
-
-    return dereferenced
 
 
 if __name__ =="__main__":
@@ -287,4 +278,9 @@ if __name__ =="__main__":
         'therapies': args.therapies
     }
 
-    main(input_paths=input_data, output=args.output)
+    dereferenced = main(input_paths=input_data)
+    json_utils.write_dict(
+        data=dereferenced,
+        keys_list=['content'],
+        file=args.output
+    )

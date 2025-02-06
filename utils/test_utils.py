@@ -14,7 +14,6 @@ class Common:
 
 
 class Test:
-
     @staticmethod
     def find_trailing_spaces(records, key):
         """

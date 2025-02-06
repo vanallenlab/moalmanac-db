@@ -5,6 +5,9 @@ This directory contains a collection of utility scripts designed to facilitate t
 
 # Table of contents
 - [dereference.py](#dereferencepy)
+- [json_utils.py](#json_utilspy)
+- [test.py](#testpy)
+- [test_utils.py](#test_utilspy)
 
 # Scripts
 ## dereference.py
@@ -45,5 +48,13 @@ python dereference.py \
   --therapies referenced/therapies.json \
   --output  moalmanac-draft.dereferenced.json
 ```
+
+[Back to table of contents](#table-of-contents)
+
+## json_utils.py
+
+[Back to table of contents](#table-of-contents)
+
+## test_content.py
 
 [Back to table of contents](#table-of-contents)
