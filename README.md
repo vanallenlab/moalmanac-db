@@ -39,6 +39,7 @@ pip install -r requirements.txt
 
 To make the virtual environment available to jupyter notebooks, execute the following code while the virtual environment is activated:
 ```bash
+pip install jupyter
 ipython kernel install --user --name=moalmanac-db
 ```
 
