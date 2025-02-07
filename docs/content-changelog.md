@@ -1,6 +1,12 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## February 2025
+Added entries:
+- (FDA) [_ALK_ rearrangements and sensitivity to ensartinib for the treatment of adult patients with non-small cell lung cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ensartinib-alk-positive-locally-advanced-or-metastatic-non-small-cell-lung-cancer).
+- (FDA) [_BRAF_ p.V600E and sensitivity to encorafenib in combination with cetuximab and mFOLFOX6 for the treatment of patients with colorectal cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-encorafenib-cetuximab-and-mfolfox6-metastatic-colorectal-cancer-braf).
+- (FDA) [_KRAS_ p.G12C and sensitivity to panitumumab in combination with sotorasib for the treatment of adult patients with metastatic colorectal cancer.]
+
 ## January 2025
 Revised entries:
 - `pmid` was set to integers for 18 records with the following `pmid` values: 32988960, 33676017, 30006631, 34862364, 30266815, and 27447864.
