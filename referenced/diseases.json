@@ -2,1653 +2,2436 @@
     {
         "id": 0,
         "conceptType": "Disease",
-        "label": "Acute Lymphoid Leukemia",
+        "name": "Acute Lymphoid Leukemia",
+        "primaryCode": "oncotree:ALL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ALL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ALL"
+                    },
+                    "name": "Acute Lymphoid Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ALL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Acute Lymphoid Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 1,
         "conceptType": "Disease",
-        "label": "Acute Myeloid Leukemia",
+        "name": "Acute Myeloid Leukemia",
+        "primaryCode": "oncotree:AML",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:AML",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "AML"
+                    },
+                    "name": "Acute Myeloid Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "AML"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Acute Myeloid Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 2,
         "conceptType": "Disease",
-        "label": "Adenocarcinoma of the Gastroesophageal Junction",
+        "name": "Adenocarcinoma of the Gastroesophageal Junction",
+        "primaryCode": "oncotree:GEJ",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:GEJ",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "GEJ"
+                    },
+                    "name": "Adenocarcinoma of the Gastroesophageal Junction",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "GEJ"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Adenocarcinoma of the Gastroesophageal Junction"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 3,
         "conceptType": "Disease",
-        "label": "Anaplastic Large Cell Lymphoma",
+        "name": "Anaplastic Large Cell Lymphoma",
+        "primaryCode": "oncotree:ALCL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ALCL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ALCL"
+                    },
+                    "name": "Anaplastic Large Cell Lymphoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ALCL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Anaplastic Large Cell Lymphoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 4,
         "conceptType": "Disease",
-        "label": "Anaplastic Thyroid Cancer",
+        "name": "Anaplastic Thyroid Cancer",
+        "primaryCode": "oncotree:THAP",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:THAP",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "THAP"
+                    },
+                    "name": "Anaplastic Thyroid Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "THAP"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Anaplastic Thyroid Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 5,
         "conceptType": "Disease",
-        "label": "Any solid tumor",
+        "name": "Any solid tumor",
+        "primaryCode": "oncotree:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": ""
+                    },
+                    "name": "",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": ""
-            },
-            {
-                "name": "oncotree_term",
-                "value": ""
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 6,
         "conceptType": "Disease",
-        "label": "Astrocytoma",
+        "name": "Astrocytoma",
+        "primaryCode": "oncotree:ASTR",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ASTR",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ASTR"
+                    },
+                    "name": "Astrocytoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ASTR"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Astrocytoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 7,
         "conceptType": "Disease",
-        "label": "B-Cell Acute Lymphoid Leukemia",
+        "name": "B-Cell Acute Lymphoid Leukemia",
+        "primaryCode": "oncotree:BALL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:BALL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "BALL"
+                    },
+                    "name": "B-Cell Acute Lymphoid Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "BALL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "B-Cell Acute Lymphoid Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 8,
         "conceptType": "Disease",
-        "label": "Bladder Urothelial Carcinoma",
+        "name": "Bladder Urothelial Carcinoma",
+        "primaryCode": "oncotree:BLCA",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:BLCA",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "BLCA"
+                    },
+                    "name": "Bladder Urothelial Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "BLCA"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Bladder Urothelial Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 9,
         "conceptType": "Disease",
-        "label": "Invasive Breast Carcinoma",
+        "name": "Invasive Breast Carcinoma",
+        "primaryCode": "oncotree:BRCA",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:BRCA",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "BRCA"
+                    },
+                    "name": "Invasive Breast Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "BRCA"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Invasive Breast Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 10,
         "conceptType": "Disease",
-        "label": "APL with PML-RARA",
+        "name": "APL with PML-RARA",
+        "primaryCode": "oncotree:APLPMLRARA",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:APLPMLRARA",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "APLPMLRARA"
+                    },
+                    "name": "APL with PML-RARA",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "APLPMLRARA"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "APL with PML-RARA"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 11,
         "conceptType": "Disease",
-        "label": "Cholangiocarcinoma",
+        "name": "Cholangiocarcinoma",
+        "primaryCode": "oncotree:CHOL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CHOL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CHOL"
+                    },
+                    "name": "Cholangiocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CHOL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Cholangiocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 12,
         "conceptType": "Disease",
-        "label": "Chronic Eosinophilic Leukemia, NOS",
+        "name": "Chronic Eosinophilic Leukemia, NOS",
+        "primaryCode": "oncotree:CELNOS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CELNOS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CELNOS"
+                    },
+                    "name": "Chronic Eosinophilic Leukemia, NOS",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CELNOS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Chronic Eosinophilic Leukemia, NOS"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 13,
         "conceptType": "Disease",
-        "label": "Chronic Myelogenous Leukemia",
+        "name": "Chronic Myelogenous Leukemia",
+        "primaryCode": "oncotree:CML",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CML",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CML"
+                    },
+                    "name": "Chronic Myelogenous Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CML"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Chronic Myelogenous Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 14,
         "conceptType": "Disease",
-        "label": "Chronic Myelomonocytic Leukemia",
+        "name": "Chronic Myelomonocytic Leukemia",
+        "primaryCode": "oncotree:CMML",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CMML",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CMML"
+                    },
+                    "name": "Chronic Myelomonocytic Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CMML"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Chronic Myelomonocytic Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 15,
         "conceptType": "Disease",
-        "label": "Colorectal Adenocarcinoma",
+        "name": "Colorectal Adenocarcinoma",
+        "primaryCode": "oncotree:COADREAD",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:COADREAD",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "COADREAD"
+                    },
+                    "name": "Colorectal Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "COADREAD"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Colorectal Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 16,
         "conceptType": "Disease",
-        "label": "Dedifferentiated Lipsarcoma",
+        "name": "Dedifferentiated Lipsarcoma",
+        "primaryCode": "oncotree:DDLS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:DDLS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "DDLS"
+                    },
+                    "name": "Dedifferentiated Lipsarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "DDLS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Dedifferentiated Lipsarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 17,
         "conceptType": "Disease",
-        "label": "Dermatofibrosarcoma Protuberans",
+        "name": "Dermatofibrosarcoma Protuberans",
+        "primaryCode": "oncotree:DFSP",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:DFSP",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "DFSP"
+                    },
+                    "name": "Dermatofibrosarcoma Protuberans",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "DFSP"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Dermatofibrosarcoma Protuberans"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 18,
         "conceptType": "Disease",
-        "label": "Endometrial Carcinoma",
+        "name": "Endometrial Carcinoma",
+        "primaryCode": "oncotree:UCEC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:UCEC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "UCEC"
+                    },
+                    "name": "Endometrial Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "UCEC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Endometrial Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 19,
         "conceptType": "Disease",
-        "label": "Ewing Sarcoma",
+        "name": "Ewing Sarcoma",
+        "primaryCode": "oncotree:ES",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ES",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ES"
+                    },
+                    "name": "Ewing Sarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ES"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Ewing Sarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 20,
         "conceptType": "Disease",
-        "label": "Follicular Lymphoma",
+        "name": "Follicular Lymphoma",
+        "primaryCode": "oncotree:FL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:FL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "FL"
+                    },
+                    "name": "Follicular Lymphoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "FL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Follicular Lymphoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 21,
         "conceptType": "Disease",
-        "label": "Gastric Remnant Adenocarcinoma",
+        "name": "Gastric Remnant Adenocarcinoma",
+        "primaryCode": "oncotree:GRC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:GRC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "GRC"
+                    },
+                    "name": "Gastric Remnant Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "GRC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Gastric Remnant Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 22,
         "conceptType": "Disease",
-        "label": "Gastrointestinal Stromal Tumor",
+        "name": "Gastrointestinal Stromal Tumor",
+        "primaryCode": "oncotree:GIST",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:GIST",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "GIST"
+                    },
+                    "name": "Gastrointestinal Stromal Tumor",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "GIST"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Gastrointestinal Stromal Tumor"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 23,
         "conceptType": "Disease",
-        "label": "Glioma",
+        "name": "Glioma",
+        "primaryCode": "oncotree:GNOS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:GNOS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "GNOS"
+                    },
+                    "name": "Glioma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "GNOS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Glioma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 24,
         "conceptType": "Disease",
-        "label": "Head and Neck Mucosal Melanoma",
+        "name": "Head and Neck Mucosal Melanoma",
+        "primaryCode": "oncotree:HNMUCM",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:HNMUCM",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "HNMUCM"
+                    },
+                    "name": "Head and Neck Mucosal Melanoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "HNMUCM"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Head and Neck Mucosal Melanoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 25,
         "conceptType": "Disease",
-        "label": "Head and Neck Squamous Cell Carcinoma",
+        "name": "Head and Neck Squamous Cell Carcinoma",
+        "primaryCode": "oncotree:HNSC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:HNSC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "HNSC"
+                    },
+                    "name": "Head and Neck Squamous Cell Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "HNSC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Head and Neck Squamous Cell Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 26,
         "conceptType": "Disease",
-        "label": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum",
+        "name": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum",
+        "primaryCode": "oncotree:HGNEC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:HGNEC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "HGNEC"
+                    },
+                    "name": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "HGNEC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 27,
         "conceptType": "Disease",
-        "label": "High-Grade Serous Fallopian Tube Cancer",
+        "name": "High-Grade Serous Fallopian Tube Cancer",
+        "primaryCode": "oncotree:HGSFT",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:HGSFT",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "HGSFT"
+                    },
+                    "name": "High-Grade Serous Fallopian Tube Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "HGSFT"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "High-Grade Serous Fallopian Tube Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 28,
         "conceptType": "Disease",
-        "label": "Inflammatory Myofibroblastic Tumor",
+        "name": "Inflammatory Myofibroblastic Tumor",
+        "primaryCode": "oncotree:IMT",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:IMT",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "IMT"
+                    },
+                    "name": "Inflammatory Myofibroblastic Tumor",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "IMT"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Inflammatory Myofibroblastic Tumor"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 29,
         "conceptType": "Disease",
-        "label": "Intrahepatic Cholangiocarcinoma",
+        "name": "Intrahepatic Cholangiocarcinoma",
+        "primaryCode": "oncotree:IHCH",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:IHCH",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "IHCH"
+                    },
+                    "name": "Intrahepatic Cholangiocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "IHCH"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Intrahepatic Cholangiocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 30,
         "conceptType": "Disease",
-        "label": "Cutaneous T-cell Lymphoma",
+        "name": "Cutaneous T-cell Lymphoma",
+        "primaryCode": "oncotree:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": ""
+                    },
+                    "name": "",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": ""
-            },
-            {
-                "name": "oncotree_term",
-                "value": ""
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 31,
         "conceptType": "Disease",
-        "label": "Langerhans Cell Histiocytosis",
+        "name": "Langerhans Cell Histiocytosis",
+        "primaryCode": "oncotree:LCH",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:LCH",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "LCH"
+                    },
+                    "name": "Langerhans Cell Histiocytosis",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "LCH"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Langerhans Cell Histiocytosis"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 32,
         "conceptType": "Disease",
-        "label": "Leiomyosarcoma",
+        "name": "Leiomyosarcoma",
+        "primaryCode": "oncotree:LMS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:LMS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "LMS"
+                    },
+                    "name": "Leiomyosarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "LMS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Leiomyosarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 33,
         "conceptType": "Disease",
-        "label": "Leukemia",
+        "name": "Leukemia",
+        "primaryCode": "oncotree:LEUK",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:LEUK",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "LEUK"
+                    },
+                    "name": "Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "LEUK"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 34,
         "conceptType": "Disease",
-        "label": "Liposarcoma",
+        "name": "Liposarcoma",
+        "primaryCode": "oncotree:LIPO",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:LIPO",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "LIPO"
+                    },
+                    "name": "Liposarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "LIPO"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Liposarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 35,
         "conceptType": "Disease",
-        "label": "Low-Grade Glioma, NOS",
+        "name": "Low-Grade Glioma, NOS",
+        "primaryCode": "oncotree:LGGNOS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:LGGNOS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "LGGNOS"
+                    },
+                    "name": "Low-Grade Glioma, NOS",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "LGGNOS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Low-Grade Glioma, NOS"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 36,
         "conceptType": "Disease",
-        "label": "Lung Squamous Cell Carcinoma",
+        "name": "Lung Squamous Cell Carcinoma",
+        "primaryCode": "oncotree:LUSC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:LUSC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "LUSC"
+                    },
+                    "name": "Lung Squamous Cell Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "LUSC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Lung Squamous Cell Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 37,
         "conceptType": "Disease",
-        "label": "Mast Cell Leukemia",
+        "name": "Mast Cell Leukemia",
+        "primaryCode": "oncotree:SMMCL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:SMMCL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "SMMCL"
+                    },
+                    "name": "Mast Cell Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "SMMCL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Mast Cell Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 38,
         "conceptType": "Disease",
-        "label": "Medullary Thyroid Cancer",
+        "name": "Medullary Thyroid Cancer",
+        "primaryCode": "oncotree:THME",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:THME",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "THME"
+                    },
+                    "name": "Medullary Thyroid Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "THME"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Medullary Thyroid Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 39,
         "conceptType": "Disease",
-        "label": "Medulloblastoma",
+        "name": "Medulloblastoma",
+        "primaryCode": "oncotree:MBL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MBL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MBL"
+                    },
+                    "name": "Medulloblastoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MBL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Medulloblastoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 40,
         "conceptType": "Disease",
-        "label": "Melanoma",
+        "name": "Melanoma",
+        "primaryCode": "oncotree:MEL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MEL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MEL"
+                    },
+                    "name": "Melanoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MEL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Melanoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 41,
         "conceptType": "Disease",
-        "label": "Multiple Myeloma",
+        "name": "Multiple Myeloma",
+        "primaryCode": "oncotree:MM",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MM",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MM"
+                    },
+                    "name": "Multiple Myeloma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MM"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Multiple Myeloma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 42,
         "conceptType": "Disease",
-        "label": "Aggressive Systemic Mastocytosis",
+        "name": "Aggressive Systemic Mastocytosis",
+        "primaryCode": "oncotree:ASM",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ASM",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ASM"
+                    },
+                    "name": "Aggressive Systemic Mastocytosis",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ASM"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Aggressive Systemic Mastocytosis"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 43,
         "conceptType": "Disease",
-        "label": "Myelodysplastic Syndromes",
+        "name": "Myelodysplastic Syndromes",
+        "primaryCode": "oncotree:MDS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MDS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MDS"
+                    },
+                    "name": "Myelodysplastic Syndromes",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MDS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Myelodysplastic Syndromes"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 44,
         "conceptType": "Disease",
-        "label": "Myeloid/Lymphoid Neoplasms",
+        "name": "Myeloid/Lymphoid Neoplasms",
+        "primaryCode": "oncotree:MLN",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MLN",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MLN"
+                    },
+                    "name": "Myeloid/Lymphoid Neoplasms",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MLN"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Myeloid/Lymphoid Neoplasms"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 45,
         "conceptType": "Disease",
-        "label": "Myeloproliferative Neoplasm",
+        "name": "Myeloproliferative Neoplasm",
+        "primaryCode": "oncotree:MPN",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MPN",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MPN"
+                    },
+                    "name": "Myeloproliferative Neoplasm",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MPN"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Myeloproliferative Neoplasm"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 46,
         "conceptType": "Disease",
-        "label": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease",
+        "name": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease",
+        "primaryCode": "oncotree:ECD",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ECD",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ECD"
+                    },
+                    "name": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ECD"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 47,
         "conceptType": "Disease",
-        "label": "Non-Small Cell Lung Cancer",
+        "name": "Non-Small Cell Lung Cancer",
+        "primaryCode": "oncotree:NSCLC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:NSCLC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "NSCLC"
+                    },
+                    "name": "Non-Small Cell Lung Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "NSCLC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Non-Small Cell Lung Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 48,
         "conceptType": "Disease",
-        "label": "Oligodendroglioma",
+        "name": "Oligodendroglioma",
+        "primaryCode": "oncotree:ODG",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ODG",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ODG"
+                    },
+                    "name": "Oligodendroglioma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ODG"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Oligodendroglioma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 49,
         "conceptType": "Disease",
-        "label": "Osteosarcoma",
+        "name": "Osteosarcoma",
+        "primaryCode": "oncotree:OS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:OS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "OS"
+                    },
+                    "name": "Osteosarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "OS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Osteosarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 50,
         "conceptType": "Disease",
-        "label": "Ovarian Cancer, Other",
+        "name": "Ovarian Cancer, Other",
+        "primaryCode": "oncotree:OOVC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:OOVC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "OOVC"
+                    },
+                    "name": "Ovarian Cancer, Other",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "OOVC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Ovarian Cancer, Other"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 51,
         "conceptType": "Disease",
-        "label": "Ovarian Epithelial Tumor",
+        "name": "Ovarian Epithelial Tumor",
+        "primaryCode": "oncotree:OVT",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:OVT",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "OVT"
+                    },
+                    "name": "Ovarian Epithelial Tumor",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "OVT"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Ovarian Epithelial Tumor"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 52,
         "conceptType": "Disease",
-        "label": "Pancreatic Adenocarcinoma",
+        "name": "Pancreatic Adenocarcinoma",
+        "primaryCode": "oncotree:PAAD",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:PAAD",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "PAAD"
+                    },
+                    "name": "Pancreatic Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "PAAD"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Pancreatic Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 53,
         "conceptType": "Disease",
-        "label": "Peritoneal Mesothelioma",
+        "name": "Peritoneal Mesothelioma",
+        "primaryCode": "oncotree:PEMESO",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:PEMESO",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "PEMESO"
+                    },
+                    "name": "Peritoneal Mesothelioma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "PEMESO"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Peritoneal Mesothelioma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 54,
         "conceptType": "Disease",
-        "label": "Peritoneal Serous Carcinoma",
+        "name": "Peritoneal Serous Carcinoma",
+        "primaryCode": "oncotree:PSEC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:PSEC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "PSEC"
+                    },
+                    "name": "Peritoneal Serous Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "PSEC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Peritoneal Serous Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 55,
         "conceptType": "Disease",
-        "label": "Prostate Adenocarcinoma",
+        "name": "Prostate Adenocarcinoma",
+        "primaryCode": "oncotree:PRAD",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:PRAD",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "PRAD"
+                    },
+                    "name": "Prostate Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "PRAD"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Prostate Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 56,
         "conceptType": "Disease",
-        "label": "Prostate Neuroendocrine Cancer",
+        "name": "Prostate Neuroendocrine Cancer",
+        "primaryCode": "oncotree:PRNE",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:PRNE",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "PRNE"
+                    },
+                    "name": "Prostate Neuroendocrine Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "PRNE"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Prostate Neuroendocrine Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 57,
         "conceptType": "Disease",
-        "label": "Rectal Adenocarcinoma",
+        "name": "Rectal Adenocarcinoma",
+        "primaryCode": "oncotree:READ",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:READ",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "READ"
+                    },
+                    "name": "Rectal Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "READ"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Rectal Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 58,
         "conceptType": "Disease",
-        "label": "Renal Cell Carcinoma",
+        "name": "Renal Cell Carcinoma",
+        "primaryCode": "oncotree:RCC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:RCC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "RCC"
+                    },
+                    "name": "Renal Cell Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "RCC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Renal Cell Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 59,
         "conceptType": "Disease",
-        "label": "Renal Clear Cell Carcinoma",
+        "name": "Renal Clear Cell Carcinoma",
+        "primaryCode": "oncotree:CCRCC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CCRCC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CCRCC"
+                    },
+                    "name": "Renal Clear Cell Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CCRCC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Renal Clear Cell Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 60,
         "conceptType": "Disease",
-        "label": "Serous Ovarian Cancer",
+        "name": "Serous Ovarian Cancer",
+        "primaryCode": "oncotree:SOC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:SOC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "SOC"
+                    },
+                    "name": "Serous Ovarian Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "SOC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Serous Ovarian Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 61,
         "conceptType": "Disease",
-        "label": "Small Cell Lung Cancer",
+        "name": "Small Cell Lung Cancer",
+        "primaryCode": "oncotree:SCLC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:SCLC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "SCLC"
+                    },
+                    "name": "Small Cell Lung Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "SCLC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Small Cell Lung Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 62,
         "conceptType": "Disease",
-        "label": "Squamous Cell Carcinoma, NOS",
+        "name": "Squamous Cell Carcinoma, NOS",
+        "primaryCode": "oncotree:SCCNOS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:SCCNOS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "SCCNOS"
+                    },
+                    "name": "Squamous Cell Carcinoma, NOS",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "SCCNOS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Squamous Cell Carcinoma, NOS"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 63,
         "conceptType": "Disease",
-        "label": "Stomach Adenocarcinoma",
+        "name": "Stomach Adenocarcinoma",
+        "primaryCode": "oncotree:STAD",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:STAD",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "STAD"
+                    },
+                    "name": "Stomach Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "STAD"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Stomach Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 64,
         "conceptType": "Disease",
-        "label": "T-Cell Acute Lymphoid Leukemia",
+        "name": "T-Cell Acute Lymphoid Leukemia",
+        "primaryCode": "oncotree:TALL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:TALL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "TALL"
+                    },
+                    "name": "T-Cell Acute Lymphoid Leukemia",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "TALL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "T-Cell Acute Lymphoid Leukemia"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 65,
         "conceptType": "Disease",
-        "label": "Testicular Germ Cell Tumors",
+        "name": "Testicular Germ Cell Tumors",
+        "primaryCode": "oncotree:TGCT",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:TGCT",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "TGCT"
+                    },
+                    "name": "Testicular Germ Cell Tumors",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "TGCT"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Testicular Germ Cell Tumors"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 66,
         "conceptType": "Disease",
-        "label": "Thymic Carcinoma",
+        "name": "Thymic Carcinoma",
+        "primaryCode": "oncotree:THYC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:THYC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "THYC"
+                    },
+                    "name": "Thymic Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "THYC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Thymic Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 67,
         "conceptType": "Disease",
-        "label": "Urethral Urothelial Carcinoma",
+        "name": "Urethral Urothelial Carcinoma",
+        "primaryCode": "oncotree:UCU",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:UCU",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "UCU"
+                    },
+                    "name": "Urethral Urothelial Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "UCU"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Urethral Urothelial Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 68,
         "conceptType": "Disease",
-        "label": "Uterine Leiomyoma",
+        "name": "Uterine Leiomyoma",
+        "primaryCode": "oncotree:ULM",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ULM",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ULM"
+                    },
+                    "name": "Uterine Leiomyoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ULM"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Uterine Leiomyoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 69,
         "conceptType": "Disease",
-        "label": "Uterine Leiomyosarcoma",
+        "name": "Uterine Leiomyosarcoma",
+        "primaryCode": "oncotree:ULMS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ULMS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ULMS"
+                    },
+                    "name": "Uterine Leiomyosarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ULMS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Uterine Leiomyosarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 70,
         "conceptType": "Disease",
-        "label": "Well-Differentiated Liposarcoma",
+        "name": "Well-Differentiated Liposarcoma",
+        "primaryCode": "oncotree:WDLS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:WDLS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "WDLS"
+                    },
+                    "name": "Well-Differentiated Liposarcoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "WDLS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Well-Differentiated Liposarcoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 71,
         "conceptType": "Disease",
-        "label": "Chronic Myeloid Leukemia, BCR-ABL1+",
+        "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+        "primaryCode": "oncotree:CMLBCRABL1",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CMLBCRABL1",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CMLBCRABL1"
+                    },
+                    "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CMLBCRABL1"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Chronic Myeloid Leukemia, BCR-ABL1+"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 72,
         "conceptType": "Disease",
-        "label": "Cervical Adenocarcinoma",
+        "name": "Cervical Adenocarcinoma",
+        "primaryCode": "oncotree:CEAD",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CEAD",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CEAD"
+                    },
+                    "name": "Cervical Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CEAD"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Cervical Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 73,
         "conceptType": "Disease",
-        "label": "Cervical Squamous Cell Carcinoma",
+        "name": "Cervical Squamous Cell Carcinoma",
+        "primaryCode": "oncotree:CESC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:CESC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "CESC"
+                    },
+                    "name": "Cervical Squamous Cell Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "CESC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Cervical Squamous Cell Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 74,
         "conceptType": "Disease",
-        "label": "Esophageal Adenocarcinoma",
+        "name": "Esophageal Adenocarcinoma",
+        "primaryCode": "oncotree:ESCA",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ESCA",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ESCA"
+                    },
+                    "name": "Esophageal Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ESCA"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Esophageal Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 75,
         "conceptType": "Disease",
-        "label": "Papillary Thyroid Cancer",
+        "name": "Papillary Thyroid Cancer",
+        "primaryCode": "oncotree:THPA",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:THPA",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "THPA"
+                    },
+                    "name": "Papillary Thyroid Cancer",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "THPA"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Papillary Thyroid Cancer"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 76,
         "conceptType": "Disease",
-        "label": "Non-Hodgkin Lymphoma",
+        "name": "Non-Hodgkin Lymphoma",
+        "primaryCode": "oncotree:NHL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:NHL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "NHL"
+                    },
+                    "name": "Non-Hodgkin Lymphoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "NHL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Non-Hodgkin Lymphoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 77,
         "conceptType": "Disease",
-        "label": "Diffuse Large B-Cell Lymphoma",
+        "name": "Diffuse Large B-Cell Lymphoma",
+        "primaryCode": "oncotree:DLBCLNOS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:DLBCLNOS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "DLBCLNOS"
+                    },
+                    "name": "Diffuse Large B-Cell Lymphoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "DLBCLNOS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Diffuse Large B-Cell Lymphoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 78,
         "conceptType": "Disease",
-        "label": "Burkitt Lymphoma",
+        "name": "Burkitt Lymphoma",
+        "primaryCode": "oncotree:BL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:BL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "BL"
+                    },
+                    "name": "Burkitt Lymphoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "BL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Burkitt Lymphoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 79,
         "conceptType": "Disease",
-        "label": "Mature B-Cell Neoplasms",
+        "name": "Mature B-Cell Neoplasms",
+        "primaryCode": "oncotree:MBN",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:MBN",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "MBN"
+                    },
+                    "name": "Mature B-Cell Neoplasms",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "MBN"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Mature B-Cell Neoplasms"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 80,
         "conceptType": "Disease",
-        "label": "Hodgkin Lymphoma",
+        "name": "Hodgkin Lymphoma",
+        "primaryCode": "oncotree:HL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:HL",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "HL"
+                    },
+                    "name": "Hodgkin Lymphoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "HL"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Hodgkin Lymphoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 81,
         "conceptType": "Disease",
-        "label": "Esophagogastric Adenocarcinoma",
+        "name": "Esophagogastric Adenocarcinoma",
+        "primaryCode": "oncotree:EGC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:EGC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "EGC"
+                    },
+                    "name": "Esophagogastric Adenocarcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "EGC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Esophagogastric Adenocarcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 82,
         "conceptType": "Disease",
-        "label": "Esophageal Squamous Cell Carcinoma",
+        "name": "Esophageal Squamous Cell Carcinoma",
+        "primaryCode": "oncotree:ESCC",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ESCC",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ESCC"
+                    },
+                    "name": "Esophageal Squamous Cell Carcinoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ESCC"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Esophageal Squamous Cell Carcinoma"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 83,
         "conceptType": "Disease",
-        "label": "High-Grade Glioma, NOS",
+        "name": "High-Grade Glioma, NOS",
+        "primaryCode": "oncotree:HGGNOS",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:HGGNOS",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "HGGNOS"
+                    },
+                    "name": "High-Grade Glioma, NOS",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "HGGNOS"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "High-Grade Glioma, NOS"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 84,
         "conceptType": "Disease",
-        "label": "Chronic Lymphocytic Leukemia",
+        "name": "Chronic Lymphocytic Leukemia",
+        "primaryCode": "oncotree:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": ""
+                    },
+                    "name": "",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": ""
-            },
-            {
-                "name": "oncotree_term",
-                "value": ""
-            },
-            {
                 "name": "solid_tumor",
-                "value": false
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 85,
         "conceptType": "Disease",
-        "label": "Intraductal Papillary Neoplasm of the Bile Duct",
+        "name": "Intraductal Papillary Neoplasm of the Bile Duct",
+        "primaryCode": "oncotree:IPN",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:IPN",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "IPN"
+                    },
+                    "name": "Intraductal Papillary Neoplasm of the Bile Duct",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "IPN"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Intraductal Papillary Neoplasm of the Bile Duct"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     },
     {
         "id": 86,
         "conceptType": "Disease",
-        "label": "Intracholecystic Papillary Neoplasm",
+        "name": "Intracholecystic Papillary Neoplasm",
+        "primaryCode": "oncotree:ICPN",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ICPN",
+                    "code": {
+                        "name": "oncotree_code",
+                        "value": "ICPN"
+                    },
+                    "name": "Intracholecystic Papillary Neoplasm",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
         "extensions": [
             {
-                "name": "oncotree_code",
-                "value": "ICPN"
-            },
-            {
-                "name": "oncotree_term",
-                "value": "Intracholecystic Papillary Neoplasm"
-            },
-            {
                 "name": "solid_tumor",
-                "value": true
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
     }
