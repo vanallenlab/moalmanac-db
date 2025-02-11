@@ -1,890 +1,4442 @@
 [
     {
         "id": 0,
-        "therapy_name": "Brentuximab vedotin",
-        "therapy_strategy": "target CD30 antigens",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Brentuximab vedotin",
+        "primaryCode": "ncit:C66944",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C66944",
+                    "code": "C66944",
+                    "name": "Brentuximab Vedotin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "target CD30 antigens",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 1,
-        "therapy_name": "Dacarbazine",
-        "therapy_strategy": "Nonclassical alkylating chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Dacarbazine",
+        "primaryCode": "ncit:C411",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C411",
+                    "code": "C411",
+                    "name": "Dacarbazine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Nonclassical alkylating chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 2,
-        "therapy_name": "Doxorubicin",
-        "therapy_strategy": "Topoisomerase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Doxorubicin",
+        "primaryCode": "ncit:C456",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C456",
+                    "code": "C456",
+                    "name": "Doxorubicin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 3,
-        "therapy_name": "Vinblastine",
-        "therapy_strategy": "Vinca alkaloid chemotherapy",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Vinblastine",
+        "primaryCode": "ncit:C930",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "C930",
+                    "name": "Vinblastine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Vinca alkaloid chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 4,
-        "therapy_name": "Everolimus",
-        "therapy_strategy": "PI3K/AKT/mTOR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Everolimus",
+        "primaryCode": "ncit:C48387",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C48387",
+                    "code": "C48387",
+                    "name": "Everolimus",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PI3K/AKT/mTOR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 5,
-        "therapy_name": "Exemestane",
-        "therapy_strategy": "Aromatase inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Exemestane",
+        "primaryCode": "ncit:C1097",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1097",
+                    "code": "C1097",
+                    "name": "Exemestane",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Aromatase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 6,
-        "therapy_name": "Niraparib",
-        "therapy_strategy": "PARP inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Niraparib",
+        "primaryCode": "ncit:C80059",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C80059",
+                    "code": "C80059",
+                    "name": "Niraparib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PARP inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 7,
-        "therapy_name": "Abiraterone acetate",
-        "therapy_strategy": "Antiandrogen",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Abiraterone acetate",
+        "primaryCode": "ncit:C68845",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C68845",
+                    "code": "C68845",
+                    "name": "Abiraterone Acetate",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Antiandrogen",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 8,
-        "therapy_name": "Prednisolone",
-        "therapy_strategy": "Corticosteroid",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Prednisolone",
+        "primaryCode": "ncit:C769",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C769",
+                    "code": "C769",
+                    "name": "Prednisolone",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Corticosteroid",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 9,
-        "therapy_name": "Alectinib",
-        "therapy_strategy": "ALK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Alectinib",
+        "primaryCode": "ncit:C101790",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C101790",
+                    "code": "C101790",
+                    "name": "Alectinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ALK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 10,
-        "therapy_name": "Brigatinib",
-        "therapy_strategy": "ALK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Brigatinib",
+        "primaryCode": "ncit:C98831",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C98831",
+                    "code": "C98831",
+                    "name": "Brigatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ALK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 11,
-        "therapy_name": "Bevacizumab",
-        "therapy_strategy": "VEGF inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Bevacizumab",
+        "primaryCode": "ncit:C2039",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C2039",
+                    "code": "C2039",
+                    "name": "Bevacizumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "VEGF inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 12,
-        "therapy_name": "Erlotinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Erlotinib",
+        "primaryCode": "ncit:C65530",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C65530",
+                    "code": "C65530",
+                    "name": "Erlotinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 13,
-        "therapy_name": "Avapritinib",
-        "therapy_strategy": "KIT inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Avapritinib",
+        "primaryCode": "ncit:C123827",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C123827",
+                    "code": "C123827",
+                    "name": "Avapritinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "KIT inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 14,
-        "therapy_name": "Inotuzumab ozogamicin",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Inotuzumab ozogamicin",
+        "primaryCode": "ncit:C71542",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C71542",
+                    "code": "C71542",
+                    "name": "Inotuzumab Ozogamicin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 15,
-        "therapy_name": "Blinatumomab",
-        "therapy_strategy": "CD19 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Blinatumomab",
+        "primaryCode": "ncit:C62528",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C62528",
+                    "code": "C62528",
+                    "name": "Blinatumomab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CD19 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 16,
-        "therapy_name": "Bosutinib",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Bosutinib",
+        "primaryCode": "ncit:C60809",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C60809",
+                    "code": "C60809",
+                    "name": "Bosutinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 17,
-        "therapy_name": "Binimetinib",
-        "therapy_strategy": "MEK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Binimetinib",
+        "primaryCode": "ncit:C84865",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C84865",
+                    "code": "C84865",
+                    "name": "Binimetinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "MEK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 18,
-        "therapy_name": "Encorafenib",
-        "therapy_strategy": "B-RAF inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Encorafenib",
+        "primaryCode": "ncit:C98283",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C98283",
+                    "code": "C98283",
+                    "name": "Encorafenib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "B-RAF inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 19,
-        "therapy_name": "Cetuximab",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Cetuximab",
+        "primaryCode": "ncit:C1723",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1723",
+                    "code": "C1723",
+                    "name": "Cetuximab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 20,
-        "therapy_name": "Vandetanib",
-        "therapy_strategy": "RET inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Vandetanib",
+        "primaryCode": "ncit:C2737",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C2737",
+                    "code": "C2737",
+                    "name": "Vandetanib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "RET inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 21,
-        "therapy_name": "Cobimetinib",
-        "therapy_strategy": "MEK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Cobimetinib",
+        "primaryCode": "ncit:C68923",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C68923",
+                    "code": "C68923",
+                    "name": "Cobimetinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "MEK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 22,
-        "therapy_name": "Vemurafenib",
-        "therapy_strategy": "B-RAF inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Vemurafenib",
+        "primaryCode": "ncit:C64768",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C64768",
+                    "code": "C64768",
+                    "name": "Vemurafenib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "B-RAF inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 23,
-        "therapy_name": "Ramucirumab",
-        "therapy_strategy": "VEGF/VEGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ramucirumab",
+        "primaryCode": "ncit:C70792",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C70792",
+                    "code": "C70792",
+                    "name": "Ramucirumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "VEGF/VEGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 24,
-        "therapy_name": "Docetaxel",
-        "therapy_strategy": "Taxane-based chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Docetaxel",
+        "primaryCode": "ncit:C1526",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1526",
+                    "code": "C1526",
+                    "name": "Docetaxel",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Taxane-based chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 25,
-        "therapy_name": "Trastuzumab",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Trastuzumab",
+        "primaryCode": "ncit:C1647",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1647",
+                    "code": "C1647",
+                    "name": "Trastuzumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 26,
-        "therapy_name": "Trastuzumab deruxtecan",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Trastuzumab deruxtecan",
+        "primaryCode": "ncit:C128799",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C128799",
+                    "code": "C128799",
+                    "name": "Trastuzumab Deruxtecan",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 27,
-        "therapy_name": "Irinotecan",
-        "therapy_strategy": "Topoisomerase I inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Irinotecan",
+        "primaryCode": "ncit:C62040",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C62040",
+                    "code": "C62040",
+                    "name": "Irinotecan",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase I inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 28,
-        "therapy_name": "Oxaliplatin",
-        "therapy_strategy": "Platinum-based chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Oxaliplatin",
+        "primaryCode": "ncit:C1181",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1181",
+                    "code": "C1181",
+                    "name": "Oxaliplatin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Platinum-based chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 29,
-        "therapy_name": "5-fluorouracil",
-        "therapy_strategy": "Thymidylate synthase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Fluorouracil",
+        "primaryCode": "ncit:C505",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C505",
+                    "code": "C505",
+                    "name": "Fluorouracil",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Thymidylate synthase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 30,
-        "therapy_name": "Fulvestrant",
-        "therapy_strategy": "Estrogen receptor inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Fulvestrant",
+        "primaryCode": "ncit:C1379",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1379",
+                    "code": "C1379",
+                    "name": "Fulvestrant",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Estrogen receptor inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 31,
-        "therapy_name": "Palbociclib",
-        "therapy_strategy": "CDK4/6 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Palbociclib",
+        "primaryCode": "ncit:C49176",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C49176",
+                    "code": "C49176",
+                    "name": "Palbociclib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CDK4/6 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 32,
-        "therapy_name": "Pralsetinib",
-        "therapy_strategy": "RET inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Pralsetinib",
+        "primaryCode": "ncit:C132295",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C132295",
+                    "code": "C132295",
+                    "name": "Pralsetinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "RET inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 33,
-        "therapy_name": "Gefitinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Gefitinib",
+        "primaryCode": "ncit:C1855",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1855",
+                    "code": "C1855",
+                    "name": "Gefitinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 34,
-        "therapy_name": "Afatinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Afatinib",
+        "primaryCode": "ncit:C66940",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C66940",
+                    "code": "C66940",
+                    "name": "Afatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 35,
-        "therapy_name": "Paclitaxel",
-        "therapy_strategy": "Taxane-based chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Paclitaxel",
+        "primaryCode": "ncit:C1411",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1411",
+                    "code": "C1411",
+                    "name": "Paclitaxel",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Taxane-based chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 36,
-        "therapy_name": "Anastrozole",
-        "therapy_strategy": "Aromatase inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Anastrozole",
+        "primaryCode": "ncit:C1607",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1607",
+                    "code": "C1607",
+                    "name": "Anastrozole",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Aromatase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 37,
-        "therapy_name": "Carboplatin",
-        "therapy_strategy": "Platinum-based chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Carboplatin",
+        "primaryCode": "ncit:C1282",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1282",
+                    "code": "C1282",
+                    "name": "Carboplatin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Platinum-based chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 38,
-        "therapy_name": "Capecitabine",
-        "therapy_strategy": "Thymidylate synthase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Capecitabine",
+        "primaryCode": "ncit:C1794",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1794",
+                    "code": "C1794",
+                    "name": "Capecitabine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Thymidylate synthase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 39,
-        "therapy_name": "Cisplatin",
-        "therapy_strategy": "Platinum-based chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Cisplatin",
+        "primaryCode": "ncit:C376",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C376",
+                    "code": "C376",
+                    "name": "Cisplatin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Platinum-based chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 40,
-        "therapy_name": "Letrozole",
-        "therapy_strategy": "Aromatase inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Letrozole",
+        "primaryCode": "ncit:C1527",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1527",
+                    "code": "C1527",
+                    "name": "Letrozole",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Aromatase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 41,
-        "therapy_name": "Imatinib",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Imatinib",
+        "primaryCode": "ncit:C62035",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C62035",
+                    "code": "C62035",
+                    "name": "Imatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 42,
-        "therapy_name": "Imatinib",
-        "therapy_strategy": "c-Kit inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Imatinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "c-Kit inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 43,
-        "therapy_name": "Ponatinib",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ponatinib",
+        "primaryCode": "ncit:C95777",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C95777",
+                    "code": "C95777",
+                    "name": "Ponatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 44,
-        "therapy_name": "Durvalumab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Durvalumab",
+        "primaryCode": "ncit:C103194",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C103194",
+                    "code": "C103194",
+                    "name": "Durvalumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 45,
-        "therapy_name": "Tremelimumab",
-        "therapy_strategy": "CTLA-4 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Tremelimumab",
+        "primaryCode": "ncit:C49085",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C49085",
+                    "code": "C49085",
+                    "name": "Tremelimumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CTLA-4 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 46,
-        "therapy_name": "Olaparib",
-        "therapy_strategy": "PARP inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Olaparib",
+        "primaryCode": "ncit:C71721",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C71721",
+                    "code": "C71721",
+                    "name": "Olaparib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PARP inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 47,
-        "therapy_name": "Dostarlimab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Dostarlimab",
+        "primaryCode": "ncit:C126799",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C126799",
+                    "code": "C126799",
+                    "name": "Dostarlimab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 48,
-        "therapy_name": "Pembrolizumab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Pembrolizumab",
+        "primaryCode": "ncit:C106432",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C106432",
+                    "code": "C106432",
+                    "name": "Pembrolizumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 49,
-        "therapy_name": "Pemetrexed",
-        "therapy_strategy": "Antifolate",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Pemetrexed",
+        "primaryCode": "ncit:C61614",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C61614",
+                    "code": "C61614",
+                    "name": "Pemetrexed",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Antifolate",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 50,
-        "therapy_name": "Gemcitabine",
-        "therapy_strategy": "Antimetabolite",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Gemcitabine",
+        "primaryCode": "ncit:C66876",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C66876",
+                    "code": "C66876",
+                    "name": "Gemcitabine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Antimetabolite",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 51,
-        "therapy_name": "Nab-paclitaxel",
-        "therapy_strategy": "Taxane-based chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Nab-paclitaxel",
+        "primaryCode": "ncit:C2688",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C2688",
+                    "code": "C2688",
+                    "name": "Nab-paclitaxel",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Taxane-based chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 52,
-        "therapy_name": "Trastuzumab emtansine",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Trastuzumab emtansine",
+        "primaryCode": "ncit:C82492",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C82492",
+                    "code": "C82492",
+                    "name": "Trastuzumab Emtansine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 53,
-        "therapy_name": "Ribociclib",
-        "therapy_strategy": "CDK4/6 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ribociclib",
+        "primaryCode": "ncit:C95701",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C95701",
+                    "code": "C95701",
+                    "name": "Ribociclib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CDK4/6 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 54,
-        "therapy_name": "Adagrasib",
-        "therapy_strategy": "RAS inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Adagrasib",
+        "primaryCode": "ncit:C157493",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C157493",
+                    "code": "C157493",
+                    "name": "Adagrasib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "RAS inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 55,
-        "therapy_name": "Cemiplimab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Cemiplimab",
+        "primaryCode": "ncit:C121540",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C121540",
+                    "code": "C121540",
+                    "name": "Cemiplimab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 56,
-        "therapy_name": "Lorlatinib",
-        "therapy_strategy": "ALK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Lorlatinib",
+        "primaryCode": "ncit:C113655",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C113655",
+                    "code": "C113655",
+                    "name": "Lorlatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ALK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 57,
-        "therapy_name": "Sotorasib",
-        "therapy_strategy": "RAS inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Sotorasib",
+        "primaryCode": "ncit:C154287",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C154287",
+                    "code": "C154287",
+                    "name": "Sotorasib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "RAS inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 58,
-        "therapy_name": "Futibatinib",
-        "therapy_strategy": "FGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Futibatinib",
+        "primaryCode": "ncit:C114283",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C114283",
+                    "code": "C114283",
+                    "name": "Futibatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "FGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 59,
-        "therapy_name": "Cyclophosphamide",
-        "therapy_strategy": "Alkylating chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Cyclophosphamide",
+        "primaryCode": "ncit:C405",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C405",
+                    "code": "C405",
+                    "name": "Cyclophosphamide",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Alkylating chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 60,
-        "therapy_name": "Rituximab",
-        "therapy_strategy": "CD20 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Rituximab",
+        "primaryCode": "ncit:C1702",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1702",
+                    "code": "C1702",
+                    "name": "Rituximab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CD20 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 61,
-        "therapy_name": "Vincristine",
-        "therapy_strategy": "Vinca alkaloid chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Vincristine",
+        "primaryCode": "ncit:C933",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C933",
+                    "code": "C933",
+                    "name": "Vincristine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Vinca alkaloid chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 62,
-        "therapy_name": "Corticosteroid",
-        "therapy_strategy": "Anti-inflammatory",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Corticosteroid",
+        "primaryCode": "ncit:C2322",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C2322",
+                    "code": "C2322",
+                    "name": "Corticosteroid",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Anti-inflammatory",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 63,
-        "therapy_name": "Cytarabine",
-        "therapy_strategy": "DNA Polymerase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Cytarabine",
+        "primaryCode": "ncit:C408",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C408",
+                    "code": "C408",
+                    "name": "Cytarabine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "DNA Polymerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 64,
-        "therapy_name": "Etoposide",
-        "therapy_strategy": "Topoisomerase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Etoposide",
+        "primaryCode": "ncit:C491",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C491",
+                    "code": "C491",
+                    "name": "Etoposide",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 65,
-        "therapy_name": "Methotrexate",
-        "therapy_strategy": "Antifolate",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Methotrexate",
+        "primaryCode": "ncit:C642",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C642",
+                    "code": "C642",
+                    "name": "Methotrexate",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Antifolate",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 66,
-        "therapy_name": "Trametinib",
-        "therapy_strategy": "MEK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Trametinib",
+        "primaryCode": "ncit:C77908",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C77908",
+                    "code": "C77908",
+                    "name": "Trametinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "MEK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 67,
-        "therapy_name": "Dabrafenib",
-        "therapy_strategy": "B-RAF inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Dabrafenib",
+        "primaryCode": "ncit:C82386",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C82386",
+                    "code": "C82386",
+                    "name": "Dabrafenib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "B-RAF inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 68,
-        "therapy_name": "Daunorubicin",
-        "therapy_strategy": "DNA Polymerase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Daunorubicin",
+        "primaryCode": "ncit:C62091",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C62091",
+                    "code": "C62091",
+                    "name": "Daunorubicin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "DNA Polymerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 69,
-        "therapy_name": "Gemtuzumab ozogamicin",
-        "therapy_strategy": "CD33 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Gemtuzumab ozogamicin",
+        "primaryCode": "ncit:C1806",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1806",
+                    "code": "C1806",
+                    "name": "Gemtuzumab Ozogamicin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CD33 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 70,
-        "therapy_name": "Neratinib",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Neratinib",
+        "primaryCode": "ncit:C49094",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C49094",
+                    "code": "C49094",
+                    "name": "Neratinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 71,
-        "therapy_name": "Ipilimumab",
-        "therapy_strategy": "CTLA-4 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Ipilimumab",
+        "primaryCode": "ncit:C2654",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C2654",
+                    "code": "C2654",
+                    "name": "Ipilimumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CTLA-4 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 72,
-        "therapy_name": "Nivolumab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Nivolumab",
+        "primaryCode": "ncit:C68814",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C68814",
+                    "code": "C68814",
+                    "name": "Nivolumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 73,
-        "therapy_name": "Relatlimab",
-        "therapy_strategy": "LAG-3 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Relatlimab",
+        "primaryCode": "ncit:C111999",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C111999",
+                    "code": "C111999",
+                    "name": "Relatlimab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "LAG-3 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 74,
-        "therapy_name": "Elacestrant",
-        "therapy_strategy": "ER signaling inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Elacestrant",
+        "primaryCode": "ncit:C120211",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C120211",
+                    "code": "C120211",
+                    "name": "Elacestrant",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ER signaling inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 75,
-        "therapy_name": "Pertuzumab",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Pertuzumab",
+        "primaryCode": "ncit:C38692",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C38692",
+                    "code": "C38692",
+                    "name": "Pertuzumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 76,
-        "therapy_name": "Epirubicin",
-        "therapy_strategy": "Topoisomerase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Epirubicin",
+        "primaryCode": "ncit:C62028",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C62028",
+                    "code": "C62028",
+                    "name": "Epirubicin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 77,
-        "therapy_name": "Alpelisib",
-        "therapy_strategy": "PI3K/AKT/mTOR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Alpelisib",
+        "primaryCode": "ncit:C94214",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C94214",
+                    "code": "C94214",
+                    "name": "Alpelisib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PI3K/AKT/mTOR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 78,
-        "therapy_name": "Selpercatinib",
-        "therapy_strategy": "RET inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Selpercatinib",
+        "primaryCode": "ncit:C134987",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C134987",
+                    "code": "C134987",
+                    "name": "Selpercatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "RET inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 79,
-        "therapy_name": "Lenalidomide",
-        "therapy_strategy": "Angiogenesis inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Lenalidomide",
+        "primaryCode": "ncit:C2668",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C2668",
+                    "code": "C2668",
+                    "name": "Lenalidomide",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Angiogenesis inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 80,
-        "therapy_name": "Entrectinib",
-        "therapy_strategy": "ROS1 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Entrectinib",
+        "primaryCode": "ncit:C114984",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C114984",
+                    "code": "C114984",
+                    "name": "Entrectinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ROS1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 81,
-        "therapy_name": "Entrectinib",
-        "therapy_strategy": "TRK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Entrectinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "TRK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 82,
-        "therapy_name": "Midostaurin",
-        "therapy_strategy": "FLT3 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Midostaurin",
+        "primaryCode": "ncit:C1872",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1872",
+                    "code": "C1872",
+                    "name": "Midostaurin",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "FLT3 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 83,
-        "therapy_name": "Asciminib",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Asciminib",
+        "primaryCode": "ncit:C114494",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C114494",
+                    "code": "C114494",
+                    "name": "Asciminib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 84,
-        "therapy_name": "Dasatinib",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Dasatinib",
+        "primaryCode": "ncit:C38713",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C38713",
+                    "code": "C38713",
+                    "name": "Dasatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 85,
-        "therapy_name": "Capmatinib",
-        "therapy_strategy": "MET inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Capmatinib",
+        "primaryCode": "ncit:C90564",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C90564",
+                    "code": "C90564",
+                    "name": "Capmatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "MET inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 86,
-        "therapy_name": "Osimertinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Osimertinib",
+        "primaryCode": "ncit:C116377",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C116377",
+                    "code": "C116377",
+                    "name": "Osimertinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 87,
-        "therapy_name": "Talazoparib",
-        "therapy_strategy": "PARP inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Talazoparib",
+        "primaryCode": "ncit:C95733",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C95733",
+                    "code": "C95733",
+                    "name": "Talazoparib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PARP inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 88,
-        "therapy_name": "Nilotinib",
-        "therapy_strategy": "BCR-ABL inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Nilotinib",
+        "primaryCode": "ncit:C48375",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C48375",
+                    "code": "C48375",
+                    "name": "Nilotinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCR-ABL inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 89,
-        "therapy_name": "Atezolizumab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Atezolizumab",
+        "primaryCode": "ncit:C106250",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C106250",
+                    "code": "C106250",
+                    "name": "Atezolizumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 90,
-        "therapy_name": "Tepotinib",
-        "therapy_strategy": "MET inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Tepotinib",
+        "primaryCode": "ncit:C88314",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C88314",
+                    "code": "C88314",
+                    "name": "Tepotinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "MET inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 91,
-        "therapy_name": "Azacitidine",
-        "therapy_strategy": "Hypomethylating agent chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Azacitidine",
+        "primaryCode": "ncit:C288",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C288",
+                    "code": "C288",
+                    "name": "Azacitidine",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Hypomethylating agent chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 92,
-        "therapy_name": "Ivosidenib",
-        "therapy_strategy": "IDH1 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ivosidenib",
+        "primaryCode": "ncit:C114383",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C114383",
+                    "code": "C114383",
+                    "name": "Ivosidenib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "IDH1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 93,
-        "therapy_name": "Arsenic trioxide",
-        "therapy_strategy": "PML::RARA inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Arsenic trioxide",
+        "primaryCode": "ncit:C1005",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1005",
+                    "code": "C1005",
+                    "name": "Arsenic Trioxide",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PML::RARA inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 94,
-        "therapy_name": "Sacituzumab govitecan",
-        "therapy_strategy": "Topoisomerase inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Sacituzumab govitecan",
+        "primaryCode": "ncit:C102783",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C102783",
+                    "code": "C102783",
+                    "name": "Sacituzumab Govitecan",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 95,
-        "therapy_name": "Tucatinib",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Tucatinib",
+        "primaryCode": "ncit:C77896",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C77896",
+                    "code": "C77896",
+                    "name": "Tucatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 96,
-        "therapy_name": "Lapatinib",
-        "therapy_strategy": "HER2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Lapatinib",
+        "primaryCode": "ncit:C26653",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C26653",
+                    "code": "C26653",
+                    "name": "Lapatinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "HER2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 97,
-        "therapy_name": "Panitumumab",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Panitumumab",
+        "primaryCode": "ncit:C1857",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C1857",
+                    "code": "C1857",
+                    "name": "Panitumumab",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 98,
-        "therapy_name": "Venetoclax",
-        "therapy_strategy": "BCL2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Venetoclax",
+        "primaryCode": "ncit:C103147",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C103147",
+                    "code": "C103147",
+                    "name": "Venetoclax",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BCL2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 99,
-        "therapy_name": "Abemaciclib",
-        "therapy_strategy": "CDK4/6 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Abemaciclib",
+        "primaryCode": "ncit:C97660",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C97660",
+                    "code": "C97660",
+                    "name": "Abemaciclib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CDK4/6 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 100,
-        "therapy_name": "Larotrectinib",
-        "therapy_strategy": "TRK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Larotrectinib",
+        "primaryCode": "ncit:C115977",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C115977",
+                    "code": "C115977",
+                    "name": "Larotrectinib",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "TRK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 101,
-        "therapy_name": "Dacomitinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Dacomitinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 102,
-        "therapy_name": "Crizotinib",
-        "therapy_strategy": "ALK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Crizotinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ALK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 103,
-        "therapy_name": "Crizotinib",
-        "therapy_strategy": "ROS1 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Crizotinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ROS1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 104,
-        "therapy_name": "Gilteritinib",
-        "therapy_strategy": "FLT3 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Gilteritinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "FLT3 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 105,
-        "therapy_name": "Idelalisib",
-        "therapy_strategy": "PI3K/AKT/mTOR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Idelalisib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PI3K/AKT/mTOR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 106,
-        "therapy_name": "Ceritinib",
-        "therapy_strategy": "ALK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ceritinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ALK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 107,
-        "therapy_name": "Tislelizumab",
-        "therapy_strategy": "PD-1/PD-L1 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Tislelizumab",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PD-1/PD-L1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 108,
-        "therapy_name": "Amivantamab",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Amivantamab",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 109,
-        "therapy_name": "Capivasertib",
-        "therapy_strategy": "PI3K/AKT/mTOR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Capivasertib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PI3K/AKT/mTOR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 110,
-        "therapy_name": "Erdafitinib",
-        "therapy_strategy": "FGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Erdafitinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "FGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 111,
-        "therapy_name": "Zolbetuximab",
-        "therapy_strategy": "CLDN18.2 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Zolbetuximab",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CLDN18.2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 112,
-        "therapy_name": "Neratinib",
-        "therapy_strategy": "ER Signaling inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Neratinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ER Signaling inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 113,
-        "therapy_name": "Zanubrutinib",
-        "therapy_strategy": "BTK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Zanubrutinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BTK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 114,
-        "therapy_name": "Acalabrutinib",
-        "therapy_strategy": "BTK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Acalabrutinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BTK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 115,
-        "therapy_name": "Ibrutinib",
-        "therapy_strategy": "BTK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ibrutinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "BTK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 116,
-        "therapy_name": "Ifosfamide",
-        "therapy_strategy": "Alkylating chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Ifosfamide",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Alkylating chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 117,
-        "therapy_name": "Vinorelbine",
-        "therapy_strategy": "Vinca alkaloid chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Vinorelbine",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Vinca alkaloid chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 118,
-        "therapy_name": "Doxorubicin",
-        "therapy_strategy": "Topoisomerase inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Doxorubicin",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 119,
-        "therapy_name": "Tamoxifen",
-        "therapy_strategy": "Estrogen receptor inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Tamoxifen",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Estrogen receptor inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 120,
-        "therapy_name": "Ofatumumab",
-        "therapy_strategy": "CD20 inhibition",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Ofatumumab",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "CD20 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 121,
-        "therapy_name": "Bendamustine",
-        "therapy_strategy": "Alkylating chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Bendamustine",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Alkylating chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 122,
-        "therapy_name": "Prednisolone",
-        "therapy_strategy": "Corticosteroid",
-        "therapy_type": "Steroid"
+        "conceptType": "Drug",
+        "name": "Prednisolone",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Corticosteroid",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Steroid",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 123,
-        "therapy_name": "Chlorambucil",
-        "therapy_strategy": "Alkylating chemotherapy",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Chlorambucil",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Alkylating chemotherapy",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 124,
-        "therapy_name": "Mitoxantrone",
-        "therapy_strategy": "Topoisomerase inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Mitoxantrone",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Topoisomerase inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 125,
-        "therapy_name": "Interferon-alpha",
-        "therapy_strategy": "Cytokine stimulation",
-        "therapy_type": "Immunotherapy"
+        "conceptType": "Drug",
+        "name": "Interferon-alpha",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Cytokine stimulation",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Immunotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 126,
-        "therapy_name": "Enasidenib",
-        "therapy_strategy": "IDH2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Enasidenib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "IDH2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 127,
-        "therapy_name": "Infigratinib",
-        "therapy_strategy": "FGFR2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Infigratinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "FGFR2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 128,
-        "therapy_name": "Margetuximab-cmkb",
-        "therapy_strategy": "ER signaling inhibition",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Margetuximab-cmkb",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ER signaling inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 129,
-        "therapy_name": "Eribulin",
-        "therapy_strategy": "Tubulin polymerization inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Eribulin",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Tubulin polymerization inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 130,
-        "therapy_name": "Mobocertinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Mobocertinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 131,
-        "therapy_name": "Olutasidenib",
-        "therapy_strategy": "IDH1 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Olutasidenib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "IDH1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 132,
-        "therapy_name": "Lenvatinib",
-        "therapy_strategy": "VEGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Lenvatinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "VEGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 133,
-        "therapy_name": "Pemigatinib",
-        "therapy_strategy": "FGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Pemigatinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "FGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 134,
-        "therapy_name": "Repotrectinib",
-        "therapy_strategy": "ROS inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Repotrectinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ROS inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 135,
-        "therapy_name": "Fludarabine",
-        "therapy_strategy": "Antimetabolite",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Fludarabine",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Antimetabolite",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 136,
-        "therapy_name": "Rucaparib",
-        "therapy_strategy": "PARP inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Rucaparib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PARP inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 137,
-        "therapy_name": "Tazemetostat",
-        "therapy_strategy": "EZH2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Tazemetostat",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EZH2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 138,
-        "therapy_name": "Enzalutamide",
-        "therapy_strategy": "Antiandrogen",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Enzalutamide",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Antiandrogen",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 139,
-        "therapy_name": "Lazertinib",
-        "therapy_strategy": "EGFR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Lazertinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "EGFR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 140,
-        "therapy_name": "Mirvetuximab soravtansine-gynx",
-        "therapy_strategy": "Folate receptor-alpha inhibition",
-        "therapy_type": "Chemotherapy"
+        "conceptType": "Drug",
+        "name": "Mirvetuximab soravtansine-gynx",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Folate receptor-alpha inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Chemotherapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 141,
-        "therapy_name": "Tovorafenib",
-        "therapy_strategy": "B-RAF inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Tovorafenib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "B-RAF inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 142,
-        "therapy_name": "Vorasidenib",
-        "therapy_strategy": "IDH1/2 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Vorasidenib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "IDH1/2 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 143,
-        "therapy_name": "Goserelin",
-        "therapy_strategy": "Gonadotropin-releasing hormone (GnRH) agonist",
-        "therapy_type": "Hormone therapy"
+        "conceptType": "Drug",
+        "name": "Goserelin",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "Gonadotropin-releasing hormone (GnRH) agonist",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 144,
-        "therapy_name": "Inavolisib",
-        "therapy_strategy": "PI3K/AKT/mTOR inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Inavolisib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "PI3K/AKT/mTOR inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 145,
-        "therapy_name": "Zanidatamab",
-        "therapy_strategy": "ER signaling inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Zanidatamab",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ER signaling inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 146,
-        "therapy_name": "Zenocutuzumab",
-        "therapy_strategy": "NRG1 inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Zenocutuzumab",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "NRG1 inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     },
     {
         "id": 147,
-        "therapy_name": "Ensartinib",
-        "therapy_strategy": "ALK inhibition",
-        "therapy_type": "Targeted therapy"
+        "conceptType": "Drug",
+        "name": "Ensartinib",
+        "primaryCode": "ncit:",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:",
+                    "code": "",
+                    "name": "",
+                    "system": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.11d&code=",
+                    "systemVersion": "24.11d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": "ALK inhibition",
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     }
 ]
