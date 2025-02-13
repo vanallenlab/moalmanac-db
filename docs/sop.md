@@ -340,5 +340,10 @@ The assertion of a relationship describes the claim made by a source and connect
 - `therapy_sensitivity` (optional, integer), `1` if the relationship asserts sensitive to a therapy, `0` if the relationship asserts not sensitive to a therapy, and blank otherwise.
 - `therapy_resistance` (optional, integer), `1` if the relationship asserts resistance to a therapy, `0` if the relationship asserts not resistive to a therapy, and blank otherwise.
 - `favorable_prognosis` (optional, integer), `1` if the relationship asserts a disease prognosis that is favorable, `0` if the relationship asserts a disease prognosis that is not favorable, and blank otherwise
+- `_deprecated` (optional, boolean), `false` is the relationship is still active within the database, `true` if the relationship has been deprecated and will thus not show up on [https://moalmanac.org](https://moalmanac.org) or through the API.
+- `assertion_id` (required, integer), integer value corresponding to the `assertion_id` from the `assertions` endpoint at [https://moalmanac.org/api/assertions](https://moalmanac.org/api/assertions).
+- `feature_id` (required, integer), integer value corresponding to the `feature_id` from the `assertions` endpoint at [https://moalmanac.org/api/assertions](https://moalmanac.org/api/assertions).
+- `source_id` (required, integer), integer value corresponding to the `source_id` from the `assertions` endpoint at [https://moalmanac.org/api/assertions](https://moalmanac.org/api/assertions).
+- `therapy_name_mappings` (optional, list), mappings for `therapy_name` to the [NCI thesaurus](https://evsexplore.semantics.cancer.gov/evsexplore/), if possible. This field is _not_ included in the API or [https://moalmanac.org](https://moalmanac.org). Represented as a [ConceptMapping](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/data-types.html#conceptmapping) from [GA4GH's Variant Annotation Specification](https://github.com/ga4gh/va-spec).
 
 [Return to Table of Contents](#table-of-contents)
