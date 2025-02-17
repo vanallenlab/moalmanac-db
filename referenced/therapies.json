@@ -4740,5 +4740,37 @@
                 "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
             }
         ]
+    },
+    {
+        "id": 148,
+        "conceptType": "Drug",
+        "name": "Revumenib",
+        "primaryCode": "ncit:C165776",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "ncit:C165776",
+                    "code": "C165776",
+                    "name": "Revumenib",
+                    "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+                    "systemVersion": "25.01d"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "therapy_strategy",
+                "value": [
+                    "Menin inhibition"
+                ],
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+        ]
     }
 ]

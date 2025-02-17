@@ -2173,5 +2173,30 @@
                 "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
+    },
+    {
+        "id": 87,
+        "conceptType": "Disease",
+        "name": "Acute Leukemias of Ambiguous Lineage",
+        "primaryCode": "oncotree:ALAL",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:ALAL",
+                    "code": "ALAL",
+                    "name": "Acute Leukemias of Ambiguous Lineage",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "solid_tumor",
+                "value": false,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+            }
+        ]
     }
 ]
