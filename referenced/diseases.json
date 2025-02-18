@@ -2198,5 +2198,30 @@
                 "description": "Boolean value for if this tumor type is categorized as a solid tumor."
             }
         ]
+    },
+    {
+        "id": 88,
+        "conceptType": "Disease",
+        "name": "Renal Angiomyolipoma",
+        "primaryCode": "oncotree:RAML",
+        "mappings": [
+            {
+                "coding": {
+                    "id": "oncotree:RAML",
+                    "code": "RAML",
+                    "name": "Renal Angiomyolipoma",
+                    "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+                    "systemVersion": "oncotree_2021_11_02"
+                },
+                "relation": "exactMatch"
+            }
+        ],
+        "extensions": [
+            {
+                "name": "solid_tumor",
+                "value": true,
+                "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+            }
+        ]
     }
 ]
