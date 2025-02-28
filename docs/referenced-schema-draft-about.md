@@ -1,7 +1,7 @@
 # Molecular Oncology Almanac db 2.0.0 (draft)
 We are in the process of refactoring and updating moalmanac db to align with [GA4GH's Variant Annotation Specification (va-spec)](https://github.com/ga4gh/va-spec) and [Categorical Variant Representation Specification (Cat-VRS)](https://github.com/ga4gh/cat-vrs). Both of these specifications are in development and are following the [GA4GH Genomic Knowledge Standards (gks) Maturity Model](https://cat-vrs.readthedocs.io/en/latest/appendices/maturity_model.html). As components of each specification moves from draft to trial and to normative maturity we will update our schema to align with their recommendations. At the moment, this version of our data schema does _not_ comply with either format. 
 
-!(in progress relationships between referenced files)[assets/moalmanac-db-schema-diagram.svg]
+![in progress relationships between referenced files](assets/moalmanac-db-schema-diagram.svg)
 
 This version of the database is under active development and, if you have any thoughts, comments, concerns, or suggestions, please contact us!
 
@@ -33,14 +33,14 @@ We are using a relational schema that can be dereferenced to a single JSON file 
 # Our (in progress) interpretation of va-spec
 VA-Spec supports a wide array of [proposition types](https://va-ga4gh.readthedocs.io/en/latest/base-profiles/statement-profiles.html) but at the moment we are only utilizing Variant Therapeutic Response Study Proposition. Our current draft schema does _not_ follow va-spec and we are continuing to work to align our specification to their framework. Here, we'll go through each json file within [referenced/](../referenced/) and describe each attribute. Two common data types from [gks-core](https://github.com/ga4gh/gks-core) that are used by several data types are [extensions](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/data-types.html#extension) and [mappings](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/data-types.html#conceptmapping). 
 
-**Extensions** are a way to capture information that are not directly supported by their data model. They will always have the fields `name`, `value`, and `description`. For example, our model for [diseases](../referenced/diseases.json) has an extension that specifies if the cancer type is categorized as a solid tumor or not. 
+**Extensions** are a way to capture information that are not directly supported by their data model. They will always have the fields `name`, `value`, and `description`. For example, our model for [diseases](#diseasesjson) has an extension that specifies if the cancer type is categorized as a solid tumor or not. 
 ```
 extensions [
-	{
-		"name": "solid_tumor",
-		"value": true,
-		"description": "Boolean value for if this tumor type is categorized as a solid tumor."
-	}
+  {
+	"name": "solid_tumor",
+	"value": true,
+	"description": "Boolean value for if this tumor type is categorized as a solid tumor."
+  }
 ]
 ```
 
@@ -65,7 +65,7 @@ Specific extensions and mappings will be explained within their relevant data ty
 
 We also want to give a special thank you to Daniel Puthawala and Kori Kuzama from the Wagner lab for their help and patience as we've badgered them with questions to understand the GKS ecosystem. Their expertise and the [Wagner Lab's normalizers](https://gk-pilot.readthedocs.io/en/stable/tools.html) are excellent. 
 ## [about.json](../referenced/about.json) 
-[about.json](../referenced/about.json) contains metadata for moalmanac db and will be a root key within the [dereferenced](../moalmanac-draft.referenced.json) json. Unlike every other referenced data type, it is a single dictionary containing:
+[about.json](../referenced/about.json) contains metadata for moalmanac db and will be a root key within the [dereferenced](../moalmanac-draft.dereferenced.json) json. Unlike every other referenced data type, it is a single dictionary containing:
 - `github` (str): a url for the moalmanac-db github repository
 - `name` (str): the service name, "Molecular Oncology Almanac"
 - `license` (str): the license that moalmanac-db is distributed under, GPL-2.0
@@ -91,7 +91,7 @@ We also want to give a special thank you to Daniel Puthawala and Kori Kuzama fro
 - `name` (str): a human readable name for the Agent.
 - `description` (str): A free-text description of the Agent.
 
-We likely can combine [organizations](#organizations.json) with this table; however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documents.json).
+We likely can combine [organizations](#organizationsjson) with this table; however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documentsjson).
 
 ```
 [  
@@ -134,7 +134,7 @@ The following biomarker types are currently represented in this version of moalm
 ### Wild type
 - `_present` (boolean): a boolean value for if the biomarker is present or absent.
 ## [contributions.json](../referenced/contributions.json) 
-[Contributions](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/activities/contribution.html) are defined as actions taken by an [agent](#agents.json) when modifying contents of the database. As far as we can tell from va-spec's current documentation, contributions are within the framework are attached to Data Set, Statement, Evidence Line, and Study Result. We are considering adding contributions to each data type to track changes within the database content, independently of GitHub. 
+[Contributions](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/activities/contribution.html) are defined as actions taken by an [agent](#agentsjson) when modifying contents of the database. As far as we can tell from va-spec's current documentation, contributions are within the framework are attached to Data Set, Statement, Evidence Line, and Study Result. We are considering adding contributions to each data type to track changes within the database content, independently of GitHub. 
 
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
@@ -143,7 +143,7 @@ Each record is a dictionary with the fields:
 - `description` (str): A free-text description of the Agent.
 - `date` (str): date of when the contribution to the database content occurred, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 
-When dereferenced, the field `agent_id` will be replaced with `agent` and it will contain the relevant record from [agents](#agents.json). 
+When dereferenced, the field `agent_id` will be replaced with `agent` and it will contain the relevant record from [agents](#agentsjson). 
 
 ```
 [  
@@ -214,7 +214,7 @@ Published documents that we derive relationships from are contained within this 
 - `drug_name_generic` (str): the generic name for the drug referenced in the document.
 - `first_published` (str): the date when the document was first published, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 - `access_date` (str): the date when the document was accessed, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
-- `organization_id` (int): the `id` referenced within [organizations](#organizations.json). 
+- `organization_id` (int): the `id` referenced within [organizations](#organizationsjson). 
 - `publication_date` (str): the date that this version of the document was published, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 - `url` (str): the url to access this version of the document.
 - `url_drug` (str): the url for the document's referenced drug through [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm). 
@@ -232,7 +232,7 @@ For example, for `Regulatory approvals` from the U.S. FDA:
 "name": "Talzenna (talazoparib) [package insert]. U.S. FDA."
 ```
 
-When dereferenced, the field `organization_id` will be replaced with `organization` and it will contain the relevant record from [organizations](#organizations.json). 
+When dereferenced, the field `organization_id` will be replaced with `organization` and it will contain the relevant record from [organizations](#organizationsjson). 
 
 ```
 [  
@@ -257,8 +257,8 @@ When dereferenced, the field `organization_id` will be replaced with `organizati
   ...
 ]
 ```
-## [genes.json](#genes.json)
-Genes are a referenced field of [biomarkers](#biomarkers.json) and is a list of dictionaries, where each dictionary is the gene as a mappable concept. Each record is abbreviated  from the from the [Wagner Lab](https://www.nationwidechildrens.org/specialties/institute-for-genomic-medicine/research-labs/wagner-lab)'s / [VICC](https://cancervariants.org/index.html)'s [gene normalizer](https://github.com/cancervariants/gene-normalization). 
+## [genes.json](../referenced/genes.json)
+Genes are a referenced field of [biomarkers](#biomarkersjson) and is a list of dictionaries, where each dictionary is the gene as a mappable concept. Each record is abbreviated  from the from the [Wagner Lab](https://www.nationwidechildrens.org/specialties/institute-for-genomic-medicine/research-labs/wagner-lab)'s / [VICC](https://cancervariants.org/index.html)'s [gene normalizer](https://github.com/cancervariants/gene-normalization). 
 
 Currently, mappings used for Genes are HGNC, ENSEMBL, NCI gene, and RefSeq's MANE Select transcript. The chromosomal location of the Gene is stored within extensions as `location` and `location_sortable`.
 
@@ -324,23 +324,23 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
   ...
 ]
 ```
-## [indications.json](#indications.json)
+## [indications.json](../referenced/indications.json)
 Indications are a data type only used for statements originating from `Regulatory approval` [Documents](#documents.json), specifically containing the regulatory approval _as written_ in the document. 
 
 Indications could align with va-spec through a combination of Documents and Statements, but it seems redundant as this would result in several more documents and "nested" statements within the database contents. 
 
 Each record is a dictionary with the following fields:
 - `id` (int): an integer id for the record.
-- `document_id` (int): the `id` referenced within [documents](#documents.json). 
+- `document_id` (int): the `id` referenced within [documents](#documentsjson). 
 - `indication` (str): the regulatory approval as written in the document.
 - `initial_approval_date` (str): the date that the approval, as written, was first approved the regulatory agency, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 - `initial_approval_url` (str): the url for the regulatory approval that this indication first appeared in.
-- `description` (str): the reformatted version of the text that will be used in [propositions](#propositions.json). This differs from indication by citing the indication as the regulatory approval prefers and may include additional information to interpret the indication, such as describing the clinical trials that the indication is based on.
+- `description` (str): the reformatted version of the text that will be used in [propositions](#propositionsjson). This differs from indication by citing the indication as the regulatory approval prefers and may include additional information to interpret the indication, such as describing the clinical trials that the indication is based on.
 - `raw_biomarkers` (str): the biomarker(s) extracted from the indication.
 - `raw_cancer_type` (str): the disease extracted from the indication.
 - `raw_therapeutics` (str): the therapeutic(s) extracted from the indication.
 
-When dereferenced, the field `document_id` will be replaced with `document` and it will contain the relevant record from [documents](#documents.json).
+When dereferenced, the field `document_id` will be replaced with `document` and it will contain the relevant record from [documents](#documentsjson).
 
 ```
 [  
@@ -358,8 +358,8 @@ When dereferenced, the field `document_id` will be replaced with `document` and 
   ...
 ]
 ```
-## [organizations.json](#organizations.json)
-Organizations are not an explicit data type modeled within va-spec, but it is closely related to [agents](#agents.json). We likely can combine this table with this [agents](#agents.json); however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documents.json). 
+## [organizations.json](../referenced/organizations.json)
+Organizations are not an explicit data type modeled within va-spec, but it is closely related to [agents](#agentsjson). We likely can combine this table with this [agents](#agentsjson); however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documentsjson). 
 
 Each record is a dictionary with the following fields:
 - `id` (int): an integer id for the record.
@@ -379,7 +379,7 @@ Each record is a dictionary with the following fields:
   }  
 ]
 ```
-## [propositions.json](#propositions.json)
+## [propositions.json](../referenced/propositions.json)
 [Propositions](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/proposition-profiles.html) are a [base profile](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/index.html) of knowledge within va-spec. Specifically, propositions contain a representation of knowledge depending on the type of proposition, including: variant pathogenicity, variant oncogenicity, variant therapeutic response, diagnostics, and prognostics. Propositions differ from Statements by **not** containing information on if the knowledge is true or false, it instead if a structured way to represent the knowledge relevant for that proposition type.
 
 At the moment, this version of moalmanac-db is only leveraging [Variant Therapeutic Response Propositions](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/proposition-profiles.html#variant-therapeutic-response-proposition). 
@@ -389,19 +389,19 @@ Each record is a dictionary with the following fields:
 - `type` (str): "VariantTherapeuticResponseProposition", and reflects the type of proposition.
 - `predicate` (str): "predictSensitivityTo", the relationship between the subject and object of the proposition. 
 - `name` (str): a human readable label for the proposition, not currently used.
-- `description` (str): a human readable description of the proposition, currently copied from [indications](#indications.json).
-- `indication_id` (int): the `id` referenced within [indications](#indications.json). 
-- `biomarkers` (list[int]): a list where each element is an `id` referenced within [biomarkers](#biomarkers.json). 
-- `conditionQualifier_id` (int): the `id` referenced within [diseases](diseases.json). 
-- `therapies`: (list[int]): a list where each element is an `id` referenced within [therapies](#therapies.json). 
+- `description` (str): a human readable description of the proposition, currently copied from [indications](#indicationsjson).
+- `indication_id` (int): the `id` referenced within [indications](#indicationsjson). 
+- `biomarkers` (list[int]): a list where each element is an `id` referenced within [biomarkers](#biomarkersjson). 
+- `conditionQualifier_id` (int): the `id` referenced within [diseases](diseasesjson). 
+- `therapies`: (list[int]): a list where each element is an `id` referenced within [therapies](#therapiesjson). 
 
 Biomarkers and therapies are intended to be represented using the fields `objectTherapeutic` and `subjectVariant`, respectively, but at the moment they are both listed in arrays with implied AND logic. For biomarkers, cat-vrs is currently exploring [how to model groups of variants](https://github.com/ga4gh/cat-vrs/issues/92). For therapies, va-spec recommends modeling groups of more than one therapy as a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html), and [dereference.py](../utils/dereference.py) needs to be updated to reflect this change.
 
 When dereferenced, several fields will update:
-- `indication_id` will be replaced with `indication` and it will contain the relevant record from [indications](#indications.json).
-- `biomarkers` will still be called `biomarkers`, but each member will be replaced with the relevant record from [biomarkers](#biomarkers.json).
-- `conditionQualifier_id` will be replaced with `conditionQualifier` and it will contain the relevant record from [diseases](#diseases.json).
-- `thearpies` will still be called `thearpies`, but each member will be replaced with the relevant record from [therapies](#therapies.json).
+- `indication_id` will be replaced with `indication` and it will contain the relevant record from [indications](#indicationsjson).
+- `biomarkers` will still be called `biomarkers`, but each member will be replaced with the relevant record from [biomarkers](#biomarkersjson).
+- `conditionQualifier_id` will be replaced with `conditionQualifier` and it will contain the relevant record from [diseases](#diseasesjson).
+- `thearpies` will still be called `thearpies`, but each member will be replaced with the relevant record from [therapies](#therapiesjson).
 
 ```
 [  
@@ -427,24 +427,24 @@ When dereferenced, several fields will update:
   ...
 ]
 ```
-## [statements.json](#statements.json)
-[Statements](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/statement.html) are a core Information Entity within va-spec. Each statement contains one [proposition](#propositions.json) and provides additional information around the proposition; such as a citation for it, direction of the proposition (supports or disputes), and the evidence associated with the proposition. 
+## [statements.json](../referenced/statementsjson)
+[Statements](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/statement.html) are a core Information Entity within va-spec. Each statement contains one [proposition](#propositionsjson) and provides additional information around the proposition; such as a citation for it, direction of the proposition (supports or disputes), and the evidence associated with the proposition. 
 
 Each record is a dictionary with the following fields:
 - `id` (int): an integer id for the record.
 - `type` (str): must be "Statement"
-- `contributions` (list[int]): a list where each element is an `id` referenced within [contributions](#contributions.json). 
-- `reportedIn` (list[int]): a list where each element is an `id` referenced within [documents](#documents.json). 
-- `proposition_id` (int): the `id` referenced within [propositions](#propositions.json). 
+- `contributions` (list[int]): a list where each element is an `id` referenced within [contributions](#contributionsjson). 
+- `reportedIn` (list[int]): a list where each element is an `id` referenced within [documents](#documentsjson). 
+- `proposition_id` (int): the `id` referenced within [propositions](#propositionsjson). 
 - `direction` (str): either "supports", "disputes", or "neutral".
-- `strength_id` (int): the `id` referenced within [strengths](#strengths.json). 
+- `strength_id` (int): the `id` referenced within [strengths](#strengthsjson). 
 
 When dereferenced, several fields will update:
-- `indication_id` will be replaced with `indication` and it will contain the relevant record from [indications](#indications.json).
-- `contributions` will still be called `contributions`, but each member will be replaced with the relevant record from [contributions](#contributions.json).
-- `reportedIn` will still be called `reportedIn`, but each member will be replaced with the relevant record from [documents](#documents.json).
-- `proposition_id` will be replaced with `proposition` and it will contain the relevant record from [propositions](#propositions.json).
-- `strength_id` will be replaced with `proposition` and it will contain the relevant record from [strengths](#strengths.json).
+- `indication_id` will be replaced with `indication` and it will contain the relevant record from [indications](#indicationsjson).
+- `contributions` will still be called `contributions`, but each member will be replaced with the relevant record from [contributions](#contributionsjson).
+- `reportedIn` will still be called `reportedIn`, but each member will be replaced with the relevant record from [documents](#documentsjson).
+- `proposition_id` will be replaced with `proposition` and it will contain the relevant record from [propositions](#propositionsjson).
+- `strength_id` will be replaced with `proposition` and it will contain the relevant record from [strengths](#strengthsjson).
 
 ```
 [  
@@ -464,7 +464,7 @@ When dereferenced, several fields will update:
   ...
 ]
 ```
-## [strengths.json](#strengths.json)
+## [strengths.json](../referenced/strengths.json)
 Strengths is a field within the [Statement](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/information-entities/statement.html) information entity within va-spec, and is a mappable concept used to report the confidence associated with a statement. This is being used as a category to describe the underlying evidence of a statement.
 
 Currently, mappings used for strengths are from the [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/). A mapping for Approval is present and we will expand to represent the evidence categories [currently captured within moalmanac](https://www.moalmanac.org/about).
@@ -482,7 +482,7 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 - `code` (str): a symbol uniquely associated with the concept in the external system.
 - `name` (str): a human readable name for the concept in the external system.
 - `system` (str): a url for the external system.
-## [therapies.json](#therapies.json)
+## [therapies.json](../referenced/therapies.json)
 Therapies are the therapeutics associated with therapeutic sensitivity propositions. Like biomarkers, all therapies are currently associated with statements as arrays with AND criteria implicitly joining them. Within [Variant Therapeutic Response Propositions](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/proposition-profiles.html#variant-therapeutic-response-proposition), only one object is accepted within the `objectTherapeutic` field and va-spec manages this by expecting a [single therapy](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/drug.html) or a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html) object. 
 
 Currently, mappings used for therapies are from the [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/). Extensions used are `therapy_strategy`, from the current version of the database, and `therapy_type`, which is the [type of cancer treatment from cancer.gov](https://www.cancer.gov/about-cancer/treatment/types). 
