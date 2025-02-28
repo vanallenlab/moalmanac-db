@@ -95,7 +95,7 @@ def write_dict(data: dict, keys_list: list[str], file:str) -> None:
 
     try:
         # Serialize python object (data) to a JSON formatted string
-        json_object = json.dumps(data, indent=4)
+        json_object = json.dumps(data, indent=2)
     except (TypeError, ValueError) as e:
         raise ValueError(f"Failed to serialize the object to JSON: {e}")
 
@@ -128,7 +128,7 @@ def write_records(data: list[dict], file:str) -> None:
 
     try:
         # Serialize python object (data) to a JSON formatted string
-        json_object = json.dumps(data, indent=4)
+        json_object = json.dumps(data, indent=2)
     except (TypeError, ValueError) as e:
         raise ValueError(f"Failed to serialize the object to JSON: {e}")
 
