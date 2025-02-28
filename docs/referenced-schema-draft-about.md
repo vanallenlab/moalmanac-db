@@ -182,7 +182,8 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
   "name": "Colorectal Adenocarcinoma",  
   "primaryCode": "oncotree:COADREAD",  
   "mappings": [  
-    {      "coding": {  
+    {      
+      "coding": {  
         "id": "oncotree:COADREAD",  
         "code": "COADREAD",  
         "name": "Colorectal Adenocarcinoma",  
@@ -191,8 +192,10 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
       },  
       "relation": "exactMatch"  
     }  
-  ],  "extensions": [  
-    {      "name": "solid_tumor",  
+  ],  
+  "extensions": [  
+    {      
+      "name": "solid_tumor",  
       "value": true,  
       "description": "Boolean value for if this tumor type is categorized as a solid tumor."  
     }  
@@ -284,39 +287,46 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
     "primaryCode": "hgnc:76",  
     "name": "ABL1",  
     "mappings": [  
-      {        "coding": {  
+      {        
+        "coding": {  
           "id": "hgnc:76",  
           "code": "HGNC:76",  
           "system": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id"  
         },  
         "relation": "exactMatch"  
       },  
-      {        "coding": {  
+      {        
+        "coding": {  
           "id": "ensembl:ensg00000097007",  
           "code": "ENSG00000097007",  
           "system": "https://www.ensembl.org/id"  
         },  
         "relation": "relatedMatch"  
       },  
-      {        "coding": {  
+      {        
+        "coding": {  
           "id": "ncbi:25",  
           "code": "25",  
           "system": "https://www.ncbi.nlm.nih.gov/gene"  
         },  
         "relation": "relatedMatch"  
       },  
-      {        "coding": {  
+      {        
+        "coding": {  
           "id": "refseq:NM_005157.6",  
           "code": "NM_005157.6",  
           "system": "https://www.ncbi.nlm.nih.gov/nuccore"  
         },  
         "relation": "relatedMatch"  
       }  
-    ],    "extensions": [  
-      {        "name": "location",  
+    ],    
+    "extensions": [  
+      {        
+        "name": "location",  
         "value": "9q34.12"  
       },  
-      {        "name": "location_sortable",  
+      {        
+        "name": "location_sortable",  
         "value": "09q34.12"  
       }  
     ]  
