@@ -37,7 +37,7 @@ VA-Spec supports a wide array of [proposition types](https://va-ga4gh.readthedoc
 ```
 extensions [
   {
-	"name": "solid_tumor",
+    "name": "solid_tumor",
 	"value": true,
 	"description": "Boolean value for if this tumor type is categorized as a solid tumor."
   }
