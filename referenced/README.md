@@ -1,0 +1,2 @@
+# Molecular Oncology Almanac db (draft)
+We are working to update our database to follow recommendations from GA4GH's [Genomic Knowledge Standards](https://www.ga4gh.org/work_stream/genomic-knowledge-standards/) Work Stream. This is separately discussed in [this document](../docs/referenced-schema-draft-about.md).
