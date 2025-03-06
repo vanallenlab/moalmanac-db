@@ -1,6 +1,44 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## March 2025
+Revised entries:
+- 31 `therapy_name` values were revised to align with the [NCI thesaurus](https://evsexplore.semantics.cancer.gov/evsexplore/welcome) preferred names, resulting in 106 database records being updated. For more details, see [the relevant pull request](https://github.com/vanallenlab/moalmanac-db/pull/40).
+
+| old `therapy_name` | new `therapy_name` | NCIt code |
+|---|---|---|
+| 5-Fluorouracil | Fluorouracil | C505 |
+| AT7519 | CDK Inhibitor AT7519 | C64761 |
+| AZ4547 | Fexagratinib | C88272 |
+| AZD3759 | Zorifertinib | C118289 |
+| AZD8186 | PI3Kbeta Inhibitor AZD8186 | C107684 |
+| Ado-Trastuzumab Emtansine | Trastuzumab Emtansine | C82492 |
+| Alkylating chemotherapy | Antineoplastic Alkylating Agent | C1590 |
+| Amivantamab-vmjw | Amivantamab | C124993 |
+| BAY 1895344 | Elimusertib | C146807 |
+| Carbogen and nicotinamide  | Carbogen | C1038 |
+| Dostarlimab-gxly | Dostarlimab | C126799 |
+| EGF816 | Nazartinib | C115109 |
+| Interferon-alpha | Interferon Alpha | C20494 |
+| LOXO-292 | Selpercatinib | C134987 |
+| MK-2206 | Akt Inhibitor MK2206 | C90581 |
+| Margetuximab-cmkb | Margetuximab | C91733 |
+| Neoadjuvant chemoradiation | Chemoradiotherapy | C94626 |
+| Neoadjuvant chemotherapy | Chemotherapy | C15632 |
+| Oxaplatin | Oxaliplatin | C1181 |
+| PF-06747775 | Mavelertinib | C120307 |
+| PU-H71 | Zelavespib | C101227 |
+| Platinum | Platinum Compound | C1450 |
+| Proton-based SBRT | Proton Stereotactic Body Radiation Therapy | C175032 |
+| Radiation therapy | Radiation Therapy | C15313 |
+| Radical radiotherapy | Radiation Therapy | C15313 |
+| Rapamycin | Sirolimus | C1212 |
+| SBRT | Stereotactic Body Radiation Therapy | C118286 |
+| VX-680 | Tozasertib Lactate | C61319 |
+| Zenocutuzumab-zbco | Zenocutuzumab | C152948 |
+| radiotherapy | Radiation Therapy | C15313 |
+| surgery | Surgery | C17173 |
+
 ## February 2025
 Added entries:
 - (FDA) [_ALK_ rearrangements and sensitivity to ensartinib for the treatment of adult patients with non-small cell lung cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ensartinib-alk-positive-locally-advanced-or-metastatic-non-small-cell-lung-cancer).
