@@ -10,11 +10,8 @@ assignees: ''
 **Task Description**
 Provide a clear and concise description of the task or enhancement.
 
-**Objective**
-Explain the goal or purpose of this task. What are we trying to achieve?
-
-**Requirements**
-List the specific requirements or criteria that need to be met for this task to be considered complete.
+**Objective and requirements**
+Explain the goal or purpose of this task. What are we trying to achieve? List the specific requirements or criteria that need to be met for this task to be considered complete.
 
 **Implementation Steps**
 Outline the steps or stages involved in completing this task:
