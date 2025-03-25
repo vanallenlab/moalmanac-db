@@ -1,5 +1,5 @@
 ---
-name: Development_task
+name: Development task
 about: Outline a task or enhancement for the development team.
 title: ''
 labels: ''
