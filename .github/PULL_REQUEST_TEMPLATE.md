@@ -1,8 +1,7 @@
-# Pull Request Template
 ## Overview
 Provide a plain language description of the changes included in this pull request. 
 
-## Content updates
+## Database content updates
 Describe changes to the database content. This format is also used for the content changelog, you can also look at [prior releases](/docs/content-changelog.md) for examples, too. Items should be sorted by descending evidence level and then alphabetically by feature name.
 
 **Added entries**:
