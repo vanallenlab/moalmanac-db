@@ -136,7 +136,8 @@ The following biomarker types are currently represented in this version of moalm
 - `value` (float): value of the marker.
 - `_present` (boolean): a boolean value for if the biomarker is present or absent.
 ### Wild type
-- `_present` (boolean): a boolean value for if the biomarker is present or absent.
+- `_present` (boolean): a boolean value for if the biomarker is present or absent.  
+
 [Return to Table of Contents](#table-of-contents)
 ## [contributions.json](../referenced/contributions.json) 
 [Contributions](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/activities/contribution.html) are defined as actions taken by an [agent](#agentsjson) when modifying contents of the database. As far as we can tell from va-spec's current documentation, contributions are within the framework are attached to Data Set, Statement, Evidence Line, and Study Result. We are considering adding contributions to each data type to track changes within the database content, independently of GitHub. 
@@ -503,6 +504,7 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 - `code` (str): a symbol uniquely associated with the concept in the external system.
 - `name` (str): a human readable name for the concept in the external system.
 - `system` (str): a url for the external system.
+
 [Return to Table of Contents](#table-of-contents)
 ## [therapies.json](../referenced/therapies.json)
 Therapies are the therapeutics associated with therapeutic sensitivity propositions. Like biomarkers, all therapies are currently associated with statements as arrays with AND criteria implicitly joining them. Within [Variant Therapeutic Response Propositions](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/proposition-profiles.html#variant-therapeutic-response-proposition), only one object is accepted within the `objectTherapeutic` field and va-spec manages this by expecting a [single therapy](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/drug.html) or a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html) object. 
@@ -524,4 +526,5 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 - `code` (str): a symbol uniquely associated with the concept in the external system.
 - `name` (str): a human readable name for the concept in the external system.
 - `system` (str): a url for the external system.
+
 [Return to Table of Contents](#table-of-contents)
