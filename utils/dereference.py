@@ -159,7 +159,7 @@ def main(input_paths):
         # This will not be True once we re-expand beyond sensitive relationships
     )
 
-    # statements; references contributions.json, documents.json, and propositions.json
+    # statements; references contributions.json, documents.json, propositions.json, and indications.json
     dereferenced_statements = Dereference.list(
         records=statements,
         referenced_key='contributions',
