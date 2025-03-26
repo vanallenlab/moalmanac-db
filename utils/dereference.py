@@ -138,7 +138,7 @@ def main(input_paths):
         new_key_name='document'
     )
 
-    # propositions; references biomarkers.json, diseases.json, indications.json, and therapies.json
+    # propositions; references biomarkers.json, diseases.json, and therapies.json
     dereferenced_propositions = Dereference.list(
         records=propositions,
         referenced_key='biomarkers',
@@ -150,12 +150,6 @@ def main(input_paths):
         referenced_key='conditionQualifier_id',
         referenced_records=diseases,
         new_key_name='conditionQualifier'
-    )
-    dereferenced_propositions = Dereference.integer(
-        records=dereferenced_propositions,
-        referenced_key='indication_id',
-        referenced_records=dereferenced_indications,
-        new_key_name='indication'
     )
     dereferenced_propositions = Dereference.list(
         records=dereferenced_propositions,
@@ -184,12 +178,17 @@ def main(input_paths):
         referenced_records=dereferenced_propositions,
         new_key_name='proposition'
     )
+    dereferenced_statements = Dereference.integer(
+        records=dereferenced_statements,
+        referenced_key='indication_id',
+        referenced_records=dereferenced_indications,
+        new_key_name='indication'
+    )
 
     return {
         'about': about,
         'content': dereferenced_statements
     }
-
 
 if __name__ =="__main__":
     arg_parser = argparse.ArgumentParser(
