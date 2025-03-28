@@ -10,6 +10,8 @@ assignees: ''
 **Task Description**
 Provide a clear and concise description of the task or enhancement.
 
+Note: if you are having trouble filling out this form, you can view an example [here](https://github.com/vanallenlab/moalmanac-db/issues/42).
+
 **Objective and requirements**
 Explain the goal or purpose of this task. What are we trying to achieve? List the specific requirements or criteria that need to be met for this task to be considered complete.
 
