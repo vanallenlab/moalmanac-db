@@ -1,5 +1,7 @@
 ## Overview
-Provide a plain language description of the changes included in this pull request. 
+Provide a plain language description of the changes included in this pull request.
+
+Note: Are you having trouble filling out this form? Check out [this example](https://github.com/vanallenlab/moalmanac-db/pull/58)!
 
 ## Database content updates
 Describe changes to the database content. This format is also used for the content changelog, you can also look at [prior releases](/docs/CHANGELOG.md) for examples, too. Items should be sorted by descending evidence level and then alphabetically by feature name.
