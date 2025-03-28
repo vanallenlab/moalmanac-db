@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Let us know about a bug you found
 title: ''
 labels: 
   - bug
