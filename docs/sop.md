@@ -57,7 +57,7 @@ Any changes to the Molecular Oncology Almanac database should be performed by cr
 
 Releases to database content are labeled based on date, in the format of `v.{Numeric year}-{Numeric month}-{Numeric day}`. 
 
-Content changes should be summarized as a new entry in the [content changelog](/docs/content-changelog.md), following the [template for changes](/docs/template-content-changelog.md). The contents of the changelog entry should also be posted within the pull request and to describe the release, when created. 
+Content changes should be summarized as a new entry in the [content changelog](CHANGELOG.md), following the [template for changes](/.github/RELEASE_TEMPLATE.md). The contents of the changelog entry should also be posted within the pull request and to describe the release, when created. 
 
 [Return to Table of Contents](#table-of-contents)
 
