@@ -1,6 +1,11 @@
 # Content Changelog
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
+## April 2025
+- (FDA) Pembrolizumab in combination with trastuzumab, fluoropyrimidine- and platinum- containing chemotherapy for the treatment of patients with HER2-positive gastric adenocarcinoma received traditional FDA approval after previously receiving accerated approval.
+
+Three entries were updated to replace the unicode \u2265 with >=.
+
 ## March 2025
 Revised entries:
 - 31 `therapy_name` values were revised to align with the [NCI thesaurus](https://evsexplore.semantics.cancer.gov/evsexplore/welcome) preferred names, resulting in 106 database records being updated. For more details, see [the relevant pull request](https://github.com/vanallenlab/moalmanac-db/pull/40).
