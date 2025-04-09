@@ -80,6 +80,126 @@ class Dereference:
         return records
 
 
+class BaseTable:
+    def __init__(self, records: list[dict]):
+        self.records = records
+
+    def dereference_integer(self, referenced_key: str, referenced_records: list[dict], new_key_name: str) -> list[dict]:
+        return Dereference.integer(
+            records=self.records,
+            referenced_key=referenced_key,
+            referenced_records=referenced_records,
+            new_key_name=new_key_name
+        )
+
+    def dereference_list(self, referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> list[dict]:
+        return Dereference.list(
+            records=self.records,
+            referenced_key=referenced_key,
+            referenced_records=referenced_records,
+            key_always_present=key_always_present
+        )
+
+
+class Agents(BaseTable):
+    pass
+
+class Biomarkers(BaseTable):
+    def dereference_genes(self, genes):
+        self.records = self.dereference_list(
+            referenced_key='genes',
+            referenced_records=genes,
+            key_always_present=False
+        )
+
+class Contributions(BaseTable):
+    def dereference_agents(self, agents):
+        self.records = self.dereference_integer(
+            referenced_key='agent_id',
+            referenced_records=agents,
+            new_key_name='agent'
+        )
+
+class Diseases(BaseTable):
+    pass
+
+class Documents(BaseTable):
+    def dereference_organizations(self, organizations):
+        self.records = self.dereference_integer(
+            referenced_key='organization_id',
+            referenced_records=organizations,
+            new_key_name='organization'
+        )
+
+class Genes(BaseTable):
+    pass
+
+class Indications(BaseTable):
+    def dereference_documents(self, documents):
+        self.records = self.dereference_integer(
+            referenced_key='document_id',
+            referenced_records=documents,
+            new_key_name='document'
+        )
+
+class Organizations(BaseTable):
+    pass
+
+class Propositions(BaseTable):
+    def dereference_biomarkers(self, biomarkers):
+        self.records = self.dereference_list(
+            referenced_key='biomarkers',
+            referenced_records=biomarkers,
+            key_always_present=False
+        )
+
+    def dereference_diseases(self, diseases):
+        self.records = self.dereference_integer(
+            referenced_key='conditionQualifier_id',
+            referenced_records=diseases,
+            new_key_name='conditionQualifier'
+        )
+
+    def dereference_therapies(self, therapies):
+        self.records = self.dereference_list(
+            referenced_key='therapies',
+            referenced_records=therapies,
+            key_always_present=True
+            # This will not be True once we re-expand beyond sensitive relationships
+        )
+
+class Statements(BaseTable):
+    def dereference_contributions(self, contributions):
+        self.records = self.dereference_list(
+            referenced_key='contributions',
+            referenced_records=contributions,
+            key_always_present=True
+        )
+
+    def dereference_documents(self, documents):
+        self.records = self.dereference_list(
+            referenced_key='reportedIn',
+            referenced_records=documents,
+            key_always_present=True
+        )
+
+    def dereference_propositions(self, propositions):
+        self.records = self.dereference_integer(
+            referenced_key='proposition_id',
+            referenced_records=propositions,
+            new_key_name='proposition'
+        )
+
+    def dereference_indications(self, indications):
+        self.records = self.dereference_integer(
+            referenced_key='indication_id',
+            referenced_records=indications,
+            new_key_name='indication'
+        )
+
+class Therapies(BaseTable):
+    pass
+
 def main(input_paths):
     """
     Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
@@ -106,88 +226,46 @@ def main(input_paths):
     statements = json_utils.load(file=input_paths['statements'])
     therapies = json_utils.load(file=input_paths['therapies'])
 
+    agents = Agents(records=agents)
+    biomarkers = Biomarkers(records=biomarkers)
+    contributions = Contributions(records=contributions)
+    diseases = Diseases(records=diseases)
+    documents = Documents(records=documents)
+    genes = Genes(records=genes)
+    indications = Indications(records=indications)
+    organizations = Organizations(records=organizations)
+    propositions = Propositions(records=propositions)
+    statements = Statements(records=statements)
+    therapies = Therapies(records=therapies)
+
+    print(genes)
+
     # biomarkers; references genes.json
-    dereferenced_biomarkers = Dereference.list(
-        records=biomarkers,
-        referenced_key='genes',
-        referenced_records=genes,
-        key_always_present=False
-    )
+    biomarkers.dereference_genes(genes=genes.records)
 
     # contributions; references agents.json
-    dereferenced_contributions = Dereference.integer(
-        records=contributions,
-        referenced_key='agent_id',
-        referenced_records=agents,
-        new_key_name='agent',
-    )
+    contributions.dereference_agents(agents=agents.records)
 
     # documents; references organizations.json
-    dereferenced_documents = Dereference.integer(
-        records=documents,
-        referenced_key='organization_id',
-        referenced_records=organizations,
-        new_key_name='organization'
-    )
+    documents.dereference_organizations(organizations=organizations.records)
 
     # indications; references documents.json
-    dereferenced_indications = Dereference.integer(
-        records=indications,
-        referenced_key='document_id',
-        referenced_records=dereferenced_documents,
-        new_key_name='document'
-    )
+    indications.dereference_documents(documents=documents.records)
 
     # propositions; references biomarkers.json, diseases.json, and therapies.json
-    dereferenced_propositions = Dereference.list(
-        records=propositions,
-        referenced_key='biomarkers',
-        referenced_records=dereferenced_biomarkers,
-        key_always_present=True
-    )
-    dereferenced_propositions = Dereference.integer(
-        records=dereferenced_propositions,
-        referenced_key='conditionQualifier_id',
-        referenced_records=diseases,
-        new_key_name='conditionQualifier'
-    )
-    dereferenced_propositions = Dereference.list(
-        records=dereferenced_propositions,
-        referenced_key='therapies',
-        referenced_records=therapies,
-        key_always_present=True
-        # This will not be True once we re-expand beyond sensitive relationships
-    )
+    propositions.dereference_biomarkers(biomarkers=biomarkers.records)
+    propositions.dereference_diseases(diseases=diseases.records)
+    propositions.dereference_therapies(therapies=therapies.records)
 
     # statements; references contributions.json, documents.json, propositions.json, and indications.json
-    dereferenced_statements = Dereference.list(
-        records=statements,
-        referenced_key='contributions',
-        referenced_records=dereferenced_contributions,
-        key_always_present=True
-    )
-    dereferenced_statements = Dereference.list(
-        records=dereferenced_statements,
-        referenced_key='reportedIn',
-        referenced_records=dereferenced_documents,
-        key_always_present=True
-    )
-    dereferenced_statements = Dereference.integer(
-        records=dereferenced_statements,
-        referenced_key='proposition_id',
-        referenced_records=dereferenced_propositions,
-        new_key_name='proposition'
-    )
-    dereferenced_statements = Dereference.integer(
-        records=dereferenced_statements,
-        referenced_key='indication_id',
-        referenced_records=dereferenced_indications,
-        new_key_name='indication'
-    )
+    statements.dereference_contributions(contributions=contributions.records)
+    statements.dereference_documents(documents=documents.records)
+    statements.dereference_propositions(propositions=propositions.records)
+    statements.dereference_indications(indications=indications.records)
 
     return {
         'about': about,
-        'content': dereferenced_statements
+        'content': statements.records
     }
 
 if __name__ =="__main__":
