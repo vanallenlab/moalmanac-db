@@ -335,9 +335,27 @@ class Propositions(BaseTable):
         self.dereference_list(
             referenced_key='therapies',
             referenced_records=therapies,
-            key_always_present=True
-            # This will not be True once we re-expand beyond sensitive relationships
+            key_always_present=False
         )
+
+    def format_therapies(self, referenced_key: str = 'therapies', new_key_name: str = 'objectTherapeutic') -> None:
+        for record in self.records:
+            if referenced_key not in record:
+                continue
+
+            if len(record[referenced_key]) == 1:
+                record[new_key_name] = record[referenced_key][0]
+            elif len(record[referenced_key]) > 1:
+                record[new_key_name] = {
+                    'id': '...',
+                    'therapies': [therapy for therapy in record[referenced_key]],
+                    'membershipOperator': 'AND',
+                    'extensions': []
+                }
+            else:
+                raise ValueError(f"Proposition record: {record['id']} has the {referenced_key} key with no items.")
+
+
 
 class Statements(BaseTable):
     """
@@ -509,6 +527,7 @@ def main(input_paths):
     propositions.dereference_biomarkers(biomarkers=biomarkers.records)
     propositions.dereference_diseases(diseases=diseases.records)
     propositions.dereference_therapies(therapies=therapies.records)
+    #propositions.format_therapies()
 
     # statements; references contributions.json, documents.json, propositions.json, and indications.json
     statements.dereference_contributions(contributions=contributions.records)
