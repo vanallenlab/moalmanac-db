@@ -413,14 +413,14 @@ Each record is a dictionary with the following fields:
 - `name` (str): a human readable label for the proposition, not currently used.
 - `biomarkers` (list[int]): a list where each element is an `id` referenced within [biomarkers](#biomarkersjson). 
 - `conditionQualifier_id` (int): the `id` referenced within [diseases](diseasesjson). 
-- `therapies`: (list[int]): a list where each element is an `id` referenced within [therapies](#therapiesjson). 
+- `objectTherapeutic`: (list[int]): a list where each element is an `id` referenced within [therapies](#therapiesjson). 
 
 Biomarkers and therapies are intended to be represented using the fields `objectTherapeutic` and `subjectVariant`, respectively, but at the moment they are both listed in arrays with implied AND logic. For biomarkers, cat-vrs is currently exploring [how to model groups of variants](https://github.com/ga4gh/cat-vrs/issues/92). For therapies, va-spec recommends modeling groups of more than one therapy as a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html), and [dereference.py](../utils/dereference.py) needs to be updated to reflect this change.
 
 When dereferenced, several fields will update:
 - `biomarkers` will still be called `biomarkers`, but each member will be replaced with the relevant record from [biomarkers](#biomarkersjson).
 - `conditionQualifier_id` will be replaced with `conditionQualifier` and it will contain the relevant record from [diseases](#diseasesjson).
-- `thearpies` will still be called `thearpies`, but each member will be replaced with the relevant record from [therapies](#therapiesjson).
+- `objectTherapeutic` will still be called `objectTherapeutic` and its value will depend on the length of the list elements. If length 1, the element will be replaced with the relevant record from [therapies](#therapiesjson). If more than one element is present, the object will be modeled as a [Therapy Group](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/domain-entities/therapeutics/therapy-group.html), using `AND` as a `membershipOperator`. 
 
 ```
 [  
@@ -433,11 +433,10 @@ When dereferenced, several fields will update:
       2  
     ],  
     "conditionQualifier_id": 9,  
-    "therapies": [  
+    "objectTherapeutic": [  
       99,  
       119  
     ],  
-    "objectTherapeutic": "",  
     "subjectVariant": ""  
   },
   ...
