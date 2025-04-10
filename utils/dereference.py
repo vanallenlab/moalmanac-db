@@ -272,7 +272,7 @@ class Propositions(BaseTable):
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
-    def dereference(self, biomarkers: list[dict], diseases: list[dict], genes: list[dict], therapies: list[dict]) -> None:
+    def dereference(self, biomarkers: list[dict], diseases: list[dict], therapies: list[dict]) -> None:
         """Dereferences all keys for this table."""
         self.dereference_biomarkers(biomarkers=biomarkers)
         self.dereference_diseases(diseases=diseases)
@@ -352,7 +352,7 @@ class Statements(BaseTable):
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference(self, agents: list[dict], biomarkers: list[dict], contributions: list[dict], diseases: list[dict], documents: list[dict], genes: list[dict], indications: list[dict], propositions: list[dict], therapies: list[dict]):
+    def dereference(self, contributions: list[dict], documents: list[dict], indications: list[dict], propositions: list[dict]):
         """Dereferences all keys for this table."""
         self.dereference_contributions(contributions=contributions)
         self.dereference_documents(documents=documents)
