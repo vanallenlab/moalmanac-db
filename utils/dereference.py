@@ -22,7 +22,7 @@ class BaseTable:
         """
         self.records = records
 
-    def dereference_integer(self, referenced_key: str, referenced_records: list[dict], new_key_name: str) -> None:
+    def dereference_single(self, referenced_key: str, referenced_records: list[dict], new_key_name: str) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
 
@@ -146,7 +146,7 @@ class Contributions(BaseTable):
         Raises:
             KeyError: If the referenced_key, `agent_id`, is not found in a record.
         """
-        self.dereference_integer(
+        self.dereference_single(
             referenced_key='agent_id',
             referenced_records=agents,
             new_key_name='agent'
@@ -187,7 +187,7 @@ class Documents(BaseTable):
         Raises:
             KeyError: If the referenced_key, `organization_id`, is not found in a record.
         """
-        self.dereference_integer(
+        self.dereference_single(
             referenced_key='organization_id',
             referenced_records=organizations,
             new_key_name='organization'
@@ -228,7 +228,7 @@ class Indications(BaseTable):
         Raises:
             KeyError: If the referenced_key, `document_id`, is not found in a record.
         """
-        self.dereference_integer(
+        self.dereference_single(
             referenced_key='document_id',
             referenced_records=documents,
             new_key_name='document'
@@ -291,7 +291,7 @@ class Propositions(BaseTable):
         Raises:
             KeyError: If the referenced_key, `conditionQualifier_id`, is not found in a record.
         """
-        self.dereference_integer(
+        self.dereference_single(
             referenced_key='conditionQualifier_id',
             referenced_records=diseases,
             new_key_name='conditionQualifier'
@@ -385,7 +385,7 @@ class Statements(BaseTable):
         Raises:
             KeyError: If the referenced_key, `proposition_id`, is not found in a record.
         """
-        self.dereference_integer(
+        self.dereference_single(
             referenced_key='proposition_id',
             referenced_records=propositions,
             new_key_name='proposition'
@@ -406,7 +406,7 @@ class Statements(BaseTable):
         Raises:
             KeyError: If the referenced_key, `indication_id`, is not found in a record.
         """
-        self.dereference_integer(
+        self.dereference_single(
             referenced_key='indication_id',
             referenced_records=indications,
             new_key_name='indication'
