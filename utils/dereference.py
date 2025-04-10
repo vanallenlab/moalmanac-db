@@ -104,6 +104,9 @@ class Biomarkers(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
+    def dereference(self, genes: list[dict]):
+        """Dereference all keys for this table."""
+        self.dereference_genes(genes=genes)
 
     def dereference_genes(self, genes: list[dict]) -> None:
         """
@@ -131,6 +134,9 @@ class Contributions(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
+    def dereference(self, agents: list[dict]):
+        """Dereference all keys for this table."""
+        self.dereference_agents(agents=agents)
 
     def dereference_agents(self, agents: list[dict]) -> None:
         """
@@ -173,6 +179,10 @@ class Documents(BaseTable):
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
+    def dereference(self, organizations: list[dict]):
+        """Dereference all keys for this table."""
+        self.dereference_organizations(organizations=organizations)
+
     def dereference_organizations(self, organizations: list[dict]) -> None:
         """
         Dereferences the `organization_id` key in each proposition record.
@@ -213,6 +223,11 @@ class Indications(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the indication records.
     """
+
+    def dereference(self, documents: list[dict], organizations: list[dict]):
+        """Dereference all keys for this table."""
+        #Documents.dereference(organizations=organizations)
+        self.dereference_documents(documents=documents)
 
     def dereference_documents(self, documents: list[dict]) -> None:
         """
@@ -256,6 +271,12 @@ class Propositions(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
+
+    def dereference(self, biomarkers: list[dict], diseases: list[dict], genes: list[dict], therapies: list[dict]) -> None:
+        """Dereferences all keys for this table."""
+        self.dereference_biomarkers(biomarkers=biomarkers)
+        self.dereference_diseases(diseases=diseases)
+        self.dereference_therapies(therapies=therapies)
 
     def dereference_biomarkers(self, biomarkers: list[dict]) -> None:
         """
@@ -330,6 +351,13 @@ class Statements(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the statement records.
     """
+
+    def dereference(self, agents: list[dict], biomarkers: list[dict], contributions: list[dict], diseases: list[dict], documents: list[dict], genes: list[dict], indications: list[dict], propositions: list[dict], therapies: list[dict]):
+        """Dereferences all keys for this table."""
+        self.dereference_contributions(contributions=contributions)
+        self.dereference_documents(documents=documents)
+        self.dereference_indications(indications=indications)
+        self.dereference_propositions(propositions=propositions)
 
     def dereference_contributions(self, contributions: list[dict]) -> None:
         """
@@ -436,6 +464,8 @@ def main(input_paths):
             - about (dict): Dictionary containing database metadata, from referenced/about.json.
             - content (list[dict]): List of dictionaries containing dereferenced database.
     """
+
+    # Step 1: Read json files
     about = json_utils.load(file=input_paths['about'])
     agents = json_utils.load(file=input_paths['agents'])
     biomarkers = json_utils.load(file=input_paths['biomarkers'])
@@ -449,6 +479,7 @@ def main(input_paths):
     statements = json_utils.load(file=input_paths['statements'])
     therapies = json_utils.load(file=input_paths['therapies'])
 
+    # Step 2: Generate table objects
     agents = Agents(records=agents)
     biomarkers = Biomarkers(records=biomarkers)
     contributions = Contributions(records=contributions)
@@ -461,6 +492,7 @@ def main(input_paths):
     statements = Statements(records=statements)
     therapies = Therapies(records=therapies)
 
+    # Step 3: dereference relevant tables
     # biomarkers; references genes.json
     biomarkers.dereference_genes(genes=genes.records)
 
