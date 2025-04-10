@@ -102,9 +102,26 @@ class BaseTable:
 
 
 class Agents(BaseTable):
+    """
+    Dereferences the Agents table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the agent records.
+    """
+
     pass
 
 class Biomarkers(BaseTable):
+    """
+    Dereferences the Biomarkers table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table references the following tables:
+    - Genes (field: 'organization_id')
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the document records.
+    """
+
     def dereference_genes(self, genes):
         self.records = self.dereference_list(
             referenced_key='genes',
@@ -113,6 +130,15 @@ class Biomarkers(BaseTable):
         )
 
 class Contributions(BaseTable):
+    """
+    Dereferences the Contributions table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table references the following tables:
+    - Agents (field: 'agent_id')
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the contribution records.
+    """
+
     def dereference_agents(self, agents):
         self.records = self.dereference_integer(
             referenced_key='agent_id',
@@ -121,10 +147,37 @@ class Contributions(BaseTable):
         )
 
 class Diseases(BaseTable):
+    """
+    Dereferences the Diseases table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the disease records.
+    """
+
     pass
 
 class Documents(BaseTable):
+    """
+    Dereferences the Documents table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table references the following tables:
+    - Organizations (field: 'organization_id')
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the document records.
+    """
+
     def dereference_organizations(self, organizations):
+        """
+        Dereferences the organization field in the Documents table and replaces 'organization_id' field with 'organization'.
+
+        Args:
+            organizations (list[dict]): A list of dictionaries representing the organization records.
+
+        Raises:
+            KeyError: If the referenced key, 'organization_id', is not found within a document record.
+        """
+
         self.records = self.dereference_integer(
             referenced_key='organization_id',
             referenced_records=organizations,
@@ -132,9 +185,26 @@ class Documents(BaseTable):
         )
 
 class Genes(BaseTable):
+    """
+    Dereferences the Genes table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the gene records.
+    """
+
     pass
 
 class Indications(BaseTable):
+    """
+    Dereferences the Indications table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table references the following tables:
+    - Documents (field: 'document_id')
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the indication records.
+    """
+
     def dereference_documents(self, documents):
         self.records = self.dereference_integer(
             referenced_key='document_id',
@@ -143,9 +213,28 @@ class Indications(BaseTable):
         )
 
 class Organizations(BaseTable):
+    """
+    Dereferences the Organizations table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the organization records.
+    """
+
     pass
 
 class Propositions(BaseTable):
+    """
+    Dereferences the Propositions table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table references the following tables:
+    - Biomarkers (field: 'biomarkers')
+    - Diseases (field: 'conditionQualifier_id')
+    - Therapies (field: 'therapies')
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the proposition records.
+    """
+
     def dereference_biomarkers(self, biomarkers):
         self.records = self.dereference_list(
             referenced_key='biomarkers',
@@ -169,6 +258,18 @@ class Propositions(BaseTable):
         )
 
 class Statements(BaseTable):
+    """
+    Dereferences the Statements table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table references the following tables:
+    - Contributions (field: 'contributions')
+    - Documents (field: 'reportedIn')
+    - Propositions (field: 'proposition_id')
+    - Indications (field: 'indications')
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the statement records.
+    """
+
     def dereference_contributions(self, contributions):
         self.records = self.dereference_list(
             referenced_key='contributions',
@@ -198,6 +299,14 @@ class Statements(BaseTable):
         )
 
 class Therapies(BaseTable):
+    """
+    Dereferences the Therapies table. It inherits common functionality from the BaseTable class and dereferences
+    fields that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the therapy records.
+    """
+
     pass
 
 def main(input_paths):
@@ -237,8 +346,6 @@ def main(input_paths):
     propositions = Propositions(records=propositions)
     statements = Statements(records=statements)
     therapies = Therapies(records=therapies)
-
-    print(genes)
 
     # biomarkers; references genes.json
     biomarkers.dereference_genes(genes=genes.records)
