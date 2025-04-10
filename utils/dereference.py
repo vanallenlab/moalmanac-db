@@ -6,7 +6,7 @@ import json_utils # Local import
 class BaseTable:
     """
     A base class for managing and dereferencing records across database tables. This class provides common
-    functionality for dereferencing fields that reference other tables. It serves as a template for specific table
+    functionality for dereferencing keys that reference other tables. It serves as a template for specific table
     classes, which inherit from BaseTable and implement additional table-specific logic.
 
     Attributes:
@@ -87,7 +87,7 @@ class BaseTable:
 class Agents(BaseTable):
     """
     Represents the Agents table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the agent records.
@@ -98,8 +98,8 @@ class Agents(BaseTable):
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table references the following tables:
-    - Genes (initial field: `genes`, resulting field: `genes`)
+    dereferences keys that reference other tables. This table references the following tables:
+    - Genes (initial key: `genes`, resulting key: `genes`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
@@ -107,7 +107,7 @@ class Biomarkers(BaseTable):
 
     def dereference_genes(self, genes: list[dict]) -> None:
         """
-        Dereferences the `genes` field in each biomarker record.
+        Dereferences the `genes` key in each biomarker record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `gene` key within each record. This key is not expected to be present within each record, so no KeyError will
@@ -125,8 +125,8 @@ class Biomarkers(BaseTable):
 class Contributions(BaseTable):
     """
     Represents the Contributions table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table references the following tables:
-    - Agents (field: `agent_id`, resulting field: `agents`)
+    dereferences keys that reference other tables. This table references the following tables:
+    - Agents (key: `agent_id`, resulting key: `agents`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
@@ -134,7 +134,7 @@ class Contributions(BaseTable):
 
     def dereference_agents(self, agents: list[dict]) -> None:
         """
-        Dereferences the `agent_id` field in each contribution record.
+        Dereferences the `agent_id` key in each contribution record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `agent_id` key within each record. This key is expected to be present within each record, so a
@@ -155,7 +155,7 @@ class Contributions(BaseTable):
 class Diseases(BaseTable):
     """
     Represents the Diseases table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the disease records.
@@ -166,8 +166,8 @@ class Diseases(BaseTable):
 class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table references the following tables:
-    - Organizations (field: `organization_id`)
+    dereferences keys that reference other tables. This table references the following tables:
+    - Organizations (key: `organization_id`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
@@ -175,7 +175,7 @@ class Documents(BaseTable):
 
     def dereference_organizations(self, organizations: list[dict]) -> None:
         """
-        Dereferences the `organization_id` field in each proposition record.
+        Dereferences the `organization_id` key in each proposition record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `organization_id` key within each record. This key is expected to be present within each record, so a
@@ -196,7 +196,7 @@ class Documents(BaseTable):
 class Genes(BaseTable):
     """
     Represents the Genes table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the gene records.
@@ -207,8 +207,8 @@ class Genes(BaseTable):
 class Indications(BaseTable):
     """
     Represents the Indications table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table references the following tables:
-    - Documents (field: `document_id`)
+    dereferences keys that reference other tables. This table references the following tables:
+    - Documents (key: `document_id`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the indication records.
@@ -216,7 +216,7 @@ class Indications(BaseTable):
 
     def dereference_documents(self, documents: list[dict]) -> None:
         """
-        Dereferences the `document_id` field in each proposition record.
+        Dereferences the `document_id` key in each proposition record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `document_id` key within each record. This key is expected to be present within each record, so a
@@ -237,7 +237,7 @@ class Indications(BaseTable):
 class Organizations(BaseTable):
     """
     Represents the Organizations table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the organization records.
@@ -248,10 +248,10 @@ class Organizations(BaseTable):
 class Propositions(BaseTable):
     """
     Represents the Propositions table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table references the following tables:
-    - Biomarkers (initial field: `biomarkers`, resulting field: `biomarkers`)
-    - Diseases (initial field: `conditionQualifier_id`, resulting field: `conditionQualifier`)
-    - Therapies (initial field: `therapies`, resulting field: `objectTherapeutic`)
+    dereferences keys that reference other tables. This table references the following tables:
+    - Biomarkers (initial key: `biomarkers`, resulting key: `biomarkers`)
+    - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`)
+    - Therapies (initial key: `therapies`, resulting key: `objectTherapeutic`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the proposition records.
@@ -259,7 +259,7 @@ class Propositions(BaseTable):
 
     def dereference_biomarkers(self, biomarkers: list[dict]) -> None:
         """
-        Dereferences the `biomarkers` field in each proposition record.
+        Dereferences the `biomarkers` key in each proposition record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `biomarkers` key within each record. This key is expected to be present within each record, so a KeyError will
@@ -279,7 +279,7 @@ class Propositions(BaseTable):
 
     def dereference_diseases(self, diseases: list[dict]) -> None:
         """
-        Dereferences the `conditionQualifier_id` field in each proposition record.
+        Dereferences the `conditionQualifier_id` key in each proposition record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `conditionQualifier_id` key within each record. This key is expected to be present within each record, so a
@@ -299,7 +299,7 @@ class Propositions(BaseTable):
 
     def dereference_therapies(self, therapies: list[dict]) -> None:
         """
-        Dereferences the `therapies` field in each proposition record.
+        Dereferences the `therapies` key in each proposition record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `therapies` key within each record. This key is expected to be present within each record, so a
@@ -321,11 +321,11 @@ class Propositions(BaseTable):
 class Statements(BaseTable):
     """
     Represents the Statements table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table references the following tables:
-    - Contributions (field: `contributions`)
-    - Documents (field: `reportedIn`)
-    - Propositions (field: `proposition_id`)
-    - Indications (field: `indications`)
+    dereferences keys that reference other tables. This table references the following tables:
+    - Contributions (key: `contributions`)
+    - Documents (key: `reportedIn`)
+    - Propositions (key: `proposition_id`)
+    - Indications (key: `indications`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the statement records.
@@ -333,7 +333,7 @@ class Statements(BaseTable):
 
     def dereference_contributions(self, contributions: list[dict]) -> None:
         """
-        Dereferences the `contributions` field in each statement record.
+        Dereferences the `contributions` key in each statement record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `contributions` key within each record. This key is expected to be present within each record, so a
@@ -353,7 +353,7 @@ class Statements(BaseTable):
 
     def dereference_documents(self, documents: list[dict]) -> None:
         """
-        Dereferences the `reportedIn` field in each statement record.
+        Dereferences the `reportedIn` key in each statement record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `reportedIn` key within each record. This key is expected to be present within each record, so a
@@ -373,7 +373,7 @@ class Statements(BaseTable):
 
     def dereference_propositions(self, propositions: list[dict]) -> None:
         """
-        Dereferences the `proposition_id` field in each statement record.
+        Dereferences the `proposition_id` key in each statement record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `proposition_id` key within each record. This key is expected to be present within each record, so a
@@ -393,7 +393,7 @@ class Statements(BaseTable):
 
     def dereference_indications(self, indications: list[dict]) -> None:
         """
-        Dereferences the `indication_id` field in each statement record.
+        Dereferences the `indication_id` key in each statement record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `indication_id` key within each record. This key is expected to be present within each record, so a
@@ -415,7 +415,7 @@ class Statements(BaseTable):
 class Therapies(BaseTable):
     """
     Represents the Therapies table. This class inherits common functionality from the BaseTable class and
-    dereferences fields that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
