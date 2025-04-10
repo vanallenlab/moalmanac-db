@@ -2,18 +2,18 @@ import json
 import typing
 
 
-def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> dict | None:
+def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> typing.Optional[dict]:
     """
-    Retrieves records where a specific field matches a given value.
+    Retrieves records where a specific key matches a given value.
 
     Args:
         records (list[dict]): A list of dictionaries to search.
         value (any): The value to match.
-        key (str): The field to check (default: "id").
+        key (str): The key to check (default: "id").
         warn (bool): Whether to warn and exit if the number of results is not 1 (default: True).
 
     Returns:
-        dict | None: A list of matching records, or None if no matches are found.
+        dict or None: A list of matching records, or None if no matches are found.
 
     Raises:
         ValueError: If the number of results is not exactly 1 and warnings are enabled.
