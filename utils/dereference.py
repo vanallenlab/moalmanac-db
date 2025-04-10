@@ -3,30 +3,40 @@ import argparse
 import json_utils # Local import
 
 
-class Dereference:
+class BaseTable:
     """
-    Functions to dereference, depending on the field type to dereference
+    A base class for managing and dereferencing records across database tables. This class provides common
+    functionality for dereferencing fields that reference other tables. It serves as a template for specific table
+    classes, which inherit from BaseTable and implement additional table-specific logic.
+
+    Attributes:
+        records (list[dict]): list of dictionaries that represent one table within the relational database.
     """
 
-    @classmethod
-    def integer(cls, records: list[dict], referenced_key: str, referenced_records: list[dict], new_key_name: str) -> list[dict]:
+    def __init__(self, records: list[dict]):
         """
-        Dereferences a key for each record in records, where the key's value references a single record (i.e. is an integer).
+        Initializes the BaseTable with a list of records.
 
         Args:
-            records (list[dict]): list of dictionaries that require a key to be dereferenced.
+            records (list[dict]): list of dictionaries that represent one table within the relational database.
+        """
+        self.records = records
+
+    def dereference_integer(self, referenced_key: str, referenced_records: list[dict], new_key_name: str) -> None:
+        """
+        Dereferences a key for each record in records, where the key's value references a single record.
+
+        Args:
             referenced_key (str): name of the key in `records` to dereference.
-            referenced_records (list[dict]): list of dictionaries that the referenced_key refers to.
+            referenced_records (list[dict]): list of dictionaries that the `referenced_key` refers to.
             new_key_name (str): key to store dereferenced record in `records`. this key replaces `referenced_key`.
 
         Raises:
-            KeyError: If the referenced_key is not found in the record.
+            KeyError: If the referenced_key is not found in a record.
         """
-
         dereferenced_records = []
-        for record in records:
-            keys = list(record.keys())
-            if not referenced_key in keys:
+        for record in self.records:
+            if referenced_key not in record:
                 raise KeyError(f"Key '{referenced_key}' not found in {record}.")
 
             referenced_record = json_utils.fetch_records_by_key_value(
@@ -44,24 +54,21 @@ class Dereference:
                     new_record[key] = value
 
             dereferenced_records.append(new_record)
-        return dereferenced_records
+        self.records = dereferenced_records
 
-    @classmethod
-    def list(cls, records: list[dict], referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> list[dict]:
+    def dereference_list(self, referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> None:
         """
-        Dereferences a key for each record in records, where the key's value can store multiple records (i.e. is a list).
+        Dereferences a key for each record in `records`, where the key's value is of type List to reference multiple records.
 
         Args:
-            records (list[dict]): list of dictionaries that require a key to be dereferenced.
-            referenced_key (str): name of the key in records to dereference.
-            referenced_records (str): list of dictionaries that the referenced_key refers to.
-            key_always_present (bool): If True, the referenced_key is present in all records.
+            referenced_key (str): name of the key in `records` to dereference.
+            referenced_records (str): list of dictionaries that the `referenced_key` refers to.
+            key_always_present (bool): If True, the `referenced_key` is present in all records.
 
         Raises:
-            KeyError: If the referenced_key is not found in the record, despite key_always_present being True.
+            KeyError: If the `referenced_key` is not found in a record when `key_always_present` is True.
         """
-
-        for record in records:
+        for record in self.records:
             if key_always_present and (referenced_key not in record):
                 raise KeyError(f"Key '{referenced_key}' not found but should be found in {record}")
 
@@ -77,34 +84,11 @@ class Dereference:
                 )
                 _values.append(_value[0])
             record[referenced_key] = _values
-        return records
-
-
-class BaseTable:
-    def __init__(self, records: list[dict]):
-        self.records = records
-
-    def dereference_integer(self, referenced_key: str, referenced_records: list[dict], new_key_name: str) -> list[dict]:
-        return Dereference.integer(
-            records=self.records,
-            referenced_key=referenced_key,
-            referenced_records=referenced_records,
-            new_key_name=new_key_name
-        )
-
-    def dereference_list(self, referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> list[dict]:
-        return Dereference.list(
-            records=self.records,
-            referenced_key=referenced_key,
-            referenced_records=referenced_records,
-            key_always_present=key_always_present
-        )
-
 
 class Agents(BaseTable):
     """
-    Dereferences the Agents table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table does not currently reference any other tables.
+    Represents the Agents table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the agent records.
@@ -114,16 +98,26 @@ class Agents(BaseTable):
 
 class Biomarkers(BaseTable):
     """
-    Dereferences the Biomarkers table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table references the following tables:
-    - Genes (field: 'organization_id')
+    Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table references the following tables:
+    - Genes (initial field: `genes`, resulting field: `genes`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference_genes(self, genes):
-        self.records = self.dereference_list(
+    def dereference_genes(self, genes: list[dict]) -> None:
+        """
+        Dereferences the `genes` field in each biomarker record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `gene` key within each record. This key is not expected to be present within each record, so no KeyError will
+        be raised if it is missing.
+
+        Args:
+            genes (list[dict]): list of dictionaries to dereference against.
+        """
+        self.dereference_list(
             referenced_key='genes',
             referenced_records=genes,
             key_always_present=False
@@ -131,16 +125,29 @@ class Biomarkers(BaseTable):
 
 class Contributions(BaseTable):
     """
-    Dereferences the Contributions table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table references the following tables:
-    - Agents (field: 'agent_id')
+    Represents the Contributions table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table references the following tables:
+    - Agents (field: `agent_id`, resulting field: `agents`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
 
-    def dereference_agents(self, agents):
-        self.records = self.dereference_integer(
+    def dereference_agents(self, agents: list[dict]) -> None:
+        """
+        Dereferences the `agent_id` field in each contribution record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `agent_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            agents (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `agent_id`, is not found in a record.
+        """
+        self.dereference_integer(
             referenced_key='agent_id',
             referenced_records=agents,
             new_key_name='agent'
@@ -148,8 +155,8 @@ class Contributions(BaseTable):
 
 class Diseases(BaseTable):
     """
-    Dereferences the Diseases table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table does not currently reference any other tables.
+    Represents the Diseases table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the disease records.
@@ -159,26 +166,29 @@ class Diseases(BaseTable):
 
 class Documents(BaseTable):
     """
-    Dereferences the Documents table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table references the following tables:
-    - Organizations (field: 'organization_id')
+    Represents the Documents table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table references the following tables:
+    - Organizations (field: `organization_id`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference_organizations(self, organizations):
+    def dereference_organizations(self, organizations: list[dict]) -> None:
         """
-        Dereferences the organization field in the Documents table and replaces 'organization_id' field with 'organization'.
+        Dereferences the `organization_id` field in each proposition record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `organization_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
 
         Args:
-            organizations (list[dict]): A list of dictionaries representing the organization records.
+            organizations (list[dict]): list of dictionaries to dereference against.
 
         Raises:
-            KeyError: If the referenced key, 'organization_id', is not found within a document record.
+            KeyError: If the referenced_key, `organization_id`, is not found in a record.
         """
-
-        self.records = self.dereference_integer(
+        self.dereference_integer(
             referenced_key='organization_id',
             referenced_records=organizations,
             new_key_name='organization'
@@ -186,8 +196,8 @@ class Documents(BaseTable):
 
 class Genes(BaseTable):
     """
-    Dereferences the Genes table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table does not currently reference any other tables.
+    Represents the Genes table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the gene records.
@@ -197,16 +207,29 @@ class Genes(BaseTable):
 
 class Indications(BaseTable):
     """
-    Dereferences the Indications table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table references the following tables:
-    - Documents (field: 'document_id')
+    Represents the Indications table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table references the following tables:
+    - Documents (field: `document_id`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference_documents(self, documents):
-        self.records = self.dereference_integer(
+    def dereference_documents(self, documents: list[dict]) -> None:
+        """
+        Dereferences the `document_id` field in each proposition record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `document_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            documents (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `document_id`, is not found in a record.
+        """
+        self.dereference_integer(
             referenced_key='document_id',
             referenced_records=documents,
             new_key_name='document'
@@ -214,8 +237,8 @@ class Indications(BaseTable):
 
 class Organizations(BaseTable):
     """
-    Dereferences the Organizations table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table does not currently reference any other tables.
+    Represents the Organizations table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the organization records.
@@ -225,32 +248,71 @@ class Organizations(BaseTable):
 
 class Propositions(BaseTable):
     """
-    Dereferences the Propositions table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table references the following tables:
-    - Biomarkers (field: 'biomarkers')
-    - Diseases (field: 'conditionQualifier_id')
-    - Therapies (field: 'therapies')
+    Represents the Propositions table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table references the following tables:
+    - Biomarkers (initial field: `biomarkers`, resulting field: `biomarkers`)
+    - Diseases (initial field: `conditionQualifier_id`, resulting field: `conditionQualifier`)
+    - Therapies (initial field: `therapies`, resulting field: `objectTherapeutic`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
-    def dereference_biomarkers(self, biomarkers):
-        self.records = self.dereference_list(
+    def dereference_biomarkers(self, biomarkers: list[dict]) -> None:
+        """
+        Dereferences the `biomarkers` field in each proposition record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `biomarkers` key within each record. This key is expected to be present within each record, so a KeyError will
+        be raised if it is missing.
+
+        Args:
+            biomarkers (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `biomarkers`, is not found in a record.
+        """
+        self.dereference_list(
             referenced_key='biomarkers',
             referenced_records=biomarkers,
-            key_always_present=False
+            key_always_present=True
         )
 
-    def dereference_diseases(self, diseases):
-        self.records = self.dereference_integer(
+    def dereference_diseases(self, diseases: list[dict]) -> None:
+        """
+        Dereferences the `conditionQualifier_id` field in each proposition record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `conditionQualifier_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            diseases (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `conditionQualifier_id`, is not found in a record.
+        """
+        self.dereference_integer(
             referenced_key='conditionQualifier_id',
             referenced_records=diseases,
             new_key_name='conditionQualifier'
         )
 
-    def dereference_therapies(self, therapies):
-        self.records = self.dereference_list(
+    def dereference_therapies(self, therapies: list[dict]) -> None:
+        """
+        Dereferences the `therapies` field in each proposition record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `therapies` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            therapies (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `therapies`, is not found in a record.
+        """
+        self.dereference_list(
             referenced_key='therapies',
             referenced_records=therapies,
             key_always_present=True
@@ -259,40 +321,93 @@ class Propositions(BaseTable):
 
 class Statements(BaseTable):
     """
-    Dereferences the Statements table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table references the following tables:
-    - Contributions (field: 'contributions')
-    - Documents (field: 'reportedIn')
-    - Propositions (field: 'proposition_id')
-    - Indications (field: 'indications')
+    Represents the Statements table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table references the following tables:
+    - Contributions (field: `contributions`)
+    - Documents (field: `reportedIn`)
+    - Propositions (field: `proposition_id`)
+    - Indications (field: `indications`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference_contributions(self, contributions):
-        self.records = self.dereference_list(
+    def dereference_contributions(self, contributions: list[dict]) -> None:
+        """
+        Dereferences the `contributions` field in each statement record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `contributions` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            contributions (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `contributions`, is not found in a record.
+        """
+        self.dereference_list(
             referenced_key='contributions',
             referenced_records=contributions,
             key_always_present=True
         )
 
-    def dereference_documents(self, documents):
-        self.records = self.dereference_list(
+    def dereference_documents(self, documents: list[dict]) -> None:
+        """
+        Dereferences the `reportedIn` field in each statement record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `reportedIn` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            documents (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `reportedIn`, is not found in a record.
+        """
+        self.dereference_list(
             referenced_key='reportedIn',
             referenced_records=documents,
             key_always_present=True
         )
 
-    def dereference_propositions(self, propositions):
-        self.records = self.dereference_integer(
+    def dereference_propositions(self, propositions: list[dict]) -> None:
+        """
+        Dereferences the `proposition_id` field in each statement record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `proposition_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            propositions (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `proposition_id`, is not found in a record.
+        """
+        self.dereference_integer(
             referenced_key='proposition_id',
             referenced_records=propositions,
             new_key_name='proposition'
         )
 
-    def dereference_indications(self, indications):
-        self.records = self.dereference_integer(
+    def dereference_indications(self, indications: list[dict]) -> None:
+        """
+        Dereferences the `indication_id` field in each statement record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `indication_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+        Note: This will eventually not be expected to be present within each record, once we add more than regulatory approvals.
+
+        Args:
+            indications (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `indication_id`, is not found in a record.
+        """
+        self.dereference_integer(
             referenced_key='indication_id',
             referenced_records=indications,
             new_key_name='indication'
@@ -300,8 +415,8 @@ class Statements(BaseTable):
 
 class Therapies(BaseTable):
     """
-    Dereferences the Therapies table. It inherits common functionality from the BaseTable class and dereferences
-    fields that reference other tables. This table does not currently reference any other tables.
+    Represents the Therapies table. This class inherits common functionality from the BaseTable class and
+    dereferences fields that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
