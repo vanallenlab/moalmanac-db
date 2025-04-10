@@ -44,7 +44,6 @@ class BaseTable:
                 key='id',
                 value=record[referenced_key]
             )
-            referenced_record = referenced_record[0]
 
             new_record = {}
             for key, value in record.items():
@@ -82,7 +81,7 @@ class BaseTable:
                     key='id',
                     value=value
                 )
-                _values.append(_value[0])
+                _values.append(_value)
             record[referenced_key] = _values
 
 class Agents(BaseTable):

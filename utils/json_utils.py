@@ -2,7 +2,7 @@ import json
 import typing
 
 
-def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> list[dict]:
+def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> dict | None:
     """
     Retrieves records where a specific field matches a given value.
 
@@ -13,7 +13,7 @@ def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str 
         warn (bool): Whether to warn and exit if the number of results is not 1 (default: True).
 
     Returns:
-        list[dict]: A list of matching records.
+        dict | None: A list of matching records, or None if no matches are found.
 
     Raises:
         ValueError: If the number of results is not exactly 1 and warnings are enabled.
@@ -23,7 +23,7 @@ def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str 
     if warn and len(results) != 1:
         ValueError(f"Warning: Expected 1 result for {key} == {value}, found {len(results)}.")
 
-    return results
+    return next(iter(results), None)
 
 
 def rename_key(dictionary: dict, old_key: str, new_key: str) -> None:
