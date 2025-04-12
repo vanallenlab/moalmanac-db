@@ -409,19 +409,21 @@ At the moment, this version of moalmanac-db is only leveraging [Variant Therapeu
 Each record is a dictionary with the following fields:
 - `id` (int): an integer id for the record.
 - `type` (str): "VariantTherapeuticResponseProposition", and reflects the type of proposition.
-- `predicate` (str): "predictSensitivityTo", the relationship between the subject and object of the proposition. 
-- `name` (str): a human readable label for the proposition, not currently used.
+- `predicate` (str): "predictSensitivityTo", the relationship between the subject and object of the proposition.
 - `biomarkers` (list[int]): a list where each element is an `id` referenced within [biomarkers](#biomarkersjson). 
-- `conditionQualifier_id` (int): the `id` referenced within [diseases](diseasesjson). 
+- `conditionQualifier_id` (int): the `id` referenced within [diseases](#diseasesjson).
+- `therapy_id` (int): the `id` referenced within [therapies](#therapiesjson) or null, if the proposition references a [therapygroup](#therapy_groupsjson).
+- `therapy_group_id` (int): the `id` referenced within [therapy_groups](#therapy_groupsjson) or null, if the proposition references a [therapy](#therapiesjson).
 - `objectTherapeutic`: (list[int]): a list where each element is an `id` referenced within [therapies](#therapiesjson). 
 
-Biomarkers and therapies are intended to be represented using the fields `objectTherapeutic` and `subjectVariant`, respectively, but at the moment they are both listed in arrays with implied AND logic. For biomarkers, cat-vrs is currently exploring [how to model groups of variants](https://github.com/ga4gh/cat-vrs/issues/92). For therapies, va-spec recommends modeling groups of more than one therapy as a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html), and [dereference.py](../utils/dereference.py) needs to be updated to reflect this change.
+Biomarkers are intended to be represented using the field `subjectVariant`, but at the moment they are listed as arrays with implied AND logic. Cat-vrs is currently exploring [how to model groups of variants](https://github.com/ga4gh/cat-vrs/issues/92).
 
 When dereferenced, several fields will update:
 - `biomarkers` will still be called `biomarkers`, but each member will be replaced with the relevant record from [biomarkers](#biomarkersjson).
 - `conditionQualifier_id` will be replaced with `conditionQualifier` and it will contain the relevant record from [diseases](#diseasesjson).
-- `objectTherapeutic` will still be called `objectTherapeutic` and its value will depend on the length of the list elements. If length 1, the element will be replaced with the relevant record from [therapies](#therapiesjson). If more than one element is present, the object will be modeled as a [Therapy Group](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/domain-entities/therapeutics/therapy-group.html), using `AND` as a `membershipOperator`. 
+- `therapy_id` and `therapy_group_id` will both be replaced with `objectTherapeutic` and its value will depend on if the proposition references a record from [therapies](#therapiesjson), using the value from the `therapy_id` key, or [therapy_groups](#therapy_groupsjson), using the value from the `therapy_group_id` key.
 
+An example record from [propositions.json](../referenced/propositions.json):
 ```
 [  
   {    
@@ -433,11 +435,181 @@ When dereferenced, several fields will update:
       2  
     ],  
     "conditionQualifier_id": 9,  
-    "objectTherapeutic": [  
-      99,  
-      119  
+    "subjectVariant": {}, 
+    "therapy_id": null,
+    "therapy_group_id": 0
+  },
+  ...
+]
+```
+
+An example record from [propositions.json](../referenced/propositions.json), after dereferencing:
+```
+[
+  {    
+    "id": 0,  
+    "type": "VariantTherapeuticResponseProposition",  
+    "predicate": "predictSensitivityTo",  
+    "biomarkers": [  
+      {
+        "id": 1,
+        "type": "CategoricalVariant",
+        "name": "ER positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Estrogen receptor (ER)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "CategoricalVariant",
+        "name": "HER2-negative",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Negative"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      } 
     ],  
-    "subjectVariant": ""  
+    "conditionQualifier_id": {
+      "id": 9,
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "primaryCode": "oncotree:BRCA",
+      "mappings": [
+        {
+          "coding": {
+            "id": "oncotree:BRCA",
+            "code": "BRCA",
+            "name": "Invasive Breast Carcinoma",
+            "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",
+            "systemVersion": "oncotree_2021_11_02"
+          },
+          "relation": "exactMatch"
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ]
+    },  
+    "subjectVariant": {}, 
+    "objectTherapeutic": {
+      "id": 0,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 99,
+          "conceptType": "Drug",
+          "name": "Abemaciclib",
+          "primaryCode": "ncit:C97660",
+          "mappings": [
+            {
+              "coding": {
+                "id": "ncit:C97660",
+                "code": "C97660",
+                "name": "Abemaciclib",
+                "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+                "systemVersion": "25.01d"
+              },
+              "relation": "exactMatch"
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CDK4/6 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ]
+        },
+        {
+          "id": 119,
+          "conceptType": "Drug",
+          "name": "Tamoxifen",
+          "primaryCode": "ncit:C62078",
+          "mappings": [
+            {
+              "coding": {
+                "id": "ncit:C62078",
+                "code": "C62078",
+                "name": "Tamoxifen",
+                "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+                "systemVersion": "25.01d"
+              },
+              "relation": "exactMatch"
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Estrogen receptor inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Hormone therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ]
+        }
+      ]
+    }
   },
   ...
 ]
@@ -506,11 +678,9 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 
 [Return to Table of Contents](#table-of-contents)
 ## [therapies.json](../referenced/therapies.json)
-Therapies are the therapeutics associated with therapeutic sensitivity propositions. Like biomarkers, all therapies are currently associated with statements as arrays with AND criteria implicitly joining them. Within [Variant Therapeutic Response Propositions](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/proposition-profiles.html#variant-therapeutic-response-proposition), only one object is accepted within the `objectTherapeutic` field and va-spec manages this by expecting a [single therapy](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/drug.html) or a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html) object. 
+Therapies are the therapeutics associated with therapeutic sensitivity propositions. 
 
-Currently, mappings used for therapies are from the [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/). Extensions used are `therapy_strategy`, from the current version of the database, and `therapy_type`, which is the [type of cancer treatment from cancer.gov](https://www.cancer.gov/about-cancer/treatment/types). 
-
-At the moment [dereference.py](../utils/dereference.py) does not format therapies into a therapy group if more than one therapy is listed under `therapies`. 
+Currently, mappings used for therapies are from the [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/). Extensions used are `therapy_strategy`, from the current version of the database, and `therapy_type`, which is the [type of cancer treatment from cancer.gov](https://www.cancer.gov/about-cancer/treatment/types).
 
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
@@ -526,4 +696,142 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 - `name` (str): a human readable name for the concept in the external system.
 - `system` (str): a url for the external system.
 
+An example record from [therapies.json](../referenced/therapies.json):
+```
+[
+  {
+    "id": 0,
+    "conceptType": "Drug",
+    "name": "Brentuximab Vedotin",
+    "primaryCode": "ncit:C66944",
+    "mappings": [
+      {
+        "coding": {
+          "id": "ncit:C66944",
+          "code": "C66944",
+          "name": "Brentuximab Vedotin",
+          "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+          "systemVersion": "25.01d"
+        },
+        "relation": "exactMatch"
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "target CD30 antigens"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ]
+  },
+  ...
+]
+```
+[Return to Table of Contents](#table-of-contents)
+## [therapy_groups.json](../referenced/therapy_groups.json)
+Therapy groups are the sets of [therapies](#therapiesjson) associated with therapeutic sensitivity propositions. Within [Variant Therapeutic Response Propositions](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/base-profiles/proposition-profiles.html#variant-therapeutic-response-proposition), only one object is accepted within the `objectTherapeutic` field and va-spec manages this by expecting a [single therapy](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/drug.html) or a [therapy group](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/therapeutics/therapy-group.html) object. 
+
+Each record is a dictionary with the fields:
+- `id` (int): an integer id for the record.
+- `membershipOperator` (str): either "AND" or "OR"
+- `therapies` (list[int]): a list where each element is an `id` referenced within [therapies](#therapiesjson).
+
+An example record from [therapy_groups.json](../referenced/therapy_groups.json):
+```
+[
+  {
+    "id": 0,
+    "membershipOperator": "AND",
+    "therapies": [
+      99,
+      119
+    ]
+  },
+  ...
+]
+```
+
+An example record from [therapy_groups.json](../referenced/therapy_groups.json), after dereferencing:
+```
+[
+  {
+    "id": 0,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 99,
+        "conceptType": "Drug",
+        "name": "Abemaciclib",
+        "primaryCode": "ncit:C97660",
+        "mappings": [
+          {
+            "coding": {
+              "id": "ncit:C97660",
+              "code": "C97660",
+              "name": "Abemaciclib",
+              "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+              "systemVersion": "25.01d"
+            },
+            "relation": "exactMatch"
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "CDK4/6 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ]
+      },
+      {
+        "id": 119,
+        "conceptType": "Drug",
+        "name": "Tamoxifen",
+        "primaryCode": "ncit:C62078",
+        "mappings": [
+          {
+            "coding": {
+              "id": "ncit:C62078",
+              "code": "C62078",
+              "name": "Tamoxifen",
+              "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+              "systemVersion": "25.01d"
+            },
+            "relation": "exactMatch"
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Estrogen receptor inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Hormone therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ]
+      }
+    ]
+  }
+  ...
+]
+```
 [Return to Table of Contents](#table-of-contents)
