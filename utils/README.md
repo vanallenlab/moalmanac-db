@@ -28,6 +28,7 @@ Optional arguments:
     --propositions    <string>    referenced JSON for propositions. Default: referenced/propositions.json
     --statements      <string>    referenced JSON for statements. Default: referenced/statements.json
     --therapies       <string>    referenced JSON for therapies. Default: referenced/therapies.json
+    --therapy-groups  <string>    referenced JSON for therapy groups. Default: referenced/therapy_groups.json
     --output          <string>    file path for dereferenced JSON output by this script. Default: moalmanac-draft.dereferenced.json
 ```
 
@@ -46,6 +47,7 @@ python dereference.py \
   --propositions referenced/propositions.json \
   --statements referenced/statements.json \
   --therapies referenced/therapies.json \
+  --therapy-groups referenced/therapy-groups.json \
   --output  moalmanac-draft.dereferenced.json
 ```
 
