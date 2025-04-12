@@ -539,8 +539,6 @@ class Statements(BaseTable):
         # instead of using the function from the Indications class, we will just manually
         # dereference documents for indications
 
-        # indications.dereference(documents=documents, organizations=organizations)
-
         for record in indications.records:
             self.dereference_single(
                 record=record,
@@ -552,6 +550,8 @@ class Statements(BaseTable):
                 old_key='document_id',
                 new_key='document'
             )
+
+        # indications.dereference(documents=documents, organizations=organizations)
 
         for record in self.records:
             self.dereference_single(
