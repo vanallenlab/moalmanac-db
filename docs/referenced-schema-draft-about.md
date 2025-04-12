@@ -1,5 +1,5 @@
 # Molecular Oncology Almanac db 2.0.0 (draft)
-We are in the process of refactoring and updating moalmanac db to align with [GA4GH's Variant Annotation Specification (va-spec)](https://github.com/ga4gh/va-spec) and [Categorical Variant Representation Specification (Cat-VRS)](https://github.com/ga4gh/cat-vrs). Both of these specifications are in development and are following the [GA4GH Genomic Knowledge Standards (gks) Maturity Model](https://cat-vrs.readthedocs.io/en/latest/appendices/maturity_model.html). As components of each specification moves from draft to trial and to normative maturity we will update our schema to align with their recommendations. At the moment, this version of our data schema does _not_ comply with either format. 
+We are in the process of refactoring and updating moalmanac db to align with [GA4GH's Variant Annotation Specification (va-spec)](https://github.com/ga4gh/va-spec) and [Categorical Variant Representation Specification (Cat-VRS)](https://github.com/ga4gh/cat-vrs). Both of these specifications are in development and are following the [GA4GH Genomic Knowledge Standards (GKS) Maturity Model](https://cat-vrs.readthedocs.io/en/latest/appendices/maturity_model.html). As components of each specification moves from draft to trial and to normative maturity we will update our schema to align with their recommendations. At the moment, this version of our data schema does _not_ comply with either format. 
 
 ![in progress relationships between referenced files](assets/moalmanac-db-schema-diagram.svg)
 
@@ -22,6 +22,7 @@ Here, we'll start preliminary documentation of our interpretation of both of the
   - [statements.json](#statementsjson)
   - [strengths.json](#strengthsjson)
   - [therapies.json](#therapiesjson)
+  - [therapy_groups.json](#therapy_groupsjson)
 # Why are we making these changes?
 Most importantly, we are making this change because our current schema is something that we "just made up" throughout our original development. There is now an increasing emphasis within the field on interoperability and data standards, and we want moalmanac to both communicate with other services as well as possible while providing the most value to our users. Representing our database content within a widely used specification will increase the utility of our service.
 
@@ -35,7 +36,7 @@ VA-Spec supports a wide array of [proposition types](https://va-ga4gh.readthedoc
 
 **Extensions** are a way to capture information that are not directly supported by their data model. They will always have the fields `name`, `value`, and `description`. For example, our model for [diseases](#diseasesjson) has an extension that specifies if the cancer type is categorized as a solid tumor or not. 
 ```
-extensions [
+"extensions": [
   {
     "name": "solid_tumor",
 	"value": true,
@@ -165,7 +166,7 @@ When dereferenced, the field `agent_id` will be replaced with `agent` and it wil
 ```
 [Return to Table of Contents](#table-of-contents)
 ## [diseases.json](../referenced/diseases.json)
-Diseases and cancer types are categorized within va-spec under [Condition](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/conditions/index.html) and is represented as a [mappable concept](https://github.com/ga4gh/va-spec/blob/1.0.0-ballot.2024-11/schema/va-spec/base/json/Condition). We currently have mappings to [OncoTree](https://oncotree.mskcc.org/?version=oncotree_latest_stable&field=NAME)  with plans to expand to [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/). Extensions for diseases are a boolean to state if the cancer type is a solid tumor or not.
+[Diseases and cancer types](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/conditions/disease.html) are categorized within va-spec under [Condition](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/domain-entities/conditions/index.html) and is represented as a [mappable concept](https://github.com/ga4gh/va-spec/blob/1.0.0-ballot.2024-11/schema/va-spec/base/json/Condition). We currently have mappings to [OncoTree](https://oncotree.mskcc.org/?version=oncotree_latest_stable&field=NAME)  with plans to expand to [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/). Extensions for diseases are a boolean to state if the cancer type is a solid tumor or not.
 
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
@@ -213,7 +214,7 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 ```
 [Return to Table of Contents](#table-of-contents)
 ## [documents.json](../referenced/documents.json)
-Published documents that we derive relationships from are contained within this referenced data type. [Document is a core Information Entity within va-spec](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/document.html). This data type currently has several fields that should be converted to extensions. Each record is a dictionary with the fields: 
+[Documents](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/document.html) are published documents that we derive database content from. This data type currently has several fields that should be converted to extensions. Each record is a dictionary with the fields: 
 - `id` (int): an integer id for the record.
 - `type` (str): must be "Document".
 - `subtype` (str): a specific type of document. At the moment, moalmanac-db only uses subtype of `Regulatory approval` or `Publication`. 
@@ -229,9 +230,7 @@ Published documents that we derive relationships from are contained within this 
 - `publication_date` (str): the date that this version of the document was published, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 - `url` (str): the url to access this version of the document.
 - `url_drug` (str): the url for the document's referenced drug through [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm). 
-- `application_number` (int): the application number for the document's referenced drug through [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm). 
-
-date of when the database was last updated, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
+- `application_number` (int): the application number for the document's referenced drug through [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm).
 
 For documents of the subtype `Regulatory approval`, `name` is specified as:
 ```
@@ -616,7 +615,7 @@ An example record from [propositions.json](../referenced/propositions.json), aft
 ```
 [Return to Table of Contents](#table-of-contents)
 ## [statements.json](../referenced/statementsjson)
-[Statements](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/statement.html) are a core Information Entity within va-spec. Each statement contains one [proposition](#propositionsjson) and provides additional information around the proposition; such as a citation for it, direction of the proposition (supports or disputes), and the evidence associated with the proposition. 
+[Statements](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/statement.html) are a core Information Entity within va-spec. Each statement contains one [proposition](#propositionsjson) and provides additional information around the proposition such as a citation for it, direction of the proposition (supports or disputes), and the evidence associated with the proposition. 
 
 Each record is a dictionary with the following fields:
 - `id` (int): an integer id for the record.
