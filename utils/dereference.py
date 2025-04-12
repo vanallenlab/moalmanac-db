@@ -1,4 +1,7 @@
 import argparse
+from reprlib import recursive_repr
+
+from numpy.f2py.symbolic import as_ge
 
 import json_utils # Local import
 
@@ -22,58 +25,50 @@ class BaseTable:
         """
         self.records = records
 
-    def dereference_single(self, referenced_key: str, referenced_records: list[dict], new_key_name: str) -> None:
+    @staticmethod
+    def dereference_single(record: dict, referenced_key: str, referenced_records: list[dict]) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
 
         Args:
+            record (dict): the dictionary that contains a key to dereference.
             referenced_key (str): name of the key in `records` to dereference.
             referenced_records (list[dict]): list of dictionaries that the `referenced_key` refers to.
-            new_key_name (str): key to store dereferenced record in `records`. this key replaces `referenced_key`.
 
         Raises:
             KeyError: If the referenced_key is not found in a record.
         """
-        dereferenced_records = []
-        for record in self.records:
-            if referenced_key not in record:
-                raise KeyError(f"Key '{referenced_key}' not found in {record}.")
+        if referenced_key not in record:
+            raise KeyError(f"Key '{referenced_key}' not found in {record}.")
 
-            referenced_record = json_utils.fetch_records_by_key_value(
-                records=referenced_records,
-                key='id',
-                value=record[referenced_key]
-            )
+        referenced_record = json_utils.fetch_records_by_key_value(
+            records=referenced_records,
+            key='id',
+            value=record[referenced_key]
+        )
 
-            new_record = {}
-            for key, value in record.items():
-                if key == referenced_key:
-                    new_record[new_key_name] = referenced_record
-                else:
-                    new_record[key] = value
+        record[referenced_key] = referenced_record
 
-            dereferenced_records.append(new_record)
-        self.records = dereferenced_records
-
-    def dereference_list(self, referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> None:
+    @staticmethod
+    def dereference_list(record: dict, referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> None:
         """
-        Dereferences a key for each record in `records`, where the key's value is of type List to reference multiple records.
+        Dereferences a key for a provided `record`, where the key's value is of type List that references multiple records in another table.
 
         Args:
-            referenced_key (str): name of the key in `records` to dereference.
+            record (dict): the dictionary that contains a key to dereference.
+            referenced_key (str): name of the key in `record` to dereference.
             referenced_records (str): list of dictionaries that the `referenced_key` refers to.
             key_always_present (bool): If True, the `referenced_key` is present in all records.
 
         Raises:
             KeyError: If the `referenced_key` is not found in a record when `key_always_present` is True.
         """
-        for record in self.records:
-            if key_always_present and (referenced_key not in record):
-                raise KeyError(f"Key '{referenced_key}' not found but should be found in {record}")
+        if key_always_present and (referenced_key not in record):
+            raise KeyError(f"Key '{referenced_key}' not found but should be found in {record}")
 
-            if referenced_key not in record:
-                continue
-
+        if referenced_key not in record:
+            pass
+        else:
             _values = []
             for value in record[referenced_key]:
                 _value = json_utils.fetch_records_by_key_value(
@@ -83,6 +78,44 @@ class BaseTable:
                 )
                 _values.append(_value)
             record[referenced_key] = _values
+
+    @staticmethod
+    def replace_key(record: dict, referenced_key: str, new_key_name: str) -> dict:
+        """
+        Dereferences a key for each record in records, where the key's value references a single record.
+
+        Args:
+            record (dict): the dictionary that contains a key to replace.
+            referenced_key (str): name of the key in `record` to replace.
+            new_key_name (str): this name will replace the `referenced_key` key in `record`.
+
+        Raises:
+            KeyError: If the referenced_key is not found in the record.
+        """
+        new_record = {}
+        for key, value in record.items():
+            if key == referenced_key:
+                new_record[new_key_name] = record[referenced_key]
+            else:
+                new_record[key] = value
+        return new_record
+
+    @staticmethod
+    def remove_key(record: dict, key: str) -> None:
+        """
+        Removes a key from the provided dictionary.
+
+        Args:
+            record (dict): the dictionary that contains a key to remove.
+            key (str): name of the key in `record` to remove.
+
+        Raises:
+            KeyError: If the `key` is not found in `record`.
+        """
+        if key not in record:
+            raise KeyError(f"Key '{key}' not found in {record}")
+
+        record.pop(key)
 
 class Agents(BaseTable):
     """
@@ -102,61 +135,70 @@ class Biomarkers(BaseTable):
     - Genes (initial key: `genes`, resulting key: `genes`)
 
     Attributes:
-        records (list[dict]): A list of dictionaries representing the document records.
+        records (list[dict]): A list of dictionaries representing the biomarker records.
     """
-    def dereference(self, genes: list[dict]):
+
+    def dereference(self, genes: Genes) -> None:
         """Dereference all keys for this table."""
         self.dereference_genes(genes=genes)
 
-    def dereference_genes(self, genes: list[dict]) -> None:
+    def dereference_genes(self, genes: Genes) -> None:
         """
         Dereferences the `genes` key in each biomarker record.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `gene` key within each record. This key is not expected to be present within each record, so no KeyError will
+        `genes` key within each record. This key is not expected to be present within each record, so no KeyError will
         be raised if it is missing.
 
         Args:
-            genes (list[dict]): list of dictionaries to dereference against.
+            genes (Genes): An instance of the Genes class representing the genes table.
         """
-        self.dereference_list(
-            referenced_key='genes',
-            referenced_records=genes,
-            key_always_present=False
-        )
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='genes',
+                referenced_records=genes.records,
+                key_always_present=False
+            )
 
 class Contributions(BaseTable):
     """
     Represents the Contributions table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Agents (key: `agent_id`, resulting key: `agents`)
+    - Agents (initial key: `agent_id`, resulting key: `agents`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
-    def dereference(self, agents: list[dict]):
+    def dereference(self, agents: Agents) -> None:
         """Dereference all keys for this table."""
         self.dereference_agents(agents=agents)
 
-    def dereference_agents(self, agents: list[dict]) -> None:
+    def dereference_agents(self, agents: Agents) -> None:
         """
         Dereferences the `agent_id` key in each contribution record.
 
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
         `agent_id` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            agents (list[dict]): list of dictionaries to dereference against.
+            agents (Agents): An instance of the Agents class representing the agents table.
 
         Raises:
             KeyError: If the referenced_key, `agent_id`, is not found in a record.
         """
-        self.dereference_single(
-            referenced_key='agent_id',
-            referenced_records=agents,
-            new_key_name='agent'
-        )
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='agent_id',
+                referenced_records=agents.records
+            )
+            self.replace_key(
+                record=record,
+                referenced_key='agent_id',
+                new_key_name='agent'
+            )
 
 class Diseases(BaseTable):
     """
@@ -173,35 +215,41 @@ class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Organizations (key: `organization_id`)
+    - Organizations (initial key: `organization_id`, resulting key: `organization`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference(self, organizations: list[dict]):
+    def dereference(self, organizations: BaseTable) -> None:
         """Dereference all keys for this table."""
         self.dereference_organizations(organizations=organizations)
 
-    def dereference_organizations(self, organizations: list[dict]) -> None:
+    def dereference_organizations(self, organizations: Organizations) -> None:
         """
-        Dereferences the `organization_id` key in each proposition record.
+        Dereferences the `organization_id` key in each document record.
 
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
         `organization_id` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            organizations (list[dict]): list of dictionaries to dereference against.
+            organizations (Organizations): An instance of the Organizations class representing the organizations table.
 
         Raises:
             KeyError: If the referenced_key, `organization_id`, is not found in a record.
         """
-        self.dereference_single(
-            referenced_key='organization_id',
-            referenced_records=organizations,
-            new_key_name='organization'
-        )
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='organization_id',
+                referenced_records=organizations.records
+            )
+            self.replace_key(
+                record=record,
+                referenced_key='organization_id',
+                new_key_name='organization'
+            )
 
 class Genes(BaseTable):
     """
@@ -218,36 +266,47 @@ class Indications(BaseTable):
     """
     Represents the Indications table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Documents (key: `document_id`)
+    - Documents (initial key: `document_id`, resulting key: `document`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference(self, documents: list[dict], organizations: list[dict]):
+    def dereference(self, documents: Documents, organizations: Organizations) -> None:
         """Dereference all keys for this table."""
-        #Documents.dereference(organizations=organizations)
-        self.dereference_documents(documents=documents)
+        self.dereference_documents(documents=documents, organizations=organizations)
 
-    def dereference_documents(self, documents: list[dict]) -> None:
+    def dereference_documents(self, documents: Documents, organizations: Organizations) -> None:
         """
-        Dereferences the `document_id` key in each proposition record.
+        Dereferences the `document_id` key in each indication record.
 
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        Utilizes the `dereference` function from the Documents class to ensure that each document record is
+        fully dereferenced.
+
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
         `document_id` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            documents (list[dict]): list of dictionaries to dereference against.
+            documents (Documents): An instance of the Documents class representing the documents table.
+            organizations (Organizations): An instance of the Organizations class representing the organizations table.
 
         Raises:
             KeyError: If the referenced_key, `document_id`, is not found in a record.
         """
-        self.dereference_single(
-            referenced_key='document_id',
-            referenced_records=documents,
-            new_key_name='document'
-        )
+        documents.dereference(organizations=organizations)
+
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='document_id',
+                referenced_records=documents.records
+            )
+            self.replace_key(
+                record=record,
+                referenced_key='document_id',
+                new_key_name='document'
+            )
 
 class Organizations(BaseTable):
     """
@@ -255,7 +314,7 @@ class Organizations(BaseTable):
     dereferences keys that reference other tables. This table does not currently reference any other tables.
 
     Attributes:
-        records (list[dict]): A list of dictionaries representing the organization records.
+        records (list[dict]): A list of dictionaries representing the organizations table.
     """
 
     pass
@@ -266,39 +325,47 @@ class Propositions(BaseTable):
     dereferences keys that reference other tables. This table references the following tables:
     - Biomarkers (initial key: `biomarkers`, resulting key: `biomarkers`)
     - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`)
-    - Therapies (initial key: `therapies`, resulting key: `objectTherapeutic`)
+    - Therapies (initial key: `therapy_id` and `therapy_group_id, resulting key: `objectTherapeutic`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
-    def dereference(self, biomarkers: list[dict], diseases: list[dict], therapies: list[dict]) -> None:
+    def dereference(self, biomarkers: Biomarkers, diseases: Diseases, genes: Genes, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
         """Dereferences all keys for this table."""
-        self.dereference_biomarkers(biomarkers=biomarkers)
+        self.dereference_biomarkers(biomarkers=biomarkers, genes=genes)
         self.dereference_diseases(diseases=diseases)
-        self.dereference_therapies(therapies=therapies)
+        self.dereference_therapeutics(therapies=therapies, therapy_groups=therapy_groups)
 
-    def dereference_biomarkers(self, biomarkers: list[dict]) -> None:
+    def dereference_biomarkers(self, biomarkers: Biomarkers, genes: Genes) -> None:
         """
         Dereferences the `biomarkers` key in each proposition record.
+
+        Utilizes the `dereference` function from the Biomarkers class to ensure that each biomarker record is
+        fully dereferenced.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `biomarkers` key within each record. This key is expected to be present within each record, so a KeyError will
         be raised if it is missing.
 
         Args:
-            biomarkers (list[dict]): list of dictionaries to dereference against.
+            biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
+            genes (Genes): An instance of the Genes class representing the genes table.
 
         Raises:
             KeyError: If the referenced_key, `biomarkers`, is not found in a record.
         """
-        self.dereference_list(
-            referenced_key='biomarkers',
-            referenced_records=biomarkers,
-            key_always_present=True
-        )
+        biomarkers.dereference(genes=genes)
 
-    def dereference_diseases(self, diseases: list[dict]) -> None:
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='biomarkers',
+                referenced_records=biomarkers.records,
+                key_always_present=True
+            )
+
+    def dereference_diseases(self, diseases: Diseases) -> None:
         """
         Dereferences the `conditionQualifier_id` key in each proposition record.
 
@@ -307,139 +374,160 @@ class Propositions(BaseTable):
         KeyError will be raised if it is missing.
 
         Args:
-            diseases (list[dict]): list of dictionaries to dereference against.
+            diseases (Diseases): An instance of the Diseases class representing the diseases table.
 
         Raises:
             KeyError: If the referenced_key, `conditionQualifier_id`, is not found in a record.
         """
-        self.dereference_single(
-            referenced_key='conditionQualifier_id',
-            referenced_records=diseases,
-            new_key_name='conditionQualifier'
-        )
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='conditionQualifier_id',
+                referenced_records=diseases.records
+            )
+            self.replace_key(
+                record=record,
+                referenced_key='conditionQualifier_id',
+                new_key_name='conditionQualifier'
+            )
 
-    def dereference_therapies(self, therapies: list[dict]) -> None:
+    def dereference_therapeutics(self, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
         """
-        Dereferences the `therapies` key in each proposition record.
+        Dereferences the `therapy_id` key or `therapy_group_id` key in each proposition record.
+
+        Utilizes the `dereference` function from the TherapyGroups class to ensure that each therapy group record is
+        fully dereferenced.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `therapies` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
+        `objectTherapeutic` key within each record.
 
         Args:
-            therapies (list[dict]): list of dictionaries to dereference against.
+            therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
+            therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
 
         Raises:
-            KeyError: If the referenced_key, `therapies`, is not found in a record.
+            KeyError: If neither referenced_key values, `therapy_id` or `therapy_group_id, are not found in a record.
         """
-        self.dereference_list(
-            referenced_key='therapies',
-            referenced_records=therapies,
-            key_always_present=False
-        )
+        therapy_groups.dereference(therapies=therapies)
 
-    def format_therapies(self, referenced_key: str = 'therapies', new_key_name: str = 'objectTherapeutic') -> None:
         for record in self.records:
-            if referenced_key not in record:
-                continue
-
-            if len(record[referenced_key]) == 1:
-                record[new_key_name] = record[referenced_key][0]
-            elif len(record[referenced_key]) > 1:
-                record[new_key_name] = {
-                    'id': '...',
-                    'therapies': [therapy for therapy in record[referenced_key]],
-                    'membershipOperator': 'AND',
-                    'extensions': []
-                }
+            if record['therapy_id']:
+                self.dereference_single(
+                    record=record,
+                    referenced_key='therapy_id',
+                    referenced_records=therapies.records
+                )
+                self.replace_key(
+                    record=record,
+                    referenced_key='therapy_id',
+                    new_key_name='objectTherapeutic'
+                )
+            elif record['therapy_group_id']:
+                self.dereference_list(
+                    record=record,
+                    referenced_key='therapy_group_id',
+                    referenced_records=therapy_groups.records
+                )
+                self.replace_key(
+                    record=record,
+                    referenced_key='therapy_group_id',
+                    new_key_name='objectTherapeutic'
+                )
             else:
-                raise ValueError(f"Proposition record: {record['id']} has the {referenced_key} key with no items.")
+                raise KeyError(f"Neither 'therapy_id' nor 'therapy_group_id' are keys found in {record}")
 
-
+            self.remove_key(
+                record=record,
+                key='therapy_id'
+            )
+            self.remove_key(
+                record=record,
+                key='therapy_group_id'
+            )
 
 class Statements(BaseTable):
     """
     Represents the Statements table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Contributions (key: `contributions`)
-    - Documents (key: `reportedIn`)
-    - Propositions (key: `proposition_id`)
-    - Indications (key: `indications`)
+    - Contributions (initial key: `contributions`, resulting key: `contributions`)
+    - Documents (initial key: `reportedIn`, resulting key: `reportedIn`)
+    - Propositions (initial key: `proposition_id`, resulting key: `proposition`)
+    - Indications (initial key: `indication_id, resulting key: `indication`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference(self, contributions: list[dict], documents: list[dict], indications: list[dict], propositions: list[dict]):
+    def dereference(self, agents: Agents, biomarkers: Biomarkers, contributions: Contributions, diseases: Diseases, documents: Documents, genes: Genes, indications: Indications, organizations: Organizations, propositions: Propositions, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
         """Dereferences all keys for this table."""
-        self.dereference_contributions(contributions=contributions)
-        self.dereference_documents(documents=documents)
-        self.dereference_indications(indications=indications)
-        self.dereference_propositions(propositions=propositions)
+        self.dereference_contributions(contributions=contributions, agents=agents)
+        self.dereference_documents(documents=documents, organizations=organizations)
+        # Will documents already be dereferenced...?
+        self.dereference_indications(indications=indications, documents=documents, organizations=organizations)
+        self.dereference_propositions(propositions=propositions, biomarkers=biomarkers, diseases=diseases, genes=genes, therapies=therapies, therapy_groups=therapy_groups)
 
-    def dereference_contributions(self, contributions: list[dict]) -> None:
+    def dereference_contributions(self, contributions: Contributions, agents: Agents) -> None:
         """
         Dereferences the `contributions` key in each statement record.
+
+        Utilizes the `dereference` function from the Contributions class to ensure that each contribution record is
+        fully dereferenced.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `contributions` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            contributions (list[dict]): list of dictionaries to dereference against.
+            agents (Agents): An instance of the Agents class representing the agents table.
+            contributions (Contributions): An instance of the Contributions class representing the Contributions table.
 
         Raises:
             KeyError: If the referenced_key, `contributions`, is not found in a record.
         """
-        self.dereference_list(
-            referenced_key='contributions',
-            referenced_records=contributions,
-            key_always_present=True
-        )
+        contributions.dereference(agents=agents)
 
-    def dereference_documents(self, documents: list[dict]) -> None:
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='contributions',
+                referenced_records=contributions.records,
+                key_always_present=True
+            )
+
+    def dereference_documents(self, documents: Documents, organizations: Organizations) -> None:
         """
         Dereferences the `reportedIn` key in each statement record.
+
+        Utilizes the `dereference` function from the Documents class to ensure that each document record is
+        fully dereferenced.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `reportedIn` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            documents (list[dict]): list of dictionaries to dereference against.
+            documents (Documents): An instance of the Documents class representing the documents table.
+            organizations (Organizations): An instance of the Organizations class representing the organizations table.
 
         Raises:
             KeyError: If the referenced_key, `reportedIn`, is not found in a record.
         """
-        self.dereference_list(
-            referenced_key='reportedIn',
-            referenced_records=documents,
-            key_always_present=True
-        )
+        documents.dereference(organizations=organizations)
 
-    def dereference_propositions(self, propositions: list[dict]) -> None:
-        """
-        Dereferences the `proposition_id` key in each statement record.
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='reportedIn',
+                referenced_records=documents.records,
+                key_always_present=True
+            )
 
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `proposition_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            propositions (list[dict]): list of dictionaries to dereference against.
-
-        Raises:
-            KeyError: If the referenced_key, `proposition_id`, is not found in a record.
-        """
-        self.dereference_single(
-            referenced_key='proposition_id',
-            referenced_records=propositions,
-            new_key_name='proposition'
-        )
-
-    def dereference_indications(self, indications: list[dict]) -> None:
+    def dereference_indications(self, indications: Indications, documents: Documents, organizations: Organizations) -> None:
         """
         Dereferences the `indication_id` key in each statement record.
+
+        Utilizes the `dereference` function from the Indications class to ensure that each indication record is
+        fully dereferenced.
 
         Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
         `indication_id` key within each record. This key is expected to be present within each record, so a
@@ -447,16 +535,68 @@ class Statements(BaseTable):
         Note: This will eventually not be expected to be present within each record, once we add more than regulatory approvals.
 
         Args:
-            indications (list[dict]): list of dictionaries to dereference against.
+            indications (Indications): An instance of the Indications class representing the indications table.
+            documents (Documents): An instance of the Documents class representing the documents table.
+            organizations (Organizations): An instance of the Organizations class representing the organizations table.
 
         Raises:
             KeyError: If the referenced_key, `indication_id`, is not found in a record.
         """
-        self.dereference_single(
-            referenced_key='indication_id',
-            referenced_records=indications,
-            new_key_name='indication'
+        indications.dereference(documents=documents, organizations=organizations)
+
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='indication_id',
+                referenced_records=indications.records
+            )
+            self.replace_key(
+                record=record,
+                referenced_key='indication_id',
+                new_key_name='indication'
+            )
+
+    def dereference_propositions(self, propositions: Propositions, biomarkers: Biomarkers, diseases: Diseases, genes: Genes, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
+        """
+        Dereferences the `proposition_id` key in each statement record.
+
+        Utilizes the `dereference` function from the Propositions class to ensure that each proposition record is
+        fully dereferenced.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `proposition_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            propositions (Propositions): An instance of the Propositions class representing the propositions table.
+            biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
+            diseases (Diseases): An instance of the Diseases class representing the diseases table.
+            genes (Genes): An instance of the Genes class representing the genes table.
+            therapies (Therapies): An instance of the Therapies class representing the therapies table.
+            therapy_groups (TherapyGroups): An instance of the TherapyGroups class representing the therapy_groups table.
+
+        Raises:
+            KeyError: If the referenced_key, `proposition_id`, is not found in a record.
+        """
+        propositions.dereference(
+            biomarkers=biomarkers,
+            diseases=diseases,
+            genes=genes,
+            therapies=therapies,
+            therapy_groups=therapy_groups
         )
+
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='proposition_id',
+                referenced_records=propositions.records
+            )
+            self.replace_key(
+                record=record,
+                referenced_key='proposition_id',
+                new_key_name='proposition'
+            )
 
 class Therapies(BaseTable):
     """
@@ -468,6 +608,42 @@ class Therapies(BaseTable):
     """
 
     pass
+
+class TherapyGroups(BaseTable):
+    """
+    Represents the Therapy Groups table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table references the following tables:
+    - Therapies (key: `therapies`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the therapy records.
+    """
+
+    def dereference(self, therapies: list[dict]):
+        """Dereference all keys for this table."""
+        self.dereference_therapies(therapies=therapies)
+
+    def dereference_therapies(self, therapies: list[dict]) -> None:
+        """
+        Dereferences the `therapies_id` key in each therapy group record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `agent_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            therapies (list[dict]): list of dictionaries to dereference against.
+
+        Raises:
+            KeyError: If the referenced_key, `therapies`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='therapies',
+                referenced_records=therapies,
+                key_always_present=True
+            )
 
 def main(input_paths):
     """
@@ -496,6 +672,7 @@ def main(input_paths):
     propositions = json_utils.load(file=input_paths['propositions'])
     statements = json_utils.load(file=input_paths['statements'])
     therapies = json_utils.load(file=input_paths['therapies'])
+    therapy_groups = json_utils.load(file=input_paths['therapy_groups'])
 
     # Step 2: Generate table objects
     agents = Agents(records=agents)
@@ -509,31 +686,54 @@ def main(input_paths):
     propositions = Propositions(records=propositions)
     statements = Statements(records=statements)
     therapies = Therapies(records=therapies)
+    therapy_groups = TherapyGroups(records=therapy_groups)
 
     # Step 3: dereference relevant tables
     # biomarkers; references genes.json
-    biomarkers.dereference_genes(genes=genes.records)
+    #biomarkers.dereference(genes=genes)
 
     # contributions; references agents.json
-    contributions.dereference_agents(agents=agents.records)
+    #contributions.dereference_agents(agents=agents.records)
 
     # documents; references organizations.json
-    documents.dereference_organizations(organizations=organizations.records)
+    #documents.dereference_organizations(organizations=organizations.records)
 
     # indications; references documents.json
-    indications.dereference_documents(documents=documents.records)
+    #indications.dereference_documents(documents=documents.records)
+
+    # therapy groups; references therapies
+    #therapy_groups.dereference_therapies(therapies=therapies.records)
 
     # propositions; references biomarkers.json, diseases.json, and therapies.json
-    propositions.dereference_biomarkers(biomarkers=biomarkers.records)
-    propositions.dereference_diseases(diseases=diseases.records)
-    propositions.dereference_therapies(therapies=therapies.records)
-    #propositions.format_therapies()
+    #propositions.dereference(
+    #    biomarkers=biomarkers,
+    #    diseases=diseases,
+    #    genes=genes,
+    #    therapies=therapies,
+    #    therapy_groups=therapy_groups
+    #)
+    #propositions.dereference_biomarkers(biomarkers=biomarkers.records)
+    #propositions.dereference_diseases(diseases=diseases.records)
+    #propositions.dereference_therapeutics(therapies=therapies.records, therapy_groups=therapy_groups.records)
 
     # statements; references contributions.json, documents.json, propositions.json, and indications.json
-    statements.dereference_contributions(contributions=contributions.records)
-    statements.dereference_documents(documents=documents.records)
-    statements.dereference_propositions(propositions=propositions.records)
-    statements.dereference_indications(indications=indications.records)
+    #statements.dereference_contributions(contributions=contributions.records)
+    #statements.dereference_documents(documents=documents.records)
+    #statements.dereference_propositions(propositions=propositions.records)
+    #statements.dereference_indications(indications=indications.records)
+    statements.dereference(
+        agents=agents,
+        biomarkers=biomarkers,
+        contributions=contributions,
+        diseases=diseases,
+        documents=documents,
+        genes=genes,
+        indications=indications,
+        organizations=organizations,
+        propositions=propositions,
+        therapies=therapies,
+        therapy_groups=therapy_groups
+    )
 
     return {
         'about': about,
@@ -606,6 +806,11 @@ if __name__ =="__main__":
         default='referenced/therapies.json'
     )
     arg_parser.add_argument(
+        '--therapy-groups',
+        help='json detailing db therapy groups',
+        default='referenced/therapy_groups.json'
+    )
+    arg_parser.add_argument(
         '--output',
         help='Output json file',
         default='moalmanac-draft.dereferenced.json'
@@ -624,7 +829,8 @@ if __name__ =="__main__":
         'organizations': args.organizations,
         'propositions': args.propositions,
         'statements': args.statements,
-        'therapies': args.therapies
+        'therapies': args.therapies,
+        'therapy_groups': args.therapy_groups
     }
 
     dereferenced = main(input_paths=input_data)
