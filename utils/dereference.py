@@ -77,25 +77,22 @@ class BaseTable:
             record[referenced_key] = _values
 
     @staticmethod
-    def replace_key(record: dict, referenced_key: str, new_key_name: str) -> dict:
+    def replace_key(record: dict, old_key: str, new_key: str) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
 
         Args:
             record (dict): the dictionary that contains a key to replace.
-            referenced_key (str): name of the key in `record` to replace.
-            new_key_name (str): this name will replace the `referenced_key` key in `record`.
+            old_key (str): the name of the key in `record` to replace.
+            new_key (str): the new key name that will replace `old_key` in `record`.
 
         Raises:
-            KeyError: If the referenced_key is not found in the record.
+            KeyError: If the `old_key` is not found in the record.
         """
-        new_record = {}
-        for key, value in record.items():
-            if key == referenced_key:
-                new_record[new_key_name] = record[referenced_key]
-            else:
-                new_record[key] = value
-        return new_record
+        if old_key not in record:
+            raise KeyError(f"Key '{old_key}' not found in {record}")
+
+        record[new_key] = record.pop(old_key)
 
     @staticmethod
     def remove_key(record: dict, key: str) -> None:
@@ -111,7 +108,6 @@ class BaseTable:
         """
         if key not in record:
             raise KeyError(f"Key '{key}' not found in {record}")
-
         record.pop(key)
 
 class Agents(BaseTable):
@@ -135,11 +131,11 @@ class Biomarkers(BaseTable):
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
-    def dereference(self, genes: Genes) -> None:
+    def dereference(self, genes: 'Genes') -> None:
         """Dereference all keys for this table."""
         self.dereference_genes(genes=genes)
 
-    def dereference_genes(self, genes: Genes) -> None:
+    def dereference_genes(self, genes: 'Genes') -> None:
         """
         Dereferences the `genes` key in each biomarker record.
 
@@ -167,11 +163,11 @@ class Contributions(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
-    def dereference(self, agents: Agents) -> None:
+    def dereference(self, agents: 'Agents') -> None:
         """Dereference all keys for this table."""
         self.dereference_agents(agents=agents)
 
-    def dereference_agents(self, agents: Agents) -> None:
+    def dereference_agents(self, agents: 'Agents') -> None:
         """
         Dereferences the `agent_id` key in each contribution record.
 
@@ -193,8 +189,8 @@ class Contributions(BaseTable):
             )
             self.replace_key(
                 record=record,
-                referenced_key='agent_id',
-                new_key_name='agent'
+                old_key='agent_id',
+                new_key='agent'
             )
 
 class Diseases(BaseTable):
@@ -218,11 +214,11 @@ class Documents(BaseTable):
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference(self, organizations: BaseTable) -> None:
+    def dereference(self, organizations: 'Organizations') -> None:
         """Dereference all keys for this table."""
         self.dereference_organizations(organizations=organizations)
 
-    def dereference_organizations(self, organizations: Organizations) -> None:
+    def dereference_organizations(self, organizations: 'Organizations') -> None:
         """
         Dereferences the `organization_id` key in each document record.
 
@@ -244,8 +240,8 @@ class Documents(BaseTable):
             )
             self.replace_key(
                 record=record,
-                referenced_key='organization_id',
-                new_key_name='organization'
+                old_key='organization_id',
+                new_key='organization'
             )
 
 class Genes(BaseTable):
@@ -269,11 +265,11 @@ class Indications(BaseTable):
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference(self, documents: Documents, organizations: Organizations) -> None:
+    def dereference(self, documents: 'Documents', organizations: 'Organizations') -> None:
         """Dereference all keys for this table."""
         self.dereference_documents(documents=documents, organizations=organizations)
 
-    def dereference_documents(self, documents: Documents, organizations: Organizations) -> None:
+    def dereference_documents(self, documents: 'Documents', organizations: 'Organizations') -> None:
         """
         Dereferences the `document_id` key in each indication record.
 
@@ -287,6 +283,7 @@ class Indications(BaseTable):
         Args:
             documents (Documents): An instance of the Documents class representing the documents table.
             organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            dereference_organizations (bool): If `dereference_organizations` is `True`, this function will dereference organizations.
 
         Raises:
             KeyError: If the referenced_key, `document_id`, is not found in a record.
@@ -301,8 +298,8 @@ class Indications(BaseTable):
             )
             self.replace_key(
                 record=record,
-                referenced_key='document_id',
-                new_key_name='document'
+                old_key='document_id',
+                new_key='document'
             )
 
 class Organizations(BaseTable):
@@ -328,13 +325,13 @@ class Propositions(BaseTable):
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
-    def dereference(self, biomarkers: Biomarkers, diseases: Diseases, genes: Genes, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
+    def dereference(self, biomarkers: 'Biomarkers', diseases: 'Diseases', genes: 'Genes', therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
         """Dereferences all keys for this table."""
         self.dereference_biomarkers(biomarkers=biomarkers, genes=genes)
         self.dereference_diseases(diseases=diseases)
         self.dereference_therapeutics(therapies=therapies, therapy_groups=therapy_groups)
 
-    def dereference_biomarkers(self, biomarkers: Biomarkers, genes: Genes) -> None:
+    def dereference_biomarkers(self, biomarkers: 'Biomarkers', genes: 'Genes') -> None:
         """
         Dereferences the `biomarkers` key in each proposition record.
 
@@ -362,7 +359,7 @@ class Propositions(BaseTable):
                 key_always_present=True
             )
 
-    def dereference_diseases(self, diseases: Diseases) -> None:
+    def dereference_diseases(self, diseases: 'Diseases') -> None:
         """
         Dereferences the `conditionQualifier_id` key in each proposition record.
 
@@ -384,11 +381,11 @@ class Propositions(BaseTable):
             )
             self.replace_key(
                 record=record,
-                referenced_key='conditionQualifier_id',
-                new_key_name='conditionQualifier'
+                old_key='conditionQualifier_id',
+                new_key='conditionQualifier'
             )
 
-    def dereference_therapeutics(self, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
+    def dereference_therapeutics(self, therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
         """
         Dereferences the `therapy_id` key or `therapy_group_id` key in each proposition record.
 
@@ -408,7 +405,7 @@ class Propositions(BaseTable):
         therapy_groups.dereference(therapies=therapies)
 
         for record in self.records:
-            if record['therapy_id']:
+            if isinstance(record['therapy_id'], int):
                 self.dereference_single(
                     record=record,
                     referenced_key='therapy_id',
@@ -416,31 +413,30 @@ class Propositions(BaseTable):
                 )
                 self.replace_key(
                     record=record,
-                    referenced_key='therapy_id',
-                    new_key_name='objectTherapeutic'
+                    old_key='therapy_id',
+                    new_key='objectTherapeutic'
                 )
-            elif record['therapy_group_id']:
-                self.dereference_list(
+                self.remove_key(
+                    record=record,
+                    key='therapy_group_id'
+                )
+            elif isinstance(record['therapy_group_id'], int):
+                self.dereference_single(
                     record=record,
                     referenced_key='therapy_group_id',
                     referenced_records=therapy_groups.records
                 )
                 self.replace_key(
                     record=record,
-                    referenced_key='therapy_group_id',
-                    new_key_name='objectTherapeutic'
+                    old_key='therapy_group_id',
+                    new_key='objectTherapeutic'
+                )
+                self.remove_key(
+                    record=record,
+                    key='therapy_id'
                 )
             else:
                 raise KeyError(f"Neither 'therapy_id' nor 'therapy_group_id' are keys found in {record}")
-
-            self.remove_key(
-                record=record,
-                key='therapy_id'
-            )
-            self.remove_key(
-                record=record,
-                key='therapy_group_id'
-            )
 
 class Statements(BaseTable):
     """
@@ -455,15 +451,14 @@ class Statements(BaseTable):
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference(self, agents: Agents, biomarkers: Biomarkers, contributions: Contributions, diseases: Diseases, documents: Documents, genes: Genes, indications: Indications, organizations: Organizations, propositions: Propositions, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
+    def dereference(self, agents: 'Agents', biomarkers: 'Biomarkers', contributions: 'Contributions', diseases: 'Diseases', documents: 'Documents', genes: 'Genes', indications: 'Indications', organizations: 'Organizations', propositions: 'Propositions', therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
         """Dereferences all keys for this table."""
         self.dereference_contributions(contributions=contributions, agents=agents)
         self.dereference_documents(documents=documents, organizations=organizations)
-        # Will documents already be dereferenced...?
         self.dereference_indications(indications=indications, documents=documents, organizations=organizations)
         self.dereference_propositions(propositions=propositions, biomarkers=biomarkers, diseases=diseases, genes=genes, therapies=therapies, therapy_groups=therapy_groups)
 
-    def dereference_contributions(self, contributions: Contributions, agents: Agents) -> None:
+    def dereference_contributions(self, contributions: 'Contributions', agents: 'Agents') -> None:
         """
         Dereferences the `contributions` key in each statement record.
 
@@ -491,7 +486,7 @@ class Statements(BaseTable):
                 key_always_present=True
             )
 
-    def dereference_documents(self, documents: Documents, organizations: Organizations) -> None:
+    def dereference_documents(self, documents: 'Documents', organizations: 'Organizations') -> None:
         """
         Dereferences the `reportedIn` key in each statement record.
 
@@ -519,7 +514,7 @@ class Statements(BaseTable):
                 key_always_present=True
             )
 
-    def dereference_indications(self, indications: Indications, documents: Documents, organizations: Organizations) -> None:
+    def dereference_indications(self, indications: 'Indications', documents: 'Documents', organizations: 'Organizations') -> None:
         """
         Dereferences the `indication_id` key in each statement record.
 
@@ -549,11 +544,11 @@ class Statements(BaseTable):
             )
             self.replace_key(
                 record=record,
-                referenced_key='indication_id',
-                new_key_name='indication'
+                old_key='indication_id',
+                new_key='indication'
             )
 
-    def dereference_propositions(self, propositions: Propositions, biomarkers: Biomarkers, diseases: Diseases, genes: Genes, therapies: Therapies, therapy_groups: TherapyGroups) -> None:
+    def dereference_propositions(self, propositions: 'Propositions', biomarkers: 'Biomarkers', diseases: 'Diseases', genes: 'Genes', therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
         """
         Dereferences the `proposition_id` key in each statement record.
 
@@ -591,8 +586,8 @@ class Statements(BaseTable):
             )
             self.replace_key(
                 record=record,
-                referenced_key='proposition_id',
-                new_key_name='proposition'
+                old_key='proposition_id',
+                new_key='proposition'
             )
 
 class Therapies(BaseTable):
@@ -616,11 +611,11 @@ class TherapyGroups(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, therapies: list[dict]):
+    def dereference(self, therapies: 'Therapies'):
         """Dereference all keys for this table."""
         self.dereference_therapies(therapies=therapies)
 
-    def dereference_therapies(self, therapies: list[dict]) -> None:
+    def dereference_therapies(self, therapies: 'Therapies') -> None:
         """
         Dereferences the `therapies_id` key in each therapy group record.
 
@@ -638,7 +633,7 @@ class TherapyGroups(BaseTable):
             self.dereference_list(
                 record=record,
                 referenced_key='therapies',
-                referenced_records=therapies,
+                referenced_records=therapies.records,
                 key_always_present=True
             )
 
@@ -685,39 +680,7 @@ def main(input_paths):
     therapies = Therapies(records=therapies)
     therapy_groups = TherapyGroups(records=therapy_groups)
 
-    # Step 3: dereference relevant tables
-    # biomarkers; references genes.json
-    #biomarkers.dereference(genes=genes)
-
-    # contributions; references agents.json
-    #contributions.dereference_agents(agents=agents.records)
-
-    # documents; references organizations.json
-    #documents.dereference_organizations(organizations=organizations.records)
-
-    # indications; references documents.json
-    #indications.dereference_documents(documents=documents.records)
-
-    # therapy groups; references therapies
-    #therapy_groups.dereference_therapies(therapies=therapies.records)
-
-    # propositions; references biomarkers.json, diseases.json, and therapies.json
-    #propositions.dereference(
-    #    biomarkers=biomarkers,
-    #    diseases=diseases,
-    #    genes=genes,
-    #    therapies=therapies,
-    #    therapy_groups=therapy_groups
-    #)
-    #propositions.dereference_biomarkers(biomarkers=biomarkers.records)
-    #propositions.dereference_diseases(diseases=diseases.records)
-    #propositions.dereference_therapeutics(therapies=therapies.records, therapy_groups=therapy_groups.records)
-
-    # statements; references contributions.json, documents.json, propositions.json, and indications.json
-    #statements.dereference_contributions(contributions=contributions.records)
-    #statements.dereference_documents(documents=documents.records)
-    #statements.dereference_propositions(propositions=propositions.records)
-    #statements.dereference_indications(indications=indications.records)
+    # Step 3: Dereference the database and generate statements
     statements.dereference(
         agents=agents,
         biomarkers=biomarkers,
