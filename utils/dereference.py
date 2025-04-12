@@ -534,7 +534,24 @@ class Statements(BaseTable):
         Raises:
             KeyError: If the referenced_key, `indication_id`, is not found in a record.
         """
-        indications.dereference(documents=documents, organizations=organizations)
+
+        # Documents will have already been dereferenced for organizations
+        # instead of using the function from the Indications class, we will just manually
+        # dereference documents for indications
+
+        # indications.dereference(documents=documents, organizations=organizations)
+
+        for record in indications.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='document_id',
+                referenced_records=documents.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='document_id',
+                new_key='document'
+            )
 
         for record in self.records:
             self.dereference_single(
