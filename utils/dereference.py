@@ -131,8 +131,25 @@ class Biomarkers(BaseTable):
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
-    def dereference(self, genes: 'Genes') -> None:
-        """Dereference all keys for this table."""
+    def dereference(self, genes: 'Genes', resolve_dependencies=True, codings: 'Codings'=None, mappings: 'Mappings'=None) -> None:
+        """
+        Dereferences all referenced keys within the Genes table and optionally resolves dependencies
+        within these related tables.
+
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
+        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+
+        Args:
+            genes (Genes): An instance of the Genes class representing the genes table.
+            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
+            codings (Codings): An instance of the Codings class representing the codings table.
+            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+        """
+        if resolve_dependencies:
+            if codings and mappings:
+                genes.dereference(codings=codings, mappings=mappings, resolve_dependencies=True)
+
         self.dereference_genes(genes=genes)
 
     def dereference_genes(self, genes: 'Genes') -> None:
@@ -175,7 +192,12 @@ class Contributions(BaseTable):
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
     def dereference(self, agents: 'Agents') -> None:
-        """Dereference all keys for this table."""
+        """
+        Dereferences all referenced keys within the Contributions table.
+
+        Args:
+            agents (Agents): An instance of the Agents class representing the agents table.
+        """
         self.dereference_agents(agents=agents)
 
     def dereference_agents(self, agents: 'Agents') -> None:
@@ -209,13 +231,31 @@ class Diseases(BaseTable):
     Represents the Diseases table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
     - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
+    - Mappings (initial key: `mappings`, resulting_key: `mappings`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: 'Codings') -> None:
+    def dereference(self, codings: 'Codings', mappings: 'Mappings', resolve_dependencies=True) -> None:
+        """
+        Dereferences all referenced keys within the Diseases table and optionally resolves dependencies
+        within these related tables.
+
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
+        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
+        """
+        if resolve_dependencies:
+            mappings.dereference(codings=codings)
+
         self.dereference_codings(codings=codings)
+        self.dereference_mappings(mappings=mappings)
 
     def dereference_codings(self, codings: 'Codings') -> None:
         """
@@ -243,6 +283,28 @@ class Diseases(BaseTable):
                 new_key='primaryCoding'
             )
 
+    def dereference_mappings(self, mappings: 'Mappings') -> None:
+        """
+        Dereferences the `mappings` key in each gene record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `mappings` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+
+        Raises:
+            KeyError: If the referenced_key, `mappings`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='mappings',
+                referenced_records=mappings.records,
+                key_always_present=True
+            )
+
 class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
@@ -254,7 +316,12 @@ class Documents(BaseTable):
     """
 
     def dereference(self, organizations: 'Organizations') -> None:
-        """Dereference all keys for this table."""
+        """
+        Dereferences all referenced keys within the Diseases table.
+
+        Args:
+            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+        """
         self.dereference_organizations(organizations=organizations)
 
     def dereference_organizations(self, organizations: 'Organizations') -> None:
@@ -288,13 +355,32 @@ class Genes(BaseTable):
     Represents the Genes table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
     - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
+    - Mappings (initial key: `mappings`, resulting_key: `mappings`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: 'Codings') -> None:
+    def dereference(self, codings: 'Codings', mappings: 'Mappings', resolve_dependencies=True) -> None:
+        """
+        Dereferences all referenced keys within the Genes table and optionally resolves dependencies
+        within these related tables.
+
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
+        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
+        """
+        if resolve_dependencies:
+            if codings and mappings:
+                mappings.dereference(codings=codings)
+
         self.dereference_codings(codings=codings)
+        self.dereference_mappings(mappings=mappings)
 
     def dereference_codings(self, codings: 'Codings') -> None:
         """
@@ -322,6 +408,28 @@ class Genes(BaseTable):
                 new_key='primaryCoding'
             )
 
+    def dereference_mappings(self, mappings: 'Mappings') -> None:
+        """
+        Dereferences the `mappings` key in each gene record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `mappings` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+
+        Raises:
+            KeyError: If the referenced_key, `mappings`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key='mappings',
+                referenced_records=mappings.records,
+                key_always_present=True
+            )
+
 class Indications(BaseTable):
     """
     Represents the Indications table. This class inherits common functionality from the BaseTable class and
@@ -332,16 +440,29 @@ class Indications(BaseTable):
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference(self, documents: 'Documents', organizations: 'Organizations') -> None:
-        """Dereference all keys for this table."""
-        self.dereference_documents(documents=documents, organizations=organizations)
+    def dereference(self, documents: 'Documents', resolve_dependencies=True, organizations: 'Organizations'=None) -> None:
+        """
+        Dereferences all referenced keys within the Indications table and optionally resolves dependencies
+        within these related tables.
 
-    def dereference_documents(self, documents: 'Documents', organizations: 'Organizations') -> None:
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
+        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+
+        Args:
+            documents (Documents): An instance of the Documents class representing the documents table.
+            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
+            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+        """
+        if resolve_dependencies:
+            if organizations:
+                documents.dereference(organizations=organizations)
+
+        self.dereference_documents(documents=documents)
+
+    def dereference_documents(self, documents: 'Documents') -> None:
         """
         Dereferences the `document_id` key in each indication record.
-
-        Utilizes the `dereference` function from the Documents class to ensure that each document record is
-        fully dereferenced.
 
         Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
         `document_id` key within each record. This key is expected to be present within each record, so a
@@ -349,14 +470,10 @@ class Indications(BaseTable):
 
         Args:
             documents (Documents): An instance of the Documents class representing the documents table.
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
-            dereference_organizations (bool): If `dereference_organizations` is `True`, this function will dereference organizations.
 
         Raises:
             KeyError: If the referenced_key, `document_id`, is not found in a record.
         """
-        documents.dereference(organizations=organizations)
-
         for record in self.records:
             self.dereference_single(
                 record=record,
@@ -379,7 +496,16 @@ class Mappings(BaseTable):
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
     def dereference(self, codings: 'Codings') -> None:
-        """Dereference all keys for this table."""
+        """
+        Dereferences all referenced keys within the Mappings table.
+
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
+        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+        """
         self.dereference_codings(codings=codings)
 
     def dereference_codings(self, codings: 'Codings') -> None:
