@@ -719,7 +719,7 @@ class Statements(BaseTable):
                 new_key='proposition'
             )
 
-    def dereference_strengths(self, strengths: 'Strengths'):
+    def dereference_strengths(self, strengths: 'Strengths') -> None:
         """
         Dereferences the `strength_id` key in each statement record.
 
@@ -833,7 +833,7 @@ class TherapyGroups(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, therapies: 'Therapies'):
+    def dereference(self, therapies: 'Therapies') -> None:
         """Dereference all keys for this table."""
         self.dereference_therapies(therapies=therapies)
 
