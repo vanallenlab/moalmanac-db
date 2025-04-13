@@ -154,6 +154,17 @@ class Biomarkers(BaseTable):
                 key_always_present=False
             )
 
+class Codings(BaseTable):
+    """
+        Represents the Codings table. This class inherits common functionality from the BaseTable class and
+        dereferences keys that reference other tables. This table does not currently reference any other tables.
+
+        Attributes:
+            records (list[dict]): A list of dictionaries representing the coding records.
+        """
+
+    pass
+
 class Contributions(BaseTable):
     """
     Represents the Contributions table. This class inherits common functionality from the BaseTable class and
@@ -196,13 +207,41 @@ class Contributions(BaseTable):
 class Diseases(BaseTable):
     """
     Represents the Diseases table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
 
     Attributes:
-        records (list[dict]): A list of dictionaries representing the disease records.
+        records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    pass
+    def dereference(self, codings: 'Codings') -> None:
+        self.dereference_codings(codings=codings)
+
+    def dereference_codings(self, codings: 'Codings') -> None:
+        """
+        Dereferences the `primary_coding_id` key in each strength record.
+
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
+        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+
+        Raises:
+            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='primary_coding_id',
+                referenced_records=codings.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='primary_coding_id',
+                new_key='primaryCoding'
+            )
 
 class Documents(BaseTable):
     """
@@ -247,13 +286,41 @@ class Documents(BaseTable):
 class Genes(BaseTable):
     """
     Represents the Genes table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table does not currently reference any other tables.
+    dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
 
     Attributes:
-        records (list[dict]): A list of dictionaries representing the gene records.
+        records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    pass
+    def dereference(self, codings: 'Codings') -> None:
+        self.dereference_codings(codings=codings)
+
+    def dereference_codings(self, codings: 'Codings') -> None:
+        """
+        Dereferences the `primary_coding_id` key in each strength record.
+
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
+        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+
+        Raises:
+            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='primary_coding_id',
+                referenced_records=codings.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='primary_coding_id',
+                new_key='primaryCoding'
+            )
 
 class Indications(BaseTable):
     """
@@ -300,6 +367,50 @@ class Indications(BaseTable):
                 record=record,
                 old_key='document_id',
                 new_key='document'
+            )
+
+class Mappings(BaseTable):
+    """
+    Represents the Mappings table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `coding_id`, resulting key: `coding`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the contribution records.
+    """
+    def dereference(self, codings: 'Codings') -> None:
+        """Dereference all keys for this table."""
+        self.dereference_codings(codings=codings)
+
+    def dereference_codings(self, codings: 'Codings') -> None:
+        """
+        Dereferences the `coding_id` key in each coding record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `coding_id` key within each record. This key is not expected to be present within each record, so no KeyError will
+        be raised if it is missing.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+        """
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='coding_id',
+                referenced_records=codings.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='coding_id',
+                new_key='coding'
+            )
+            self.remove_key(
+                record=record,
+                key='id'
+            )
+            self.remove_key(
+                record=record,
+                key='primary_coding_id'
             )
 
 class Organizations(BaseTable):
@@ -444,14 +555,15 @@ class Statements(BaseTable):
     dereferences keys that reference other tables. This table references the following tables:
     - Contributions (initial key: `contributions`, resulting key: `contributions`)
     - Documents (initial key: `reportedIn`, resulting key: `reportedIn`)
-    - Propositions (initial key: `proposition_id`, resulting key: `proposition`)
     - Indications (initial key: `indication_id, resulting key: `indication`)
+    - Propositions (initial key: `proposition_id`, resulting key: `proposition`)
+    - Strengths (initial key: `strength_id`, resulting key: `strength`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference(self, agents: 'Agents', biomarkers: 'Biomarkers', contributions: 'Contributions', diseases: 'Diseases', documents: 'Documents', genes: 'Genes', indications: 'Indications', organizations: 'Organizations', propositions: 'Propositions', therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
+    def dereference(self, agents: 'Agents', biomarkers: 'Biomarkers', codings: 'Codings', contributions: 'Contributions', diseases: 'Diseases', documents: 'Documents', genes: 'Genes', indications: 'Indications', mappings: 'Mappings', organizations: 'Organizations', propositions: 'Propositions', therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
         """Dereferences all keys for this table."""
         self.dereference_contributions(contributions=contributions, agents=agents)
         self.dereference_documents(documents=documents, organizations=organizations)
@@ -607,16 +719,109 @@ class Statements(BaseTable):
                 new_key='proposition'
             )
 
-class Therapies(BaseTable):
+    def dereference_strengths(self, strengths: 'Strengths'):
+        """
+        Dereferences the `strength_id` key in each statement record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
+        `strength_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            strengths (Strengths): An instance of the Strengths class representing the strengths table.
+
+        Raises:
+            KeyError: If the referenced_key, `strength_id`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='strength_id',
+                referenced_records=strengths.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='strength_id',
+                new_key='strength'
+            )
+
+class Strengths(BaseTable):
     """
-    Represents the Therapies table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table does not currently reference any other tables.
+    Represents the Strengths table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    pass
+    def dereference(self, codings: 'Codings') -> None:
+        self.dereference_codings(codings=codings)
+
+    def dereference_codings(self, codings: 'Codings') -> None:
+        """
+        Dereferences the `primary_coding_id` key in each strength record.
+
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
+        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+
+        Raises:
+            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='primary_coding_id',
+                referenced_records=codings.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='primary_coding_id',
+                new_key='primaryCoding'
+            )
+
+class Therapies(BaseTable):
+    """
+    Represents the Therapies table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the therapy records.
+    """
+
+    def dereference(self, codings: 'Codings') -> None:
+        self.dereference_codings(codings=codings)
+
+    def dereference_codings(self, codings: 'Codings') -> None:
+        """
+        Dereferences the `primary_coding_id` key in each strength record.
+
+        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
+        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
+        KeyError will be raised if it is missing.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+
+        Raises:
+            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
+        """
+        for record in self.records:
+            self.dereference_single(
+                record=record,
+                referenced_key='primary_coding_id',
+                referenced_records=codings.records
+            )
+            self.replace_key(
+                record=record,
+                old_key='primary_coding_id',
+                new_key='primaryCoding'
+            )
 
 class TherapyGroups(BaseTable):
     """
@@ -672,11 +877,13 @@ def main(input_paths):
     about = json_utils.load(file=input_paths['about'])
     agents = json_utils.load(file=input_paths['agents'])
     biomarkers = json_utils.load(file=input_paths['biomarkers'])
+    codings = json_utils.load(file=input_paths['codings'])
     contributions = json_utils.load(file=input_paths['contributions'])
     diseases = json_utils.load(file=input_paths['diseases'])
     documents = json_utils.load(file=input_paths['documents'])
     genes = json_utils.load(file=input_paths['genes'])
     indications = json_utils.load(file=input_paths['indications'])
+    mappings = json_utils.load(file=input_paths['mappings'])
     organizations = json_utils.load(file=input_paths['organizations'])
     propositions = json_utils.load(file=input_paths['propositions'])
     statements = json_utils.load(file=input_paths['statements'])
@@ -686,11 +893,13 @@ def main(input_paths):
     # Step 2: Generate table objects
     agents = Agents(records=agents)
     biomarkers = Biomarkers(records=biomarkers)
+    codings = Codings(records=codings)
     contributions = Contributions(records=contributions)
     diseases = Diseases(records=diseases)
     documents = Documents(records=documents)
     genes = Genes(records=genes)
     indications = Indications(records=indications)
+    mappings = Mappings(records=mappings)
     organizations = Organizations(records=organizations)
     propositions = Propositions(records=propositions)
     statements = Statements(records=statements)
@@ -701,11 +910,13 @@ def main(input_paths):
     statements.dereference(
         agents=agents,
         biomarkers=biomarkers,
+        codings=codings,
         contributions=contributions,
         diseases=diseases,
         documents=documents,
         genes=genes,
         indications=indications,
+        mappings=mappings,
         organizations=organizations,
         propositions=propositions,
         therapies=therapies,
@@ -738,6 +949,11 @@ if __name__ =="__main__":
         default='referenced/biomarkers.json'
     ),
     arg_parser.add_argument(
+        '--codings',
+        help='json detailing db codings',
+        default='referenced/codings.json'
+    )
+    arg_parser.add_argument(
         '--contributions',
         help='json detailing db contributions',
         default='referenced/contributions.json'
@@ -762,6 +978,11 @@ if __name__ =="__main__":
         help='json detailing db indications',
         default='referenced/indications.json'
     ),
+    arg_parser.add_argument(
+        '--mappings',
+        help='json detailing db mappings',
+        default='referenced/mappings.json'
+    )
     arg_parser.add_argument(
         '--organizations',
         help='json detailing db organizations',
@@ -798,11 +1019,13 @@ if __name__ =="__main__":
         'about': args.about,
         'agents': args.agents,
         'biomarkers': args.biomarkers,
+        'codings': args.codings,
         'contributions': args.contributions,
         'diseases': args.diseases,
         'documents': args.documents,
         'genes': args.genes,
         'indications': args.indications,
+        'mappings': args.mappings,
         'organizations': args.organizations,
         'propositions': args.propositions,
         'statements': args.statements,
