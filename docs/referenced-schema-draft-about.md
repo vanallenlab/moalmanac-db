@@ -12,11 +12,13 @@ Here, we'll start preliminary documentation of our interpretation of both of the
 - [Our (in progress) interpretation of va-spec](#our-in-progress-interpretation-of-va-spec)
   - [about.json](#aboutjson)
   - [biomarkers.json](#biomarkersjson)
+  - [codings.json](#codingsjson)
   - [contributions.json](#contributionsjson)
   - [diseases.json](#diseasesjson)
   - [documents.json](#documentsjson)
   - [genes.json](#genesjson)
   - [indications.json](#indicationsjson)
+  - [mappings.json](#mappingsjson)
   - [organizations.json](#organizationsjson)
   - [propositions.json](#propositionsjson)
   - [statements.json](#statementsjson)
@@ -92,7 +94,7 @@ We also want to give a special thank you to Daniel Puthawala and Kori Kuzama fro
 - `id` (int): an integer id for the record.
 - `type` (str): "Agent", must be "Agent".
 - `subtype` (str): "Person", "Organization", or "Software".
-- `name` (str): a human readable name for the Agent.
+- `name` (str): a human-readable name for the Agent.
 - `description` (str): A free-text description of the Agent.
 
 We likely can combine [organizations](#organizationsjson) with this table; however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documentsjson).
@@ -115,7 +117,7 @@ Biomarkers are intended to follow the [categorical variant representation specif
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
 - `type` (str): "CategoricalVariant", must be "CategoricalVariant".
-- `name` (str): a human readable name for the biomarker.
+- `name` (str): a human-readable name for the biomarker.
 - `extensions` (list[dict]): list of dictionaries for extensions to this concept, or items not captured by the data model.
 
 The following biomarker types are currently represented in this version of moalmanac-db: protein expression, somatic variant, rearrangement, wild type, germline variant, mismatch repair, microsatelite stability, copy number, copy number (arm level), homologous recombination, tumor mutational burden. Fields for biomarkers currently represented in moalmanac are largely the same as [the current versions](https://github.com/vanallenlab/moalmanac-db/blob/main/docs/sop.md#molecular-features). The following new biomarker types are represented as follows:
@@ -140,6 +142,34 @@ The following biomarker types are currently represented in this version of moalm
 - `_present` (boolean): a boolean value for if the biomarker is present or absent.  
 
 [Return to Table of Contents](#table-of-contents)
+## [codings.json](../referenced/codings.json) 
+[Codings](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/elements/coding.html#coding) are an element that va-spec defines as: 
+> A structured representation of a code for a defined concept in a terminology or code system. 
+
+We use this element to represent concepts from other systems, such as [OncoTree](https://oncotree.mskcc.org/) and the [NCI Thesaurus](https://evsexplore.semantics.cancer.gov/). Each record is a dictionary with the following fields:
+- `id` (str): an identifier for the concept mapping in the external system.
+- `code` (str): a symbol uniquely associated with the concept in the external system.
+- `name` (str): a human-readable name for the concept in the external system.
+- `system` (str): a url for the external system.
+- `systemVersion` (str): the version of the external system that the concept mapping is represented in.
+- `iris` (list[str]): a list of IRIs or URLs that are associated with this coding. 
+
+An example record from [codings.json](../referenced/codings.json):
+```
+[  
+  {    
+    "id": "oncotree:ALL",
+    "code": "ALL",
+    "name": "Acute Lymphoid Leukemia",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+    ]
+  }  
+]
+```
+[Return to Table of Contents](#table-of-contents)
 ## [contributions.json](../referenced/contributions.json) 
 [Contributions](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/activities/contribution.html) are defined as actions taken by an [agent](#agentsjson) when modifying contents of the database. As far as we can tell from va-spec's current documentation, contributions are within the framework are attached to Data Set, Statement, Evidence Line, and Study Result. We are considering adding contributions to each data type to track changes within the database content, independently of GitHub. 
 
@@ -152,12 +182,33 @@ Each record is a dictionary with the fields:
 
 When dereferenced, the field `agent_id` will be replaced with `agent` and it will contain the relevant record from [agents](#agentsjson). 
 
+An example record from [agents.json](../referenced/agents.json):
 ```
 [  
   {    
     "id": 0,  
     "type": "Contribution",  
     "agent_id": 0,  
+    "description": "Initial access of FDA approvals",  
+    "date": "2024-10-30"  
+  },
+  ...
+]
+```
+
+An example record from [agents.json](../referenced/agents.json), after dereferencing:
+```
+[  
+  {    
+    "id": 0,  
+    "type": "Contribution",  
+    "agent": {
+      "id": 0,
+      "type": "Agent",
+      "subtype": "organization",
+      "name": "Van Allen lab",
+      "description": "Van Allen lab, Dana-Farber Cancer Institute"
+    },  
     "description": "Initial access of FDA approvals",  
     "date": "2024-10-30"  
   },
@@ -171,36 +222,52 @@ When dereferenced, the field `agent_id` will be replaced with `agent` and it wil
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
 - `conceptType` (str): "Disease", the conceptType for the mappable concept.
-- `name` (str): a human readable name for the Disease.
-- `primaryCode` (str): the `code` from relevant record in `mappings`'s `coding` that is primarily being used to represent this concept mapping.
-- `mappings` (list): list of concept mappings (representations in other systems) of the concept.
+- `name` (str): a human-readable name for the Disease.
+- `primary_coding_id` (str): the `code` from [codings.json](#codingsjson) that is primarily being used to represent this concept.
+- `mappings` (list): list of concept mappings (representations in other systems) of the concept. Each record within `mappings` will contain a [`coding`](#codingsjson) and `relation`.
 - `extensions` (list[dict]): list of dictionaries for extensions to this concept, or items not captured by the data model.
 
-Each record within `mappings` will contain a `coding` and `relation`. The `coding` will have the fields:
-- `id` (str): an identifier for the concept mapping in the external system.
-- `code` (str): a symbol uniquely associated with the concept in the external system.
-- `name` (str): a human readable name for the concept in the external system.
-- `system` (str): a url for the external system.
-- `systemVersion` (str): the version of the external system that the concept mapping is represented in.
+When dereferenced, several fields will update:
+- `primary_coding_id` will be replaced with `primaryCoding` and it will contain the relevant record from [codings](#codingsjson).
+- `mappings` will still be called `mappings`, but each member will be replaced with the relevant record from [mappings](mappingsjson).
 
+An example record from [diseases.json](../referenced/diseases.json):
 ```
 {  
   "id": 15,  
   "conceptType": "Disease",  
   "name": "Colorectal Adenocarcinoma",  
-  "primaryCode": "oncotree:COADREAD",  
-  "mappings": [  
+  "primary_coding_id": "oncotree:COADREAD"
+  "mappings": [],  
+  "extensions": [  
     {      
-      "coding": {  
-        "id": "oncotree:COADREAD",  
-        "code": "COADREAD",  
-        "name": "Colorectal Adenocarcinoma",  
-        "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",  
-        "systemVersion": "oncotree_2021_11_02"  
-      },  
-      "relation": "exactMatch"  
+      "name": "solid_tumor",  
+      "value": true,  
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."  
     }  
-  ],  
+  ]
+  },
+  ...
+]
+```
+
+An example record from [diseases.json](../referenced/diseases.json), after dereferencing:
+```
+{  
+  "id": 15,  
+  "conceptType": "Disease",  
+  "name": "Colorectal Adenocarcinoma",  
+  "primaryCoding": {      
+    "coding": {  
+      "id": "oncotree:COADREAD",  
+      "code": "COADREAD",  
+      "name": "Colorectal Adenocarcinoma",  
+      "system": "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=",  
+      "systemVersion": "oncotree_2021_11_02"  
+    },  
+    "relation": "exactMatch"  
+  }    
+  "mappings": [],  
   "extensions": [  
     {      
       "name": "solid_tumor",  
@@ -218,7 +285,7 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
 - `id` (int): an integer id for the record.
 - `type` (str): must be "Document".
 - `subtype` (str): a specific type of document. At the moment, moalmanac-db only uses subtype of `Regulatory approval` or `Publication`. 
-- `name` (str): a human readable name for the document.
+- `name` (str): a human-readable name for the document.
 - `aliases` (list[str]): a list of aliases for the document. This field is not currently used.
 - `citation` (str): the citation for the document.
 - `company` (str): the company which produces the drug referenced in the document. 
@@ -244,6 +311,7 @@ For example, for `Regulatory approvals` from the U.S. FDA:
 
 When dereferenced, the field `organization_id` will be replaced with `organization` and it will contain the relevant record from [organizations](#organizationsjson). 
 
+An example record from [documents.json](../referenced/documents.json):
 ```
 [  
   {    
@@ -267,6 +335,37 @@ When dereferenced, the field `organization_id` will be replaced with `organizati
   ...
 ]
 ```
+
+An example record from [documents.json](../referenced/documents.json), after dereferencing:
+```
+[  
+  {    
+    "id": 0,  
+    "type": "Document",  
+    "subtype": "Regulatory approval",  
+    "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",  
+    "aliases": [],  
+    "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",  
+    "company": "Eli and Lily Company.",  
+    "drug_name_brand": "Verzenio",  
+    "drug_name_generic": "abemaciclib",  
+    "first_published": "",  
+    "access_date": "2024-10-30",  
+    "organization": {
+      "id": 0,
+      "name": "Food and Drug Administration",
+      "description": "Regulatory agency that approves drugs for use in the United States.",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+      "last_updated": "2025-04-03"
+    },  
+    "publication_date": "2023-03-03",  
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",  
+    "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",  
+    "application_number": 208716  
+  },
+  ...
+]
+```
 [Return to Table of Contents](#table-of-contents)
 ## [genes.json](../referenced/genes.json)
 Genes are a referenced field of [biomarkers](#biomarkersjson) and is a list of dictionaries, where each dictionary is the gene as a mappable concept. Each record is abbreviated  from the from the [Wagner Lab](https://www.nationwidechildrens.org/specialties/institute-for-genomic-medicine/research-labs/wagner-lab)'s / [VICC](https://cancervariants.org/index.html)'s [gene normalizer](https://github.com/cancervariants/gene-normalization). 
@@ -276,17 +375,16 @@ Currently, mappings used for Genes are HGNC, ENSEMBL, NCI gene, and RefSeq's MAN
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
 - `conceptType` (str): "Gene", the conceptType for the mappable concept.
-- `name` (str): a human readable name for the gene.
-- `primaryCode` (str): the `code` from relevant record in `mappings`'s `coding` that is primarily being used to represent this concept mapping.
-- `mappings` (list): list of concept mappings (representations in other systems) of the concept.
+- `name` (str): a human-readable name for the gene.
+- `primary_coding_id` (str): the `code` from [codings.json](#codingsjson) that is primarily being used to represent this concept.
+- `mappings` (list): list of concept mappings (representations in other systems) of the concept. Each record within `mappings` will contain a [`coding`](#codingsjson) and `relation`.
 - `extensions` (list[dict]): list of dictionaries for extensions to this concept, or items not captured by the data model.
 
-Each record within `mappings` will contain a `coding` and `relation`. The `coding` will have the fields:
-- `id` (str): an identifier for the concept mapping in the external system.
-- `code` (str): a symbol uniquely associated with the concept in the external system.
-- `name` (str): a human readable name for the concept in the external system.
-- `system` (str): a url for the external system.
+When dereferenced, several fields will update:
+- `primary_coding_id` will be replaced with `primaryCoding` and it will contain the relevant record from [codings](#codingsjson).
+- `mappings` will still be called `mappings`, but each member will be replaced with the relevant record from [mappings](mappingsjson).
 
+An example record from [genes.json](../referenced/genes.json):
 ```
 [  
   {    
@@ -295,14 +393,41 @@ Each record within `mappings` will contain a `coding` and `relation`. The `codin
     "primaryCode": "hgnc:76",  
     "name": "ABL1",  
     "mappings": [  
+      0,
+      1,
+      2  
+    ],    
+    "extensions": [  
       {        
-        "coding": {  
-          "id": "hgnc:76",  
-          "code": "HGNC:76",  
-          "system": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id"  
-        },  
-        "relation": "exactMatch"  
+        "name": "location",  
+        "value": "9q34.12"  
       },  
+      {        
+        "name": "location_sortable",  
+        "value": "09q34.12"  
+      }  
+    ]  
+  },
+  ...
+]
+```
+
+An example record from [genes.json](../referenced/genes.json), after dereferencing:
+```
+[  
+  {    
+    "id": 0,  
+    "conceptType": "Gene",  
+    "primaryCode": {        
+      "coding": {  
+        "id": "hgnc:76",  
+        "code": "HGNC:76",  
+        "system": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id"  
+      },  
+      "relation": "exactMatch"  
+    },
+    "name": "ABL1",  
+    "mappings": [   
       {        
         "coding": {  
           "id": "ensembl:ensg00000097007",  
@@ -361,6 +486,42 @@ Each record is a dictionary with the following fields:
 
 When dereferenced, the field `document_id` will be replaced with `document` and it will contain the relevant record from [documents](#documentsjson).
 
+An example record from [indications.json](../referenced/indications.json):
+```
+[  
+  {    
+    "id": 0,  
+    "document_id": {
+       "id": 0,
+      "type": "Document",
+      "subtype": "Regulatory approval",
+      "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",
+      "aliases": [],
+      "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
+      "company": "Eli and Lily Company.",
+      "drug_name_brand": "Verzenio",
+      "drug_name_generic": "abemaciclib",
+      "first_published": "",
+      "access_date": "2024-10-30",
+      "organization_id": 0,
+      "publication_date": "2023-03-03",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+      "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
+      "application_number": 208716
+      },  
+      "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",  
+      "initial_approval_date": "2023-03-03",  
+      "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",  
+      "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",  
+      "raw_biomarkers": "HR+, HER2-negative",  
+      "raw_cancer_type": "early breast cancer",  
+      "raw_therapeutics": "Verzenio (abemaciclib) in combination with endocrine therapy (tamoxifen or an aromatase inhibitor)"  
+  },
+  ...
+]
+```
+
+An example record from [indications.json](../referenced/indications.json), after dereferencing:
 ```
 [  
   {    
@@ -378,6 +539,29 @@ When dereferenced, the field `document_id` will be replaced with `document` and 
 ]
 ```
 [Return to Table of Contents](#table-of-contents)
+## [mappings.json](../referenced/mappings.json)
+[Mappings](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/elements/concept-mapping.html) are representations of a concept in _other_ systems and, in this case, means representations of a concept outside of moalmanac. They are made up of a [coding](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/data-types.html#coding) and [relation](https://www.w3.org/TR/skos-reference/#vocab) statement. [GKS core](https://github.com/ga4gh/gks-core/blob/1.x/schema/gks-core/gks-core-source.yaml) currently allows `relation` to be populated with `broadMatch`, `closeMatch`, `exactMatch`, `narrowMatch`, `relatedMatch` and at the moment moalmanac only uses either `exactMatch` or `relatedMatch`. For example, therapies are mapped to the [NCI Enterprise Vocabulary Services](https://evsexplore.semantics.cancer.gov/evsexplore/): 
+
+Each record is a dictionary with the following fields:
+- `id` (int): an integer id for the record.
+- `primary_coding_id` (str): the `code` from [codings.json](#codingsjson) that is primarily being used to represent this concept.
+- `coding_id` (str): the `code` from [codings.json](#codingsjson) that is being used to represent the concept being compared to.
+- `relation` (str): the relationship between the concepts between `primary_coding_id` and `coding_id`, defined using SKOS references.
+
+Mappings will not specifically be used to dereference itself as a table. Instead, it serves a relationship table to populate the `mappings` key of other tables.
+
+An example record from [mappings.json](../referenced/mappings.json):
+```
+[  
+  {    
+    "id": 0,
+    "primary_coding_id": "hgnc:76",
+    "coding_id": "ensembl:ensg00000097007",
+    "relation": "exactMatch"
+  }  
+]
+```
+[Return to Table of Contents](#table-of-contents)
 ## [organizations.json](../referenced/organizations.json)
 Organizations are not an explicit data type modeled within va-spec, but it is closely related to [agents](#agentsjson). We likely can combine this table with this [agents](#agentsjson); however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documentsjson). 
 
@@ -388,6 +572,7 @@ Each record is a dictionary with the following fields:
 - `url` (str): the url within the organzation's website used to identify relevant documents.
 - `last_updated` (str): the date that the organization was last curated, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 
+An example record from [organizations.json](../referenced/organizations.json):
 ```
 [  
   {    
@@ -620,7 +805,7 @@ An example record from [propositions.json](../referenced/propositions.json), aft
 Each record is a dictionary with the following fields:
 - `id` (int): an integer id for the record.
 - `type` (str): must be "Statement"
-- `description` (str): a human readable description of the statement, currently copied from [indications](#indicationsjson).
+- `description` (str): a human-readable description of the statement, currently copied from [indications](#indicationsjson).
 - `contributions` (list[int]): a list where each element is an `id` referenced within [contributions](#contributionsjson). 
 - `reportedIn` (list[int]): a list where each element is an `id` referenced within [documents](#documentsjson). 
 - `proposition_id` (int): the `id` referenced within [propositions](#propositionsjson). 
@@ -635,6 +820,7 @@ When dereferenced, several fields will update:
 - `proposition_id` will be replaced with `proposition` and it will contain the relevant record from [propositions](#propositionsjson).
 - `strength_id` will be replaced with `proposition` and it will contain the relevant record from [strengths](#strengthsjson).
 
+An example record from [statements.json](../referenced/statements.json):
 ```
 [  
   {    
@@ -655,6 +841,269 @@ When dereferenced, several fields will update:
   ...
 ]
 ```
+
+An example record from [statements.json](../referenced/statements.json), after dereferencing:
+```
+[
+  {
+    "id": 0,
+    "type": "Statement",
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",
+    "contributions": [
+      {
+        "id": 0,
+        "type": "Contribution",
+        "description": "Initial access of FDA approvals",
+        "date": "2024-10-30",
+        "agent": {
+          "id": 0,
+          "type": "Agent",
+          "subtype": "organization",
+          "name": "Van Allen lab",
+          "description": "Van Allen lab, Dana-Farber Cancer Institute"
+        }
+      }
+    ],
+    "reportedIn": [
+      {
+        "id": 0,
+        "type": "Document",
+        "subtype": "Regulatory approval",
+        "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",
+        "aliases": [],
+        "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
+        "company": "Eli and Lily Company.",
+        "drug_name_brand": "Verzenio",
+        "drug_name_generic": "abemaciclib",
+        "first_published": "",
+        "access_date": "2024-10-30",
+        "publication_date": "2023-03-03",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+        "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
+        "application_number": 208716,
+        "organization": {
+          "id": 0,
+          "name": "Food and Drug Administration",
+          "description": "Regulatory agency that approves drugs for use in the United States.",
+          "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+          "last_updated": "2025-04-03"
+        }
+      }
+    ],
+    "direction": "supports",
+    "indication": {
+      "id": 0,
+      "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",
+      "initial_approval_date": "2023-03-03",
+      "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+      "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",
+      "raw_biomarkers": "HR+, HER2-negative",
+      "raw_cancer_type": "early breast cancer",
+      "raw_therapeutics": "Verzenio (abemaciclib) in combination with endocrine therapy (tamoxifen or an aromatase inhibitor)",
+      "document": {
+        "id": 0,
+        "type": "Document",
+        "subtype": "Regulatory approval",
+        "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",
+        "aliases": [],
+        "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
+        "company": "Eli and Lily Company.",
+        "drug_name_brand": "Verzenio",
+        "drug_name_generic": "abemaciclib",
+        "first_published": "",
+        "access_date": "2024-10-30",
+        "publication_date": "2023-03-03",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+        "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
+        "application_number": 208716,
+        "organization": {
+          "id": 0,
+          "name": "Food and Drug Administration",
+          "description": "Regulatory agency that approves drugs for use in the United States.",
+          "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+          "last_updated": "2025-04-03"
+        }
+      }
+    },
+    "proposition": {
+      "id": 0,
+      "type": "VariantTherapeuticResponseProposition",
+      "predicate": "predictSensitivityTo",
+      "biomarkers": [
+        {
+          "id": 1,
+          "type": "CategoricalVariant",
+          "name": "ER positive",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Estrogen receptor (ER)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Positive"
+            },
+            {
+              "name": "_present",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "type": "CategoricalVariant",
+          "name": "HER2-negative",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Human epidermal growth factor receptor 2 (HER2)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Negative"
+            },
+            {
+              "name": "_present",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "subjectVariant": {},
+      "conditionQualifier": {
+        "id": 9,
+        "conceptType": "Disease",
+        "name": "Invasive Breast Carcinoma",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "solid_tumor",
+            "value": true,
+            "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+          }
+        ],
+        "primaryCoding": {
+          "id": "oncotree:BRCA",
+          "code": "BRCA",
+          "name": "Invasive Breast Carcinoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+          ]
+        }
+      },
+      "objectTherapeutic": {
+        "id": 0,
+        "membershipOperator": "AND",
+        "therapies": [
+          {
+            "id": 99,
+            "conceptType": "Drug",
+            "name": "Abemaciclib",
+            "mappings": [],
+            "extensions": [
+              {
+                "name": "therapy_strategy",
+                "value": [
+                  "CDK4/6 inhibition"
+                ],
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+              },
+              {
+                "name": "therapy_type",
+                "value": "Targeted therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+              }
+            ],
+            "primaryCoding": {
+              "id": "ncit:C97660",
+              "code": "C97660",
+              "name": "Abemaciclib",
+              "system": "https://evsexplore.semantics.cancer.gov",
+              "systemVersion": "25.01d",
+              "iris": [
+                "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C97660"
+              ]
+            }
+          },
+          {
+            "id": 119,
+            "conceptType": "Drug",
+            "name": "Tamoxifen",
+            "mappings": [],
+            "extensions": [
+              {
+                "name": "therapy_strategy",
+                "value": [
+                  "Estrogen receptor inhibition"
+                ],
+                "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+              },
+              {
+                "name": "therapy_type",
+                "value": "Hormone therapy",
+                "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+              }
+            ],
+            "primaryCoding": {
+              "id": "ncit:C62078",
+              "code": "C62078",
+              "name": "Tamoxifen",
+              "system": "https://evsexplore.semantics.cancer.gov",
+              "systemVersion": "25.01d",
+              "iris": [
+                "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62078"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "strength": {
+      "id": 0,
+      "conceptType": "Evidence",
+      "name": "Approval",
+      "mappings": [],
+      "primaryCoding": {
+        "id": "ncit:C25425",
+        "code": "C25425",
+        "name": "Approval",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+        ]
+      }
+    }
+  },
+  ...
+]
+```
 [Return to Table of Contents](#table-of-contents)
 ## [strengths.json](../referenced/strengths.json)
 Strengths is a field within the [Statement](https://va-ga4gh.readthedocs.io/en/latest/core-information-model/entities/information-entities/statement.html) information entity within va-spec, and is a mappable concept used to report the confidence associated with a statement. This is being used as a category to describe the underlying evidence of a statement.
@@ -664,17 +1113,49 @@ Currently, mappings used for strengths are from the [NCI Enterprise Vocabulary S
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
 - `conceptType` (str): "Evidence strength", the conceptType for the mappable concept.
-- `name` (str): a human readable name for the strength.
-- `primaryCode` (str): the `code` from relevant record in `mappings`'s `coding` that is primarily being used to represent this concept mapping.
+- `name` (str): a human-readable name for the strength.
+- `primary_coding_id` (str): the `code` from relevant record in `mappings`'s `coding` that is primarily being used to represent this concept mapping. Each record within `mappings` will contain a [`coding`](#codingsjson) and `relation`.
 - `mappings` (list): list of concept mappings (representations in other systems) of the concept.
 - `extensions` (list[dict]): list of dictionaries for extensions to this concept, or items not captured by the data model.
 
-Each record within `mappings` will contain a `coding` and `relation`. The `coding` will have the fields:
-- `id` (str): an identifier for the concept mapping in the external system.
-- `code` (str): a symbol uniquely associated with the concept in the external system.
-- `name` (str): a human readable name for the concept in the external system.
-- `system` (str): a url for the external system.
+When dereferenced, several fields will update:
+- `primary_coding_id` will be replaced with `primaryCoding` and it will contain the relevant record from [codings](#codingsjson).
+- `mappings` will still be called `mappings`, but each member will be replaced with the relevant record from [mappings](mappingsjson).
 
+An example record from [strengths.json](../referenced/strengths.json):
+```
+[
+  {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "primary_coding_id": "ncit:C25425",
+    "mappings": []
+  }
+]
+```
+
+An example record from [strengths.json](../referenced/strengths.json), after dereferencing:
+```
+[
+  {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    },
+    "mappings": []
+  }
+]
+```
 [Return to Table of Contents](#table-of-contents)
 ## [therapies.json](../referenced/therapies.json)
 Therapies are the therapeutics associated with therapeutic sensitivity propositions. 
@@ -684,18 +1165,44 @@ Currently, mappings used for therapies are from the [NCI Enterprise Vocabulary S
 Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
 - `conceptType` (str): "Drug", the conceptType for the mappable concept.
-- `name` (str): a human readable name for the therapy.
-- `primaryCode` (str): the `code` from relevant record in `mappings`'s `coding` that is primarily being used to represent this concept mapping.
-- `mappings` (list): list of concept mappings (representations in other systems) of the concept.
+- `name` (str): a human-readable name for the therapy.
+- `primary_coding_id` (str): the `code` from [codings.json](#codingsjson) that is primarily being used to represent this concept.
+- `mappings` (list): list of concept mappings (representations in other systems) of the concept. Each record within `mappings` will contain a [`coding`](#codingsjson) and `relation`.
 - `extensions` (list[dict]): list of dictionaries for extensions to this concept, or items not captured by the data model.
 
-Each record within `mappings` will contain a `coding` and `relation`. The `coding` will have the fields:
-- `id` (str): an identifier for the concept mapping in the external system.
-- `code` (str): a symbol uniquely associated with the concept in the external system.
-- `name` (str): a human readable name for the concept in the external system.
-- `system` (str): a url for the external system.
+When dereferenced, several fields will update:
+- `primary_coding_id` will be replaced with `primaryCoding` and it will contain the relevant record from [codings](#codingsjson).
+- `mappings` will still be called `mappings`, but each member will be replaced with the relevant record from [mappings](mappingsjson).
 
 An example record from [therapies.json](../referenced/therapies.json):
+```
+[
+  {
+    "id": 0,
+    "conceptType": "Drug",
+    "name": "Brentuximab Vedotin",
+    "primary_coding_id": "ncit:C66944",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "target CD30 antigens"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ]
+  },
+  ...
+]
+```
+
+An example record from [therapies.json](../referenced/therapies.json), after dereferencing:
 ```
 [
   {
@@ -741,6 +1248,8 @@ Each record is a dictionary with the fields:
 - `id` (int): an integer id for the record.
 - `membershipOperator` (str): either "AND" or "OR"
 - `therapies` (list[int]): a list where each element is an `id` referenced within [therapies](#therapiesjson).
+
+When dereferenced, `therapies` will still be called `therapies`, but each member will be replaced with the relevant record from [therapies](#therapiesjson).
 
 An example record from [therapy_groups.json](../referenced/therapy_groups.json):
 ```
