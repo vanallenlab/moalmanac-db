@@ -2,7 +2,6 @@
 The following changes have been made to the content catalogued within the Molecular Oncology Almanac knowledge base.
 
 ## May 2025
-
 Revised entries:
 - (FDA) Pembrolizumab in combination with trastuzumab, fluoropyrimidine- and platinum-containing chemotherapy for the treatment of patients with HER2-positive gastric adenocarcinoma received traditional FDA approval after previously receiving accelerated approval. The FDA's product label from March 19th incorrectly still labeled this approval as an accelerated approval, they withdrew it and uploaded a corrected label on April 21st.
 - (FDA) Nivolumab in combination with ipilimumab for the treatment of adult and pediatric (12 years and older) patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer received regular approval from the FDA after receiving accelerated approval in July 2018.
