@@ -282,7 +282,7 @@ An example record from [diseases.json](../referenced/diseases.json), after deref
 [Return to Table of Contents](#table-of-contents)
 ## [documents.json](../referenced/documents.json)
 [Documents](https://va-ga4gh.readthedocs.io/en/1.0.0-ballot.2024-11/core-information-model/entities/information-entities/document.html) are published documents that we derive database content from. This data type currently has several fields that should be converted to extensions. Each record is a dictionary with the fields: 
-- `id` (int): an integer id for the record.
+- `id` (str): a string id for the record, currently "doc:{organization id}.{drug_name_brand}". If citing a particular version of a drug label instead of the latest, date can be appended in ISO 8601 format; e.g., "doc:{organization id}.{drug_name_brand}.{year}-{month}-{day}".
 - `type` (str): must be "Document".
 - `subtype` (str): a specific type of document. At the moment, moalmanac-db only uses subtype of `Regulatory approval` or `Publication`. 
 - `name` (str): a human-readable name for the document.
@@ -315,7 +315,7 @@ An example record from [documents.json](../referenced/documents.json):
 ```
 [  
   {    
-    "id": 0,  
+    "id": "doc:fda.abemciclib",  
     "type": "Document",  
     "subtype": "Regulatory approval",  
     "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",  
@@ -326,7 +326,7 @@ An example record from [documents.json](../referenced/documents.json):
     "drug_name_generic": "abemaciclib",  
     "first_published": "",  
     "access_date": "2024-10-30",  
-    "organization_id": 0,  
+    "organization_id": "fda",  
     "publication_date": "2023-03-03",  
     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",  
     "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",  
@@ -340,7 +340,7 @@ An example record from [documents.json](../referenced/documents.json), after der
 ```
 [  
   {    
-    "id": 0,  
+    "id": "doc:fda.abemciclib",  
     "type": "Document",  
     "subtype": "Regulatory approval",  
     "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",  
@@ -352,7 +352,7 @@ An example record from [documents.json](../referenced/documents.json), after der
     "first_published": "",  
     "access_date": "2024-10-30",  
     "organization": {
-      "id": 0,
+      "id": "fda",
       "name": "Food and Drug Administration",
       "description": "Regulatory agency that approves drugs for use in the United States.",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
@@ -474,8 +474,8 @@ Indications are a data type only used for statements originating from `Regulator
 Indications could align with va-spec through a combination of Documents and Statements, but it seems redundant as this would result in several more documents and "nested" statements within the database contents. 
 
 Each record is a dictionary with the following fields:
-- `id` (int): an integer id for the record.
-- `document_id` (int): the `id` referenced within [documents](#documentsjson). 
+- `id` (str): a string id for the record. This will be similar to `document_id`, replacing "doc:" with "ind:" and adding a colon and integer specifying a count of indication from the document; e.g., "ind:fda.abemciclib:0"
+- `document_id` (str): the `id` referenced within [documents](#documentsjson). 
 - `indication` (str): the regulatory approval as written in the document.
 - `initial_approval_date` (str): the date that the approval, as written, was first approved the regulatory agency, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
 - `initial_approval_url` (str): the url for the regulatory approval that this indication first appeared in.
@@ -490,32 +490,15 @@ An example record from [indications.json](../referenced/indications.json):
 ```
 [  
   {    
-    "id": 0,  
-    "document_id": {
-       "id": 0,
-      "type": "Document",
-      "subtype": "Regulatory approval",
-      "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",
-      "aliases": [],
-      "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
-      "company": "Eli and Lily Company.",
-      "drug_name_brand": "Verzenio",
-      "drug_name_generic": "abemaciclib",
-      "first_published": "",
-      "access_date": "2024-10-30",
-      "organization_id": 0,
-      "publication_date": "2023-03-03",
-      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
-      "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
-      "application_number": 208716
-      },  
-      "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",  
-      "initial_approval_date": "2023-03-03",  
-      "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",  
-      "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",  
-      "raw_biomarkers": "HR+, HER2-negative",  
-      "raw_cancer_type": "early breast cancer",  
-      "raw_therapeutics": "Verzenio (abemaciclib) in combination with endocrine therapy (tamoxifen or an aromatase inhibitor)"  
+    "id": "ind:fda.abemciclib:0",  
+    "document_id": "id": "doc:fda.abemciclib",
+    "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",  
+    "initial_approval_date": "2023-03-03",  
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",  
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",  
+    "raw_biomarkers": "HR+, HER2-negative",  
+    "raw_cancer_type": "early breast cancer",  
+    "raw_therapeutics": "Verzenio (abemaciclib) in combination with endocrine therapy (tamoxifen or an aromatase inhibitor)"  
   },
   ...
 ]
@@ -525,8 +508,31 @@ An example record from [indications.json](../referenced/indications.json), after
 ```
 [  
   {    
-    "id": 0,  
-    "document_id": 0,  
+    "id": "ind:fda.abemciclib:0",  
+    "document_id": {
+       "id": "doc:fda.abemciclib",
+      "type": "Document",
+      "subtype": "Regulatory approval",
+      "name": "Verzenio (abemaciclib) [package insert]. FDA.",
+      "aliases": [],
+      "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
+      "company": "Eli and Lily Company.",
+      "drug_name_brand": "Verzenio",
+      "drug_name_generic": "abemaciclib",
+      "first_published": "",
+      "access_date": "2024-10-30",
+      "organization": {
+        "id": "fda",
+        "name": "Food and Drug Administration",
+        "description": "Regulatory agency that approves drugs for use in the United States.",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+        "last_updated": "2025-04-03"
+      }, 
+      "publication_date": "2023-03-03",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+      "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
+      "application_number": 208716
+    },  
     "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",  
     "initial_approval_date": "2023-03-03",  
     "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",  
@@ -566,7 +572,7 @@ An example record from [mappings.json](../referenced/mappings.json):
 Organizations are not an explicit data type modeled within va-spec, but it is closely related to [agents](#agentsjson). We likely can combine this table with this [agents](#agentsjson); however, we are using agents specifically for contributions to the database content while organizations are cited for publishing [documents](#documentsjson). 
 
 Each record is a dictionary with the following fields:
-- `id` (int): an integer id for the record.
+- `id` (str): a string id for the record, currently the abbreviation for the organization in lowercase.
 - `name` (str): the name of the organization.
 - `description` (str): a free-text description of the organization.
 - `url` (str): the url within the organzation's website used to identify relevant documents.
@@ -576,7 +582,7 @@ An example record from [organizations.json](../referenced/organizations.json):
 ```
 [  
   {    
-    "id": 0,  
+    "id": "fda",  
     "name": "Food and Drug Administration",  
     "description": "Regulatory agency that approves drugs for use in the United States.",  
     "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",  
@@ -807,11 +813,11 @@ Each record is a dictionary with the following fields:
 - `type` (str): must be "Statement"
 - `description` (str): a human-readable description of the statement, currently copied from [indications](#indicationsjson).
 - `contributions` (list[int]): a list where each element is an `id` referenced within [contributions](#contributionsjson). 
-- `reportedIn` (list[int]): a list where each element is an `id` referenced within [documents](#documentsjson). 
+- `reportedIn` (list[str]): a list where each element is an `id` referenced within [documents](#documentsjson). 
 - `proposition_id` (int): the `id` referenced within [propositions](#propositionsjson). 
 - `direction` (str): either "supports", "disputes", or "neutral".
 - `strength_id` (int): the `id` referenced within [strengths](#strengthsjson). 
-- `indication_id` (int): the `id` referenced within [indications](#indicationsjson). 
+- `indication_id` (str): the `id` referenced within [indications](#indicationsjson). 
 
 When dereferenced, several fields will update:
 - `indication_id` will be replaced with `indication` and it will contain the relevant record from [indications](#indicationsjson).
@@ -831,12 +837,12 @@ An example record from [statements.json](../referenced/statements.json):
       0  
     ],  
     "reportedIn": [  
-      0  
+      "doc:fda.abemciclib" 
     ],  
     "proposition_id": 0,  
     "direction": "supports",  
     "strength_id": 0,
-    "indication_id": 0     
+    "indication_id": "ind:fda.abemciclib:0"     
   },
   ...
 ]
@@ -866,10 +872,10 @@ An example record from [statements.json](../referenced/statements.json), after d
     ],
     "reportedIn": [
       {
-        "id": 0,
+        "id": "doc:fda.abemciclib",
         "type": "Document",
         "subtype": "Regulatory approval",
-        "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",
+        "name": "Verzenio (abemaciclib) [package insert]. FDA.",
         "aliases": [],
         "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
         "company": "Eli and Lily Company.",
@@ -882,7 +888,7 @@ An example record from [statements.json](../referenced/statements.json), after d
         "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
         "application_number": 208716,
         "organization": {
-          "id": 0,
+          "id": "fda",
           "name": "Food and Drug Administration",
           "description": "Regulatory agency that approves drugs for use in the United States.",
           "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
@@ -892,7 +898,7 @@ An example record from [statements.json](../referenced/statements.json), after d
     ],
     "direction": "supports",
     "indication": {
-      "id": 0,
+      "id": "ind:fda.abemciclib:0",
       "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",
       "initial_approval_date": "2023-03-03",
       "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
@@ -901,10 +907,10 @@ An example record from [statements.json](../referenced/statements.json), after d
       "raw_cancer_type": "early breast cancer",
       "raw_therapeutics": "Verzenio (abemaciclib) in combination with endocrine therapy (tamoxifen or an aromatase inhibitor)",
       "document": {
-        "id": 0,
+        "id": "doc:fda.abemciclib",
         "type": "Document",
         "subtype": "Regulatory approval",
-        "name": "Verzenio (abemaciclib) [package insert]. U.S. FDA.",
+        "name": "Verzenio (abemaciclib) [package insert]. FDA.",
         "aliases": [],
         "citation": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
         "company": "Eli and Lily Company.",
@@ -917,7 +923,7 @@ An example record from [statements.json](../referenced/statements.json), after d
         "url_drug": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716",
         "application_number": 208716,
         "organization": {
-          "id": 0,
+          "id": "fda",
           "name": "Food and Drug Administration",
           "description": "Regulatory agency that approves drugs for use in the United States.",
           "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
