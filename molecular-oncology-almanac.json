@@ -39864,7 +39864,7 @@
     "last_updated": "2023-11-30",
     "_deprecated": false,
     "assertion_id": 862,
-    "feature_id": 862,
+    "feature_id": 372,
     "source_id": 256,
     "therapy_name_mappings": [
       {
@@ -45361,7 +45361,7 @@
     "last_updated": "2024-07-11",
     "_deprecated": false,
     "assertion_id": 973,
-    "feature_id": 973,
+    "feature_id": 372,
     "source_id": 286,
     "therapy_name_mappings": [
       {
@@ -47132,7 +47132,7 @@
     "last_updated": "2025-02-06",
     "_deprecated": false,
     "assertion_id": 1007,
-    "feature_id": 1007,
+    "feature_id": 372,
     "source_id": 296,
     "therapy_name_mappings": [
       {
@@ -47152,6 +47152,184 @@
           "name": "Sotorasib",
           "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
           "systemVersion": "25.01d"
+        },
+        "relation": "exactMatch"
+      }
+    ]
+  },
+  {
+    "feature_type": "Rearrangement",
+    "gene1": "ROS1",
+    "gene2": "",
+    "rearrangement_type": "Fusion",
+    "locus": "",
+    "disease": "Non-Small Cell Lung Cancer",
+    "context": "Metastatic",
+    "oncotree_term": "Non-Small Cell Lung Cancer",
+    "oncotree_code": "NSCLC",
+    "therapy_name": "Taletrectinib",
+    "therapy_strategy": "ROS1 inhibition",
+    "therapy_type": "Targeted therapy",
+    "therapy_sensitivity": 1,
+    "therapy_resistance": "",
+    "favorable_prognosis": "",
+    "predictive_implication": "FDA-Approved",
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to taletrectinib for the treatment of adult patients with locally advanced or metastatic ROS1-positive non-small cell lung cancer. The package insert instructs to select patients based on the presence of ROS1 rearrangements in tumor specimen(s).",
+    "source_type": "FDA",
+    "citation": "Nuvation Bio Inc. Ibtrozi (taletrectinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219713s000lbl.pdf. Revised June 2025. Accessed June 12, 2025.",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219713s000lbl.pdf",
+    "doi": "",
+    "pmid": "",
+    "nct": "",
+    "publication_date": "2025-06-11",
+    "last_updated": "2024-06-12",
+    "_deprecated": false,
+    "assertion_id": 1008,
+    "feature_id": 57,
+    "source_id": 297,
+    "therapy_name_mappings": [
+      {
+        "coding": {
+          "id": "ncit:C118948",
+          "code": "C118948",
+          "name": "Taletrectinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C118948"
+          ]
+        },
+        "relation": "exactMatch"
+      }
+    ]
+  },
+  {
+    "feature_type": "Somatic Variant",
+    "gene": "KRAS",
+    "chromosome": "12",
+    "start_position": 25398285,
+    "end_position": 25398285,
+    "reference_allele": "C",
+    "alternate_allele": "A",
+    "cdna_change": "c.34G>T",
+    "protein_change": "p.G12C",
+    "variant_annotation": "Missense",
+    "exon": 2,
+    "rsid": "rs121913530",
+    "disease": "Low-Grade Serous Ovarian Cancer",
+    "context": "",
+    "oncotree_term": "Low-Grade Serous Ovarian Cancer",
+    "oncotree_code": "LGSOC",
+    "therapy_name": "Avutometinib + Defactinib",
+    "therapy_strategy": "MEK inhibition + FAK inhibition",
+    "therapy_type": "Targeted therapy",
+    "therapy_sensitivity": 1,
+    "therapy_resistance": "",
+    "favorable_prognosis": "",
+    "predictive_implication": "FDA-Approved",
+    "description": "The U.S. Food and Drug Administration (FDA) granted accelerated approval to avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. The package insert notes that this indication is approved under accelerated approval based on tumor response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial. This approval is based on RAMP-201 (NCT04625270), an open-label, multicenter study that included 57 adult patients with measurable KRAS-mutated recurrent LGSOC. The KRAS mutations identified by local testing were G12V (53%), G12D (35%), Q61H (3.5%), G12C (1.8%), G12R (1.8%), A146V (1.8%), and mutations not otherwise specified at G12x (1.8%) and on codon 12/13 (1.8%). 44% of patients responded (3.5% with complete response, 40% with partial response), and the package insert notes that the tumor KRAS mutations observed in the 25 responders were A146V, G12D, G12R, G12V, and Q61H.",
+    "source_type": "FDA",
+    "citation": "Verastem Inc. Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf. Revised May 2025. Accessed June 12, 2025.",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
+    "doi": "",
+    "pmid": "",
+    "nct": "",
+    "publication_date": "2025-05-08",
+    "last_updated": "2024-06-12",
+    "_deprecated": false,
+    "assertion_id": 1009,
+    "feature_id": 372,
+    "source_id": 298,
+    "therapy_name_mappings": [
+      {
+        "coding": {
+          "id": "ncit:C80060",
+          "code": "C80060",
+          "name": "Avutometinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C80060"
+          ]
+        },
+        "relation": "exactMatch"
+      },
+      {
+        "coding": {
+          "id": "ncit:C79809",
+          "code": "C79809",
+          "name": "Defactinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C79809"
+          ]
+        },
+        "relation": "exactMatch"
+      }
+    ]
+  },
+  {
+    "feature_type": "Somatic Variant",
+    "gene": "KRAS",
+    "chromosome": "12",
+    "start_position": 25398284,
+    "end_position": 25398284,
+    "reference_allele": "C",
+    "alternate_allele": "A",
+    "cdna_change": "c.35G>T",
+    "protein_change": "p.G12V",
+    "variant_annotation": "Missense",
+    "exon": 2,
+    "rsid": "rs121913529",
+    "disease": "Low-Grade Serous Ovarian Cancer",
+    "context": "",
+    "oncotree_term": "Low-Grade Serous Ovarian Cancer",
+    "oncotree_code": "LGSOC",
+    "therapy_name": "Avutometinib + Defactinib",
+    "therapy_strategy": "MEK inhibition + FAK inhibition",
+    "therapy_type": "Targeted therapy",
+    "therapy_sensitivity": 1,
+    "therapy_resistance": "",
+    "favorable_prognosis": "",
+    "predictive_implication": "FDA-Approved",
+    "description": "The U.S. Food and Drug Administration (FDA) granted accelerated approval to avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. The package insert notes that this indication is approved under accelerated approval based on tumor response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial. This approval is based on RAMP-201 (NCT04625270), an open-label, multicenter study that included 57 adult patients with measurable KRAS-mutated recurrent LGSOC. The KRAS mutations identified by local testing were G12V (53%), G12D (35%), Q61H (3.5%), G12C (1.8%), G12R (1.8%), A146V (1.8%), and mutations not otherwise specified at G12x (1.8%) and on codon 12/13 (1.8%). 44% of patients responded (3.5% with complete response, 40% with partial response), and the package insert notes that the tumor KRAS mutations observed in the 25 responders were A146V, G12D, G12R, G12V, and Q61H.",
+    "source_type": "FDA",
+    "citation": "Verastem Inc. Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf. Revised May 2025. Accessed June 12, 2025.",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
+    "doi": "",
+    "pmid": "",
+    "nct": "",
+    "publication_date": "2025-05-08",
+    "last_updated": "2024-06-12",
+    "_deprecated": false,
+    "assertion_id": 1010,
+    "feature_id": 1010,
+    "source_id": 298,
+    "therapy_name_mappings": [
+      {
+        "coding": {
+          "id": "ncit:C80060",
+          "code": "C80060",
+          "name": "Avutometinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C80060"
+          ]
+        },
+        "relation": "exactMatch"
+      },
+      {
+        "coding": {
+          "id": "ncit:C79809",
+          "code": "C79809",
+          "name": "Defactinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C79809"
+          ]
         },
         "relation": "exactMatch"
       }
