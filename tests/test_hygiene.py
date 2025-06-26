@@ -1,5 +1,7 @@
 import json
 
+from tests import helpers
+
 def test_document_url_matches_citation(data):
     """
     Assess if `url` field matches the url contained in the `citation` for documents where the url should be
@@ -30,7 +32,8 @@ def test_unique_records_per_file(data):
         duplicates = []
         for record in records:
             record_copy = {k: v for k, v in record.items() if k != "id"}
-            serialized = json.dumps(record_copy, sort_keys=True)
+            normalized = helpers.sort_data_structure_elements(record_copy)
+            serialized = json.dumps(normalized, sort_keys=True)
 
             if serialized in seen:
                 duplicates.append((seen[serialized], record.get('id')))
