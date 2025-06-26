@@ -1,7 +1,9 @@
 import argparse
 
-import json_utils # Local import
-
+# Local imports
+from utils import json_utils
+from utils import read
+from utils import write
 
 class BaseTable:
     """
@@ -1047,26 +1049,26 @@ def main(input_paths):
     Returns:
         dict: Dereferenced database, with keys:
             - about (dict): Dictionary containing database metadata, from referenced/about.json.
-            - content (list[dict]): List of dictionaries containing dereferenced database.
+            - content (list[dict]): List of dictionaries containing the dereferenced database.
     """
 
-    # Step 1: Read json files
-    about = json_utils.load(file=input_paths['about'])
-    agents = json_utils.load(file=input_paths['agents'])
-    biomarkers = json_utils.load(file=input_paths['biomarkers'])
-    codings = json_utils.load(file=input_paths['codings'])
-    contributions = json_utils.load(file=input_paths['contributions'])
-    diseases = json_utils.load(file=input_paths['diseases'])
-    documents = json_utils.load(file=input_paths['documents'])
-    genes = json_utils.load(file=input_paths['genes'])
-    indications = json_utils.load(file=input_paths['indications'])
-    mappings = json_utils.load(file=input_paths['mappings'])
-    organizations = json_utils.load(file=input_paths['organizations'])
-    propositions = json_utils.load(file=input_paths['propositions'])
-    statements = json_utils.load(file=input_paths['statements'])
-    strengths = json_utils.load(file=input_paths['strengths'])
-    therapies = json_utils.load(file=input_paths['therapies'])
-    therapy_groups = json_utils.load(file=input_paths['therapy_groups'])
+    # Step 1: Read JSON files
+    about = read.json_records(file=input_paths['about'])
+    agents = read.json_records(file=input_paths['agents'])
+    biomarkers = read.json_records(file=input_paths['biomarkers'])
+    codings = read.json_records(file=input_paths['codings'])
+    contributions = read.json_records(file=input_paths['contributions'])
+    diseases = read.json_records(file=input_paths['diseases'])
+    documents = read.json_records(file=input_paths['documents'])
+    genes = read.json_records(file=input_paths['genes'])
+    indications = read.json_records(file=input_paths['indications'])
+    mappings = read.json_records(file=input_paths['mappings'])
+    organizations = read.json_records(file=input_paths['organizations'])
+    propositions = read.json_records(file=input_paths['propositions'])
+    statements = read.json_records(file=input_paths['statements'])
+    strengths = read.json_records(file=input_paths['strengths'])
+    therapies = read.json_records(file=input_paths['therapies'])
+    therapy_groups = read.json_records(file=input_paths['therapy_groups'])
 
     # Step 2: Generate table objects
     agents = Agents(records=agents)
@@ -1221,7 +1223,7 @@ if __name__ =="__main__":
     }
 
     dereferenced = main(input_paths=input_data)
-    json_utils.write_dict(
+    write.dictionary(
         data=dereferenced,
         keys_list=['content'],
         file=args.output
