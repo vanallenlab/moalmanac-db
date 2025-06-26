@@ -2,29 +2,41 @@ import json
 import typing
 
 
-def fetch_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id", warn: bool = True) -> typing.Optional[dict]:
+def get_record_by_key_value(records: list[dict], value: typing.Any, key: str = "id", strict: bool = True) -> typing.Optional[dict]:
     """
-    Retrieves records where a specific key matches a given value.
+    Retrieves a single record where a specified key matches the given value.
+    Raises ValueError if zero or multiple matches are found, unless strict is False.
 
     Args:
         records (list[dict]): A list of dictionaries to search.
         value (any): The value to match.
         key (str): The key to check (default: "id").
-        warn (bool): Whether to warn and exit if the number of results is not 1 (default: True).
+        strict (bool): if True, raise a ValueError when not exactly one match is found.
 
     Returns:
-        dict or None: A list of matching records, or None if no matches are found.
+        dict or None: A dictionary of the matching record, or None if no matches are found.
 
     Raises:
-        ValueError: If the number of results is not exactly 1 and warnings are enabled.
+        ValueError: If the number of results is not exactly 1, and strict is enabled.
     """
-    results = [record for record in records if record.get(key) == value]
+    matches = get_records_by_key_value(records=records, value=value, key=key)
+    if strict and len(matches) != 1:
+        raise ValueError(f"Warning: Expected 1 result for {key} == {value}, found {len(matches)}.")
+    return matches[0] if matches else None
 
-    if warn and len(results) != 1:
-        ValueError(f"Warning: Expected 1 result for {key} == {value}, found {len(results)}.")
+def get_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id") -> list[dict]:
+    """
+        Retrieves a records from a list where a specified key matches the given value.
 
-    return next(iter(results), None)
+        Args:
+            records (list[dict]): A list of dictionaries to search.
+            value (any): The value to match.
+            key (str): The key to check (default: "id").
 
+        Returns:
+            list[dict]: A list of matching records.
+    """
+    return [record for record in records if record.get(key) == value]
 
 def rename_key(dictionary: dict, old_key: str, new_key: str) -> None:
     """

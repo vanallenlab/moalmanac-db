@@ -40,10 +40,11 @@ class BaseTable:
         if referenced_key not in record:
             raise KeyError(f"Key '{referenced_key}' not found in {record}.")
 
-        referenced_record = json_utils.fetch_records_by_key_value(
+        referenced_record = json_utils.get_record_by_key_value(
             records=referenced_records,
             key='id',
-            value=record[referenced_key]
+            value=record[referenced_key],
+            strict=True
         )
 
         record[referenced_key] = referenced_record
@@ -70,7 +71,7 @@ class BaseTable:
         else:
             _values = []
             for value in record[referenced_key]:
-                _value = json_utils.fetch_records_by_key_value(
+                _value = json_utils.get_records_by_key_value(
                     records=referenced_records,
                     key='id',
                     value=value
