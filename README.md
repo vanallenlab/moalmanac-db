@@ -45,6 +45,12 @@ pip install jupyter
 ipython kernel install --user --name=moalmanac-db
 ```
 
+## Testing
+We are currently using [pytest](https://docs.pytest.org/en/stable/) for testing in this repository. From the root directory, run:
+```bash
+pytest tests/
+```
+
 ## Citation
 If you find this tool or any code herein useful, please cite:  
 > [Reardon, B., Moore, N.D., Moore, N.S., *et al*. Integrating molecular profiles into clinical frameworks through the Molecular Oncology Almanac to prospectively guide precision oncology. *Nat Cancer* (2021). https://doi.org/10.1038/s43018-021-00243-3](https://www.nature.com/articles/s43018-021-00243-3)

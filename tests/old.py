@@ -1,12 +1,14 @@
 import unittest
 
-import json_utils # Local import
+# Local import
+from utils import json_utils
+from utils import read
 
 class Base(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """
-        Import json files from referenced/ and make them available to inherited test classes
+        Import JSON files from referenced/ and make them available to inherited test classes
         """
         cls.input_paths = {
             'agents': 'referenced/agents.json',
@@ -25,7 +27,7 @@ class Base(unittest.TestCase):
         # Load all JSON data once for use in tests
         cls.data = {}
         for key, value in cls.input_paths.items():
-            cls.data[key] = json_utils.load(file=value)
+            cls.data[key] = read.json_records(file=value)
 
 
 class TestDataIntegrity(Base):
@@ -37,7 +39,7 @@ class TestDataIntegrity(Base):
         """
         Assess if `url` field matches the url contained in the `citation` for documents where the url should be
         contained within the citation.Currently, this is relevant for documents where the subtype is one of the
-        following:
+        following values:
             - Regulatory approval
         """
         relevant_subtypes = [
@@ -166,10 +168,10 @@ class TestFormatting(Base):
 
     def test_trailing_spaces(self):
         """
-        Assess if any strings values have trailing spaces in any of the json key pairs
+        Assess if any string values have trailing spaces in any of the json key pairs
         """
         tests = [
-            # tuples of file (records; list[dict]) and key for each record in records
+            # tuples of file names (records; list[dict]) and key for each record in records
             # the key should be present in each record
             ('agents', 'label'),
             ('biomarkers', 'label'),
