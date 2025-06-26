@@ -1,3 +1,5 @@
+import json
+
 def test_document_url_matches_citation(data):
     """
     Assess if `url` field matches the url contained in the `citation` for documents where the url should be
@@ -18,3 +20,23 @@ def test_document_url_matches_citation(data):
     failed_records = [r for r in relevant_records if r['url'] not in r['citation']]
     error_message = f"Provided url not contained in citation for documents: {[r['id'] for r in failed_records]}"
     assert not failed_records, error_message
+
+def test_unique_records_per_file(data):
+    """
+    Ensures that all records per file are unique.
+    """
+    for file, records in data.items():
+        seen = {}
+        duplicates = []
+        for record in records:
+            record_copy = {k: v for k, v in record.items() if k != "id"}
+            serialized = json.dumps(record_copy, sort_keys=True)
+
+            if serialized in seen:
+                duplicates.append((seen[serialized], record.get('id')))
+            else:
+                seen[serialized] = record.get('id')
+        assert not duplicates, (
+            f"Duplicate records found in file {file} (ignoring `id`): "
+            f"{[f'{a} and {b}' for a, b in duplicates]}"
+        )
