@@ -23,6 +23,24 @@ def test_document_url_matches_citation(data):
     error_message = f"Provided url not contained in citation for documents: {[r['id'] for r in failed_records]}"
     assert not failed_records, error_message
 
+def test_unique_ids_per_file(data):
+    """
+    Ensures that all id values per file are unique.
+    """
+    for file, records in data.items():
+        seen = set()
+        duplicates = []
+        for record in records:
+            record_id = record.get('id')
+            if record_id in seen:
+                duplicates.append(record_id)
+            else:
+                seen.add(record_id)
+
+        assert not duplicates, (
+            f"Duplicate `id` values found in table '{file}': {duplicates}"
+        )
+
 def test_unique_records_per_file(data):
     """
     Ensures that all records per file are unique.
