@@ -6,8 +6,8 @@ This directory contains a collection of utility scripts designed to facilitate t
 # Table of contents
 - [dereference.py](#dereferencepy)
 - [json_utils.py](#json_utilspy)
-- [test.py](#testpy)
-- [test_utils.py](#test_utilspy)
+- [read.py](#readpy)
+- [write.py](#writepy)
 
 # Scripts
 ## dereference.py
@@ -37,7 +37,7 @@ Optional arguments:
 
 Example:
 ```bash
-python dereference.py \
+python -m utils/dereference \
   --about referenced/about.json \
   --agents referenced/agents.json \
   --biomarkers referenced/biomarkers.json \
@@ -63,6 +63,10 @@ python dereference.py \
 
 [Back to table of contents](#table-of-contents)
 
-## test_content.py
+## read.py
+
+[Back to table of contents](#table-of-contents)
+
+## write.py
 
 [Back to table of contents](#table-of-contents)
