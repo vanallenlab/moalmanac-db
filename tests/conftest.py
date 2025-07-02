@@ -8,12 +8,12 @@ def input_paths():
         'biomarkers': 'referenced/biomarkers.json',
         'contributions': 'referenced/contributions.json',
         'diseases': 'referenced/diseases.json',
-        'documents': 'data/documents.json',
+        'documents': 'referenced/documents.json',
         'genes': 'referenced/genes.json',
-        'indications': 'data/indications.json',
+        'indications': 'referenced/indications.json',
         'organizations': 'referenced/organizations.json',
         'propositions': 'referenced/propositions.json',
-        'statements': 'data/statements.hc.json',
+        'statements': 'referenced/statements.json',
         'therapies': 'referenced/therapies.json'
     }
 
