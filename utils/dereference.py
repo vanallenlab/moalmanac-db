@@ -71,7 +71,7 @@ class BaseTable:
         else:
             _values = []
             for value in record[referenced_key]:
-                _value = json_utils.get_records_by_key_value(
+                _value = json_utils.get_record_by_key_value(
                     records=referenced_records,
                     key='id',
                     value=value

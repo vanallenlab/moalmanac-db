@@ -37,7 +37,7 @@ Optional arguments:
 
 Example:
 ```bash
-python -m utils/dereference \
+python -m utils.dereference \
   --about referenced/about.json \
   --agents referenced/agents.json \
   --biomarkers referenced/biomarkers.json \
