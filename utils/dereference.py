@@ -246,9 +246,7 @@ class Contributions(BaseTable):
                 referenced_key="agent_id",
                 referenced_records=agents.records,
             )
-            self.replace_key(
-                record=record, old_key="agent_id", new_key="agent"
-            )
+            self.replace_key(record=record, old_key="agent_id", new_key="agent")
 
 
 class Diseases(BaseTable):
@@ -358,9 +356,7 @@ class Documents(BaseTable):
         """
         self.dereference_organizations(organizations=organizations)
 
-    def dereference_organizations(
-        self, organizations: "Organizations"
-    ) -> None:
+    def dereference_organizations(self, organizations: "Organizations") -> None:
         """
         Dereferences the `organization_id` key in each document record.
 
@@ -530,9 +526,7 @@ class Indications(BaseTable):
                 referenced_key="document_id",
                 referenced_records=documents.records,
             )
-            self.replace_key(
-                record=record, old_key="document_id", new_key="document"
-            )
+            self.replace_key(record=record, old_key="document_id", new_key="document")
 
 
 class Mappings(BaseTable):
@@ -575,9 +569,7 @@ class Mappings(BaseTable):
                 referenced_key="coding_id",
                 referenced_records=codings.records,
             )
-            self.replace_key(
-                record=record, old_key="coding_id", new_key="coding"
-            )
+            self.replace_key(record=record, old_key="coding_id", new_key="coding")
 
 
 class Organizations(BaseTable):
@@ -855,9 +847,7 @@ class Statements(BaseTable):
                     therapy_groups=therapy_groups,
                     resolve_dependencies=False,
                 )
-            indications.dereference(
-                documents=documents, resolve_dependencies=False
-            )
+            indications.dereference(documents=documents, resolve_dependencies=False)
             strengths.dereference(codings=codings)
 
         self.dereference_contributions(contributions=contributions)
@@ -866,9 +856,7 @@ class Statements(BaseTable):
         self.dereference_propositions(propositions=propositions)
         self.dereference_strengths(strengths=strengths)
 
-    def dereference_contributions(
-        self, contributions: "Contributions"
-    ) -> None:
+    def dereference_contributions(self, contributions: "Contributions") -> None:
         """
         Dereferences the `contributions` key in each statement record.
 
@@ -982,9 +970,7 @@ class Statements(BaseTable):
                 referenced_key="strength_id",
                 referenced_records=strengths.records,
             )
-            self.replace_key(
-                record=record, old_key="strength_id", new_key="strength"
-            )
+            self.replace_key(record=record, old_key="strength_id", new_key="strength")
 
 
 class Strengths(BaseTable):
@@ -1323,6 +1309,4 @@ if __name__ == "__main__":
     }
 
     dereferenced = main(input_paths=input_data)
-    write.dictionary(
-        data=dereferenced, keys_list=["content"], file=args.output
-    )
+    write.dictionary(data=dereferenced, keys_list=["content"], file=args.output)
