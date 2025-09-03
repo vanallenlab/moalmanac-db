@@ -1,9 +1,14 @@
+# Postpones evaluation of type annotations so classes can be referenced before they are defined
+# (avoids needing quotes around type names)
+from __future__ import annotations
+
 import argparse
 
 # Local imports
 from utils import json_utils
 from utils import read
 from utils import write
+
 
 class BaseTable:
     """
@@ -25,7 +30,9 @@ class BaseTable:
         self.records = records
 
     @staticmethod
-    def dereference_single(record: dict, referenced_key: str, referenced_records: list[dict]) -> None:
+    def dereference_single(
+        record: dict, referenced_key: str, referenced_records: list[dict]
+    ) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
 
@@ -42,15 +49,20 @@ class BaseTable:
 
         referenced_record = json_utils.get_record_by_key_value(
             records=referenced_records,
-            key='id',
+            key="id",
             value=record[referenced_key],
-            strict=True
+            strict=True,
         )
 
         record[referenced_key] = referenced_record
 
     @staticmethod
-    def dereference_list(record: dict, referenced_key: str, referenced_records: list[dict], key_always_present: bool = True) -> None:
+    def dereference_list(
+        record: dict,
+        referenced_key: str,
+        referenced_records: list[dict],
+        key_always_present: bool = True,
+    ) -> None:
         """
         Dereferences a key for a provided `record`, where the key's value is of type List that references multiple records in another table.
 
@@ -64,7 +76,9 @@ class BaseTable:
             KeyError: If the `referenced_key` is not found in a record when `key_always_present` is True.
         """
         if key_always_present and (referenced_key not in record):
-            raise KeyError(f"Key '{referenced_key}' not found but should be found in {record}")
+            raise KeyError(
+                f"Key '{referenced_key}' not found but should be found in {record}"
+            )
 
         if referenced_key not in record:
             pass
@@ -72,9 +86,7 @@ class BaseTable:
             _values = []
             for value in record[referenced_key]:
                 _value = json_utils.get_record_by_key_value(
-                    records=referenced_records,
-                    key='id',
-                    value=value
+                    records=referenced_records, key="id", value=value
                 )
                 _values.append(_value)
             record[referenced_key] = _values
@@ -113,6 +125,7 @@ class BaseTable:
             raise KeyError(f"Key '{key}' not found in {record}")
         record.pop(key)
 
+
 class Agents(BaseTable):
     """
     Represents the Agents table. This class inherits common functionality from the BaseTable class and
@@ -124,6 +137,7 @@ class Agents(BaseTable):
 
     pass
 
+
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
@@ -134,7 +148,13 @@ class Biomarkers(BaseTable):
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
-    def dereference(self, genes: 'Genes', resolve_dependencies=True, codings: 'Codings'=None, mappings: 'Mappings'=None) -> None:
+    def dereference(
+        self,
+        genes: Genes,
+        resolve_dependencies: bool = True,
+        codings: Codings | None = None,
+        mappings: Mappings | None = None,
+    ) -> None:
         """
         Dereferences all referenced keys within the Genes table and optionally resolves dependencies
         within these related tables.
@@ -151,11 +171,15 @@ class Biomarkers(BaseTable):
         """
         if resolve_dependencies:
             if codings and mappings:
-                genes.dereference(codings=codings, mappings=mappings, resolve_dependencies=True)
+                genes.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=True,
+                )
 
         self.dereference_genes(genes=genes)
 
-    def dereference_genes(self, genes: 'Genes') -> None:
+    def dereference_genes(self, genes: Genes) -> None:
         """
         Dereferences the `genes` key in each biomarker record.
 
@@ -169,21 +193,23 @@ class Biomarkers(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='genes',
+                referenced_key="genes",
                 referenced_records=genes.records,
-                key_always_present=False
+                key_always_present=False,
             )
+
 
 class Codings(BaseTable):
     """
-        Represents the Codings table. This class inherits common functionality from the BaseTable class and
-        dereferences keys that reference other tables. This table does not currently reference any other tables.
+    Represents the Codings table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
 
-        Attributes:
-            records (list[dict]): A list of dictionaries representing the coding records.
-        """
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the coding records.
+    """
 
     pass
+
 
 class Contributions(BaseTable):
     """
@@ -194,7 +220,8 @@ class Contributions(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
-    def dereference(self, agents: 'Agents') -> None:
+
+    def dereference(self, agents: Agents) -> None:
         """
         Dereferences all referenced keys within the Contributions table.
 
@@ -203,7 +230,7 @@ class Contributions(BaseTable):
         """
         self.dereference_agents(agents=agents)
 
-    def dereference_agents(self, agents: 'Agents') -> None:
+    def dereference_agents(self, agents: Agents) -> None:
         """
         Dereferences the `agent_id` key in each contribution record.
 
@@ -220,14 +247,11 @@ class Contributions(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='agent_id',
-                referenced_records=agents.records
+                referenced_key="agent_id",
+                referenced_records=agents.records,
             )
-            self.replace_key(
-                record=record,
-                old_key='agent_id',
-                new_key='agent'
-            )
+            self.replace_key(record=record, old_key="agent_id", new_key="agent")
+
 
 class Diseases(BaseTable):
     """
@@ -240,7 +264,12 @@ class Diseases(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: 'Codings', mappings: 'Mappings', resolve_dependencies=True) -> None:
+    def dereference(
+        self,
+        codings: Codings,
+        mappings: Mappings,
+        resolve_dependencies: bool = True,
+    ) -> None:
         """
         Dereferences all referenced keys within the Diseases table and optionally resolves dependencies
         within these related tables.
@@ -260,7 +289,7 @@ class Diseases(BaseTable):
         self.dereference_codings(codings=codings)
         self.dereference_mappings(mappings=mappings)
 
-    def dereference_codings(self, codings: 'Codings') -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -277,16 +306,16 @@ class Diseases(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='primary_coding_id',
-                referenced_records=codings.records
+                referenced_key="primary_coding_id",
+                referenced_records=codings.records,
             )
             self.replace_key(
                 record=record,
-                old_key='primary_coding_id',
-                new_key='primaryCoding'
+                old_key="primary_coding_id",
+                new_key="primaryCoding",
             )
 
-    def dereference_mappings(self, mappings: 'Mappings') -> None:
+    def dereference_mappings(self, mappings: Mappings) -> None:
         """
         Dereferences the `mappings` key in each gene record.
 
@@ -303,19 +332,14 @@ class Diseases(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='mappings',
+                referenced_key="mappings",
                 referenced_records=mappings.records,
-                key_always_present=True
+                key_always_present=True,
             )
-            for mapping in record['mappings']:
-                self.remove_key(
-                    record=mapping,
-                    key='id'
-                )
-                self.remove_key(
-                    record=mapping,
-                    key='primary_coding_id'
-                )
+            for mapping in record["mappings"]:
+                self.remove_key(record=mapping, key="id")
+                self.remove_key(record=mapping, key="primary_coding_id")
+
 
 class Documents(BaseTable):
     """
@@ -327,7 +351,7 @@ class Documents(BaseTable):
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference(self, organizations: 'Organizations') -> None:
+    def dereference(self, organizations: Organizations) -> None:
         """
         Dereferences all referenced keys within the Diseases table.
 
@@ -336,7 +360,7 @@ class Documents(BaseTable):
         """
         self.dereference_organizations(organizations=organizations)
 
-    def dereference_organizations(self, organizations: 'Organizations') -> None:
+    def dereference_organizations(self, organizations: Organizations) -> None:
         """
         Dereferences the `organization_id` key in each document record.
 
@@ -353,14 +377,15 @@ class Documents(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='organization_id',
-                referenced_records=organizations.records
+                referenced_key="organization_id",
+                referenced_records=organizations.records,
             )
             self.replace_key(
                 record=record,
-                old_key='organization_id',
-                new_key='organization'
+                old_key="organization_id",
+                new_key="organization",
             )
+
 
 class Genes(BaseTable):
     """
@@ -373,7 +398,12 @@ class Genes(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: 'Codings', mappings: 'Mappings', resolve_dependencies=True) -> None:
+    def dereference(
+        self,
+        codings: Codings,
+        mappings: Mappings,
+        resolve_dependencies: bool = True,
+    ) -> None:
         """
         Dereferences all referenced keys within the Genes table and optionally resolves dependencies
         within these related tables.
@@ -393,7 +423,7 @@ class Genes(BaseTable):
         self.dereference_codings(codings=codings)
         self.dereference_mappings(mappings=mappings)
 
-    def dereference_codings(self, codings: 'Codings') -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -410,16 +440,16 @@ class Genes(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='primary_coding_id',
-                referenced_records=codings.records
+                referenced_key="primary_coding_id",
+                referenced_records=codings.records,
             )
             self.replace_key(
                 record=record,
-                old_key='primary_coding_id',
-                new_key='primaryCoding'
+                old_key="primary_coding_id",
+                new_key="primaryCoding",
             )
 
-    def dereference_mappings(self, mappings: 'Mappings') -> None:
+    def dereference_mappings(self, mappings: Mappings) -> None:
         """
         Dereferences the `mappings` key in each gene record.
 
@@ -436,19 +466,14 @@ class Genes(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='mappings',
+                referenced_key="mappings",
                 referenced_records=mappings.records,
-                key_always_present=True
+                key_always_present=True,
             )
-            for mapping in record['mappings']:
-                self.remove_key(
-                    record=mapping,
-                    key='id'
-                )
-                self.remove_key(
-                    record=mapping,
-                    key='primary_coding_id'
-                )
+            for mapping in record["mappings"]:
+                self.remove_key(record=mapping, key="id")
+                self.remove_key(record=mapping, key="primary_coding_id")
+
 
 class Indications(BaseTable):
     """
@@ -460,7 +485,12 @@ class Indications(BaseTable):
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference(self, documents: 'Documents', resolve_dependencies=True, organizations: 'Organizations'=None) -> None:
+    def dereference(
+        self,
+        documents: Documents,
+        resolve_dependencies: bool = True,
+        organizations: Organizations | None = None,
+    ) -> None:
         """
         Dereferences all referenced keys within the Indications table and optionally resolves dependencies
         within these related tables.
@@ -480,7 +510,7 @@ class Indications(BaseTable):
 
         self.dereference_documents(documents=documents)
 
-    def dereference_documents(self, documents: 'Documents') -> None:
+    def dereference_documents(self, documents: Documents) -> None:
         """
         Dereferences the `document_id` key in each indication record.
 
@@ -497,14 +527,11 @@ class Indications(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='document_id',
-                referenced_records=documents.records
+                referenced_key="document_id",
+                referenced_records=documents.records,
             )
-            self.replace_key(
-                record=record,
-                old_key='document_id',
-                new_key='document'
-            )
+            self.replace_key(record=record, old_key="document_id", new_key="document")
+
 
 class Mappings(BaseTable):
     """
@@ -515,7 +542,8 @@ class Mappings(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
-    def dereference(self, codings: 'Codings') -> None:
+
+    def dereference(self, codings: Codings) -> None:
         """
         Dereferences all referenced keys within the Mappings table.
 
@@ -528,7 +556,7 @@ class Mappings(BaseTable):
         """
         self.dereference_codings(codings=codings)
 
-    def dereference_codings(self, codings: 'Codings') -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `coding_id` key in each coding record.
 
@@ -542,14 +570,11 @@ class Mappings(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='coding_id',
-                referenced_records=codings.records
+                referenced_key="coding_id",
+                referenced_records=codings.records,
             )
-            self.replace_key(
-                record=record,
-                old_key='coding_id',
-                new_key='coding'
-            )
+            self.replace_key(record=record, old_key="coding_id", new_key="coding")
+
 
 class Organizations(BaseTable):
     """
@@ -561,6 +586,7 @@ class Organizations(BaseTable):
     """
 
     pass
+
 
 class Propositions(BaseTable):
     """
@@ -575,7 +601,17 @@ class Propositions(BaseTable):
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
-    def dereference(self, biomarkers: 'Biomarkers', diseases: 'Diseases', therapies: 'Therapies', therapy_groups: 'TherapyGroups', resolve_dependencies = True, codings: 'Codings' = None, genes: 'Genes' = None, mappings: 'Mappings' = None) -> None:
+    def dereference(
+        self,
+        biomarkers: Biomarkers,
+        diseases: Diseases,
+        therapies: Therapies,
+        therapy_groups: TherapyGroups,
+        resolve_dependencies: bool = True,
+        codings: Codings | None = None,
+        genes: Genes | None = None,
+        mappings: Mappings | None = None,
+    ) -> None:
         """
         Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
         within these related tables.
@@ -596,22 +632,38 @@ class Propositions(BaseTable):
         """
         if resolve_dependencies:
             if diseases and codings and mappings:
-                diseases.dereference(codings=codings, mappings=mappings, resolve_dependencies=True)
+                diseases.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=True,
+                )
             if genes and codings and mappings:
-                genes.dereference(codings=codings, mappings=mappings, resolve_dependencies=True)
+                genes.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=True,
+                )
                 biomarkers.dereference(genes=genes, resolve_dependencies=False)
             if therapies and codings and mappings:
-                therapies.dereference(codings=codings, mappings=mappings, resolve_dependencies=True)
+                therapies.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=True,
+                )
             if therapies and therapy_groups:
-                therapy_groups.dereference(therapies=therapies, resolve_dependencies=False)
+                therapy_groups.dereference(
+                    therapies=therapies, resolve_dependencies=False
+                )
 
         # Maybe change this to just do therapy groups?
 
         self.dereference_biomarkers(biomarkers=biomarkers)
         self.dereference_diseases(diseases=diseases)
-        self.dereference_therapeutics(therapies=therapies, therapy_groups=therapy_groups)
+        self.dereference_therapeutics(
+            therapies=therapies, therapy_groups=therapy_groups
+        )
 
-    def dereference_biomarkers(self, biomarkers: 'Biomarkers') -> None:
+    def dereference_biomarkers(self, biomarkers: Biomarkers) -> None:
         """
         Dereferences the `biomarkers` key in each proposition record.
 
@@ -628,12 +680,12 @@ class Propositions(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='biomarkers',
+                referenced_key="biomarkers",
                 referenced_records=biomarkers.records,
-                key_always_present=True
+                key_always_present=True,
             )
 
-    def dereference_diseases(self, diseases: 'Diseases') -> None:
+    def dereference_diseases(self, diseases: Diseases) -> None:
         """
         Dereferences the `conditionQualifier_id` key in each proposition record.
 
@@ -650,16 +702,18 @@ class Propositions(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='conditionQualifier_id',
-                referenced_records=diseases.records
+                referenced_key="conditionQualifier_id",
+                referenced_records=diseases.records,
             )
             self.replace_key(
                 record=record,
-                old_key='conditionQualifier_id',
-                new_key='conditionQualifier'
+                old_key="conditionQualifier_id",
+                new_key="conditionQualifier",
             )
 
-    def dereference_therapeutics(self, therapies: 'Therapies', therapy_groups: 'TherapyGroups') -> None:
+    def dereference_therapeutics(
+        self, therapies: Therapies, therapy_groups: TherapyGroups
+    ) -> None:
         """
         Dereferences the `therapy_id` key or `therapy_group_id` key in each proposition record.
 
@@ -674,38 +728,35 @@ class Propositions(BaseTable):
             KeyError: If neither referenced_key values, `therapy_id` or `therapy_group_id, are not found in a record.
         """
         for record in self.records:
-            if isinstance(record['therapy_id'], int):
+            if isinstance(record["therapy_id"], int):
                 self.dereference_single(
                     record=record,
-                    referenced_key='therapy_id',
-                    referenced_records=therapies.records
+                    referenced_key="therapy_id",
+                    referenced_records=therapies.records,
                 )
                 self.replace_key(
                     record=record,
-                    old_key='therapy_id',
-                    new_key='objectTherapeutic'
+                    old_key="therapy_id",
+                    new_key="objectTherapeutic",
                 )
-                self.remove_key(
-                    record=record,
-                    key='therapy_group_id'
-                )
-            elif isinstance(record['therapy_group_id'], int):
+                self.remove_key(record=record, key="therapy_group_id")
+            elif isinstance(record["therapy_group_id"], int):
                 self.dereference_single(
                     record=record,
-                    referenced_key='therapy_group_id',
-                    referenced_records=therapy_groups.records
+                    referenced_key="therapy_group_id",
+                    referenced_records=therapy_groups.records,
                 )
                 self.replace_key(
                     record=record,
-                    old_key='therapy_group_id',
-                    new_key='objectTherapeutic'
+                    old_key="therapy_group_id",
+                    new_key="objectTherapeutic",
                 )
-                self.remove_key(
-                    record=record,
-                    key='therapy_id'
-                )
+                self.remove_key(record=record, key="therapy_id")
             else:
-                raise KeyError(f"Neither 'therapy_id' nor 'therapy_group_id' are keys found in {record}")
+                raise KeyError(
+                    f"Neither 'therapy_id' nor 'therapy_group_id' are keys found in {record}"
+                )
+
 
 class Statements(BaseTable):
     """
@@ -721,7 +772,24 @@ class Statements(BaseTable):
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference(self, contributions: 'Contributions', documents: 'Documents', indications: 'Indications', propositions: 'Propositions', strengths: 'Strengths', resolve_dependencies = True, agents: 'Agents' = None, biomarkers: 'Biomarkers' = None, codings: 'Codings' = None, diseases: 'Diseases' = None, genes: 'Genes' = None, mappings: 'Mappings' = None, organizations: 'Organizations' = None, therapies: 'Therapies' = None, therapy_groups: 'TherapyGroups' = None) -> None:
+    def dereference(
+        self,
+        codings: Codings,
+        contributions: Contributions,
+        documents: Documents,
+        indications: Indications,
+        mappings: Mappings,
+        propositions: Propositions,
+        strengths: Strengths,
+        resolve_dependencies: bool = True,
+        agents: Agents | None = None,
+        biomarkers: Biomarkers | None = None,
+        diseases: Diseases | None = None,
+        genes: Genes | None = None,
+        organizations: Organizations | None = None,
+        therapies: Therapies | None = None,
+        therapy_groups: TherapyGroups | None = None,
+    ) -> None:
         """
         Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
         within these related tables.
@@ -753,14 +821,26 @@ class Statements(BaseTable):
             if agents:
                 contributions.dereference(agents=agents)
             if biomarkers and genes:
-                genes.dereference(codings=codings, mappings=mappings, resolve_dependencies=False)
+                genes.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=False,
+                )
                 biomarkers.dereference(genes=genes, resolve_dependencies=False)
             if diseases:
-                diseases.dereference(codings=codings, mappings=mappings, resolve_dependencies=False)
+                diseases.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=False,
+                )
             if organizations:
                 documents.dereference(organizations=organizations)
             if therapies:
-                therapies.dereference(codings=codings, mappings=mappings, resolve_dependencies=False)
+                therapies.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=False,
+                )
             if therapies and therapy_groups:
                 therapy_groups.dereference(therapies=therapies)
             if biomarkers and diseases and therapies and therapy_groups:
@@ -769,7 +849,7 @@ class Statements(BaseTable):
                     diseases=diseases,
                     therapies=therapies,
                     therapy_groups=therapy_groups,
-                    resolve_dependencies=False
+                    resolve_dependencies=False,
                 )
             indications.dereference(documents=documents, resolve_dependencies=False)
             strengths.dereference(codings=codings)
@@ -780,7 +860,7 @@ class Statements(BaseTable):
         self.dereference_propositions(propositions=propositions)
         self.dereference_strengths(strengths=strengths)
 
-    def dereference_contributions(self, contributions: 'Contributions') -> None:
+    def dereference_contributions(self, contributions: Contributions) -> None:
         """
         Dereferences the `contributions` key in each statement record.
 
@@ -797,12 +877,12 @@ class Statements(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='contributions',
+                referenced_key="contributions",
                 referenced_records=contributions.records,
-                key_always_present=True
+                key_always_present=True,
             )
 
-    def dereference_documents(self, documents: 'Documents') -> None:
+    def dereference_documents(self, documents: Documents) -> None:
         """
         Dereferences the `reportedIn` key in each statement record.
 
@@ -819,12 +899,12 @@ class Statements(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='reportedIn',
+                referenced_key="reportedIn",
                 referenced_records=documents.records,
-                key_always_present=True
+                key_always_present=True,
             )
 
-    def dereference_indications(self, indications: 'Indications') -> None:
+    def dereference_indications(self, indications: Indications) -> None:
         """
         Dereferences the `indication_id` key in each statement record.
 
@@ -843,16 +923,14 @@ class Statements(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='indication_id',
-                referenced_records=indications.records
+                referenced_key="indication_id",
+                referenced_records=indications.records,
             )
             self.replace_key(
-                record=record,
-                old_key='indication_id',
-                new_key='indication'
+                record=record, old_key="indication_id", new_key="indication"
             )
 
-    def dereference_propositions(self, propositions: 'Propositions') -> None:
+    def dereference_propositions(self, propositions: Propositions) -> None:
         """
         Dereferences the `proposition_id` key in each statement record.
 
@@ -869,16 +947,14 @@ class Statements(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='proposition_id',
-                referenced_records=propositions.records
+                referenced_key="proposition_id",
+                referenced_records=propositions.records,
             )
             self.replace_key(
-                record=record,
-                old_key='proposition_id',
-                new_key='proposition'
+                record=record, old_key="proposition_id", new_key="proposition"
             )
 
-    def dereference_strengths(self, strengths: 'Strengths') -> None:
+    def dereference_strengths(self, strengths: Strengths) -> None:
         """
         Dereferences the `strength_id` key in each statement record.
 
@@ -895,14 +971,11 @@ class Statements(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='strength_id',
-                referenced_records=strengths.records
+                referenced_key="strength_id",
+                referenced_records=strengths.records,
             )
-            self.replace_key(
-                record=record,
-                old_key='strength_id',
-                new_key='strength'
-            )
+            self.replace_key(record=record, old_key="strength_id", new_key="strength")
+
 
 class Strengths(BaseTable):
     """
@@ -914,10 +987,10 @@ class Strengths(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: 'Codings') -> None:
+    def dereference(self, codings: Codings) -> None:
         self.dereference_codings(codings=codings)
 
-    def dereference_codings(self, codings: 'Codings') -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -934,14 +1007,15 @@ class Strengths(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='primary_coding_id',
-                referenced_records=codings.records
+                referenced_key="primary_coding_id",
+                referenced_records=codings.records,
             )
             self.replace_key(
                 record=record,
-                old_key='primary_coding_id',
-                new_key='primaryCoding'
+                old_key="primary_coding_id",
+                new_key="primaryCoding",
             )
+
 
 class Therapies(BaseTable):
     """
@@ -953,14 +1027,19 @@ class Therapies(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: 'Codings', resolve_dependencies=True, mappings: 'Mappings' = None) -> None:
+    def dereference(
+        self,
+        codings: Codings,
+        resolve_dependencies: bool = True,
+        mappings: Mappings | None = None,
+    ) -> None:
         if resolve_dependencies:
             if codings and mappings:
                 mappings.dereference(codings=codings)
 
         self.dereference_codings(codings=codings)
 
-    def dereference_codings(self, codings: 'Codings') -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -977,14 +1056,15 @@ class Therapies(BaseTable):
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key='primary_coding_id',
-                referenced_records=codings.records
+                referenced_key="primary_coding_id",
+                referenced_records=codings.records,
             )
             self.replace_key(
                 record=record,
-                old_key='primary_coding_id',
-                new_key='primaryCoding'
+                old_key="primary_coding_id",
+                new_key="primaryCoding",
             )
+
 
 class TherapyGroups(BaseTable):
     """
@@ -996,7 +1076,13 @@ class TherapyGroups(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, therapies: 'Therapies', resolve_dependencies = True, codings: 'Codings' = None, mappings: 'Mappings' = None) -> None:
+    def dereference(
+        self,
+        therapies: "Therapies",
+        resolve_dependencies: bool = True,
+        codings: Codings | None = None,
+        mappings: Mappings | None = None,
+    ) -> None:
         """
         Dereferences all referenced keys within the Therapy Groups table and optionally resolves dependencies
         within these related tables.
@@ -1013,11 +1099,15 @@ class TherapyGroups(BaseTable):
         """
         if resolve_dependencies:
             if codings and mappings:
-                therapies.dereference(codings=codings, mappings=mappings, resolve_dependencies=True)
+                therapies.dereference(
+                    codings=codings,
+                    mappings=mappings,
+                    resolve_dependencies=True,
+                )
 
         self.dereference_therapies(therapies=therapies)
 
-    def dereference_therapies(self, therapies: 'Therapies') -> None:
+    def dereference_therapies(self, therapies: Therapies) -> None:
         """
         Dereferences the `therapies_id` key in each therapy group record.
 
@@ -1034,10 +1124,11 @@ class TherapyGroups(BaseTable):
         for record in self.records:
             self.dereference_list(
                 record=record,
-                referenced_key='therapies',
+                referenced_key="therapies",
                 referenced_records=therapies.records,
-                key_always_present=True
+                key_always_present=True,
             )
+
 
 def main(input_paths):
     """
@@ -1054,22 +1145,22 @@ def main(input_paths):
     """
 
     # Step 1: Read JSON files
-    about = read.json_records(file=input_paths['about'])
-    agents = read.json_records(file=input_paths['agents'])
-    biomarkers = read.json_records(file=input_paths['biomarkers'])
-    codings = read.json_records(file=input_paths['codings'])
-    contributions = read.json_records(file=input_paths['contributions'])
-    diseases = read.json_records(file=input_paths['diseases'])
-    documents = read.json_records(file=input_paths['documents'])
-    genes = read.json_records(file=input_paths['genes'])
-    indications = read.json_records(file=input_paths['indications'])
-    mappings = read.json_records(file=input_paths['mappings'])
-    organizations = read.json_records(file=input_paths['organizations'])
-    propositions = read.json_records(file=input_paths['propositions'])
-    statements = read.json_records(file=input_paths['statements'])
-    strengths = read.json_records(file=input_paths['strengths'])
-    therapies = read.json_records(file=input_paths['therapies'])
-    therapy_groups = read.json_records(file=input_paths['therapy_groups'])
+    about = read.json_records(file=input_paths["about"])
+    agents = read.json_records(file=input_paths["agents"])
+    biomarkers = read.json_records(file=input_paths["biomarkers"])
+    codings = read.json_records(file=input_paths["codings"])
+    contributions = read.json_records(file=input_paths["contributions"])
+    diseases = read.json_records(file=input_paths["diseases"])
+    documents = read.json_records(file=input_paths["documents"])
+    genes = read.json_records(file=input_paths["genes"])
+    indications = read.json_records(file=input_paths["indications"])
+    mappings = read.json_records(file=input_paths["mappings"])
+    organizations = read.json_records(file=input_paths["organizations"])
+    propositions = read.json_records(file=input_paths["propositions"])
+    statements = read.json_records(file=input_paths["statements"])
+    strengths = read.json_records(file=input_paths["strengths"])
+    therapies = read.json_records(file=input_paths["therapies"])
+    therapy_groups = read.json_records(file=input_paths["therapy_groups"])
 
     # Step 2: Generate table objects
     agents = Agents(records=agents)
@@ -1104,128 +1195,122 @@ def main(input_paths):
         strengths=strengths,
         therapies=therapies,
         therapy_groups=therapy_groups,
-        resolve_dependencies=True
+        resolve_dependencies=True,
     )
 
-    return {
-        'about': about,
-        'content': statements.records
-    }
+    return {"about": about, "content": statements.records}
 
-if __name__ =="__main__":
+
+if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(
-        prog='dereference',
-        description='dereferences moalmanac db (currently in draft and development).'
+        prog="dereference",
+        description="dereferences moalmanac db (currently in draft and development).",
     )
     arg_parser.add_argument(
-        '--about',
-        help='json detailing db metadata',
-        default='referenced/about.json'
-    ),
-    arg_parser.add_argument(
-        '--agents',
-        help='json detailing agents',
-        default='referenced/agents.json'
-    ),
-    arg_parser.add_argument(
-        '--biomarkers',
-        help='json detailing db biomarkers',
-        default='referenced/biomarkers.json'
-    ),
-    arg_parser.add_argument(
-        '--codings',
-        help='json detailing db codings',
-        default='referenced/codings.json'
+        "--about",
+        help="json detailing db metadata",
+        default="referenced/about.json",
     )
     arg_parser.add_argument(
-        '--contributions',
-        help='json detailing db contributions',
-        default='referenced/contributions.json'
-    ),
-    arg_parser.add_argument(
-        '--diseases',
-        help='json detailing db diseases',
-        default='referenced/diseases.json'
-    ),
-    arg_parser.add_argument(
-        '--documents',
-        help='json detailing db documents',
-        default='referenced/documents.json'
+        "--agents",
+        help="json detailing agents",
+        default="referenced/agents.json",
     )
     arg_parser.add_argument(
-        '--genes',
-        help='json detailing db genes',
-        default='referenced/genes.json'
-    ),
-    arg_parser.add_argument(
-        '--indications',
-        help='json detailing db indications',
-        default='referenced/indications.json'
-    ),
-    arg_parser.add_argument(
-        '--mappings',
-        help='json detailing db mappings',
-        default='referenced/mappings.json'
+        "--biomarkers",
+        help="json detailing db biomarkers",
+        default="referenced/biomarkers.json",
     )
     arg_parser.add_argument(
-        '--organizations',
-        help='json detailing db organizations',
-        default='referenced/organizations.json'
-    ),
-    arg_parser.add_argument(
-        '--propositions',
-        help='json detailing db propositions',
-        default='referenced/propositions.json'
-    ),
-    arg_parser.add_argument(
-        '--statements',
-        help='json detailing db statements',
-        default='referenced/statements.json'
-    ),
-    arg_parser.add_argument(
-        '--strengths',
-        help='json detailing db strengths',
-        default='referenced/strengths.json'
+        "--codings",
+        help="json detailing db codings",
+        default="referenced/codings.json",
     )
     arg_parser.add_argument(
-        '--therapies',
-        help='json detailing db therapies',
-        default='referenced/therapies.json'
+        "--contributions",
+        help="json detailing db contributions",
+        default="referenced/contributions.json",
     )
     arg_parser.add_argument(
-        '--therapy-groups',
-        help='json detailing db therapy groups',
-        default='referenced/therapy_groups.json'
+        "--diseases",
+        help="json detailing db diseases",
+        default="referenced/diseases.json",
     )
     arg_parser.add_argument(
-        '--output',
-        help='Output json file',
-        default='moalmanac-draft.dereferenced.json'
+        "--documents",
+        help="json detailing db documents",
+        default="referenced/documents.json",
+    )
+    arg_parser.add_argument(
+        "--genes",
+        help="json detailing db genes",
+        default="referenced/genes.json",
+    )
+    arg_parser.add_argument(
+        "--indications",
+        help="json detailing db indications",
+        default="referenced/indications.json",
+    )
+    arg_parser.add_argument(
+        "--mappings",
+        help="json detailing db mappings",
+        default="referenced/mappings.json",
+    )
+    arg_parser.add_argument(
+        "--organizations",
+        help="json detailing db organizations",
+        default="referenced/organizations.json",
+    )
+    arg_parser.add_argument(
+        "--propositions",
+        help="json detailing db propositions",
+        default="referenced/propositions.json",
+    )
+    arg_parser.add_argument(
+        "--statements",
+        help="json detailing db statements",
+        default="referenced/statements.json",
+    )
+    arg_parser.add_argument(
+        "--strengths",
+        help="json detailing db strengths",
+        default="referenced/strengths.json",
+    )
+    arg_parser.add_argument(
+        "--therapies",
+        help="json detailing db therapies",
+        default="referenced/therapies.json",
+    )
+    arg_parser.add_argument(
+        "--therapy-groups",
+        help="json detailing db therapy groups",
+        default="referenced/therapy_groups.json",
+    )
+    arg_parser.add_argument(
+        "--output",
+        help="Output json file",
+        default="moalmanac-draft.dereferenced.json",
     )
     args = arg_parser.parse_args()
 
     input_data = {
-        'about': args.about,
-        'agents': args.agents,
-        'biomarkers': args.biomarkers,
-        'codings': args.codings,
-        'contributions': args.contributions,
-        'diseases': args.diseases,
-        'documents': args.documents,
-        'genes': args.genes,
-        'indications': args.indications,
-        'mappings': args.mappings,
-        'organizations': args.organizations,
-        'propositions': args.propositions,
-        'statements': args.statements,
-        'strengths': args.strengths,
-        'therapies': args.therapies,
-        'therapy_groups': args.therapy_groups
+        "about": args.about,
+        "agents": args.agents,
+        "biomarkers": args.biomarkers,
+        "codings": args.codings,
+        "contributions": args.contributions,
+        "diseases": args.diseases,
+        "documents": args.documents,
+        "genes": args.genes,
+        "indications": args.indications,
+        "mappings": args.mappings,
+        "organizations": args.organizations,
+        "propositions": args.propositions,
+        "statements": args.statements,
+        "strengths": args.strengths,
+        "therapies": args.therapies,
+        "therapy_groups": args.therapy_groups,
     }
 
     dereferenced = main(input_paths=input_data)
-    write.dictionary(
-        data=dereferenced,
-        keys_list=['content'],
-        file=args.output
-    )
+    write.dictionary(data=dereferenced, keys_list=["content"], file=args.output)

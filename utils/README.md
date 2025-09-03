@@ -1,5 +1,5 @@
 # Utility scripts for the Molecular Oncology Almanac database
-This directory contains a collection of utility scripts designed to facilitate the management and processing of the Molecular Oncology Almanac (moalmanac) database. 
+This directory contains a collection of utility scripts designed to facilitate the management and processing of the Molecular Oncology Almanac (moalmanac) database.
 
 **Note: The default arguments for scripts within this directory assume execution from the root directory of this repository.**
 
@@ -35,7 +35,13 @@ Optional arguments:
     --output          <string>    file path for dereferenced JSON output by this script. Default: moalmanac-draft.dereferenced.json
 ```
 
-Example:
+### Example
+To run with default parameters:
+```bash
+python -m utils.dereference
+```
+
+Alternatively, all arguments can be specified explicitly:
 ```bash
 python -m utils.dereference \
   --about referenced/about.json \
