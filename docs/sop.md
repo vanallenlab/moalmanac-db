@@ -35,17 +35,17 @@ The underlying database of this method is dependent on expert curation of the cu
 Content catalogued by the Molecular Oncology Almanac can be accessed through GitHub, the web portal, or the API.
 
 ### GitHub
-The Molecular Oncology Almanac Database is maintained through [GitHub](https://github.com/vanallenlab/moalmanac-db). Releases are created for each version of the database, documented with content release notes.  
+The Molecular Oncology Almanac Database is maintained through [GitHub](https://github.com/vanallenlab/moalmanac-db). Releases are created for each version of the database, documented with content release notes.
 
 This content is then converted into an SQL database for use with the [browser](#molecular-oncology-almanac---browser) and into a document based format for use with the [method](https://github.com/vanallenlab/moalmanac), with code from their respective GitHub repositories.
 
 ### Molecular Oncology Almanac - Browser
-A web based browser was created for browsing the knowledge base with Python, Flask, and SQLAlchemy and hosted on Google Compute Engine, herein referred to Molecular Oncology Almanac Browser or browser. The front page lists the total number of molecular features and assertions catalogued as well as the total number of cancer types, evidence levels, and therapies entered. A central search box allows for searching across multiple search terms such as evidence, gene, feature types, or feature type attributes (protein changes, genomic positions, etc.). The browser also features an about page, which contains a hyperlink to download the contents of the knowledge base. Users may submit entries for consideration into the database with a web form, accessible through the “Submit entry” menu item. 
+A web based browser was created for browsing the knowledge base with Python, Flask, and SQLAlchemy and hosted on Google Compute Engine, herein referred to Molecular Oncology Almanac Browser or browser. The front page lists the total number of molecular features and assertions catalogued as well as the total number of cancer types, evidence levels, and therapies entered. A central search box allows for searching across multiple search terms such as evidence, gene, feature types, or feature type attributes (protein changes, genomic positions, etc.). The browser also features an about page, which contains a hyperlink to download the contents of the knowledge base. Users may submit entries for consideration into the database with a web form, accessible through the “Submit entry” menu item.
 
 The Molecular Oncology Almanac Browser is available at [https://moalmanac.org](https://moalmanac.org).
 
 ### Application Program Interface (API)
-To interact with the knowledge base programmatically, an application program interface (API) was built using Python and Flask to interface with the browser’s underlying data structure. Several get requests are available to list therapies, evidence levels, or genes as well as the ability to get all or by id assertions, sources, feature definitions, features, feature attribute definitions, or feature attributes. A post request is available to suggest a new assertion to the database. 
+To interact with the knowledge base programmatically, an application program interface (API) was built using Python and Flask to interface with the browser’s underlying data structure. Several get requests are available to list therapies, evidence levels, or genes as well as the ability to get all or by id assertions, sources, feature definitions, features, feature attribute definitions, or feature attributes. A post request is available to suggest a new assertion to the database.
 
 This is available on [SwaggerHub](https://app.swaggerhub.com/apis-docs/vanallenlab/almanac-browser).
 
@@ -55,47 +55,47 @@ This is available on [SwaggerHub](https://app.swaggerhub.com/apis-docs/vanallenl
 
 Any changes to the Molecular Oncology Almanac database should be performed by creating a new branch within [the repository](https://github.com/vanallenlab/moalmanac-db) and performing a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests), which should be reviewed by other members of the curation team before merging and propagating.
 
-Releases to database content are labeled based on date, in the format of `v.{Numeric year}-{Numeric month}-{Numeric day}`. 
+Releases to database content are labeled based on date, in the format of `v.{Numeric year}-{Numeric month}-{Numeric day}`.
 
-Content changes should be summarized as a new entry in the [content changelog](CHANGELOG.md), following the [template for changes](/.github/RELEASE_TEMPLATE.md). The contents of the changelog entry should also be posted within the pull request and to describe the release, when created. 
+Content changes should be summarized as a new entry in the [content changelog](https://news.moalmanac.org/category/database), following the [template for changes](/.github/RELEASE_TEMPLATE.md). The contents of the changelog entry should also be posted within the pull request and to describe the release, when created.
 
 [Return to Table of Contents](#table-of-contents)
 
 ## Cataloging relationships
 Molecular Oncology Almanac catalogues relationships that assert a connection between molecular features and clinical information or action. These are organized by [feature type](#molecular-features) as [records](/molecular-oncology-almanac.json).
 
-All records contained within the database consist of [evidence](#evidence-sources), [molecular features](#molecular-features), and the [clinical relevance](#assertions). 
+All records contained within the database consist of [evidence](#evidence-sources), [molecular features](#molecular-features), and the [clinical relevance](#assertions).
 
 ### Evidence sources
-Molecular Oncology Almanac is a _source centric_ knowledge base, all items must be tied to a line of evidence. Sources should be filled out with the following information unless specified as optional: 
+Molecular Oncology Almanac is a _source centric_ knowledge base, all items must be tied to a line of evidence. Sources should be filled out with the following information unless specified as optional:
 
 #### Fields
 - `description` (required, string), a free text description of the source and assertion.
-- `source_type` (required, string), the type of source. As of this writing, four exist: Clinical trial, FDA, Guideline, and Journal. 
+- `source_type` (required, string), the type of source. As of this writing, four exist: Clinical trial, FDA, Guideline, and Journal.
 - `citation` (required, string), the citation for the source.
 - `url` (required, string), a URL at which the source was accessed.
 - `doi` (optional, string), if the source is a journal article, please include the [DOI](https://www.doi.org/).
-- `pmid` (optional, integer), if a [PubMed ID (pmid)](https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/) exists for the source, please include it. 
-- `nct` (optional, string), if the source is a clinical trial, please include the [NCT code](https://clinicaltrials.gov/ct2/help/glossary/ct-identifier-nct#:~:text=A%20unique%20identification%20code%20given,known%20as%20the%20NCT%20Number.).  
+- `pmid` (optional, integer), if a [PubMed ID (pmid)](https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/) exists for the source, please include it.
+- `nct` (optional, string), if the source is a clinical trial, please include the [NCT code](https://clinicaltrials.gov/ct2/help/glossary/ct-identifier-nct#:~:text=A%20unique%20identification%20code%20given,known%20as%20the%20NCT%20Number.).
 - `publication_date` (required, date), the date in which the source was published in `YYYY-MM-DD` format
 - `last_updated` (required, date), the date in which the entry was last updated in `YYYY-MM-DD` format
 
 #### Types of sources
-The Molecular Oncology Almanac database primarily cites FDA approvals, clinical guidelines, and journal articles. 
+The Molecular Oncology Almanac database primarily cites FDA approvals, clinical guidelines, and journal articles.
 
 ##### FDA approvals
-FDA approvals are cataloged by their package insert, which can be searched for on the [Drugs @ FDA web page](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm). Drugs are catalogued on this website by their brand name. When viewing a drug, click the `Labels for...` drop-down menu and select `Label (PDF)` under "Letters, Reviews, Labels, Patient Package Insert" for the latest date, or date of interest. 
+FDA approvals are cataloged by their package insert, which can be searched for on the [Drugs @ FDA web page](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm). Drugs are catalogued on this website by their brand name. When viewing a drug, click the `Labels for...` drop-down menu and select `Label (PDF)` under "Letters, Reviews, Labels, Patient Package Insert" for the latest date, or date of interest.
 
-Here, particular areas of note are 
+Here, particular areas of note are
 - The brand and generic name
 - INDICATIONS AND USAGE
 - The revised date
 - CLINICAL STUDIES
 - MEDICATION GUIDE
 
-The brand and generic name are needed to cite the source properly and the generic name should be catalogued in the database under `therapy_name`. The section titled INDICATION AND USAGE will specify the indication of approval as well as provide language which can be used in the description. 
+The brand and generic name are needed to cite the source properly and the generic name should be catalogued in the database under `therapy_name`. The section titled INDICATION AND USAGE will specify the indication of approval as well as provide language which can be used in the description.
 
-The PDF should be saved as `{revised year}-{revised month}-{generic drug name}.pdf` in the `database/fda-labels` folder. 
+The PDF should be saved as `{revised year}-{revised month}-{generic drug name}.pdf` in the `database/fda-labels` folder.
 
 You can stay up to date on FDA approvals by visiting or subscribing to:
 - [FDA press announcements](https://www.fda.gov/news-events/fda-newsroom/press-announcements)
@@ -111,8 +111,8 @@ FDA approvals will complete fields as follows,
 - `last_updated`, with the last updated time
 - `doi`, `pmid`, and `nct` will be left blank
 
-The description for an FDA assertion should follow this template, 
-> The U.S. Food and Drug Administration (FDA) granted {accelerated, if applicable} to {generic name} {text from INDICATIONS AND USAGE}. 
+The description for an FDA assertion should follow this template,
+> The U.S. Food and Drug Administration (FDA) granted {accelerated, if applicable} to {generic name} {text from INDICATIONS AND USAGE}.
 
 For example,
 > The U.S. Food and Drug Administration (FDA) granted accelerated approval to tazemetostat, an EZH2 inhibitor, for adult patients with relapsed or refactory (R/R) follicular lymphoma (FL) whose tumors are positive for an EZH2 mutation as detected by an FDA-approved test and who have received at least 2 prior systemic therapies, and for adult patients with R/R FL who have no satisfactory alternative treatment options.
@@ -126,21 +126,21 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Guidelines
-PDFs should be saved as `{publication year}.{version}-{tumor type}.pdf` in the `database/guidelines` folder. 
+PDFs should be saved as `{publication year}.{version}-{tumor type}.pdf` in the `database/guidelines` folder.
 
 ###### Fields
 Guidelines will complete fields as follows,
-- `description`, see below 
+- `description`, see below
 - `source_type` with `Guideline`
 - `citation`, see below
 - `url`, is a URL to access the PDF containing the cliniacl guideline
 - `last_updated`, with the last updated time
 - `doi`, `pmid`, and `nct` will be left blank
 
-The description for guidelines should brief readers on the relationship, following the [NCCN's referencing guidance](https://www.nccn.org/docs/default-source/business-policy/nccn-referencing-guidance.pdf), 
+The description for guidelines should brief readers on the relationship, following the [NCCN's referencing guidance](https://www.nccn.org/docs/default-source/business-policy/nccn-referencing-guidance.pdf),
 > [Generic name (brand name)] is recommended by the National Comprehensive Cancer Network® (NCCN®) as a treatment option for [setting and cancer type]
 
-The citation for guidelines should follow the [NCCN's referencing guidance](https://www.nccn.org/docs/default-source/business-policy/nccn-referencing-guidance.pdf): 
+The citation for guidelines should follow the [NCCN's referencing guidance](https://www.nccn.org/docs/default-source/business-policy/nccn-referencing-guidance.pdf):
 > Referenced with permission from the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Guideline Name V.X.202X. © National Comprehensive Cancer Network, Inc. 202X. All rights reserved. Accessed Month and Day, Year]. To view the most recent and complete version of the guideline, go online to NCCN.org.
 
 For example,
@@ -153,7 +153,7 @@ PDFs should be saved as `{publication year}-{first author last name}.pdf` in the
 
 ###### Fields
 Journal articles will complete fields as follows,
-- `description`, see below 
+- `description`, see below
 - `source_type` with `Journal`
 - `citation`, see below
 - `url`, is formatted based on the DOI; for example, `https://doi.org/{doi}`
@@ -162,21 +162,21 @@ Journal articles will complete fields as follows,
 - `pmid`, with the PubMed ID for the article, if it exists
 - `nct`, with the National Clinical Trial code if the article is related to a clinical trial. Otherwise this field may be left blank.
 
-The description for journal articles should contain a few sentences briefing readers of the assertion(s) made in the publication. These will be displayed in the clinical actionability reports produced by the method. For example, 
+The description for journal articles should contain a few sentences briefing readers of the assertion(s) made in the publication. These will be displayed in the clinical actionability reports produced by the method. For example,
 > BRAF V600E mutations were associated with sensitivity to the BRAF inhibitor PLX-4032 in a study of 109 microdissected pancreatic ductal adenocarcinoma patients.
 
-The citation for journal articles should follow the [American Medical Association (AMA)](https://owl.purdue.edu/owl/research_and_citation/ama_style/index.html) style format. [Online tools](https://citation.crosscite.org/) exist to generate such citations from PubMed IDs, URLs, or DOIs, but please double check the entries. 
+The citation for journal articles should follow the [American Medical Association (AMA)](https://owl.purdue.edu/owl/research_and_citation/ama_style/index.html) style format. [Online tools](https://citation.crosscite.org/) exist to generate such citations from PubMed IDs, URLs, or DOIs, but please double check the entries.
 
-For example, 
+For example,
 > Witkiewicz AK, Mcmillan EA, Balaji U, et al. Whole-exome sequencing of pancreatic cancer defines genetic diversity and therapeutic targets. Nat Commun. 2015;6:6744.
 
 [Return to Table of Contents](#table-of-contents)
 
 ### Molecular features
-Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband. 
+Molecular Oncology Almanac catalogues several feature types that are associated with clinical relevance. Each catalogued relationship is associated with at least one molecular feature. Fields required are specific to each feature type, and are defined below. For example, copy number alterations are defined by a gene, direction, and cytoband.
 
 #### Types of molecular features
-The following feature types are currently cataloged in our knowledge base: 
+The following feature types are currently cataloged in our knowledge base:
 - [Aneuploidy](#aneuploidy)
 - [Copy number alterations](#copy-number-alterations)
 - [Germline variants](#germline-variants)
@@ -190,19 +190,19 @@ The following feature types are currently cataloged in our knowledge base:
 [Return to Table of Contents](#table-of-contents)
 
 ##### Aneuploidy
-Aneuploidy captures genome-wide events such as whole-genome doubling. 
+Aneuploidy captures genome-wide events such as whole-genome doubling.
 
 ###### Fields
 Molecular data for aneuploidy events should be captured in the following field,
 - `event` (required, string), the type of aneuploidy event being described
 
-For example, 
+For example,
 > {'event': 'Whole-genome doubling'}
 
 [Return to Table of Contents](#table-of-contents)
 
 ##### Copy number alterations
-Copy number alterations capture changes to the number of copies of a particular gene present in the genome of an individual. 
+Copy number alterations capture changes to the number of copies of a particular gene present in the genome of an individual.
 
 ###### Fields
 Molecular data for copy number alterations should be captured in the following fields,
@@ -216,7 +216,7 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Germline variants
-Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
+Germline variants are mutations present within a patient's inherited genome. The fields are largely similar to those required for [somatic variants](#somatic-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/).
 
 ###### Fields
 Molecular data for germline variants should be captured in the following fields,
@@ -239,7 +239,7 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Knockdowns
-Knockdowns are an experimental technique to reduce expression of a gene. 
+Knockdowns are an experimental technique to reduce expression of a gene.
 
 ###### Fields
 Molecular data for knockdowns should be captured in the following fields,
@@ -252,21 +252,21 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Microsatellite stability
-The number of repeated DNA bases within a microsatellite](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/microsatellite-instability) may differ from the inherited genome in some cancers, and occurs when mismatch repair is malfunctioning. This phenomena is called microsatellite instability due to the not stable length of microsatellites. 
+The number of repeated DNA bases within a microsatellite](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/microsatellite-instability) may differ from the inherited genome in some cancers, and occurs when mismatch repair is malfunctioning. This phenomena is called microsatellite instability due to the not stable length of microsatellites.
 
 ###### Fields
 Molecular data for microsatellite events should be captured in the following fields,
 - `status` (required, string), the test result from an MSI screening - MSI-High (MSI-H), MSI-Low (MSI-L), or MSI-Stable (MSS)
 
 For example,
-> {'status': 'MSI-High'} 
+> {'status': 'MSI-High'}
 
 [Return to Table of Contents](#table-of-contents)
 
 ##### Mutational burden
-The number of coding somatic variants per megabase is of interest due to reported response to immunotherapy. This metric is calculated by dividing the number of called nonsynonymous somatic variants by the number of bases that were evaluated for variant. The denominator should also reflect bases [that were sufficiently powered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3833702/) to call variants at their location.  
+The number of coding somatic variants per megabase is of interest due to reported response to immunotherapy. This metric is calculated by dividing the number of called nonsynonymous somatic variants by the number of bases that were evaluated for variant. The denominator should also reflect bases [that were sufficiently powered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3833702/) to call variants at their location.
 
-Reporting of tumor mutational burden is [not standardized and is impacted by the sequencing modality](https://pubmed.ncbi.nlm.nih.gov/31832578/). While most sources report TMB categorically (e.g., High or Low), sources differ by how they categorize. Some may report a minimum number of mutations, others the mutations per megabase, or sometimes only share the categorical call. 
+Reporting of tumor mutational burden is [not standardized and is impacted by the sequencing modality](https://pubmed.ncbi.nlm.nih.gov/31832578/). While most sources report TMB categorically (e.g., High or Low), sources differ by how they categorize. Some may report a minimum number of mutations, others the mutations per megabase, or sometimes only share the categorical call.
 
 ###### Fields
 Molecular data for tumor mutational burden should be captured in the following fields,
@@ -280,11 +280,11 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Mutational signatures
-Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), and currently supports single base substitutions (SBS) signatures from version 3.4. 
+Considering the type of substitution (e.g., C>A, C>T, T>G) along with the immediate neighboring bases results in 96 possible trinucleotide contexts for somatic variants. The patterns of somatic variation that occur within these trinucleotide contexts [has been shown to be associated with mutational processes in cancer](https://pubmed.ncbi.nlm.nih.gov/23945592/), and have been given the name mutational signatures. The Molecular Oncology Almanac utilizes mutational signatures [reported by COSMIC](https://cancer.sanger.ac.uk/signatures/), and currently supports single base substitutions (SBS) signatures from version 3.4.
 
 ###### Fields
 Molecular data for mutational signatures should be captured in the following fields,
-- `cosmic_signature` (required, string), the string associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures/sbs/), either as reported by the citation or mapped from a prior version. 
+- `cosmic_signature` (required, string), the string associated with the mutational signature based on [COSMIC's reporting](https://cancer.sanger.ac.uk/signatures/signatures/sbs/), either as reported by the citation or mapped from a prior version.
 
 [Return to Table of Contents](#table-of-contents)
 
@@ -304,7 +304,7 @@ For example,
 [Return to Table of Contents](#table-of-contents)
 
 ##### Somatic variants
-Somatic variants are mutations that are not present in a patient's inherited genome. The fields are largely similar to those required for [germline variants](#germline-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/). 
+Somatic variants are mutations that are not present in a patient's inherited genome. The fields are largely similar to those required for [germline variants](#germline-variants). MOAlmanac follows guidelines specificed by the [Sequence Variant Nomenclature](https://varnomen.hgvs.org/).
 
 ###### Fields
 Molecular data for germline variants should be captured in the following fields,
@@ -336,7 +336,7 @@ The assertion of a relationship describes the claim made by a source and connect
 - `oncotree_code` (optional, string), appropriate [Oncotree](http://oncotree.mskcc.org/#/home) code for a described `disease`
 - `therapy_name` (optional, string), associated with therapeutic sensitivity or resistance. The generic drug name should be used, if applicable, and catalogued as a proper noun. Required for assertions related to therapeutic sensitivity or resistance. In the case that an assertion contains two or more therapies, join them into a single string with ` + ` with both items capitalized; for example, `Dabrafenib + Trametinib`. Multiple therapies should be listed in alphabetical order.
 - `therapy_strategy` (optional, string), associated therapeutic strategy or mechanism of action of the assertion. Required for assertions related to therapeutic sensitivity or resistance. In the case that an assertion contains two or more therapies or a utilized therapeutic strategy has multiple mechanisms, join them into a single string with ` + ` with both items capitalized; for example, `CDK4/6 inhibition + MEK inhibition`. Multiple strategies should correspond to the order of the listed therapies. Multiple strategies associated with a single therapy should be listed in alphabetical order.
-- `therapy_type` (optional, string), categorical value for the therapy type of the associated therapy based on the categories presented by the [National Institute of Health](https://www.cancer.gov/about-cancer/treatment/types). As of this writing, we have catalogued: `Targeted therapy`, `Immunotherapy`, `Chemotherapy`, `Radiation therapy`, `Hormone therapy`. `Combination therapy` is entered for any therapies that utilize two or more therapy types; for example, `Dabrafenib + Trametinib` is catalogued as a `Targeted therapy` while `Ipilimumab + Vemurafenib` is catalogued as a `Combination therapy`. 
+- `therapy_type` (optional, string), categorical value for the therapy type of the associated therapy based on the categories presented by the [National Institute of Health](https://www.cancer.gov/about-cancer/treatment/types). As of this writing, we have catalogued: `Targeted therapy`, `Immunotherapy`, `Chemotherapy`, `Radiation therapy`, `Hormone therapy`. `Combination therapy` is entered for any therapies that utilize two or more therapy types; for example, `Dabrafenib + Trametinib` is catalogued as a `Targeted therapy` while `Ipilimumab + Vemurafenib` is catalogued as a `Combination therapy`.
 - `therapy_sensitivity` (optional, integer), `1` if the relationship asserts sensitive to a therapy, `0` if the relationship asserts not sensitive to a therapy, and blank otherwise.
 - `therapy_resistance` (optional, integer), `1` if the relationship asserts resistance to a therapy, `0` if the relationship asserts not resistive to a therapy, and blank otherwise.
 - `favorable_prognosis` (optional, integer), `1` if the relationship asserts a disease prognosis that is favorable, `0` if the relationship asserts a disease prognosis that is not favorable, and blank otherwise
