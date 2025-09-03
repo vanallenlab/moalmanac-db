@@ -1,3 +1,7 @@
+# Postpones evaluation of type annotations so classes can be referenced before they are defined
+# (avoids needing quotes around type names)
+from __future__ import annotations
+
 import argparse
 
 # Local imports
@@ -146,10 +150,10 @@ class Biomarkers(BaseTable):
 
     def dereference(
         self,
-        genes: "Genes",
-        resolve_dependencies=True,
-        codings: "Codings" = None,
-        mappings: "Mappings" = None,
+        genes: Genes,
+        resolve_dependencies: bool = True,
+        codings: Codings | None = None,
+        mappings: Mappings | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Genes table and optionally resolves dependencies
@@ -175,7 +179,7 @@ class Biomarkers(BaseTable):
 
         self.dereference_genes(genes=genes)
 
-    def dereference_genes(self, genes: "Genes") -> None:
+    def dereference_genes(self, genes: Genes) -> None:
         """
         Dereferences the `genes` key in each biomarker record.
 
@@ -217,7 +221,7 @@ class Contributions(BaseTable):
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
 
-    def dereference(self, agents: "Agents") -> None:
+    def dereference(self, agents: Agents) -> None:
         """
         Dereferences all referenced keys within the Contributions table.
 
@@ -226,7 +230,7 @@ class Contributions(BaseTable):
         """
         self.dereference_agents(agents=agents)
 
-    def dereference_agents(self, agents: "Agents") -> None:
+    def dereference_agents(self, agents: Agents) -> None:
         """
         Dereferences the `agent_id` key in each contribution record.
 
@@ -262,9 +266,9 @@ class Diseases(BaseTable):
 
     def dereference(
         self,
-        codings: "Codings",
-        mappings: "Mappings",
-        resolve_dependencies=True,
+        codings: Codings,
+        mappings: Mappings,
+        resolve_dependencies: bool = True,
     ) -> None:
         """
         Dereferences all referenced keys within the Diseases table and optionally resolves dependencies
@@ -285,7 +289,7 @@ class Diseases(BaseTable):
         self.dereference_codings(codings=codings)
         self.dereference_mappings(mappings=mappings)
 
-    def dereference_codings(self, codings: "Codings") -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -311,7 +315,7 @@ class Diseases(BaseTable):
                 new_key="primaryCoding",
             )
 
-    def dereference_mappings(self, mappings: "Mappings") -> None:
+    def dereference_mappings(self, mappings: Mappings) -> None:
         """
         Dereferences the `mappings` key in each gene record.
 
@@ -347,7 +351,7 @@ class Documents(BaseTable):
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference(self, organizations: "Organizations") -> None:
+    def dereference(self, organizations: Organizations) -> None:
         """
         Dereferences all referenced keys within the Diseases table.
 
@@ -356,7 +360,7 @@ class Documents(BaseTable):
         """
         self.dereference_organizations(organizations=organizations)
 
-    def dereference_organizations(self, organizations: "Organizations") -> None:
+    def dereference_organizations(self, organizations: Organizations) -> None:
         """
         Dereferences the `organization_id` key in each document record.
 
@@ -396,9 +400,9 @@ class Genes(BaseTable):
 
     def dereference(
         self,
-        codings: "Codings",
-        mappings: "Mappings",
-        resolve_dependencies=True,
+        codings: Codings,
+        mappings: Mappings,
+        resolve_dependencies: bool = True,
     ) -> None:
         """
         Dereferences all referenced keys within the Genes table and optionally resolves dependencies
@@ -419,7 +423,7 @@ class Genes(BaseTable):
         self.dereference_codings(codings=codings)
         self.dereference_mappings(mappings=mappings)
 
-    def dereference_codings(self, codings: "Codings") -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -445,7 +449,7 @@ class Genes(BaseTable):
                 new_key="primaryCoding",
             )
 
-    def dereference_mappings(self, mappings: "Mappings") -> None:
+    def dereference_mappings(self, mappings: Mappings) -> None:
         """
         Dereferences the `mappings` key in each gene record.
 
@@ -483,9 +487,9 @@ class Indications(BaseTable):
 
     def dereference(
         self,
-        documents: "Documents",
-        resolve_dependencies=True,
-        organizations: "Organizations" = None,
+        documents: Documents,
+        resolve_dependencies: bool = True,
+        organizations: Organizations | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Indications table and optionally resolves dependencies
@@ -506,7 +510,7 @@ class Indications(BaseTable):
 
         self.dereference_documents(documents=documents)
 
-    def dereference_documents(self, documents: "Documents") -> None:
+    def dereference_documents(self, documents: Documents) -> None:
         """
         Dereferences the `document_id` key in each indication record.
 
@@ -539,7 +543,7 @@ class Mappings(BaseTable):
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
 
-    def dereference(self, codings: "Codings") -> None:
+    def dereference(self, codings: Codings) -> None:
         """
         Dereferences all referenced keys within the Mappings table.
 
@@ -552,7 +556,7 @@ class Mappings(BaseTable):
         """
         self.dereference_codings(codings=codings)
 
-    def dereference_codings(self, codings: "Codings") -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `coding_id` key in each coding record.
 
@@ -599,14 +603,14 @@ class Propositions(BaseTable):
 
     def dereference(
         self,
-        biomarkers: "Biomarkers",
-        diseases: "Diseases",
-        therapies: "Therapies",
-        therapy_groups: "TherapyGroups",
-        resolve_dependencies=True,
-        codings: "Codings" = None,
-        genes: "Genes" = None,
-        mappings: "Mappings" = None,
+        biomarkers: Biomarkers,
+        diseases: Diseases,
+        therapies: Therapies,
+        therapy_groups: TherapyGroups,
+        resolve_dependencies: bool = True,
+        codings: Codings | None = None,
+        genes: Genes | None = None,
+        mappings: Mappings | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
@@ -659,7 +663,7 @@ class Propositions(BaseTable):
             therapies=therapies, therapy_groups=therapy_groups
         )
 
-    def dereference_biomarkers(self, biomarkers: "Biomarkers") -> None:
+    def dereference_biomarkers(self, biomarkers: Biomarkers) -> None:
         """
         Dereferences the `biomarkers` key in each proposition record.
 
@@ -681,7 +685,7 @@ class Propositions(BaseTable):
                 key_always_present=True,
             )
 
-    def dereference_diseases(self, diseases: "Diseases") -> None:
+    def dereference_diseases(self, diseases: Diseases) -> None:
         """
         Dereferences the `conditionQualifier_id` key in each proposition record.
 
@@ -708,7 +712,7 @@ class Propositions(BaseTable):
             )
 
     def dereference_therapeutics(
-        self, therapies: "Therapies", therapy_groups: "TherapyGroups"
+        self, therapies: Therapies, therapy_groups: TherapyGroups
     ) -> None:
         """
         Dereferences the `therapy_id` key or `therapy_group_id` key in each proposition record.
@@ -770,21 +774,21 @@ class Statements(BaseTable):
 
     def dereference(
         self,
-        contributions: "Contributions",
-        documents: "Documents",
-        indications: "Indications",
-        propositions: "Propositions",
-        strengths: "Strengths",
-        resolve_dependencies=True,
-        agents: "Agents" = None,
-        biomarkers: "Biomarkers" = None,
-        codings: "Codings" = None,
-        diseases: "Diseases" = None,
-        genes: "Genes" = None,
-        mappings: "Mappings" = None,
-        organizations: "Organizations" = None,
-        therapies: "Therapies" = None,
-        therapy_groups: "TherapyGroups" = None,
+        codings: Codings,
+        contributions: Contributions,
+        documents: Documents,
+        indications: Indications,
+        mappings: Mappings,
+        propositions: Propositions,
+        strengths: Strengths,
+        resolve_dependencies: bool = True,
+        agents: Agents | None = None,
+        biomarkers: Biomarkers | None = None,
+        diseases: Diseases | None = None,
+        genes: Genes | None = None,
+        organizations: Organizations | None = None,
+        therapies: Therapies | None = None,
+        therapy_groups: TherapyGroups | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
@@ -856,7 +860,7 @@ class Statements(BaseTable):
         self.dereference_propositions(propositions=propositions)
         self.dereference_strengths(strengths=strengths)
 
-    def dereference_contributions(self, contributions: "Contributions") -> None:
+    def dereference_contributions(self, contributions: Contributions) -> None:
         """
         Dereferences the `contributions` key in each statement record.
 
@@ -878,7 +882,7 @@ class Statements(BaseTable):
                 key_always_present=True,
             )
 
-    def dereference_documents(self, documents: "Documents") -> None:
+    def dereference_documents(self, documents: Documents) -> None:
         """
         Dereferences the `reportedIn` key in each statement record.
 
@@ -900,7 +904,7 @@ class Statements(BaseTable):
                 key_always_present=True,
             )
 
-    def dereference_indications(self, indications: "Indications") -> None:
+    def dereference_indications(self, indications: Indications) -> None:
         """
         Dereferences the `indication_id` key in each statement record.
 
@@ -926,7 +930,7 @@ class Statements(BaseTable):
                 record=record, old_key="indication_id", new_key="indication"
             )
 
-    def dereference_propositions(self, propositions: "Propositions") -> None:
+    def dereference_propositions(self, propositions: Propositions) -> None:
         """
         Dereferences the `proposition_id` key in each statement record.
 
@@ -950,7 +954,7 @@ class Statements(BaseTable):
                 record=record, old_key="proposition_id", new_key="proposition"
             )
 
-    def dereference_strengths(self, strengths: "Strengths") -> None:
+    def dereference_strengths(self, strengths: Strengths) -> None:
         """
         Dereferences the `strength_id` key in each statement record.
 
@@ -983,10 +987,10 @@ class Strengths(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: "Codings") -> None:
+    def dereference(self, codings: Codings) -> None:
         self.dereference_codings(codings=codings)
 
-    def dereference_codings(self, codings: "Codings") -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -1025,9 +1029,9 @@ class Therapies(BaseTable):
 
     def dereference(
         self,
-        codings: "Codings",
-        resolve_dependencies=True,
-        mappings: "Mappings" = None,
+        codings: Codings,
+        resolve_dependencies: bool = True,
+        mappings: Mappings | None = None,
     ) -> None:
         if resolve_dependencies:
             if codings and mappings:
@@ -1035,7 +1039,7 @@ class Therapies(BaseTable):
 
         self.dereference_codings(codings=codings)
 
-    def dereference_codings(self, codings: "Codings") -> None:
+    def dereference_codings(self, codings: Codings) -> None:
         """
         Dereferences the `primary_coding_id` key in each strength record.
 
@@ -1075,9 +1079,9 @@ class TherapyGroups(BaseTable):
     def dereference(
         self,
         therapies: "Therapies",
-        resolve_dependencies=True,
-        codings: "Codings" = None,
-        mappings: "Mappings" = None,
+        resolve_dependencies: bool = True,
+        codings: Codings | None = None,
+        mappings: Mappings | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Therapy Groups table and optionally resolves dependencies
@@ -1103,7 +1107,7 @@ class TherapyGroups(BaseTable):
 
         self.dereference_therapies(therapies=therapies)
 
-    def dereference_therapies(self, therapies: "Therapies") -> None:
+    def dereference_therapies(self, therapies: Therapies) -> None:
         """
         Dereferences the `therapies_id` key in each therapy group record.
 
