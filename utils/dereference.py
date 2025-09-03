@@ -1206,17 +1206,17 @@ if __name__ == "__main__":
         "--about",
         help="json detailing db metadata",
         default="referenced/about.json",
-    ),
+    )
     arg_parser.add_argument(
         "--agents",
         help="json detailing agents",
         default="referenced/agents.json",
-    ),
+    )
     arg_parser.add_argument(
         "--biomarkers",
         help="json detailing db biomarkers",
         default="referenced/biomarkers.json",
-    ),
+    )
     arg_parser.add_argument(
         "--codings",
         help="json detailing db codings",
@@ -1226,12 +1226,12 @@ if __name__ == "__main__":
         "--contributions",
         help="json detailing db contributions",
         default="referenced/contributions.json",
-    ),
+    )
     arg_parser.add_argument(
         "--diseases",
         help="json detailing db diseases",
         default="referenced/diseases.json",
-    ),
+    )
     arg_parser.add_argument(
         "--documents",
         help="json detailing db documents",
@@ -1241,12 +1241,12 @@ if __name__ == "__main__":
         "--genes",
         help="json detailing db genes",
         default="referenced/genes.json",
-    ),
+    )
     arg_parser.add_argument(
         "--indications",
         help="json detailing db indications",
         default="referenced/indications.json",
-    ),
+    )
     arg_parser.add_argument(
         "--mappings",
         help="json detailing db mappings",
@@ -1256,17 +1256,17 @@ if __name__ == "__main__":
         "--organizations",
         help="json detailing db organizations",
         default="referenced/organizations.json",
-    ),
+    )
     arg_parser.add_argument(
         "--propositions",
         help="json detailing db propositions",
         default="referenced/propositions.json",
-    ),
+    )
     arg_parser.add_argument(
         "--statements",
         help="json detailing db statements",
         default="referenced/statements.json",
-    ),
+    )
     arg_parser.add_argument(
         "--strengths",
         help="json detailing db strengths",
