@@ -6,7 +6,7 @@ Molecular Oncology Almanac (MOAlmanac) is a clinical interpretation algorithm pa
 The underlying database of this method is dependent on expert curation of the current body of knowledge on how molecular alterations affect clinical actionability. As the field of precision oncology grows, the quantity of research on how specific alterations affect therapeutic response and patient prognosis expands at an increasing rate. Curating the latest literature and presenting it in an accessible manner increases the abilities of clinicians and researchers alike to rapidly assess the importance of a molecular feature.
 
 ## Using this repository
-Browse the contents of the Molecular Oncology Almanac through this repository, our [browser (https://moalmanac.org)](https://moalmanac.org), or our [API](https://app.swaggerhub.com/apis-docs/vanallenlab/almanac-browser). Previous releases, with release notes, can be found under [releases](https://github.com/vanallenlab/moalmanac-db/releases) and a history of all changes can be read in the [content changelog](docs/CHANGELOG.md).
+Browse the contents of the Molecular Oncology Almanac through this repository, our [browser (https://moalmanac.org)](https://moalmanac.org), or our [API](https://app.swaggerhub.com/apis-docs/vanallenlab/almanac-browser). Previous releases, with release notes, can be found under [releases](https://github.com/vanallenlab/moalmanac-db/releases) and a history of all changes can be read in the [content changelog](https://news.moalmanac.org/category/database).
 
 If you wish to suggest an assertion for cataloging in this database, you can do so by
 - Following our [standard operating procedure](/docs/sop.md) and opening a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
@@ -23,7 +23,7 @@ cd moalmanac-db
 ```
 
 ### Python dependencies
-This repository uses Python 3.12. We recommend using a [virtual environment](https://docs.python.org/3/tutorial/venv.html) and running Python with either [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html). 
+This repository uses Python 3.12. We recommend using a [virtual environment](https://docs.python.org/3/tutorial/venv.html) and running Python with either [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html).
 
 Run the following from this repository's directory to create a virtual environment and install dependencies with Anaconda or Miniconda:
 ```bash
@@ -32,7 +32,7 @@ conda activate moalmanac-db
 pip install -r requirements.txt
 ```
 
-Or, if using base Python: 
+Or, if using base Python:
 ```bash
 virtualenv venv
 source activate venv/bin/activate
@@ -52,7 +52,7 @@ pytest tests/
 ```
 
 ## Citation
-If you find this tool or any code herein useful, please cite:  
+If you find this tool or any code herein useful, please cite:
 > [Reardon, B., Moore, N.D., Moore, N.S., *et al*. Integrating molecular profiles into clinical frameworks through the Molecular Oncology Almanac to prospectively guide precision oncology. *Nat Cancer* (2021). https://doi.org/10.1038/s43018-021-00243-3](https://www.nature.com/articles/s43018-021-00243-3)
 
 ## Disclaimer - For research use only
