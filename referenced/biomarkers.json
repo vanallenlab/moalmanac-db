@@ -8863,5 +8863,67 @@
         "value": true
       }
     ]
+  },
+  {
+    "id": 174,
+    "type": "CategoricalVariant",
+    "name": "HER2-ultralow",
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Protein expression"
+      },
+      {
+        "name": "marker",
+        "value": "Human epidermal growth factor receptor 2 (HER2)"
+      },
+      {
+        "name": "unit",
+        "value": "status"
+      },
+      {
+        "name": "equality",
+        "value": "="
+      },
+      {
+        "name": "value",
+        "value": "Ultralow"
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "type": "CategoricalVariant",
+    "name": "PD-L1 (TAP) >= 5%",
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Protein expression"
+      },
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Tumor Area Positivity (TAP)"
+      },
+      {
+        "name": "equality",
+        "value": ">="
+      },
+      {
+        "name": "value",
+        "value": 0.05
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
   }
 ]
