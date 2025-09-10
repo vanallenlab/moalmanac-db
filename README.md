@@ -1,4 +1,7 @@
 # Molecular Oncology Almanac - Database
+[![DOI](https://zenodo.org/badge/318264235.svg)](https://doi.org/10.5281/zenodo.17089309)
+[![License](https://img.shields.io/github/license/vanallenlab/moalmanac-db.svg)](./LICENSE)
+
 **We are in the process of updating to a new database schema. Read more [here](/docs/referenced-schema-draft-about.md)**!
 
 Molecular Oncology Almanac (MOAlmanac) is a clinical interpretation algorithm paired with an underlying knowledge base for precision oncology. The primary objective of MOAlmanac is to identify and associate molecular alterations with therapeutic sensitivity and resistance as well as disease prognosis. This is done for “first-order” genomic alterations -- individual events such as somatic variants, copy number alterations, fusions, and germline -- as well as “second-order” events -- those that are not associated with one single mutation, and may be descriptive of global processes in the tumor such as tumor mutational burden, microsatellite instability, mutational signatures, and whole-genome doubling.
@@ -54,6 +57,10 @@ pytest tests/
 ## Citation
 If you find this tool or any code herein useful, please cite:
 > [Reardon, B., Moore, N.D., Moore, N.S., *et al*. Integrating molecular profiles into clinical frameworks through the Molecular Oncology Almanac to prospectively guide precision oncology. *Nat Cancer* (2021). https://doi.org/10.1038/s43018-021-00243-3](https://www.nature.com/articles/s43018-021-00243-3)
+
+If you want to cite a specific version of the database, use our Zenodo DOIs.
+- The concept DOI always points to the latest version: [https://doi.org/10.5281/zenodo.17089309)](https://doi.org/10.5281/zenodo.17089309).
+- Each release also has a version-specific DOI. We began minting Zenodo DOIs with our 2025-09-04 release; if you would like a DOI for a prior version, please [contact us](https://dev.moalmanac.org/about#contact).
 
 ## Disclaimer - For research use only
 DIAGNOSTIC AND CLINICAL USE PROHIBITED. DANA-FARBER CANCER INSTITUTE (DFCI) and THE BROAD INSTITUTE (Broad) MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT OR VALIDITY OF ANY INTELLECTUAL PROPERTY RIGHTS OR CLAIMS, WHETHER ISSUED OR PENDING, AND THE ABSENCE OF LATENT OR OTHER DEFECTS, WHETHER OR NOT DISCOVERABLE.
