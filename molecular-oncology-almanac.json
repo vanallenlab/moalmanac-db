@@ -47484,5 +47484,55 @@
         "relation": "exactMatch"
       }
     ]
+  },
+  {
+    "feature_type": "Somatic Variant",
+    "gene": "NPM1",
+    "chromosome": 5,
+    "start_position": 171410544,
+    "end_position": 171410543,
+    "reference_allele": "-",
+    "alternate_allele": "TCTG",
+    "cdna_change": "c.860_863dup",
+    "protein_change": "p.W288Cfs*12",
+    "variant_annotation": "Frameshift",
+    "exon": 11,
+    "rsid": "rs587776806",
+    "disease": "Acute Myeloid Leukemia",
+    "context": "",
+    "oncotree_term": "Acute Myeloid Leukemia",
+    "oncotree_code": "AML",
+    "therapy_name": "Ziftomenib",
+    "therapy_strategy": "Menin inhibition",
+    "therapy_type": "Targeted therapy",
+    "therapy_sensitivity": 1,
+    "therapy_resistance": "",
+    "favorable_prognosis": "",
+    "predictive_implication": "FDA-Approved",
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to ziftomenib for the treatment of adult patients with relapsed or refractory acute myeloid leukemia (AML) with a susceptible nucleophosmin 1 (NPM1) mutation who have no satisfactory alternative treatment options. This approval is based on NCT04067336, an open-label, single-arm, multicenter clinical trial of 112 patients where eligibility criteria included NPM1 mutations, including Type A (c.860_863dupTCTG), B (c.863_864insCATG), and D (c.863_864insCCTG) mutations and other NPM1 mutations likely to result in cytoplasmic localization of the NPM1 protein.",
+    "source_type": "FDA",
+    "citation": "Kura Oncology, Inc. Komzifti (ziftomenib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220305s000lbl.pdf. Revised November 2025. Accessed December 23, 2025.",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220305s000lbl.pdf",
+    "doi": "",
+    "pmid": "",
+    "nct": "",
+    "publication_date": "2025-11-13",
+    "last_updated": "2025-12-23",
+    "_deprecated": false,
+    "assertion_id": 1014,
+    "feature_id": 920,
+    "source_id": 302,
+    "therapy_name_mappings": [
+      {
+        "coding": {
+          "id": "ncit:C113792",
+          "code": "C164227",
+          "name": "Ziftomenib",
+          "system": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/",
+          "systemVersion": "25.01d"
+        },
+        "relation": "exactMatch"
+      }
+    ]
   }
 ]
