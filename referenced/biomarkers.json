@@ -8991,5 +8991,102 @@
         "value": true
       }
     ]
+  },
+  {
+    "id": 177,
+    "type": "Categorical Variant",
+    "name": "NPM1 p.W288Cfs*12",
+    "genes": [
+      62
+    ],
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Somatic Variant"
+      },
+      {
+        "name": "chromosome",
+        "value": "5"
+      },
+      {
+        "name": "start_position",
+        "value": 171410544
+      },
+      {
+        "name": "end_position",
+        "value": 171410543
+      },
+      {
+        "name": "reference_allele",
+        "value": "-"
+      },
+      {
+        "name": "alternate_allele",
+        "value": "TCTG"
+      },
+      {
+        "name": "cdna_change",
+        "value": "c.860_863dup"
+      },
+      {
+        "name": "protein_change",
+        "value": "p.W288Cfs*12"
+      },
+      {
+        "name": "variant_annotation",
+        "value": "Frameshift"
+      },
+      {
+        "name": "exon",
+        "value": "11/11"
+      },
+      {
+        "name": "rsid",
+        "value": "rs587776806"
+      },
+      {
+        "name": "hgvsg",
+        "value": "5:g.171410540_171410543dup"
+      },
+      {
+        "name": "hgvsc",
+        "value": "NM_002520.7:c.860_863dup"
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "type": "CategoricalVariant",
+    "name": "PD-L1 (TAP) >= 1%",
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Protein expression"
+      },
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Tumor Area Positivity (TAP)"
+      },
+      {
+        "name": "equality",
+        "value": ">="
+      },
+      {
+        "name": "value",
+        "value": 0.01
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
   }
 ]
