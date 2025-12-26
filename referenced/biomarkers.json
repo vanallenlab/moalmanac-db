@@ -9057,5 +9057,36 @@
         "value": true
       }
     ]
-  }
+  },
+  {
+    "id": 178,
+    "type": "CategoricalVariant",
+    "name": "PD-L1 (TAP) >= 1%",
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Protein expression"
+      },
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Tumor Area Positivity (TAP)"
+      },
+      {
+        "name": "equality",
+        "value": ">="
+      },
+      {
+        "name": "value",
+        "value": 0.01
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
+  },
 ]
