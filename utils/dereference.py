@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 
 # Local imports
 from utils import json_utils
@@ -1130,6 +1131,59 @@ class TherapyGroups(BaseTable):
             )
 
 
+def dereference_agents(input_paths):
+    """
+    Write each Agent to the dereferenced/agents/ folder.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+    """
+    agents = read.json_records(file=input_paths["agents"])
+    agents = Agents(records=agents)
+    for agent in agents.records:
+        filename = f"{agent['id']}.json"
+        output = os.path.join("dereferenced", "agents", filename)
+        write.dictionary(data=agent, keys_list=[], file=output)
+
+
+def dereference_biomarkers(input_paths):
+    """
+    Docstring for dereference_biomarkers
+
+    :param input_paths: Description
+    """
+
+
+def dereference_codings(input_paths):
+    """
+    Write each Coding to the dereferenced/codings/ folder.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+    """
+    codings = read.json_records(file=input_paths["codings"])
+    codings = Codings(records=codings)
+    for coding in codings.records:
+        filename = f"{coding['id']}.json"
+        output = os.path.join("dereferenced", "codings", filename)
+        write.dictionary(data=coding, keys_list=[], file=output)
+
+
+def dereference_organizations(input_paths):
+    """
+    Write each Organizations to the dereferenced/organizations/ folder.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+    """
+    organizations = read.json_records(file=input_paths["organizations"])
+    organizations = Organizations(records=organizations)
+    for organization in organizations.records:
+        filename = f"{organization['id']}.json"
+        output = os.path.join("dereferenced", "organizations", filename)
+        write.dictionary(data=organization, keys_list=[], file=output)
+
+
 def main(input_paths):
     """
     Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
@@ -1198,7 +1252,9 @@ def main(input_paths):
         resolve_dependencies=True,
     )
 
-    return {"about": about, "content": statements.records}
+    data = {"about": about, "content": statements.records}
+    write.dictionary(data=data, keys_list=["content"], file=args.output)
+    return data
 
 
 if __name__ == "__main__":
@@ -1312,5 +1368,8 @@ if __name__ == "__main__":
         "therapy_groups": args.therapy_groups,
     }
 
+    dereference_agents(input_paths=input_data)
+    # dereference_codings(input_paths=input_data)
+    # dereference_organizations(input_paths=input_data)
+
     dereferenced = main(input_paths=input_data)
-    write.dictionary(data=dereferenced, keys_list=["content"], file=args.output)
