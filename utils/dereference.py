@@ -1370,6 +1370,6 @@ if __name__ == "__main__":
 
     dereference_agents(input_paths=input_data)
     # dereference_codings(input_paths=input_data)
-    # dereference_organizations(input_paths=input_data)
+    dereference_organizations(input_paths=input_data)
 
     dereferenced = main(input_paths=input_data)
