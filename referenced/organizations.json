@@ -1,37 +1,97 @@
 [
   {
     "id": "ema",
+    "type": "Agent",
+    "agentType": "organization",
     "name": "European Medicines Agency",
     "description": "Regulatory agency that approves medicines for use in the European Union.",
-    "url": "https://www.ema.europa.eu/en/medicines",
-    "last_updated": "2025-10-01"
+    "extensions": [
+      {
+        "name": "last_updated",
+        "value": "2025-10-01",
+        "description": ""
+      },
+      {
+        "name": "url",
+        "value": "https://www.ema.europa.eu/en/medicines",
+        "description": ""
+      }
+    ]
   },
   {
     "id": "fda",
+    "type": "Agent",
+    "agentType": "organization",
     "name": "Food and Drug Administration",
     "description": "Regulatory agency that approves drugs for use in the United States.",
-    "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
-    "last_updated": "2025-12-26"
+    "extensions": [
+      {
+        "name": "last_updated",
+        "value": "2025-12-26",
+        "description": ""
+      },
+      {
+        "name": "url",
+        "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+        "description": ""
+      }
+    ]
   },
   {
     "id": "hse",
+    "type": "Agent",
+    "agentType": "organization",
     "name": "Health Service Executive",
     "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland.",
-    "url": "https://www.hse.ie/eng/services/list/5/cancer/profinfo/chemoprotocols/",
-    "last_updated": "2025-10-01"
+    "extensions": [
+      {
+        "name": "last_updated",
+        "value": "2025-10-01",
+        "description": ""
+      },
+      {
+        "name": "url",
+        "value": "https://www.hse.ie/eng/services/list/5/cancer/profinfo/chemoprotocols/",
+        "description": ""
+      }
+    ]
   },
   {
     "id": "hpra",
+    "type": "Agent",
+    "agentType": "organization",
     "name": "Health Products Regulatory Authority",
     "description": "National register of authorized medicines in the Republic of Ireland.",
-    "url": "http://www.hpra.ie/homepage/medicines/medicines-information/find-a-medicine",
-    "last_updated": "2025-10-01"
+    "extensions": [
+      {
+        "name": "last_updated",
+        "value": "2025-10-01",
+        "description": ""
+      },
+      {
+        "name": "url",
+        "value": "http://www.hpra.ie/homepage/medicines/medicines-information/find-a-medicine",
+        "description": ""
+      }
+    ]
   },
   {
     "id": "hc",
+    "type": "Agent",
+    "agentType": "organization",
     "name": "Health Canada",
     "description": "Regulatory agency that approves drugs for sale and use in Canada.",
-    "url": "https://health-products.canada.ca/dpd-bdpp/",
-    "last_updated": "2025-06-11"
+    "extensions": [
+      {
+        "name": "last_updated",
+        "value": "2025-06-11",
+        "description": ""
+      },
+      {
+        "name": "url",
+        "value": "https://health-products.canada.ca/dpd-bdpp/",
+        "description": ""
+      }
+    ]
   }
 ]
