@@ -250,7 +250,7 @@ class Contributions(BaseTable):
                 referenced_key="agent_id",
                 referenced_records=agents.records,
             )
-            self.replace_key(record=record, old_key="agent_id", new_key="agent")
+            self.replace_key(record=record, old_key="agent_id", new_key="contributor")
 
 
 class Diseases(BaseTable):
