@@ -929,6 +929,11 @@ class Statements(BaseTable):
             self.replace_key(
                 record=record, old_key="indication_id", new_key="indication"
             )
+            indication = record.get("indication")
+            if isinstance(indication, dict):
+                description = indication.get("description")
+                if description is not None:
+                    record['description'] = description
 
     def dereference_propositions(self, propositions: Propositions) -> None:
         """
