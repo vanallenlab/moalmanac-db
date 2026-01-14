@@ -5,6 +5,7 @@ This directory contains a collection of utility scripts designed to facilitate t
 
 # Table of contents
 - [dereference.py](#dereferencepy)
+- [populate_statement_description_from_indication.py](#populate_statement_description_from_indicationpy)
 - [json_utils.py](#json_utilspy)
 - [read.py](#readpy)
 - [write.py](#writepy)
@@ -61,6 +62,31 @@ python -m utils.dereference \
   --therapies referenced/therapies.json \
   --therapy-groups referenced/therapy-groups.json \
   --output  moalmanac-draft.dereferenced.json
+```
+
+[Back to table of contents](#table-of-contents)
+
+## populate_statement_description_from_indication.py
+`populate_statement_description_from_indication.py` lifts the description key's value from indications.json for statement records that have an associated indication. This is done because indications to statements is a one to many mapping, and it allows us to modify description values for statements derived from indications only once.
+
+### Usage
+Optional arguments:
+```bash
+  --indications     <string>  referenced JSON for regulatory approvals. Default: referenced/indications.json
+  --statements      <string>  referenced JSON for statements. Default: referenced/statements.json
+```
+
+### Example
+To run with default parameters:
+```bash
+python -m utils.populate_statement_description_from_indication
+```
+
+Alternatively, all arguments can be specified explicitly:
+```bash
+python -m utils.populate_statement_description_from_indication \
+  --indications referenced/indications.json
+  --statements referenced/statements.json
 ```
 
 [Back to table of contents](#table-of-contents)

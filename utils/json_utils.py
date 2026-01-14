@@ -2,7 +2,7 @@ import json
 import typing
 
 
-def get_record_by_key_value(records: list[dict], value: typing.Any, key: str = "id", strict: bool = True) -> typing.Optional[dict]:
+def get_record_by_key_value(records: list[dict], value: typing.Any, key: str = "id", strict: bool = True) -> typing.Optional[dict] | None:
     """
     Retrieves a single record where a specified key matches the given value.
     Raises ValueError if zero or multiple matches are found, unless strict is False.
@@ -19,7 +19,7 @@ def get_record_by_key_value(records: list[dict], value: typing.Any, key: str = "
     Raises:
         ValueError: If the number of results is not exactly 1, and strict is enabled.
     """
-    matches = get_records_by_key_value(records=records, value=value, key=key)
+    matches = get_records_by_key_value(records=records, key=key, value=value)
     if strict and len(matches) != 1:
         raise ValueError(f"Warning: Expected 1 result for {key} == {value}, found {len(matches)}.")
     return matches[0] if matches else None
