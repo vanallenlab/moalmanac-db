@@ -346,44 +346,44 @@ class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Organizations (initial key: `organization_id`, resulting key: `organization`)
+    - Agents (initial key: `agent_id`, resulting key: `organization`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference(self, organizations: Organizations) -> None:
+    def dereference(self, agents: Agents) -> None:
         """
-        Dereferences all referenced keys within the Diseases table.
+        Dereferences all referenced keys within the Documents table.
 
         Args:
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            agents (Agents): An instance of the Agents class representing the agents table.
         """
-        self.dereference_organizations(organizations=organizations)
+        self.dereference_agents(agents=agents)
 
-    def dereference_organizations(self, organizations: Organizations) -> None:
+    def dereference_agents(self, agents: Agents) -> None:
         """
-        Dereferences the `organization_id` key in each document record.
+        Dereferences the `agent_id` key in each document record.
 
         Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `organization_id` key within each record. This key is expected to be present within each record, so a
+        `agent_id` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            agents (Agents): An instance of the Agents class representing the agents table.
 
         Raises:
-            KeyError: If the referenced_key, `organization_id`, is not found in a record.
+            KeyError: If the referenced_key, agent_id`, is not found in a record.
         """
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key="organization_id",
-                referenced_records=organizations.records,
+                referenced_key="agent_id",
+                referenced_records=agents.records,
             )
             self.replace_key(
                 record=record,
-                old_key="organization_id",
+                old_key="agent_id",
                 new_key="organization",
             )
 
@@ -490,7 +490,7 @@ class Indications(BaseTable):
         self,
         documents: Documents,
         resolve_dependencies: bool = True,
-        organizations: Organizations | None = None,
+        agents: Agents | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Indications table and optionally resolves dependencies
@@ -503,11 +503,11 @@ class Indications(BaseTable):
         Args:
             documents (Documents): An instance of the Documents class representing the documents table.
             resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            agents (Agents): An instance of the Agents class representing the agents table.
         """
         if resolve_dependencies:
-            if organizations:
-                documents.dereference(organizations=organizations)
+            if agents:
+                documents.dereference(agents=agents)
 
         self.dereference_documents(documents=documents)
 
@@ -575,18 +575,6 @@ class Mappings(BaseTable):
                 referenced_records=codings.records,
             )
             self.replace_key(record=record, old_key="coding_id", new_key="coding")
-
-
-class Organizations(BaseTable):
-    """
-    Represents the Organizations table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table does not currently reference any other tables.
-
-    Attributes:
-        records (list[dict]): A list of dictionaries representing the organizations table.
-    """
-
-    pass
 
 
 class Propositions(BaseTable):
@@ -787,7 +775,6 @@ class Statements(BaseTable):
         biomarkers: Biomarkers | None = None,
         diseases: Diseases | None = None,
         genes: Genes | None = None,
-        organizations: Organizations | None = None,
         therapies: Therapies | None = None,
         therapy_groups: TherapyGroups | None = None,
     ) -> None:
@@ -811,7 +798,6 @@ class Statements(BaseTable):
             diseases (Diseases): An instance of the Diseases class representing the diseases table.
             genes (Genes): An instance of the Genes class representing the genes table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
             strengths (Strengths): An instance of the Strengths class representing the strengths table.
             therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
             therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
@@ -821,6 +807,7 @@ class Statements(BaseTable):
                 mappings.dereference(codings=codings)
             if agents:
                 contributions.dereference(agents=agents)
+                documents.dereference(agents=agents)
             if biomarkers and genes:
                 genes.dereference(
                     codings=codings,
@@ -834,8 +821,6 @@ class Statements(BaseTable):
                     mappings=mappings,
                     resolve_dependencies=False,
                 )
-            if organizations:
-                documents.dereference(organizations=organizations)
             if therapies:
                 therapies.dereference(
                     codings=codings,
@@ -1169,21 +1154,6 @@ def dereference_codings(input_paths):
         write.dictionary(data=coding, keys_list=[], file=output)
 
 
-def dereference_organizations(input_paths):
-    """
-    Write each Organizations to the dereferenced/organizations/ folder.
-
-    Args:
-        input_paths (dict): Dictionary of paths to referenced JSON files.
-    """
-    organizations = read.json_records(file=input_paths["organizations"])
-    organizations = Organizations(records=organizations)
-    for organization in organizations.records:
-        filename = f"{organization['id']}.json"
-        output = os.path.join("dereferenced", "organizations", filename)
-        write.dictionary(data=organization, keys_list=[], file=output)
-
-
 def main(input_paths):
     """
     Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
@@ -1209,7 +1179,6 @@ def main(input_paths):
     genes = read.json_records(file=input_paths["genes"])
     indications = read.json_records(file=input_paths["indications"])
     mappings = read.json_records(file=input_paths["mappings"])
-    organizations = read.json_records(file=input_paths["organizations"])
     propositions = read.json_records(file=input_paths["propositions"])
     statements = read.json_records(file=input_paths["statements"])
     strengths = read.json_records(file=input_paths["strengths"])
@@ -1226,7 +1195,6 @@ def main(input_paths):
     genes = Genes(records=genes)
     indications = Indications(records=indications)
     mappings = Mappings(records=mappings)
-    organizations = Organizations(records=organizations)
     propositions = Propositions(records=propositions)
     statements = Statements(records=statements)
     strengths = Strengths(records=strengths)
@@ -1244,7 +1212,6 @@ def main(input_paths):
         genes=genes,
         indications=indications,
         mappings=mappings,
-        organizations=organizations,
         propositions=propositions,
         strengths=strengths,
         therapies=therapies,
@@ -1313,11 +1280,6 @@ if __name__ == "__main__":
         default="referenced/mappings.json",
     )
     arg_parser.add_argument(
-        "--organizations",
-        help="json detailing db organizations",
-        default="referenced/organizations.json",
-    )
-    arg_parser.add_argument(
         "--propositions",
         help="json detailing db propositions",
         default="referenced/propositions.json",
@@ -1360,7 +1322,6 @@ if __name__ == "__main__":
         "genes": args.genes,
         "indications": args.indications,
         "mappings": args.mappings,
-        "organizations": args.organizations,
         "propositions": args.propositions,
         "statements": args.statements,
         "strengths": args.strengths,
@@ -1370,6 +1331,5 @@ if __name__ == "__main__":
 
     dereference_agents(input_paths=input_data)
     # dereference_codings(input_paths=input_data)
-    dereference_organizations(input_paths=input_data)
 
     dereferenced = main(input_paths=input_data)

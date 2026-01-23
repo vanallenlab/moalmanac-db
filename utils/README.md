@@ -17,7 +17,7 @@ This directory contains a collection of utility scripts designed to facilitate t
 Optional arguments:
 ```bash
     --about           <string>    referenced JSON for database metadata. Default: referenced/about.json
-    --agents          <string>    referenced JSON for agents contribution to database. Default: referenced/agents.json
+    --agents          <string>    referenced JSON for agents that either contribute to the database or publish documents cited within the database. Default: referenced/agents.json
     --biomarkers      <string>    referenced JSON for biomarkers. Default: referenced/biomarkers.json
     --codings         <string>    referenced JSON for codings. Default: referenced/codings.json
     --contributions   <string>    referenced JSON for contributions to database. Default: referenced/contributions.json
@@ -26,7 +26,6 @@ Optional arguments:
     --genes           <string>    referenced JSON for genes associated with biomarkers. Default: referenced/genes.json
     --indications     <string>    referenced JSON for regulatory approvals for use or reimbursement. Default: referenced/indications.json
     --mappings        <string>    referenced JSON for mappings. Default: referenced/mappings.json
-    --organizations   <string>    referenced JSON for organizations that publish documents cited within the database. Default: referenced/organizations.json
     --propositions    <string>    referenced JSON for propositions. Default: referenced/propositions.json
     --statements      <string>    referenced JSON for statements. Default: referenced/statements.json
     --strengths       <string>    referenced JSON for strengths. Default: referenced/strengths.json
@@ -54,7 +53,6 @@ python -m utils.dereference \
   --genes referenced/genes.json \
   --indications referenced/indications.json \
   --mappings referenced/mappings.json \
-  --organizations referenced/organizations.json \
   --propositions referenced/propositions.json \
   --statements referenced/statements.json \
   --strengths referenced/strengths.json \
