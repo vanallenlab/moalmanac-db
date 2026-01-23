@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import argparse
 import os
+import pathlib
 
 # Local imports
 from utils import json_utils
+from utils import populate_statement_description_from_indication
 from utils import read
 from utils import write
 
@@ -919,7 +921,7 @@ class Statements(BaseTable):
             if isinstance(indication, dict):
                 description = indication.get("description")
                 if description is not None:
-                    record['description'] = description
+                    record["description"] = description
 
     def dereference_propositions(self, propositions: Propositions) -> None:
         """
@@ -1121,19 +1123,22 @@ class TherapyGroups(BaseTable):
             )
 
 
-def dereference_agents(input_paths):
+def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = False):
     """
     Write each Agent to the dereferenced/agents/ folder.
 
     Args:
         input_paths (dict): Dictionary of paths to referenced JSON files.
+        clear (boolean): Remove current dereferenced files from folder.
     """
+    if clear:
+        remove_dereferenced_json_files(entity="agents", quiet=quiet)
     agents = read.json_records(file=input_paths["agents"])
     agents = Agents(records=agents)
     for agent in agents.records:
         filename = f"{agent['id']}.json"
         output = os.path.join("dereferenced", "agents", filename)
-        write.dictionary(data=agent, keys_list=[], file=output)
+        write.dictionary(data=agent, keys_list=[], file=output, quiet=quiet)
 
 
 def dereference_biomarkers(input_paths):
@@ -1157,6 +1162,45 @@ def dereference_codings(input_paths):
         filename = f"{coding['id']}.json"
         output = os.path.join("dereferenced", "codings", filename)
         write.dictionary(data=coding, keys_list=[], file=output)
+
+
+def populate_statement_description(statements: list[dict], indications: list[dict]):
+    """
+    Populates the description field for statements from the description field from the associated indication.
+
+    Args:
+        indications (list[dict]): List of dictionaries of database indications.
+        statements (list[dict]): List of dictionaries of database statements.
+
+    Returns:
+        list[dict]: List of dictionaries of database statements, with description value copied from indications for statements associated with an indication.
+    """
+    for statement in statements:
+        indication_id = statement.get("indication_id", None)
+        if indication_id:
+            indication_record = json_utils.get_record_by_key_value(
+                records=indications, key="id", value=indication_id
+            )
+            if indication_record:
+                statement["description"] = indication_record["description"]
+    write.records(data=statements, file=os.path.join("referenced", "statements.json"))
+    return statements
+
+
+def remove_dereferenced_json_files(entity: str, quiet: bool = False):
+    """
+    Removes dereferenced json files from the specified entity's dereferenced folder.
+    For example, dereferenced/agents/*.json
+
+    Args:
+        entity (str): Entity name to remove json files from.
+        quiet (bool): Suppresses print statements if True
+    """
+    if not quiet:
+        print(f"Removing existing json files in dereferenced/{entity}/")
+    folder = pathlib.Path(os.path.join("dereferenced", entity))
+    for json_file in folder.rglob("*.json"):
+        json_file.unlink()
 
 
 def main(input_paths):
@@ -1189,6 +1233,11 @@ def main(input_paths):
     strengths = read.json_records(file=input_paths["strengths"])
     therapies = read.json_records(file=input_paths["therapies"])
     therapy_groups = read.json_records(file=input_paths["therapy_groups"])
+
+    statements = populate_statement_description(
+        indications=indications,
+        statements=statements,
+    )
 
     # Step 2: Generate table objects
     agents = Agents(records=agents)
@@ -1237,82 +1286,92 @@ if __name__ == "__main__":
     arg_parser.add_argument(
         "--about",
         help="json detailing db metadata",
-        default="referenced/about.json",
+        default=os.path.join("referenced", "about.json"),
     )
     arg_parser.add_argument(
         "--agents",
         help="json detailing agents",
-        default="referenced/agents.json",
+        default=os.path.join("referenced", "agents.json"),
     )
     arg_parser.add_argument(
         "--biomarkers",
         help="json detailing db biomarkers",
-        default="referenced/biomarkers.json",
+        default=os.path.join("referenced", "biomarkers.json"),
     )
     arg_parser.add_argument(
         "--codings",
         help="json detailing db codings",
-        default="referenced/codings.json",
+        default=os.path.join("referenced", "codings.json"),
     )
     arg_parser.add_argument(
         "--contributions",
         help="json detailing db contributions",
-        default="referenced/contributions.json",
+        default=os.path.join("referenced", "contributions.json"),
     )
     arg_parser.add_argument(
         "--diseases",
         help="json detailing db diseases",
-        default="referenced/diseases.json",
+        default=os.path.join("referenced", "diseases.json"),
     )
     arg_parser.add_argument(
         "--documents",
         help="json detailing db documents",
-        default="referenced/documents.json",
+        default=os.path.join("referenced", "documents.json"),
     )
     arg_parser.add_argument(
         "--genes",
         help="json detailing db genes",
-        default="referenced/genes.json",
+        default=os.path.join("referenced", "genes.json"),
     )
     arg_parser.add_argument(
         "--indications",
         help="json detailing db indications",
-        default="referenced/indications.json",
+        default=os.path.join("referenced", "indications.json"),
     )
     arg_parser.add_argument(
         "--mappings",
         help="json detailing db mappings",
-        default="referenced/mappings.json",
+        default=os.path.join("referenced", "mappings.json"),
     )
     arg_parser.add_argument(
         "--propositions",
         help="json detailing db propositions",
-        default="referenced/propositions.json",
+        default=os.path.join("referenced", "propositions.json"),
     )
     arg_parser.add_argument(
         "--statements",
         help="json detailing db statements",
-        default="referenced/statements.json",
+        default=os.path.join("referenced", "statements.json"),
     )
     arg_parser.add_argument(
         "--strengths",
         help="json detailing db strengths",
-        default="referenced/strengths.json",
+        default=os.path.join("referenced", "strengths.json"),
     )
     arg_parser.add_argument(
         "--therapies",
         help="json detailing db therapies",
-        default="referenced/therapies.json",
+        default=os.path.join("referenced", "therapies.json"),
     )
     arg_parser.add_argument(
         "--therapy-groups",
         help="json detailing db therapy groups",
-        default="referenced/therapy_groups.json",
+        default=os.path.join("referenced", "therapy_groups.json"),
     )
     arg_parser.add_argument(
         "--output",
         help="Output json file",
         default="moalmanac-draft.dereferenced.json",
+    )
+    arg_parser.add_argument(
+        "--clear",
+        action="store_true",
+        help="Remove currently existing dereferenced files",
+    )
+    arg_parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Suppress print messages when writing individual entities",
     )
     args = arg_parser.parse_args()
 
@@ -1334,7 +1393,11 @@ if __name__ == "__main__":
         "therapy_groups": args.therapy_groups,
     }
 
-    dereference_agents(input_paths=input_data)
-    # dereference_codings(input_paths=input_data)
-
     dereferenced = main(input_paths=input_data)
+
+    dereference_agents(
+        input_paths=input_data,
+        clear=args.clear,
+        quiet=args.quiet,
+    )
+    # dereference_codings(input_paths=input_data)

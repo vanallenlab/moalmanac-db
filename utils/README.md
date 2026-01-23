@@ -33,6 +33,8 @@ Optional arguments:
     --therapies       <string>    referenced JSON for therapies. Default: referenced/therapies.json
     --therapy-groups  <string>    referenced JSON for therapy groups. Default: referenced/therapy_groups.json
     --output          <string>    file path for dereferenced JSON output by this script. Default: moalmanac-draft.dereferenced.json
+    --clear           <boolean>   remove currently dereferenced entity files in dereferenced/ folder. Default: False.
+    --quiet           <boolean>   suppress print statements when writing dereferenced entity files to dereferenced/ folder. Default: False.
 ```
 
 ### Example
@@ -59,32 +61,8 @@ python -m utils.dereference \
   --strengths referenced/strengths.json \
   --therapies referenced/therapies.json \
   --therapy-groups referenced/therapy-groups.json \
-  --output  moalmanac-draft.dereferenced.json
-```
-
-[Back to table of contents](#table-of-contents)
-
-## populate_statement_description_from_indication.py
-`populate_statement_description_from_indication.py` lifts the description key's value from indications.json for statement records that have an associated indication. This is done because indications to statements is a one to many mapping, and it allows us to modify description values for statements derived from indications only once.
-
-### Usage
-Optional arguments:
-```bash
-  --indications     <string>  referenced JSON for regulatory approvals. Default: referenced/indications.json
-  --statements      <string>  referenced JSON for statements. Default: referenced/statements.json
-```
-
-### Example
-To run with default parameters:
-```bash
-python -m utils.populate_statement_description_from_indication
-```
-
-Alternatively, all arguments can be specified explicitly:
-```bash
-python -m utils.populate_statement_description_from_indication \
-  --indications referenced/indications.json
-  --statements referenced/statements.json
+  --output  moalmanac-draft.dereferenced.json \
+  --clear
 ```
 
 [Back to table of contents](#table-of-contents)
