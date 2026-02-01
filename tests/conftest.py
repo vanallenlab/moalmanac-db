@@ -15,7 +15,6 @@ def input_paths():
         "genes": "referenced/genes.json",
         "indications": "referenced/indications.json",
         "mappings": "referenced/mappings.json",
-        "organizations": "referenced/organizations.json",
         "propositions": "referenced/propositions.json",
         "statements": "referenced/statements.json",
         "strengths": "referenced/strengths.json",
@@ -35,7 +34,6 @@ def dereferenced_paths():
     return {
         "agents": root / "agents",
         "codings": root / "codings",
-        "organizations": root / "organizations",
     }
 
 
