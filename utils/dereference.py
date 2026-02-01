@@ -348,7 +348,7 @@ class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Agents (initial key: `agent_id`, resulting key: `organization`)
+    - Agents (initial key: `agent_id`, resulting key: `agent`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
@@ -386,7 +386,7 @@ class Documents(BaseTable):
             self.replace_key(
                 record=record,
                 old_key="agent_id",
-                new_key="organization",
+                new_key="agent",
             )
 
 
