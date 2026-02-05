@@ -3,9 +3,12 @@
 from __future__ import annotations
 
 import argparse
+import os
+import pathlib
 
 # Local imports
 from utils import json_utils
+from utils import populate_statement_description_from_indication
 from utils import read
 from utils import write
 
@@ -250,7 +253,7 @@ class Contributions(BaseTable):
                 referenced_key="agent_id",
                 referenced_records=agents.records,
             )
-            self.replace_key(record=record, old_key="agent_id", new_key="agent")
+            self.replace_key(record=record, old_key="agent_id", new_key="contributor")
 
 
 class Diseases(BaseTable):
@@ -345,45 +348,45 @@ class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Organizations (initial key: `organization_id`, resulting key: `organization`)
+    - Agents (initial key: `agent_id`, resulting key: `agent`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
 
-    def dereference(self, organizations: Organizations) -> None:
+    def dereference(self, agents: Agents) -> None:
         """
-        Dereferences all referenced keys within the Diseases table.
+        Dereferences all referenced keys within the Documents table.
 
         Args:
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            agents (Agents): An instance of the Agents class representing the agents table.
         """
-        self.dereference_organizations(organizations=organizations)
+        self.dereference_agents(agents=agents)
 
-    def dereference_organizations(self, organizations: Organizations) -> None:
+    def dereference_agents(self, agents: Agents) -> None:
         """
-        Dereferences the `organization_id` key in each document record.
+        Dereferences the `agent_id` key in each document record.
 
         Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `organization_id` key within each record. This key is expected to be present within each record, so a
+        `agent_id` key within each record. This key is expected to be present within each record, so a
         KeyError will be raised if it is missing.
 
         Args:
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            agents (Agents): An instance of the Agents class representing the agents table.
 
         Raises:
-            KeyError: If the referenced_key, `organization_id`, is not found in a record.
+            KeyError: If the referenced_key, agent_id`, is not found in a record.
         """
         for record in self.records:
             self.dereference_single(
                 record=record,
-                referenced_key="organization_id",
-                referenced_records=organizations.records,
+                referenced_key="agent_id",
+                referenced_records=agents.records,
             )
             self.replace_key(
                 record=record,
-                old_key="organization_id",
-                new_key="organization",
+                old_key="agent_id",
+                new_key="agent",
             )
 
 
@@ -489,7 +492,7 @@ class Indications(BaseTable):
         self,
         documents: Documents,
         resolve_dependencies: bool = True,
-        organizations: Organizations | None = None,
+        agents: Agents | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Indications table and optionally resolves dependencies
@@ -502,11 +505,11 @@ class Indications(BaseTable):
         Args:
             documents (Documents): An instance of the Documents class representing the documents table.
             resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
+            agents (Agents): An instance of the Agents class representing the agents table.
         """
         if resolve_dependencies:
-            if organizations:
-                documents.dereference(organizations=organizations)
+            if agents:
+                documents.dereference(agents=agents)
 
         self.dereference_documents(documents=documents)
 
@@ -574,18 +577,6 @@ class Mappings(BaseTable):
                 referenced_records=codings.records,
             )
             self.replace_key(record=record, old_key="coding_id", new_key="coding")
-
-
-class Organizations(BaseTable):
-    """
-    Represents the Organizations table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table does not currently reference any other tables.
-
-    Attributes:
-        records (list[dict]): A list of dictionaries representing the organizations table.
-    """
-
-    pass
 
 
 class Propositions(BaseTable):
@@ -786,7 +777,6 @@ class Statements(BaseTable):
         biomarkers: Biomarkers | None = None,
         diseases: Diseases | None = None,
         genes: Genes | None = None,
-        organizations: Organizations | None = None,
         therapies: Therapies | None = None,
         therapy_groups: TherapyGroups | None = None,
     ) -> None:
@@ -810,7 +800,6 @@ class Statements(BaseTable):
             diseases (Diseases): An instance of the Diseases class representing the diseases table.
             genes (Genes): An instance of the Genes class representing the genes table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
-            organizations (Organizations): An instance of the Organizations class representing the organizations table.
             strengths (Strengths): An instance of the Strengths class representing the strengths table.
             therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
             therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
@@ -820,6 +809,7 @@ class Statements(BaseTable):
                 mappings.dereference(codings=codings)
             if agents:
                 contributions.dereference(agents=agents)
+                documents.dereference(agents=agents)
             if biomarkers and genes:
                 genes.dereference(
                     codings=codings,
@@ -833,8 +823,6 @@ class Statements(BaseTable):
                     mappings=mappings,
                     resolve_dependencies=False,
                 )
-            if organizations:
-                documents.dereference(organizations=organizations)
             if therapies:
                 therapies.dereference(
                     codings=codings,
@@ -933,7 +921,7 @@ class Statements(BaseTable):
             if isinstance(indication, dict):
                 description = indication.get("description")
                 if description is not None:
-                    record['description'] = description
+                    record["description"] = description
 
     def dereference_propositions(self, propositions: Propositions) -> None:
         """
@@ -1135,6 +1123,86 @@ class TherapyGroups(BaseTable):
             )
 
 
+def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = False):
+    """
+    Write each Agent to the dereferenced/agents/ folder.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+        clear (boolean): Remove current dereferenced files from folder.
+    """
+    if clear:
+        remove_dereferenced_json_files(entity="agents", quiet=quiet)
+    agents = read.json_records(file=input_paths["agents"])
+    agents = Agents(records=agents)
+    for agent in agents.records:
+        filename = f"{agent['id']}.json"
+        output = os.path.join("dereferenced", "agents", filename)
+        write.dictionary(data=agent, keys_list=[], file=output, quiet=quiet)
+
+
+def dereference_biomarkers(input_paths):
+    """
+    Docstring for dereference_biomarkers
+
+    :param input_paths: Description
+    """
+
+
+def dereference_codings(input_paths):
+    """
+    Write each Coding to the dereferenced/codings/ folder.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+    """
+    codings = read.json_records(file=input_paths["codings"])
+    codings = Codings(records=codings)
+    for coding in codings.records:
+        filename = f"{coding['id']}.json"
+        output = os.path.join("dereferenced", "codings", filename)
+        write.dictionary(data=coding, keys_list=[], file=output)
+
+
+def populate_statement_description(statements: list[dict], indications: list[dict]):
+    """
+    Populates the description field for statements from the description field from the associated indication.
+
+    Args:
+        indications (list[dict]): List of dictionaries of database indications.
+        statements (list[dict]): List of dictionaries of database statements.
+
+    Returns:
+        list[dict]: List of dictionaries of database statements, with description value copied from indications for statements associated with an indication.
+    """
+    for statement in statements:
+        indication_id = statement.get("indication_id", None)
+        if indication_id:
+            indication_record = json_utils.get_record_by_key_value(
+                records=indications, key="id", value=indication_id
+            )
+            if indication_record:
+                statement["description"] = indication_record["description"]
+    write.records(data=statements, file=os.path.join("referenced", "statements.json"))
+    return statements
+
+
+def remove_dereferenced_json_files(entity: str, quiet: bool = False):
+    """
+    Removes dereferenced json files from the specified entity's dereferenced folder.
+    For example, dereferenced/agents/*.json
+
+    Args:
+        entity (str): Entity name to remove json files from.
+        quiet (bool): Suppresses print statements if True
+    """
+    if not quiet:
+        print(f"Removing existing json files in dereferenced/{entity}/")
+    folder = pathlib.Path(os.path.join("dereferenced", entity))
+    for json_file in folder.rglob("*.json"):
+        json_file.unlink()
+
+
 def main(input_paths):
     """
     Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
@@ -1160,12 +1228,16 @@ def main(input_paths):
     genes = read.json_records(file=input_paths["genes"])
     indications = read.json_records(file=input_paths["indications"])
     mappings = read.json_records(file=input_paths["mappings"])
-    organizations = read.json_records(file=input_paths["organizations"])
     propositions = read.json_records(file=input_paths["propositions"])
     statements = read.json_records(file=input_paths["statements"])
     strengths = read.json_records(file=input_paths["strengths"])
     therapies = read.json_records(file=input_paths["therapies"])
     therapy_groups = read.json_records(file=input_paths["therapy_groups"])
+
+    statements = populate_statement_description(
+        indications=indications,
+        statements=statements,
+    )
 
     # Step 2: Generate table objects
     agents = Agents(records=agents)
@@ -1177,7 +1249,6 @@ def main(input_paths):
     genes = Genes(records=genes)
     indications = Indications(records=indications)
     mappings = Mappings(records=mappings)
-    organizations = Organizations(records=organizations)
     propositions = Propositions(records=propositions)
     statements = Statements(records=statements)
     strengths = Strengths(records=strengths)
@@ -1195,7 +1266,6 @@ def main(input_paths):
         genes=genes,
         indications=indications,
         mappings=mappings,
-        organizations=organizations,
         propositions=propositions,
         strengths=strengths,
         therapies=therapies,
@@ -1203,7 +1273,9 @@ def main(input_paths):
         resolve_dependencies=True,
     )
 
-    return {"about": about, "content": statements.records}
+    data = {"about": about, "content": statements.records}
+    write.dictionary(data=data, keys_list=["content"], file=args.output)
+    return data
 
 
 if __name__ == "__main__":
@@ -1214,87 +1286,92 @@ if __name__ == "__main__":
     arg_parser.add_argument(
         "--about",
         help="json detailing db metadata",
-        default="referenced/about.json",
+        default=os.path.join("referenced", "about.json"),
     )
     arg_parser.add_argument(
         "--agents",
         help="json detailing agents",
-        default="referenced/agents.json",
+        default=os.path.join("referenced", "agents.json"),
     )
     arg_parser.add_argument(
         "--biomarkers",
         help="json detailing db biomarkers",
-        default="referenced/biomarkers.json",
+        default=os.path.join("referenced", "biomarkers.json"),
     )
     arg_parser.add_argument(
         "--codings",
         help="json detailing db codings",
-        default="referenced/codings.json",
+        default=os.path.join("referenced", "codings.json"),
     )
     arg_parser.add_argument(
         "--contributions",
         help="json detailing db contributions",
-        default="referenced/contributions.json",
+        default=os.path.join("referenced", "contributions.json"),
     )
     arg_parser.add_argument(
         "--diseases",
         help="json detailing db diseases",
-        default="referenced/diseases.json",
+        default=os.path.join("referenced", "diseases.json"),
     )
     arg_parser.add_argument(
         "--documents",
         help="json detailing db documents",
-        default="referenced/documents.json",
+        default=os.path.join("referenced", "documents.json"),
     )
     arg_parser.add_argument(
         "--genes",
         help="json detailing db genes",
-        default="referenced/genes.json",
+        default=os.path.join("referenced", "genes.json"),
     )
     arg_parser.add_argument(
         "--indications",
         help="json detailing db indications",
-        default="referenced/indications.json",
+        default=os.path.join("referenced", "indications.json"),
     )
     arg_parser.add_argument(
         "--mappings",
         help="json detailing db mappings",
-        default="referenced/mappings.json",
-    )
-    arg_parser.add_argument(
-        "--organizations",
-        help="json detailing db organizations",
-        default="referenced/organizations.json",
+        default=os.path.join("referenced", "mappings.json"),
     )
     arg_parser.add_argument(
         "--propositions",
         help="json detailing db propositions",
-        default="referenced/propositions.json",
+        default=os.path.join("referenced", "propositions.json"),
     )
     arg_parser.add_argument(
         "--statements",
         help="json detailing db statements",
-        default="referenced/statements.json",
+        default=os.path.join("referenced", "statements.json"),
     )
     arg_parser.add_argument(
         "--strengths",
         help="json detailing db strengths",
-        default="referenced/strengths.json",
+        default=os.path.join("referenced", "strengths.json"),
     )
     arg_parser.add_argument(
         "--therapies",
         help="json detailing db therapies",
-        default="referenced/therapies.json",
+        default=os.path.join("referenced", "therapies.json"),
     )
     arg_parser.add_argument(
         "--therapy-groups",
         help="json detailing db therapy groups",
-        default="referenced/therapy_groups.json",
+        default=os.path.join("referenced", "therapy_groups.json"),
     )
     arg_parser.add_argument(
         "--output",
         help="Output json file",
         default="moalmanac-draft.dereferenced.json",
+    )
+    arg_parser.add_argument(
+        "--clear",
+        action="store_true",
+        help="Remove currently existing dereferenced files",
+    )
+    arg_parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Suppress print messages when writing individual entities",
     )
     args = arg_parser.parse_args()
 
@@ -1309,7 +1386,6 @@ if __name__ == "__main__":
         "genes": args.genes,
         "indications": args.indications,
         "mappings": args.mappings,
-        "organizations": args.organizations,
         "propositions": args.propositions,
         "statements": args.statements,
         "strengths": args.strengths,
@@ -1318,4 +1394,10 @@ if __name__ == "__main__":
     }
 
     dereferenced = main(input_paths=input_data)
-    write.dictionary(data=dereferenced, keys_list=["content"], file=args.output)
+
+    dereference_agents(
+        input_paths=input_data,
+        clear=args.clear,
+        quiet=args.quiet,
+    )
+    # dereference_codings(input_paths=input_data)
