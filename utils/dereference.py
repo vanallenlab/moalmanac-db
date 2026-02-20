@@ -1164,6 +1164,24 @@ def dereference_codings(input_paths):
         write.dictionary(data=coding, keys_list=[], file=output)
 
 
+def dereference_documents(input_paths: dict, clear: bool = False, quiet: bool = False):
+    """
+    Write each Document to the dereferenced/documents/ folder.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+        clear (boolean): Remove current dereferenced files from folder.
+    """
+    if clear:
+        remove_dereferenced_json_files(entity="documents", quiet=quiet)
+    documents = read.json_records(file=input_paths["documents"])
+    documents = Documents(records=documents)
+    for document in documents.records:
+        filename = f"{document['id']}.json"
+        output = os.path.join("dereferenced", "documents", filename)
+        write.dictionary(data=document, keys_list=[], file=output, quiet=quiet)
+
+
 def populate_statement_description(statements: list[dict], indications: list[dict]):
     """
     Populates the description field for statements from the description field from the associated indication.
@@ -1399,5 +1417,10 @@ if __name__ == "__main__":
         input_paths=input_data,
         clear=args.clear,
         quiet=args.quiet,
+    )
+    dereference_documents(
+        input_paths=input_data,
+        clear=args.clear,
+        quiet=args.quiet
     )
     # dereference_codings(input_paths=input_data)
