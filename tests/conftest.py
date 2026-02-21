@@ -34,6 +34,7 @@ def dereferenced_paths():
     return {
         "agents": root / "agents",
         "codings": root / "codings",
+        "documents": root / "documents",
     }
 
 

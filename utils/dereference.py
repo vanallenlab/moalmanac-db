@@ -360,11 +360,11 @@ class Documents(BaseTable):
         """
         extension_fields = [
             'agent',
-            'application_number',
             'company',
             'drug_name_brand',
             'drug_name_generic',
             'first_publication_date',
+            'identification_number',
             'publication_date',
             'status'
         ]
@@ -374,11 +374,6 @@ class Documents(BaseTable):
                     "name": "agent",
                     "value": record["agent"],
                     "description": "The organization that published this document.",
-                },
-                {
-                    "name": "application_number",
-                    "value": record["application_number"],
-                    "description": "Biologic License Application (BLA) number, only applicable to documents from the US FDA.",
                 },
                 {
                     "name": "company",
@@ -399,6 +394,11 @@ class Documents(BaseTable):
                     "name": "first_publication_date",
                     "value": record["first_publication_date"],
                     "description": "The publication date for the initial version of this document.",
+                },
+                {
+                    "name": "identification_number",
+                    "value": record["identification_number"],
+                    "description": "Identification number used by the publishing organization.",
                 },
                 {
                     "name": "publication_date",
