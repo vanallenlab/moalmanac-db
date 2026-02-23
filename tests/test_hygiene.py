@@ -17,9 +17,9 @@ def test_document_url_matches_citation(data):
     We want to make sure that the url, added to the `url` field of the document's record, matches the
     one contained within the citation string.
     """
-    relevant_subtypes = ['Regulatory approval']
-    relevant_records = [r for r in data['documents'] if r['subtype'] in relevant_subtypes]
-    failed_records = [r for r in relevant_records if r['url'] not in r['citation']]
+    relevant_documentTypes = ['Regulatory approval']
+    relevant_records = [r for r in data['documents'] if r['documentType'] in relevant_documentTypes]
+    failed_records = [r for r in relevant_records if r['urls'][0] not in r['description']]
     error_message = f"Provided url not contained in citation for documents: {[r['id'] for r in failed_records]}"
     assert not failed_records, error_message
 

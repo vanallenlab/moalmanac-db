@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import os
 import pathlib
+import typing
 
 # Local imports
 from utils import json_utils
@@ -353,6 +354,67 @@ class Documents(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
+    def convert_fields_to_extensions(self):
+        """
+        Converts relevant keys to extensions.
+        """
+        extension_fields = [
+            'agent',
+            'company',
+            'drug_name_brand',
+            'drug_name_generic',
+            'first_publication_date',
+            'identification_number',
+            'publication_date',
+            'status'
+        ]
+        for record in self.records:
+            extensions = [
+                {
+                    "name": "agent",
+                    "value": record["agent"],
+                    "description": "The organization that published this document.",
+                },
+                {
+                    "name": "company",
+                    "value": record["company"],
+                    "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents.",
+                },
+                {
+                    "name": "drug_name_brand",
+                    "value": record["drug_name_brand"],
+                    "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents.",
+                },
+                {
+                    "name": "drug_name_generic",
+                    "value": record["drug_name_generic"],
+                    "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents.",
+                },
+                {
+                    "name": "first_publication_date",
+                    "value": record["first_publication_date"],
+                    "description": "The publication date for the initial version of this document.",
+                },
+                {
+                    "name": "identification_number",
+                    "value": record["identification_number"],
+                    "description": "Identification number used by the publishing organization.",
+                },
+                {
+                    "name": "publication_date",
+                    "value": record["publication_date"],
+                    "description": "The publication date for the document.",
+                },
+                {
+                    "name": "status",
+                    "value": record["status"],
+                    "description": "Whether this document is Active or Deprecated within moalmanac-db.",
+                }
+            ]
+            record['extensions'] = extensions
+            for field in extension_fields:
+                self.remove_key(record=record, key=field)
+
 
     def dereference(self, agents: Agents) -> None:
         """
@@ -362,6 +424,8 @@ class Documents(BaseTable):
             agents (Agents): An instance of the Agents class representing the agents table.
         """
         self.dereference_agents(agents=agents)
+        self.convert_fields_to_extensions()
+
 
     def dereference_agents(self, agents: Agents) -> None:
         """
@@ -1122,7 +1186,6 @@ class TherapyGroups(BaseTable):
                 key_always_present=True,
             )
 
-
 def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = False):
     """
     Write each Agent to the dereferenced/agents/ folder.
@@ -1140,29 +1203,27 @@ def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = Fal
         output = os.path.join("dereferenced", "agents", filename)
         write.dictionary(data=agent, keys_list=[], file=output, quiet=quiet)
 
-
-def dereference_biomarkers(input_paths):
+def dereference_documents(input_paths: dict, clear: bool = False, quiet: bool = False):
     """
-    Docstring for dereference_biomarkers
-
-    :param input_paths: Description
-    """
-
-
-def dereference_codings(input_paths):
-    """
-    Write each Coding to the dereferenced/codings/ folder.
+    Write each Document to the dereferenced/documents/ folder.
 
     Args:
         input_paths (dict): Dictionary of paths to referenced JSON files.
+        clear (boolean): Remove current dereferenced files from folder.
     """
-    codings = read.json_records(file=input_paths["codings"])
-    codings = Codings(records=codings)
-    for coding in codings.records:
-        filename = f"{coding['id']}.json"
-        output = os.path.join("dereferenced", "codings", filename)
-        write.dictionary(data=coding, keys_list=[], file=output)
+    if clear:
+        remove_dereferenced_json_files(entity="documents", quiet=quiet)
 
+    agents = read.json_records(file=input_paths["agents"])
+    agents = Agents(records=agents)
+
+    documents = read.json_records(file=input_paths["documents"])
+    documents = Documents(records=documents)
+    documents.dereference(agents=agents)
+    for document in documents.records:
+        filename = f"{document['id']}.json"
+        output = os.path.join("dereferenced", "documents", filename)
+        write.dictionary(data=document, keys_list=[], file=output, quiet=quiet)
 
 def populate_statement_description(statements: list[dict], indications: list[dict]):
     """
@@ -1399,5 +1460,10 @@ if __name__ == "__main__":
         input_paths=input_data,
         clear=args.clear,
         quiet=args.quiet,
+    )
+    dereference_documents(
+        input_paths=input_data,
+        clear=args.clear,
+        quiet=args.quiet
     )
     # dereference_codings(input_paths=input_data)
