@@ -416,7 +416,7 @@ class Documents(BaseTable):
                 self.remove_key(record=record, key=field)
 
 
-    def dereference(self, agents: Agents) -> None:
+    def dereference(self, agents: Agents, urls: URLs) -> None:
         """
         Dereferences all referenced keys within the Documents table.
 
@@ -424,6 +424,7 @@ class Documents(BaseTable):
             agents (Agents): An instance of the Agents class representing the agents table.
         """
         self.dereference_agents(agents=agents)
+        self.dereference_urls(urls=urls)
         self.convert_fields_to_extensions()
 
 
@@ -452,6 +453,24 @@ class Documents(BaseTable):
                 old_key="agent_id",
                 new_key="agent",
             )
+
+    def dereference_urls(self, urls: URLs) -> None:
+        """
+        Dereferences the `urls` key in each document record.
+
+        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the `urls` key within each record.
+
+        Args:
+            urls (URLs): An instance of the URLs class representing the URls table.
+        """
+        for record in self.records:
+            self.dereference_list(
+                record=record,
+                referenced_key="urls",
+                referenced_records=urls.records,
+                key_always_present=True
+            )
+            record['urls'] = [item['url'] for item in record['urls']]
 
 
 class Genes(BaseTable):
@@ -557,6 +576,7 @@ class Indications(BaseTable):
         documents: Documents,
         resolve_dependencies: bool = True,
         agents: Agents | None = None,
+        urls: URLs | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Indications table and optionally resolves dependencies
@@ -570,10 +590,12 @@ class Indications(BaseTable):
             documents (Documents): An instance of the Documents class representing the documents table.
             resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
             agents (Agents): An instance of the Agents class representing the agents table.
+            urls (URLs): An instance of the URLs class representing the urls table.
         """
         if resolve_dependencies:
-            if agents:
-                documents.dereference(agents=agents)
+            if agents is None or urls is None:
+                raise ValueError("If resolve_dependencies=True, both 'agents' and 'urls' must be provided.")
+            documents.dereference(agents=agents, urls=urls)
 
         self.dereference_documents(documents=documents)
 
@@ -843,6 +865,7 @@ class Statements(BaseTable):
         genes: Genes | None = None,
         therapies: Therapies | None = None,
         therapy_groups: TherapyGroups | None = None,
+        urls: URLs | None = None,
     ) -> None:
         """
         Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
@@ -867,13 +890,15 @@ class Statements(BaseTable):
             strengths (Strengths): An instance of the Strengths class representing the strengths table.
             therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
             therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
+            urls (URLs): An instance of the URLs class representing the urls table.
         """
         if resolve_dependencies:
             if codings and mappings:
                 mappings.dereference(codings=codings)
             if agents:
                 contributions.dereference(agents=agents)
-                documents.dereference(agents=agents)
+            if agents and urls:
+                documents.dereference(agents=agents, urls=urls)
             if biomarkers and genes:
                 genes.dereference(
                     codings=codings,
@@ -1186,6 +1211,19 @@ class TherapyGroups(BaseTable):
                 key_always_present=True,
             )
 
+
+class URLs(BaseTable):
+    """
+    Represents the URLs table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the url records.
+    """
+
+    pass
+
+
 def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = False):
     """
     Write each Agent to the dereferenced/agents/ folder.
@@ -1217,9 +1255,12 @@ def dereference_documents(input_paths: dict, clear: bool = False, quiet: bool = 
     agents = read.json_records(file=input_paths["agents"])
     agents = Agents(records=agents)
 
+    urls = read.json_records(file=input_paths["urls"])
+    urls = URLs(records=urls)
+
     documents = read.json_records(file=input_paths["documents"])
     documents = Documents(records=documents)
-    documents.dereference(agents=agents)
+    documents.dereference(agents=agents, urls=urls)
     for document in documents.records:
         filename = f"{document['id']}.json"
         output = os.path.join("dereferenced", "documents", filename)
@@ -1294,6 +1335,7 @@ def main(input_paths):
     strengths = read.json_records(file=input_paths["strengths"])
     therapies = read.json_records(file=input_paths["therapies"])
     therapy_groups = read.json_records(file=input_paths["therapy_groups"])
+    urls = read.json_records(file=input_paths["urls"])
 
     statements = populate_statement_description(
         indications=indications,
@@ -1315,6 +1357,7 @@ def main(input_paths):
     strengths = Strengths(records=strengths)
     therapies = Therapies(records=therapies)
     therapy_groups = TherapyGroups(records=therapy_groups)
+    urls = URLs(records=urls)
 
     # Step 3: Dereference the database and generate statements
     statements.dereference(
@@ -1331,6 +1374,7 @@ def main(input_paths):
         strengths=strengths,
         therapies=therapies,
         therapy_groups=therapy_groups,
+        urls=urls,
         resolve_dependencies=True,
     )
 
@@ -1420,6 +1464,11 @@ if __name__ == "__main__":
         default=os.path.join("referenced", "therapy_groups.json"),
     )
     arg_parser.add_argument(
+        "--urls",
+        help="json detailing db urls",
+        default=os.path.join("referenced", "urls.json"),
+    )
+    arg_parser.add_argument(
         "--output",
         help="Output json file",
         default="moalmanac-draft.dereferenced.json",
@@ -1452,6 +1501,7 @@ if __name__ == "__main__":
         "strengths": args.strengths,
         "therapies": args.therapies,
         "therapy_groups": args.therapy_groups,
+        "urls": args.urls,
     }
 
     dereferenced = main(input_paths=input_data)
