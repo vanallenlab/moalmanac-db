@@ -20,6 +20,7 @@ def input_paths():
         "strengths": "referenced/strengths.json",
         "therapies": "referenced/therapies.json",
         "therapy_groups": "referenced/therapy_groups.json",
+        "urls": "referenced/urls.json",
     }
 
 

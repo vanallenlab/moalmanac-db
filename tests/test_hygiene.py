@@ -1,6 +1,7 @@
 import json
 
 from tests import helpers
+from utils import json_utils
 
 def test_document_url_matches_citation(data):
     """
@@ -19,7 +20,16 @@ def test_document_url_matches_citation(data):
     """
     relevant_documentTypes = ['Regulatory approval']
     relevant_records = [r for r in data['documents'] if r['documentType'] in relevant_documentTypes]
-    failed_records = [r for r in relevant_records if r['urls'][0] not in r['description']]
+    failed_records = []
+    for record in relevant_records:
+        cited_url = record['urls'][0]
+        cited_url = json_utils.get_record_by_key_value(records=data['urls'], key='id', value=cited_url)
+        if not isinstance(cited_url, dict):
+            failed_records.append(record)
+        elif cited_url['url'] not in record['description']:
+            failed_records.append(record)
+        else:
+            continue
     error_message = f"Provided url not contained in citation for documents: {[r['id'] for r in failed_records]}"
     assert not failed_records, error_message
 
