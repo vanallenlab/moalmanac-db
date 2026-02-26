@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/documents.schema.json",
+  "title": "Document (referenced)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "documentType",
+    "name",
+    "title",
+    "aliases",
+    "description",
+    "urls",
+    "doi",
+    "pmid",
+    "agent_id",
+    "company",
+    "drug_name_brand",
+    "drug_name_generic",
+    "first_publication_date",
+    "identification_number",
+    "publication_date",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/document_id"
+    },
+    "type": {
+      "const": "Document"
+    },
+    "documentType": {
+      "$ref": "#/$defs/document_type"
+    },
+    "name": {
+      "type": "string", "minLength": 1
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": ["string", "null"]
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/url_id"
+      }
+    },
+    "doi": {
+      "type": ["string", "null"]
+    },
+    "pmid": {
+      "type": ["integer", "null"]
+    },
+    "agent_id": {
+      "$ref": "#/$defs/agent_id"
+    },
+    "company": {
+      "type":
+      ["string", "null"]
+    },
+    "drug_name_brand": {
+      "type": ["string", "null"]
+    },
+    "drug_name_generic": {
+      "type": ["string", "null"]
+    },
+    "first_publication_date": {
+      "$ref": "#/$defs/iso_date_or_null"
+    },
+    "identification_number": {
+      "type": ["integer", "null"]
+    },
+    "publication_date": {
+      "$ref": "#/$defs/iso_date_or_null"
+    },
+    "status": {
+      "$ref": "#/$defs/document_status"
+    }
+  },
+  "$defs": {
+    "document_id": {
+      "type": "string",
+      "pattern": "^doc:.+"
+    },
+    "url_id": {
+      "type": "string",
+      "pattern": "^url:.+"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Accepts either 'agent:...' or a bare slug like 'fda' to match existing data.",
+      "pattern": "^(agent:.+|[A-Za-z0-9][A-Za-z0-9._-]*)$"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": ["Regulatory approval", "Journal article"]
+    },
+    "document_status": {
+      "type": "string",
+      "enum": ["Active", "Deprecated"]
+    },
+    "iso_date_or_null": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "format": "date" }
+      ]
+    }
+  }
+}

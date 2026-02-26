@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/documents.schema.json",
+  "title": "Document (dereferenced)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "documentType",
+    "name",
+    "title",
+    "aliases",
+    "description",
+    "urls",
+    "doi",
+    "pmid",
+    "extensions"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/document_id"
+    },
+    "type": {
+      "const": "Document"
+    },
+    "documentType": {
+      "$ref": "#/$defs/document_type"
+    },
+    "name": {
+      "type": "string", "minLength": 1
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": ["string", "null"]
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "doi": {
+      "type": ["string", "null"]
+    },
+    "pmid": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "extensions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/document_extension" }
+    }
+  },
+  "$defs": {
+    "document_id": {
+      "type": "string",
+      "pattern": "^doc:.+"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": ["Regulatory approval", "Journal article"]
+    },
+    "document_status": {
+      "type": "string",
+      "enum": ["Active", "Deprecated"]
+    },
+    "iso_date_or_null": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "format": "date" }
+      ]
+    },
+    "extension_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "value", "description"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "value": {},
+        "description": { "type": "string" }
+      }
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Accepts either 'agent:...' or a bare slug like 'fda' to match existing data.",
+      "pattern": "^(agent:.+|[A-Za-z0-9][A-Za-z0-9._-]*)$"
+    },
+    "agent_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "agent" },
+            "value": { "$ref": "#/$defs/agent" },
+            "description": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "company_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "company" },
+            "value": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+    "drug_name_brand_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "drug_name_brand" },
+            "value": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+    "drug_name_generic_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "drug_name_generic" },
+            "value": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+    "first_publication_date_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "first_publication_date" },
+            "value": { "$ref": "#/$defs/iso_date_or_null" }
+          }
+        }
+      ]
+    },
+    "identification_number_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "identification_number" },
+            "value": { "type": ["integer", "null"] }
+          }
+        }
+      ]
+    },
+    "publication_date_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "publication_date" },
+            "value": { "$ref": "#/$defs/iso_date_or_null" }
+          }
+        }
+      ]
+    },
+    "status_extension": {
+      "allOf": [
+        { "$ref": "#/$defs/extension_base" },
+        {
+          "properties": {
+            "name": { "const": "status" },
+            "value": { "$ref": "#/$defs/document_status" }
+          }
+        }
+      ]
+    },
+    "document_extension": {
+      "oneOf": [
+        { "$ref": "#/$defs/agent_extension" },
+        { "$ref": "#/$defs/company_extension" },
+        { "$ref": "#/$defs/drug_name_brand_extension" },
+        { "$ref": "#/$defs/drug_name_generic_extension" },
+        { "$ref": "#/$defs/first_publication_date_extension" },
+        { "$ref": "#/$defs/identification_number_extension" },
+        { "$ref": "#/$defs/publication_date_extension" },
+        { "$ref": "#/$defs/status_extension" }
+      ]
+    },
+    "agent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "agentType", "name", "description", "extensions"],
+      "properties": {
+        "id": { "$ref": "#/$defs/agent_id" },
+        "type": { "const": "Agent" },
+        "agentType": { "type": "string" },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "extensions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/extension_base" }
+        }
+      }
+    }
+  }
+}
