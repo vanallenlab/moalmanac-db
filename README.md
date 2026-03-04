@@ -1,6 +1,6 @@
 # Molecular Oncology Almanac - Database
-[![DOI](https://zenodo.org/badge/318264235.svg)](https://doi.org/10.5281/zenodo.17089309)
-[![License](https://img.shields.io/github/license/vanallenlab/moalmanac-db.svg)](./LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17089309.svg)](https://doi.org/10.5281/zenodo.17089309)
+[![License](https://img.shields.io/github/license/vanallenlab/moalmanac-db?label=License)](./LICENSE)
 
 **We are in the process of updating to a new database schema. Read more [here](/docs/referenced-schema-draft-about.md)**!
 
