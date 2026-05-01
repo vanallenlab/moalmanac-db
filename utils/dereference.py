@@ -53,6 +53,15 @@ class FKList:
 
 
 def strip_keys(*keys: str) -> Callable[[dict], dict]:
+    """
+    Returns a function that removes the specified keys from a record dict.
+
+    Args:
+        *keys (str): Key names to exclude from the record.
+
+    Returns:
+        Callable[[dict], dict]: A function that accepts a record and returns a copy with the specified keys removed.
+    """
     return lambda record: {k: v for k, v in record.items() if k not in keys}
 
 
