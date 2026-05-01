@@ -6,12 +6,81 @@ import argparse
 import os
 import pathlib
 import typing
+from dataclasses import dataclass
+from typing import Callable
 
 # Local imports
 from utils import json_utils
 from utils import populate_statement_description_from_indication
 from utils import read
 from utils import write
+
+
+@dataclass
+class FKSingle:
+    """
+    Descriptor for a foreign key that references a single record in another table.
+
+    Attributes:
+        src_key (str): The key in the record whose value is the foreign key.
+        dest_key (str): The key name written after dereferencing (replaces src_key).
+        get_table (Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+    """
+
+    src_key: str
+    dest_key: str
+    get_table: Callable[[Database], BaseTable]
+
+
+@dataclass
+class FKList:
+    """
+    Descriptor for a foreign key that references a list of records in another table.
+
+    Attributes:
+        src_key (str): The key in the record whose value is a list of foreign keys.
+        dest_key (str): The key name written after dereferencing. Pass src_key if unchanged.
+        get_table (Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+        key_always_present (bool): If True, raise KeyError when src_key is absent from a record.
+        post (Callable[[list], list] | None): Optional function applied to the resolved list.
+    """
+
+    src_key: str
+    dest_key: str
+    get_table: Callable[[Database], BaseTable]
+    key_always_present: bool = True
+    post: Callable[[list], list] | None = None
+
+
+def strip_mapping_internals(mappings: list) -> list:
+    """
+    Removes internal keys from each mapping record after dereferencing.
+
+    Removes the `id` and `primary_coding_id` keys from each mapping dict in place.
+
+    Args:
+        mappings (list): List of resolved mapping records.
+
+    Returns:
+        list: The same list with `id` and `primary_coding_id` removed from each entry.
+    """
+    for mapping in mappings:
+        mapping.pop("id")
+        mapping.pop("primary_coding_id")
+    return mappings
+
+
+def extract_url_values(urls: list) -> list:
+    """
+    Extracts the URL string from each resolved URL record.
+
+    Args:
+        urls (list): List of resolved URL records, each containing a `url` key.
+
+    Returns:
+        list: List of URL strings.
+    """
+    return [item["url"] for item in urls]
 
 
 class BaseTable:
@@ -22,7 +91,11 @@ class BaseTable:
 
     Attributes:
         records (list[dict]): list of dictionaries that represent one table within the relational database.
+        foreign_keys (list): Class-level list of FKSingle or FKList descriptors declaring this table's
+            foreign key relationships. Subclasses override this at the class level to declare their relationships.
     """
+
+    foreign_keys: list = []
 
     def __init__(self, records: list[dict]):
         """
@@ -33,6 +106,34 @@ class BaseTable:
         """
         self.records = records
         self._resolved = False
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table by resolving each declared foreign key.
+
+        Iterates over `foreign_keys`, resolves each referenced table, then replaces each foreign key value
+        in every record with the full referenced record. Each table is resolved at most once; subsequent
+        calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        self._resolved = True
+        for fk in self.foreign_keys:
+            table = fk.get_table(db)
+            table.dereference(db)
+            for record in self.records:
+                if isinstance(fk, FKSingle):
+                    self.dereference_single(record, fk.src_key, table.records)
+                    self.replace_key(record, fk.src_key, fk.dest_key)
+                else:
+                    self.dereference_list(record, fk.src_key, table.records, fk.key_always_present)
+                    if fk.post is not None and fk.src_key in record:
+                        record[fk.src_key] = fk.post(record[fk.src_key])
+                    if fk.src_key != fk.dest_key:
+                        self.replace_key(record, fk.src_key, fk.dest_key)
 
     @staticmethod
     def dereference_single(
@@ -153,42 +254,9 @@ class Biomarkers(BaseTable):
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
-    def dereference(self, genes: Genes, codings: Codings, mappings: Mappings) -> None:
-        """
-        Dereferences all referenced keys within the Biomarkers table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            genes (Genes): An instance of the Genes class representing the genes table.
-            codings (Codings): An instance of the Codings class representing the codings table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        genes.dereference(codings=codings, mappings=mappings)
-        self.dereference_genes(genes=genes)
-
-    def dereference_genes(self, genes: Genes) -> None:
-        """
-        Dereferences the `genes` key in each biomarker record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `genes` key within each record. This key is not expected to be present within each record, so no KeyError will
-        be raised if it is missing.
-
-        Args:
-            genes (Genes): An instance of the Genes class representing the genes table.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="genes",
-                referenced_records=genes.records,
-                key_always_present=False,
-            )
+    foreign_keys = [
+        FKList("genes", "genes", lambda db: db.genes, key_always_present=False),
+    ]
 
 
 class Codings(BaseTable):
@@ -207,48 +275,15 @@ class Contributions(BaseTable):
     """
     Represents the Contributions table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Agents (initial key: `agent_id`, resulting key: `agents`)
+    - Agents (initial key: `agent_id`, resulting key: `contributor`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
 
-    def dereference(self, agents: Agents) -> None:
-        """
-        Dereferences all referenced keys within the Contributions table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            agents (Agents): An instance of the Agents class representing the agents table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        self.dereference_agents(agents=agents)
-
-    def dereference_agents(self, agents: Agents) -> None:
-        """
-        Dereferences the `agent_id` key in each contribution record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `agent_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            agents (Agents): An instance of the Agents class representing the agents table.
-
-        Raises:
-            KeyError: If the referenced_key, `agent_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="agent_id",
-                referenced_records=agents.records,
-            )
-            self.replace_key(record=record, old_key="agent_id", new_key="contributor")
+    foreign_keys = [
+        FKSingle("agent_id", "contributor", lambda db: db.agents),
+    ]
 
 
 class Diseases(BaseTable):
@@ -262,74 +297,10 @@ class Diseases(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: Codings, mappings: Mappings) -> None:
-        """
-        Dereferences all referenced keys within the Diseases table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        mappings.dereference(codings=codings)
-        self.dereference_codings(codings=codings)
-        self.dereference_mappings(mappings=mappings)
-
-    def dereference_codings(self, codings: Codings) -> None:
-        """
-        Dereferences the `primary_coding_id` key in each strength record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-
-        Raises:
-            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="primary_coding_id",
-                referenced_records=codings.records,
-            )
-            self.replace_key(
-                record=record,
-                old_key="primary_coding_id",
-                new_key="primaryCoding",
-            )
-
-    def dereference_mappings(self, mappings: Mappings) -> None:
-        """
-        Dereferences the `mappings` key in each gene record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `mappings` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-
-        Raises:
-            KeyError: If the referenced_key, `mappings`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="mappings",
-                referenced_records=mappings.records,
-                key_always_present=True,
-            )
-            for mapping in record["mappings"]:
-                self.remove_key(record=mapping, key="id")
-                self.remove_key(record=mapping, key="primary_coding_id")
+    foreign_keys = [
+        FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_mapping_internals),
+    ]
 
 
 class Documents(BaseTable):
@@ -337,10 +308,17 @@ class Documents(BaseTable):
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
     - Agents (initial key: `agent_id`, resulting key: `agent`)
+    - URLs (initial key: `urls`, resulting key: `urls`)
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the document records.
     """
+
+    foreign_keys = [
+        FKSingle("agent_id", "agent", lambda db: db.agents),
+        FKList("urls", "urls", lambda db: db.urls, post=extract_url_values),
+    ]
+
     def convert_fields_to_extensions(self):
         """
         Converts relevant keys to extensions.
@@ -402,69 +380,20 @@ class Documents(BaseTable):
             for field in extension_fields:
                 self.remove_key(record=record, key=field)
 
-
-    def dereference(self, agents: Agents, urls: URLs) -> None:
+    def dereference(self, db: Database) -> None:
         """
-        Dereferences all referenced keys within the Documents table.
+        Dereferences all referenced keys within the Documents table, then converts fields to extensions.
 
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
+        Resolves foreign keys declared in `foreign_keys` via the base class, then applies
+        `convert_fields_to_extensions`. Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
-            agents (Agents): An instance of the Agents class representing the agents table.
-            urls (URLs): An instance of the URLs class representing the urls table.
+            db (Database): An instance of the Database class containing all tables.
         """
         if self._resolved:
             return
-        self._resolved = True
-        self.dereference_agents(agents=agents)
-        self.dereference_urls(urls=urls)
+        super().dereference(db)
         self.convert_fields_to_extensions()
-
-
-    def dereference_agents(self, agents: Agents) -> None:
-        """
-        Dereferences the `agent_id` key in each document record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `agent_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            agents (Agents): An instance of the Agents class representing the agents table.
-
-        Raises:
-            KeyError: If the referenced_key, agent_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="agent_id",
-                referenced_records=agents.records,
-            )
-            self.replace_key(
-                record=record,
-                old_key="agent_id",
-                new_key="agent",
-            )
-
-    def dereference_urls(self, urls: URLs) -> None:
-        """
-        Dereferences the `urls` key in each document record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the `urls` key within each record.
-
-        Args:
-            urls (URLs): An instance of the URLs class representing the URls table.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="urls",
-                referenced_records=urls.records,
-                key_always_present=True
-            )
-            record['urls'] = [item['url'] for item in record['urls']]
 
 
 class Genes(BaseTable):
@@ -478,74 +407,10 @@ class Genes(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: Codings, mappings: Mappings) -> None:
-        """
-        Dereferences all referenced keys within the Genes table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        mappings.dereference(codings=codings)
-        self.dereference_codings(codings=codings)
-        self.dereference_mappings(mappings=mappings)
-
-    def dereference_codings(self, codings: Codings) -> None:
-        """
-        Dereferences the `primary_coding_id` key in each strength record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-
-        Raises:
-            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="primary_coding_id",
-                referenced_records=codings.records,
-            )
-            self.replace_key(
-                record=record,
-                old_key="primary_coding_id",
-                new_key="primaryCoding",
-            )
-
-    def dereference_mappings(self, mappings: Mappings) -> None:
-        """
-        Dereferences the `mappings` key in each gene record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `mappings` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-
-        Raises:
-            KeyError: If the referenced_key, `mappings`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="mappings",
-                referenced_records=mappings.records,
-                key_always_present=True,
-            )
-            for mapping in record["mappings"]:
-                self.remove_key(record=mapping, key="id")
-                self.remove_key(record=mapping, key="primary_coding_id")
+    foreign_keys = [
+        FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_mapping_internals),
+    ]
 
 
 class Indications(BaseTable):
@@ -558,45 +423,9 @@ class Indications(BaseTable):
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference(self, documents: Documents, agents: Agents, urls: URLs) -> None:
-        """
-        Dereferences all referenced keys within the Indications table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            documents (Documents): An instance of the Documents class representing the documents table.
-            agents (Agents): An instance of the Agents class representing the agents table.
-            urls (URLs): An instance of the URLs class representing the urls table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        documents.dereference(agents=agents, urls=urls)
-        self.dereference_documents(documents=documents)
-
-    def dereference_documents(self, documents: Documents) -> None:
-        """
-        Dereferences the `document_id` key in each indication record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `document_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            documents (Documents): An instance of the Documents class representing the documents table.
-
-        Raises:
-            KeyError: If the referenced_key, `document_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="document_id",
-                referenced_records=documents.records,
-            )
-            self.replace_key(record=record, old_key="document_id", new_key="document")
+    foreign_keys = [
+        FKSingle("document_id", "document", lambda db: db.documents),
+    ]
 
 
 class Mappings(BaseTable):
@@ -609,39 +438,9 @@ class Mappings(BaseTable):
         records (list[dict]): A list of dictionaries representing the contribution records.
     """
 
-    def dereference(self, codings: Codings) -> None:
-        """
-        Dereferences all referenced keys within the Mappings table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        self.dereference_codings(codings=codings)
-
-    def dereference_codings(self, codings: Codings) -> None:
-        """
-        Dereferences the `coding_id` key in each coding record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `coding_id` key within each record. This key is not expected to be present within each record, so no KeyError will
-        be raised if it is missing.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="coding_id",
-                referenced_records=codings.records,
-            )
-            self.replace_key(record=record, old_key="coding_id", new_key="coding")
+    foreign_keys = [
+        FKSingle("coding_id", "coding", lambda db: db.codings),
+    ]
 
 
 class Propositions(BaseTable):
@@ -657,95 +456,33 @@ class Propositions(BaseTable):
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
-    def dereference(
-        self,
-        biomarkers: Biomarkers,
-        diseases: Diseases,
-        therapies: Therapies,
-        therapy_groups: TherapyGroups,
-        codings: Codings,
-        genes: Genes,
-        mappings: Mappings,
-    ) -> None:
+    foreign_keys = [
+        FKSingle("conditionQualifier_id", "conditionQualifier", lambda db: db.diseases),
+        FKList("biomarkers", "biomarkers", lambda db: db.biomarkers),
+    ]
+
+    def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Propositions table.
 
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
+        Resolves therapies and therapy groups before delegating FK resolution to the base class,
+        then applies the custom therapeutics dereferencing. Each table is resolved at most once;
+        subsequent calls are no-ops.
 
         Args:
-            biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
-            diseases (Diseases): An instance of the Diseases class representing the diseases table.
-            therapies (Therapies): An instance of the Therapies class representing the therapies table.
-            therapy_groups (TherapyGroups): An instance of the TherapyGroups class representing the therapy groups table.
-            codings (Codings): An instance of the Codings class representing the codings table.
-            genes (Genes): An instance of the Genes class representing the genes table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+            db (Database): An instance of the Database class containing all tables.
         """
         if self._resolved:
             return
-        self._resolved = True
-        diseases.dereference(codings=codings, mappings=mappings)
-        genes.dereference(codings=codings, mappings=mappings)
-        biomarkers.dereference(genes=genes, codings=codings, mappings=mappings)
-        therapies.dereference(codings=codings, mappings=mappings)
-        therapy_groups.dereference(therapies=therapies, codings=codings, mappings=mappings)
+        db.therapies.dereference(db)
+        db.therapy_groups.dereference(db)
 
         # Maybe change this to just do therapy groups?
 
-        self.dereference_biomarkers(biomarkers=biomarkers)
-        self.dereference_diseases(diseases=diseases)
+        super().dereference(db)
         self.dereference_therapeutics(
-            therapies=therapies, therapy_groups=therapy_groups
+            therapies=db.therapies, therapy_groups=db.therapy_groups
         )
-
-    def dereference_biomarkers(self, biomarkers: Biomarkers) -> None:
-        """
-        Dereferences the `biomarkers` key in each proposition record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `biomarkers` key within each record. This key is expected to be present within each record, so a KeyError will
-        be raised if it is missing.
-
-        Args:
-            biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
-
-        Raises:
-            KeyError: If the referenced_key, `biomarkers`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="biomarkers",
-                referenced_records=biomarkers.records,
-                key_always_present=True,
-            )
-
-    def dereference_diseases(self, diseases: Diseases) -> None:
-        """
-        Dereferences the `conditionQualifier_id` key in each proposition record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `conditionQualifier_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            diseases (Diseases): An instance of the Diseases class representing the diseases table.
-
-        Raises:
-            KeyError: If the referenced_key, `conditionQualifier_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="conditionQualifier_id",
-                referenced_records=diseases.records,
-            )
-            self.replace_key(
-                record=record,
-                old_key="conditionQualifier_id",
-                new_key="conditionQualifier",
-            )
 
     def dereference_therapeutics(
         self, therapies: Therapies, therapy_groups: TherapyGroups
@@ -808,193 +545,34 @@ class Statements(BaseTable):
         records (list[dict]): A list of dictionaries representing the statement records.
     """
 
-    def dereference(
-        self,
-        agents: Agents,
-        biomarkers: Biomarkers,
-        codings: Codings,
-        contributions: Contributions,
-        diseases: Diseases,
-        documents: Documents,
-        genes: Genes,
-        indications: Indications,
-        mappings: Mappings,
-        propositions: Propositions,
-        strengths: Strengths,
-        therapies: Therapies,
-        therapy_groups: TherapyGroups,
-        urls: URLs,
-    ) -> None:
+    foreign_keys = [
+        FKList("contributions", "contributions", lambda db: db.contributions),
+        FKList("reportedIn", "reportedIn", lambda db: db.documents),
+        FKSingle("indication_id", "indication", lambda db: db.indications),
+        FKSingle("proposition_id", "proposition", lambda db: db.propositions),
+        FKSingle("strength_id", "strength", lambda db: db.strengths),
+    ]
+
+    def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Statements table.
 
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
+        Resolves foreign keys declared in `foreign_keys` via the base class, then copies the indication
+        description onto each statement record. Each table is resolved at most once; subsequent calls are
+        no-ops.
 
         Args:
-            agents (Agents): An instance of the Agents class representing the agents table.
-            biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
-            codings (Codings): An instance of the Codings class representing the codings table.
-            contributions (Contributions): An instance of the Contributions class representing the contributions table.
-            diseases (Diseases): An instance of the Diseases class representing the diseases table.
-            documents (Documents): An instance of the Documents class representing the documents table.
-            genes (Genes): An instance of the Genes class representing the genes table.
-            indications (Indications): An instance of the Indications class representing the indications table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-            propositions (Propositions): An instance of the Propositions class representing the propositions table.
-            strengths (Strengths): An instance of the Strengths class representing the strengths table.
-            therapies (Therapies): An instance of the Therapies class representing the therapies table.
-            therapy_groups (TherapyGroups): An instance of the TherapyGroups class representing the therapy groups table.
-            urls (URLs): An instance of the URLs class representing the urls table.
+            db (Database): An instance of the Database class containing all tables.
         """
         if self._resolved:
             return
-        self._resolved = True
-        mappings.dereference(codings=codings)
-        contributions.dereference(agents=agents)
-        documents.dereference(agents=agents, urls=urls)
-        genes.dereference(codings=codings, mappings=mappings)
-        biomarkers.dereference(genes=genes, codings=codings, mappings=mappings)
-        diseases.dereference(codings=codings, mappings=mappings)
-        therapies.dereference(codings=codings, mappings=mappings)
-        therapy_groups.dereference(therapies=therapies, codings=codings, mappings=mappings)
-        propositions.dereference(
-            biomarkers=biomarkers,
-            diseases=diseases,
-            therapies=therapies,
-            therapy_groups=therapy_groups,
-            codings=codings,
-            genes=genes,
-            mappings=mappings,
-        )
-        indications.dereference(documents=documents, agents=agents, urls=urls)
-        strengths.dereference(codings=codings)
-        self.dereference_contributions(contributions=contributions)
-        self.dereference_documents(documents=documents)
-        self.dereference_indications(indications=indications)
-        self.dereference_propositions(propositions=propositions)
-        self.dereference_strengths(strengths=strengths)
-
-    def dereference_contributions(self, contributions: Contributions) -> None:
-        """
-        Dereferences the `contributions` key in each statement record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `contributions` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            contributions (Contributions): An instance of the Contributions class representing the Contributions table.
-
-        Raises:
-            KeyError: If the referenced_key, `contributions`, is not found in a record.
-        """
+        super().dereference(db)
         for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="contributions",
-                referenced_records=contributions.records,
-                key_always_present=True,
-            )
-
-    def dereference_documents(self, documents: Documents) -> None:
-        """
-        Dereferences the `reportedIn` key in each statement record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `reportedIn` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            documents (Documents): An instance of the Documents class representing the documents table.
-
-        Raises:
-            KeyError: If the referenced_key, `reportedIn`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="reportedIn",
-                referenced_records=documents.records,
-                key_always_present=True,
-            )
-
-    def dereference_indications(self, indications: Indications) -> None:
-        """
-        Dereferences the `indication_id` key in each statement record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `indication_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Note: This will eventually not be expected to be present within each record, once we add more than regulatory approvals.
-
-        Args:
-            indications (Indications): An instance of the Indications class representing the indications table.
-
-        Raises:
-            KeyError: If the referenced_key, `indication_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="indication_id",
-                referenced_records=indications.records,
-            )
-            self.replace_key(
-                record=record, old_key="indication_id", new_key="indication"
-            )
             indication = record.get("indication")
             if isinstance(indication, dict):
                 description = indication.get("description")
                 if description is not None:
                     record["description"] = description
-
-    def dereference_propositions(self, propositions: Propositions) -> None:
-        """
-        Dereferences the `proposition_id` key in each statement record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `proposition_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            propositions (Propositions): An instance of the Propositions class representing the propositions table.
-
-        Raises:
-            KeyError: If the referenced_key, `proposition_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="proposition_id",
-                referenced_records=propositions.records,
-            )
-            self.replace_key(
-                record=record, old_key="proposition_id", new_key="proposition"
-            )
-
-    def dereference_strengths(self, strengths: Strengths) -> None:
-        """
-        Dereferences the `strength_id` key in each statement record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `strength_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            strengths (Strengths): An instance of the Strengths class representing the strengths table.
-
-        Raises:
-            KeyError: If the referenced_key, `strength_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="strength_id",
-                referenced_records=strengths.records,
-            )
-            self.replace_key(record=record, old_key="strength_id", new_key="strength")
 
 
 class Strengths(BaseTable):
@@ -1007,46 +585,9 @@ class Strengths(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: Codings) -> None:
-        """
-        Dereferences all referenced keys within the Strengths table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        self.dereference_codings(codings=codings)
-
-    def dereference_codings(self, codings: Codings) -> None:
-        """
-        Dereferences the `primary_coding_id` key in each strength record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-
-        Raises:
-            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="primary_coding_id",
-                referenced_records=codings.records,
-            )
-            self.replace_key(
-                record=record,
-                old_key="primary_coding_id",
-                new_key="primaryCoding",
-            )
+    foreign_keys = [
+        FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+    ]
 
 
 class Therapies(BaseTable):
@@ -1059,48 +600,9 @@ class Therapies(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(self, codings: Codings, mappings: Mappings) -> None:
-        """
-        Dereferences all referenced keys within the Therapies table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        mappings.dereference(codings=codings)
-        self.dereference_codings(codings=codings)
-
-    def dereference_codings(self, codings: Codings) -> None:
-        """
-        Dereferences the `primary_coding_id` key in each strength record.
-
-        Utilizes the `dereference_single` function from the BaseTable class to replace the value associated with the
-        `primary_coding_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            codings (Codings): An instance of the Codings class representing the codings table.
-
-        Raises:
-            KeyError: If the referenced_key, `primary_coding_id`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_single(
-                record=record,
-                referenced_key="primary_coding_id",
-                referenced_records=codings.records,
-            )
-            self.replace_key(
-                record=record,
-                old_key="primary_coding_id",
-                new_key="primaryCoding",
-            )
+    foreign_keys = [
+        FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+    ]
 
 
 class TherapyGroups(BaseTable):
@@ -1113,50 +615,9 @@ class TherapyGroups(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(
-        self,
-        therapies: "Therapies",
-        codings: Codings,
-        mappings: Mappings,
-    ) -> None:
-        """
-        Dereferences all referenced keys within the Therapy Groups table.
-
-        Calls functions within this class to replace references with actual data from the referenced tables.
-        Each table is resolved at most once; subsequent calls are no-ops.
-
-        Args:
-            therapies (Therapies): An instance of the Therapies class representing the therapies table.
-            codings (Codings): An instance of the Codings class representing the codings table.
-            mappings (Mappings): An instance of the Mappings class representing the mappings table.
-        """
-        if self._resolved:
-            return
-        self._resolved = True
-        therapies.dereference(codings=codings, mappings=mappings)
-        self.dereference_therapies(therapies=therapies)
-
-    def dereference_therapies(self, therapies: Therapies) -> None:
-        """
-        Dereferences the `therapies_id` key in each therapy group record.
-
-        Utilizes the `dereference_list` function from the BaseTable class to replace the value associated with the
-        `agent_id` key within each record. This key is expected to be present within each record, so a
-        KeyError will be raised if it is missing.
-
-        Args:
-            therapies (list[dict]): list of dictionaries to dereference against.
-
-        Raises:
-            KeyError: If the referenced_key, `therapies`, is not found in a record.
-        """
-        for record in self.records:
-            self.dereference_list(
-                record=record,
-                referenced_key="therapies",
-                referenced_records=therapies.records,
-                key_always_present=True,
-            )
+    foreign_keys = [
+        FKList("therapies", "therapies", lambda db: db.therapies),
+    ]
 
 
 class URLs(BaseTable):
@@ -1169,6 +630,46 @@ class URLs(BaseTable):
     """
 
     pass
+
+
+@dataclass
+class Database:
+    """
+    A container holding all table instances for the relational database.
+
+    Attributes:
+        agents (Agents): An instance of the Agents class.
+        biomarkers (Biomarkers): An instance of the Biomarkers class.
+        codings (Codings): An instance of the Codings class.
+        contributions (Contributions): An instance of the Contributions class.
+        diseases (Diseases): An instance of the Diseases class.
+        documents (Documents): An instance of the Documents class.
+        genes (Genes): An instance of the Genes class.
+        indications (Indications): An instance of the Indications class.
+        mappings (Mappings): An instance of the Mappings class.
+        propositions (Propositions): An instance of the Propositions class.
+        statements (Statements): An instance of the Statements class.
+        strengths (Strengths): An instance of the Strengths class.
+        therapies (Therapies): An instance of the Therapies class.
+        therapy_groups (TherapyGroups): An instance of the TherapyGroups class.
+        urls (URLs): An instance of the URLs class.
+    """
+
+    agents: Agents
+    biomarkers: Biomarkers
+    codings: Codings
+    contributions: Contributions
+    diseases: Diseases
+    documents: Documents
+    genes: Genes
+    indications: Indications
+    mappings: Mappings
+    propositions: Propositions
+    statements: Statements
+    strengths: Strengths
+    therapies: Therapies
+    therapy_groups: TherapyGroups
+    urls: URLs
 
 
 def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = False):
@@ -1188,6 +689,7 @@ def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = Fal
         output = os.path.join("dereferenced", "agents", filename)
         write.dictionary(data=agent, keys_list=[], file=output, quiet=quiet)
 
+
 def dereference_documents(input_paths: dict, clear: bool = False, quiet: bool = False):
     """
     Write each Document to the dereferenced/documents/ folder.
@@ -1198,20 +700,29 @@ def dereference_documents(input_paths: dict, clear: bool = False, quiet: bool = 
     """
     if clear:
         remove_dereferenced_json_files(entity="documents", quiet=quiet)
-
-    agents = read.json_records(file=input_paths["agents"])
-    agents = Agents(records=agents)
-
-    urls = read.json_records(file=input_paths["urls"])
-    urls = URLs(records=urls)
-
-    documents = read.json_records(file=input_paths["documents"])
-    documents = Documents(records=documents)
-    documents.dereference(agents=agents, urls=urls)
-    for document in documents.records:
+    db = Database(
+        agents=Agents(records=read.json_records(file=input_paths["agents"])),
+        biomarkers=Biomarkers(records=read.json_records(file=input_paths["biomarkers"])),
+        codings=Codings(records=read.json_records(file=input_paths["codings"])),
+        contributions=Contributions(records=read.json_records(file=input_paths["contributions"])),
+        diseases=Diseases(records=read.json_records(file=input_paths["diseases"])),
+        documents=Documents(records=read.json_records(file=input_paths["documents"])),
+        genes=Genes(records=read.json_records(file=input_paths["genes"])),
+        indications=Indications(records=read.json_records(file=input_paths["indications"])),
+        mappings=Mappings(records=read.json_records(file=input_paths["mappings"])),
+        propositions=Propositions(records=read.json_records(file=input_paths["propositions"])),
+        statements=Statements(records=read.json_records(file=input_paths["statements"])),
+        strengths=Strengths(records=read.json_records(file=input_paths["strengths"])),
+        therapies=Therapies(records=read.json_records(file=input_paths["therapies"])),
+        therapy_groups=TherapyGroups(records=read.json_records(file=input_paths["therapy_groups"])),
+        urls=URLs(records=read.json_records(file=input_paths["urls"])),
+    )
+    db.documents.dereference(db)
+    for document in db.documents.records:
         filename = f"{document['id']}.json"
         output = os.path.join("dereferenced", "documents", filename)
         write.dictionary(data=document, keys_list=[], file=output, quiet=quiet)
+
 
 def populate_statement_description(statements: list[dict], indications: list[dict]):
     """
@@ -1307,7 +818,7 @@ def main(input_paths):
     urls = URLs(records=urls)
 
     # Step 3: Dereference the database and generate statements
-    statements.dereference(
+    db = Database(
         agents=agents,
         biomarkers=biomarkers,
         codings=codings,
@@ -1318,11 +829,13 @@ def main(input_paths):
         indications=indications,
         mappings=mappings,
         propositions=propositions,
+        statements=statements,
         strengths=strengths,
         therapies=therapies,
         therapy_groups=therapy_groups,
         urls=urls,
     )
+    statements.dereference(db)
 
     data = {"about": about, "content": statements.records}
     write.dictionary(data=data, keys_list=["content"], file=args.output)
