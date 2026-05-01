@@ -5,15 +5,11 @@ from __future__ import annotations
 import argparse
 import os
 import pathlib
-import typing
 from dataclasses import dataclass
 from typing import Callable
 
 # Local imports
-from utils import json_utils
-from utils import populate_statement_description_from_indication
-from utils import read
-from utils import write
+from utils import json_utils, read, write
 
 
 @dataclass
@@ -951,9 +947,15 @@ if __name__ == "__main__":
         default="moalmanac-draft.dereferenced.json",
     )
     arg_parser.add_argument(
+        "--write-concepts",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Write per-concept JSON files to dereferenced/<entity>/. Use --no-write-concepts to skip.",
+    )
+    arg_parser.add_argument(
         "--clear",
         action="store_true",
-        help="Remove currently existing dereferenced files",
+        help="Remove existing JSON files from all concept output directories before writing.",
     )
     arg_parser.add_argument(
         "--quiet",
@@ -983,8 +985,9 @@ if __name__ == "__main__":
 
     dereferenced = main(input_paths=input_data)
 
-    write_all_concepts(
-        input_paths=input_data,
-        clear=args.clear,
-        quiet=args.quiet,
-    )
+    if args.write_concepts:
+        write_all_concepts(
+            input_paths=input_data,
+            clear=args.clear,
+            quiet=args.quiet,
+        )
