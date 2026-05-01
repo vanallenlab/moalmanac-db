@@ -32,6 +32,7 @@ class BaseTable:
             records (list[dict]): list of dictionaries that represent one table within the relational database.
         """
         self.records = records
+        self._resolved = False
 
     @staticmethod
     def dereference_single(
@@ -152,35 +153,22 @@ class Biomarkers(BaseTable):
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
-    def dereference(
-        self,
-        genes: Genes,
-        resolve_dependencies: bool = True,
-        codings: Codings | None = None,
-        mappings: Mappings | None = None,
-    ) -> None:
+    def dereference(self, genes: Genes, codings: Codings, mappings: Mappings) -> None:
         """
-        Dereferences all referenced keys within the Genes table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Biomarkers table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             genes (Genes): An instance of the Genes class representing the genes table.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
             codings (Codings): An instance of the Codings class representing the codings table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
         """
-        if resolve_dependencies:
-            if codings and mappings:
-                genes.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=True,
-                )
-
+        if self._resolved:
+            return
+        self._resolved = True
+        genes.dereference(codings=codings, mappings=mappings)
         self.dereference_genes(genes=genes)
 
     def dereference_genes(self, genes: Genes) -> None:
@@ -229,9 +217,15 @@ class Contributions(BaseTable):
         """
         Dereferences all referenced keys within the Contributions table.
 
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        Each table is resolved at most once; subsequent calls are no-ops.
+
         Args:
             agents (Agents): An instance of the Agents class representing the agents table.
         """
+        if self._resolved:
+            return
+        self._resolved = True
         self.dereference_agents(agents=agents)
 
     def dereference_agents(self, agents: Agents) -> None:
@@ -268,28 +262,21 @@ class Diseases(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(
-        self,
-        codings: Codings,
-        mappings: Mappings,
-        resolve_dependencies: bool = True,
-    ) -> None:
+    def dereference(self, codings: Codings, mappings: Mappings) -> None:
         """
-        Dereferences all referenced keys within the Diseases table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Diseases table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             codings (Codings): An instance of the Codings class representing the codings table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
         """
-        if resolve_dependencies:
-            mappings.dereference(codings=codings)
-
+        if self._resolved:
+            return
+        self._resolved = True
+        mappings.dereference(codings=codings)
         self.dereference_codings(codings=codings)
         self.dereference_mappings(mappings=mappings)
 
@@ -420,9 +407,16 @@ class Documents(BaseTable):
         """
         Dereferences all referenced keys within the Documents table.
 
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        Each table is resolved at most once; subsequent calls are no-ops.
+
         Args:
             agents (Agents): An instance of the Agents class representing the agents table.
+            urls (URLs): An instance of the URLs class representing the urls table.
         """
+        if self._resolved:
+            return
+        self._resolved = True
         self.dereference_agents(agents=agents)
         self.dereference_urls(urls=urls)
         self.convert_fields_to_extensions()
@@ -484,28 +478,21 @@ class Genes(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(
-        self,
-        codings: Codings,
-        mappings: Mappings,
-        resolve_dependencies: bool = True,
-    ) -> None:
+    def dereference(self, codings: Codings, mappings: Mappings) -> None:
         """
-        Dereferences all referenced keys within the Genes table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Genes table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             codings (Codings): An instance of the Codings class representing the codings table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
         """
-        if resolve_dependencies:
-            if codings and mappings:
-                mappings.dereference(codings=codings)
+        if self._resolved:
+            return
+        self._resolved = True
+        mappings.dereference(codings=codings)
         self.dereference_codings(codings=codings)
         self.dereference_mappings(mappings=mappings)
 
@@ -571,32 +558,22 @@ class Indications(BaseTable):
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
-    def dereference(
-        self,
-        documents: Documents,
-        resolve_dependencies: bool = True,
-        agents: Agents | None = None,
-        urls: URLs | None = None,
-    ) -> None:
+    def dereference(self, documents: Documents, agents: Agents, urls: URLs) -> None:
         """
-        Dereferences all referenced keys within the Indications table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Indications table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             documents (Documents): An instance of the Documents class representing the documents table.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
             agents (Agents): An instance of the Agents class representing the agents table.
             urls (URLs): An instance of the URLs class representing the urls table.
         """
-        if resolve_dependencies:
-            if agents is None or urls is None:
-                raise ValueError("If resolve_dependencies=True, both 'agents' and 'urls' must be provided.")
-            documents.dereference(agents=agents, urls=urls)
-
+        if self._resolved:
+            return
+        self._resolved = True
+        documents.dereference(agents=agents, urls=urls)
         self.dereference_documents(documents=documents)
 
     def dereference_documents(self, documents: Documents) -> None:
@@ -637,12 +614,14 @@ class Mappings(BaseTable):
         Dereferences all referenced keys within the Mappings table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             codings (Codings): An instance of the Codings class representing the codings table.
         """
+        if self._resolved:
+            return
+        self._resolved = True
         self.dereference_codings(codings=codings)
 
     def dereference_codings(self, codings: Codings) -> None:
@@ -684,53 +663,33 @@ class Propositions(BaseTable):
         diseases: Diseases,
         therapies: Therapies,
         therapy_groups: TherapyGroups,
-        resolve_dependencies: bool = True,
-        codings: Codings | None = None,
-        genes: Genes | None = None,
-        mappings: Mappings | None = None,
+        codings: Codings,
+        genes: Genes,
+        mappings: Mappings,
     ) -> None:
         """
-        Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Propositions table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
             diseases (Diseases): An instance of the Diseases class representing the diseases table.
-            therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
-            therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
+            therapies (Therapies): An instance of the Therapies class representing the therapies table.
+            therapy_groups (TherapyGroups): An instance of the TherapyGroups class representing the therapy groups table.
             codings (Codings): An instance of the Codings class representing the codings table.
             genes (Genes): An instance of the Genes class representing the genes table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
         """
-        if resolve_dependencies:
-            if diseases and codings and mappings:
-                diseases.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=True,
-                )
-            if genes and codings and mappings:
-                genes.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=True,
-                )
-                biomarkers.dereference(genes=genes, resolve_dependencies=False)
-            if therapies and codings and mappings:
-                therapies.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=True,
-                )
-            if therapies and therapy_groups:
-                therapy_groups.dereference(
-                    therapies=therapies, resolve_dependencies=False
-                )
+        if self._resolved:
+            return
+        self._resolved = True
+        diseases.dereference(codings=codings, mappings=mappings)
+        genes.dereference(codings=codings, mappings=mappings)
+        biomarkers.dereference(genes=genes, codings=codings, mappings=mappings)
+        therapies.dereference(codings=codings, mappings=mappings)
+        therapy_groups.dereference(therapies=therapies, codings=codings, mappings=mappings)
 
         # Maybe change this to just do therapy groups?
 
@@ -851,86 +810,65 @@ class Statements(BaseTable):
 
     def dereference(
         self,
+        agents: Agents,
+        biomarkers: Biomarkers,
         codings: Codings,
         contributions: Contributions,
+        diseases: Diseases,
         documents: Documents,
+        genes: Genes,
         indications: Indications,
         mappings: Mappings,
         propositions: Propositions,
         strengths: Strengths,
-        resolve_dependencies: bool = True,
-        agents: Agents | None = None,
-        biomarkers: Biomarkers | None = None,
-        diseases: Diseases | None = None,
-        genes: Genes | None = None,
-        therapies: Therapies | None = None,
-        therapy_groups: TherapyGroups | None = None,
-        urls: URLs | None = None,
+        therapies: Therapies,
+        therapy_groups: TherapyGroups,
+        urls: URLs,
     ) -> None:
         """
-        Dereferences all referenced keys within the Propositions table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Statements table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
-            contributions (Contributions): An instance of the Contributions class representing the contributions table.
-            documents (Documents): An instance of the Documents class representing the documents table.
-            indications (Indications): An instance of the Indications class representing the indications table.
-            propositions (Propositions): An instance of the Propositions class representing the propositions table.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
             agents (Agents): An instance of the Agents class representing the agents table.
             biomarkers (Biomarkers): An instance of the Biomarkers class representing the biomarkers table.
             codings (Codings): An instance of the Codings class representing the codings table.
+            contributions (Contributions): An instance of the Contributions class representing the contributions table.
             diseases (Diseases): An instance of the Diseases class representing the diseases table.
+            documents (Documents): An instance of the Documents class representing the documents table.
             genes (Genes): An instance of the Genes class representing the genes table.
+            indications (Indications): An instance of the Indications class representing the indications table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
+            propositions (Propositions): An instance of the Propositions class representing the propositions table.
             strengths (Strengths): An instance of the Strengths class representing the strengths table.
-            therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
-            therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
+            therapies (Therapies): An instance of the Therapies class representing the therapies table.
+            therapy_groups (TherapyGroups): An instance of the TherapyGroups class representing the therapy groups table.
             urls (URLs): An instance of the URLs class representing the urls table.
         """
-        if resolve_dependencies:
-            if codings and mappings:
-                mappings.dereference(codings=codings)
-            if agents:
-                contributions.dereference(agents=agents)
-            if agents and urls:
-                documents.dereference(agents=agents, urls=urls)
-            if biomarkers and genes:
-                genes.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=False,
-                )
-                biomarkers.dereference(genes=genes, resolve_dependencies=False)
-            if diseases:
-                diseases.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=False,
-                )
-            if therapies:
-                therapies.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=False,
-                )
-            if therapies and therapy_groups:
-                therapy_groups.dereference(therapies=therapies)
-            if biomarkers and diseases and therapies and therapy_groups:
-                propositions.dereference(
-                    biomarkers=biomarkers,
-                    diseases=diseases,
-                    therapies=therapies,
-                    therapy_groups=therapy_groups,
-                    resolve_dependencies=False,
-                )
-            indications.dereference(documents=documents, resolve_dependencies=False)
-            strengths.dereference(codings=codings)
-
+        if self._resolved:
+            return
+        self._resolved = True
+        mappings.dereference(codings=codings)
+        contributions.dereference(agents=agents)
+        documents.dereference(agents=agents, urls=urls)
+        genes.dereference(codings=codings, mappings=mappings)
+        biomarkers.dereference(genes=genes, codings=codings, mappings=mappings)
+        diseases.dereference(codings=codings, mappings=mappings)
+        therapies.dereference(codings=codings, mappings=mappings)
+        therapy_groups.dereference(therapies=therapies, codings=codings, mappings=mappings)
+        propositions.dereference(
+            biomarkers=biomarkers,
+            diseases=diseases,
+            therapies=therapies,
+            therapy_groups=therapy_groups,
+            codings=codings,
+            genes=genes,
+            mappings=mappings,
+        )
+        indications.dereference(documents=documents, agents=agents, urls=urls)
+        strengths.dereference(codings=codings)
         self.dereference_contributions(contributions=contributions)
         self.dereference_documents(documents=documents)
         self.dereference_indications(indications=indications)
@@ -1070,6 +1008,18 @@ class Strengths(BaseTable):
     """
 
     def dereference(self, codings: Codings) -> None:
+        """
+        Dereferences all referenced keys within the Strengths table.
+
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        Each table is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+        """
+        if self._resolved:
+            return
+        self._resolved = True
         self.dereference_codings(codings=codings)
 
     def dereference_codings(self, codings: Codings) -> None:
@@ -1109,16 +1059,21 @@ class Therapies(BaseTable):
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
 
-    def dereference(
-        self,
-        codings: Codings,
-        resolve_dependencies: bool = True,
-        mappings: Mappings | None = None,
-    ) -> None:
-        if resolve_dependencies:
-            if codings and mappings:
-                mappings.dereference(codings=codings)
+    def dereference(self, codings: Codings, mappings: Mappings) -> None:
+        """
+        Dereferences all referenced keys within the Therapies table.
 
+        Calls functions within this class to replace references with actual data from the referenced tables.
+        Each table is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            codings (Codings): An instance of the Codings class representing the codings table.
+            mappings (Mappings): An instance of the Mappings class representing the mappings table.
+        """
+        if self._resolved:
+            return
+        self._resolved = True
+        mappings.dereference(codings=codings)
         self.dereference_codings(codings=codings)
 
     def dereference_codings(self, codings: Codings) -> None:
@@ -1161,32 +1116,24 @@ class TherapyGroups(BaseTable):
     def dereference(
         self,
         therapies: "Therapies",
-        resolve_dependencies: bool = True,
-        codings: Codings | None = None,
-        mappings: Mappings | None = None,
+        codings: Codings,
+        mappings: Mappings,
     ) -> None:
         """
-        Dereferences all referenced keys within the Therapy Groups table and optionally resolves dependencies
-        within these related tables.
+        Dereferences all referenced keys within the Therapy Groups table.
 
         Calls functions within this class to replace references with actual data from the referenced tables.
-        If `resolve_dependencies` is set to True and the dependent table(s) are provided, it will also ensure that
-        references are also fully dereferenced by utilizing the `dereference` function from their respective classes.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
-            therapies (Therapies): list of dictionaries to dereference `therapies` against.
-            resolve_dependencies (bool): If `True`, resolve dependencies within referenced tables.
+            therapies (Therapies): An instance of the Therapies class representing the therapies table.
             codings (Codings): An instance of the Codings class representing the codings table.
             mappings (Mappings): An instance of the Mappings class representing the mappings table.
         """
-        if resolve_dependencies:
-            if codings and mappings:
-                therapies.dereference(
-                    codings=codings,
-                    mappings=mappings,
-                    resolve_dependencies=True,
-                )
-
+        if self._resolved:
+            return
+        self._resolved = True
+        therapies.dereference(codings=codings, mappings=mappings)
         self.dereference_therapies(therapies=therapies)
 
     def dereference_therapies(self, therapies: Therapies) -> None:
@@ -1375,7 +1322,6 @@ def main(input_paths):
         therapies=therapies,
         therapy_groups=therapy_groups,
         urls=urls,
-        resolve_dependencies=True,
     )
 
     data = {"about": about, "content": statements.records}
