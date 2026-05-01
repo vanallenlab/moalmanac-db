@@ -9,7 +9,9 @@ from dataclasses import dataclass
 from typing import Callable
 
 # Local imports
-from utils import json_utils, read, write
+from utils import json_utils
+from utils import read
+from utils import write
 
 
 @dataclass
@@ -21,11 +23,13 @@ class FKSingle:
         src_key (str): The key in the record whose value is the foreign key.
         dest_key (str): The key name written after dereferencing (replaces src_key).
         get_table (Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+        post (Callable[[dict], dict] | None): Optional function applied to the resolved record.
     """
 
     src_key: str
     dest_key: str
     get_table: Callable[[Database], BaseTable]
+    post: Callable[[dict], dict] | None = None
 
 
 @dataclass
@@ -61,6 +65,10 @@ def strip_mapping_internals(mappings: list) -> list:
         list: The same list with `id` and `primary_coding_id` removed from each entry.
     """
     return [{k: v for k, v in m.items() if k not in ("id", "primary_coding_id")} for m in mappings]
+
+
+def strip_keys(*keys: str) -> Callable[[dict], dict]:
+    return lambda record: {k: v for k, v in record.items() if k not in keys}
 
 
 def extract_url_values(urls: list) -> list:
@@ -121,6 +129,8 @@ class BaseTable:
                 if isinstance(fk, FKSingle):
                     self.dereference_single(record, fk.src_key, table.records)
                     self.replace_key(record, fk.src_key, fk.dest_key)
+                    if fk.post is not None:
+                        record[fk.dest_key] = fk.post(dict(record[fk.dest_key]))
                 else:
                     self.dereference_list(record, fk.src_key, table.records, fk.key_always_present)
                     if fk.post is not None and fk.src_key in record:
@@ -290,7 +300,7 @@ class Contributions(BaseTable):
     """
 
     foreign_keys = [
-        FKSingle("agent_id", "contributor", lambda db: db.agents),
+        FKSingle("agent_id", "contributor", lambda db: db.agents, post=strip_keys("extensions")),
     ]
 
 
@@ -323,7 +333,7 @@ class Documents(BaseTable):
     """
 
     foreign_keys = [
-        FKSingle("agent_id", "agent", lambda db: db.agents),
+        FKSingle("agent_id", "agent", lambda db: db.agents, post=strip_keys("extensions")),
         FKList("urls", "urls", lambda db: db.urls, post=extract_url_values),
     ]
 
