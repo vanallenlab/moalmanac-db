@@ -42,46 +42,31 @@ class FKList:
         dest_key (str): The key name written after dereferencing. Pass src_key if unchanged.
         get_table (Callable[[Database], BaseTable]): Returns the referenced table from the Database.
         key_always_present (bool): If True, raise KeyError when src_key is absent from a record.
-        post (Callable[[list], list] | None): Optional function applied to the resolved list.
+        post (Callable[[dict], object] | None): Optional function applied to each resolved record.
     """
 
     src_key: str
     dest_key: str
     get_table: Callable[[Database], BaseTable]
     key_always_present: bool = True
-    post: Callable[[list], list] | None = None
-
-
-def strip_mapping_internals(mappings: list) -> list:
-    """
-    Removes internal keys from each mapping record after dereferencing.
-
-    Removes the `id` and `primary_coding_id` keys from each mapping dict in place.
-
-    Args:
-        mappings (list): List of resolved mapping records.
-
-    Returns:
-        list: The same list with `id` and `primary_coding_id` removed from each entry.
-    """
-    return [{k: v for k, v in m.items() if k not in ("id", "primary_coding_id")} for m in mappings]
+    post: Callable[[dict], object] | None = None
 
 
 def strip_keys(*keys: str) -> Callable[[dict], dict]:
     return lambda record: {k: v for k, v in record.items() if k not in keys}
 
 
-def extract_url_values(urls: list) -> list:
+def extract_url_value(url: dict) -> str:
     """
-    Extracts the URL string from each resolved URL record.
+    Extracts the URL string from a resolved URL record.
 
     Args:
-        urls (list): List of resolved URL records, each containing a `url` key.
+        url (dict): A resolved URL record containing a `url` key.
 
     Returns:
-        list: List of URL strings.
+        str: The URL string.
     """
-    return [item["url"] for item in urls]
+    return url["url"]
 
 
 class BaseTable:
@@ -134,7 +119,7 @@ class BaseTable:
                 else:
                     self.dereference_list(record, fk.src_key, table.records, fk.key_always_present)
                     if fk.post is not None and fk.src_key in record:
-                        record[fk.src_key] = fk.post(record[fk.src_key])
+                        record[fk.src_key] = [fk.post(item) for item in record[fk.src_key]]
                     if fk.src_key != fk.dest_key:
                         self.replace_key(record, fk.src_key, fk.dest_key)
 
@@ -317,7 +302,7 @@ class Diseases(BaseTable):
 
     foreign_keys = [
         FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
-        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_mapping_internals),
+        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_keys("id", "primary_coding_id")),
     ]
 
 
@@ -334,7 +319,7 @@ class Documents(BaseTable):
 
     foreign_keys = [
         FKSingle("agent_id", "agent", lambda db: db.agents, post=strip_keys("extensions")),
-        FKList("urls", "urls", lambda db: db.urls, post=extract_url_values),
+        FKList("urls", "urls", lambda db: db.urls, post=extract_url_value),
     ]
 
     def convert_fields_to_extensions(self):
@@ -427,7 +412,7 @@ class Genes(BaseTable):
 
     foreign_keys = [
         FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
-        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_mapping_internals),
+        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_keys("id", "primary_coding_id")),
     ]
 
 
