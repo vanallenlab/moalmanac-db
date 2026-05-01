@@ -1,0 +1,58 @@
+{
+  "id": 20,
+  "conceptType": "Gene",
+  "name": "EZH2",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000106462",
+        "code": "ENSG00000106462",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000106462"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:2146",
+        "code": "2146",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/2146"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_004456.5",
+        "code": "NM_004456.5",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004456.5"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "7q36.1"
+    },
+    {
+      "name": "location_sortable",
+      "value": "07q36.1"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:3527",
+    "code": "HGNC:3527",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
+    ]
+  }
+}

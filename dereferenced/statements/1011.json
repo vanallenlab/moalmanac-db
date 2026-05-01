@@ -1,0 +1,343 @@
+{
+  "id": 1011,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has conditionally authorized larotrectinib for the treatment of adult and pediatric patients with solid tumors that display a Neurotrophic Tyrosine Receptor Kinase (NTRK) gene fusion who have a disease that is locally advanced, metastatic, or where surgical resection is likely to result in severe morbidity. It is also indicated for the treatment of adult and pediatric patients with solid tumors that display an NTRK gene fusion who have no satisfactory treatment options.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.vitrakvi",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Vitrakvi (larotrectinib) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bayer AG. Vitrakvi (larotrectinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/vitrakvi-epar-product-information_en.pdf. Revised September 2023. Accessed March 25, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/vitrakvi-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/vitrakvi"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bayer AG.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Vitrakvi",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "larotrectinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2019-10-24",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-09-22",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.vitrakvi:0",
+    "indication": "VITRAKVI as monotherapy is indicated for the treatment of adult and paediatric patients with solid tumours that display a Neurotrophic Tyrosine Receptor Kinase (NTRK) gene fusion, who have a disease that is locally advanced, metastatic or where surgical resection is likely to result in severe morbidity, and who have no satisfactory treatment options.",
+    "initial_approval_date": "2019-09-19",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/assessment-report/vitrakvi-epar-public-assessment-report_en.pdf",
+    "description": "The European Medicines Agency (EMA) has conditionally authorized larotrectinib for the treatment of adult and pediatric patients with solid tumors that display a Neurotrophic Tyrosine Receptor Kinase (NTRK) gene fusion who have a disease that is locally advanced, metastatic, or where surgical resection is likely to result in severe morbidity. It is also indicated for the treatment of adult and pediatric patients with solid tumors that display an NTRK gene fusion who have no satisfactory treatment options.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Any solid tumor",
+    "raw_therapeutics": "Vitrakvi (larotrectinib)",
+    "document": {
+      "id": "doc:ema.vitrakvi",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Vitrakvi (larotrectinib) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bayer AG. Vitrakvi (larotrectinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/vitrakvi-epar-product-information_en.pdf. Revised September 2023. Accessed March 25, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/vitrakvi-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/vitrakvi"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bayer AG.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Vitrakvi",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "larotrectinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2019-10-24",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-09-22",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 200,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 64,
+        "type": "CategoricalVariant",
+        "name": "v::NTRK2",
+        "genes": [
+          {
+            "id": 36,
+            "conceptType": "Gene",
+            "name": "NTRK2",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000148053",
+                  "code": "ENSG00000148053",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000148053"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:4915",
+                  "code": "4915",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/4915"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_006180.6",
+                  "code": "NM_006180.6",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_006180.6"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "9q21.33"
+              },
+              {
+                "name": "location_sortable",
+                "value": "09q21.33"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:8032",
+              "code": "HGNC:8032",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Rearrangement"
+          },
+          {
+            "name": "rearrangement_type",
+            "value": "Fusion"
+          },
+          {
+            "name": "locus",
+            "value": null
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 5,
+      "conceptType": "Disease",
+      "name": "Any solid tumor",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C132146",
+        "code": "C132146",
+        "name": "Malignant Solid Neoplasm",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C132146"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 100,
+      "conceptType": "Drug",
+      "name": "Larotrectinib",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "NTRK inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C115977",
+        "code": "C115977",
+        "name": "Larotrectinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C115977"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": 101,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 38,
+      "type": "CategoricalVariant",
+      "name": "MSI-H",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Microsatellite Stability"
+        },
+        {
+          "name": "status",
+          "value": "Microsatellite instability-high (MSI-H)"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 18,
+    "conceptType": "Disease",
+    "name": "Endometrial Carcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:UCEC",
+      "code": "UCEC",
+      "name": "Endometrial Carcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UCEC"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 19,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 37,
+        "conceptType": "Drug",
+        "name": "Carboplatin",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Platinum-based chemotherapy"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1282",
+          "code": "C1282",
+          "name": "Carboplatin",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
+          ]
+        }
+      },
+      {
+        "id": 47,
+        "conceptType": "Drug",
+        "name": "Dostarlimab",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "PD-1/PD-L1 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Immunotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C126799",
+          "code": "C126799",
+          "name": "Dostarlimab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C126799"
+          ]
+        }
+      },
+      {
+        "id": 35,
+        "conceptType": "Drug",
+        "name": "Paclitaxel",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Taxane-based chemotherapy"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1411",
+          "code": "C1411",
+          "name": "Paclitaxel",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": 56,
+  "membershipOperator": "AND",
+  "therapies": [
+    {
+      "id": 38,
+      "conceptType": "Drug",
+      "name": "Capecitabine",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Thymidylate synthase inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C1794",
+        "code": "C1794",
+        "name": "Capecitabine",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1794"
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "conceptType": "Drug",
+      "name": "Oxaliplatin",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Platinum-based chemotherapy"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C1181",
+        "code": "C1181",
+        "name": "Oxaliplatin",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1181"
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "conceptType": "Drug",
+      "name": "Pembrolizumab",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C106432",
+        "code": "C106432",
+        "name": "Pembrolizumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+        ]
+      }
+    }
+  ]
+}

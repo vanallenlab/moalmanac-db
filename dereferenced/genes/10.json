@@ -1,0 +1,58 @@
+{
+  "id": 10,
+  "conceptType": "Gene",
+  "name": "BRCA2",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000139618",
+        "code": "ENSG00000139618",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000139618"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:675",
+        "code": "675",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/675"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_000059.4",
+        "code": "NM_000059.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000059.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "13q13.1"
+    },
+    {
+      "name": "location_sortable",
+      "value": "13q13.1"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:1101",
+    "code": "HGNC:1101",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
+    ]
+  }
+}

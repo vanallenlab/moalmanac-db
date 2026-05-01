@@ -1,0 +1,388 @@
+{
+  "id": 1054,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized zolbetuximab in combination with fluoropyrimidine- and platinum-containing chemotherapy is indicated for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-negative gastric or gastro-oesophageal junction (GEJ) adenocracinoma whose tumors are Claudin (CLDN) 18.2 positive. The product information states that eligible patients should have CLDN18.2 positive tumor defined as >= 75% of tumor cells demonstrating moderate to strong membranous CLDN18 immunohistochemical staining, assessed by a CE-marked IVD with the corresponding intended purpose. The product information further states that this indication is based on Spotlight (8951-CL-0301) and Glow (8951-CL-0302), both phase 3, double-blind, randomized, multicenter studies that enrolled 1072 patients where the choice of either mFOLFOX6 (oxaliplatin, folinic acid, and fluorouracil) or CAPOX (oxaliplatin and capecitabine).",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.vyloy",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Vyloy (zolbetuximab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Astellas Pharma Europe B.V. Vyloy (zolbetuximab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/vyloy-epar-product-information_en.pdf. Revised September 2024. Accessed October 20, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/vyloy-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/vyloy"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Astellas Pharma Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Vyloy",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "zolbetuximab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2024-09-23",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-09-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.vyloy:0",
+    "indication": "Vyloy, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-negative gastric or gastro-oesophageal junction (GEJ) adenocarcinoma whose tumours are Claudin (CLDN) 18.2 positive.",
+    "initial_approval_date": "2024-09-19",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/assessment-report/vyloy-epar-public-assessment-report_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized zolbetuximab in combination with fluoropyrimidine- and platinum-containing chemotherapy is indicated for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-negative gastric or gastro-oesophageal junction (GEJ) adenocracinoma whose tumors are Claudin (CLDN) 18.2 positive. The product information states that eligible patients should have CLDN18.2 positive tumor defined as >= 75% of tumor cells demonstrating moderate to strong membranous CLDN18 immunohistochemical staining, assessed by a CE-marked IVD with the corresponding intended purpose. The product information further states that this indication is based on Spotlight (8951-CL-0301) and Glow (8951-CL-0302), both phase 3, double-blind, randomized, multicenter studies that enrolled 1072 patients where the choice of either mFOLFOX6 (oxaliplatin, folinic acid, and fluorouracil) or CAPOX (oxaliplatin and capecitabine).",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Gastric or gastroesophageal junction (GEJ) adenocarcinoma",
+    "raw_therapeutics": "Vyloy, in combination with fluoropyrimidine- and platinum-containing chemotherapy",
+    "document": {
+      "id": "doc:ema.vyloy",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Vyloy (zolbetuximab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Astellas Pharma Europe B.V. Vyloy (zolbetuximab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/vyloy-epar-product-information_en.pdf. Revised September 2024. Accessed October 20, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/vyloy-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/vyloy"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Astellas Pharma Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Vyloy",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "zolbetuximab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2024-09-23",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-09-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 513,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 2,
+        "type": "CategoricalVariant",
+        "name": "HER2-negative",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Negative"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "type": "CategoricalVariant",
+        "name": "CLDN18.2 >= 75%",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "CLDN18.2"
+          },
+          {
+            "name": "unit",
+            "value": "Percentage of tumor cells"
+          },
+          {
+            "name": "equality",
+            "value": ">="
+          },
+          {
+            "name": "value",
+            "value": 0.75
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 2,
+      "conceptType": "Disease",
+      "name": "Adenocarcinoma of the Gastroesophageal Junction",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:GEJ",
+        "code": "GEJ",
+        "name": "Adenocarcinoma of the Gastroesophageal Junction",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=GEJ"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 96,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 29,
+          "conceptType": "Drug",
+          "name": "Fluorouracil",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Thymidylate synthase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C505",
+            "code": "C505",
+            "name": "Fluorouracil",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "conceptType": "Drug",
+          "name": "Oxaliplatin",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Platinum-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1181",
+            "code": "C1181",
+            "name": "Oxaliplatin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1181"
+            ]
+          }
+        },
+        {
+          "id": 111,
+          "conceptType": "Drug",
+          "name": "Zolbetuximab",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CLDN18.2 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C85475",
+            "code": "C85475",
+            "name": "Zolbetuximab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C85475"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

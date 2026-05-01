@@ -1,0 +1,66 @@
+{
+  "id": 131,
+  "membershipOperator": "AND",
+  "therapies": [
+    {
+      "id": 72,
+      "conceptType": "Drug",
+      "name": "Nivolumab",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C68814",
+        "code": "C68814",
+        "name": "Nivolumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "conceptType": "Drug",
+      "name": "Relatlimab",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "LAG-3 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C111999",
+        "code": "C111999",
+        "name": "Relatlimab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C111999"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": 29,
+  "type": "CategoricalVariant",
+  "name": "PDGFRB rearrangements",
+  "genes": [
+    {
+      "id": 40,
+      "conceptType": "Gene",
+      "name": "PDGFRB",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000113721",
+            "code": "ENSG00000113721",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000113721"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:5159",
+            "code": "5159",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/5159"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_002609.4",
+            "code": "NM_002609.4",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_002609.4"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "5q32"
+        },
+        {
+          "name": "location_sortable",
+          "value": "05q32"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:8804",
+        "code": "HGNC:8804",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Rearrangement"
+    },
+    {
+      "name": "rearrangement_type",
+      "value": null
+    },
+    {
+      "name": "locus",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "id": 513,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to talazoparib in combination with enzalutamide for the treatment of adult patients with HRR gene-mutated metastatic castration-resistant prostate cancer (mCRPC).",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.talzenna",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Talzenna (talazoparib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Pfizer, Inc. Talzenna (talazoparib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/211651s012lbl.pdf. Revised February 2024. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/211651s012lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211651"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2026-04-09",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Pfizer, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Talzenna",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "talazoparib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 211651,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-02-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.talzenna:1",
+    "indication": "TALZENNA is a poly (ADP-ribose) polymerase (PARP) inhibitor indicated in combination with enzalutamide for the treatment of adult patients with HRR gene-mutated metastatic castration-resistant prostate cancer (mCRPC).",
+    "initial_approval_date": "2023-06-20",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/211651s010lbl.pdf",
+    "description": "The U.S. Food and Drug Administration granted approval to talazoparib in combination with enzalutamide for the treatment of adult patients with HRR gene-mutated metastatic castration-resistant prostate cancer (mCRPC).",
+    "raw_biomarkers": "HRR gene-mutated",
+    "raw_cancer_type": "metastatic castration-resistant prostate cancer",
+    "raw_therapeutics": "Talzenna (talazoparib) in combination with enzalutamide",
+    "document": {
+      "id": "doc:fda.talzenna",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Talzenna (talazoparib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Pfizer, Inc. Talzenna (talazoparib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/211651s012lbl.pdf. Revised February 2024. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/211651s012lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211651"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2026-04-09",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Pfizer, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Talzenna",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "talazoparib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 211651,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-02-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 437,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 49,
+        "type": "CategoricalVariant",
+        "name": "BRCA2 oncogenic variants",
+        "genes": [
+          {
+            "id": 10,
+            "conceptType": "Gene",
+            "name": "BRCA2",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000139618",
+                  "code": "ENSG00000139618",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000139618"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:675",
+                  "code": "675",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/675"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_000059.4",
+                  "code": "NM_000059.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000059.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "13q13.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "13q13.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:1101",
+              "code": "HGNC:1101",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "13"
+          },
+          {
+            "name": "start_position",
+            "value": null
+          },
+          {
+            "name": "end_position",
+            "value": null
+          },
+          {
+            "name": "reference_allele",
+            "value": null
+          },
+          {
+            "name": "alternate_allele",
+            "value": null
+          },
+          {
+            "name": "cdna_change",
+            "value": null
+          },
+          {
+            "name": "protein_change",
+            "value": null
+          },
+          {
+            "name": "variant_annotation",
+            "value": null
+          },
+          {
+            "name": "exon",
+            "value": null
+          },
+          {
+            "name": "rsid",
+            "value": null
+          },
+          {
+            "name": "hgvsg",
+            "value": null
+          },
+          {
+            "name": "hgvsc",
+            "value": null
+          },
+          {
+            "name": "requires_oncogenic",
+            "value": true
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 55,
+      "conceptType": "Disease",
+      "name": "Prostate Adenocarcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:PRAD",
+        "code": "PRAD",
+        "name": "Prostate Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PRAD"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 44,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 138,
+          "conceptType": "Drug",
+          "name": "Enzalutamide",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Antiandrogen"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Hormone therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C71744",
+            "code": "C71744",
+            "name": "Enzalutamide",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71744"
+            ]
+          }
+        },
+        {
+          "id": 87,
+          "conceptType": "Drug",
+          "name": "Talazoparib",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PARP inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C95733",
+            "code": "C95733",
+            "name": "Talazoparib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95733"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

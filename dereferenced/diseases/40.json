@@ -1,0 +1,23 @@
+{
+  "id": 40,
+  "conceptType": "Disease",
+  "name": "Melanoma",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:MEL",
+    "code": "MEL",
+    "name": "Melanoma",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MEL"
+    ]
+  }
+}

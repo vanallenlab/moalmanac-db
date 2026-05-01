@@ -1,0 +1,402 @@
+{
+  "id": 47,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": 3,
+      "type": "Contribution",
+      "description": "Added propositions and statements for approval of abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for patients with HR+, HER2- breast cancer. Additional propositions are for combinations with letrozole, anastrozole, or exemestane per endocrine offerings within monarchE (NCT03155997).",
+      "date": "2025-04-10",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.verzenio",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Verzenio (abemaciclib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2026-04-09",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Eli and Lily Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Verzenio",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "abemaciclib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 208716,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-03-03",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.verzenio:0",
+    "indication": "Verzenio is a kinase inhibitor indicated in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence.",
+    "initial_approval_date": "2023-03-03",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to abemaciclib in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor 2 (HER2)-negative, node positive, early breast cancer at high risk of recurrence. This indication is based on the monarchE (NCT03155997) clinical trial, which was a randomized (1:1), open-label, two cohort, multicenter study. Initial endocrine therapy received by patients included letrozole (39%), tamoxifen (31%), anastrozole (22%), or exemestane (8%).",
+    "raw_biomarkers": "HR+, HER2-negative",
+    "raw_cancer_type": "early breast cancer",
+    "raw_therapeutics": "Verzenio (abemaciclib) in combination with endocrine therapy (tamoxifen or an aromatase inhibitor)",
+    "document": {
+      "id": "doc:fda.verzenio",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Verzenio (abemaciclib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Eli and Lily Company. Verzenio (abemaciclib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf. Revised March 2023. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208716s010s011lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208716"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2026-04-09",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Eli and Lily Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Verzenio",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "abemaciclib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 208716,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-03-03",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 8,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 1,
+        "type": "CategoricalVariant",
+        "name": "ER positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Estrogen receptor (ER)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "CategoricalVariant",
+        "name": "HER2-negative",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Negative"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "CategoricalVariant",
+        "name": "PR positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Progesterone receptor (PR)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 9,
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:BRCA",
+        "code": "BRCA",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 2,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 40,
+          "conceptType": "Drug",
+          "name": "Letrozole",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Aromatase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Hormone therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1527",
+            "code": "C1527",
+            "name": "Letrozole",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1527"
+            ]
+          }
+        },
+        {
+          "id": 99,
+          "conceptType": "Drug",
+          "name": "Abemaciclib",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CDK4/6 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C97660",
+            "code": "C97660",
+            "name": "Abemaciclib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C97660"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

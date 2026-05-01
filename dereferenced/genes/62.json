@@ -1,0 +1,59 @@
+{
+  "id": 62,
+  "conceptType": "Gene",
+  "name": "NPM1",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_002520.7",
+        "code": "NM_002520.7",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_002520.7"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "ensembl:ensg00000181163",
+        "code": "ENSG00000181163",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000181163"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "ncbi:4869",
+        "code": "4869",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/4869"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "5q35.1"
+    },
+    {
+      "name": "location_sortable",
+      "value": "05q35.1"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:7910",
+    "code": "HGNC:7910",
+    "name": "NPM1",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7910"
+    ]
+  }
+}

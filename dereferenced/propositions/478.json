@@ -1,0 +1,220 @@
+{
+  "id": 478,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 45,
+      "type": "CategoricalVariant",
+      "name": "KRAS p.G12C",
+      "genes": [
+        {
+          "id": 31,
+          "conceptType": "Gene",
+          "name": "KRAS",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000133703",
+                "code": "ENSG00000133703",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000133703"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:3845",
+                "code": "3845",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/3845"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_004985.5",
+                "code": "NM_004985.5",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "12p12.1"
+            },
+            {
+              "name": "location_sortable",
+              "value": "12p12.1"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:6407",
+            "code": "HGNC:6407",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "12"
+        },
+        {
+          "name": "start_position",
+          "value": 25398285
+        },
+        {
+          "name": "end_position",
+          "value": 25398285
+        },
+        {
+          "name": "reference_allele",
+          "value": "C"
+        },
+        {
+          "name": "alternate_allele",
+          "value": "A"
+        },
+        {
+          "name": "cdna_change",
+          "value": "c.34G>T"
+        },
+        {
+          "name": "protein_change",
+          "value": "p.G12C"
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Missense"
+        },
+        {
+          "name": "exon",
+          "value": 2
+        },
+        {
+          "name": "rsid",
+          "value": "rs121913530"
+        },
+        {
+          "name": "hgvsg",
+          "value": "12:g.25398285C>A"
+        },
+        {
+          "name": "hgvsc",
+          "value": "ENST00000256078.4:c.34G>T"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 15,
+    "conceptType": "Disease",
+    "name": "Colorectal Adenocarcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:COADREAD",
+      "code": "COADREAD",
+      "name": "Colorectal Adenocarcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=COADREAD"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 90,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 54,
+        "conceptType": "Drug",
+        "name": "Adagrasib",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "RAS inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C157493",
+          "code": "C157493",
+          "name": "Adagrasib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C157493"
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "conceptType": "Drug",
+        "name": "Cetuximab",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "EGFR inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1723",
+          "code": "C1723",
+          "name": "Cetuximab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1723"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "id": 845,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized rituximab in combination with chemotherapy for the treatment of pediatric patients (aged >= 6 months to < 18 years old) with previously untreated advanced stage CD20 positive diffuse large B-cell lymphoma (DLBCL), Burkitt lymphoma (BL) / Burkitt leukemia (mature B-cell acute leukemia) (BAL) or Burkitt-like lymphoma (BLL). This indication is based on a multicenter, open-label, randomized study of Lymphome Malin B (LMB) chemotherapy (corticosteroids, vincristine, cyclophosphamide, high-dose methotrexate, cytarabine, doxorubicin, etoposide and triple drug [methotrexate/cytarabine/ corticosteroid] intrathecal therapy) alone or in combination with rituximab.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.mabthera",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "MabThera (rituximab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Roche Registration GmbH. MabThera (rituximab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/mabthera-epar-product-information_en.pdf. Revised November 2023. Accessed March 19, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/mabthera-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/mabthera"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Roche Registration GmbH.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "MabThera",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "rituximab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-10-30",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-11-29",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.mabthera:1",
+    "indication": "MabThera in combination with chemotherapy is indicated for the treatment of paediatric patients (aged >= 6 months to < 18 years old) with previously untreated advanced stage CD20 positive diffuse large B-cell lymphoma (DLBCL), Burkitt lymphoma (BL)/Burkitt leukaemia (mature B-cell acute leukaemia) (BAL) or Burkitt-like lymphoma (BLL).",
+    "initial_approval_date": "2020-03-03",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/mabthera-h-c-165-ii-0168-epar-assessment-report-variation_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized rituximab in combination with chemotherapy for the treatment of pediatric patients (aged >= 6 months to < 18 years old) with previously untreated advanced stage CD20 positive diffuse large B-cell lymphoma (DLBCL), Burkitt lymphoma (BL) / Burkitt leukemia (mature B-cell acute leukemia) (BAL) or Burkitt-like lymphoma (BLL). This indication is based on a multicenter, open-label, randomized study of Lymphome Malin B (LMB) chemotherapy (corticosteroids, vincristine, cyclophosphamide, high-dose methotrexate, cytarabine, doxorubicin, etoposide and triple drug [methotrexate/cytarabine/ corticosteroid] intrathecal therapy) alone or in combination with rituximab.",
+    "raw_biomarkers": "CD20 positive",
+    "raw_cancer_type": "diffuse large B-cell lymphoma (DLBCL), Burkitt lymphoma (BL)/Burkitt leukaemia (mature B-cell acute leukaemia) (BAL) or Burkitt-like lymphoma (BLL)",
+    "raw_therapeutics": "MabThera (rituximab) in combination with chemotherapy",
+    "document": {
+      "id": "doc:ema.mabthera",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "MabThera (rituximab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Roche Registration GmbH. MabThera (rituximab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/mabthera-epar-product-information_en.pdf. Revised November 2023. Accessed March 19, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/mabthera-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/mabthera"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Roche Registration GmbH.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "MabThera",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "rituximab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-10-30",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-11-29",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 624,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 54,
+        "type": "CategoricalVariant",
+        "name": "CD20 +",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "CD20"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 77,
+      "conceptType": "Disease",
+      "name": "Diffuse Large B-Cell Lymphoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:DLBCLNOS",
+        "code": "DLBCLNOS",
+        "name": "Diffuse Large B-Cell Lymphoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=DLBCLNOS"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 125,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 59,
+          "conceptType": "Drug",
+          "name": "Cyclophosphamide",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Alkylating chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C405",
+            "code": "C405",
+            "name": "Cyclophosphamide",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C405"
+            ]
+          }
+        },
+        {
+          "id": 62,
+          "conceptType": "Drug",
+          "name": "Corticosteroid",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Anti-inflammatory"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Hormone therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C2322",
+            "code": "C2322",
+            "name": "Corticosteroid",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2322"
+            ]
+          }
+        },
+        {
+          "id": 63,
+          "conceptType": "Drug",
+          "name": "Cytarabine",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "DNA Polymerase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C408",
+            "code": "C408",
+            "name": "Cytarabine",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C408"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "conceptType": "Drug",
+          "name": "Doxorubicin",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Topoisomerase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C456",
+            "code": "C456",
+            "name": "Doxorubicin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C456"
+            ]
+          }
+        },
+        {
+          "id": 64,
+          "conceptType": "Drug",
+          "name": "Etoposide",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Topoisomerase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C491",
+            "code": "C491",
+            "name": "Etoposide",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C491"
+            ]
+          }
+        },
+        {
+          "id": 65,
+          "conceptType": "Drug",
+          "name": "Methotrexate",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Antifolate"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C642",
+            "code": "C642",
+            "name": "Methotrexate",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C642"
+            ]
+          }
+        },
+        {
+          "id": 60,
+          "conceptType": "Drug",
+          "name": "Rituximab",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CD20 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1702",
+            "code": "C1702",
+            "name": "Rituximab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1702"
+            ]
+          }
+        },
+        {
+          "id": 61,
+          "conceptType": "Drug",
+          "name": "Vincristine",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Vinca alkaloid chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C933",
+            "code": "C933",
+            "name": "Vincristine",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C933"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

@@ -1,0 +1,552 @@
+{
+  "id": 692,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with irinotecan-based chemotherapy for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, RAS wild-type metastatic colorectal cancer.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.erbitux",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Erbitux (cetuximab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Europe B.V. Erbitux (cetuximab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/erbitux-epar-product-information_en.pdf. Revised May 2022. Accessed March 12, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/erbitux-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/erbitux"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Erbitux",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "cetuximab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-07-14",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-05-25",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.erbitux:1",
+    "indication": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, RAS wild-type metastatic colorectal cancer in combination with irinotecan-based chemotherapy.",
+    "initial_approval_date": "2008-07-17",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/erbitux-h-c-558-ii-0020-epar-assessment-report-variation_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with irinotecan-based chemotherapy for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, RAS wild-type metastatic colorectal cancer.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab) in combination with irinotecan",
+    "document": {
+      "id": "doc:ema.erbitux",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Erbitux (cetuximab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Europe B.V. Erbitux (cetuximab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/erbitux-epar-product-information_en.pdf. Revised May 2022. Accessed March 12, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/erbitux-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/erbitux"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2025-10-01",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.ema.europa.eu/en/medicines",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Erbitux",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "cetuximab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-07-14",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-05-25",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 555,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 24,
+        "type": "CategoricalVariant",
+        "name": "EGFR positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "EGFR"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "type": "CategoricalVariant",
+        "name": "Wild type KRAS",
+        "genes": [
+          {
+            "id": 31,
+            "conceptType": "Gene",
+            "name": "KRAS",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000133703",
+                  "code": "ENSG00000133703",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000133703"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:3845",
+                  "code": "3845",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/3845"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004985.5",
+                  "code": "NM_004985.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "12p12.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "12p12.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:6407",
+              "code": "HGNC:6407",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "type": "CategoricalVariant",
+        "name": "Wild type HRAS",
+        "genes": [
+          {
+            "id": 27,
+            "conceptType": "Gene",
+            "name": "HRAS",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000174775",
+                  "code": "ENSG00000174775",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000174775"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:3265",
+                  "code": "3265",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/3265"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_005343.4",
+                  "code": "NM_005343.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_005343.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "11p15.5"
+              },
+              {
+                "name": "location_sortable",
+                "value": "11p15.5"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:5173",
+              "code": "HGNC:5173",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5173"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "type": "CategoricalVariant",
+        "name": "Wild type NRAS",
+        "genes": [
+          {
+            "id": 33,
+            "conceptType": "Gene",
+            "name": "NRAS",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000213281",
+                  "code": "ENSG00000213281",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000213281"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:4893",
+                  "code": "4893",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/4893"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_002524.5",
+                  "code": "NM_002524.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_002524.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "1p13.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "01p13.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:7989",
+              "code": "HGNC:7989",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 15,
+      "conceptType": "Disease",
+      "name": "Colorectal Adenocarcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:COADREAD",
+        "code": "COADREAD",
+        "name": "Colorectal Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=COADREAD"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 15,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 19,
+          "conceptType": "Drug",
+          "name": "Cetuximab",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "EGFR inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1723",
+            "code": "C1723",
+            "name": "Cetuximab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1723"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "conceptType": "Drug",
+          "name": "Irinotecan",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Topoisomerase I inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C62040",
+            "code": "C62040",
+            "name": "Irinotecan",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62040"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

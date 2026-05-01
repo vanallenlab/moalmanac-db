@@ -1,0 +1,400 @@
+{
+  "id": 301,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to olaparib for the maintenance treatment of adult patients with deleterious or suspected deleterious germline or somatic BRCA-mutated recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer, who are in complete or partial response to platinum-based chemotherapy. Olaparib's product label specifies to select patients for therapy based on an FDA-approved companion diagnostic for Lynparza.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": 7,
+      "type": "Contribution",
+      "description": "Resolving statements mapped to incorrect propositions",
+      "date": "2025-06-26",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.lynparza",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Lynparza (olaparib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "AstraZeneca Pharmaceuticals, LP. Lynparza (olaparib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf. Revised November 2023. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208558"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2026-04-09",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca Pharmaceuticals, LP.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Lynparza",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "olaparib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 208558,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-11-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.lynparza:2",
+    "indication": "Lynparza is a poly (ADP-ribose) polymerase (PARP) inhibitor indicated for the maintenance treatment of adult patients with deleterious or suspected deleterious germline or somatic BRCA-mutated recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer, who are in complete or partial response to platinum-based chemotherapy. Select patients for therapy based on an FDA-approved companion diagnostic for Lynparza.",
+    "initial_approval_date": "2023-09-12",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s029lbl.pdf",
+    "description": "The U.S. Food and Drug Administration granted approval to olaparib for the maintenance treatment of adult patients with deleterious or suspected deleterious germline or somatic BRCA-mutated recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer, who are in complete or partial response to platinum-based chemotherapy. Olaparib's product label specifies to select patients for therapy based on an FDA-approved companion diagnostic for Lynparza.",
+    "raw_biomarkers": "deleterious or suspected deleterious germline or somatic BRCA-mutated",
+    "raw_cancer_type": "relapsed epithelial ovarian, fallopian tube or primary peritoneal cancer",
+    "raw_therapeutics": "Lynparza (olaparib)",
+    "document": {
+      "id": "doc:fda.lynparza",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Lynparza (olaparib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "AstraZeneca Pharmaceuticals, LP. Lynparza (olaparib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf. Revised November 2023. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208558"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States.",
+            "extensions": [
+              {
+                "name": "last_updated",
+                "value": "2026-04-09",
+                "description": ""
+              },
+              {
+                "name": "url",
+                "value": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
+                "description": ""
+              }
+            ]
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca Pharmaceuticals, LP.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Lynparza",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "olaparib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 208558,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-11-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 242,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 50,
+        "type": "CategoricalVariant",
+        "name": "BRCA2 pathogenic variants",
+        "genes": [
+          {
+            "id": 10,
+            "conceptType": "Gene",
+            "name": "BRCA2",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000139618",
+                  "code": "ENSG00000139618",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000139618"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:675",
+                  "code": "675",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/675"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_000059.4",
+                  "code": "NM_000059.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000059.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "13q13.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "13q13.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:1101",
+              "code": "HGNC:1101",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Germline Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "13"
+          },
+          {
+            "name": "start_position",
+            "value": null
+          },
+          {
+            "name": "end_position",
+            "value": null
+          },
+          {
+            "name": "reference_allele",
+            "value": null
+          },
+          {
+            "name": "alternate_allele",
+            "value": null
+          },
+          {
+            "name": "cdna_change",
+            "value": null
+          },
+          {
+            "name": "protein_change",
+            "value": null
+          },
+          {
+            "name": "variant_annotation",
+            "value": null
+          },
+          {
+            "name": "exon",
+            "value": null
+          },
+          {
+            "name": "rsid",
+            "value": null
+          },
+          {
+            "name": "hgvsg",
+            "value": null
+          },
+          {
+            "name": "hgvsc",
+            "value": null
+          },
+          {
+            "name": "requires_pathogenic",
+            "value": true
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 54,
+      "conceptType": "Disease",
+      "name": "Peritoneal Serous Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:PSEC",
+        "code": "PSEC",
+        "name": "Peritoneal Serous Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PSEC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 46,
+      "conceptType": "Drug",
+      "name": "Olaparib",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PARP inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C71721",
+        "code": "C71721",
+        "name": "Olaparib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71721"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

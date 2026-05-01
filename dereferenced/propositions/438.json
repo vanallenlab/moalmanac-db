@@ -1,0 +1,224 @@
+{
+  "id": 438,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 50,
+      "type": "CategoricalVariant",
+      "name": "BRCA2 pathogenic variants",
+      "genes": [
+        {
+          "id": 10,
+          "conceptType": "Gene",
+          "name": "BRCA2",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000139618",
+                "code": "ENSG00000139618",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000139618"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:675",
+                "code": "675",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/675"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_000059.4",
+                "code": "NM_000059.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_000059.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "13q13.1"
+            },
+            {
+              "name": "location_sortable",
+              "value": "13q13.1"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:1101",
+            "code": "HGNC:1101",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Germline Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "13"
+        },
+        {
+          "name": "start_position",
+          "value": null
+        },
+        {
+          "name": "end_position",
+          "value": null
+        },
+        {
+          "name": "reference_allele",
+          "value": null
+        },
+        {
+          "name": "alternate_allele",
+          "value": null
+        },
+        {
+          "name": "cdna_change",
+          "value": null
+        },
+        {
+          "name": "protein_change",
+          "value": null
+        },
+        {
+          "name": "variant_annotation",
+          "value": null
+        },
+        {
+          "name": "exon",
+          "value": null
+        },
+        {
+          "name": "rsid",
+          "value": null
+        },
+        {
+          "name": "hgvsg",
+          "value": null
+        },
+        {
+          "name": "hgvsc",
+          "value": null
+        },
+        {
+          "name": "requires_pathogenic",
+          "value": true
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 55,
+    "conceptType": "Disease",
+    "name": "Prostate Adenocarcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:PRAD",
+      "code": "PRAD",
+      "name": "Prostate Adenocarcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PRAD"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 44,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 138,
+        "conceptType": "Drug",
+        "name": "Enzalutamide",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Antiandrogen"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Hormone therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C71744",
+          "code": "C71744",
+          "name": "Enzalutamide",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71744"
+          ]
+        }
+      },
+      {
+        "id": 87,
+        "conceptType": "Drug",
+        "name": "Talazoparib",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "PARP inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C95733",
+          "code": "C95733",
+          "name": "Talazoparib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95733"
+          ]
+        }
+      }
+    ]
+  }
+}

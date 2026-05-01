@@ -1,0 +1,220 @@
+{
+  "id": 180,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 74,
+      "type": "CategoricalVariant",
+      "name": "IDH1 p.R132C",
+      "genes": [
+        {
+          "id": 28,
+          "conceptType": "Gene",
+          "name": "IDH1",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000138413",
+                "code": "ENSG00000138413",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000138413"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:3417",
+                "code": "3417",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/3417"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_005896.4",
+                "code": "NM_005896.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005896.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "2q34"
+            },
+            {
+              "name": "location_sortable",
+              "value": "02q34"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:5382",
+            "code": "HGNC:5382",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "2"
+        },
+        {
+          "name": "start_position",
+          "value": 209113113
+        },
+        {
+          "name": "end_position",
+          "value": 209113113
+        },
+        {
+          "name": "reference_allele",
+          "value": "G"
+        },
+        {
+          "name": "alternate_allele",
+          "value": "A"
+        },
+        {
+          "name": "cdna_change",
+          "value": "c.394C>T"
+        },
+        {
+          "name": "protein_change",
+          "value": "p.R132C"
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Missense"
+        },
+        {
+          "name": "exon",
+          "value": 4
+        },
+        {
+          "name": "rsid",
+          "value": "rs121913499"
+        },
+        {
+          "name": "hgvsg",
+          "value": "2:g.209113113G>A"
+        },
+        {
+          "name": "hgvsc",
+          "value": "ENST00000345146.2:c.394C>T"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 1,
+    "conceptType": "Disease",
+    "name": "Acute Myeloid Leukemia",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:AML",
+      "code": "AML",
+      "name": "Acute Myeloid Leukemia",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=AML"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 33,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 91,
+        "conceptType": "Drug",
+        "name": "Azacitidine",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Hypomethylating agent chemotherapy"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C288",
+          "code": "C288",
+          "name": "Azacitidine",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C288"
+          ]
+        }
+      },
+      {
+        "id": 92,
+        "conceptType": "Drug",
+        "name": "Ivosidenib",
+        "mappings": [],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "IDH1 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C114383",
+          "code": "C114383",
+          "name": "Ivosidenib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C114383"
+          ]
+        }
+      }
+    ]
+  }
+}

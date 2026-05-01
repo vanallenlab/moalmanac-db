@@ -64,10 +64,7 @@ def strip_mapping_internals(mappings: list) -> list:
     Returns:
         list: The same list with `id` and `primary_coding_id` removed from each entry.
     """
-    for mapping in mappings:
-        mapping.pop("id")
-        mapping.pop("primary_coding_id")
-    return mappings
+    return [{k: v for k, v in m.items() if k not in ("id", "primary_coding_id")} for m in mappings]
 
 
 def extract_url_values(urls: list) -> list:
@@ -230,6 +227,21 @@ class BaseTable:
         if key not in record:
             raise KeyError(f"Key '{key}' not found in {record}")
         record.pop(key)
+
+    def write_records(self, output_dir: str, quiet: bool = False) -> None:
+        """
+        Writes each record in this table to its own JSON file in the given directory.
+
+        Each file is named `{record['id']}.json`.
+
+        Args:
+            output_dir (str): Directory path to write the individual record files into.
+            quiet (bool): Suppress print statements if True.
+        """
+        for record in self.records:
+            filename = f"{record['id']}.json"
+            path = os.path.join(output_dir, filename)
+            write.dictionary(data=record, keys_list=[], file=path, quiet=quiet)
 
 
 class Agents(BaseTable):
@@ -672,58 +684,6 @@ class Database:
     urls: URLs
 
 
-def dereference_agents(input_paths: dict, clear: bool = False, quiet: bool = False):
-    """
-    Write each Agent to the dereferenced/agents/ folder.
-
-    Args:
-        input_paths (dict): Dictionary of paths to referenced JSON files.
-        clear (boolean): Remove current dereferenced files from folder.
-    """
-    if clear:
-        remove_dereferenced_json_files(entity="agents", quiet=quiet)
-    agents = read.json_records(file=input_paths["agents"])
-    agents = Agents(records=agents)
-    for agent in agents.records:
-        filename = f"{agent['id']}.json"
-        output = os.path.join("dereferenced", "agents", filename)
-        write.dictionary(data=agent, keys_list=[], file=output, quiet=quiet)
-
-
-def dereference_documents(input_paths: dict, clear: bool = False, quiet: bool = False):
-    """
-    Write each Document to the dereferenced/documents/ folder.
-
-    Args:
-        input_paths (dict): Dictionary of paths to referenced JSON files.
-        clear (boolean): Remove current dereferenced files from folder.
-    """
-    if clear:
-        remove_dereferenced_json_files(entity="documents", quiet=quiet)
-    db = Database(
-        agents=Agents(records=read.json_records(file=input_paths["agents"])),
-        biomarkers=Biomarkers(records=read.json_records(file=input_paths["biomarkers"])),
-        codings=Codings(records=read.json_records(file=input_paths["codings"])),
-        contributions=Contributions(records=read.json_records(file=input_paths["contributions"])),
-        diseases=Diseases(records=read.json_records(file=input_paths["diseases"])),
-        documents=Documents(records=read.json_records(file=input_paths["documents"])),
-        genes=Genes(records=read.json_records(file=input_paths["genes"])),
-        indications=Indications(records=read.json_records(file=input_paths["indications"])),
-        mappings=Mappings(records=read.json_records(file=input_paths["mappings"])),
-        propositions=Propositions(records=read.json_records(file=input_paths["propositions"])),
-        statements=Statements(records=read.json_records(file=input_paths["statements"])),
-        strengths=Strengths(records=read.json_records(file=input_paths["strengths"])),
-        therapies=Therapies(records=read.json_records(file=input_paths["therapies"])),
-        therapy_groups=TherapyGroups(records=read.json_records(file=input_paths["therapy_groups"])),
-        urls=URLs(records=read.json_records(file=input_paths["urls"])),
-    )
-    db.documents.dereference(db)
-    for document in db.documents.records:
-        filename = f"{document['id']}.json"
-        output = os.path.join("dereferenced", "documents", filename)
-        write.dictionary(data=document, keys_list=[], file=output, quiet=quiet)
-
-
 def populate_statement_description(statements: list[dict], indications: list[dict]):
     """
     Populates the description field for statements from the description field from the associated indication.
@@ -747,20 +707,78 @@ def populate_statement_description(statements: list[dict], indications: list[dic
     return statements
 
 
-def remove_dereferenced_json_files(entity: str, quiet: bool = False):
+def clear_output_dir(output_dir: str, quiet: bool = False) -> None:
     """
-    Removes dereferenced json files from the specified entity's dereferenced folder.
-    For example, dereferenced/agents/*.json
+    Removes all JSON files from the given output directory.
 
     Args:
-        entity (str): Entity name to remove json files from.
-        quiet (bool): Suppresses print statements if True
+        output_dir (str): Path to the directory to clear.
+        quiet (bool): Suppress print statements if True.
     """
-    if not quiet:
-        print(f"Removing existing json files in dereferenced/{entity}/")
-    folder = pathlib.Path(os.path.join("dereferenced", entity))
+    folder = pathlib.Path(output_dir)
     for json_file in folder.rglob("*.json"):
         json_file.unlink()
+    if not quiet:
+        print(f"Cleared {output_dir}")
+
+
+_CONCEPT_DIRS = [
+    ("agents", os.path.join("dereferenced", "agents")),
+    ("biomarkers", os.path.join("dereferenced", "biomarkers")),
+    ("codings", os.path.join("dereferenced", "codings")),
+    ("contributions", os.path.join("dereferenced", "contributions")),
+    ("diseases", os.path.join("dereferenced", "diseases")),
+    ("documents", os.path.join("dereferenced", "documents")),
+    ("genes", os.path.join("dereferenced", "genes")),
+    ("indications", os.path.join("dereferenced", "indications")),
+    ("mappings", os.path.join("dereferenced", "mappings")),
+    ("propositions", os.path.join("dereferenced", "propositions")),
+    ("statements", os.path.join("dereferenced", "statements")),
+    ("strengths", os.path.join("dereferenced", "strengths")),
+    ("therapies", os.path.join("dereferenced", "therapies")),
+    ("therapy_groups", os.path.join("dereferenced", "therapy_groups")),
+]
+
+
+def write_all_concepts(input_paths: dict, clear: bool = False, quiet: bool = False) -> None:
+    """
+    Writes per-concept JSON files for all 14 entity types to their output directories.
+
+    Constructs a fresh Database from the raw input files (independent of any already-resolved
+    full-DB tables), dereferences each entity, and writes one JSON file per record to
+    `dereferenced/<entity>/<id>.json`.
+
+    Args:
+        input_paths (dict): Dictionary of paths to referenced JSON files.
+        clear (bool): If True, remove existing JSON files from each output directory first.
+        quiet (bool): Suppress print statements if True.
+    """
+    if clear:
+        for _, output_dir in _CONCEPT_DIRS:
+            clear_output_dir(output_dir, quiet=quiet)
+
+    db = Database(
+        agents=Agents(records=read.json_records(file=input_paths["agents"])),
+        biomarkers=Biomarkers(records=read.json_records(file=input_paths["biomarkers"])),
+        codings=Codings(records=read.json_records(file=input_paths["codings"])),
+        contributions=Contributions(records=read.json_records(file=input_paths["contributions"])),
+        diseases=Diseases(records=read.json_records(file=input_paths["diseases"])),
+        documents=Documents(records=read.json_records(file=input_paths["documents"])),
+        genes=Genes(records=read.json_records(file=input_paths["genes"])),
+        indications=Indications(records=read.json_records(file=input_paths["indications"])),
+        mappings=Mappings(records=read.json_records(file=input_paths["mappings"])),
+        propositions=Propositions(records=read.json_records(file=input_paths["propositions"])),
+        statements=Statements(records=read.json_records(file=input_paths["statements"])),
+        strengths=Strengths(records=read.json_records(file=input_paths["strengths"])),
+        therapies=Therapies(records=read.json_records(file=input_paths["therapies"])),
+        therapy_groups=TherapyGroups(records=read.json_records(file=input_paths["therapy_groups"])),
+        urls=URLs(records=read.json_records(file=input_paths["urls"])),
+    )
+
+    for attr, output_dir in _CONCEPT_DIRS:
+        table = getattr(db, attr)
+        table.dereference(db)
+        table.write_records(output_dir, quiet=quiet)
 
 
 def main(input_paths):
@@ -965,14 +983,8 @@ if __name__ == "__main__":
 
     dereferenced = main(input_paths=input_data)
 
-    dereference_agents(
+    write_all_concepts(
         input_paths=input_data,
         clear=args.clear,
         quiet=args.quiet,
     )
-    dereference_documents(
-        input_paths=input_data,
-        clear=args.clear,
-        quiet=args.quiet
-    )
-    # dereference_codings(input_paths=input_data)
