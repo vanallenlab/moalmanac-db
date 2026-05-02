@@ -39,24 +39,17 @@ This repository uses Python 3.12. We recommend using a [virtual environment](htt
 Run the following from this repository's directory to create a virtual environment and install dependencies with Anaconda or Miniconda:
 
 ```bash
-conda create -y -n moalmanac-db python=3.12
-conda activate moalmanac-db
-pip install -r requirements.txt
+conda env create -f environment.yaml
 ```
 
-Or, if using base Python:
+The [environment.yaml](./environment.yaml) file specifies Python 3.12 and delegates package installation to pip using pyproject.toml. No separate `pip install` step is needed.
+
+Or, if you prefer not to use conda, you can use a standard virtual environment:
 
 ```bash
-virtualenv venv
-source activate venv/bin/activate
-pip install -r requirements.txt
-```
-
-To make the virtual environment available to jupyter notebooks, execute the following code while the virtual environment is activated:
-
-```bash
-pip install jupyter
-ipython kernel install --user --name=moalmanac-db
+python3.12 -m venv venv
+source venv/bin/activate
+pip install .
 ```
 
 ## Testing
