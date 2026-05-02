@@ -38,6 +38,7 @@ Run the following from this repository's directory to create a virtual environme
 
 ```bash
 conda env create -f environment.yaml
+conda activate moalmanac-db
 ```
 
 The [environment.yaml](./environment.yaml) file specifies Python 3.12 and delegates package installation to pip using pyproject.toml. No separate `pip install` step is needed.
