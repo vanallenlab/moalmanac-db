@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import argparse
+import dataclasses
 import os
 import pathlib
-from dataclasses import dataclass
-from typing import Callable
+import typing
 
 # Local imports
 from utils import json_utils
@@ -14,7 +14,7 @@ from utils import read
 from utils import write
 
 
-@dataclass
+@dataclasses.dataclass
 class FKSingle:
     """
     Descriptor for a foreign key that references a single record in another table.
@@ -22,17 +22,17 @@ class FKSingle:
     Attributes:
         src_key (str): The key in the record whose value is the foreign key.
         dest_key (str): The key name written after dereferencing (replaces src_key).
-        get_table (Callable[[Database], BaseTable]): Returns the referenced table from the Database.
-        post (Callable[[dict], dict] | None): Optional function applied to the resolved record.
+        get_table (typing.Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+        post (typing.Callable[[dict], dict] | None): Optional function applied to the resolved record.
     """
 
     src_key: str
     dest_key: str
-    get_table: Callable[[Database], BaseTable]
-    post: Callable[[dict], dict] | None = None
+    get_table: typing.Callable[[Database], BaseTable]
+    post: typing.Callable[[dict], dict] | None = None
 
 
-@dataclass
+@dataclasses.dataclass
 class FKList:
     """
     Descriptor for a foreign key that references a list of records in another table.
@@ -40,19 +40,19 @@ class FKList:
     Attributes:
         src_key (str): The key in the record whose value is a list of foreign keys.
         dest_key (str): The key name written after dereferencing. Pass src_key if unchanged.
-        get_table (Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+        get_table (typing.Callable[[Database], BaseTable]): Returns the referenced table from the Database.
         key_always_present (bool): If True, raise KeyError when src_key is absent from a record.
-        post (Callable[[dict], object] | None): Optional function applied to each resolved record.
+        post (typing.Callable[[dict], object] | None): Optional function applied to each resolved record.
     """
 
     src_key: str
     dest_key: str
-    get_table: Callable[[Database], BaseTable]
+    get_table: typing.Callable[[Database], BaseTable]
     key_always_present: bool = True
-    post: Callable[[dict], object] | None = None
+    post: typing.Callable[[dict], object] | None = None
 
 
-def strip_keys(*keys: str) -> Callable[[dict], dict]:
+def strip_keys(*keys: str) -> typing.Callable[[dict], dict]:
     """
     Returns a function that removes the specified keys from a record dict.
 
@@ -60,7 +60,7 @@ def strip_keys(*keys: str) -> Callable[[dict], dict]:
         *keys (str): Key names to exclude from the record.
 
     Returns:
-        Callable[[dict], dict]: A function that accepts a record and returns a copy with the specified keys removed.
+        typing.Callable[[dict], dict]: A function that accepts a record and returns a copy with the specified keys removed.
     """
     return lambda record: {k: v for k, v in record.items() if k not in keys}
 
@@ -126,9 +126,13 @@ class BaseTable:
                     if fk.post is not None:
                         record[fk.dest_key] = fk.post(dict(record[fk.dest_key]))
                 else:
-                    self.dereference_list(record, fk.src_key, table.records, fk.key_always_present)
+                    self.dereference_list(
+                        record, fk.src_key, table.records, fk.key_always_present
+                    )
                     if fk.post is not None and fk.src_key in record:
-                        record[fk.src_key] = [fk.post(item) for item in record[fk.src_key]]
+                        record[fk.src_key] = [
+                            fk.post(item) for item in record[fk.src_key]
+                        ]
                     if fk.src_key != fk.dest_key:
                         self.replace_key(record, fk.src_key, fk.dest_key)
 
@@ -294,7 +298,12 @@ class Contributions(BaseTable):
     """
 
     foreign_keys = [
-        FKSingle("agent_id", "contributor", lambda db: db.agents, post=strip_keys("extensions")),
+        FKSingle(
+            "agent_id",
+            "contributor",
+            lambda db: db.agents,
+            post=strip_keys("extensions"),
+        ),
     ]
 
 
@@ -311,7 +320,12 @@ class Diseases(BaseTable):
 
     foreign_keys = [
         FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
-        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_keys("id", "primary_coding_id")),
+        FKList(
+            "mappings",
+            "mappings",
+            lambda db: db.mappings,
+            post=strip_keys("id", "primary_coding_id"),
+        ),
     ]
 
 
@@ -327,7 +341,9 @@ class Documents(BaseTable):
     """
 
     foreign_keys = [
-        FKSingle("agent_id", "agent", lambda db: db.agents, post=strip_keys("extensions")),
+        FKSingle(
+            "agent_id", "agent", lambda db: db.agents, post=strip_keys("extensions")
+        ),
         FKList("urls", "urls", lambda db: db.urls, post=extract_url_value),
     ]
 
@@ -336,14 +352,14 @@ class Documents(BaseTable):
         Converts relevant keys to extensions.
         """
         extension_fields = [
-            'agent',
-            'company',
-            'drug_name_brand',
-            'drug_name_generic',
-            'first_publication_date',
-            'identification_number',
-            'publication_date',
-            'status'
+            "agent",
+            "company",
+            "drug_name_brand",
+            "drug_name_generic",
+            "first_publication_date",
+            "identification_number",
+            "publication_date",
+            "status",
         ]
         for record in self.records:
             extensions = [
@@ -386,9 +402,9 @@ class Documents(BaseTable):
                     "name": "status",
                     "value": record["status"],
                     "description": "Whether this document is Active or Deprecated within moalmanac-db.",
-                }
+                },
             ]
-            record['extensions'] = extensions
+            record["extensions"] = extensions
             for field in extension_fields:
                 self.remove_key(record=record, key=field)
 
@@ -421,7 +437,12 @@ class Genes(BaseTable):
 
     foreign_keys = [
         FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
-        FKList("mappings", "mappings", lambda db: db.mappings, post=strip_keys("id", "primary_coding_id")),
+        FKList(
+            "mappings",
+            "mappings",
+            lambda db: db.mappings,
+            post=strip_keys("id", "primary_coding_id"),
+        ),
     ]
 
 
@@ -644,7 +665,7 @@ class URLs(BaseTable):
     pass
 
 
-@dataclass
+@dataclasses.dataclass
 class Database:
     """
     A container holding all table instances for the relational database.
@@ -740,7 +761,9 @@ _CONCEPT_DIRS = [
 ]
 
 
-def write_all_concepts(input_paths: dict, clear: bool = False, quiet: bool = False) -> None:
+def write_all_concepts(
+    input_paths: dict, clear: bool = False, quiet: bool = False
+) -> None:
     """
     Writes per-concept JSON files for all 14 entity types to their output directories.
 
@@ -759,19 +782,31 @@ def write_all_concepts(input_paths: dict, clear: bool = False, quiet: bool = Fal
 
     db = Database(
         agents=Agents(records=read.json_records(file=input_paths["agents"])),
-        biomarkers=Biomarkers(records=read.json_records(file=input_paths["biomarkers"])),
+        biomarkers=Biomarkers(
+            records=read.json_records(file=input_paths["biomarkers"])
+        ),
         codings=Codings(records=read.json_records(file=input_paths["codings"])),
-        contributions=Contributions(records=read.json_records(file=input_paths["contributions"])),
+        contributions=Contributions(
+            records=read.json_records(file=input_paths["contributions"])
+        ),
         diseases=Diseases(records=read.json_records(file=input_paths["diseases"])),
         documents=Documents(records=read.json_records(file=input_paths["documents"])),
         genes=Genes(records=read.json_records(file=input_paths["genes"])),
-        indications=Indications(records=read.json_records(file=input_paths["indications"])),
+        indications=Indications(
+            records=read.json_records(file=input_paths["indications"])
+        ),
         mappings=Mappings(records=read.json_records(file=input_paths["mappings"])),
-        propositions=Propositions(records=read.json_records(file=input_paths["propositions"])),
-        statements=Statements(records=read.json_records(file=input_paths["statements"])),
+        propositions=Propositions(
+            records=read.json_records(file=input_paths["propositions"])
+        ),
+        statements=Statements(
+            records=read.json_records(file=input_paths["statements"])
+        ),
         strengths=Strengths(records=read.json_records(file=input_paths["strengths"])),
         therapies=Therapies(records=read.json_records(file=input_paths["therapies"])),
-        therapy_groups=TherapyGroups(records=read.json_records(file=input_paths["therapy_groups"])),
+        therapy_groups=TherapyGroups(
+            records=read.json_records(file=input_paths["therapy_groups"])
+        ),
         urls=URLs(records=read.json_records(file=input_paths["urls"])),
     )
 
