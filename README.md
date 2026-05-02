@@ -5,7 +5,7 @@ Molecular Oncology Almanac - Database
 
 ## Overview
 
-**We are in the process of updating to a new database schema. Read more [here](/docs/referenced-schema-draft-about.md)**!
+**[We are in the process of updating to a new database schema](/docs/referenced-schema-draft-about.md)**!
 
 Molecular Oncology Almanac (MOAlmanac) is a clinical interpretation algorithm paired with an underlying knowledge base for precision oncology. The primary objective of MOAlmanac is to identify and associate molecular alterations with therapeutic sensitivity and resistance as well as disease prognosis. This is done for “first-order” genomic alterations -- individual events such as somatic variants, copy number alterations, fusions, and germline -- as well as “second-order” events -- those that are not associated with one single mutation, and may be descriptive of global processes in the tumor such as tumor mutational burden, microsatellite instability, mutational signatures, and whole-genome doubling.
 
@@ -51,6 +51,8 @@ python3.12 -m venv venv
 source venv/bin/activate
 pip install .
 ```
+
+If using VS Code, open the repository folder and select the interpreter via **Command Palette → Python: Select Interpreter**, then choose `moalmanac-db` from the list.
 
 ## Testing
 
