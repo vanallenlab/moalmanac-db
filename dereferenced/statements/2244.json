@@ -1,0 +1,363 @@
+{
+  "id": 2244,
+  "type": "Statement",
+  "description": "Health Canada approved tepotinib for the treatment of adult patients with locally advanced unresectable or metastatic non-small cell lung cancer (NSCLC) harbouring mesenchymalepithelial transition (MET) tyrosine kinase receptor exon 14 skipping alterations.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.tepmetko",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Tepmetko (tepotinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "EMD Serono, a Division of EMD Inc., Canada. Tepmetko (tepotinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00074821.PDF. Revised March 2024. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00074821.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=100568"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "EMD Serono, a Division of EMD Inc., Canada",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Tepmetko",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "tepotinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2021-05-27",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-03-04",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.tepmetko:0",
+    "indication": "TEPMETKO (tepotinib) is indicated for the treatment of adult patients with locally advanced unresectable or metastatic non-small cell lung cancer (NSCLC) harbouring mesenchymalepithelial transition (MET) tyrosine kinase receptor exon 14 skipping alterations.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved tepotinib for the treatment of adult patients with locally advanced unresectable or metastatic non-small cell lung cancer (NSCLC) harbouring mesenchymalepithelial transition (MET) tyrosine kinase receptor exon 14 skipping alterations.",
+    "raw_biomarkers": "MET exon 14 skipping",
+    "raw_cancer_type": "locally advanced unresectable or metastatic non-small cell lung cancer (NSCLC)",
+    "raw_therapeutics": "TEPMETKO (tepotinib)",
+    "document": {
+      "id": "doc:hc.tepmetko",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Tepmetko (tepotinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "EMD Serono, a Division of EMD Inc., Canada. Tepmetko (tepotinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00074821.PDF. Revised March 2024. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00074821.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=100568"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "EMD Serono, a Division of EMD Inc., Canada",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Tepmetko",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "tepotinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2021-05-27",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-03-04",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 414,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 67,
+        "type": "CategoricalVariant",
+        "name": "MET Exon 14 (Splice Site)",
+        "genes": [
+          {
+            "id": 32,
+            "conceptType": "Gene",
+            "name": "MET",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000105976",
+                  "code": "ENSG00000105976",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000105976"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:4233",
+                  "code": "4233",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/4233"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_000245.4",
+                  "code": "NM_000245.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000245.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "7q31.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "07q31.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:7029",
+              "code": "HGNC:7029",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7029"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "7"
+          },
+          {
+            "name": "start_position",
+            "value": null
+          },
+          {
+            "name": "end_position",
+            "value": null
+          },
+          {
+            "name": "reference_allele",
+            "value": null
+          },
+          {
+            "name": "alternate_allele",
+            "value": null
+          },
+          {
+            "name": "cdna_change",
+            "value": null
+          },
+          {
+            "name": "protein_change",
+            "value": null
+          },
+          {
+            "name": "variant_annotation",
+            "value": "Splice Site"
+          },
+          {
+            "name": "exon",
+            "value": 14
+          },
+          {
+            "name": "rsid",
+            "value": null
+          },
+          {
+            "name": "hgvsg",
+            "value": null
+          },
+          {
+            "name": "hgvsc",
+            "value": null
+          },
+          {
+            "name": "requires_oncogenic",
+            "value": true
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 47,
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:NSCLC",
+        "code": "NSCLC",
+        "name": "Non-Small Cell Lung Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 90,
+      "conceptType": "Drug",
+      "name": "Tepotinib",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "MET inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C88314",
+        "code": "C88314",
+        "name": "Tepotinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C88314"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

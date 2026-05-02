@@ -1,0 +1,23 @@
+{
+  "id": 76,
+  "conceptType": "Disease",
+  "name": "Non-Hodgkin Lymphoma",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:NHL",
+    "code": "NHL",
+    "name": "Non-Hodgkin Lymphoma",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NHL"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": 26,
+  "conceptType": "Gene",
+  "name": "FLT3",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000122025",
+        "code": "ENSG00000122025",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000122025"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:2322",
+        "code": "2322",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/2322"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_004119.3",
+        "code": "NM_004119.3",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "13q12.2"
+    },
+    {
+      "name": "location_sortable",
+      "value": "13q12.2"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:3765",
+    "code": "HGNC:3765",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": 40,
+  "type": "CategoricalVariant",
+  "name": "CD274 amplification",
+  "genes": [
+    {
+      "id": 13,
+      "conceptType": "Gene",
+      "name": "CD274",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000120217",
+            "code": "ENSG00000120217",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000120217"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:29126",
+            "code": "29126",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/29126"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_014143.4",
+            "code": "NM_014143.4",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_014143.4"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "9p24.1"
+        },
+        {
+          "name": "location_sortable",
+          "value": "09p24.1"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:17635",
+        "code": "HGNC:17635",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:17635"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Copy Number"
+    },
+    {
+      "name": "direction",
+      "value": "Amplification"
+    },
+    {
+      "name": "cytoband",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

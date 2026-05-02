@@ -1,0 +1,58 @@
+{
+  "id": 11,
+  "conceptType": "Gene",
+  "name": "BRIP1",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000136492",
+        "code": "ENSG00000136492",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000136492"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:83990",
+        "code": "83990",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/83990"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_032043.3",
+        "code": "NM_032043.3",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_032043.3"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "17q23.2"
+    },
+    {
+      "name": "location_sortable",
+      "value": "17q23.2"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:20473",
+    "code": "HGNC:20473",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:20473"
+    ]
+  }
+}

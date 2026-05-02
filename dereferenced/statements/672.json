@@ -1,0 +1,390 @@
+{
+  "id": 672,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized bosutinib as for the treatment of adult and pediatric patients aged 6 years and older with newly-diagnosed chronic phase Philadelphia chromosome-positive chronic myelogenous leukemia (Ph+ CML).",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": 16,
+      "type": "Contribution",
+      "description": "On 2025-08-26, the EMA published an EPAR - Assessment report - Variation that revised indications for Bosulif (bosutinib) to support pediatric patients with chronic phase Ph+ CML.",
+      "date": "2025-08-29",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.bosulif",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Bosulif (bosutinib) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Pfizer Europe MA EEIG. Bosulif (bosutinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf. Revised August 2025. Accessed August 29, 2025.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/bosulif"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Pfizer Europe MA EEIG.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Bosulif",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "bosutinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-04-09",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-08-26",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.bosulif:0",
+    "indication": "Bosulif is indicated for the treatment of adult and paediatric patients aged 6 years and older with newly-diagnosed chronic phase (CP) Philadelphia chromosome-positive chronic myelogenous leukaemia (Ph+ CML).",
+    "initial_approval_date": "2025-06-02",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/bosulif-h-c-002373-x-0058-g-epar-assessment-report-variation_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized bosutinib as for the treatment of adult and pediatric patients aged 6 years and older with newly-diagnosed chronic phase Philadelphia chromosome-positive chronic myelogenous leukemia (Ph+ CML).",
+    "raw_biomarkers": "Philadelphia chromosome-positive",
+    "raw_cancer_type": "Chronic Myelogenous Leukemia",
+    "raw_therapeutics": "Bosulif (bosutinib)",
+    "document": {
+      "id": "doc:ema.bosulif",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Bosulif (bosutinib) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Pfizer Europe MA EEIG. Bosulif (bosutinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf. Revised August 2025. Accessed August 29, 2025.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/bosulif"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Pfizer Europe MA EEIG.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Bosulif",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "bosutinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-04-09",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-08-26",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 47,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 12,
+        "type": "CategoricalVariant",
+        "name": "BCR::ABL1",
+        "genes": [
+          {
+            "id": 6,
+            "conceptType": "Gene",
+            "name": "BCR",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000186716",
+                  "code": "ENSG00000186716",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000186716"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:613",
+                  "code": "613",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/613"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004327.4",
+                  "code": "NM_004327.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "22q11.23"
+              },
+              {
+                "name": "location_sortable",
+                "value": "22q11.23"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:1014",
+              "code": "HGNC:1014",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+              ]
+            }
+          },
+          {
+            "id": 0,
+            "conceptType": "Gene",
+            "name": "ABL1",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000097007",
+                  "code": "ENSG00000097007",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000097007"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:25",
+                  "code": "25",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/25"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_005157.6",
+                  "code": "NM_005157.6",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "9q34.12"
+              },
+              {
+                "name": "location_sortable",
+                "value": "09q34.12"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:76",
+              "code": "HGNC:76",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Rearrangement"
+          },
+          {
+            "name": "rearrangement_type",
+            "value": "Fusion"
+          },
+          {
+            "name": "locus",
+            "value": null
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 13,
+      "conceptType": "Disease",
+      "name": "Chronic Myelogenous Leukemia",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:CML",
+        "code": "CML",
+        "name": "Chronic Myelogenous Leukemia",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CML"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 16,
+      "conceptType": "Drug",
+      "name": "Bosutinib",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "BCR-ABL inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C60809",
+        "code": "C60809",
+        "name": "Bosutinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C60809"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

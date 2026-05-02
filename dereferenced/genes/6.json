@@ -1,0 +1,58 @@
+{
+  "id": 6,
+  "conceptType": "Gene",
+  "name": "BCR",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000186716",
+        "code": "ENSG00000186716",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000186716"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:613",
+        "code": "613",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/613"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_004327.4",
+        "code": "NM_004327.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "22q11.23"
+    },
+    {
+      "name": "location_sortable",
+      "value": "22q11.23"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:1014",
+    "code": "HGNC:1014",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "id": 2043,
+  "type": "Statement",
+  "description": "Health Canada approved imatinib mesylate for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFR\u03b1 rearrangement.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.gleevec",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Gleevec (imatinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Novartis Pharmaceuticals Canada Inc. Gleevec (imatinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00067276.PDF. Revised August 2021. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00067276.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=73824"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Novartis Pharmaceuticals Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Gleevec",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "imatinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2001-09-19",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2021-08-31",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.gleevec:6",
+    "indication": "GLEEVEC (imatinib mesylate) is indicated for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFR\u03b1 rearrangement.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved imatinib mesylate for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFR\u03b1 rearrangement.",
+    "raw_biomarkers": "FIP1L1::PDGFRA rearrangement",
+    "raw_cancer_type": "advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL)",
+    "raw_therapeutics": "Gleevec (imatinib mesylate)",
+    "document": {
+      "id": "doc:hc.gleevec",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Gleevec (imatinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Novartis Pharmaceuticals Canada Inc. Gleevec (imatinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00067276.PDF. Revised August 2021. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00067276.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=73824"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Novartis Pharmaceuticals Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Gleevec",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "imatinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2001-09-19",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2021-08-31",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 164,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 30,
+        "type": "CategoricalVariant",
+        "name": "FIP1L1::PDGFRA",
+        "genes": [
+          {
+            "id": 25,
+            "conceptType": "Gene",
+            "name": "FIP1L1",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000145216",
+                  "code": "ENSG00000145216",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000145216"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:81608",
+                  "code": "81608",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/81608"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_030917.4",
+                  "code": "NM_030917.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_030917.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "4q12"
+              },
+              {
+                "name": "location_sortable",
+                "value": "04q12"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:19124",
+              "code": "HGNC:19124",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
+              ]
+            }
+          },
+          {
+            "id": 39,
+            "conceptType": "Gene",
+            "name": "PDGFRA",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000134853",
+                  "code": "ENSG00000134853",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000134853"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:5156",
+                  "code": "5156",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/5156"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_006206.6",
+                  "code": "NM_006206.6",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "4q12"
+              },
+              {
+                "name": "location_sortable",
+                "value": "04q12"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:8803",
+              "code": "HGNC:8803",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Rearrangement"
+          },
+          {
+            "name": "rearrangement_type",
+            "value": "Fusion"
+          },
+          {
+            "name": "locus",
+            "value": null
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 12,
+      "conceptType": "Disease",
+      "name": "Chronic Eosinophilic Leukemia, NOS",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:CELNOS",
+        "code": "CELNOS",
+        "name": "Chronic Eosinophilic Leukemia, NOS",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CELNOS"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 41,
+      "conceptType": "Drug",
+      "name": "Imatinib",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Bcr-Abl inhibition",
+            "c-Kit inhibition",
+            "PDGF-R inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C62035",
+        "code": "C62035",
+        "name": "Imatinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": 658,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 61,
+      "type": "CategoricalVariant",
+      "name": "5q deletion",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Copy Number (arm level)"
+        },
+        {
+          "name": "chromosome",
+          "value": "5"
+        },
+        {
+          "name": "arm",
+          "value": "q"
+        },
+        {
+          "name": "direction",
+          "value": "Deletion"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 45,
+    "conceptType": "Disease",
+    "name": "Myeloproliferative Neoplasm",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:MPN",
+      "code": "MPN",
+      "name": "Myeloproliferative Neoplasm",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MPN"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 79,
+    "conceptType": "Drug",
+    "name": "Lenalidomide",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "Angiogenesis inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Chemotherapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C2668",
+      "code": "C2668",
+      "name": "Lenalidomide",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2668"
+      ]
+    }
+  }
+}

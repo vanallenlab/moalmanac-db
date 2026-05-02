@@ -1,0 +1,58 @@
+{
+  "id": 25,
+  "conceptType": "Gene",
+  "name": "FIP1L1",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000145216",
+        "code": "ENSG00000145216",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000145216"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:81608",
+        "code": "81608",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/81608"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_030917.4",
+        "code": "NM_030917.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_030917.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "4q12"
+    },
+    {
+      "name": "location_sortable",
+      "value": "04q12"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:19124",
+    "code": "HGNC:19124",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
+    ]
+  }
+}

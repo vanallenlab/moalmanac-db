@@ -1,0 +1,455 @@
+{
+  "id": 196,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to ipilimumab in combination with nivolumab for the first-line treatment of adult patients with metastatic non-small cell lung cancer expressing PD-L1 (>=1%), as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.yervoy",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Yervoy (ipilimumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bristol-Myers Squibb Company. Yervoy (ipilimumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125377s133lbl.pdf. Revised April 2025. Accessed April 30, 2025.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125377s133lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125377"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bristol-Myers Squibb Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Yervoy",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "ipilimumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2011-03-25",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125377,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.yervoy:1",
+    "indication": "YERVOY is a human cytotoxic T-lymphocyte antigen 4 (CTLA-4)-blocking antibody indicated for treatment of adult patients with metastatic non-small cell lung cancer expressing PD-L1 (>=1%) as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations, as first-line treatment in combination with nivolumab.",
+    "initial_approval_date": "2020-05-15",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125377s109lbl.pdf",
+    "description": "The U.S. Food and Drug Administration granted approval to ipilimumab in combination with nivolumab for the first-line treatment of adult patients with metastatic non-small cell lung cancer expressing PD-L1 (>=1%), as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations.",
+    "raw_biomarkers": "PD-L1 >= 1% and no EGFR or ALK genomic tumor aberrations",
+    "raw_cancer_type": "metastatic non-small cell lung cancer",
+    "raw_therapeutics": "Yervoy (ipilimumab) in combination with nivolumab",
+    "date_regular_approval": "2020-05-15",
+    "date_accelerated_approval": null,
+    "document": {
+      "id": "doc:fda.yervoy",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Yervoy (ipilimumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bristol-Myers Squibb Company. Yervoy (ipilimumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125377s133lbl.pdf. Revised April 2025. Accessed April 30, 2025.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125377s133lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125377"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bristol-Myers Squibb Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Yervoy",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "ipilimumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2011-03-25",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125377,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 171,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 33,
+        "type": "CategoricalVariant",
+        "name": "PD-L1 >= 1%",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "PD-L1"
+          },
+          {
+            "name": "unit",
+            "value": "Tumor Proportion Score (TPS)"
+          },
+          {
+            "name": "equality",
+            "value": ">="
+          },
+          {
+            "name": "value",
+            "value": 0.01
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "type": "CategoricalVariant",
+        "name": "Wild type ALK",
+        "genes": [
+          {
+            "id": 2,
+            "conceptType": "Gene",
+            "name": "ALK",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000171094",
+                  "code": "ENSG00000171094",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000171094"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:238",
+                  "code": "238",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/238"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004304.5",
+                  "code": "NM_004304.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004304.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "2p23.2-p23.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "02p23.2-p23.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:427",
+              "code": "HGNC:427",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "type": "CategoricalVariant",
+        "name": "Wild type EGFR",
+        "genes": [
+          {
+            "id": 17,
+            "conceptType": "Gene",
+            "name": "EGFR",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000146648",
+                  "code": "ENSG00000146648",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000146648"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:1956",
+                  "code": "1956",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/1956"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_005228.5",
+                  "code": "NM_005228.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "7p11.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "07p11.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:3236",
+              "code": "HGNC:3236",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 47,
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:NSCLC",
+        "code": "NSCLC",
+        "name": "Non-Small Cell Lung Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 29,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 71,
+          "conceptType": "Drug",
+          "name": "Ipilimumab",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CTLA-4 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C2654",
+            "code": "C2654",
+            "name": "Ipilimumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2654"
+            ]
+          }
+        },
+        {
+          "id": 72,
+          "conceptType": "Drug",
+          "name": "Nivolumab",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PD-1/PD-L1 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C68814",
+            "code": "C68814",
+            "name": "Nivolumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": 18,
+  "conceptType": "Disease",
+  "name": "Endometrial Carcinoma",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:UCEC",
+    "code": "UCEC",
+    "name": "Endometrial Carcinoma",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UCEC"
+    ]
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "id": 786,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with fluoropyrimidine and platinum-containing chemotherapy for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-negative gastric or gastro-esophageal junction adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 1.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.keytruda",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Keytruda (pembrolizumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Sharp & Dohme B.V. Keytruda (pembrolizumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf. Revised January 2024. Accessed March 10, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Sharp & Dohme B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Keytruda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pembrolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2015-07-30",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-01-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.keytruda:14",
+    "indication": "KEYTRUDA, in combination with fluoropyrimidine and platinum -containing chemotherapy, is indicated for the first-line treatment of locally advanced unresectable or metastatic HER2-negative gastric or gastro -oesophageal junction adenocarcinoma in adults whose tumours express PD-L1 with a CPS >= 1.",
+    "initial_approval_date": "2023-11-23",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/keytruda-h-c-003820-ii-0135-epar-assessment-report-variation_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with fluoropyrimidine and platinum-containing chemotherapy for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-negative gastric or gastro-esophageal junction adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 1.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Gastric or gastro-esophagael junction (GEJ) adenocracinoma",
+    "raw_therapeutics": "Keytruda (pembrolizumab) in combination with fluoropyrimidine and platinum-containing chemotherapy",
+    "document": {
+      "id": "doc:ema.keytruda",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Keytruda (pembrolizumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Sharp & Dohme B.V. Keytruda (pembrolizumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf. Revised January 2024. Accessed March 10, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Sharp & Dohme B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Keytruda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pembrolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2015-07-30",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-01-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 612,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 2,
+        "type": "CategoricalVariant",
+        "name": "HER2-negative",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Negative"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "type": "CategoricalVariant",
+        "name": "PD-L1 (CPS) >= 1",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "PD-L1"
+          },
+          {
+            "name": "unit",
+            "value": "Combined Positive Score (CPS)"
+          },
+          {
+            "name": "equality",
+            "value": ">="
+          },
+          {
+            "name": "value",
+            "value": 1
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 2,
+      "conceptType": "Disease",
+      "name": "Adenocarcinoma of the Gastroesophageal Junction",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:GEJ",
+        "code": "GEJ",
+        "name": "Adenocarcinoma of the Gastroesophageal Junction",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=GEJ"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 120,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 37,
+          "conceptType": "Drug",
+          "name": "Carboplatin",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Platinum-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1282",
+            "code": "C1282",
+            "name": "Carboplatin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
+            ]
+          }
+        },
+        {
+          "id": 48,
+          "conceptType": "Drug",
+          "name": "Pembrolizumab",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PD-1/PD-L1 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C106432",
+            "code": "C106432",
+            "name": "Pembrolizumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "conceptType": "Drug",
+          "name": "Fluorouracil",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Thymidylate synthase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C505",
+            "code": "C505",
+            "name": "Fluorouracil",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

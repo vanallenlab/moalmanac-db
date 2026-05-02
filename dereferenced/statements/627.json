@@ -1,0 +1,398 @@
+{
+  "id": 627,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration (FDA) granted accelerated approval to avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. The package insert notes that this indication is approved under accelerated approval based on tumor response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial. This approval is based on RAMP-201 (NCT04625270), an open-label, multicenter study that included 57 adult patients with measurable KRAS-mutated recurrent LGSOC. The KRAS mutations identified by local testing were G12V (53%), G12D (35%), Q61H (3.5%), G12C (1.8%), G12R (1.8%), A146V (1.8%), and mutations not otherwise specified at G12x (1.8%) and on codon 12/13 (1.8%). 44% of patients responded (3.5% with complete response, 40% with partial response), and the package insert notes that the tumor KRAS mutations observed in the 25 responders were A146V, G12D, G12R, G12V, and Q61H.",
+  "contributions": [
+    {
+      "id": 6,
+      "type": "Contribution",
+      "description": "The FDA provided regular approval to taletrectinib for the treatment of patients with ROS1 positive non-small cell lung cancer, accelerated approval to telisotuzumab vedotin-tllv for the treatment of patients with non-squamous non-small cell lung cancer with high c-Met expression, and avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer.",
+      "date": "2025-06-12",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.avmapki-fakzynja",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Verastem Inc. Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf. Revised May 2025. Accessed June 12, 2025.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219616"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Verastem Inc",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Avmapki Fakzynja co-pack",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "avutometinib; defactinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2025-05-08",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 219616,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-05-08",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.avmapki-fakzynja:0",
+    "indication": "AVMAPKI FAKZYNJA CO-PACK, a combination of avutometinib and defactinib, each kinase inhibitors, is indicated for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy.",
+    "initial_approval_date": "2025-05-08",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
+    "description": "The U.S. Food and Drug Administration (FDA) granted accelerated approval to avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. The package insert notes that this indication is approved under accelerated approval based on tumor response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial. This approval is based on RAMP-201 (NCT04625270), an open-label, multicenter study that included 57 adult patients with measurable KRAS-mutated recurrent LGSOC. The KRAS mutations identified by local testing were G12V (53%), G12D (35%), Q61H (3.5%), G12C (1.8%), G12R (1.8%), A146V (1.8%), and mutations not otherwise specified at G12x (1.8%) and on codon 12/13 (1.8%). 44% of patients responded (3.5% with complete response, 40% with partial response), and the package insert notes that the tumor KRAS mutations observed in the 25 responders were A146V, G12D, G12R, G12V, and Q61H.",
+    "raw_biomarkers": "KRAS-mutated",
+    "raw_cancer_type": "low-grade serous ovarian cancer (LGSOC)",
+    "raw_therapeutics": "avutometinib; defactinib",
+    "date_regular_approval": null,
+    "date_accelerated_approval": "2025-05-08",
+    "document": {
+      "id": "doc:fda.avmapki-fakzynja",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Verastem Inc. Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf. Revised May 2025. Accessed June 12, 2025.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219616"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Verastem Inc",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Avmapki Fakzynja co-pack",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "avutometinib; defactinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2025-05-08",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 219616,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-05-08",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 838,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 45,
+        "type": "CategoricalVariant",
+        "name": "KRAS p.G12C",
+        "genes": [
+          {
+            "id": 31,
+            "conceptType": "Gene",
+            "name": "KRAS",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000133703",
+                  "code": "ENSG00000133703",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000133703"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:3845",
+                  "code": "3845",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/3845"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004985.5",
+                  "code": "NM_004985.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "12p12.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "12p12.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:6407",
+              "code": "HGNC:6407",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "12"
+          },
+          {
+            "name": "start_position",
+            "value": 25398285
+          },
+          {
+            "name": "end_position",
+            "value": 25398285
+          },
+          {
+            "name": "reference_allele",
+            "value": "C"
+          },
+          {
+            "name": "alternate_allele",
+            "value": "A"
+          },
+          {
+            "name": "cdna_change",
+            "value": "c.34G>T"
+          },
+          {
+            "name": "protein_change",
+            "value": "p.G12C"
+          },
+          {
+            "name": "variant_annotation",
+            "value": "Missense"
+          },
+          {
+            "name": "exon",
+            "value": 2
+          },
+          {
+            "name": "rsid",
+            "value": "rs121913530"
+          },
+          {
+            "name": "hgvsg",
+            "value": "12:g.25398285C>A"
+          },
+          {
+            "name": "hgvsc",
+            "value": "ENST00000256078.4:c.34G>T"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 90,
+      "conceptType": "Disease",
+      "name": "Low-Grade Serous Ovarian Cancer",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:LGSOC",
+        "code": "LGSOC",
+        "name": "Low-Grade Serous Ovarian Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 182,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 151,
+          "conceptType": "Drug",
+          "name": "Avutometinib",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "MEK inhibition",
+                "RAF inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C80060",
+            "code": "C80060",
+            "name": "Avutometinib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C80060"
+            ]
+          }
+        },
+        {
+          "id": 152,
+          "conceptType": "Drug",
+          "name": "Defactinib",
+          "mappings": [],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "FAK inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C79809",
+            "code": "C79809",
+            "name": "Defactinib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C79809"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

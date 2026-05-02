@@ -1,0 +1,75 @@
+{
+  "id": 26,
+  "type": "CategoricalVariant",
+  "name": "Wild type HRAS",
+  "genes": [
+    {
+      "id": 27,
+      "conceptType": "Gene",
+      "name": "HRAS",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000174775",
+            "code": "ENSG00000174775",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000174775"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:3265",
+            "code": "3265",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/3265"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_005343.4",
+            "code": "NM_005343.4",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_005343.4"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "11p15.5"
+        },
+        {
+          "name": "location_sortable",
+          "value": "11p15.5"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:5173",
+        "code": "HGNC:5173",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5173"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Wild type"
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}
