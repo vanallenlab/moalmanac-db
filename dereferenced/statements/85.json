@@ -300,7 +300,60 @@
           "id": 19,
           "conceptType": "Drug",
           "name": "Cetuximab",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4247978",
+                "code": "4247978",
+                "name": "Cetuximab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4247978"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:409400001",
+                "code": "409400001",
+                "name": "Cetuximab (substance)",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=409400001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1315411",
+                "code": "1315411",
+                "name": "cetuximab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1315411"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:318341",
+                "code": "318341",
+                "name": "cetuximab",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=318341"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
@@ -330,7 +383,60 @@
           "id": 27,
           "conceptType": "Drug",
           "name": "Irinotecan",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4156721",
+                "code": "4156721",
+                "name": "Irinotecan",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4156721"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:372538008",
+                "code": "372538008",
+                "name": "Irinotecan (substance)",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=372538008&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1367268",
+                "code": "1367268",
+                "name": "irinotecan",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1367268"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:51499",
+                "code": "51499",
+                "name": "irinotecan",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=51499"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
