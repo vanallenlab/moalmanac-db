@@ -331,7 +331,60 @@
       "id": 15,
       "conceptType": "Drug",
       "name": "Blinatumomab",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1597258",
+            "code": "1597258",
+            "name": "blinatumomab",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597258"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37396348",
+            "code": "37396348",
+            "name": "Blinatumomab",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37396348"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:716122004",
+            "code": "716122004",
+            "name": "Blinatumomab",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716122004&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:45892531",
+            "code": "45892531",
+            "name": "blinatumomab",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45892531"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

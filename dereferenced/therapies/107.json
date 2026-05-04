@@ -2,7 +2,34 @@
   "id": 107,
   "conceptType": "Drug",
   "name": "Tislelizumab",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2677426",
+        "code": "2677426",
+        "name": "tislelizumab",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2677426"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:42609339",
+        "code": "42609339",
+        "name": "tislelizumab",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/42609339"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

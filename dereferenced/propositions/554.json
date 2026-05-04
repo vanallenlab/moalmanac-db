@@ -288,7 +288,60 @@
     "id": 19,
     "conceptType": "Drug",
     "name": "Cetuximab",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:318341",
+          "code": "318341",
+          "name": "cetuximab",
+          "system": "RxNorm",
+          "systemVersion": "20250602",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=318341"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:4247978",
+          "code": "4247978",
+          "name": "Cetuximab",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/4247978"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:409400001",
+          "code": "409400001",
+          "name": "Cetuximab",
+          "system": "SNOMED",
+          "systemVersion": "2026-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=409400001&edition=MAIN/2026-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:1315411",
+          "code": "1315411",
+          "name": "cetuximab",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1315411"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

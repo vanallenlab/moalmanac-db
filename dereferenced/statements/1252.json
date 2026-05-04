@@ -331,7 +331,60 @@
       "id": 114,
       "conceptType": "Drug",
       "name": "Acalabrutinib",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1986808",
+            "code": "1986808",
+            "name": "acalabrutinib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1986808"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:792764",
+            "code": "792764",
+            "name": "acalabrutinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/792764"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:763037006",
+            "code": "763037006",
+            "name": "Acalabrutinib",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=763037006&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:35621785",
+            "code": "35621785",
+            "name": "Acalabrutinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/35621785"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

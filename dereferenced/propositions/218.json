@@ -151,7 +151,34 @@
     "id": 130,
     "conceptType": "Drug",
     "name": "Mobocertinib",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2570736",
+          "code": "2570736",
+          "name": "mobocertinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2570736"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:701915",
+          "code": "701915",
+          "name": "mobocertinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/701915"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

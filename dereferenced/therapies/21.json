@@ -2,7 +2,60 @@
   "id": 21,
   "conceptType": "Drug",
   "name": "Cobimetinib",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:1722365",
+        "code": "1722365",
+        "name": "cobimetinib",
+        "system": "RxNorm",
+        "systemVersion": "20250602",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1722365"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:37395721",
+        "code": "37395721",
+        "name": "Cobimetinib",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/37395721"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:715257001",
+        "code": "715257001",
+        "name": "Cobimetinib",
+        "system": "SNOMED",
+        "systemVersion": "2026-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=715257001&edition=MAIN/2026-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:35605804",
+        "code": "35605804",
+        "name": "cobimetinib",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/35605804"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

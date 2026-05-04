@@ -2,7 +2,34 @@
   "id": 125,
   "conceptType": "Drug",
   "name": "Interferon Alpha",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:5879",
+        "code": "5879",
+        "name": "interferon alfa-2a",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=5879"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1379969",
+        "code": "1379969",
+        "name": "interferon alfa-2a",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1379969"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

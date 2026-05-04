@@ -273,7 +273,60 @@
       "id": 20,
       "conceptType": "Drug",
       "name": "Vandetanib",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1098413",
+            "code": "1098413",
+            "name": "vandetanib",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1098413"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4303659",
+            "code": "4303659",
+            "name": "Vandetanib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4303659"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:418260004",
+            "code": "418260004",
+            "name": "Vandetanib",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=418260004&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:40238052",
+            "code": "40238052",
+            "name": "vandetanib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/40238052"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

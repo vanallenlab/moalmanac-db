@@ -256,7 +256,60 @@
           "id": 72,
           "conceptType": "Drug",
           "name": "Nivolumab",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1597876",
+                "code": "1597876",
+                "name": "nivolumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597876"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45892628",
+                "code": "45892628",
+                "name": "nivolumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45892628"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:704191007",
+                "code": "704191007",
+                "name": "Nivolumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704191007&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45766924",
+                "code": "45766924",
+                "name": "Nivolumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45766924"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
@@ -286,7 +339,60 @@
           "id": 28,
           "conceptType": "Drug",
           "name": "Oxaliplatin",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:32592",
+                "code": "32592",
+                "name": "oxaliplatin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=32592"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4216937",
+                "code": "4216937",
+                "name": "Oxaliplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4216937"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:395814003",
+                "code": "395814003",
+                "name": "Oxaliplatin",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=395814003&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1318011",
+                "code": "1318011",
+                "name": "oxaliplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1318011"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",

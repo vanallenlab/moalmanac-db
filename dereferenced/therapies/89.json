@@ -2,7 +2,60 @@
   "id": 89,
   "conceptType": "Drug",
   "name": "Atezolizumab",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:1792776",
+        "code": "1792776",
+        "name": "atezolizumab",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1792776"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:42629079",
+        "code": "42629079",
+        "name": "atezolizumab",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/42629079"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:719371003",
+        "code": "719371003",
+        "name": "Atezolizumab",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=719371003&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:36714233",
+        "code": "36714233",
+        "name": "Atezolizumab",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/36714233"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

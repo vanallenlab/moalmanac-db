@@ -344,7 +344,60 @@
       "id": 88,
       "conceptType": "Drug",
       "name": "Nilotinib",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:662281",
+            "code": "662281",
+            "name": "nilotinib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=662281"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1394023",
+            "code": "1394023",
+            "name": "nilotinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1394023"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:427941004",
+            "code": "427941004",
+            "name": "Nilotinib",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=427941004&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4176309",
+            "code": "4176309",
+            "name": "Nilotinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4176309"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

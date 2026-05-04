@@ -2,7 +2,60 @@
   "id": 123,
   "conceptType": "Drug",
   "name": "Chlorambucil",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2346",
+        "code": "2346",
+        "name": "chlorambucil",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2346"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1390051",
+        "code": "1390051",
+        "name": "chlorambucil",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1390051"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:387249003",
+        "code": "387249003",
+        "name": "Chlorambucil",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387249003&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:4305863",
+        "code": "4305863",
+        "name": "Chlorambucil",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/4305863"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

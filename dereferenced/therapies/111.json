@@ -2,7 +2,34 @@
   "id": 111,
   "conceptType": "Drug",
   "name": "Zolbetuximab",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2695869",
+        "code": "2695869",
+        "name": "zolbetuximab",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2695869"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1735539",
+        "code": "1735539",
+        "name": "zolbetuximab",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1735539"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

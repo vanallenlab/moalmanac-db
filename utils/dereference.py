@@ -635,6 +635,12 @@ class Therapies(BaseTable):
 
     foreign_keys = [
         FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+        FKList(
+            "mappings",
+            "mappings",
+            lambda db: db.mappings,
+            post=strip_keys("id", "primary_coding_id"),
+        ),
     ]
 
 

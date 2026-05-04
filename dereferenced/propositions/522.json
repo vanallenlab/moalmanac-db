@@ -173,7 +173,34 @@
     "id": 83,
     "conceptType": "Drug",
     "name": "Asciminib",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2584304",
+          "code": "2584304",
+          "name": "asciminib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2584304"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:702133",
+          "code": "702133",
+          "name": "asciminib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/702133"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

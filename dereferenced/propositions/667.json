@@ -159,7 +159,60 @@
         "id": 39,
         "conceptType": "Drug",
         "name": "Cisplatin",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2555",
+              "code": "2555",
+              "name": "cisplatin",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2555"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4301188",
+              "code": "4301188",
+              "name": "Cisplatin",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4301188"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387318005",
+              "code": "387318005",
+              "name": "Cisplatin",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387318005&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1397599",
+              "code": "1397599",
+              "name": "cisplatin",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1397599"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -189,7 +242,60 @@
         "id": 86,
         "conceptType": "Drug",
         "name": "Osimertinib",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1721560",
+              "code": "1721560",
+              "name": "osimertinib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1721560"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:35605522",
+              "code": "35605522",
+              "name": "osimertinib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/35605522"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:716032009",
+              "code": "716032009",
+              "name": "Osimertinib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716032009&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:37396277",
+              "code": "37396277",
+              "name": "Osimertinib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/37396277"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",

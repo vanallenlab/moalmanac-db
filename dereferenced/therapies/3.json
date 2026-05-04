@@ -2,7 +2,60 @@
   "id": 3,
   "conceptType": "Drug",
   "name": "Vinblastine",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:11198",
+        "code": "11198",
+        "name": "vinblastine",
+        "system": "RxNorm",
+        "systemVersion": "20250602",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=11198"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:4305258",
+        "code": "4305258",
+        "name": "Vinblastine",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/4305258"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:387051009",
+        "code": "387051009",
+        "name": "Vinblastine",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387051009&edition=MAIN/2026-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:19008264",
+        "code": "19008264",
+        "name": "vinblastine",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/19008264"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

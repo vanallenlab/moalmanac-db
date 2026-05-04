@@ -331,7 +331,60 @@
       "id": 16,
       "conceptType": "Drug",
       "name": "Bosutinib",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1307619",
+            "code": "1307619",
+            "name": "bosutinib",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1307619"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:45766044",
+            "code": "45766044",
+            "name": "Bosutinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45766044"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:703128001",
+            "code": "703128001",
+            "name": "Bosutinib",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=703128001&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:42900401",
+            "code": "42900401",
+            "name": "bosutinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/42900401"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

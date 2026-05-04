@@ -225,7 +225,60 @@
           "id": 121,
           "conceptType": "Drug",
           "name": "Bendamustine",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:134547",
+                "code": "134547",
+                "name": "bendamustine",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=134547"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:19015523",
+                "code": "19015523",
+                "name": "bendamustine",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/19015523"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:428012008",
+                "code": "428012008",
+                "name": "Bendamustine",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=428012008&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4175860",
+                "code": "4175860",
+                "name": "Bendamustine",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4175860"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
@@ -255,7 +308,60 @@
           "id": 0,
           "conceptType": "Drug",
           "name": "Brentuximab vedotin",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1147320",
+                "code": "1147320",
+                "name": "brentuximab vedotin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147320"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:37017170",
+                "code": "37017170",
+                "name": "Brentuximab vedotin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/37017170"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:713395006",
+                "code": "713395006",
+                "name": "Brentuximab vedotin",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=713395006&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:40241969",
+                "code": "40241969",
+                "name": "brentuximab vedotin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/40241969"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",

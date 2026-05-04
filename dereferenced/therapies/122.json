@@ -2,7 +2,60 @@
   "id": 122,
   "conceptType": "Drug",
   "name": "Prednisone",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:8640",
+        "code": "8640",
+        "name": "prednisone",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=8640"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1551099",
+        "code": "1551099",
+        "name": "prednisone",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1551099"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:116602009",
+        "code": "116602009",
+        "name": "Prednisone",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=116602009&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:4023242",
+        "code": "4023242",
+        "name": "Prednisone",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/4023242"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

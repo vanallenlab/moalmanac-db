@@ -129,7 +129,60 @@
         "id": 40,
         "conceptType": "Drug",
         "name": "Letrozole",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:72965",
+              "code": "72965",
+              "name": "letrozole",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=72965"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4297547",
+              "code": "4297547",
+              "name": "Letrozole",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4297547"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:386911004",
+              "code": "386911004",
+              "name": "Letrozole",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386911004&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1315946",
+              "code": "1315946",
+              "name": "letrozole",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1315946"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -159,7 +212,60 @@
         "id": 53,
         "conceptType": "Drug",
         "name": "Ribociclib",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1873916",
+              "code": "1873916",
+              "name": "ribociclib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1873916"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1592911",
+              "code": "1592911",
+              "name": "ribociclib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1592911"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:732257004",
+              "code": "732257004",
+              "name": "Ribociclib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=732257004&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:37115766",
+              "code": "37115766",
+              "name": "Ribociclib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/37115766"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",

@@ -2,7 +2,60 @@
   "id": 6,
   "conceptType": "Drug",
   "name": "Niraparib",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:1918231",
+        "code": "1918231",
+        "name": "niraparib",
+        "system": "RxNorm",
+        "systemVersion": "20250602",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1918231"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:37116802",
+        "code": "37116802",
+        "name": "Niraparib",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/37116802"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:733733005",
+        "code": "733733005",
+        "name": "Niraparib",
+        "system": "SNOMED",
+        "systemVersion": "2026-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=733733005&edition=MAIN/2026-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1593861",
+        "code": "1593861",
+        "name": "niraparib",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1593861"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

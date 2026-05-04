@@ -309,7 +309,60 @@
       "id": 108,
       "conceptType": "Drug",
       "name": "Amivantamab",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:2549199",
+            "code": "2549199",
+            "name": "amivantamab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2549199"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1536935",
+            "code": "1536935",
+            "name": "amivantamab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1536935"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:1162751008",
+            "code": "1162751008",
+            "name": "Amivantamab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1162751008&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37160574",
+            "code": "37160574",
+            "name": "Amivantamab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37160574"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

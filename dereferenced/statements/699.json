@@ -317,7 +317,60 @@
       "id": 33,
       "conceptType": "Drug",
       "name": "Gefitinib",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:328134",
+            "code": "328134",
+            "name": "gefitinib",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=328134"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4234076",
+            "code": "4234076",
+            "name": "Gefitinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4234076"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:407100002",
+            "code": "407100002",
+            "name": "Gefitinib",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=407100002&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1319193",
+            "code": "1319193",
+            "name": "gefitinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1319193"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

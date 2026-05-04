@@ -296,7 +296,60 @@
     "id": 43,
     "conceptType": "Drug",
     "name": "Ponatinib",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:1364347",
+          "code": "1364347",
+          "name": "ponatinib",
+          "system": "RxNorm",
+          "systemVersion": "20250602",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1364347"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:45771379",
+          "code": "45771379",
+          "name": "Ponatinib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/45771379"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:703796003",
+          "code": "703796003",
+          "name": "Ponatinib",
+          "system": "SNOMED",
+          "systemVersion": "2026-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=703796003&edition=MAIN/2026-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:43013182",
+          "code": "43013182",
+          "name": "ponatinib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/43013182"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

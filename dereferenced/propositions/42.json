@@ -159,7 +159,60 @@
         "id": 17,
         "conceptType": "Drug",
         "name": "Binimetinib",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2049122",
+              "code": "2049122",
+              "name": "binimetinib",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2049122"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:36674333",
+              "code": "36674333",
+              "name": "Binimetinib",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/36674333"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:772195005",
+              "code": "772195005",
+              "name": "Binimetinib",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=772195005&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1559930",
+              "code": "1559930",
+              "name": "binimetinib",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1559930"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -189,7 +242,60 @@
         "id": 18,
         "conceptType": "Drug",
         "name": "Encorafenib",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2049106",
+              "code": "2049106",
+              "name": "encorafenib",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2049106"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:36674339",
+              "code": "36674339",
+              "name": "Encorafenib",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/36674339"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:772201002",
+              "code": "772201002",
+              "name": "Encorafenib",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=772201002&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1559914",
+              "code": "1559914",
+              "name": "encorafenib",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1559914"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",

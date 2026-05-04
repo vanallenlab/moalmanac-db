@@ -370,7 +370,34 @@
           "id": 109,
           "conceptType": "Drug",
           "name": "Capivasertib",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:2669967",
+                "code": "2669967",
+                "name": "capivasertib",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2669967"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:747200",
+                "code": "747200",
+                "name": "capivasertib",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/747200"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
@@ -400,7 +427,60 @@
           "id": 30,
           "conceptType": "Drug",
           "name": "Fulvestrant",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:282357",
+                "code": "282357",
+                "name": "fulvestrant",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=282357"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4300255",
+                "code": "4300255",
+                "name": "Fulvestrant",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4300255"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:385519002",
+                "code": "385519002",
+                "name": "Fulvestrant",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=385519002&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1304044",
+                "code": "1304044",
+                "name": "fulvestrant",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1304044"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",

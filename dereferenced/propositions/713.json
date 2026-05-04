@@ -177,7 +177,60 @@
         "id": 105,
         "conceptType": "Drug",
         "name": "Idelalisib",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1544460",
+              "code": "1544460",
+              "name": "idelalisib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1544460"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:45776944",
+              "code": "45776944",
+              "name": "idelalisib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45776944"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:710278000",
+              "code": "710278000",
+              "name": "Idelalisib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=710278000&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:46271986",
+              "code": "46271986",
+              "name": "Idelalisib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/46271986"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -207,7 +260,60 @@
         "id": 60,
         "conceptType": "Drug",
         "name": "Rituximab",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:121191",
+              "code": "121191",
+              "name": "rituximab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=121191"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1314273",
+              "code": "1314273",
+              "name": "rituximab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1314273"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:386919002",
+              "code": "386919002",
+              "name": "Rituximab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386919002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4299850",
+              "code": "4299850",
+              "name": "Rituximab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4299850"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",

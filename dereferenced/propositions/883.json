@@ -156,7 +156,34 @@
     "id": 148,
     "conceptType": "Drug",
     "name": "Revumenib",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2698325",
+          "code": "2698325",
+          "name": "revumenib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2698325"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:1464796",
+          "code": "1464796",
+          "name": "revumenib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1464796"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

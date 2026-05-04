@@ -63,7 +63,34 @@
     "id": 150,
     "conceptType": "Drug",
     "name": "Telisotuzumab Vedotin",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2721996",
+          "code": "2721996",
+          "name": "telisotuzumab vedotin",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2721996"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:37354008",
+          "code": "37354008",
+          "name": "telisotuzumab vedotin",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/37354008"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

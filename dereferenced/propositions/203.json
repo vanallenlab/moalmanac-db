@@ -115,7 +115,60 @@
     "id": 56,
     "conceptType": "Drug",
     "name": "Lorlatinib",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2103164",
+          "code": "2103164",
+          "name": "lorlatinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2103164"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:35201733",
+          "code": "35201733",
+          "name": "lorlatinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/35201733"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:782976007",
+          "code": "782976007",
+          "name": "Lorlatinib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=782976007&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:37204343",
+          "code": "37204343",
+          "name": "Lorlatinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/37204343"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",

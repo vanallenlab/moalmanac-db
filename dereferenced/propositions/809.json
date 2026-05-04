@@ -67,7 +67,60 @@
         "id": 39,
         "conceptType": "Drug",
         "name": "Cisplatin",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2555",
+              "code": "2555",
+              "name": "cisplatin",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2555"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4301188",
+              "code": "4301188",
+              "name": "Cisplatin",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4301188"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387318005",
+              "code": "387318005",
+              "name": "Cisplatin",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387318005&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1397599",
+              "code": "1397599",
+              "name": "cisplatin",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1397599"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -97,7 +150,60 @@
         "id": 63,
         "conceptType": "Drug",
         "name": "Cytarabine",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:3041",
+              "code": "3041",
+              "name": "cytarabine",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3041"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1311078",
+              "code": "1311078",
+              "name": "cytarabine",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1311078"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387511003",
+              "code": "387511003",
+              "name": "Cytarabine",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387511003&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4306038",
+              "code": "4306038",
+              "name": "Cytarabine",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4306038"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -127,7 +233,60 @@
         "id": 60,
         "conceptType": "Drug",
         "name": "Rituximab",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:121191",
+              "code": "121191",
+              "name": "rituximab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=121191"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1314273",
+              "code": "1314273",
+              "name": "rituximab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1314273"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:386919002",
+              "code": "386919002",
+              "name": "Rituximab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386919002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4299850",
+              "code": "4299850",
+              "name": "Rituximab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4299850"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",

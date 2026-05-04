@@ -320,7 +320,34 @@
       "id": 158,
       "conceptType": "Drug",
       "name": "Quizartinib",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:2643048",
+            "code": "2643048",
+            "name": "quizartinib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2643048"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:746225",
+            "code": "746225",
+            "name": "quizartinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/746225"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

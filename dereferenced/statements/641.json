@@ -255,7 +255,34 @@
       "id": 153,
       "conceptType": "Drug",
       "name": "Datopotamab deruxtecan",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:2703033",
+            "code": "2703033",
+            "name": "datopotamab deruxtecan",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2703033"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1465264",
+            "code": "1465264",
+            "name": "datopotamab deruxtecan",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1465264"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "therapy_strategy",

@@ -2,7 +2,60 @@
   "id": 13,
   "conceptType": "Drug",
   "name": "Avapritinib",
-  "mappings": [],
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2272107",
+        "code": "2272107",
+        "name": "avapritinib",
+        "system": "RxNorm",
+        "systemVersion": "20250602",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2272107"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:3666978",
+        "code": "3666978",
+        "name": "Avapritinib",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/3666978"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:838462005",
+        "code": "838462005",
+        "name": "Avapritinib",
+        "system": "SNOMED",
+        "systemVersion": "2026-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=838462005&edition=MAIN/2026-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:37498468",
+        "code": "37498468",
+        "name": "avapritinib",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/37498468"
+        ]
+      }
+    }
+  ],
   "extensions": [
     {
       "name": "therapy_strategy",

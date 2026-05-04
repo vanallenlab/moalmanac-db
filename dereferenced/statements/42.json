@@ -317,7 +317,60 @@
           "id": 89,
           "conceptType": "Drug",
           "name": "Atezolizumab",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1792776",
+                "code": "1792776",
+                "name": "atezolizumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1792776"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:42629079",
+                "code": "42629079",
+                "name": "atezolizumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/42629079"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:719371003",
+                "code": "719371003",
+                "name": "Atezolizumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=719371003&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:36714233",
+                "code": "36714233",
+                "name": "Atezolizumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/36714233"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
@@ -347,7 +400,60 @@
           "id": 21,
           "conceptType": "Drug",
           "name": "Cobimetinib",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1722365",
+                "code": "1722365",
+                "name": "cobimetinib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1722365"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:37395721",
+                "code": "37395721",
+                "name": "Cobimetinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/37395721"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:715257001",
+                "code": "715257001",
+                "name": "Cobimetinib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=715257001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:35605804",
+                "code": "35605804",
+                "name": "cobimetinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/35605804"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",
@@ -377,7 +483,60 @@
           "id": 22,
           "conceptType": "Drug",
           "name": "Vemurafenib",
-          "mappings": [],
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1147220",
+                "code": "1147220",
+                "name": "vemurafenib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147220"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45765787",
+                "code": "45765787",
+                "name": "Vemurafenib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45765787"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:702805007",
+                "code": "702805007",
+                "name": "Vemurafenib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702805007&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:40241937",
+                "code": "40241937",
+                "name": "vemurafenib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/40241937"
+                ]
+              }
+            }
+          ],
           "extensions": [
             {
               "name": "therapy_strategy",

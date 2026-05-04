@@ -55,7 +55,60 @@
         "id": 11,
         "conceptType": "Drug",
         "name": "Bevacizumab",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:253337",
+              "code": "253337",
+              "name": "bevacizumab",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=253337"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4247981",
+              "code": "4247981",
+              "name": "Bevacizumab",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4247981"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:409406007",
+              "code": "409406007",
+              "name": "Bevacizumab",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=409406007&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1397141",
+              "code": "1397141",
+              "name": "bevacizumab",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1397141"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
@@ -85,7 +138,60 @@
         "id": 46,
         "conceptType": "Drug",
         "name": "Olaparib",
-        "mappings": [],
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1597582",
+              "code": "1597582",
+              "name": "olaparib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597582"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:45892579",
+              "code": "45892579",
+              "name": "olaparib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45892579"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:432162002",
+              "code": "432162002",
+              "name": "Olaparib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=432162002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4332351",
+              "code": "4332351",
+              "name": "Olaparib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4332351"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",

@@ -115,7 +115,60 @@
     "id": 78,
     "conceptType": "Drug",
     "name": "Selpercatinib",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2370147",
+          "code": "2370147",
+          "name": "selpercatinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2370147"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:1145791",
+          "code": "1145791",
+          "name": "selpercatinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1145791"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:876841001",
+          "code": "876841001",
+          "name": "Selpercatinib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=876841001&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:618816",
+          "code": "618816",
+          "name": "Selpercatinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/618816"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "therapy_strategy",
