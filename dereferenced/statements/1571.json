@@ -1,34 +1,34 @@
 {
   "id": 1571,
   "type": "Statement",
-  "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS >= 1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
+  "description": "The European Medicines Agency (EMA) has authorized imlunestrant as a monotherapy for the treatment of adult patients with estrogen receptor (ER-positive), HER2-negative, locally advanced or metastatic breast cancer with an activating ESR1-mutation, who have disease progression following prior treatment with an endocrine based regimen. The EPAR notes that in pre- or perimenopausal women, or men, imlunestrant should be combined with a luteinising hormone-releasing hormone (LHRH) agonist. Furthermore, it notes that patients should be selected based on the presence of an activating ESR1-variant in tumor or in plasma specimens, using a CE-marked in vitro diagnostic with the corresponding intended purpose or an alternative validated test.",
   "contributions": [
     {
-      "id": 52,
+      "id": 54,
       "type": "Contribution",
-      "description": "This indication received initial traditional approval from the U.S. FDA on 2026-02-10.",
-      "date": "2026-02-10",
+      "description": "Initial curation of EMA's approval of Inluriyo (imlunestrant)",
+      "date": "2026-05-05",
       "contributor": {
-        "id": "fda",
+        "id": "vanallenlab",
         "type": "Agent",
-        "agentType": "organization",
-        "name": "Food and Drug Administration",
-        "description": "Regulatory agency that approves drugs for use in the United States."
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
       }
     }
   ],
   "reportedIn": [
     {
-      "id": "doc:fda.keytruda",
+      "id": "doc:ema.inluriyo",
       "type": "Document",
       "documentType": "Regulatory approval",
-      "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+      "name": "Inluriyo (imlunestrant) [product information]. EMA.",
       "title": null,
-      "aliases": [],
-      "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf. Revised February 2026. Accessed March 2, 2026.",
+      "alias": [],
+      "description": "Eli Lilly Nederland B.V. Inluriyo (imlunestrant) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/inluriyo-epar-product-information_en.pdf. Revised February 2026. Accessed May 5, 2026.",
       "urls": [
-        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
-        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+        "https://www.ema.europa.eu/en/documents/product-information/inluriyo-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/inluriyo"
       ],
       "doi": null,
       "pmid": null,
@@ -36,42 +36,42 @@
         {
           "name": "agent",
           "value": {
-            "id": "fda",
+            "id": "ema",
             "type": "Agent",
             "agentType": "organization",
-            "name": "Food and Drug Administration",
-            "description": "Regulatory agency that approves drugs for use in the United States."
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
           },
           "description": "The organization that published this document."
         },
         {
           "name": "company",
-          "value": "Merck Sharp & Dohme Corp.",
+          "value": "Eli Lilly Nederland B.V.",
           "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
         },
         {
           "name": "drug_name_brand",
-          "value": "Keytruda",
+          "value": "Inluriyo",
           "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
         },
         {
           "name": "drug_name_generic",
-          "value": "pembrolizumab",
+          "value": "imlunestrant",
           "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
         },
         {
           "name": "first_publication_date",
-          "value": "2014-09-04",
+          "value": "2026-01-23",
           "description": "The publication date for the initial version of this document."
         },
         {
           "name": "identification_number",
-          "value": 125514,
+          "value": "EMEA/H/C/006184",
           "description": "Identification number used by the publishing organization."
         },
         {
           "name": "publication_date",
-          "value": "2026-02-10",
+          "value": "2026-02-23",
           "description": "The publication date for the document."
         },
         {
@@ -84,25 +84,26 @@
   ],
   "direction": "supports",
   "indication": {
-    "id": "ind:fda.keytruda:17",
-    "indication": "KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS >= 1) as determined by an FDA-authorized test, and who have recieved one or two prior systemic treatment regimens.",
-    "initial_approval_date": "2026-02-10",
-    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
-    "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS >= 1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
-    "raw_biomarkers": "PD-L1 (CPS >= 1)",
-    "raw_cancer_type": "epithelial ovarian, fallopian tube, or primary peritoneal carcinoma",
-    "raw_therapeutics": "keytruda in combination with paclitaxel, with or without bevacizumab",
+    "id": "ind:ema.inluriyo:0",
+    "indication": "Inluriyo is indicated as monotherapy for the treatment of adult patients with oestrogen receptor (ER -positive, HER2-negative, locally advanced or metastatic breast cancer with an activating ESR1-mutation, who have disease progression following prior treatment with an endocrine based regimen.",
+    "initial_approval_date": "2026-01-09",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/assessment-report/inluriyo-epar-public-assessment-report_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized imlunestrant as a monotherapy for the treatment of adult patients with estrogen receptor (ER-positive), HER2-negative, locally advanced or metastatic breast cancer with an activating ESR1-mutation, who have disease progression following prior treatment with an endocrine based regimen. The EPAR notes that in pre- or perimenopausal women, or men, imlunestrant should be combined with a luteinising hormone-releasing hormone (LHRH) agonist. Furthermore, it notes that patients should be selected based on the presence of an activating ESR1-variant in tumor or in plasma specimens, using a CE-marked in vitro diagnostic with the corresponding intended purpose or an alternative validated test.",
+    "raw_biomarkers": "oestrogen receptor (ER -positive, HER2-negative ... with an activating ESR1-mutation",
+    "raw_cancer_type": "breast cancer",
+    "raw_therapeutics": "Inluriyo (imlunestrant)",
+    "status": "Approved",
     "document": {
-      "id": "doc:fda.keytruda",
+      "id": "doc:ema.inluriyo",
       "type": "Document",
       "documentType": "Regulatory approval",
-      "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+      "name": "Inluriyo (imlunestrant) [product information]. EMA.",
       "title": null,
-      "aliases": [],
-      "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf. Revised February 2026. Accessed March 2, 2026.",
+      "alias": [],
+      "description": "Eli Lilly Nederland B.V. Inluriyo (imlunestrant) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/inluriyo-epar-product-information_en.pdf. Revised February 2026. Accessed May 5, 2026.",
       "urls": [
-        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
-        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+        "https://www.ema.europa.eu/en/documents/product-information/inluriyo-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/inluriyo"
       ],
       "doi": null,
       "pmid": null,
@@ -110,42 +111,42 @@
         {
           "name": "agent",
           "value": {
-            "id": "fda",
+            "id": "ema",
             "type": "Agent",
             "agentType": "organization",
-            "name": "Food and Drug Administration",
-            "description": "Regulatory agency that approves drugs for use in the United States."
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
           },
           "description": "The organization that published this document."
         },
         {
           "name": "company",
-          "value": "Merck Sharp & Dohme Corp.",
+          "value": "Eli Lilly Nederland B.V.",
           "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
         },
         {
           "name": "drug_name_brand",
-          "value": "Keytruda",
+          "value": "Inluriyo",
           "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
         },
         {
           "name": "drug_name_generic",
-          "value": "pembrolizumab",
+          "value": "imlunestrant",
           "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
         },
         {
           "name": "first_publication_date",
-          "value": "2014-09-04",
+          "value": "2026-01-23",
           "description": "The publication date for the initial version of this document."
         },
         {
           "name": "identification_number",
-          "value": 125514,
+          "value": "EMEA/H/C/006184",
           "description": "Identification number used by the publishing organization."
         },
         {
           "name": "publication_date",
-          "value": "2026-02-10",
+          "value": "2026-02-23",
           "description": "The publication date for the document."
         },
         {
@@ -157,14 +158,14 @@
     }
   },
   "proposition": {
-    "id": 910,
+    "id": 875,
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
     "biomarkers": [
       {
-        "id": 42,
+        "id": 1,
         "type": "CategoricalVariant",
-        "name": "PD-L1 (CPS) >= 1",
+        "name": "ER positive",
         "extensions": [
           {
             "name": "biomarker_type",
@@ -172,19 +173,177 @@
           },
           {
             "name": "marker",
-            "value": "PD-L1"
+            "value": "Estrogen receptor (ER)"
           },
           {
             "name": "unit",
-            "value": "Combined Positive Score (CPS)"
+            "value": "status"
           },
           {
             "name": "equality",
-            "value": ">="
+            "value": "="
           },
           {
             "name": "value",
-            "value": 1
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "type": "CategoricalVariant",
+        "name": "ESR1 activating variants",
+        "genes": [
+          {
+            "id": 19,
+            "conceptType": "Gene",
+            "name": "ESR1",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000091831",
+                  "code": "ENSG00000091831",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000091831"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:2099",
+                  "code": "2099",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/2099"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_000125.4",
+                  "code": "NM_000125.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000125.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "6q25.1-q25.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "06q25.1-q25.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:3467",
+              "code": "HGNC:3467",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "6"
+          },
+          {
+            "name": "start_position",
+            "value": null
+          },
+          {
+            "name": "end_position",
+            "value": null
+          },
+          {
+            "name": "reference_allele",
+            "value": null
+          },
+          {
+            "name": "alternate_allele",
+            "value": null
+          },
+          {
+            "name": "cdna_change",
+            "value": null
+          },
+          {
+            "name": "protein_change",
+            "value": null
+          },
+          {
+            "name": "variant_annotation",
+            "value": null
+          },
+          {
+            "name": "exon",
+            "value": null
+          },
+          {
+            "name": "rsid",
+            "value": null
+          },
+          {
+            "name": "hgvsg",
+            "value": null
+          },
+          {
+            "name": "hgvsc",
+            "value": null
+          },
+          {
+            "name": "requires_oncogenic",
+            "value": true
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "CategoricalVariant",
+        "name": "HER2-negative",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Negative"
           },
           {
             "name": "_present",
@@ -195,9 +354,9 @@
     ],
     "subjectVariant": {},
     "conditionQualifier": {
-      "id": 54,
+      "id": 9,
       "conceptType": "Disease",
-      "name": "Peritoneal Serous Carcinoma",
+      "name": "Invasive Breast Carcinoma",
       "mappings": [],
       "extensions": [
         {
@@ -207,270 +366,71 @@
         }
       ],
       "primaryCoding": {
-        "id": "oncotree:PSEC",
-        "code": "PSEC",
-        "name": "Peritoneal Serous Carcinoma",
+        "id": "oncotree:BRCA",
+        "code": "BRCA",
+        "name": "Invasive Breast Carcinoma",
         "system": "https://oncotree.mskcc.org",
         "systemVersion": "oncotree_2021_11_02",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PSEC"
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
         ]
       }
     },
     "objectTherapeutic": {
-      "id": 197,
-      "membershipOperator": "AND",
-      "therapies": [
+      "id": 157,
+      "conceptType": "Drug",
+      "name": "Imlunestrant",
+      "mappings": [
         {
-          "id": 11,
-          "conceptType": "Drug",
-          "name": "Bevacizumab",
-          "mappings": [
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "rxcui:253337",
-                "code": "253337",
-                "name": "bevacizumab",
-                "system": "RxNorm",
-                "systemVersion": "20250602",
-                "iris": [
-                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=253337"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "omop:4247981",
-                "code": "4247981",
-                "name": "Bevacizumab",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4247981"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "sctid:409406007",
-                "code": "409406007",
-                "name": "Bevacizumab",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=409406007&edition=MAIN/2026-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "omop:1397141",
-                "code": "1397141",
-                "name": "bevacizumab",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/1397141"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "therapy_strategy",
-              "value": [
-                "VEGF inhibition"
-              ],
-              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-            },
-            {
-              "name": "therapy_type",
-              "value": "Targeted therapy",
-              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-            }
-          ],
-          "primaryCoding": {
-            "id": "ncit:C2039",
-            "code": "C2039",
-            "name": "Bevacizumab",
-            "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:2725912",
+            "code": "2725912",
+            "name": "imlunestrant",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
             "iris": [
-              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2039"
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2725912"
             ]
           }
         },
         {
-          "id": 35,
-          "conceptType": "Drug",
-          "name": "Paclitaxel",
-          "mappings": [
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "rxcui:56946",
-                "code": "56946",
-                "name": "paclitaxel",
-                "system": "RxNorm",
-                "systemVersion": "20250602",
-                "iris": [
-                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "omop:4306859",
-                "code": "4306859",
-                "name": "Paclitaxel",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4306859"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "sctid:387374002",
-                "code": "387374002",
-                "name": "Paclitaxel",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387374002&edition=MAIN/2026-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "omop:1378382",
-                "code": "1378382",
-                "name": "paclitaxel",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/1378382"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "therapy_strategy",
-              "value": [
-                "Taxane-based chemotherapy"
-              ],
-              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-            },
-            {
-              "name": "therapy_type",
-              "value": "Chemotherapy",
-              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-            }
-          ],
-          "primaryCoding": {
-            "id": "ncit:C1411",
-            "code": "C1411",
-            "name": "Paclitaxel",
-            "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37354562",
+            "code": "37354562",
+            "name": "imlunestrant",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
             "iris": [
-              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
-            ]
-          }
-        },
-        {
-          "id": 48,
-          "conceptType": "Drug",
-          "name": "Pembrolizumab",
-          "mappings": [
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "rxcui:1547545",
-                "code": "1547545",
-                "name": "pembrolizumab",
-                "system": "RxNorm",
-                "systemVersion": "02-Mar-2026",
-                "iris": [
-                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "omop:45775965",
-                "code": "45775965",
-                "name": "pembrolizumab",
-                "system": "OMOP",
-                "systemVersion": "v20260227",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/45775965"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "sctid:716125002",
-                "code": "716125002",
-                "name": "Pembrolizumab",
-                "system": "SNOMED",
-                "systemVersion": "2025-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716125002&edition=MAIN/2025-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "omop:37396350",
-                "code": "37396350",
-                "name": "Pembrolizumab",
-                "system": "OMOP",
-                "systemVersion": "v20260227",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/37396350"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "therapy_strategy",
-              "value": [
-                "PD-1/PD-L1 inhibition"
-              ],
-              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-            },
-            {
-              "name": "therapy_type",
-              "value": "Immunotherapy",
-              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-            }
-          ],
-          "primaryCoding": {
-            "id": "ncit:C106432",
-            "code": "C106432",
-            "name": "Pembrolizumab",
-            "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
-            "iris": [
-              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+              "https://athena.ohdsi.org/search-terms/terms/37354562"
             ]
           }
         }
-      ]
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Estrogen receptor inhibition"
+          ]
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C174042",
+        "code": "C174042",
+        "name": "Imlunestrant",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C174042"
+        ]
+      }
     }
   },
   "strength": {
