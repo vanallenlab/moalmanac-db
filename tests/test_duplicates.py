@@ -1,7 +1,7 @@
 import json
 
 from tests import helpers
-from utils import json_utils
+
 
 def test_unique_ids_per_file(data):
     """
@@ -11,7 +11,7 @@ def test_unique_ids_per_file(data):
         seen = set()
         duplicates = []
         for record in records:
-            record_id = record.get('id')
+            record_id = record.get("id")
             if record_id in seen:
                 duplicates.append(record_id)
             else:
@@ -20,6 +20,7 @@ def test_unique_ids_per_file(data):
         assert not duplicates, (
             f"Duplicate `id` values found in table '{file}': {duplicates}"
         )
+
 
 def test_unique_records_per_file(data):
     """
@@ -34,9 +35,9 @@ def test_unique_records_per_file(data):
             serialized = json.dumps(normalized, sort_keys=True)
 
             if serialized in seen:
-                duplicates.append((seen[serialized], record.get('id')))
+                duplicates.append((seen[serialized], record.get("id")))
             else:
-                seen[serialized] = record.get('id')
+                seen[serialized] = record.get("id")
         assert not duplicates, (
             f"Duplicate records found in file {file} (ignoring `id`): "
             f"{[f'{a} and {b}' for a, b in duplicates]}"
