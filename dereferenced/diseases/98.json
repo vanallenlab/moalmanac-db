@@ -1,0 +1,63 @@
+{
+  "id": 98,
+  "conceptType": "Disease",
+  "name": "Pancreatic Neuroendocrine Neoplasm",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "oncotree:PANET",
+        "code": "PANET",
+        "name": "Pancreatic Neuroendocrine Tumor",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Pancreatic+Neuroendocrine+Tumor+%28PANET%29"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "ncit:C3770",
+        "code": "C3770",
+        "name": "Pancreatic Neuroendocrine Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3770"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "oncotree:PANEC",
+        "code": "PANEC",
+        "name": "Pancreatic Neuroendocrine Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Pancreatic+Neuroendocrine+Carcinoma+%28PANEC%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C27031",
+    "code": "C27031",
+    "name": "Pancreatic Neuroendocrine Neoplasm",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C27031"
+    ]
+  }
+}

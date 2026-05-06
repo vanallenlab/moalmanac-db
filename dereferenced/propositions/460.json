@@ -133,10 +133,24 @@
   ],
   "subjectVariant": {},
   "conditionQualifier": {
-    "id": 4,
+    "id": 95,
     "conceptType": "Disease",
-    "name": "Anaplastic Thyroid Cancer",
-    "mappings": [],
+    "name": "Subependymal Giant Cell Astrocytoma",
+    "mappings": [
+      {
+        "relation": "broadMatch",
+        "coding": {
+          "id": "oncotree:ENCG",
+          "code": "ENCG",
+          "name": "Encapsulated Glioma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Encapsulated+Glioma+%28ENCG%29"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "solid_tumor",
@@ -145,13 +159,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "oncotree:THAP",
-      "code": "THAP",
-      "name": "Anaplastic Thyroid Cancer",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "id": "ncit:C3696",
+      "code": "C3696",
+      "name": "Subependymal Giant Cell Astrocytoma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=THAP"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3696"
       ]
     }
   },
