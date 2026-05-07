@@ -1,0 +1,255 @@
+{
+  "id": 89,
+  "membershipOperator": "AND",
+  "therapies": [
+    {
+      "id": 37,
+      "conceptType": "Drug",
+      "name": "Carboplatin",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:40048",
+            "code": "40048",
+            "name": "carboplatin",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=40048"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4299846",
+            "code": "4299846",
+            "name": "Carboplatin",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4299846"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:386905002",
+            "code": "386905002",
+            "name": "Carboplatin",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386905002&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1344905",
+            "code": "1344905",
+            "name": "carboplatin",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1344905"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Platinum-based chemotherapy"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C1282",
+        "code": "C1282",
+        "name": "Carboplatin",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "conceptType": "Drug",
+      "name": "Durvalumab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1919503",
+            "code": "1919503",
+            "name": "durvalumab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1919503"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1594034",
+            "code": "1594034",
+            "name": "durvalumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1594034"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:735230005",
+            "code": "735230005",
+            "name": "Durvalumab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=735230005&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:42536415",
+            "code": "42536415",
+            "name": "Durvalumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/42536415"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C103194",
+        "code": "C103194",
+        "name": "Durvalumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C103194"
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "conceptType": "Drug",
+      "name": "Pemetrexed",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:68446",
+            "code": "68446",
+            "name": "pemetrexed",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=68446"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1304919",
+            "code": "1304919",
+            "name": "pemetrexed",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1304919"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:409159000",
+            "code": "409159000",
+            "name": "Pemetrexed",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=409159000&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4247743",
+            "code": "4247743",
+            "name": "Pemetrexed",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4247743"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Antifolate"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C61614",
+        "code": "C61614",
+        "name": "Pemetrexed",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C61614"
+        ]
+      }
+    }
+  ]
+}

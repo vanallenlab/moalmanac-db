@@ -1,0 +1,56 @@
+{
+  "id": 155,
+  "conceptType": "Drug",
+  "name": "Zongertinib",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2721604",
+        "code": "2721604",
+        "name": "zongertinib",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2721604"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:37353943",
+        "code": "37353943",
+        "name": "zongertinib",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/37353943"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "HER2 inhibition"
+      ]
+    },
+    {
+      "name": "therapy_type",
+      "value": "Targeted therapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C199022",
+    "code": "C199022",
+    "name": "Zongertinib",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C199022"
+    ]
+  }
+}

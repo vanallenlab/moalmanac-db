@@ -1,0 +1,83 @@
+{
+  "id": 129,
+  "conceptType": "Drug",
+  "name": "Eribulin",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:1045453",
+        "code": "1045453",
+        "name": "eribulin",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1045453"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:40230712",
+        "code": "40230712",
+        "name": "eribulin",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/40230712"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:708166000",
+        "code": "708166000",
+        "name": "Eribulin",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=708166000&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:45769498",
+        "code": "45769498",
+        "name": "Eribulin",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/45769498"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "Tubulin polymerization inhibition"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+    },
+    {
+      "name": "therapy_type",
+      "value": "Chemotherapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C96748",
+    "code": "C96748",
+    "name": "Eribulin",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96748"
+    ]
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "id": 702,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized trastuzumab in combination with paclitaxel for the treatment of adult patients with HER2 positive metastatic breast cancer (MBC) that have not received chemotherapy for their metastatic disease and for whom an anthracycline is not suitable. The production information for trastuzumab notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.herceptin",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Herceptin (trastuzumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Roche Registration GmbH. Herceptin (trastuzumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/herceptin-epar-product-information_en.pdf. Revised March 2023. Accessed March 12, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/herceptin-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/herceptin"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Roche Registration GmbH.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Herceptin",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "trastuzumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2010-03-01",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-03-17",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.herceptin:1",
+    "indication": "Herceptin is indicated for the treatment of adult patients with HER2 positive metastatic breast cancer (MBC) in combination with paclitaxel for the treatment of those patients who have not received chemotherapy for their metastatic disease and for whom an anthracycline is not suitable.",
+    "initial_approval_date": "2000-08-28",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/scientific-discussion/herceptin-epar-scientific-discussion_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized trastuzumab in combination with paclitaxel for the treatment of adult patients with HER2 positive metastatic breast cancer (MBC) that have not received chemotherapy for their metastatic disease and for whom an anthracycline is not suitable. The production information for trastuzumab notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "metastatic breast cancer (MBC)",
+    "raw_therapeutics": "Herceptin (trastuzumab)",
+    "document": {
+      "id": "doc:ema.herceptin",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Herceptin (trastuzumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Roche Registration GmbH. Herceptin (trastuzumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/herceptin-epar-product-information_en.pdf. Revised March 2023. Accessed March 12, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/herceptin-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/herceptin"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Roche Registration GmbH.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Herceptin",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "trastuzumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2010-03-01",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-03-17",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 561,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 20,
+        "type": "CategoricalVariant",
+        "name": "HER2-positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 9,
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:BRCA",
+        "code": "BRCA",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 110,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 35,
+          "conceptType": "Drug",
+          "name": "Paclitaxel",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:56946",
+                "code": "56946",
+                "name": "paclitaxel",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4306859",
+                "code": "4306859",
+                "name": "Paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4306859"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387374002",
+                "code": "387374002",
+                "name": "Paclitaxel",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387374002&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1378382",
+                "code": "1378382",
+                "name": "paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1378382"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Taxane-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1411",
+            "code": "C1411",
+            "name": "Paclitaxel",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "conceptType": "Drug",
+          "name": "Trastuzumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:224905",
+                "code": "224905",
+                "name": "trastuzumab",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4304158",
+                "code": "4304158",
+                "name": "Trastuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4304158"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387003001",
+                "code": "387003001",
+                "name": "Trastuzumab",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387003001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1387104",
+                "code": "1387104",
+                "name": "trastuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1387104"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "HER2 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1647",
+            "code": "C1647",
+            "name": "Trastuzumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

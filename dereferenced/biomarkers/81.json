@@ -1,0 +1,83 @@
+{
+  "id": 81,
+  "type": "CategoricalVariant",
+  "name": "TP53 deletion",
+  "genes": [
+    {
+      "id": 52,
+      "conceptType": "Gene",
+      "name": "TP53",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000141510",
+            "code": "ENSG00000141510",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000141510"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:7157",
+            "code": "7157",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/7157"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000546.6",
+            "code": "NM_000546.6",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000546.6"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "17p13.1"
+        },
+        {
+          "name": "location_sortable",
+          "value": "17p13.1"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:11998",
+        "code": "HGNC:11998",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Copy Number"
+    },
+    {
+      "name": "direction",
+      "value": "Deletion"
+    },
+    {
+      "name": "cytoband",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

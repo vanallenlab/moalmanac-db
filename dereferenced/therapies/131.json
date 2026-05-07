@@ -1,0 +1,57 @@
+{
+  "id": 131,
+  "conceptType": "Drug",
+  "name": "Olutasidenib",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2623641",
+        "code": "2623641",
+        "name": "olutasidenib",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2623641"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:742050",
+        "code": "742050",
+        "name": "olutasidenib",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/742050"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "IDH1 inhibition"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+    },
+    {
+      "name": "therapy_type",
+      "value": "Targeted therapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C129687",
+    "code": "C129687",
+    "name": "Olutasidenib",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C129687"
+    ]
+  }
+}

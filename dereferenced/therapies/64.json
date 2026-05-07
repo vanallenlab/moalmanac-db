@@ -1,0 +1,83 @@
+{
+  "id": 64,
+  "conceptType": "Drug",
+  "name": "Etoposide",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:4179",
+        "code": "4179",
+        "name": "etoposide",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4179"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1350504",
+        "code": "1350504",
+        "name": "etoposide",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1350504"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:387316009",
+        "code": "387316009",
+        "name": "Etoposide",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387316009&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:4306843",
+        "code": "4306843",
+        "name": "Etoposide",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/4306843"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "Topoisomerase inhibition"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+    },
+    {
+      "name": "therapy_type",
+      "value": "Chemotherapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C491",
+    "code": "C491",
+    "name": "Etoposide",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C491"
+    ]
+  }
+}

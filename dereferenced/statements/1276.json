@@ -1,0 +1,440 @@
+{
+  "id": 1276,
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved palbociclib in combination with an aromatase inhibitor as a treatment option for the treatment of patients with (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer.",
+  "contributions": [
+    {
+      "id": 41,
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse.00414",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Palbociclib Therapy - 28 day. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Palbociclib Therapy - 28 day, 2025, version number 5, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6457/414_v5_Palbociclib_o9nHDn7.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6457/414_v5_Palbociclib_o9nHDn7.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2020-10-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hse.00414:a",
+    "indication": "Treatment of hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer in combination with an aromatase inhibitor",
+    "initial_approval_date": "2018-06-01",
+    "initial_approval_url": null,
+    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved palbociclib in combination with an aromatase inhibitor as a treatment option for the treatment of patients with (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "locally advanced or metastatic breast cancer",
+    "raw_therapeutics": "Palbociclib in combination with an aromatase inhibitor",
+    "reimbursement_scheme": "CDS",
+    "reimbursement_comment": null,
+    "document": {
+      "id": "doc:hse.00414",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Palbociclib Therapy - 28 day. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Palbociclib Therapy - 28 day, 2025, version number 5, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6457/414_v5_Palbociclib_o9nHDn7.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6457/414_v5_Palbociclib_o9nHDn7.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2020-10-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 311,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 1,
+        "type": "CategoricalVariant",
+        "name": "ER positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Estrogen receptor (ER)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "CategoricalVariant",
+        "name": "HER2-negative",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Negative"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 9,
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:BRCA",
+        "code": "BRCA",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 49,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 40,
+          "conceptType": "Drug",
+          "name": "Letrozole",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:72965",
+                "code": "72965",
+                "name": "letrozole",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=72965"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4297547",
+                "code": "4297547",
+                "name": "Letrozole",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4297547"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:386911004",
+                "code": "386911004",
+                "name": "Letrozole",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386911004&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1315946",
+                "code": "1315946",
+                "name": "letrozole",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1315946"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Aromatase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Hormone therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1527",
+            "code": "C1527",
+            "name": "Letrozole",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1527"
+            ]
+          }
+        },
+        {
+          "id": 31,
+          "conceptType": "Drug",
+          "name": "Palbociclib",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1601374",
+                "code": "1601374",
+                "name": "palbociclib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1601374"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:37396226",
+                "code": "37396226",
+                "name": "Palbociclib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/37396226"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:715958001",
+                "code": "715958001",
+                "name": "Palbociclib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=715958001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45892075",
+                "code": "45892075",
+                "name": "palbociclib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45892075"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CDK4/6 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C49176",
+            "code": "C49176",
+            "name": "Palbociclib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C49176"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

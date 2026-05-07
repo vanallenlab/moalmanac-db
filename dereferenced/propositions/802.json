@@ -1,0 +1,300 @@
+{
+  "id": 802,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 81,
+      "type": "CategoricalVariant",
+      "name": "TP53 deletion",
+      "genes": [
+        {
+          "id": 52,
+          "conceptType": "Gene",
+          "name": "TP53",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000141510",
+                "code": "ENSG00000141510",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000141510"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:7157",
+                "code": "7157",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/7157"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_000546.6",
+                "code": "NM_000546.6",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_000546.6"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "17p13.1"
+            },
+            {
+              "name": "location_sortable",
+              "value": "17p13.1"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:11998",
+            "code": "HGNC:11998",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Copy Number"
+        },
+        {
+          "name": "direction",
+          "value": "Deletion"
+        },
+        {
+          "name": "cytoband",
+          "value": null
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 84,
+    "conceptType": "Disease",
+    "name": "Chronic Lymphocytic Leukemia",
+    "mappings": [
+      {
+        "relation": "broadMatch",
+        "coding": {
+          "id": "oncotree:CLLSLL",
+          "code": "CLLSLL",
+          "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C3163",
+      "code": "C3163",
+      "name": "Chronic Lymphocytic Leukemia",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 166,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 105,
+        "conceptType": "Drug",
+        "name": "Idelalisib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1544460",
+              "code": "1544460",
+              "name": "idelalisib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1544460"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:45776944",
+              "code": "45776944",
+              "name": "idelalisib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45776944"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:710278000",
+              "code": "710278000",
+              "name": "Idelalisib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=710278000&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:46271986",
+              "code": "46271986",
+              "name": "Idelalisib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/46271986"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "PI3K/AKT/mTOR inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C78825",
+          "code": "C78825",
+          "name": "Idelalisib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C78825"
+          ]
+        }
+      },
+      {
+        "id": 120,
+        "conceptType": "Drug",
+        "name": "Ofatumumab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:712566",
+              "code": "712566",
+              "name": "ofatumumab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=712566"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:40167582",
+              "code": "40167582",
+              "name": "ofatumumab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/40167582"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:444607009",
+              "code": "444607009",
+              "name": "Ofatumumab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=444607009&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:40480218",
+              "code": "40480218",
+              "name": "Ofatumumab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/40480218"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "CD20 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Immunotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C66952",
+          "code": "C66952",
+          "name": "Ofatumumab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C66952"
+          ]
+        }
+      }
+    ]
+  }
+}

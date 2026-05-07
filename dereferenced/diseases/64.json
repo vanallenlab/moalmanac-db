@@ -1,0 +1,23 @@
+{
+  "id": 64,
+  "conceptType": "Disease",
+  "name": "T-Cell Acute Lymphoid Leukemia",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:TALL",
+    "code": "TALL",
+    "name": "T-Cell Acute Lymphoid Leukemia",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=TALL"
+    ]
+  }
+}

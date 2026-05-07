@@ -1,0 +1,172 @@
+{
+  "id": 165,
+  "membershipOperator": "AND",
+  "therapies": [
+    {
+      "id": 99,
+      "conceptType": "Drug",
+      "name": "Abemaciclib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1946825",
+            "code": "1946825",
+            "name": "abemaciclib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1946825"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:792649",
+            "code": "792649",
+            "name": "abemaciclib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/792649"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:761851004",
+            "code": "761851004",
+            "name": "Abemaciclib",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=761851004&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:42539316",
+            "code": "42539316",
+            "name": "Abemaciclib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/42539316"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "CDK4/6 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C97660",
+        "code": "C97660",
+        "name": "Abemaciclib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C97660"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "conceptType": "Drug",
+      "name": "Exemestane",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:258494",
+            "code": "258494",
+            "name": "exemestane",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=258494"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4304164",
+            "code": "4304164",
+            "name": "Exemestane",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4304164"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:387017005",
+            "code": "387017005",
+            "name": "Exemestane",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387017005&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1398399",
+            "code": "1398399",
+            "name": "exemestane",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1398399"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Aromatase inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Hormone therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C1097",
+        "code": "C1097",
+        "name": "Exemestane",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1097"
+        ]
+      }
+    }
+  ]
+}

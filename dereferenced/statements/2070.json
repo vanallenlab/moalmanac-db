@@ -1,0 +1,294 @@
+{
+  "id": 2070,
+  "type": "Statement",
+  "description": "Health Canada approved trastuzumab emtansine for the adjuvant treatment of HER2-positive early breast cancer patients who have residual invasive disease following neoadjuvant taxane and trastuzumab-based treatment.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.kadcyla",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Kadcyla (ado-trastuzumab emtansine) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Kadcyla (ado-trastuzumab emtansine) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00067729.PDF. Revised October 2022. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00067729.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=89698"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Kadcyla",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "ado-trastuzumab emtansine",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-09-11",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-10-13",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.kadcyla:1",
+    "indication": "KADCYLA monotherapy indicated for the adjuvant treatment of HER2-positive early breast cancer patients who have residual invasive disease following neoadjuvant taxane and trastuzumab-based treatment.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved trastuzumab emtansine for the adjuvant treatment of HER2-positive early breast cancer patients who have residual invasive disease following neoadjuvant taxane and trastuzumab-based treatment.",
+    "raw_biomarkers": "HER2-positive",
+    "raw_cancer_type": "early breast cancer",
+    "raw_therapeutics": "Kadcyla (trastuzumab emtansine)",
+    "document": {
+      "id": "doc:hc.kadcyla",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Kadcyla (ado-trastuzumab emtansine) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Kadcyla (ado-trastuzumab emtansine) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00067729.PDF. Revised October 2022. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00067729.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=89698"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Kadcyla",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "ado-trastuzumab emtansine",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-09-11",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-10-13",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 20,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 20,
+        "type": "CategoricalVariant",
+        "name": "HER2-positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 9,
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:BRCA",
+        "code": "BRCA",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 52,
+      "conceptType": "Drug",
+      "name": "Trastuzumab emtansine",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:702836004",
+            "code": "702836004",
+            "name": "Trastuzumab emtansine",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702836004&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:45765811",
+            "code": "45765811",
+            "name": "Trastuzumab emtansine",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45765811"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "HER2 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C82492",
+        "code": "C82492",
+        "name": "Trastuzumab Emtansine",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C82492"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

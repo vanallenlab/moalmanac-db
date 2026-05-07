@@ -1,0 +1,331 @@
+{
+  "id": 386,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 54,
+      "type": "CategoricalVariant",
+      "name": "CD20 +",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "CD20"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 84,
+    "conceptType": "Disease",
+    "name": "Chronic Lymphocytic Leukemia",
+    "mappings": [
+      {
+        "relation": "broadMatch",
+        "coding": {
+          "id": "oncotree:CLLSLL",
+          "code": "CLLSLL",
+          "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C3163",
+      "code": "C3163",
+      "name": "Chronic Lymphocytic Leukemia",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 83,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 59,
+        "conceptType": "Drug",
+        "name": "Cyclophosphamide",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:3002",
+              "code": "3002",
+              "name": "cyclophosphamide",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3002"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1310317",
+              "code": "1310317",
+              "name": "cyclophosphamide",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1310317"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387420009",
+              "code": "387420009",
+              "name": "Cyclophosphamide",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387420009&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4299054",
+              "code": "4299054",
+              "name": "Cyclophosphamide",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4299054"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Alkylating chemotherapy"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C405",
+          "code": "C405",
+          "name": "Cyclophosphamide",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C405"
+          ]
+        }
+      },
+      {
+        "id": 135,
+        "conceptType": "Drug",
+        "name": "Fludarabine",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:24698",
+              "code": "24698",
+              "name": "fludarabine",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=24698"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1395557",
+              "code": "1395557",
+              "name": "fludarabine",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1395557"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:386907005",
+              "code": "386907005",
+              "name": "Fludarabine",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386907005&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4297545",
+              "code": "4297545",
+              "name": "Fludarabine",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4297545"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Antimetabolite"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1094",
+          "code": "C1094",
+          "name": "Fludarabine",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1094"
+          ]
+        }
+      },
+      {
+        "id": 60,
+        "conceptType": "Drug",
+        "name": "Rituximab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:121191",
+              "code": "121191",
+              "name": "rituximab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=121191"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1314273",
+              "code": "1314273",
+              "name": "rituximab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1314273"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:386919002",
+              "code": "386919002",
+              "name": "Rituximab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386919002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4299850",
+              "code": "4299850",
+              "name": "Rituximab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4299850"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "CD20 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Immunotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1702",
+          "code": "C1702",
+          "name": "Rituximab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1702"
+          ]
+        }
+      }
+    ]
+  }
+}

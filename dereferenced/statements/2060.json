@@ -1,0 +1,480 @@
+{
+  "id": 2060,
+  "type": "Statement",
+  "description": "Health Canada approved durvalumab in combination with carboplatin and paclitaxel for the first-line treatment of adult patients with primary advanced or recurrent mismatch repair deficient (dMMR) endometrial cancer who are candidates for systemic therapy, followed by maintenance treatment with Imfinzi as monotherapy.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.imfinzi",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Imfinzi (durvalumab) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "AstraZeneca Canada Inc. Imfinzi (durvalumab) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00080178.PDF. Revised April 2025. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00080178.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=95736"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Imfinzi",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "durvalumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2017-11-03",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-10",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.imfinzi:1",
+    "indication": "Imfinzi (durvalumab) in combination with carboplatin and paclitaxel is indicated for the first-line treatment of adult patients with primary advanced or recurrent mismatch repair deficient (dMMR) endometrial cancer who are candidates for systemic therapy, followed by maintenance treatment with Imfinzi as monotherapy.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved durvalumab in combination with carboplatin and paclitaxel for the first-line treatment of adult patients with primary advanced or recurrent mismatch repair deficient (dMMR) endometrial cancer who are candidates for systemic therapy, followed by maintenance treatment with Imfinzi as monotherapy.",
+    "raw_biomarkers": "mismatch repair deficient (dMMR)",
+    "raw_cancer_type": "primary advanced or recurrent endometrial cancer",
+    "raw_therapeutics": "Imfinzi (durvalumab), carboplatin, paclitaxel",
+    "document": {
+      "id": "doc:hc.imfinzi",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Imfinzi (durvalumab) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "AstraZeneca Canada Inc. Imfinzi (durvalumab) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00080178.PDF. Revised April 2025. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00080178.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=95736"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Imfinzi",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "durvalumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2017-11-03",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-10",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 109,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 36,
+        "type": "CategoricalVariant",
+        "name": "dMMR",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Mismatch Repair"
+          },
+          {
+            "name": "status",
+            "value": "Deficient"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 18,
+      "conceptType": "Disease",
+      "name": "Endometrial Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:UCEC",
+        "code": "UCEC",
+        "name": "Endometrial Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UCEC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 25,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 37,
+          "conceptType": "Drug",
+          "name": "Carboplatin",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:40048",
+                "code": "40048",
+                "name": "carboplatin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=40048"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4299846",
+                "code": "4299846",
+                "name": "Carboplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4299846"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:386905002",
+                "code": "386905002",
+                "name": "Carboplatin",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386905002&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1344905",
+                "code": "1344905",
+                "name": "carboplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1344905"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Platinum-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1282",
+            "code": "C1282",
+            "name": "Carboplatin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
+            ]
+          }
+        },
+        {
+          "id": 44,
+          "conceptType": "Drug",
+          "name": "Durvalumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1919503",
+                "code": "1919503",
+                "name": "durvalumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1919503"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1594034",
+                "code": "1594034",
+                "name": "durvalumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1594034"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:735230005",
+                "code": "735230005",
+                "name": "Durvalumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=735230005&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:42536415",
+                "code": "42536415",
+                "name": "Durvalumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/42536415"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PD-1/PD-L1 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C103194",
+            "code": "C103194",
+            "name": "Durvalumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C103194"
+            ]
+          }
+        },
+        {
+          "id": 35,
+          "conceptType": "Drug",
+          "name": "Paclitaxel",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:56946",
+                "code": "56946",
+                "name": "paclitaxel",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4306859",
+                "code": "4306859",
+                "name": "Paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4306859"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387374002",
+                "code": "387374002",
+                "name": "Paclitaxel",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387374002&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1378382",
+                "code": "1378382",
+                "name": "paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1378382"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Taxane-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1411",
+            "code": "C1411",
+            "name": "Paclitaxel",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

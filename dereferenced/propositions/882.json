@@ -1,0 +1,234 @@
+{
+  "id": 882,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 20,
+      "type": "CategoricalVariant",
+      "name": "HER2-positive",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "Human epidermal growth factor receptor 2 (HER2)"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 9,
+    "conceptType": "Disease",
+    "name": "Invasive Breast Carcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:BRCA",
+      "code": "BRCA",
+      "name": "Invasive Breast Carcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 194,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 75,
+        "conceptType": "Drug",
+        "name": "Pertuzumab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1298944",
+              "code": "1298944",
+              "name": "pertuzumab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1298944"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:42801287",
+              "code": "42801287",
+              "name": "pertuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/42801287"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:704226002",
+              "code": "704226002",
+              "name": "Pertuzumab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704226002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:45766952",
+              "code": "45766952",
+              "name": "Pertuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45766952"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "HER2 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C38692",
+          "code": "C38692",
+          "name": "Pertuzumab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C38692"
+          ]
+        }
+      },
+      {
+        "id": 26,
+        "conceptType": "Drug",
+        "name": "Trastuzumab deruxtecan",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2267582",
+              "code": "2267582",
+              "name": "trastuzumab deruxtecan",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2267582"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:3666979",
+              "code": "3666979",
+              "name": "Trastuzumab deruxtecan",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/3666979"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:838469001",
+              "code": "838469001",
+              "name": "Trastuzumab deruxtecan",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=838469001&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:37498192",
+              "code": "37498192",
+              "name": "trastuzumab deruxtecan",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/37498192"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "HER2 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C128799",
+          "code": "C128799",
+          "name": "Trastuzumab Deruxtecan",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C128799"
+          ]
+        }
+      }
+    ]
+  }
+}

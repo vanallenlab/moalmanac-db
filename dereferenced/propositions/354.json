@@ -1,0 +1,566 @@
+{
+  "id": 354,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 20,
+      "type": "CategoricalVariant",
+      "name": "HER2-positive",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "Human epidermal growth factor receptor 2 (HER2)"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 9,
+    "conceptType": "Disease",
+    "name": "Invasive Breast Carcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:BRCA",
+      "code": "BRCA",
+      "name": "Invasive Breast Carcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 68,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 59,
+        "conceptType": "Drug",
+        "name": "Cyclophosphamide",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:3002",
+              "code": "3002",
+              "name": "cyclophosphamide",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3002"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1310317",
+              "code": "1310317",
+              "name": "cyclophosphamide",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1310317"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387420009",
+              "code": "387420009",
+              "name": "Cyclophosphamide",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387420009&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4299054",
+              "code": "4299054",
+              "name": "Cyclophosphamide",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4299054"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Alkylating chemotherapy"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C405",
+          "code": "C405",
+          "name": "Cyclophosphamide",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C405"
+          ]
+        }
+      },
+      {
+        "id": 76,
+        "conceptType": "Drug",
+        "name": "Epirubicin",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:3995",
+              "code": "3995",
+              "name": "epirubicin",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3995"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1344354",
+              "code": "1344354",
+              "name": "epirubicin",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1344354"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:417916005",
+              "code": "417916005",
+              "name": "Epirubicin",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=417916005&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4166710",
+              "code": "4166710",
+              "name": "Epirubicin",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4166710"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Topoisomerase inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C62028",
+          "code": "C62028",
+          "name": "Epirubicin",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62028"
+          ]
+        }
+      },
+      {
+        "id": 35,
+        "conceptType": "Drug",
+        "name": "Paclitaxel",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:56946",
+              "code": "56946",
+              "name": "paclitaxel",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4306859",
+              "code": "4306859",
+              "name": "Paclitaxel",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4306859"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387374002",
+              "code": "387374002",
+              "name": "Paclitaxel",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387374002&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1378382",
+              "code": "1378382",
+              "name": "paclitaxel",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1378382"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Taxane-based chemotherapy"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1411",
+          "code": "C1411",
+          "name": "Paclitaxel",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
+          ]
+        }
+      },
+      {
+        "id": 75,
+        "conceptType": "Drug",
+        "name": "Pertuzumab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1298944",
+              "code": "1298944",
+              "name": "pertuzumab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1298944"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:42801287",
+              "code": "42801287",
+              "name": "pertuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/42801287"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:704226002",
+              "code": "704226002",
+              "name": "Pertuzumab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704226002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:45766952",
+              "code": "45766952",
+              "name": "Pertuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45766952"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "HER2 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C38692",
+          "code": "C38692",
+          "name": "Pertuzumab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C38692"
+          ]
+        }
+      },
+      {
+        "id": 25,
+        "conceptType": "Drug",
+        "name": "Trastuzumab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:224905",
+              "code": "224905",
+              "name": "trastuzumab",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4304158",
+              "code": "4304158",
+              "name": "Trastuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4304158"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387003001",
+              "code": "387003001",
+              "name": "Trastuzumab",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387003001&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1387104",
+              "code": "1387104",
+              "name": "trastuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1387104"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "HER2 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1647",
+          "code": "C1647",
+          "name": "Trastuzumab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+          ]
+        }
+      },
+      {
+        "id": 29,
+        "conceptType": "Drug",
+        "name": "Fluorouracil",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:4492",
+              "code": "4492",
+              "name": "fluorouracil",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4492"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4300009",
+              "code": "4300009",
+              "name": "Fluorouracil",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4300009"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387172005",
+              "code": "387172005",
+              "name": "Fluorouracil",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387172005&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:955632",
+              "code": "955632",
+              "name": "fluorouracil",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/955632"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Thymidylate synthase inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C505",
+          "code": "C505",
+          "name": "Fluorouracil",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+          ]
+        }
+      }
+    ]
+  }
+}

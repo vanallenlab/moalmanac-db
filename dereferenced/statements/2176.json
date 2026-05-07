@@ -1,0 +1,575 @@
+{
+  "id": 2176,
+  "type": "Statement",
+  "description": "Health Canada approved pertuzumab in combination with trastuzumab and chemotherapy is indicated for the neoadjuvant treatment of patients with HER2-positive, locally advanced, inflammatory, or early stage breast cancer.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.perjeta",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Perjeta (pertuzumab) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Perjeta (pertuzumab) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00060125.PDF. Published April 2013. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00060125.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=88984"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Perjeta",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pertuzumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-04-12",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2013-04-12",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.perjeta:0",
+    "indication": "PERJETA (pertuzumab for injection) in combination with trastuzumab and chemotherapy is indicated for the neoadjuvant treatment of patients with HER2-positive, locally advanced, inflammatory, or early stage breast cancer.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved pertuzumab in combination with trastuzumab and chemotherapy is indicated for the neoadjuvant treatment of patients with HER2-positive, locally advanced, inflammatory, or early stage breast cancer.",
+    "raw_biomarkers": "HER2-positive",
+    "raw_cancer_type": "early stage breast cancer",
+    "raw_therapeutics": "Perjeta (pertuzumab), trastuzumab, chemotherapy",
+    "document": {
+      "id": "doc:hc.perjeta",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Perjeta (pertuzumab) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Perjeta (pertuzumab) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00060125.PDF. Published April 2013. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00060125.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=88984"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Perjeta",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pertuzumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-04-12",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2013-04-12",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 360,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 20,
+        "type": "CategoricalVariant",
+        "name": "HER2-positive",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "Human epidermal growth factor receptor 2 (HER2)"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 9,
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:BRCA",
+        "code": "BRCA",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 74,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 37,
+          "conceptType": "Drug",
+          "name": "Carboplatin",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:40048",
+                "code": "40048",
+                "name": "carboplatin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=40048"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4299846",
+                "code": "4299846",
+                "name": "Carboplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4299846"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:386905002",
+                "code": "386905002",
+                "name": "Carboplatin",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386905002&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1344905",
+                "code": "1344905",
+                "name": "carboplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1344905"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Platinum-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1282",
+            "code": "C1282",
+            "name": "Carboplatin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "conceptType": "Drug",
+          "name": "Docetaxel",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:72962",
+                "code": "72962",
+                "name": "docetaxel",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=72962"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4305104",
+                "code": "4305104",
+                "name": "Docetaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4305104"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:386918005",
+                "code": "386918005",
+                "name": "Docetaxel",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386918005&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1315942",
+                "code": "1315942",
+                "name": "docetaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1315942"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Taxane-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1526",
+            "code": "C1526",
+            "name": "Docetaxel",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1526"
+            ]
+          }
+        },
+        {
+          "id": 75,
+          "conceptType": "Drug",
+          "name": "Pertuzumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1298944",
+                "code": "1298944",
+                "name": "pertuzumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1298944"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:42801287",
+                "code": "42801287",
+                "name": "pertuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/42801287"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:704226002",
+                "code": "704226002",
+                "name": "Pertuzumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704226002&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45766952",
+                "code": "45766952",
+                "name": "Pertuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45766952"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "HER2 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C38692",
+            "code": "C38692",
+            "name": "Pertuzumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C38692"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "conceptType": "Drug",
+          "name": "Trastuzumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:224905",
+                "code": "224905",
+                "name": "trastuzumab",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4304158",
+                "code": "4304158",
+                "name": "Trastuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4304158"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387003001",
+                "code": "387003001",
+                "name": "Trastuzumab",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387003001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1387104",
+                "code": "1387104",
+                "name": "trastuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1387104"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "HER2 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1647",
+            "code": "C1647",
+            "name": "Trastuzumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

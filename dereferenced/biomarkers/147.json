@@ -1,0 +1,123 @@
+{
+  "id": 147,
+  "type": "CategoricalVariant",
+  "name": "EZH2 p.Y646H",
+  "genes": [
+    {
+      "id": 20,
+      "conceptType": "Gene",
+      "name": "EZH2",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000106462",
+            "code": "ENSG00000106462",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000106462"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:2146",
+            "code": "2146",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/2146"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_004456.5",
+            "code": "NM_004456.5",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004456.5"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "7q36.1"
+        },
+        {
+          "name": "location_sortable",
+          "value": "07q36.1"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:3527",
+        "code": "HGNC:3527",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Somatic Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "7"
+    },
+    {
+      "name": "start_position",
+      "value": 148508728
+    },
+    {
+      "name": "end_position",
+      "value": 148508728
+    },
+    {
+      "name": "reference_allele",
+      "value": "A"
+    },
+    {
+      "name": "alternate_allele",
+      "value": "G"
+    },
+    {
+      "name": "cdna_change",
+      "value": "c.1936T>C"
+    },
+    {
+      "name": "protein_change",
+      "value": "p.Y646H"
+    },
+    {
+      "name": "variant_annotation",
+      "value": "Missense"
+    },
+    {
+      "name": "exon",
+      "value": "16/20"
+    },
+    {
+      "name": "rsid",
+      "value": "rs267601395"
+    },
+    {
+      "name": "hgvsg",
+      "value": "7:g.148508728A>G"
+    },
+    {
+      "name": "hgvsc",
+      "value": "ENST00000320356.2:c.1936T>C"
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": 115,
+  "conceptType": "Drug",
+  "name": "Ibrutinib",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:1442981",
+        "code": "1442981",
+        "name": "ibrutinib",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1442981"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:44507848",
+        "code": "44507848",
+        "name": "ibrutinib",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/44507848"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:710228002",
+        "code": "710228002",
+        "name": "Ibrutinib",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=710228002&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:46271948",
+        "code": "46271948",
+        "name": "Ibrutinib",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/46271948"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "BTK inhibition"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+    },
+    {
+      "name": "therapy_type",
+      "value": "Targeted therapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C81934",
+    "code": "C81934",
+    "name": "Ibrutinib",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C81934"
+    ]
+  }
+}

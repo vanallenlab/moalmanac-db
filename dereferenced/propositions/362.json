@@ -1,0 +1,378 @@
+{
+  "id": 362,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 32,
+      "type": "CategoricalVariant",
+      "name": "ABL1 p.T315I",
+      "genes": [
+        {
+          "id": 0,
+          "conceptType": "Gene",
+          "name": "ABL1",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000097007",
+                "code": "ENSG00000097007",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000097007"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:25",
+                "code": "25",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/25"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_005157.6",
+                "code": "NM_005157.6",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "9q34.12"
+            },
+            {
+              "name": "location_sortable",
+              "value": "09q34.12"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:76",
+            "code": "HGNC:76",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "9"
+        },
+        {
+          "name": "start_position",
+          "value": 133748283
+        },
+        {
+          "name": "end_position",
+          "value": 133748283
+        },
+        {
+          "name": "reference_allele",
+          "value": "C"
+        },
+        {
+          "name": "alternate_allele",
+          "value": "T"
+        },
+        {
+          "name": "cdna_change",
+          "value": "c.944C>T"
+        },
+        {
+          "name": "protein_change",
+          "value": "p.T315I"
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Missense"
+        },
+        {
+          "name": "exon",
+          "value": 5
+        },
+        {
+          "name": "rsid",
+          "value": "rs121913459"
+        },
+        {
+          "name": "hgvsg",
+          "value": "9:g.133748283C>T"
+        },
+        {
+          "name": "hgvsc",
+          "value": "ENST00000318560.5:c.944C>T"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "CategoricalVariant",
+      "name": "BCR::ABL1",
+      "genes": [
+        {
+          "id": 6,
+          "conceptType": "Gene",
+          "name": "BCR",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000186716",
+                "code": "ENSG00000186716",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000186716"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:613",
+                "code": "613",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/613"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_004327.4",
+                "code": "NM_004327.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "22q11.23"
+            },
+            {
+              "name": "location_sortable",
+              "value": "22q11.23"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:1014",
+            "code": "HGNC:1014",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+            ]
+          }
+        },
+        {
+          "id": 0,
+          "conceptType": "Gene",
+          "name": "ABL1",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000097007",
+                "code": "ENSG00000097007",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000097007"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:25",
+                "code": "25",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/25"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_005157.6",
+                "code": "NM_005157.6",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "9q34.12"
+            },
+            {
+              "name": "location_sortable",
+              "value": "09q34.12"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:76",
+            "code": "HGNC:76",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Rearrangement"
+        },
+        {
+          "name": "rearrangement_type",
+          "value": "Fusion"
+        },
+        {
+          "name": "locus",
+          "value": null
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 0,
+    "conceptType": "Disease",
+    "name": "Acute Lymphoid Leukemia",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:ALL",
+      "code": "ALL",
+      "name": "Acute Lymphoid Leukemia",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 43,
+    "conceptType": "Drug",
+    "name": "Ponatinib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:1364347",
+          "code": "1364347",
+          "name": "ponatinib",
+          "system": "RxNorm",
+          "systemVersion": "20250602",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1364347"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:45771379",
+          "code": "45771379",
+          "name": "Ponatinib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/45771379"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:703796003",
+          "code": "703796003",
+          "name": "Ponatinib",
+          "system": "SNOMED",
+          "systemVersion": "2026-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=703796003&edition=MAIN/2026-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:43013182",
+          "code": "43013182",
+          "name": "ponatinib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/43013182"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "BCR-ABL inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C95777",
+      "code": "C95777",
+      "name": "Ponatinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95777"
+      ]
+    }
+  }
+}

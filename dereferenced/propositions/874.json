@@ -1,0 +1,225 @@
+{
+  "id": 874,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 176,
+      "type": "Categorical Variant",
+      "name": "H3-3A p.K27M",
+      "genes": [
+        {
+          "id": 61,
+          "conceptType": "Gene",
+          "name": "H3-3A",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "ensembl:ensg00000163041",
+                "code": "ENSG00000163041",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000163041"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "ncbi:3020",
+                "code": "3020",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/3020"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_002107.7",
+                "code": "NM_002107.7",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_002107.7"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "1q42.12"
+            },
+            {
+              "name": "location_sortable",
+              "value": "01q42.12"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:4764",
+            "code": "HGNC:4764",
+            "name": "H3-3A",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:4764"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "1"
+        },
+        {
+          "name": "start_position",
+          "value": 226252135
+        },
+        {
+          "name": "end_position",
+          "value": 226252135
+        },
+        {
+          "name": "reference_allele",
+          "value": "A"
+        },
+        {
+          "name": "alternate_allele",
+          "value": "T"
+        },
+        {
+          "name": "cdna_change",
+          "value": "c.83A>T"
+        },
+        {
+          "name": "protein_change",
+          "value": "p.K28M"
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Missense"
+        },
+        {
+          "name": "exon",
+          "value": "2/4"
+        },
+        {
+          "name": "rsid",
+          "value": "rs1057519903"
+        },
+        {
+          "name": "hgvsg",
+          "value": "1:g.226252135A>T"
+        },
+        {
+          "name": "hgvsc",
+          "value": "NM_002107.4:c.83A>T"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 94,
+    "conceptType": "Disease",
+    "name": "Diffuse Midline Glioma",
+    "mappings": [
+      {
+        "relation": "narrowMatch",
+        "coding": {
+          "id": "oncotree:DIFG",
+          "code": "DIFG",
+          "name": "Diffuse Glioma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=DIFG"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C182151",
+      "code": "C182151",
+      "name": "Diffuse Midline Glioma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C182151"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 156,
+    "conceptType": "Drug",
+    "name": "Dordaviprone",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2721194",
+          "code": "2721194",
+          "name": "dordaviprone",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2721194"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:37353901",
+          "code": "37353901",
+          "name": "dordaviprone",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/37353901"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "Protease activation"
+        ]
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C113792",
+      "code": "C113792",
+      "name": "Dordaviprone",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C113792"
+      ]
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "id": 95,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 10,
+      "type": "CategoricalVariant",
+      "name": "EGFR Exon 19 (Deletion)",
+      "genes": [
+        {
+          "id": 17,
+          "conceptType": "Gene",
+          "name": "EGFR",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000146648",
+                "code": "ENSG00000146648",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000146648"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:1956",
+                "code": "1956",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/1956"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_005228.5",
+                "code": "NM_005228.5",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "7p11.2"
+            },
+            {
+              "name": "location_sortable",
+              "value": "07p11.2"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:3236",
+            "code": "HGNC:3236",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "7"
+        },
+        {
+          "name": "start_position",
+          "value": null
+        },
+        {
+          "name": "end_position",
+          "value": null
+        },
+        {
+          "name": "reference_allele",
+          "value": null
+        },
+        {
+          "name": "alternate_allele",
+          "value": null
+        },
+        {
+          "name": "cdna_change",
+          "value": null
+        },
+        {
+          "name": "protein_change",
+          "value": null
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Deletion"
+        },
+        {
+          "name": "exon",
+          "value": 19
+        },
+        {
+          "name": "rsid",
+          "value": null
+        },
+        {
+          "name": "hgvsg",
+          "value": null
+        },
+        {
+          "name": "hgvsc",
+          "value": null
+        },
+        {
+          "name": "requires_oncogenic",
+          "value": true
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 47,
+    "conceptType": "Disease",
+    "name": "Non-Small Cell Lung Cancer",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:NSCLC",
+      "code": "NSCLC",
+      "name": "Non-Small Cell Lung Cancer",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 101,
+    "conceptType": "Drug",
+    "name": "Dacomitinib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2058849",
+          "code": "2058849",
+          "name": "dacomitinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2058849"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:35200803",
+          "code": "35200803",
+          "name": "dacomitinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/35200803"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:781492009",
+          "code": "781492009",
+          "name": "Dacomitinib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=781492009&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:36683569",
+          "code": "36683569",
+          "name": "Dacomitinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/36683569"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "EGFR inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C53398",
+      "code": "C53398",
+      "name": "Dacomitinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C53398"
+      ]
+    }
+  }
+}

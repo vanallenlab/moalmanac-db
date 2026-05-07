@@ -1,0 +1,320 @@
+{
+  "id": 1319,
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved brentuximab vedotin for reimbursement as a treatment option for the treatment of adult patients with relapsed or refractory CD30+ Hodgkins Lymphoma (HL) following autologous stem cell transplant (ASCT).",
+  "contributions": [
+    {
+      "id": 41,
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse.00234",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Brentuximab vedotin Monotherapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Brentuximab vedotin Monotherapy, 2025, version number 6, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6333/234_v6_Brentuximab.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6333/234_v6_Brentuximab.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-12-20",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hse.00234:a",
+    "indication": "Treatment of adult patients with relapsed or refractory CD30+ Hodgkin lymphoma (HL) following autologous stem cell transplant (ASCT)",
+    "initial_approval_date": "2014-08-01",
+    "initial_approval_url": null,
+    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved brentuximab vedotin for reimbursement as a treatment option for the treatment of adult patients with relapsed or refractory CD30+ Hodgkins Lymphoma (HL) following autologous stem cell transplant (ASCT).",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Hodgkin Lymphoma (HL)",
+    "raw_therapeutics": "Brentuximab vedotin",
+    "reimbursement_scheme": "ODMS",
+    "reimbursement_comment": null,
+    "document": {
+      "id": "doc:hse.00234",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Brentuximab vedotin Monotherapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Brentuximab vedotin Monotherapy, 2025, version number 6, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6333/234_v6_Brentuximab.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6333/234_v6_Brentuximab.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-12-20",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 533,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 0,
+        "type": "CategoricalVariant",
+        "name": "CD30 +",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "CD30"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 80,
+      "conceptType": "Disease",
+      "name": "Hodgkin Lymphoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:HL",
+        "code": "HL",
+        "name": "Hodgkin Lymphoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=HL"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 0,
+      "conceptType": "Drug",
+      "name": "Brentuximab vedotin",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1147320",
+            "code": "1147320",
+            "name": "brentuximab vedotin",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147320"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37017170",
+            "code": "37017170",
+            "name": "Brentuximab vedotin",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37017170"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:713395006",
+            "code": "713395006",
+            "name": "Brentuximab vedotin",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=713395006&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:40241969",
+            "code": "40241969",
+            "name": "brentuximab vedotin",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/40241969"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "target CD30 antigens"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C66944",
+        "code": "C66944",
+        "name": "Brentuximab Vedotin",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C66944"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

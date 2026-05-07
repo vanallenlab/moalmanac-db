@@ -1,0 +1,392 @@
+{
+  "id": 654,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 2,
+      "type": "CategoricalVariant",
+      "name": "HER2-negative",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "Human epidermal growth factor receptor 2 (HER2)"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Negative"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CategoricalVariant",
+      "name": "PR positive",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "Progesterone receptor (PR)"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "type": "CategoricalVariant",
+      "name": "PIK3CA somatic variants",
+      "genes": [
+        {
+          "id": 41,
+          "conceptType": "Gene",
+          "name": "PIK3CA",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000121879",
+                "code": "ENSG00000121879",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000121879"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:5290",
+                "code": "5290",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/5290"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_006218.4",
+                "code": "NM_006218.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_006218.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "3q26.32"
+            },
+            {
+              "name": "location_sortable",
+              "value": "03q26.32"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:8975",
+            "code": "HGNC:8975",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8975"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "7"
+        },
+        {
+          "name": "start_position",
+          "value": null
+        },
+        {
+          "name": "end_position",
+          "value": null
+        },
+        {
+          "name": "reference_allele",
+          "value": null
+        },
+        {
+          "name": "alternate_allele",
+          "value": null
+        },
+        {
+          "name": "cdna_change",
+          "value": null
+        },
+        {
+          "name": "protein_change",
+          "value": null
+        },
+        {
+          "name": "variant_annotation",
+          "value": null
+        },
+        {
+          "name": "exon",
+          "value": null
+        },
+        {
+          "name": "rsid",
+          "value": null
+        },
+        {
+          "name": "hgvsg",
+          "value": null
+        },
+        {
+          "name": "hgvsc",
+          "value": null
+        },
+        {
+          "name": "requires_oncogenic",
+          "value": true
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 9,
+    "conceptType": "Disease",
+    "name": "Invasive Breast Carcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:BRCA",
+      "code": "BRCA",
+      "name": "Invasive Breast Carcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 5,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 77,
+        "conceptType": "Drug",
+        "name": "Alpelisib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2169285",
+              "code": "2169285",
+              "name": "alpelisib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2169285"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1396423",
+              "code": "1396423",
+              "name": "alpelisib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1396423"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:788050002",
+              "code": "788050002",
+              "name": "Alpelisib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=788050002&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:37312644",
+              "code": "37312644",
+              "name": "Alpelisib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/37312644"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "PI3K/AKT/mTOR inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C94214",
+          "code": "C94214",
+          "name": "Alpelisib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C94214"
+          ]
+        }
+      },
+      {
+        "id": 30,
+        "conceptType": "Drug",
+        "name": "Fulvestrant",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:282357",
+              "code": "282357",
+              "name": "fulvestrant",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=282357"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4300255",
+              "code": "4300255",
+              "name": "Fulvestrant",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4300255"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:385519002",
+              "code": "385519002",
+              "name": "Fulvestrant",
+              "system": "SNOMED",
+              "systemVersion": "2026-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=385519002&edition=MAIN/2026-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1304044",
+              "code": "1304044",
+              "name": "fulvestrant",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1304044"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Estrogen receptor inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Hormone therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C1379",
+          "code": "C1379",
+          "name": "Fulvestrant",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1379"
+          ]
+        }
+      }
+    ]
+  }
+}

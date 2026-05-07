@@ -1,0 +1,23 @@
+{
+  "id": 91,
+  "conceptType": "Disease",
+  "name": "Mycosis Fungoides",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:MYCF",
+    "code": "MYCF",
+    "name": "Mycosis Fungoides",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2025_04_08",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2025_04_08&field=NAME&search=Mycosis+Fungoides+%28MYCF%29"
+    ]
+  }
+}

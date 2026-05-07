@@ -1,7 +1,12 @@
 import json
 
 
-def dictionary(data: dict, keys_list: list[str], file:str) -> None:
+def dictionary(
+    data: dict,
+    keys_list: list[str],
+    file: str,
+    quiet: bool = False,
+) -> None:
     """
     Write JSON from an input object of dictionary
 
@@ -9,6 +14,7 @@ def dictionary(data: dict, keys_list: list[str], file:str) -> None:
         data (dict): An object of type dictionary, though one key value should be a list of dictionaries (records).
         keys_list (list[str]): A list of keys that are of type list[dict] (records).
         file (str): The output file path.
+        quiet (bool): Suppress print statement if True
 
     Raises:
         TypeError: If the keys provided with keys_list are not a list of dictionaries.
@@ -20,7 +26,9 @@ def dictionary(data: dict, keys_list: list[str], file:str) -> None:
 
     for key in keys_list:
         if not all(isinstance(item, dict) for item in data[key]):
-            raise TypeError(f"All elements in the list must be dictionaries for key {key}.")
+            raise TypeError(
+                f"All elements in the list must be dictionaries for key {key}."
+            )
 
     try:
         # Serialize the python object (data) to a JSON formatted string
@@ -32,12 +40,13 @@ def dictionary(data: dict, keys_list: list[str], file:str) -> None:
         # Write the JSON string to the specified file
         with open(file, "w") as outfile:
             outfile.write(json_object)
-        print(f"JSON successfully written to {file}")
+        if not quiet:
+            print(f"JSON successfully written to {file}")
     except IOError as e:
         raise IOError(f"Failed to write to file {file}: {e}")
 
 
-def records(data: list[dict], file:str) -> None:
+def records(data: list[dict], file: str) -> None:
     """
     Writes JSON from the input object of list[dict]
 

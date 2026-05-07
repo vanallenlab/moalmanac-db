@@ -1,0 +1,501 @@
+{
+  "id": 2021,
+  "type": "Statement",
+  "description": "Health Canada approved cobimetinib in combination wih vemurafenib for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.cotellic",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Cotellic (cobimetinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Cotellic (cobimetinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00070061.PDF. Revised March 2023. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00070061.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=93872"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Cotellic",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "cobimetinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2016-02-22",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-03-24",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.cotellic:0",
+    "indication": "COTELLIC (cobimetinib) is indicated for use in combination with vemurafenib for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved cobimetinib in combination wih vemurafenib for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
+    "raw_biomarkers": "BRAF V600 mutation",
+    "raw_cancer_type": "unresectable or metastatic melanoma",
+    "raw_therapeutics": "Cotellic in combination with vemurafenib",
+    "document": {
+      "id": "doc:hc.cotellic",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Cotellic (cobimetinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Cotellic (cobimetinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00070061.PDF. Revised March 2023. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00070061.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=93872"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Cotellic",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "cobimetinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2016-02-22",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-03-24",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 82,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 16,
+        "type": "CategoricalVariant",
+        "name": "BRAF p.V600E",
+        "genes": [
+          {
+            "id": 8,
+            "conceptType": "Gene",
+            "name": "BRAF",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000157764",
+                  "code": "ENSG00000157764",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000157764"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:673",
+                  "code": "673",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/673"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004333.6",
+                  "code": "NM_004333.6",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "7q34"
+              },
+              {
+                "name": "location_sortable",
+                "value": "07q34"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:1097",
+              "code": "HGNC:1097",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "7"
+          },
+          {
+            "name": "start_position",
+            "value": 140453136
+          },
+          {
+            "name": "end_position",
+            "value": 140453136
+          },
+          {
+            "name": "reference_allele",
+            "value": "A"
+          },
+          {
+            "name": "alternate_allele",
+            "value": "T"
+          },
+          {
+            "name": "cdna_change",
+            "value": "c.1799T>A"
+          },
+          {
+            "name": "protein_change",
+            "value": "p.V600E"
+          },
+          {
+            "name": "variant_annotation",
+            "value": "Missense"
+          },
+          {
+            "name": "exon",
+            "value": 15
+          },
+          {
+            "name": "rsid",
+            "value": "rs113488022"
+          },
+          {
+            "name": "hgvsg",
+            "value": "7:g.140453136A>T"
+          },
+          {
+            "name": "hgvsc",
+            "value": "ENST00000288602.6:c.1799T>A"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 40,
+      "conceptType": "Disease",
+      "name": "Melanoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:MEL",
+        "code": "MEL",
+        "name": "Melanoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MEL"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 17,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 21,
+          "conceptType": "Drug",
+          "name": "Cobimetinib",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1722365",
+                "code": "1722365",
+                "name": "cobimetinib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1722365"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:37395721",
+                "code": "37395721",
+                "name": "Cobimetinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/37395721"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:715257001",
+                "code": "715257001",
+                "name": "Cobimetinib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=715257001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:35605804",
+                "code": "35605804",
+                "name": "cobimetinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/35605804"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "MEK inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C68923",
+            "code": "C68923",
+            "name": "Cobimetinib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68923"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "conceptType": "Drug",
+          "name": "Vemurafenib",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1147220",
+                "code": "1147220",
+                "name": "vemurafenib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147220"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45765787",
+                "code": "45765787",
+                "name": "Vemurafenib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45765787"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:702805007",
+                "code": "702805007",
+                "name": "Vemurafenib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702805007&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:40241937",
+                "code": "40241937",
+                "name": "vemurafenib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/40241937"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "B-RAF inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C64768",
+            "code": "C64768",
+            "name": "Vemurafenib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C64768"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}
