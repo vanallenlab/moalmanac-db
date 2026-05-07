@@ -1,0 +1,37 @@
+{
+  "id": 96,
+  "conceptType": "Disease",
+  "name": "Renal Cell Carcinoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "oncotree:RCC",
+        "code": "RCC",
+        "name": "Renal Cell Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=RCC"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C9385",
+    "code": "C9385",
+    "name": "Renal Cell Carcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9385"
+    ]
+  }
+}
