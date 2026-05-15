@@ -2417,7 +2417,7 @@
   {
     "id": "ind:fda.elahere:0",
     "document_id": "doc:fda.elahere",
-    "indication": "ELAHERE is a folate receptor alpha (FR\u03b1)-directed antibody and microtubule inhibitor conjugate indicated for the treatment of adult patients with FR-alpha positive, platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer, who have received one to three prior systemic treatment regimens. Select patients for therapy based on an FDA-approved test.",
+    "indication": "ELAHERE is a folate receptor alpha (FRalpha)-directed antibody and microtubule inhibitor conjugate indicated for the treatment of adult patients with FR-alpha positive, platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer, who have received one to three prior systemic treatment regimens. Select patients for therapy based on an FDA-approved test.",
     "initial_approval_date": "2024-03-22",
     "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761310Origs005lbl.pdf",
     "description": "The U.S. Food and Drug Administration granted approval to mirvetuximab soravtansine-gynx for the treatment of adult patients with folate receptor-alpha positive, platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer, who have received one to three prior systemic treatment regimens. The package insert states to select patients for therapy based on an FDA-approved test and, furthermore, that folate receptor-alpha tumor positive is defined as the presence of folate receptor-alpha tumor expression.",
@@ -2441,10 +2441,10 @@
   {
     "id": "ind:fda.imfinzi:2",
     "document_id": "doc:fda.imfinzi",
-    "indication": "IMFINZI is a programmed death-ligand 1 (PD-L1) blocking antibody indicated in combination with platinum-containing chemotherapy as neoadjuvant treatment, followed by IMFINZI continued as a single agent as adjuvant treatment after surgery, for the treatment of adult patients with resectable (tumors \u2265 4 cm and/or node positive) non-small cell lung cancer (NSCLC) and no known epidermal growth factor receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements.",
+    "indication": "IMFINZI is a programmed death-ligand 1 (PD-L1) blocking antibody indicated in combination with platinum-containing chemotherapy as neoadjuvant treatment, followed by IMFINZI continued as a single agent as adjuvant treatment after surgery, for the treatment of adult patients with resectable (tumors >= 4 cm and/or node positive) non-small cell lung cancer (NSCLC) and no known epidermal growth factor receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements.",
     "initial_approval_date": "2024-08-15",
     "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761069s043lbledt.pdf",
-    "description": "The U.S. Food and Drug Administration (FDA) granted approval to durvalumab in combination with platinum-containing chemotherapy for the neoadjuvant treatment, followed by durvalumab as a single agent as adjuvant treatment after surgery, of adult patients with resectable (tumors \u2265 4 cm and/or node positive) non-small cell lung cancer (NSCLC) and no known epidermal growth factor receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements. This indication is based on AEGEAN (NCT03800134), a randomized, double-blind, placebo-controlled, multicenter trial where the choice of platinum-containing chemotherapy was dependent on tumor histology. Specifically, patients with squamous tumor histology received either carboplatin with paclitaxel or cisplatin with gemcitabine, and patients with non-squamous tumor histology received either pemetrexed with carboplatin or pemetrexed with cisplatin.",
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to durvalumab in combination with platinum-containing chemotherapy for the neoadjuvant treatment, followed by durvalumab as a single agent as adjuvant treatment after surgery, of adult patients with resectable (tumors >= 4 cm and/or node positive) non-small cell lung cancer (NSCLC) and no known epidermal growth factor receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements. This indication is based on AEGEAN (NCT03800134), a randomized, double-blind, placebo-controlled, multicenter trial where the choice of platinum-containing chemotherapy was dependent on tumor histology. Specifically, patients with squamous tumor histology received either carboplatin with paclitaxel or cisplatin with gemcitabine, and patients with non-squamous tumor histology received either pemetrexed with carboplatin or pemetrexed with cisplatin.",
     "raw_biomarkers": "no known epidermal growth factor receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements.",
     "raw_cancer_type": "non-small cell lung cancer",
     "raw_therapeutics": "durvalumab in combination with platinum-containing chemotherapy"
@@ -5222,6 +5222,17 @@
     "raw_therapeutics": "Akeega (niraparib and abiraterone acetate) with prednisone or prednisolone"
   },
   {
+    "id": "ind:hc.akeega:1",
+    "document_id": "doc:hc.akeega",
+    "indication": "AKEEGA (niraparib and abiraterone acetate) is indicated for the treatment of adult patients with deleterious or suspected deleterious BRCA mutated (germline and/or somatic) metastatic castration resistant prostate cancer (mCRPC), who are asymptomatic/mildly symptomatic, and in whom chemotherapy is not clinically indicated. Patients must have confirmation of BRCA mutation before AKEEGA treatment is initiated.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved niraparib/abiraterone acetate for the treatment of adult patients with deleterious or suspected deleterious BRCA mutated (germline and/or somatic) metastatic castration resistant prostate cancer (mCRPC), who are asymptomatic/mildly symptomatic, and in whom chemotherapy is not clinically indicated.",
+    "raw_biomarkers": "deleterious or suspected deleterious BRCA mutated (germline and/or somatic)",
+    "raw_cancer_type": "metastatic castration resistant prostate cancer",
+    "raw_therapeutics": "Akeega (niraparib and abiraterone acetate)"
+  },
+  {
     "id": "ind:hc.alecensaro:0",
     "document_id": "doc:hc.alecensaro",
     "indication": "ALECENSARO (alectinib) is indicated for the first-line treatment of patients with anaplastic lymphoma kinase (ALK)-positive, locally advanced (not amenable to curative therapy) or metastatic non-small cell lung cancer (NSCLC).",
@@ -5293,7 +5304,7 @@
     "indication": "BLINCYTO (blinatumomab for injection) is indicated for the treatment of patients with Philadelphia chromosome-negative CD19 positive B-cell precursor ALL in first or second hematologic complete remission with minimal residual disease (MRD) greater than or equal to 0.1%.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved blinatumomab for the treatment of patients with Philadelphia chromosome-negative CD19-positive B-cell precursor ALL in first or second hematologic complete remission with minimal residual disease (MRD) \u2265 0.1%, as determined by an accredited laboratory using validated assay methods.",
+    "description": "Health Canada approved blinatumomab for the treatment of patients with Philadelphia chromosome-negative CD19-positive B-cell precursor ALL in first or second hematologic complete remission with minimal residual disease (MRD) >= 0.1%, as determined by an accredited laboratory using validated assay methods.",
     "raw_biomarkers": "philadelphia chromosome-negative, CD19-positive",
     "raw_cancer_type": "B-cell precursor acute lymphoblastic leukemia (ALL)",
     "raw_therapeutics": "Blincyto (blinatumomab)"
@@ -5365,6 +5376,17 @@
     "raw_therapeutics": "Braftovi (encorafenib) in combination with cetuximab"
   },
   {
+    "id": "ind:hc.braftovi:2",
+    "document_id": "doc:hc.braftovi",
+    "indication": "BRAFTOVI (encorafenib) is indicated, in combination with cetuximab and mFOLFOX6, for the treatment of patients with metastatic colorectal cancer (mCRC) with a BRAF V600E mutation, as detected by a validated test.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved encorafenib in combination with cetuximab and mFOLFOX6, for the treatment of patients with metastatic colorectal cancer (mCRC) with a BRAF V600E mutation.",
+    "raw_biomarkers": "BRAF V600E",
+    "raw_cancer_type": "metastatic colorectal cancer (mCRC)",
+    "raw_therapeutics": "Braftovi (encorafenib) in combination with cetuximab and mFOLFOX6"
+  },
+  {
     "id": "ind:hc.cotellic:0",
     "document_id": "doc:hc.cotellic",
     "indication": "COTELLIC (cobimetinib) is indicated for use in combination with vemurafenib for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
@@ -5417,6 +5439,17 @@
     "description": "Health Canada approved trastuzumab deruxtecan as a monotherapy for the treatment of adult patients with unresectable,locally advanced or metastatic HER2-positive gastric or gastroesophageal junction (GEJ) adenocarcinoma who have received a prior trastuzumab-based regimen.",
     "raw_biomarkers": "HER2-positive",
     "raw_cancer_type": "unresectable locally advanced or metastatic gastric or gastroesophageal junction (GEJ) adenocarcinoma",
+    "raw_therapeutics": "Enhertu (trastuzumab deruxtecan)"
+  },
+  {
+    "id": "ind:hc.enhertu:4",
+    "document_id": "doc:hc.enhertu",
+    "indication": "ENHERTU as monotherapy is indicated for the treatment of adult patients with unresectable or metastatic HER2-positive (IHC 3+) solid tumours who have received prior systemic treatment and have no satisfactory alternative treatment options.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "HHealth Canada approved fam-trastuzumab deruxtecan-nxki as monotherapy is indicated for the treatment of adult patients with unresectable or metastatic HER2-positive (IHC 3+) solid tumours who have received prior systemic treatment and have no satisfactory alternative treatment options.",
+    "raw_biomarkers": "HER2-positive (IHC 3+)",
+    "raw_cancer_type": "unresectable or metastatic solid tumours",
     "raw_therapeutics": "Enhertu (trastuzumab deruxtecan)"
   },
   {
@@ -5477,10 +5510,10 @@
   {
     "id": "ind:hc.giotrif:0",
     "document_id": "doc:hc.giotrif",
-    "indication": "GIOTRIF (afatinib) is indicated as monotherapy for the treatment of Epidermal Growth Factor Receptor (EGFR) tyrosine kinase inhibitor na\u00efve patients with metastatic adenocarcinoma of the lung with activating EGFR mutation(s).",
+    "indication": "GIOTRIF (afatinib) is indicated as monotherapy for the treatment of Epidermal Growth Factor Receptor (EGFR) tyrosine kinase inhibitor naive patients with metastatic adenocarcinoma of the lung with activating EGFR mutation(s).",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved afatinib for the treatment of Epidermal Growth Factor Receptor (EGFR) tyrosine kinase inhibitor na\u00efve patients with metastatic adenocarcinoma of the lung with activating EGFR mutation(s).",
+    "description": "Health Canada approved afatinib for the treatment of Epidermal Growth Factor Receptor (EGFR) tyrosine kinase inhibitor naive patients with metastatic adenocarcinoma of the lung with activating EGFR mutation(s).",
     "raw_biomarkers": "EGFR Del 19, EGFR exon 21 L858R",
     "raw_cancer_type": "metastatic adenocarcinoma of the lung",
     "raw_therapeutics": "Giotrif (afatinib)"
@@ -5554,10 +5587,10 @@
   {
     "id": "ind:hc.gleevec:6",
     "document_id": "doc:hc.gleevec",
-    "indication": "GLEEVEC (imatinib mesylate) is indicated for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFR\u03b1 rearrangement.",
+    "indication": "GLEEVEC (imatinib mesylate) is indicated for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFRalpha rearrangement.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved imatinib mesylate for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFR\u03b1 rearrangement.",
+    "description": "Health Canada approved imatinib mesylate for the treatment of adult patients with advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL) with FIP1L1-PDGFRalpha rearrangement.",
     "raw_biomarkers": "FIP1L1::PDGFRA rearrangement",
     "raw_cancer_type": "advanced hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL)",
     "raw_therapeutics": "Gleevec (imatinib mesylate)"
@@ -5785,11 +5818,11 @@
   {
     "id": "ind:hc.keytruda:1",
     "document_id": "doc:hc.keytruda",
-    "indication": "KEYTRUDA (pembrolizumab) as monotherapy is indicated for the first-line treatment of adult patients with metastatic non-small cell lung carcinoma (NSCLC) or stage III disease where patients are not candidates for surgical resection or definitive chemoradiation, expressing PD-L1 [Tumour Proportion Score (TPS) \u2265 1%] as determined by a validated test, with no EGFR or ALK genomic tumour aberrations.",
+    "indication": "KEYTRUDA (pembrolizumab) as monotherapy is indicated for the first-line treatment of adult patients with metastatic non-small cell lung carcinoma (NSCLC) or stage III disease where patients are not candidates for surgical resection or definitive chemoradiation, expressing PD-L1 [Tumour Proportion Score (TPS) >= 1%] as determined by a validated test, with no EGFR or ALK genomic tumour aberrations.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved pembrolizumab for the first-line treatment of adult patients with metastatic non-small cell lung carcinoma (NSCLC) or stage III disease where patients are not candidates for surgical resection or definitive chemoradiation, expressing PD-L1 [Tumour Proportion Score (TPS) \u2265 1%] as determined by a validated test, with no EGFR or ALK genomic tumour aberrations.",
-    "raw_biomarkers": "PD-L1 (TPS \u2265 1%), EGFR genomic tumour aberrations, ALK genomic tumour aberrations",
+    "description": "Health Canada approved pembrolizumab for the first-line treatment of adult patients with metastatic non-small cell lung carcinoma (NSCLC) or stage III disease where patients are not candidates for surgical resection or definitive chemoradiation, expressing PD-L1 [Tumour Proportion Score (TPS) >= 1%] as determined by a validated test, with no EGFR or ALK genomic tumour aberrations.",
+    "raw_biomarkers": "PD-L1 (TPS >= 1%), EGFR genomic tumour aberrations, ALK genomic tumour aberrations",
     "raw_cancer_type": "metastatic non-small cell lung carcinoma (NSCLC)",
     "raw_therapeutics": "Keytruda (pembrolizumab)"
   },
@@ -5807,11 +5840,11 @@
   {
     "id": "ind:hc.keytruda:3",
     "document_id": "doc:hc.keytruda",
-    "indication": "KEYTRUDA (pembrolizumab) is indicated Keytruda as monotherapy is indicated for the treatment of adult patients with metastatic NSCLC whose tumours express PD-L1 (TPS \u2265 1%) as determined by a validated test and who have disease progression on or after platinum-containing chemotherapy.",
+    "indication": "KEYTRUDA (pembrolizumab) is indicated Keytruda as monotherapy is indicated for the treatment of adult patients with metastatic NSCLC whose tumours express PD-L1 (TPS >= 1%) as determined by a validated test and who have disease progression on or after platinum-containing chemotherapy.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved pembrolizumab as a monotherapy for treatment of adult patients with metastatic NSCLC whose tumours express PD-L1 (TPS \u2265 1%) as determined by a validated test and who have disease progression on or after platinum-containing chemotherapy.",
-    "raw_biomarkers": "PD-L1 (TPS \u2265 1%)",
+    "description": "Health Canada approved pembrolizumab as a monotherapy for treatment of adult patients with metastatic NSCLC whose tumours express PD-L1 (TPS >= 1%) as determined by a validated test and who have disease progression on or after platinum-containing chemotherapy.",
+    "raw_biomarkers": "PD-L1 (TPS >= 1%)",
     "raw_cancer_type": "metastatic non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Keytruda (pembrolizumab)"
   },
@@ -5851,22 +5884,22 @@
   {
     "id": "ind:hc.keytruda:7",
     "document_id": "doc:hc.keytruda",
-    "indication": "KEYTRUDA (pembrolizumab) is indicated for the first-line treatment of metastatic or unresectable recurrent head and neck squamous cell carcinoma (HNSCC) as monotherapy, in adult patients whose tumours have PD-L1 expression (Combined Positive Score [CPS] \u2265 1) as determined by a validated test.",
+    "indication": "KEYTRUDA (pembrolizumab) is indicated for the first-line treatment of metastatic or unresectable recurrent head and neck squamous cell carcinoma (HNSCC) as monotherapy, in adult patients whose tumours have PD-L1 expression (Combined Positive Score [CPS] >= 1) as determined by a validated test.",
     "initial_approval_date": null,
     "initial_approval_url": " ",
-    "description": "Health Canada approved pembrolizumab for the first-line treatment of metastatic or unresectable recurrent head and neck squamous cell carcinoma (HNSCC) as monotherapy, in adult patients whose tumours have PD-L1 expression (Combined Positive Score [CPS] \u2265 1) as determined by a validated test.",
-    "raw_biomarkers": "PD-L1 (CPS \u2265 1)",
+    "description": "Health Canada approved pembrolizumab for the first-line treatment of metastatic or unresectable recurrent head and neck squamous cell carcinoma (HNSCC) as monotherapy, in adult patients whose tumours have PD-L1 expression (Combined Positive Score [CPS] >= 1) as determined by a validated test.",
+    "raw_biomarkers": "PD-L1 (CPS >= 1)",
     "raw_cancer_type": " metastatic or unresectable recurrent head and neck squamous cell carcinoma (HNSCC)",
     "raw_therapeutics": "Keytruda (pembrolizumab)"
   },
   {
     "id": "ind:hc.keytruda:8",
     "document_id": "doc:hc.keytruda",
-    "indication": "KEYTRUDA (pembrolizumab), in combination with trastuzumab, fluoropyrimidine- and platinum-containing chemotherapy,is indicated for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-positive gastric or gastroesophageal junction (GEJ) adenocarcinoma, whose tumours express PD-L1 (Combined Positive Score [CPS] \u22651) as determined by a validated test.",
+    "indication": "KEYTRUDA (pembrolizumab), in combination with trastuzumab, fluoropyrimidine- and platinum-containing chemotherapy,is indicated for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-positive gastric or gastroesophageal junction (GEJ) adenocarcinoma, whose tumours express PD-L1 (Combined Positive Score [CPS] >=1) as determined by a validated test.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved pembrolizumab, in combination with trastuzumab, fluoropyrimidine- and platinum-containing chemotherapy, for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-positive gastric or gastroesophageal junction (GEJ) adenocarcinoma, whose tumours express PD-L1 (Combined Positive Score [CPS] \u22651) as determined by a validated test.",
-    "raw_biomarkers": "HER2-positive, PD-L1 (CPS \u2265 1)",
+    "description": "Health Canada approved pembrolizumab, in combination with trastuzumab, fluoropyrimidine- and platinum-containing chemotherapy, for the first-line treatment of adult patients with locally advanced unresectable or metastatic HER2-positive gastric or gastroesophageal junction (GEJ) adenocarcinoma, whose tumours express PD-L1 (Combined Positive Score [CPS] >=1) as determined by a validated test.",
+    "raw_biomarkers": "HER2-positive, PD-L1 (CPS >= 1)",
     "raw_cancer_type": " locally advanced unresectable or metastatic gastric or gastroesophageal junction (GEJ) adenocarcinoma",
     "raw_therapeutics": "Keytruda (pembrolizumab), trastuzumab, fluoropyrimidine, platinum-containing chemotherapy"
   },
@@ -5884,10 +5917,10 @@
   {
     "id": "ind:hc.keytruda:10",
     "document_id": "doc:hc.keytruda",
-    "indication": "KEYTRUDA (pembrolizumab), in combination with chemotherapy, is indicated for the treatment of adult patients with locally recurrent unresectable or metastatic triple-negative breast cancer (TNBC), who have not received prior chemotherapy for metastatic disease and whose tumours express PD-L1 (Combined Positive Score [CPS] \u2265 10) as determined by a validated test.",
+    "indication": "KEYTRUDA (pembrolizumab), in combination with chemotherapy, is indicated for the treatment of adult patients with locally recurrent unresectable or metastatic triple-negative breast cancer (TNBC), who have not received prior chemotherapy for metastatic disease and whose tumours express PD-L1 (Combined Positive Score [CPS] >= 10) as determined by a validated test.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved pembrolizumab, in combination with chemotherapy, for the treatment of adult patients with locally recurrent unresectable or metastatic triple-negative breast cancer (TNBC), who have not received prior chemotherapy for metastatic disease and whose tumours express PD-L1 (Combined Positive Score [CPS] \u2265 10) as determined by a validated test.",
+    "description": "Health Canada approved pembrolizumab, in combination with chemotherapy, for the treatment of adult patients with locally recurrent unresectable or metastatic triple-negative breast cancer (TNBC), who have not received prior chemotherapy for metastatic disease and whose tumours express PD-L1 (Combined Positive Score [CPS] >= 10) as determined by a validated test.",
     "raw_biomarkers": "PD-L1 (CPS) >= 10",
     "raw_cancer_type": "locally recurrent unresectable or metastatic triple-negative breast cancer (TNBC)",
     "raw_therapeutics": "Keytruda (pembrolizumab), chemotherapy"
@@ -5895,11 +5928,22 @@
   {
     "id": "ind:hc.keytruda:11",
     "document_id": "doc:hc.keytruda",
-    "indication": "KEYTRUDA (pembrolizumab), in combination with chemotherapy with or without bevacizumab, is indicated for the treatment of adult patients with persistent, recurrent, or metastatic cervical cancer whose tumours express PD-L1 (CPS \u2265 1) as determined by a validated test.",
+    "indication": "KEYTRUDA is indicated for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] ≥1), as determined by a validated test, as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved pembrolizumab, in combination with chemotherapy with or without bevacizumab, for the treatment of adult patients with persistent, recurrent, or metastatic cervical cancer whose tumours express PD-L1 (CPS \u2265 1) as determined by a validated test.",
-    "raw_biomarkers": "PD-L1 (CPS \u2265 1)",
+    "description": "Health Canada approved Pembrolizumab for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] ≥1), as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
+    "raw_biomarkers": "PD-L1 (Combined Positive Score [CPS] ≥1)",
+    "raw_cancer_type": "resectable locally advanced head and neck squamous cell carcinoma (HNSCC)",
+    "raw_therapeutics": "Keytruda (pembrolizumab)"
+  },
+  {
+    "id": "ind:hc.keytruda:12",
+    "document_id": "doc:hc.keytruda",
+    "indication": "KEYTRUDA (pembrolizumab), in combination with chemotherapy with or without bevacizumab, is indicated for the treatment of adult patients with persistent, recurrent, or metastatic cervical cancer whose tumours express PD-L1 (CPS >= 1) as determined by a validated test.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved pembrolizumab, in combination with chemotherapy with or without bevacizumab, for the treatment of adult patients with persistent, recurrent, or metastatic cervical cancer whose tumours express PD-L1 (CPS >= 1) as determined by a validated test.",
+    "raw_biomarkers": "PD-L1 (CPS >= 1)",
     "raw_cancer_type": "persistent, recurrent, or metastatic cervical cancer",
     "raw_therapeutics": "Keytruda (pembrolizumab), chemotherapy, bevacizumab"
   },
@@ -5926,6 +5970,17 @@
     "raw_therapeutics": "Kisqali (ribociclib), fulvestrant"
   },
   {
+    "id": "ind:hc.kisqali:2",
+    "document_id": "doc:hc.kisqali",
+    "indication": "KISQALI (ribociclib tablets) is indicated, in combination with an aromatase inhibitor for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative stage II-III early breast cancer at high risk of recurrence.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved ribociclib in combination with an aromatase inhibitor for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative stage II-III early breast cancer at high risk of recurrence. This indication is based on NATALEE (LEE011 O12301C) was a randomized (1:1), open-label, multicenter study, where participants received goserelin and either letrozole or anastrozole, in addition to ribociclib.",
+    "raw_biomarkers": "HR+, HER2-negative",
+    "raw_cancer_type": "early breast cancer",
+    "raw_therapeutics": "Kisqali (ribociclib), aromatase inhibitor"
+  },
+  {
     "id": "ind:hc.lazcluze:0",
     "document_id": "doc:hc.lazcluze",
     "indication": "LAZCLUZE (lazertinib) in combination with amivantamab is indicated for the first-line treatment of adult patients with locally advanced (not amenable to curative therapy) or metastatic non-small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletions or exon 21 L858R substitution mutations.",
@@ -5939,10 +5994,10 @@
   {
     "id": "ind:hc.libtayo:0",
     "document_id": "doc:hc.libtayo",
-    "indication": "LIBTAYO (cemiplimab for injection) is indicated as monotherapy for the first-line treatment of adult patients with non-small cell lung cancer (NSCLC) expressing PD-L1 in \u2265 50% of tumour cells (Tumour Proportion Score [TPS] \u2265 50%), as determined by a validated test, with no EGFR, ALK or ROS1 aberrations, who have locally advanced NSCLC who are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
+    "indication": "LIBTAYO (cemiplimab for injection) is indicated as monotherapy for the first-line treatment of adult patients with non-small cell lung cancer (NSCLC) expressing PD-L1 in >= 50% of tumour cells (Tumour Proportion Score [TPS] >= 50%), as determined by a validated test, with no EGFR, ALK or ROS1 aberrations, who have locally advanced NSCLC who are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved cemiplimab as monotherapy for the first-line treatment of adult patients with non-small cell lung cancer (NSCLC) expressing PD-L1 in \u2265 50% of tumour cells (Tumour Proportion Score [TPS] \u2265 50%), as determined by a validated test, with no EGFR, ALK or ROS1 aberrations, who have locally advanced NSCLC who are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
+    "description": "Health Canada approved cemiplimab as monotherapy for the first-line treatment of adult patients with non-small cell lung cancer (NSCLC) expressing PD-L1 in >= 50% of tumour cells (Tumour Proportion Score [TPS] >= 50%), as determined by a validated test, with no EGFR, ALK or ROS1 aberrations, who have locally advanced NSCLC who are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
     "raw_biomarkers": "PD-L1 expression [Tumor Proportion Score (TPS) >= 50%] with no EGFR, ALK or ROS1 aberrations",
     "raw_cancer_type": "non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Libtayo (Cemiplimab)"
@@ -5950,10 +6005,10 @@
   {
     "id": "ind:hc.libtayo:1",
     "document_id": "doc:hc.libtayo",
-    "indication": "LIBTAYO (cemiplimab for injection) in combination with platinum\u2010based chemotherapy for the first\u2010line treatment of adult patients with NSCLC whose tumors have no EGFR, ALK or ROS1 aberrations and is locally advanced where patients are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
+    "indication": "LIBTAYO (cemiplimab for injection) in combination with platinum-based chemotherapy for the first-line treatment of adult patients with NSCLC whose tumors have no EGFR, ALK or ROS1 aberrations and is locally advanced where patients are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved cemiplimab in cominbation with platinum-based chemotherapy for the first\u2010line treatment of adult patients with NSCLC whose tumors have no EGFR, ALK or ROS1 aberrations and is locally advanced where patients are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
+    "description": "Health Canada approved cemiplimab in cominbation with platinum-based chemotherapy for the first-line treatment of adult patients with NSCLC whose tumors have no EGFR, ALK or ROS1 aberrations and is locally advanced where patients are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC.",
     "raw_biomarkers": "No EGFR, ALK, or ROS1 aberrations",
     "raw_cancer_type": "non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Libtayo (cemiplimab) in combination with platinum-based chemotherapy"
@@ -6192,11 +6247,11 @@
   {
     "id": "ind:hc.opdivo:2",
     "document_id": "doc:hc.opdivo",
-    "indication": "OPDIVO (nivolumab) in combination with ipilimumab, is indicated for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 \u2265 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
+    "indication": "OPDIVO (nivolumab) in combination with ipilimumab, is indicated for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 >= 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved nivolumab in combination with ipilimumab, for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 \u2265 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
-    "raw_biomarkers": " PD-L1 \u2265 1% with no EGFR or ALK genomic tumour aberrations",
+    "description": "Health Canada approved nivolumab in combination with ipilimumab, for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 >= 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
+    "raw_biomarkers": " PD-L1 >= 1% with no EGFR or ALK genomic tumour aberrations",
     "raw_cancer_type": "metastatic non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Opdivo (nivolumab), ipilimumab"
   },
@@ -6236,24 +6291,35 @@
   {
     "id": "ind:hc.opdivo:6",
     "document_id": "doc:hc.opdivo",
-    "indication": "OPDIVO (nivolumab), in combination with ipilimumab, is indicated for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression \u2265 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
+    "indication": "OPDIVO (nivolumab), in combination with ipilimumab, is indicated for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression >= 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved nivolumab, in combination with ipilimuab, for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression \u2265 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
-    "raw_biomarkers": "PD-L1 \u2265 1%",
+    "description": "Health Canada approved nivolumab, in combination with ipilimuab, for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression >= 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
+    "raw_biomarkers": "PD-L1 >= 1%",
     "raw_cancer_type": "unresectable or metastatic esophageal squamous cell carcinoma (ESCC)",
     "raw_therapeutics": "Opdivo (nivolumab), ipilimumab"
   },
   {
     "id": "ind:hc.opdivo:7",
     "document_id": "doc:hc.opdivo",
-    "indication": "OPDIVO (nivolumab), in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression \u2265 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
+    "indication": "OPDIVO (nivolumab), in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression >= 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved nivolumab, in combination with fluoropyrimidine- and platinum-containing chemotherapy, for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression \u2265 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
-    "raw_biomarkers": "PD-L1 \u2265 1%",
+    "description": "Health Canada approved nivolumab, in combination with fluoropyrimidine- and platinum-containing chemotherapy, for the treatment of adult patients with unresectable or metastatic ESCC, with tumour cell PD-L1 expression >= 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
+    "raw_biomarkers": "PD-L1 >= 1%",
     "raw_cancer_type": "unresectable or metastatic esophageal squamous cell carcinoma (ESCC)",
     "raw_therapeutics": "Opdivo (nivolumab), fluoropyrimidine-, platinum-containing chemotherapy"
+  },
+  {
+    "id": "ind:hc.opdivo:8",
+    "document_id": "doc:hc.opdivo",
+    "indication": "OPDIVO (nivolumab), in combination with platinum-doublet chemotherapy, the neoadjuvant treatment of adult patients with resectable Stage II (>4 cm), IIIA, IIIB (T3-4N2) NSCLC and no known epidermal growth factor Opdivo (nivolumab) receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements, followed by OPDIVO as a single agent in the adjuvant setting after surgical resection.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved nivolumab in combination with platinum-doublet chemotherapy, the neoadjuvant treatment of adult patients with resectable Stage II (>4 cm), IIIA, IIIB (T3-4N2) NSCLC and no known epidermal growth factor Opdivo (nivolumab) receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) rearrangements, followed by OPDIVO as a single agent in the adjuvant setting after surgical resection. This approval is based on CHECKMATE-816, a randomized, open label trial where patients were offered platinum-doublet chemotherapy consisting of either paclitaxel and carboplatin; pemetrexed and cisplatin for non-squamous histology; or gemcitabine and cisplatin for squamous histology.",
+    "raw_biomarkers": "no known EGFR mutations or ALK rearrangements",
+    "raw_cancer_type": "non-small cell lung cancer NSCLC ",
+    "raw_therapeutics": "Opdivo (nivolumab), platinum-doublet chemotherapy"
   },
   {
     "id": "ind:hc.pemazyre:0",
@@ -6333,6 +6399,17 @@
     "raw_therapeutics": "Piqray (alpelisib), fulvestrant"
   },
   {
+    "id": "ind:hc.piqray:1",
+    "document_id": "doc:hc.piqray",
+    "indication": "PIQRAY (alpelisib), in combination with fulvestrant, is indicated for the treatment of postmenopausal women, and men, with hormone receptor-positive, HER2-negative, PIK3CA- mutated advanced or metastatic breast cancer after disease progression following an endocrine-based regimen.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved alpelisib in combination with fulvestrant, is indicated for the treatment of postmenopausal women, and men, with hormone receptor-positive, HER2-negative, PIK3CA- mutated advanced or metastatic breast cancer after disease progression following an endocrine-based regimen.",
+    "raw_biomarkers": "hormone receptor-positive, HER2-negative, PIK3CA- mutated",
+    "raw_cancer_type": "advanced or metastatic breast cancer",
+    "raw_therapeutics": "Piqray (alpelisib), fulvestrant"
+  },
+  {
     "id": "ind:hc.retevmo:0",
     "document_id": "doc:hc.retevmo",
     "indication": "RETEVMO (selpercatinib) is indicated as monotherapy for the treatment of metastatic RET fusion-positive non-small cell lung cancer (NSCLC) in adult patients.",
@@ -6379,23 +6456,23 @@
   {
     "id": "ind:hc.rituxan:0",
     "document_id": "doc:hc.rituxan",
-    "indication": "RITUXAN (rituximab for injection) is indicated for the treatment of patients with relapsed or refractory low-grade or follicular, CD20 positive, B-cell non-Hodgkin\u2019s lymphoma.",
+    "indication": "RITUXAN (rituximab for injection) is indicated for the treatment of patients with relapsed or refractory low-grade or follicular, CD20 positive, B-cell non-Hodgkin's lymphoma.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved rituximab for the treatment of patients with relapsed or refractory low-grade or follicular, CD20 positive, B-cell non-Hodgkin\u2019s lymphoma.",
+    "description": "Health Canada approved rituximab for the treatment of patients with relapsed or refractory low-grade or follicular, CD20 positive, B-cell non-Hodgkin's lymphoma.",
     "raw_biomarkers": "CD20 positive",
-    "raw_cancer_type": "relapsed or refractory low-grade or follicular B-cell non-Hodgkin\u2019s lymphoma",
+    "raw_cancer_type": "relapsed or refractory low-grade or follicular B-cell non-Hodgkin's lymphoma",
     "raw_therapeutics": "RITUXAN (rituximab for injection)"
   },
   {
     "id": "ind:hc.rituxan:1",
     "document_id": "doc:hc.rituxan",
-    "indication": "RITUXAN (rituximab for injection) is indicated for the treatment of patients with CD20 positive, diffuse large B-cell non-Hodgkin\u2019s lymphoma (DLBCL) in combination with CHOP (cyclophosphamide, doxorubicin, vincristine, and prednisone) chemotherapy.",
+    "indication": "RITUXAN (rituximab for injection) is indicated for the treatment of patients with CD20 positive, diffuse large B-cell non-Hodgkin's lymphoma (DLBCL) in combination with CHOP (cyclophosphamide, doxorubicin, vincristine, and prednisone) chemotherapy.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved rituximab for the treatment of patients with CD20 positive, diffuse large B-cell non-Hodgkin\u2019s lymphoma (DLBCL) in combination with CHOP chemotherapy.",
+    "description": "Health Canada approved rituximab for the treatment of patients with CD20 positive, diffuse large B-cell non-Hodgkin's lymphoma (DLBCL) in combination with CHOP chemotherapy.",
     "raw_biomarkers": "CD20 positive",
-    "raw_cancer_type": "diffuse large B-cell non-Hodgkin\u2019s lymphoma (DLBCL)",
+    "raw_cancer_type": "diffuse large B-cell non-Hodgkin's lymphoma (DLBCL)",
     "raw_therapeutics": "RITUXAN (rituximab for injection), CHOP chemotherapy"
   },
   {
@@ -6478,10 +6555,10 @@
   {
     "id": "ind:hc.scemblix:0",
     "document_id": "doc:hc.scemblix",
-    "indication": "SCEMBLIX (asciminib tablets) is indicated for the treatment of adult patients with Philadelphia chromosome-positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP) previously treated with two or more tyrosine kinase inhibitors.",
+    "indication": "SCEMBLIX (asciminib tablets) is indicated for adult patients with Philadelphia chromosome-positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP) who are newly diagnosed or who have previously received one or more tyrosine kinase inhibitors.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved asciminib for the treatment of adult patients with Philadelphia chromosome-positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP) previously treated with two or more tyrosine kinase inhibitors.",
+    "description": "Health Canada approved asciminib for adult patients with Philadelphia chromosome-positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP) who are newly diagnosed or who have previously received 1 or more tyrosine kinase inhibitors.",
     "raw_biomarkers": "Philadelphia chromosome-positive (Ph+)",
     "raw_cancer_type": "chronic myeloid leukemia (CML)",
     "raw_therapeutics": "Scemblix (asciminib)"
@@ -6515,6 +6592,39 @@
     "initial_approval_date": null,
     "initial_approval_url": null,
     "description": "Health Canada approved dasatinib for the treatment of adults with Ph+ acute lymphoblastic leukemia (ALL) with resistance or intolerance to prior therapy.",
+    "raw_biomarkers": "Philadelphia chromosome positive (Ph+)",
+    "raw_cancer_type": "acute lymphoblastic leukemia (ALL)",
+    "raw_therapeutics": "Sprycel (dasatinib)"
+  },
+  {
+    "id": "ind:hc.sprycel:3",
+    "document_id": "doc:hc.sprycel",
+    "indication": "SPRYCEL (dasatinib) is indicated for newly diagnosed Philadelphia chromosome positive (Ph+) chronic myeloid leukemia (CML) in chronic phase.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved dasatinib for newly diagnosed Philadelphia chromosome positive (Ph+) chronic myeloid leukemia (CML) in chronic phase.",
+    "raw_biomarkers": "Philadelphia chromosome positive (Ph+)",
+    "raw_cancer_type": "chronic myeloid leukemia (CML)",
+    "raw_therapeutics": "Sprycel (dasatinib)"
+  },
+  {
+    "id": "ind:hc.sprycel:4",
+    "document_id": "doc:hc.sprycel",
+    "indication": "SPRYCEL (dasatinib) is indicated for Ph+ chronic, accelerated, or blast phase chronic myeloid leukemia (CML) with resistance or intolerance to prior therapy including imatinib mesylate.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved dasatinib for newly diagnosed Philadelphia chromosome positive (Ph+) chronic myeloid leukemia (CML) in chronic phase.",
+    "raw_biomarkers": "Philadelphia chromosome positive (Ph+)",
+    "raw_cancer_type": "chronic myeloid leukemia (CML)",
+    "raw_therapeutics": "Sprycel (dasatinib)"
+  },
+  {
+    "id": "ind:hc.sprycel:5",
+    "document_id": "doc:hc.sprycel",
+    "indication": "SPRYCEL (dasatinib) is indicated for Ph+ acute lymphoblastic leukemia (ALL) with resistance or intolerance to prior therapy.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved dasatinib for newly diagnosed Philadelphia chromosome positive (Ph+) chronic myeloid leukemia (CML) in chronic phase.",
     "raw_biomarkers": "Philadelphia chromosome positive (Ph+)",
     "raw_cancer_type": "acute lymphoblastic leukemia (ALL)",
     "raw_therapeutics": "Sprycel (dasatinib)"
@@ -6652,6 +6762,17 @@
     "raw_therapeutics": "Talzenna (talazoparib)"
   },
   {
+    "id": "ind:hc.talzenna:1",
+    "document_id": "doc:hc.talzenna",
+    "indication": "TALZENNA is indicated in combination with enzalutamide for the treatment of adult patients with homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC).",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved talazoparib as a monotherapy for the treatment of adult patients with a deleterious or suspected deleterious germline breast cancer susceptibility gene (BRCA)-mutated human epidermal growth factor receptor 2 (HER2)-negative locally advanced (not amenable to curative radiation or surgery) or metastatic breast cancer, who have previously been treated with chemotherapy in the neoadjuvant, adjuvant or metastatic setting, unless patients were inappropriate for these treatments.",
+    "raw_biomarkers": "deleterious or suspected deleterious germline BRCA-mutated (gBRCAm), HER2-negative",
+    "raw_cancer_type": "locally advanced or metastatic breast cancer",
+    "raw_therapeutics": "Talzenna (talazoparib)"
+  },
+  {
     "id": "ind:hc.tasigna:0",
     "document_id": "doc:hc.tasigna",
     "indication": "TASIGNA (nilotinib) 150 mg and 200 mg capsules are indicated for The treatment of adult patients with newly diagnosed Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP).",
@@ -6696,23 +6817,67 @@
     "raw_therapeutics": "Tasigna (nilotinib)"
   },
   {
+    "id": "ind:hc.tasigna:4",
+    "document_id": "doc:hc.tasigna",
+    "indication": "TASIGNA (nilotinib) is indicated for the treatment of adult patients with newly diagnosed Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP).",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved nilotinib for the treatment of adult patients with newly diagnosed Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase (CP).",
+    "raw_biomarkers": "philadelphia chromosome-positive (Ph+)",
+    "raw_cancer_type": "chronic myeloid leukemia (CML)",
+    "raw_therapeutics": "Tasigna (nilotinib)"
+  },
+  {
+    "id": "ind:hc.tasigna:5",
+    "document_id": "doc:hc.tasigna",
+    "indication": "TASIGNA (nilotinib) is indicated for the treatment of pediatric patients 2 years of age and older with newly diagnosed Ph+ CML-CP.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved nilotinib for the treatment of of pediatric patients 2 years of age and older with newly diagnosed Ph+ CML-CP.",
+    "raw_biomarkers": "philadelphia chromosome-positive (Ph+)",
+    "raw_cancer_type": "chronic myeloid leukemia (CML)",
+    "raw_therapeutics": "Tasigna (nilotinib)"
+  },
+  {
+    "id": "ind:hc.tasigna:6",
+    "document_id": "doc:hc.tasigna",
+    "indication": "The treatment of chronic phase (CP) and accelerated phase (AP) Philadelphia chromosome positive chronic myeloid leukemia (Ph+CML) in adult patients resistant to or intolerant of at least one prior therapy including imatinib.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved nilotinib for the treatment of of pediatric patients 2 years of age and older with newly diagnosed Ph+ CML-CP.",
+    "raw_biomarkers": "philadelphia chromosome-positive (Ph+)",
+    "raw_cancer_type": "chronic myeloid leukemia (CML)",
+    "raw_therapeutics": "Tasigna (nilotinib)"
+  },
+  {
+    "id": "ind:hc.tasigna:7",
+    "document_id": "doc:hc.tasigna",
+    "indication": "The treatment of pediatric patients 2 years of age and older with Ph+ CML-CP with resistance or intolerance to prior therapy including imatinib.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved nilotinib for the treatment of pediatric patients 2 years of age and older with Ph+ CML-CP with resistance or intolerance to prior therapy including imatinib.",
+    "raw_biomarkers": "philadelphia chromosome-positive (Ph+)",
+    "raw_cancer_type": "chronic myeloid leukemia (CML)",
+    "raw_therapeutics": "Tasigna (nilotinib)"
+  },
+  {
     "id": "ind:hc.tecentriq:0",
     "document_id": "doc:hc.tecentriq",
-    "indication": "TECENTRIQ (atezolizumab, concentrate for solution for infusion) is indicated as monotherapy, as adjuvant treatment following complete resection and no progression after platinum-based adjuvant chemotherapy for adult patients with Stage II to IIIA* NSCLC whose tumours have PD-L1 expression on \u2265 50% of tumour cells (TCs)",
+    "indication": "TECENTRIQ (atezolizumab, concentrate for solution for infusion) is indicated as monotherapy, as adjuvant treatment following complete resection and no progression after platinum-based adjuvant chemotherapy for adult patients with Stage II to IIIA* NSCLC whose tumours have PD-L1 expression on >= 50% of tumour cells (TCs)",
     "initial_approval_date": null,
     "initial_approval_url": null,
     "description": "Health Canada approved",
-    "raw_biomarkers": "PD-L1 \u2265 50%",
+    "raw_biomarkers": "PD-L1 >= 50%",
     "raw_cancer_type": "non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Tecentriq (atezolizumab)"
   },
   {
     "id": "ind:hc.tecentriq:1",
     "document_id": "doc:hc.tecentriq",
-    "indication": "TECENTRIQ (atezolizumab, concentrate for solution for infusion) is indicated as monotherapy, for the first-line treatment of patients with metastatic NSCLC whose tumours have high PD-L1 expression (PD-L1 stained \u2265 50% of TCs or PD-L1 stained tumour-infiltrating immune cells [ICs] covering \u2265 10% of the tumour area), as determined by a validated test and who do not have EGFR or ALK genomic tumour aberrations.",
+    "indication": "TECENTRIQ (atezolizumab, concentrate for solution for infusion) is indicated as monotherapy, for the first-line treatment of patients with metastatic NSCLC whose tumours have high PD-L1 expression (PD-L1 stained >= 50% of TCs or PD-L1 stained tumour-infiltrating immune cells [ICs] covering >= 10% of the tumour area), as determined by a validated test and who do not have EGFR or ALK genomic tumour aberrations.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved atezolizumab as monotherapy, for the first-line treatment of patients with metastatic NSCLC whose tumours have high PD-L1 expression (PD-L1 stained \u2265 50% of TCs or PD-L1 stained tumour-infiltrating immune cells [ICs] covering \u2265 10% of the tumour area), as determined by a validated test and who do not have EGFR or ALK genomic tumour aberrations.",
+    "description": "Health Canada approved atezolizumab as monotherapy, for the first-line treatment of patients with metastatic NSCLC whose tumours have high PD-L1 expression (PD-L1 stained >= 50% of TCs or PD-L1 stained tumour-infiltrating immune cells [ICs] covering >= 10% of the tumour area), as determined by a validated test and who do not have EGFR or ALK genomic tumour aberrations.",
     "raw_biomarkers": "PD-L1 >= 50% or PD-L1 >= 10% TIIC, no EGFR or ALK genomic tumour aberrations.",
     "raw_cancer_type": "metastatic non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Tecentriq (atezolizumab)"
@@ -6753,10 +6918,10 @@
   {
     "id": "ind:hc.tecentriq:5",
     "document_id": "doc:hc.tecentriq",
-    "indication": "TECENTRIQ (atezolizumab) in combination with nab-paclitaxel is indicated for the treatment of adult patients with unresectable locally advanced or metastatic triple-negative breast cancer (TNBC) whose tumours have PD-L1 expression on tumour-infiltrating immune cells (IC) covering \u2265 1% of the tumour area, and who have not received prior chemotherapy for metastatic disease.",
+    "indication": "TECENTRIQ (atezolizumab) in combination with nab-paclitaxel is indicated for the treatment of adult patients with unresectable locally advanced or metastatic triple-negative breast cancer (TNBC) whose tumours have PD-L1 expression on tumour-infiltrating immune cells (IC) covering >= 1% of the tumour area, and who have not received prior chemotherapy for metastatic disease.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved atezolizumab in combination with nab-paclitaxel is indicated for the treatment of adult patients with unresectable locally advanced or metastatic triple-negative breast cancer (TNBC) whose tumours have PD-L1 expression on tumour-infiltrating immune cells (IC) covering \u2265 1% of the tumour area, and who have not received prior chemotherapy for metastatic disease.",
+    "description": "Health Canada approved atezolizumab in combination with nab-paclitaxel is indicated for the treatment of adult patients with unresectable locally advanced or metastatic triple-negative breast cancer (TNBC) whose tumours have PD-L1 expression on tumour-infiltrating immune cells (IC) covering >= 1% of the tumour area, and who have not received prior chemotherapy for metastatic disease.",
     "raw_biomarkers": "PD-L1 >= 1%",
     "raw_cancer_type": "unresectable locally advanced or metastatic triple-negative breast cancer",
     "raw_therapeutics": "Tecentriq (atezolizumab), nab-paclitaxel"
@@ -6951,11 +7116,11 @@
   {
     "id": "ind:hc.yervoy:0",
     "document_id": "doc:hc.yervoy",
-    "indication": "YERVOY, in combination with nivolumab, is indicated for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 \u2265 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
+    "indication": "YERVOY, in combination with nivolumab, is indicated for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 >= 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved ipilimumab in combination with nivolumab for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 \u2265 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
-    "raw_biomarkers": "PD-L1 \u2265 1% with no EGFR or ALK genomic tumour aberrations",
+    "description": "Health Canada approved ipilimumab in combination with nivolumab for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 >= 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
+    "raw_biomarkers": "PD-L1 >= 1% with no EGFR or ALK genomic tumour aberrations",
     "raw_cancer_type": "metastatic non-small cell lung cancer (NSCLC)",
     "raw_therapeutics": "Yervoy (ipilimumab), nivolumab"
   },
@@ -6984,11 +7149,11 @@
   {
     "id": "ind:hc.yervoy:3",
     "document_id": "doc:hc.yervoy",
-    "indication": "YERVOY, in combination with nivolumab, is indicated for the treatment of adult patients with unresectable or metastatic esophageal squamous cell carcinoma (ESCC), with tumour cell PD-L1 expression \u2265 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
+    "indication": "YERVOY, in combination with nivolumab, is indicated for the treatment of adult patients with unresectable or metastatic esophageal squamous cell carcinoma (ESCC), with tumour cell PD-L1 expression >= 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved ipilimumab in combination with nivolumab for the treatment of adult patients with unresectable or metastatic esophageal squamous cell carcinoma (ESCC), with tumour cell PD-L1 expression \u2265 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
-    "raw_biomarkers": "PD-L1 \u2265 1%",
+    "description": "Health Canada approved ipilimumab in combination with nivolumab for the treatment of adult patients with unresectable or metastatic esophageal squamous cell carcinoma (ESCC), with tumour cell PD-L1 expression >= 1% as determined by a validated test, and no prior systemic therapy for metastatic ESCC.",
+    "raw_biomarkers": "PD-L1 >= 1%",
     "raw_cancer_type": "unresectable or metastatic esophageal squamous cell carcinoma (ESCC)",
     "raw_therapeutics": "Yervoy (ipilimumab), nivolumab"
   },
@@ -9657,7 +9822,7 @@
   {
     "id": "ind:hpra.aromasin:0",
     "document_id": "doc:hpra.aromasin",
-    "indication": "Aromasin is indicated for the adjuvant treatment of postmenopausal women with oestrogen receptor positive invasive early breast cancer (EBC), following 2 \u2013 3 years of initial adjuvant tamoxifen therapy.",
+    "indication": "Aromasin is indicated for the adjuvant treatment of postmenopausal women with oestrogen receptor positive invasive early breast cancer (EBC), following 2 - 3 years of initial adjuvant tamoxifen therapy.",
     "initial_approval_date": null,
     "initial_approval_url": null,
     "description": "The Republic of Ireland's Health Products Regulatory Authority (HPRA) has authorized exemestane for the adjuvant treatment of patients who are postmenopausal women with hormone receptor-positive invasive early breast cancer (EBC) who have received 2 to 3 years of initial tamoxifen therapy.",
