@@ -157,50 +157,50 @@
     }
   },
   "proposition": {
-    "id": 538,
+    "id": 537,
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
     "biomarkers": [
       {
-        "id": 49,
+        "id": 47,
         "type": "CategoricalVariant",
-        "name": "BRCA2 oncogenic variants",
+        "name": "BRCA1 oncogenic variants",
         "genes": [
           {
-            "id": 10,
+            "id": 9,
             "conceptType": "Gene",
-            "name": "BRCA2",
+            "name": "BRCA1",
             "mappings": [
               {
                 "relation": "exactMatch",
                 "coding": {
-                  "id": "ensembl:ensg00000139618",
-                  "code": "ENSG00000139618",
+                  "id": "ensembl:ensg00000012048",
+                  "code": "ENSG00000012048",
                   "system": "https://www.ensembl.org",
                   "iris": [
-                    "https://www.ensembl.org/id/ENSG00000139618"
+                    "https://www.ensembl.org/id/ENSG00000012048"
                   ]
                 }
               },
               {
                 "relation": "exactMatch",
                 "coding": {
-                  "id": "ncbi:675",
-                  "code": "675",
+                  "id": "ncbi:672",
+                  "code": "672",
                   "system": "https://www.ncbi.nlm.nih.gov/gene",
                   "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/675"
+                    "https://www.ncbi.nlm.nih.gov/gene/672"
                   ]
                 }
               },
               {
                 "relation": "relatedMatch",
                 "coding": {
-                  "id": "refseq:NM_000059.4",
-                  "code": "NM_000059.4",
+                  "id": "refseq:NM_007294.4",
+                  "code": "NM_007294.4",
                   "system": "https://www.ncbi.nlm.nih.gov/nuccore",
                   "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000059.4"
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_007294.4"
                   ]
                 }
               }
@@ -208,19 +208,19 @@
             "extensions": [
               {
                 "name": "location",
-                "value": "13q13.1"
+                "value": "17q21.31"
               },
               {
                 "name": "location_sortable",
-                "value": "13q13.1"
+                "value": "17q21.31"
               }
             ],
             "primaryCoding": {
-              "id": "hgnc:1101",
-              "code": "HGNC:1101",
+              "id": "hgnc:1100",
+              "code": "HGNC:1100",
               "system": "https://genenames.org",
               "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1100"
               ]
             }
           }
@@ -232,7 +232,7 @@
           },
           {
             "name": "chromosome",
-            "value": "13"
+            "value": "17"
           },
           {
             "name": "start_position",

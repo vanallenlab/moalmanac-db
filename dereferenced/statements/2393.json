@@ -157,14 +157,14 @@
     }
   },
   "proposition": {
-    "id": 540,
+    "id": 538,
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
     "biomarkers": [
       {
-        "id": 50,
+        "id": 49,
         "type": "CategoricalVariant",
-        "name": "BRCA2 pathogenic variants",
+        "name": "BRCA2 oncogenic variants",
         "genes": [
           {
             "id": 10,
@@ -228,7 +228,7 @@
         "extensions": [
           {
             "name": "biomarker_type",
-            "value": "Germline Variant"
+            "value": "Somatic Variant"
           },
           {
             "name": "chromosome",
@@ -279,7 +279,7 @@
             "value": null
           },
           {
-            "name": "requires_pathogenic",
+            "name": "requires_oncogenic",
             "value": true
           },
           {
