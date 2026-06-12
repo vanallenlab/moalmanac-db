@@ -1,0 +1,60 @@
+{
+  "id": 63,
+  "conceptType": "Gene",
+  "name": "VHL",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000134086",
+        "code": "ENSG00000134086",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000134086"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:7428",
+        "code": "7428",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/7428"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_000551.4",
+        "code": "NM_000551.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000551.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "3p25.3"
+    },
+    {
+      "name": "location_sortable",
+      "value": "03p25.3"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:12687",
+    "code": "HGNC:12687",
+    "name": "VHL",
+    "system": "https://genenames.org",
+    "systemVersion": "2026-05-05",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+    ]
+  }
+}

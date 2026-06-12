@@ -22,7 +22,7 @@ Describe changes to this GitHub repository, such as schema updates or repository
 Provide a clear and concise description of the updates included in this pull request. Reference relevant GitHub issues by hyperlink.
 
 **Objective**:
-Explain the goal or purpose of this feature. 
+Explain the goal or purpose of this feature.
 
 **Implementation details**:
 Outline the key details or steps involved in implementing this update.
@@ -31,6 +31,7 @@ Outline the key details or steps involved in implementing this update.
 - Step three
 
 ## Checklist
+- [ ] `referenced/about.json` and `referenced/agents.json` last updated dates were updated.
 - [ ] All files changed have been reviewed.
 - [ ] All relevant documentation has been updated.
 - [ ] All unit tests have passed.

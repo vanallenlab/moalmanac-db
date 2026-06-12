@@ -1,0 +1,83 @@
+{
+  "id": 88,
+  "type": "CategoricalVariant",
+  "name": "PIK3CA amplification",
+  "genes": [
+    {
+      "id": 41,
+      "conceptType": "Gene",
+      "name": "PIK3CA",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000121879",
+            "code": "ENSG00000121879",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000121879"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:5290",
+            "code": "5290",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/5290"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_006218.4",
+            "code": "NM_006218.4",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_006218.4"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "3q26.32"
+        },
+        {
+          "name": "location_sortable",
+          "value": "03q26.32"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:8975",
+        "code": "HGNC:8975",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8975"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Copy Number"
+    },
+    {
+      "name": "direction",
+      "value": "Amplification"
+    },
+    {
+      "name": "cytoband",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

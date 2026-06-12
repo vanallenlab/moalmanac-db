@@ -1,0 +1,320 @@
+{
+  "id": 1508,
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved nivolumab as a monotherapy treatment option for the adjuvant treatment of adults with muscle invasive urothelial carcinoma (MIUC) with tumour cell PD-L1 expression >= 1%, who are at high risk of recurrence after undergoing radical resection of MIUC, providing patients are unsuitable for adjuvant treatment with platinum based chemotherapy.",
+  "contributions": [
+    {
+      "id": 41,
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse.00483",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Nivolumab Monotherapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Nivolumab Monotherapy, 2024, version number 11, viewed 26/03/2026, https://healthservice.hse.ie/documents/6498/483_Nivolumab_14-day.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6498/483_Nivolumab_14-day.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-05-08",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hse.00483:h",
+    "indication": "As monotherapy for the adjuvant treatment of adults with muscle invasive urothelial carcinoma (MIUC) with tumour cell PD-L1 expression >= 1%, who are at high risk of recurrence after undergoing radical resection of MIUC, providing patients are unsuitable for adjuvant treatment with platinum based chemotherapy.",
+    "initial_approval_date": "2024-12-01",
+    "initial_approval_url": null,
+    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved nivolumab as a monotherapy treatment option for the adjuvant treatment of adults with muscle invasive urothelial carcinoma (MIUC) with tumour cell PD-L1 expression >= 1%, who are at high risk of recurrence after undergoing radical resection of MIUC, providing patients are unsuitable for adjuvant treatment with platinum based chemotherapy.",
+    "raw_biomarkers": "PD-L1 expression >= 1%",
+    "raw_cancer_type": "invasive urothelial carcinoma",
+    "raw_therapeutics": "nivolumab",
+    "reimbursement_scheme": "ODMS",
+    "reimbursement_comment": null,
+    "document": {
+      "id": "doc:hse.00483",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Nivolumab Monotherapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Nivolumab Monotherapy, 2024, version number 11, viewed 26/03/2026, https://healthservice.hse.ie/documents/6498/483_Nivolumab_14-day.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6498/483_Nivolumab_14-day.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-05-08",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 641,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 33,
+        "type": "CategoricalVariant",
+        "name": "PD-L1 >= 1%",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "PD-L1"
+          },
+          {
+            "name": "unit",
+            "value": "Tumor Proportion Score (TPS)"
+          },
+          {
+            "name": "equality",
+            "value": ">="
+          },
+          {
+            "name": "value",
+            "value": 0.01
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 8,
+      "conceptType": "Disease",
+      "name": "Bladder Urothelial Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:BLCA",
+        "code": "BLCA",
+        "name": "Bladder Urothelial Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BLCA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 72,
+      "conceptType": "Drug",
+      "name": "Nivolumab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1597876",
+            "code": "1597876",
+            "name": "nivolumab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597876"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:45892628",
+            "code": "45892628",
+            "name": "nivolumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45892628"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:704191007",
+            "code": "704191007",
+            "name": "Nivolumab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704191007&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:45766924",
+            "code": "45766924",
+            "name": "Nivolumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45766924"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C68814",
+        "code": "C68814",
+        "name": "Nivolumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": 21,
+  "conceptType": "Gene",
+  "name": "FANCL",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000115392",
+        "code": "ENSG00000115392",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000115392"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:55120",
+        "code": "55120",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/55120"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_018062.4",
+        "code": "NM_018062.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_018062.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "2p16.1"
+    },
+    {
+      "name": "location_sortable",
+      "value": "02p16.1"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:20748",
+    "code": "HGNC:20748",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:20748"
+    ]
+  }
+}

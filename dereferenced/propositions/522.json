@@ -1,0 +1,229 @@
+{
+  "id": 522,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 12,
+      "type": "CategoricalVariant",
+      "name": "BCR::ABL1",
+      "genes": [
+        {
+          "id": 6,
+          "conceptType": "Gene",
+          "name": "BCR",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000186716",
+                "code": "ENSG00000186716",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000186716"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:613",
+                "code": "613",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/613"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_004327.4",
+                "code": "NM_004327.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "22q11.23"
+            },
+            {
+              "name": "location_sortable",
+              "value": "22q11.23"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:1014",
+            "code": "HGNC:1014",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+            ]
+          }
+        },
+        {
+          "id": 0,
+          "conceptType": "Gene",
+          "name": "ABL1",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000097007",
+                "code": "ENSG00000097007",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000097007"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:25",
+                "code": "25",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/25"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_005157.6",
+                "code": "NM_005157.6",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "9q34.12"
+            },
+            {
+              "name": "location_sortable",
+              "value": "09q34.12"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:76",
+            "code": "HGNC:76",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Rearrangement"
+        },
+        {
+          "name": "rearrangement_type",
+          "value": "Fusion"
+        },
+        {
+          "name": "locus",
+          "value": null
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 71,
+    "conceptType": "Disease",
+    "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:CMLBCRABL1",
+      "code": "CMLBCRABL1",
+      "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CMLBCRABL1"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 83,
+    "conceptType": "Drug",
+    "name": "Asciminib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2584304",
+          "code": "2584304",
+          "name": "asciminib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2584304"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:702133",
+          "code": "702133",
+          "name": "asciminib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/702133"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "BCR-ABL inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C114494",
+      "code": "C114494",
+      "name": "Asciminib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C114494"
+      ]
+    }
+  }
+}

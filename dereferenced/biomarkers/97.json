@@ -1,0 +1,141 @@
+{
+  "id": 97,
+  "type": "CategoricalVariant",
+  "name": "FGFR3::TACC3",
+  "genes": [
+    {
+      "id": 24,
+      "conceptType": "Gene",
+      "name": "FGFR3",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000068078",
+            "code": "ENSG00000068078",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000068078"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:2261",
+            "code": "2261",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/2261"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000142.5",
+            "code": "NM_000142.5",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000142.5"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "4p16.3"
+        },
+        {
+          "name": "location_sortable",
+          "value": "04p16.3"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:3690",
+        "code": "HGNC:3690",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3690"
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "conceptType": "Gene",
+      "name": "TACC3",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000013810",
+            "code": "ENSG00000013810",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000013810"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:10460",
+            "code": "10460",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/10460"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_006342.3",
+            "code": "NM_006342.3",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_006342.3"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "4p16.3"
+        },
+        {
+          "name": "location_sortable",
+          "value": "04p16.3"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:11524",
+        "code": "HGNC:11524",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11524"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Rearrangement"
+    },
+    {
+      "name": "rearrangement_type",
+      "value": "Fusion"
+    },
+    {
+      "name": "locus",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

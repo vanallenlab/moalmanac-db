@@ -1,0 +1,83 @@
+{
+  "id": 14,
+  "conceptType": "Drug",
+  "name": "Inotuzumab ozogamicin",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:1942950",
+        "code": "1942950",
+        "name": "inotuzumab ozogamicin",
+        "system": "RxNorm",
+        "systemVersion": "20250602",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1942950"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:42537249",
+        "code": "42537249",
+        "name": "Inotuzumab ozogamicin",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/42537249"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:736495009",
+        "code": "736495009",
+        "name": "Inotuzumab ozogamicin",
+        "system": "SNOMED",
+        "systemVersion": "2026-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=736495009&edition=MAIN/2026-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:794068",
+        "code": "794068",
+        "name": "inotuzumab ozogamicin",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/794068"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "BCR-ABL inhibition"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+    },
+    {
+      "name": "therapy_type",
+      "value": "Targeted therapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C71542",
+    "code": "C71542",
+    "name": "Inotuzumab Ozogamicin",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71542"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+line-length = 88
+
+[format]
+quote-style = "double"
+indent-style = "space"
+
+[lint]
+fixable = ["ALL"]
+ignore = []
+select = [
+  "B",   # flake8-bugbear
+  "COM", # use trailing commas
+  "E",   # pycodestyle errors
+  "F",   # pyflakes
+  "I",   # isort
+  "SIM", # flake8-simplify
+  "RUF", # ruff-native rules
+  "UP",  # pyupgrade
+  "W",   # pycodestyle warnings
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+split-on-trailing-comma = true

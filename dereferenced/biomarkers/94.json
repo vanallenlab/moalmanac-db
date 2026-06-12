@@ -1,0 +1,83 @@
+{
+  "id": 94,
+  "type": "CategoricalVariant",
+  "name": "PTEN deletion",
+  "genes": [
+    {
+      "id": 43,
+      "conceptType": "Gene",
+      "name": "PTEN",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000171862",
+            "code": "ENSG00000171862",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000171862"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:5728",
+            "code": "5728",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/5728"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000314.8",
+            "code": "NM_000314.8",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "10q23.31"
+        },
+        {
+          "name": "location_sortable",
+          "value": "10q23.31"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:9588",
+        "code": "HGNC:9588",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Copy Number"
+    },
+    {
+      "name": "direction",
+      "value": "Deletion"
+    },
+    {
+      "name": "cytoband",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

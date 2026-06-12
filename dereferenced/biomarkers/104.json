@@ -1,0 +1,127 @@
+{
+  "id": 104,
+  "type": "CategoricalVariant",
+  "name": "ATM pathogenic variants",
+  "genes": [
+    {
+      "id": 3,
+      "conceptType": "Gene",
+      "name": "ATM",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000149311",
+            "code": "ENSG00000149311",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000149311"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:472",
+            "code": "472",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/472"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000051.4",
+            "code": "NM_000051.4",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000051.4"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "11q22.3"
+        },
+        {
+          "name": "location_sortable",
+          "value": "11q22.3"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:795",
+        "code": "HGNC:795",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:795"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Germline Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "11"
+    },
+    {
+      "name": "start_position",
+      "value": null
+    },
+    {
+      "name": "end_position",
+      "value": null
+    },
+    {
+      "name": "reference_allele",
+      "value": null
+    },
+    {
+      "name": "alternate_allele",
+      "value": null
+    },
+    {
+      "name": "cdna_change",
+      "value": null
+    },
+    {
+      "name": "protein_change",
+      "value": null
+    },
+    {
+      "name": "variant_annotation",
+      "value": null
+    },
+    {
+      "name": "exon",
+      "value": null
+    },
+    {
+      "name": "rsid",
+      "value": null
+    },
+    {
+      "name": "hgvsg",
+      "value": null
+    },
+    {
+      "name": "hgvsc",
+      "value": null
+    },
+    {
+      "name": "requires_pathogenic",
+      "value": true
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "id": 284,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 135,
+      "type": "CategoricalVariant",
+      "name": "RAD51B oncogenic variants",
+      "genes": [
+        {
+          "id": 44,
+          "conceptType": "Gene",
+          "name": "RAD51B",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000182185",
+                "code": "ENSG00000182185",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000182185"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:5890",
+                "code": "5890",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/5890"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_133510.4",
+                "code": "NM_133510.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_133510.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "14q24.1"
+            },
+            {
+              "name": "location_sortable",
+              "value": "14q24.1"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:9822",
+            "code": "HGNC:9822",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9822"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "12"
+        },
+        {
+          "name": "start_position",
+          "value": null
+        },
+        {
+          "name": "end_position",
+          "value": null
+        },
+        {
+          "name": "reference_allele",
+          "value": null
+        },
+        {
+          "name": "alternate_allele",
+          "value": null
+        },
+        {
+          "name": "cdna_change",
+          "value": null
+        },
+        {
+          "name": "protein_change",
+          "value": null
+        },
+        {
+          "name": "variant_annotation",
+          "value": null
+        },
+        {
+          "name": "exon",
+          "value": null
+        },
+        {
+          "name": "rsid",
+          "value": null
+        },
+        {
+          "name": "hgvsg",
+          "value": null
+        },
+        {
+          "name": "hgvsc",
+          "value": null
+        },
+        {
+          "name": "requires_oncogenic",
+          "value": true
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 55,
+    "conceptType": "Disease",
+    "name": "Prostate Adenocarcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:PRAD",
+      "code": "PRAD",
+      "name": "Prostate Adenocarcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PRAD"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 87,
+    "conceptType": "Drug",
+    "name": "Talazoparib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2099704",
+          "code": "2099704",
+          "name": "talazoparib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2099704"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:35201068",
+          "code": "35201068",
+          "name": "talazoparib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/35201068"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:782199007",
+          "code": "782199007",
+          "name": "Talazoparib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=782199007&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:36684109",
+          "code": "36684109",
+          "name": "Talazoparib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/36684109"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "PARP inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C95733",
+      "code": "C95733",
+      "name": "Talazoparib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95733"
+      ]
+    }
+  }
+}

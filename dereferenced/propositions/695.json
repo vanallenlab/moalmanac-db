@@ -1,0 +1,155 @@
+{
+  "id": 695,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 84,
+      "type": "CategoricalVariant",
+      "name": "17p deletion",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Copy Number (arm level)"
+        },
+        {
+          "name": "chromosome",
+          "value": "17"
+        },
+        {
+          "name": "arm",
+          "value": "p"
+        },
+        {
+          "name": "direction",
+          "value": "Deletion"
+        },
+        {
+          "name": "_present",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 84,
+    "conceptType": "Disease",
+    "name": "Chronic Lymphocytic Leukemia",
+    "mappings": [
+      {
+        "relation": "broadMatch",
+        "coding": {
+          "id": "oncotree:CLLSLL",
+          "code": "CLLSLL",
+          "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C3163",
+      "code": "C3163",
+      "name": "Chronic Lymphocytic Leukemia",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 98,
+    "conceptType": "Drug",
+    "name": "Venetoclax",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:1747556",
+          "code": "1747556",
+          "name": "venetoclax",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1747556"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:35604205",
+          "code": "35604205",
+          "name": "venetoclax",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/35604205"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:720491001",
+          "code": "720491001",
+          "name": "Venetoclax",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=720491001&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:36717127",
+          "code": "36717127",
+          "name": "Venetoclax",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/36717127"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "BCL2 inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C103147",
+      "code": "C103147",
+      "name": "Venetoclax",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C103147"
+      ]
+    }
+  }
+}

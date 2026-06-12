@@ -1,0 +1,386 @@
+{
+  "id": 879,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 66,
+      "type": "CategoricalVariant",
+      "name": "FLT3-ITD",
+      "genes": [
+        {
+          "id": 26,
+          "conceptType": "Gene",
+          "name": "FLT3",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000122025",
+                "code": "ENSG00000122025",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000122025"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:2322",
+                "code": "2322",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/2322"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_004119.3",
+                "code": "NM_004119.3",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "13q12.2"
+            },
+            {
+              "name": "location_sortable",
+              "value": "13q12.2"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:3765",
+            "code": "HGNC:3765",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "13"
+        },
+        {
+          "name": "start_position",
+          "value": null
+        },
+        {
+          "name": "end_position",
+          "value": null
+        },
+        {
+          "name": "reference_allele",
+          "value": null
+        },
+        {
+          "name": "alternate_allele",
+          "value": null
+        },
+        {
+          "name": "cdna_change",
+          "value": null
+        },
+        {
+          "name": "protein_change",
+          "value": null
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Internal Tandem Duplication (ITD)"
+        },
+        {
+          "name": "exon",
+          "value": null
+        },
+        {
+          "name": "rsid",
+          "value": null
+        },
+        {
+          "name": "hgvsg",
+          "value": null
+        },
+        {
+          "name": "hgvsc",
+          "value": null
+        },
+        {
+          "name": "requires_oncogenic",
+          "value": true
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 1,
+    "conceptType": "Disease",
+    "name": "Acute Myeloid Leukemia",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:AML",
+      "code": "AML",
+      "name": "Acute Myeloid Leukemia",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=AML"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 193,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 63,
+        "conceptType": "Drug",
+        "name": "Cytarabine",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:3041",
+              "code": "3041",
+              "name": "cytarabine",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3041"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:1311078",
+              "code": "1311078",
+              "name": "cytarabine",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1311078"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:387511003",
+              "code": "387511003",
+              "name": "Cytarabine",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387511003&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4306038",
+              "code": "4306038",
+              "name": "Cytarabine",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4306038"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "DNA Polymerase inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C408",
+          "code": "C408",
+          "name": "Cytarabine",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C408"
+          ]
+        }
+      },
+      {
+        "id": 159,
+        "conceptType": "Drug",
+        "name": "Idarubicin",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:5650",
+              "code": "5650",
+              "name": "idarubicin",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=5650"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:19078097",
+              "code": "19078097",
+              "name": "idarubicin",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/19078097"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:372539000",
+              "code": "372539000",
+              "name": "Idarubicin",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=372539000&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:4186848",
+              "code": "4186848",
+              "name": "Idarubicin",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/4186848"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Topoisomerase inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Chemotherapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C562",
+          "code": "C562",
+          "name": "Idarubicin",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C562"
+          ]
+        }
+      },
+      {
+        "id": 158,
+        "conceptType": "Drug",
+        "name": "Quizartinib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2643048",
+              "code": "2643048",
+              "name": "quizartinib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2643048"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:746225",
+              "code": "746225",
+              "name": "quizartinib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/746225"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "FLT3 inhibition"
+            ]
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C68936",
+          "code": "C68936",
+          "name": "Quizartinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68936"
+          ]
+        }
+      }
+    ]
+  }
+}

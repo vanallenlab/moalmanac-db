@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "conceptType": "Disease",
+  "name": "Any solid tumor",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "ncit:C132146",
+    "code": "C132146",
+    "name": "Malignant Solid Neoplasm",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C132146"
+    ]
+  }
+}

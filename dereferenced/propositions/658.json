@@ -1,0 +1,141 @@
+{
+  "id": 658,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 61,
+      "type": "CategoricalVariant",
+      "name": "5q deletion",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Copy Number (arm level)"
+        },
+        {
+          "name": "chromosome",
+          "value": "5"
+        },
+        {
+          "name": "arm",
+          "value": "q"
+        },
+        {
+          "name": "direction",
+          "value": "Deletion"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 45,
+    "conceptType": "Disease",
+    "name": "Myeloproliferative Neoplasm",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:MPN",
+      "code": "MPN",
+      "name": "Myeloproliferative Neoplasm",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MPN"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 79,
+    "conceptType": "Drug",
+    "name": "Lenalidomide",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:342369",
+          "code": "342369",
+          "name": "lenalidomide",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=342369"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:19026972",
+          "code": "19026972",
+          "name": "lenalidomide",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/19026972"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:421471009",
+          "code": "421471009",
+          "name": "Lenalidomide",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=421471009&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:4222840",
+          "code": "4222840",
+          "name": "Lenalidomide",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/4222840"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "Angiogenesis inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Chemotherapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C2668",
+      "code": "C2668",
+      "name": "Lenalidomide",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2668"
+      ]
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": 169,
+  "type": "CategoricalVariant",
+  "name": "NBN pathogenic variants",
+  "genes": [
+    {
+      "id": 60,
+      "conceptType": "Gene",
+      "name": "NBN",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000104320",
+            "code": "ENSG00000104320",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000104320"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:4683",
+            "code": "4683",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/4683"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_057091.3",
+            "code": "NM_057091.3",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_057091.3"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "8q21.3"
+        },
+        {
+          "name": "location_sortable",
+          "value": "08q21.3"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:7652",
+        "code": "HGNC:7652",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7652"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Germline Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "8"
+    },
+    {
+      "name": "start_position",
+      "value": null
+    },
+    {
+      "name": "end_position",
+      "value": null
+    },
+    {
+      "name": "reference_allele",
+      "value": null
+    },
+    {
+      "name": "alternate_allele",
+      "value": null
+    },
+    {
+      "name": "cdna_change",
+      "value": null
+    },
+    {
+      "name": "protein_change",
+      "value": null
+    },
+    {
+      "name": "variant_annotation",
+      "value": null
+    },
+    {
+      "name": "exon",
+      "value": null
+    },
+    {
+      "name": "rsid",
+      "value": null
+    },
+    {
+      "name": "hgvsg",
+      "value": null
+    },
+    {
+      "name": "hgvsc",
+      "value": null
+    },
+    {
+      "name": "requires_pathogenic",
+      "value": true
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

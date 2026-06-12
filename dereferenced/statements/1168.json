@@ -1,0 +1,501 @@
+{
+  "id": 1168,
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved cobimetinib in combination with vemurafenib for reimbursement as a treatment option for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF p.V600 mutation, as demonstrated by a validated test method.",
+  "contributions": [
+    {
+      "id": 41,
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse.00373",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Cobimetinib and Vemurafenib Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Cobimetinib and Vemurafenib Therapy, 2024, version number 3, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6728/373_V3_Cobimetinib_and_Vemurafenib.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6728/373_V3_Cobimetinib_and_Vemurafenib.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2020-05-01",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hse.00373:a",
+    "indication": "Cobimetinib and vemurafenib in combination are indicated for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
+    "initial_approval_date": "2018-04-01",
+    "initial_approval_url": null,
+    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved cobimetinib in combination with vemurafenib for reimbursement as a treatment option for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF p.V600 mutation, as demonstrated by a validated test method.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Melanoma",
+    "raw_therapeutics": "Cobimetinib in combination with Vemurafenib",
+    "reimbursement_scheme": "CDS",
+    "reimbursement_comment": null,
+    "document": {
+      "id": "doc:hse.00373",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Cobimetinib and Vemurafenib Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Cobimetinib and Vemurafenib Therapy, 2024, version number 3, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6728/373_V3_Cobimetinib_and_Vemurafenib.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6728/373_V3_Cobimetinib_and_Vemurafenib.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2020-05-01",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 83,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 17,
+        "type": "CategoricalVariant",
+        "name": "BRAF p.V600K",
+        "genes": [
+          {
+            "id": 8,
+            "conceptType": "Gene",
+            "name": "BRAF",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000157764",
+                  "code": "ENSG00000157764",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000157764"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:673",
+                  "code": "673",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/673"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004333.6",
+                  "code": "NM_004333.6",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "7q34"
+              },
+              {
+                "name": "location_sortable",
+                "value": "07q34"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:1097",
+              "code": "HGNC:1097",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "7"
+          },
+          {
+            "name": "start_position",
+            "value": 140453136
+          },
+          {
+            "name": "end_position",
+            "value": 140453137
+          },
+          {
+            "name": "reference_allele",
+            "value": "AC"
+          },
+          {
+            "name": "alternate_allele",
+            "value": "TT"
+          },
+          {
+            "name": "cdna_change",
+            "value": "c.1798_1799GT>AA"
+          },
+          {
+            "name": "protein_change",
+            "value": "p.V600K"
+          },
+          {
+            "name": "variant_annotation",
+            "value": "Missense"
+          },
+          {
+            "name": "exon",
+            "value": 15
+          },
+          {
+            "name": "rsid",
+            "value": "rs121913227"
+          },
+          {
+            "name": "hgvsg",
+            "value": "7:g.140453136_140453137delinsTT"
+          },
+          {
+            "name": "hgvsc",
+            "value": "ENST00000288602.6:c.1798_1799delinsAA"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 40,
+      "conceptType": "Disease",
+      "name": "Melanoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:MEL",
+        "code": "MEL",
+        "name": "Melanoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MEL"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 17,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 21,
+          "conceptType": "Drug",
+          "name": "Cobimetinib",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1722365",
+                "code": "1722365",
+                "name": "cobimetinib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1722365"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:37395721",
+                "code": "37395721",
+                "name": "Cobimetinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/37395721"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:715257001",
+                "code": "715257001",
+                "name": "Cobimetinib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=715257001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:35605804",
+                "code": "35605804",
+                "name": "cobimetinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/35605804"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "MEK inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C68923",
+            "code": "C68923",
+            "name": "Cobimetinib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68923"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "conceptType": "Drug",
+          "name": "Vemurafenib",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1147220",
+                "code": "1147220",
+                "name": "vemurafenib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147220"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45765787",
+                "code": "45765787",
+                "name": "Vemurafenib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45765787"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:702805007",
+                "code": "702805007",
+                "name": "Vemurafenib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702805007&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:40241937",
+                "code": "40241937",
+                "name": "vemurafenib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/40241937"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "B-RAF inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C64768",
+            "code": "C64768",
+            "name": "Vemurafenib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C64768"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

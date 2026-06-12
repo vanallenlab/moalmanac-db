@@ -1,0 +1,611 @@
+{
+  "id": 994,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized panitumumab in combination with FOLFIRI for the second-line treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRPC) who have received first-line fluoropyrimidine-based chemotherapy (excluding irinotecan). Panitumumab's product information further states that evidence of wild-type RAS (KRAS and NRAS) status is required before initiating treatment with panitumumab and that mutational status should be deteremined by an experienced laboratory using validated test methods for detection of KRAS (exons 2, 3, and 4) and NRAS (exons 2, 3, and 4) variants.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.vectibix",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Vectibix (panitumumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Amgen Europe B.V. Vectibix (panitumumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/vectibix-epar-product-information_en.pdf. Revised July 2022. Accessed March 28, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/vectibix-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/vectibix"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Amgen Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Vectibix",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "panitumumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-06-18",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-07-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.vectibix:1",
+    "indication": "Vectibix is indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC) in second-line in combination with FOLFIRI for patients who have received first-line fluoropyrimidine-based chemotherapy (excluding irinotecan).",
+    "initial_approval_date": "2011-11-10",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/vectibix-h-c-741-ii-0017-epar-assessment-report-variation_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized panitumumab in combination with FOLFIRI for the second-line treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRPC) who have received first-line fluoropyrimidine-based chemotherapy (excluding irinotecan). Panitumumab's product information further states that evidence of wild-type RAS (KRAS and NRAS) status is required before initiating treatment with panitumumab and that mutational status should be deteremined by an experienced laboratory using validated test methods for detection of KRAS (exons 2, 3, and 4) and NRAS (exons 2, 3, and 4) variants.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "Colorectal cancer",
+    "raw_therapeutics": "Vectibix (panitumumab)",
+    "document": {
+      "id": "doc:ema.vectibix",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Vectibix (panitumumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Amgen Europe B.V. Vectibix (panitumumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/vectibix-epar-product-information_en.pdf. Revised July 2022. Accessed March 28, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/vectibix-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/vectibix"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Amgen Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Vectibix",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "panitumumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-06-18",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-07-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 691,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 25,
+        "type": "CategoricalVariant",
+        "name": "Wild type KRAS",
+        "genes": [
+          {
+            "id": 31,
+            "conceptType": "Gene",
+            "name": "KRAS",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000133703",
+                  "code": "ENSG00000133703",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000133703"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:3845",
+                  "code": "3845",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/3845"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004985.5",
+                  "code": "NM_004985.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "12p12.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "12p12.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:6407",
+              "code": "HGNC:6407",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "type": "CategoricalVariant",
+        "name": "Wild type NRAS",
+        "genes": [
+          {
+            "id": 33,
+            "conceptType": "Gene",
+            "name": "NRAS",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000213281",
+                  "code": "ENSG00000213281",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000213281"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:4893",
+                  "code": "4893",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/4893"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_002524.5",
+                  "code": "NM_002524.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_002524.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "1p13.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "01p13.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:7989",
+              "code": "HGNC:7989",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Wild type"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 15,
+      "conceptType": "Disease",
+      "name": "Colorectal Adenocarcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:COADREAD",
+        "code": "COADREAD",
+        "name": "Colorectal Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=COADREAD"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 141,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 97,
+          "conceptType": "Drug",
+          "name": "Panitumumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:263034",
+                "code": "263034",
+                "name": "panitumumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=263034"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:19100985",
+                "code": "19100985",
+                "name": "panitumumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/19100985"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:423259008",
+                "code": "423259008",
+                "name": "Panitumumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=423259008&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4310440",
+                "code": "4310440",
+                "name": "Panitumumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4310440"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "EGFR inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1857",
+            "code": "C1857",
+            "name": "Panitumumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1857"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "conceptType": "Drug",
+          "name": "Irinotecan",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:51499",
+                "code": "51499",
+                "name": "irinotecan",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=51499"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4156721",
+                "code": "4156721",
+                "name": "Irinotecan",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4156721"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:372538008",
+                "code": "372538008",
+                "name": "Irinotecan",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=372538008&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1367268",
+                "code": "1367268",
+                "name": "irinotecan",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1367268"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Topoisomerase I inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C62040",
+            "code": "C62040",
+            "name": "Irinotecan",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62040"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "conceptType": "Drug",
+          "name": "Fluorouracil",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:4492",
+                "code": "4492",
+                "name": "fluorouracil",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4492"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4300009",
+                "code": "4300009",
+                "name": "Fluorouracil",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4300009"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387172005",
+                "code": "387172005",
+                "name": "Fluorouracil",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387172005&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:955632",
+                "code": "955632",
+                "name": "fluorouracil",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/955632"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Thymidylate synthase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C505",
+            "code": "C505",
+            "name": "Fluorouracil",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

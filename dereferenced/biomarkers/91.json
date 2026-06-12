@@ -1,0 +1,127 @@
+{
+  "id": 91,
+  "type": "CategoricalVariant",
+  "name": "PTEN nonsense variants",
+  "genes": [
+    {
+      "id": 43,
+      "conceptType": "Gene",
+      "name": "PTEN",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000171862",
+            "code": "ENSG00000171862",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000171862"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:5728",
+            "code": "5728",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/5728"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000314.8",
+            "code": "NM_000314.8",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "10q23.31"
+        },
+        {
+          "name": "location_sortable",
+          "value": "10q23.31"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:9588",
+        "code": "HGNC:9588",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Somatic Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "10"
+    },
+    {
+      "name": "start_position",
+      "value": null
+    },
+    {
+      "name": "end_position",
+      "value": null
+    },
+    {
+      "name": "reference_allele",
+      "value": null
+    },
+    {
+      "name": "alternate_allele",
+      "value": null
+    },
+    {
+      "name": "cdna_change",
+      "value": null
+    },
+    {
+      "name": "protein_change",
+      "value": null
+    },
+    {
+      "name": "variant_annotation",
+      "value": "Nonsense"
+    },
+    {
+      "name": "exon",
+      "value": null
+    },
+    {
+      "name": "rsid",
+      "value": null
+    },
+    {
+      "name": "hgvsg",
+      "value": null
+    },
+    {
+      "name": "hgvsc",
+      "value": null
+    },
+    {
+      "name": "requires_oncogenic",
+      "value": true
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

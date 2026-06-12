@@ -1,0 +1,23 @@
+{
+  "id": 20,
+  "conceptType": "Disease",
+  "name": "Follicular Lymphoma",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:FL",
+    "code": "FL",
+    "name": "Follicular Lymphoma",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=FL"
+    ]
+  }
+}

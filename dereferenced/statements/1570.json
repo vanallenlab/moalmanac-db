@@ -1,0 +1,409 @@
+{
+  "id": 1570,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS >= 1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
+  "contributions": [
+    {
+      "id": 52,
+      "type": "Contribution",
+      "description": "This indication received initial traditional approval from the U.S. FDA on 2026-02-10.",
+      "date": "2026-02-10",
+      "contributor": {
+        "id": "fda",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Food and Drug Administration",
+        "description": "Regulatory agency that approves drugs for use in the United States."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.keytruda",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf. Revised February 2026. Accessed March 2, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Sharp & Dohme Corp.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Keytruda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pembrolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2014-09-04",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125514,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2026-02-10",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.keytruda:17",
+    "indication": "KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS >= 1) as determined by an FDA-authorized test, and who have recieved one or two prior systemic treatment regimens.",
+    "initial_approval_date": "2026-02-10",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
+    "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS >= 1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
+    "raw_biomarkers": "PD-L1 (CPS >= 1)",
+    "raw_cancer_type": "epithelial ovarian, fallopian tube, or primary peritoneal carcinoma",
+    "raw_therapeutics": "keytruda in combination with paclitaxel, with or without bevacizumab",
+    "document": {
+      "id": "doc:fda.keytruda",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf. Revised February 2026. Accessed March 2, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Sharp & Dohme Corp.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Keytruda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pembrolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2014-09-04",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125514,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2026-02-10",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 909,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 42,
+        "type": "CategoricalVariant",
+        "name": "PD-L1 (CPS) >= 1",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "PD-L1"
+          },
+          {
+            "name": "unit",
+            "value": "Combined Positive Score (CPS)"
+          },
+          {
+            "name": "equality",
+            "value": ">="
+          },
+          {
+            "name": "value",
+            "value": 1
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 54,
+      "conceptType": "Disease",
+      "name": "Peritoneal Serous Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:PSEC",
+        "code": "PSEC",
+        "name": "Peritoneal Serous Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PSEC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 63,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 35,
+          "conceptType": "Drug",
+          "name": "Paclitaxel",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:56946",
+                "code": "56946",
+                "name": "paclitaxel",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4306859",
+                "code": "4306859",
+                "name": "Paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4306859"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387374002",
+                "code": "387374002",
+                "name": "Paclitaxel",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387374002&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1378382",
+                "code": "1378382",
+                "name": "paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1378382"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Taxane-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1411",
+            "code": "C1411",
+            "name": "Paclitaxel",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
+            ]
+          }
+        },
+        {
+          "id": 48,
+          "conceptType": "Drug",
+          "name": "Pembrolizumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1547545",
+                "code": "1547545",
+                "name": "pembrolizumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45775965",
+                "code": "45775965",
+                "name": "pembrolizumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45775965"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:716125002",
+                "code": "716125002",
+                "name": "Pembrolizumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716125002&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:37396350",
+                "code": "37396350",
+                "name": "Pembrolizumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/37396350"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PD-1/PD-L1 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C106432",
+            "code": "C106432",
+            "name": "Pembrolizumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

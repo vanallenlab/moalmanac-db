@@ -908,7 +908,7 @@
   {
     "id": 19,
     "type": "CategoricalVariant",
-    "name": "EGFR oncogenic variants",
+    "name": "EGFR activating variants",
     "genes": [
       17
     ],
@@ -1066,7 +1066,7 @@
   {
     "id": 23,
     "type": "CategoricalVariant",
-    "name": "ERBB2 oncogenic variants",
+    "name": "ERBB2 activating variants",
     "genes": [
       18
     ],
@@ -2261,7 +2261,7 @@
   {
     "id": 58,
     "type": "CategoricalVariant",
-    "name": "ESR1 oncogenic variants",
+    "name": "ESR1 activating variants",
     "genes": [
       19
     ],
@@ -9082,6 +9082,146 @@
       {
         "name": "value",
         "value": 0.01
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "type": "CategoricalVariant",
+    "name": "EGFR TKD activating variants",
+    "genes": [
+      17
+    ],
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Somatic Variant"
+      },
+      {
+        "name": "chromosome",
+        "value": "7"
+      },
+      {
+        "name": "start_position",
+        "value": null
+      },
+      {
+        "name": "end_position",
+        "value": null
+      },
+      {
+        "name": "reference_allele",
+        "value": null
+      },
+      {
+        "name": "alternate_allele",
+        "value": null
+      },
+      {
+        "name": "cdna_change",
+        "value": null
+      },
+      {
+        "name": "protein_change",
+        "value": null
+      },
+      {
+        "name": "variant_annotation",
+        "value": null
+      },
+      {
+        "name": "exon",
+        "value": null
+      },
+      {
+        "name": "rsid",
+        "value": null
+      },
+      {
+        "name": "hgvsg",
+        "value": null
+      },
+      {
+        "name": "hgvsc",
+        "value": null
+      },
+      {
+        "name": "requires_oncogenic",
+        "value": true
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "type": "CategoricalVariant",
+    "name": "VHL pathogenic variants",
+    "genes": [
+      63
+    ],
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Germline Variant"
+      },
+      {
+        "name": "chromosome",
+        "value": "3"
+      },
+      {
+        "name": "start_position",
+        "value": null
+      },
+      {
+        "name": "end_position",
+        "value": null
+      },
+      {
+        "name": "reference_allele",
+        "value": null
+      },
+      {
+        "name": "alternate_allele",
+        "value": null
+      },
+      {
+        "name": "cdna_change",
+        "value": null
+      },
+      {
+        "name": "protein_change",
+        "value": null
+      },
+      {
+        "name": "variant_annotation",
+        "value": null
+      },
+      {
+        "name": "exon",
+        "value": null
+      },
+      {
+        "name": "rsid",
+        "value": null
+      },
+      {
+        "name": "hgvsg",
+        "value": null
+      },
+      {
+        "name": "hgvsc",
+        "value": null
+      },
+      {
+        "name": "requires_pathogenic",
+        "value": true
       },
       {
         "name": "_present",

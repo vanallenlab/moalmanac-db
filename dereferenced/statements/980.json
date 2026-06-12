@@ -1,0 +1,430 @@
+{
+  "id": 980,
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized arsenic trioxide for induction of remission, and consolidation in adult patients with either newly diagnosed low-to-intermediate risk acute promyelocytic leukemia (APL) (white blood cell count, <= 10 x 10^3 / ul) in combination with all-trans-retinoic acid (ATRA) or relapsed / refractory acute promyelocytic leukemia (APL) (previous treatment should have included a retinoid and chemotherapy). Both contexts should be characterized by the presence of the t(15;17) translocation and/or the presence of the promyelocytic leukemia / retinoic-acid-receptor-alpha (PML/RAR-alpha) gene.",
+  "contributions": [
+    {
+      "id": 13,
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema.trisenox",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Trisenox (arsenic trioxide) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Teva B.V. Trisenox (arsenic trioxide) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/trisenox-epar-product-information_en.pdf. Revised May 2023. Accessed March 25, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/trisenox-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/trisenox"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Teva B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Trisenox",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "arsenic trioxide",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-10-08",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-05-25",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:ema.trisenox:0",
+    "indication": "RISENOX is indicated for induction of remission, and consolidation in adult patients with either newly diagnosed low-to-intermediate risk acute promyelocytic leukemia (APL) (white blood cell count, <= 10 x 10^3 / ul) in combination with all-trans-retinoic acid (ATRA) or relapsed / refractory acute promyelocytic leukemia (APL) (previous treatment should have included a retinoid and chemotherapy). Both contexts should be characterized by the presence of the t(15;17) translocation and/or the presence of the promyelocytic leukemia / retinoic-acid-receptor-alpha (PML/RAR-alpha) gene.",
+    "initial_approval_date": "2016-11-14",
+    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/trisenox-h-c-388-ii-0058-epar-assessment-report-variation_en.pdf",
+    "description": "The European Medicines Agency (EMA) has authorized arsenic trioxide for induction of remission, and consolidation in adult patients with either newly diagnosed low-to-intermediate risk acute promyelocytic leukemia (APL) (white blood cell count, <= 10 x 10^3 / ul) in combination with all-trans-retinoic acid (ATRA) or relapsed / refractory acute promyelocytic leukemia (APL) (previous treatment should have included a retinoid and chemotherapy). Both contexts should be characterized by the presence of the t(15;17) translocation and/or the presence of the promyelocytic leukemia / retinoic-acid-receptor-alpha (PML/RAR-alpha) gene.",
+    "raw_biomarkers": null,
+    "raw_cancer_type": "acute promyelocytic leukaemia",
+    "raw_therapeutics": "Trisenox (arsenic trioxide)",
+    "document": {
+      "id": "doc:ema.trisenox",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Trisenox (arsenic trioxide) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Teva B.V. Trisenox (arsenic trioxide) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/trisenox-epar-product-information_en.pdf. Revised May 2023. Accessed March 25, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/trisenox-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/trisenox"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Teva B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Trisenox",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "arsenic trioxide",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-10-08",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-05-25",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 28,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 79,
+        "type": "CategoricalVariant",
+        "name": "PML::RARA",
+        "genes": [
+          {
+            "id": 42,
+            "conceptType": "Gene",
+            "name": "PML",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000140464",
+                  "code": "ENSG00000140464",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000140464"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:5371",
+                  "code": "5371",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/5371"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_033238.3",
+                  "code": "NM_033238.3",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_033238.3"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "15q24.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "15q24.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:9113",
+              "code": "HGNC:9113",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9113"
+              ]
+            }
+          },
+          {
+            "id": 48,
+            "conceptType": "Gene",
+            "name": "RARA",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000131759",
+                  "code": "ENSG00000131759",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000131759"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:5914",
+                  "code": "5914",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/5914"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_000964.4",
+                  "code": "NM_000964.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000964.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "17q21.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "17q21.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:9864",
+              "code": "HGNC:9864",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9864"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Rearrangement"
+          },
+          {
+            "name": "rearrangement_type",
+            "value": "Fusion"
+          },
+          {
+            "name": "locus",
+            "value": null
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 10,
+      "conceptType": "Disease",
+      "name": "APL with PML-RARA",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:APLPMLRARA",
+        "code": "APLPMLRARA",
+        "name": "APL with PML-RARA",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=APLPMLRARA"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 93,
+      "conceptType": "Drug",
+      "name": "Arsenic trioxide",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:18330",
+            "code": "18330",
+            "name": "arsenic trioxide",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=18330"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:1333379",
+            "code": "1333379",
+            "name": "arsenic trioxide",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1333379"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:72251000",
+            "code": "72251000",
+            "name": "Arsenic trioxide",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=72251000&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:4218959",
+            "code": "4218959",
+            "name": "Arsenic trioxide",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/4218959"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PML::RARA inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C1005",
+        "code": "C1005",
+        "name": "Arsenic Trioxide",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1005"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

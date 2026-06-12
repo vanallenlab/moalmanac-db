@@ -1,0 +1,155 @@
+{
+  "id": 743,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 84,
+      "type": "CategoricalVariant",
+      "name": "17p deletion",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Copy Number (arm level)"
+        },
+        {
+          "name": "chromosome",
+          "value": "17"
+        },
+        {
+          "name": "arm",
+          "value": "p"
+        },
+        {
+          "name": "direction",
+          "value": "Deletion"
+        },
+        {
+          "name": "_present",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 84,
+    "conceptType": "Disease",
+    "name": "Chronic Lymphocytic Leukemia",
+    "mappings": [
+      {
+        "relation": "broadMatch",
+        "coding": {
+          "id": "oncotree:CLLSLL",
+          "code": "CLLSLL",
+          "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C3163",
+      "code": "C3163",
+      "name": "Chronic Lymphocytic Leukemia",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 113,
+    "conceptType": "Drug",
+    "name": "Zanubrutinib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2262435",
+          "code": "2262435",
+          "name": "zanubrutinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2262435"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:37497691",
+          "code": "37497691",
+          "name": "zanubrutinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/37497691"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:830162004",
+          "code": "830162004",
+          "name": "Zanubrutinib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=830162004&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:3666975",
+          "code": "3666975",
+          "name": "Zanubrutinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/3666975"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "BTK inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C141428",
+      "code": "C141428",
+      "name": "Zanubrutinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C141428"
+      ]
+    }
+  }
+}

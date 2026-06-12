@@ -1,0 +1,23 @@
+{
+  "id": 28,
+  "conceptType": "Disease",
+  "name": "Inflammatory Myofibroblastic Tumor",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:IMT",
+    "code": "IMT",
+    "name": "Inflammatory Myofibroblastic Tumor",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=IMT"
+    ]
+  }
+}

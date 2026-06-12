@@ -1,0 +1,412 @@
+{
+  "id": 2239,
+  "type": "Statement",
+  "description": "Health Canada approved osimertinib for the treatment of patients with locally advanced or metastatic EGFR T790M mutation-positive NSCLC whose disease has progressed on or after EGFR tyrosine kinase inhibitor (TKI) therapy.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.tagrisso",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Tagrisso (osimertinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "AstraZeneca Canada Inc. Tagrisso (osimertinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00080336.PDF. Revised April 2025. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00080336.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=94310"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Tagrisso",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "osimertinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2016-07-05",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.tagrisso:4",
+    "indication": "TAGRISSO (osimertinib) is indicated for the treatment of patients with locally advanced or metastatic EGFR T790M mutation-positive NSCLC whose disease has progressed on or after EGFR tyrosine kinase inhibitor (TKI) therapy.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved osimertinib for the treatment of patients with locally advanced or metastatic EGFR T790M mutation-positive NSCLC whose disease has progressed on or after EGFR tyrosine kinase inhibitor (TKI) therapy.",
+    "raw_biomarkers": "EGFR T790M",
+    "raw_cancer_type": "locally advanced or metastatic non-small cell lung cancer (NSCLC)",
+    "raw_therapeutics": "Tagrisso (osimertinib)",
+    "document": {
+      "id": "doc:hc.tagrisso",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Tagrisso (osimertinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "AstraZeneca Canada Inc. Tagrisso (osimertinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00080336.PDF. Revised April 2025. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00080336.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=94310"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Tagrisso",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "osimertinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2016-07-05",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 310,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 70,
+        "type": "CategoricalVariant",
+        "name": "EGFR p.T790M",
+        "genes": [
+          {
+            "id": 17,
+            "conceptType": "Gene",
+            "name": "EGFR",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000146648",
+                  "code": "ENSG00000146648",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000146648"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:1956",
+                  "code": "1956",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/1956"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_005228.5",
+                  "code": "NM_005228.5",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "7p11.2"
+              },
+              {
+                "name": "location_sortable",
+                "value": "07p11.2"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:3236",
+              "code": "HGNC:3236",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Somatic Variant"
+          },
+          {
+            "name": "chromosome",
+            "value": "7"
+          },
+          {
+            "name": "start_position",
+            "value": 55249071
+          },
+          {
+            "name": "end_position",
+            "value": 55249071
+          },
+          {
+            "name": "reference_allele",
+            "value": "C"
+          },
+          {
+            "name": "alternate_allele",
+            "value": "T"
+          },
+          {
+            "name": "cdna_change",
+            "value": "c.2369C>T"
+          },
+          {
+            "name": "protein_change",
+            "value": "p.T790M"
+          },
+          {
+            "name": "variant_annotation",
+            "value": "Missense"
+          },
+          {
+            "name": "exon",
+            "value": 20
+          },
+          {
+            "name": "rsid",
+            "value": "rs121434569"
+          },
+          {
+            "name": "hgvsg",
+            "value": "7:g.55249071C>T"
+          },
+          {
+            "name": "hgvsc",
+            "value": "ENST00000275493.2:c.2369C>T"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 47,
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:NSCLC",
+        "code": "NSCLC",
+        "name": "Non-Small Cell Lung Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 86,
+      "conceptType": "Drug",
+      "name": "Osimertinib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:1721560",
+            "code": "1721560",
+            "name": "osimertinib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1721560"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:35605522",
+            "code": "35605522",
+            "name": "osimertinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/35605522"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:716032009",
+            "code": "716032009",
+            "name": "Osimertinib",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716032009&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37396277",
+            "code": "37396277",
+            "name": "Osimertinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37396277"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "EGFR inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C116377",
+        "code": "C116377",
+        "name": "Osimertinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C116377"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

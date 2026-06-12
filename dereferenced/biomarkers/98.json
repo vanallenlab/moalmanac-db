@@ -1,0 +1,141 @@
+{
+  "id": 98,
+  "type": "CategoricalVariant",
+  "name": "FGFR3::BAIAP2L1",
+  "genes": [
+    {
+      "id": 24,
+      "conceptType": "Gene",
+      "name": "FGFR3",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000068078",
+            "code": "ENSG00000068078",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000068078"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:2261",
+            "code": "2261",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/2261"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000142.5",
+            "code": "NM_000142.5",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000142.5"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "4p16.3"
+        },
+        {
+          "name": "location_sortable",
+          "value": "04p16.3"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:3690",
+        "code": "HGNC:3690",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3690"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "conceptType": "Gene",
+      "name": "BAIAP2L1",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000006453",
+            "code": "ENSG00000006453",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000006453"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:55971",
+            "code": "55971",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/55971"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_018842.5",
+            "code": "NM_018842.5",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_018842.5"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "7q21.3-q22.1"
+        },
+        {
+          "name": "location_sortable",
+          "value": "07q21.3-q22.1"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:21649",
+        "code": "HGNC:21649",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:21649"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Rearrangement"
+    },
+    {
+      "name": "rearrangement_type",
+      "value": "Fusion"
+    },
+    {
+      "name": "locus",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": 32,
+  "type": "CategoricalVariant",
+  "name": "ABL1 p.T315I",
+  "genes": [
+    {
+      "id": 0,
+      "conceptType": "Gene",
+      "name": "ABL1",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000097007",
+            "code": "ENSG00000097007",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000097007"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:25",
+            "code": "25",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/25"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_005157.6",
+            "code": "NM_005157.6",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "9q34.12"
+        },
+        {
+          "name": "location_sortable",
+          "value": "09q34.12"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:76",
+        "code": "HGNC:76",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Somatic Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "9"
+    },
+    {
+      "name": "start_position",
+      "value": 133748283
+    },
+    {
+      "name": "end_position",
+      "value": 133748283
+    },
+    {
+      "name": "reference_allele",
+      "value": "C"
+    },
+    {
+      "name": "alternate_allele",
+      "value": "T"
+    },
+    {
+      "name": "cdna_change",
+      "value": "c.944C>T"
+    },
+    {
+      "name": "protein_change",
+      "value": "p.T315I"
+    },
+    {
+      "name": "variant_annotation",
+      "value": "Missense"
+    },
+    {
+      "name": "exon",
+      "value": 5
+    },
+    {
+      "name": "rsid",
+      "value": "rs121913459"
+    },
+    {
+      "name": "hgvsg",
+      "value": "9:g.133748283C>T"
+    },
+    {
+      "name": "hgvsc",
+      "value": "ENST00000318560.5:c.944C>T"
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

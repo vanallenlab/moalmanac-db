@@ -1,0 +1,330 @@
+{
+  "id": 447,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 163,
+      "type": "CategoricalVariant",
+      "name": "FANCA pathogenic variants",
+      "genes": [
+        {
+          "id": 57,
+          "conceptType": "Gene",
+          "name": "FANCA",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000187741",
+                "code": "ENSG00000187741",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000187741"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:2175",
+                "code": "2175",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/2175"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_000135.4",
+                "code": "NM_000135.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_000135.4"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "16q24.3"
+            },
+            {
+              "name": "location_sortable",
+              "value": "16q24.3"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:3582",
+            "code": "HGNC:3582",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3582"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Germline Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "16"
+        },
+        {
+          "name": "start_position",
+          "value": null
+        },
+        {
+          "name": "end_position",
+          "value": null
+        },
+        {
+          "name": "reference_allele",
+          "value": null
+        },
+        {
+          "name": "alternate_allele",
+          "value": null
+        },
+        {
+          "name": "cdna_change",
+          "value": null
+        },
+        {
+          "name": "protein_change",
+          "value": null
+        },
+        {
+          "name": "variant_annotation",
+          "value": null
+        },
+        {
+          "name": "exon",
+          "value": null
+        },
+        {
+          "name": "rsid",
+          "value": null
+        },
+        {
+          "name": "hgvsg",
+          "value": null
+        },
+        {
+          "name": "hgvsc",
+          "value": null
+        },
+        {
+          "name": "requires_pathogenic",
+          "value": true
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 55,
+    "conceptType": "Disease",
+    "name": "Prostate Adenocarcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:PRAD",
+      "code": "PRAD",
+      "name": "Prostate Adenocarcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PRAD"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 44,
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": 138,
+        "conceptType": "Drug",
+        "name": "Enzalutamide",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1307298",
+              "code": "1307298",
+              "name": "enzalutamide",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1307298"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:42900250",
+              "code": "42900250",
+              "name": "enzalutamide",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/42900250"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:703125003",
+              "code": "703125003",
+              "name": "Enzalutamide",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=703125003&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:45773162",
+              "code": "45773162",
+              "name": "Enzalutamide",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45773162"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Antiandrogen"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Hormone therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C71744",
+          "code": "C71744",
+          "name": "Enzalutamide",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71744"
+          ]
+        }
+      },
+      {
+        "id": 87,
+        "conceptType": "Drug",
+        "name": "Talazoparib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:2099704",
+              "code": "2099704",
+              "name": "talazoparib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2099704"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:35201068",
+              "code": "35201068",
+              "name": "talazoparib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/35201068"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:782199007",
+              "code": "782199007",
+              "name": "Talazoparib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=782199007&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:36684109",
+              "code": "36684109",
+              "name": "Talazoparib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/36684109"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "PARP inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "ncit:C95733",
+          "code": "C95733",
+          "name": "Talazoparib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95733"
+          ]
+        }
+      }
+    ]
+  }
+}

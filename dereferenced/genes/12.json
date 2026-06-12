@@ -1,0 +1,58 @@
+{
+  "id": 12,
+  "conceptType": "Gene",
+  "name": "CASP7",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000165806",
+        "code": "ENSG00000165806",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000165806"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:840",
+        "code": "840",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/840"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_001227.5",
+        "code": "NM_001227.5",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_001227.5"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "10q25.3"
+    },
+    {
+      "name": "location_sortable",
+      "value": "10q25.3"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:1508",
+    "code": "HGNC:1508",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1508"
+    ]
+  }
+}

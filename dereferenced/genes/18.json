@@ -1,0 +1,58 @@
+{
+  "id": 18,
+  "conceptType": "Gene",
+  "name": "ERBB2",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000141736",
+        "code": "ENSG00000141736",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000141736"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:2064",
+        "code": "2064",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/2064"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_004448.4",
+        "code": "NM_004448.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004448.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "17q12"
+    },
+    {
+      "name": "location_sortable",
+      "value": "17q12"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:3430",
+    "code": "HGNC:3430",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": 22,
+  "conceptType": "Gene",
+  "name": "FGFR1",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000077782",
+        "code": "ENSG00000077782",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000077782"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:2260",
+        "code": "2260",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/2260"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_023110.3",
+        "code": "NM_023110.3",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_023110.3"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "8p11.23"
+    },
+    {
+      "name": "location_sortable",
+      "value": "08p11.23"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:3688",
+    "code": "HGNC:3688",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3688"
+    ]
+  }
+}

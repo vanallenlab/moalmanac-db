@@ -1,0 +1,23 @@
+{
+  "id": 50,
+  "conceptType": "Disease",
+  "name": "Ovarian Cancer, Other",
+  "mappings": [],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:OOVC",
+    "code": "OOVC",
+    "name": "Ovarian Cancer, Other",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=OOVC"
+    ]
+  }
+}

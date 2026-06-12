@@ -1,0 +1,127 @@
+{
+  "id": 158,
+  "type": "CategoricalVariant",
+  "name": "TSC1 oncogenic variants",
+  "genes": [
+    {
+      "id": 54,
+      "conceptType": "Gene",
+      "name": "TSC1",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000165699",
+            "code": "ENSG00000165699",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000165699"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:7248",
+            "code": "7248",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/7248"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_000368.5",
+            "code": "NM_000368.5",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000368.5"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "9q34.13"
+        },
+        {
+          "name": "location_sortable",
+          "value": "09q34.13"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:12362",
+        "code": "HGNC:12362",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12362"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Somatic Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "9"
+    },
+    {
+      "name": "start_position",
+      "value": null
+    },
+    {
+      "name": "end_position",
+      "value": null
+    },
+    {
+      "name": "reference_allele",
+      "value": null
+    },
+    {
+      "name": "alternate_allele",
+      "value": null
+    },
+    {
+      "name": "cdna_change",
+      "value": null
+    },
+    {
+      "name": "protein_change",
+      "value": null
+    },
+    {
+      "name": "variant_annotation",
+      "value": null
+    },
+    {
+      "name": "exon",
+      "value": null
+    },
+    {
+      "name": "rsid",
+      "value": null
+    },
+    {
+      "name": "hgvsg",
+      "value": null
+    },
+    {
+      "name": "hgvsc",
+      "value": null
+    },
+    {
+      "name": "requires_oncogenic",
+      "value": true
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

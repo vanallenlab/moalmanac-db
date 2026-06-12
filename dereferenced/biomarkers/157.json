@@ -1,0 +1,83 @@
+{
+  "id": 157,
+  "type": "CategoricalVariant",
+  "name": "t(KMT2A;v)",
+  "genes": [
+    {
+      "id": 53,
+      "conceptType": "Gene",
+      "name": "KMT2A",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000118058",
+            "code": "ENSG00000118058",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000118058"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:4297",
+            "code": "4297",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/4297"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_001197104.2",
+            "code": "NM_001197104.2",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_001197104.2"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "11q23.3"
+        },
+        {
+          "name": "location_sortable",
+          "value": "11q23.3"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:7131",
+        "code": "HGNC:7131",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7131"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Rearrangement"
+    },
+    {
+      "name": "rearrangement_type",
+      "value": "Translocation"
+    },
+    {
+      "name": "locus",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

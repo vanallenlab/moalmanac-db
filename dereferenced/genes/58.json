@@ -1,0 +1,58 @@
+{
+  "id": 58,
+  "conceptType": "Gene",
+  "name": "MLH1",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ensembl:ensg00000076242",
+        "code": "ENSG00000076242",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000076242"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "ncbi:4292",
+        "code": "4292",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/4292"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "refseq:NM_000249.4",
+        "code": "NM_000249.4",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "location",
+      "value": "3p22.2"
+    },
+    {
+      "name": "location_sortable",
+      "value": "03p22.2"
+    }
+  ],
+  "primaryCoding": {
+    "id": "hgnc:7127",
+    "code": "HGNC:7127",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
+    ]
+  }
+}

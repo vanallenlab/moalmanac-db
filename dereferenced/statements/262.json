@@ -1,0 +1,411 @@
+{
+  "id": 262,
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration (FDA) granted approval to nivolumab in combination with ipilimumab for the first-line treatment of adult patients with metastatic non-small cell lung cancer expressing PD-L1 (>= 1%) as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda.opdivo",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Opdivo (nivolumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bristol-Myers Squibb Company. Opdivo (nivolumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s129lbl.pdf. Revised April 2025. Accessed April 30, 2025.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s129lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125554"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bristol-Myers Squibb Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Opdivo",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "nivolumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2014-12-22",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125554,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:fda.opdivo:1",
+    "indication": "OPDIVO is a programmed death receptor-1 (PD-1)-blocking antibody indicated for the treatment of adult patients with metastatic non-small cell lung cancer expressing PD-L1 (>= 1%) as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations, as first-line treatment in combination with ipilimumab.",
+    "initial_approval_date": "2020-05-15",
+    "initial_approval_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125554s080lbl.pdf",
+    "description": "The U.S. Food and Drug Administration (FDA) granted approval to nivolumab in combination with ipilimumab for the first-line treatment of adult patients with metastatic non-small cell lung cancer expressing PD-L1 (>= 1%) as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations.",
+    "raw_biomarkers": "PD-L1 (>= 1%)",
+    "raw_cancer_type": "non-small cell lung cancer",
+    "raw_therapeutics": "nivolumab in combination with ipilimumab",
+    "date_regular_approval": "2020-05-15",
+    "date_accelerated_approval": null,
+    "document": {
+      "id": "doc:fda.opdivo",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Opdivo (nivolumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bristol-Myers Squibb Company. Opdivo (nivolumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s129lbl.pdf. Revised April 2025. Accessed April 30, 2025.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s129lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125554"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bristol-Myers Squibb Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Opdivo",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "nivolumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2014-12-22",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125554,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 230,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 33,
+        "type": "CategoricalVariant",
+        "name": "PD-L1 >= 1%",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "PD-L1"
+          },
+          {
+            "name": "unit",
+            "value": "Tumor Proportion Score (TPS)"
+          },
+          {
+            "name": "equality",
+            "value": ">="
+          },
+          {
+            "name": "value",
+            "value": 0.01
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 47,
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:NSCLC",
+        "code": "NSCLC",
+        "name": "Non-Small Cell Lung Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 29,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 71,
+          "conceptType": "Drug",
+          "name": "Ipilimumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1094833",
+                "code": "1094833",
+                "name": "ipilimumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1094833"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:40238188",
+                "code": "40238188",
+                "name": "ipilimumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/40238188"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:697995005",
+                "code": "697995005",
+                "name": "Ipilimumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=697995005&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:44783810",
+                "code": "44783810",
+                "name": "Ipilimumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/44783810"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CTLA-4 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C2654",
+            "code": "C2654",
+            "name": "Ipilimumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2654"
+            ]
+          }
+        },
+        {
+          "id": 72,
+          "conceptType": "Drug",
+          "name": "Nivolumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:1597876",
+                "code": "1597876",
+                "name": "nivolumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597876"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45892628",
+                "code": "45892628",
+                "name": "nivolumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45892628"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:704191007",
+                "code": "704191007",
+                "name": "Nivolumab",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704191007&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:45766924",
+                "code": "45766924",
+                "name": "Nivolumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45766924"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PD-1/PD-L1 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C68814",
+            "code": "C68814",
+            "name": "Nivolumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

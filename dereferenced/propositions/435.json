@@ -1,0 +1,237 @@
+{
+  "id": 435,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 151,
+      "type": "CategoricalVariant",
+      "name": "EZH2 p.A692V",
+      "genes": [
+        {
+          "id": 20,
+          "conceptType": "Gene",
+          "name": "EZH2",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000106462",
+                "code": "ENSG00000106462",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000106462"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:2146",
+                "code": "2146",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/2146"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_004456.5",
+                "code": "NM_004456.5",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004456.5"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "7q36.1"
+            },
+            {
+              "name": "location_sortable",
+              "value": "07q36.1"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:3527",
+            "code": "HGNC:3527",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "7"
+        },
+        {
+          "name": "start_position",
+          "value": 148506437
+        },
+        {
+          "name": "end_position",
+          "value": 148506437
+        },
+        {
+          "name": "reference_allele",
+          "value": "G"
+        },
+        {
+          "name": "alternate_allele",
+          "value": "A"
+        },
+        {
+          "name": "cdna_change",
+          "value": "c.2075C>T"
+        },
+        {
+          "name": "protein_change",
+          "value": "p.A692V"
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Missense"
+        },
+        {
+          "name": "exon",
+          "value": "18/20"
+        },
+        {
+          "name": "rsid",
+          "value": "rs2129467667"
+        },
+        {
+          "name": "hgvsg",
+          "value": "7:g.148506437G>A"
+        },
+        {
+          "name": "hgvsc",
+          "value": "ENST00000320356.2:c.2075C>T"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 20,
+    "conceptType": "Disease",
+    "name": "Follicular Lymphoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:FL",
+      "code": "FL",
+      "name": "Follicular Lymphoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=FL"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 137,
+    "conceptType": "Drug",
+    "name": "Tazemetostat",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2274378",
+          "code": "2274378",
+          "name": "tazemetostat",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2274378"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:37498602",
+          "code": "37498602",
+          "name": "tazemetostat",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/37498602"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:840405005",
+          "code": "840405005",
+          "name": "Tazemetostat",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=840405005&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:3666985",
+          "code": "3666985",
+          "name": "Tazemetostat",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/3666985"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "EZH2 inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C107506",
+      "code": "C107506",
+      "name": "Tazemetostat",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C107506"
+      ]
+    }
+  }
+}

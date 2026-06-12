@@ -1,0 +1,374 @@
+{
+  "id": 2207,
+  "type": "Statement",
+  "description": "Health Canada approved entrectinib for the treatment of patients with ROS1-positive locally advanced or metastatic non-small cell lung cancer (NSCLC) not previously treated with crizotinib.",
+  "contributions": [
+    {
+      "id": 0,
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc.rozlytrek",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Rozlytrek (entrectinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Rozlytrek (entrectinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00073345.PDF. Revised November 2023. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00073345.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=98496"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Rozlytrek",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "entrectinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2020-02-07",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-11-09",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hc.rozlytrek:1",
+    "indication": "ROZLYTREK (entrectinib) is indicated for the treatment of patients with ROS1-positive locally advanced or metastatic non-small cell lung cancer (NSCLC) not previously treated with crizotinib.",
+    "initial_approval_date": null,
+    "initial_approval_url": null,
+    "description": "Health Canada approved entrectinib for the treatment of patients with ROS1-positive locally advanced or metastatic non-small cell lung cancer (NSCLC) not previously treated with crizotinib.",
+    "raw_biomarkers": "ROS1-positive",
+    "raw_cancer_type": "locally advanced or metastatic non-small cell lung cancer (NSCLC)",
+    "raw_therapeutics": "Rozlytrek (entrectinib)",
+    "document": {
+      "id": "doc:hc.rozlytrek",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Rozlytrek (entrectinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Hoffmann-La Roche Limited. Rozlytrek (entrectinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00073345.PDF. Revised November 2023. Accessed June 2025.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00073345.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=98496"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Hoffmann-La Roche Limited",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Rozlytrek",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "entrectinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2020-02-07",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-11-09",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 120,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 62,
+        "type": "CategoricalVariant",
+        "name": "v::ROS1",
+        "genes": [
+          {
+            "id": 50,
+            "conceptType": "Gene",
+            "name": "ROS1",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000047936",
+                  "code": "ENSG00000047936",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000047936"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:6098",
+                  "code": "6098",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/6098"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_001378902.1",
+                  "code": "NM_001378902.1",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_001378902.1"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "6q22.1"
+              },
+              {
+                "name": "location_sortable",
+                "value": "06q22.1"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:10261",
+              "code": "HGNC:10261",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:10261"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Rearrangement"
+          },
+          {
+            "name": "rearrangement_type",
+            "value": "Fusion"
+          },
+          {
+            "name": "locus",
+            "value": null
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 47,
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:NSCLC",
+        "code": "NSCLC",
+        "name": "Non-Small Cell Lung Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 80,
+      "conceptType": "Drug",
+      "name": "Entrectinib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "rxcui:2197862",
+            "code": "2197862",
+            "name": "entrectinib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2197862"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37496447",
+            "code": "37496447",
+            "name": "entrectinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37496447"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "sctid:789356007",
+            "code": "789356007",
+            "name": "Entrectinib",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=789356007&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "omop:37311552",
+            "code": "37311552",
+            "name": "Entrectinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37311552"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "ALK inhibition",
+            "ROS1 inhibition",
+            "NTRK inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "ncit:C114984",
+        "code": "C114984",
+        "name": "Entrectinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C114984"
+        ]
+      }
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}

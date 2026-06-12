@@ -1,0 +1,237 @@
+{
+  "id": 427,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 16,
+      "type": "CategoricalVariant",
+      "name": "BRAF p.V600E",
+      "genes": [
+        {
+          "id": 8,
+          "conceptType": "Gene",
+          "name": "BRAF",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ensembl:ensg00000157764",
+                "code": "ENSG00000157764",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000157764"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "ncbi:673",
+                "code": "673",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/673"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "refseq:NM_004333.6",
+                "code": "NM_004333.6",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "7q34"
+            },
+            {
+              "name": "location_sortable",
+              "value": "07q34"
+            }
+          ],
+          "primaryCoding": {
+            "id": "hgnc:1097",
+            "code": "HGNC:1097",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Somatic Variant"
+        },
+        {
+          "name": "chromosome",
+          "value": "7"
+        },
+        {
+          "name": "start_position",
+          "value": 140453136
+        },
+        {
+          "name": "end_position",
+          "value": 140453136
+        },
+        {
+          "name": "reference_allele",
+          "value": "A"
+        },
+        {
+          "name": "alternate_allele",
+          "value": "T"
+        },
+        {
+          "name": "cdna_change",
+          "value": "c.1799T>A"
+        },
+        {
+          "name": "protein_change",
+          "value": "p.V600E"
+        },
+        {
+          "name": "variant_annotation",
+          "value": "Missense"
+        },
+        {
+          "name": "exon",
+          "value": 15
+        },
+        {
+          "name": "rsid",
+          "value": "rs113488022"
+        },
+        {
+          "name": "hgvsg",
+          "value": "7:g.140453136A>T"
+        },
+        {
+          "name": "hgvsc",
+          "value": "ENST00000288602.6:c.1799T>A"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 46,
+    "conceptType": "Disease",
+    "name": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:ECD",
+      "code": "ECD",
+      "name": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ECD"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 22,
+    "conceptType": "Drug",
+    "name": "Vemurafenib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:1147220",
+          "code": "1147220",
+          "name": "vemurafenib",
+          "system": "RxNorm",
+          "systemVersion": "20250602",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147220"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:45765787",
+          "code": "45765787",
+          "name": "Vemurafenib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/45765787"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:702805007",
+          "code": "702805007",
+          "name": "Vemurafenib",
+          "system": "SNOMED",
+          "systemVersion": "2026-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702805007&edition=MAIN/2026-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:40241937",
+          "code": "40241937",
+          "name": "vemurafenib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/40241937"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "B-RAF inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C64768",
+      "code": "C64768",
+      "name": "Vemurafenib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C64768"
+      ]
+    }
+  }
+}

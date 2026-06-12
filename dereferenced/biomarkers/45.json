@@ -1,0 +1,123 @@
+{
+  "id": 45,
+  "type": "CategoricalVariant",
+  "name": "KRAS p.G12C",
+  "genes": [
+    {
+      "id": 31,
+      "conceptType": "Gene",
+      "name": "KRAS",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ensembl:ensg00000133703",
+            "code": "ENSG00000133703",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000133703"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "ncbi:3845",
+            "code": "3845",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/3845"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "refseq:NM_004985.5",
+            "code": "NM_004985.5",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "12p12.1"
+        },
+        {
+          "name": "location_sortable",
+          "value": "12p12.1"
+        }
+      ],
+      "primaryCoding": {
+        "id": "hgnc:6407",
+        "code": "HGNC:6407",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Somatic Variant"
+    },
+    {
+      "name": "chromosome",
+      "value": "12"
+    },
+    {
+      "name": "start_position",
+      "value": 25398285
+    },
+    {
+      "name": "end_position",
+      "value": 25398285
+    },
+    {
+      "name": "reference_allele",
+      "value": "C"
+    },
+    {
+      "name": "alternate_allele",
+      "value": "A"
+    },
+    {
+      "name": "cdna_change",
+      "value": "c.34G>T"
+    },
+    {
+      "name": "protein_change",
+      "value": "p.G12C"
+    },
+    {
+      "name": "variant_annotation",
+      "value": "Missense"
+    },
+    {
+      "name": "exon",
+      "value": 2
+    },
+    {
+      "name": "rsid",
+      "value": "rs121913530"
+    },
+    {
+      "name": "hgvsg",
+      "value": "12:g.25398285C>A"
+    },
+    {
+      "name": "hgvsc",
+      "value": "ENST00000256078.4:c.34G>T"
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}
