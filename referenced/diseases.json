@@ -1398,5 +1398,21 @@
         "description": "Boolean value for if this tumor type is categorized as a solid tumor."
       }
     ]
+  },
+  {
+    "id": 99,
+    "conceptType": "Disease",
+    "name": "Uveal Melanoma",
+    "primary_coding_id": "oncotree:UM",
+    "mappings": [
+      "ncit:C7712"
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ]
   }
 ]
