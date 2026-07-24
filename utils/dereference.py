@@ -236,14 +236,15 @@ class BaseTable:
         """
         Writes each record in this table to its own JSON file in the given directory.
 
-        Each file is named `{record['id']}.json`.
+        Each file is named `{record['id']}.json`, with semicolons replaced by
+        underscores and spaces replaced by dashes.
 
         Args:
             output_dir (str): Directory path to write the individual record files into.
             quiet (bool): Suppress print statements if True.
         """
         for record in self.records:
-            filename = f"{record['id']}.json"
+            filename = f"{str(record['id']).replace(':', '_').replace(' ', '-')}.json"
             path = os.path.join(output_dir, filename)
             write.dictionary(data=record, keys_list=[], file=path, quiet=quiet)
 
@@ -256,8 +257,6 @@ class Agents(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the agent records.
     """
-
-    pass
 
 
 class Biomarkers(BaseTable):
@@ -283,8 +282,6 @@ class Codings(BaseTable):
     Attributes:
         records (list[dict]): A list of dictionaries representing the coding records.
     """
-
-    pass
 
 
 class Contributions(BaseTable):
@@ -668,8 +665,6 @@ class URLs(BaseTable):
         records (list[dict]): A list of dictionaries representing the url records.
     """
 
-    pass
-
 
 @dataclasses.dataclass
 class Database:
@@ -730,7 +725,10 @@ def populate_statement_description(statements: list[dict], indications: list[dic
             )
             if indication_record:
                 statement["description"] = indication_record["description"]
-    write.records(data=statements, file=os.path.join("referenced", "statements.json"))
+    write.records(
+        data=statements,
+        file=os.path.join("referenced", "statements.json"),
+    )
     return statements
 
 
@@ -777,6 +775,8 @@ def write_all_concepts(
     full-DB tables), dereferences each entity, and writes one JSON file per record to
     `dereferenced/<entity>/<id>.json`.
 
+    Semicolons in <id> will be replaced with underscores and spaces will be replaced with dashes.
+
     Args:
         input_paths (dict): Dictionary of paths to referenced JSON files.
         clear (bool): If True, remove existing JSON files from each output directory first.
@@ -787,33 +787,51 @@ def write_all_concepts(
             clear_output_dir(output_dir, quiet=quiet)
 
     db = Database(
-        agents=Agents(records=read.json_records(file=input_paths["agents"])),
+        agents=Agents(
+            records=read.json_records(file=input_paths["agents"]),
+        ),
         biomarkers=Biomarkers(
             records=read.json_records(file=input_paths["biomarkers"])
         ),
-        codings=Codings(records=read.json_records(file=input_paths["codings"])),
+        codings=Codings(
+            records=read.json_records(file=input_paths["codings"]),
+        ),
         contributions=Contributions(
             records=read.json_records(file=input_paths["contributions"])
         ),
-        diseases=Diseases(records=read.json_records(file=input_paths["diseases"])),
-        documents=Documents(records=read.json_records(file=input_paths["documents"])),
-        genes=Genes(records=read.json_records(file=input_paths["genes"])),
+        diseases=Diseases(
+            records=read.json_records(file=input_paths["diseases"]),
+        ),
+        documents=Documents(
+            records=read.json_records(file=input_paths["documents"]),
+        ),
+        genes=Genes(
+            records=read.json_records(file=input_paths["genes"]),
+        ),
         indications=Indications(
             records=read.json_records(file=input_paths["indications"])
         ),
-        mappings=Mappings(records=read.json_records(file=input_paths["mappings"])),
+        mappings=Mappings(
+            records=read.json_records(file=input_paths["mappings"]),
+        ),
         propositions=Propositions(
             records=read.json_records(file=input_paths["propositions"])
         ),
         statements=Statements(
             records=read.json_records(file=input_paths["statements"])
         ),
-        strengths=Strengths(records=read.json_records(file=input_paths["strengths"])),
-        therapies=Therapies(records=read.json_records(file=input_paths["therapies"])),
+        strengths=Strengths(
+            records=read.json_records(file=input_paths["strengths"]),
+        ),
+        therapies=Therapies(
+            records=read.json_records(file=input_paths["therapies"]),
+        ),
         therapy_groups=TherapyGroups(
             records=read.json_records(file=input_paths["therapy_groups"])
         ),
-        urls=URLs(records=read.json_records(file=input_paths["urls"])),
+        urls=URLs(
+            records=read.json_records(file=input_paths["urls"]),
+        ),
     )
 
     for attr, output_dir in _CONCEPT_DIRS:
