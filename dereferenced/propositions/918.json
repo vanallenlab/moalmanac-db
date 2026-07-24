@@ -1,0 +1,143 @@
+{
+  "id": 918,
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": 182,
+      "type": "CategoricalVariant",
+      "name": "HLA-A*02:01",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Haplotype genotype"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": 99,
+    "conceptType": "Disease",
+    "name": "Uveal Melanoma",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "ncit:C7712",
+          "code": "C7712",
+          "name": "Uveal Melanoma",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "25.01d",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7712"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "oncotree:UM",
+      "code": "UM",
+      "name": "Uveal Melanoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UM"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": 164,
+    "conceptType": "Drug",
+    "name": "Tebentafusp",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:2590743",
+          "code": "2590743",
+          "name": "tebentafusp",
+          "system": "RxNorm",
+          "systemVersion": "20250602",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2590743"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:1758886",
+          "code": "1758886",
+          "name": "tebentafusp",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1758886"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:1025311000122109",
+          "code": "1025311000122109",
+          "name": "Tebentafusp",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1025311000122109&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:1448506",
+          "code": "1448506",
+          "name": "Tebentafusp",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1448506"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "gp100-directed T-cell engagement"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C94208",
+      "code": "C94208",
+      "name": "Tebentafusp",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C94208"
+      ]
+    }
+  }
+}

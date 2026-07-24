@@ -1,0 +1,37 @@
+{
+  "id": 99,
+  "conceptType": "Disease",
+  "name": "Uveal Melanoma",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "ncit:C7712",
+        "code": "C7712",
+        "name": "Uveal Melanoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7712"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "oncotree:UM",
+    "code": "UM",
+    "name": "Uveal Melanoma",
+    "system": "https://oncotree.mskcc.org",
+    "systemVersion": "oncotree_2021_11_02",
+    "iris": [
+      "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UM"
+    ]
+  }
+}
