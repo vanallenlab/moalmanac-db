@@ -1,5 +1,5 @@
 Added entries:
-- (EMA) _ABL1_ p.T315I and sensitivity to ponatinib for patients with chronic myeloid leukaemia.
+- (EMA) _ABL1_ p.T315I and _BCR_::_ABL1_ and sensitivity to ponatinib for patients with chronic myeloid leukemia.
 - (EMA) _BCR_::_ABL1_ and sensitivity to ponatinib in combination with cytarabine, dexamethasone, methotrexate, prednisone, and vincristine for patients with acute lympoblastic leukemia (Ph+ ALL)
 - (EMA) CD22+ status and sensitivity to inotuzumab ozogamicin for patients with acute lymphoblastic leukemia.
 - (EMA) CD30+ status and sensitivity to brentuximab vedotin in combination with etoposide, cyclophosphamide, doxorubicin, dacarbazine, and dexamethasone (BrECADD) for patients with Hodgkin lymphoma.
@@ -11,4 +11,5 @@ Added entries:
 - (EMA) PD-L1 (CPS >= 1) and sensitivity to pembrolizumab in combination with paclitaxel, with or without bevacizumab, for the treatment of patients with epithelial ovarian, fallopian tube, or primary peritoneal carcinoma.
 
 Revised entries:
+- (EMA) _BCR_::_ABL1_ and sensitivity to asciminib for patients with chronic phase chronic myeloid leukemia removed an eligibility requirement of being previously treated with two or more tyrosine kinase inhibitors.
 - (EMA) _BRAF_ V600 and sensitivity to trametinib in combination with dabrafenib is now approved for adolescent patients aged 12 years and older with melanoma.
