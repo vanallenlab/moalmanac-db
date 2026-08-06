@@ -5,6 +5,10 @@ Added entries:
 - (EMA) CD30+ status and sensitivity to brentuximab vedotin in combination with etoposide, cyclophosphamide, doxorubicin, dacarbazine, and dexamethasone (BrECADD) for patients with Hodgkin lymphoma.
 - (EMA) _BRAF_ p.V600E and sensitivity to encorafenib in combination with cetuximab and FOLFOX for patients with colorectal cancer.
 - (EMA) _BRAF_ p.V600E and sensitivity to encorafenib in combination with cetuximab for patients with colorectal cancer.
+- (EMA) _BRAF_ p.V600E and sensitivity to trametinib in combination with dabrafenib for patients with differentiated thyroid cancer.
 - (EMA) _BRCA1/2_ germline or somatic variants and sensitivity to abiraterone acetate and niraparib (Akeega) in combination with prednisone or prednisolone for patients with metastatic hormone-sensitive prostate cancer.
 - (EMA) HER2+ (IHC3+) and sensitivity to trastuzumab deruxtecan for any solid tumor.
 - (EMA) PD-L1 (CPS >= 1) and sensitivity to pembrolizumab in combination with paclitaxel, with or without bevacizumab, for the treatment of patients with epithelial ovarian, fallopian tube, or primary peritoneal carcinoma.
+
+Revised entries:
+- (EMA) _BRAF_ V600 and sensitivity to trametinib in combination with dabrafenib is now approved for adolescent patients aged 12 years and older with melanoma.
