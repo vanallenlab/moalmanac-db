@@ -4,76 +4,45 @@
   "predicate": "predictSensitivityTo",
   "biomarkers": [
     {
-      "id": 1,
+      "id": 9,
       "type": "CategoricalVariant",
-      "name": "ER positive",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Estrogen receptor (ER)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "type": "CategoricalVariant",
-      "name": "ESR1 activating variants",
+      "name": "EGFR p.L858R",
       "genes": [
         {
-          "id": 19,
+          "id": 17,
           "conceptType": "Gene",
-          "name": "ESR1",
+          "name": "EGFR",
           "mappings": [
             {
               "relation": "exactMatch",
               "coding": {
-                "id": "ensembl:ensg00000091831",
-                "code": "ENSG00000091831",
+                "id": "ensembl:ensg00000146648",
+                "code": "ENSG00000146648",
                 "system": "https://www.ensembl.org",
                 "iris": [
-                  "https://www.ensembl.org/id/ENSG00000091831"
+                  "https://www.ensembl.org/id/ENSG00000146648"
                 ]
               }
             },
             {
               "relation": "exactMatch",
               "coding": {
-                "id": "ncbi:2099",
-                "code": "2099",
+                "id": "ncbi:1956",
+                "code": "1956",
                 "system": "https://www.ncbi.nlm.nih.gov/gene",
                 "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/2099"
+                  "https://www.ncbi.nlm.nih.gov/gene/1956"
                 ]
               }
             },
             {
               "relation": "relatedMatch",
               "coding": {
-                "id": "refseq:NM_000125.4",
-                "code": "NM_000125.4",
+                "id": "refseq:NM_005228.5",
+                "code": "NM_005228.5",
                 "system": "https://www.ncbi.nlm.nih.gov/nuccore",
                 "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_000125.4"
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
                 ]
               }
             }
@@ -81,19 +50,19 @@
           "extensions": [
             {
               "name": "location",
-              "value": "6q25.1-q25.2"
+              "value": "7p11.2"
             },
             {
               "name": "location_sortable",
-              "value": "06q25.1-q25.2"
+              "value": "07p11.2"
             }
           ],
           "primaryCoding": {
-            "id": "hgnc:3467",
-            "code": "HGNC:3467",
+            "id": "hgnc:3236",
+            "code": "HGNC:3236",
             "system": "https://genenames.org",
             "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
             ]
           }
         }
@@ -105,86 +74,51 @@
         },
         {
           "name": "chromosome",
-          "value": "6"
+          "value": "7"
         },
         {
           "name": "start_position",
-          "value": null
+          "value": 55259515
         },
         {
           "name": "end_position",
-          "value": null
+          "value": 55259515
         },
         {
           "name": "reference_allele",
-          "value": null
+          "value": "T"
         },
         {
           "name": "alternate_allele",
-          "value": null
+          "value": "G"
         },
         {
           "name": "cdna_change",
-          "value": null
+          "value": "c.2573T>G"
         },
         {
           "name": "protein_change",
-          "value": null
+          "value": "p.L858R"
         },
         {
           "name": "variant_annotation",
-          "value": null
+          "value": "Missense"
         },
         {
           "name": "exon",
-          "value": null
+          "value": 21
         },
         {
           "name": "rsid",
-          "value": null
+          "value": "rs121434568"
         },
         {
           "name": "hgvsg",
-          "value": null
+          "value": "7:g.55259515T>G"
         },
         {
           "name": "hgvsc",
-          "value": null
-        },
-        {
-          "name": "requires_oncogenic",
-          "value": true
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "type": "CategoricalVariant",
-      "name": "HER2-negative",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Human epidermal growth factor receptor 2 (HER2)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Negative"
+          "value": "ENST00000275493.2:c.2573T>G"
         },
         {
           "name": "_present",
@@ -195,9 +129,9 @@
   ],
   "subjectVariant": {},
   "conditionQualifier": {
-    "id": 9,
+    "id": 47,
     "conceptType": "Disease",
-    "name": "Invasive Breast Carcinoma",
+    "name": "Non-Small Cell Lung Cancer",
     "mappings": [],
     "extensions": [
       {
@@ -207,132 +141,43 @@
       }
     ],
     "primaryCoding": {
-      "id": "oncotree:BRCA",
-      "code": "BRCA",
-      "name": "Invasive Breast Carcinoma",
+      "id": "oncotree:NSCLC",
+      "code": "NSCLC",
+      "name": "Non-Small Cell Lung Cancer",
       "system": "https://oncotree.mskcc.org",
       "systemVersion": "oncotree_2021_11_02",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
       ]
     }
   },
   "objectTherapeutic": {
-    "id": 201,
-    "membershipOperator": "AND",
-    "therapies": [
+    "id": 166,
+    "conceptType": "Drug",
+    "name": "Aumolertinib",
+    "mappings": [],
+    "extensions": [
       {
-        "id": 167,
-        "conceptType": "Drug",
-        "name": "Camizestrant",
-        "mappings": [],
-        "extensions": [
-          {
-            "name": "therapy_strategy",
-            "value": [
-              "Estrogen receptor inhibition"
-            ]
-          },
-          {
-            "name": "therapy_type",
-            "value": "Targeted therapy",
-            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-          }
-        ],
-        "primaryCoding": {
-          "id": "ncit:C160603",
-          "code": "C160603",
-          "name": "Camizestrant",
-          "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
-          "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C160603"
-          ]
-        }
+        "name": "therapy_strategy",
+        "value": [
+          "EGFR inhibition"
+        ]
       },
       {
-        "id": 53,
-        "conceptType": "Drug",
-        "name": "Ribociclib",
-        "mappings": [
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "rxcui:1873916",
-              "code": "1873916",
-              "name": "ribociclib",
-              "system": "RxNorm",
-              "systemVersion": "02-Mar-2026",
-              "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1873916"
-              ]
-            }
-          },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "omop:1592911",
-              "code": "1592911",
-              "name": "ribociclib",
-              "system": "OMOP",
-              "systemVersion": "v20260227",
-              "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/1592911"
-              ]
-            }
-          },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "sctid:732257004",
-              "code": "732257004",
-              "name": "Ribociclib",
-              "system": "SNOMED",
-              "systemVersion": "2025-03-01",
-              "iris": [
-                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=732257004&edition=MAIN/2025-03-01&release=&languages=en"
-              ]
-            }
-          },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "omop:37115766",
-              "code": "37115766",
-              "name": "Ribociclib",
-              "system": "OMOP",
-              "systemVersion": "v20260227",
-              "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/37115766"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "therapy_strategy",
-            "value": [
-              "CDK4/6 inhibition"
-            ],
-            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-          },
-          {
-            "name": "therapy_type",
-            "value": "Targeted therapy",
-            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-          }
-        ],
-        "primaryCoding": {
-          "id": "ncit:C95701",
-          "code": "C95701",
-          "name": "Ribociclib",
-          "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
-          "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95701"
-          ]
-        }
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
       }
-    ]
+    ],
+    "primaryCoding": {
+      "id": "ncit:C133691",
+      "code": "C133691",
+      "name": "Aumolertinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C133691"
+      ]
+    }
   }
 }

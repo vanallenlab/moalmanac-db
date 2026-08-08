@@ -4,76 +4,45 @@
   "predicate": "predictSensitivityTo",
   "biomarkers": [
     {
-      "id": 1,
+      "id": 16,
       "type": "CategoricalVariant",
-      "name": "ER positive",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Estrogen receptor (ER)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "type": "CategoricalVariant",
-      "name": "ESR1 activating variants",
+      "name": "BRAF p.V600E",
       "genes": [
         {
-          "id": 19,
+          "id": 8,
           "conceptType": "Gene",
-          "name": "ESR1",
+          "name": "BRAF",
           "mappings": [
             {
               "relation": "exactMatch",
               "coding": {
-                "id": "ensembl:ensg00000091831",
-                "code": "ENSG00000091831",
+                "id": "ensembl:ensg00000157764",
+                "code": "ENSG00000157764",
                 "system": "https://www.ensembl.org",
                 "iris": [
-                  "https://www.ensembl.org/id/ENSG00000091831"
+                  "https://www.ensembl.org/id/ENSG00000157764"
                 ]
               }
             },
             {
               "relation": "exactMatch",
               "coding": {
-                "id": "ncbi:2099",
-                "code": "2099",
+                "id": "ncbi:673",
+                "code": "673",
                 "system": "https://www.ncbi.nlm.nih.gov/gene",
                 "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/2099"
+                  "https://www.ncbi.nlm.nih.gov/gene/673"
                 ]
               }
             },
             {
               "relation": "relatedMatch",
               "coding": {
-                "id": "refseq:NM_000125.4",
-                "code": "NM_000125.4",
+                "id": "refseq:NM_004333.6",
+                "code": "NM_004333.6",
                 "system": "https://www.ncbi.nlm.nih.gov/nuccore",
                 "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_000125.4"
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
                 ]
               }
             }
@@ -81,19 +50,19 @@
           "extensions": [
             {
               "name": "location",
-              "value": "6q25.1-q25.2"
+              "value": "7q34"
             },
             {
               "name": "location_sortable",
-              "value": "06q25.1-q25.2"
+              "value": "07q34"
             }
           ],
           "primaryCoding": {
-            "id": "hgnc:3467",
-            "code": "HGNC:3467",
+            "id": "hgnc:1097",
+            "code": "HGNC:1097",
             "system": "https://genenames.org",
             "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
             ]
           }
         }
@@ -105,86 +74,51 @@
         },
         {
           "name": "chromosome",
-          "value": "6"
+          "value": "7"
         },
         {
           "name": "start_position",
-          "value": null
+          "value": 140453136
         },
         {
           "name": "end_position",
-          "value": null
+          "value": 140453136
         },
         {
           "name": "reference_allele",
-          "value": null
+          "value": "A"
         },
         {
           "name": "alternate_allele",
-          "value": null
+          "value": "T"
         },
         {
           "name": "cdna_change",
-          "value": null
+          "value": "c.1799T>A"
         },
         {
           "name": "protein_change",
-          "value": null
+          "value": "p.V600E"
         },
         {
           "name": "variant_annotation",
-          "value": null
+          "value": "Missense"
         },
         {
           "name": "exon",
-          "value": null
+          "value": 15
         },
         {
           "name": "rsid",
-          "value": null
+          "value": "rs113488022"
         },
         {
           "name": "hgvsg",
-          "value": null
+          "value": "7:g.140453136A>T"
         },
         {
           "name": "hgvsc",
-          "value": null
-        },
-        {
-          "name": "requires_oncogenic",
-          "value": true
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "type": "CategoricalVariant",
-      "name": "HER2-negative",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Human epidermal growth factor receptor 2 (HER2)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Negative"
+          "value": "ENST00000288602.6:c.1799T>A"
         },
         {
           "name": "_present",
@@ -195,10 +129,24 @@
   ],
   "subjectVariant": {},
   "conditionQualifier": {
-    "id": 9,
+    "id": 100,
     "conceptType": "Disease",
-    "name": "Invasive Breast Carcinoma",
-    "mappings": [],
+    "name": "Differentiated Thyroid Gland Carcinoma",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "oncotree:WDTC",
+          "code": "WDTC",
+          "name": "Well-Differentiated Thyroid Cancer",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=WDTC"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "solid_tumor",
@@ -207,74 +155,74 @@
       }
     ],
     "primaryCoding": {
-      "id": "oncotree:BRCA",
-      "code": "BRCA",
-      "name": "Invasive Breast Carcinoma",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "id": "ncit:C7153",
+      "code": "C7153",
+      "name": "Differentiated Thyroid Gland Carcinoma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C113792"
       ]
     }
   },
   "objectTherapeutic": {
-    "id": 199,
+    "id": 18,
     "membershipOperator": "AND",
     "therapies": [
       {
-        "id": 99,
+        "id": 67,
         "conceptType": "Drug",
-        "name": "Abemaciclib",
+        "name": "Dabrafenib",
         "mappings": [
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "rxcui:1946825",
-              "code": "1946825",
-              "name": "abemaciclib",
+              "id": "rxcui:1424911",
+              "code": "1424911",
+              "name": "dabrafenib",
               "system": "RxNorm",
               "systemVersion": "02-Mar-2026",
               "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1946825"
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1424911"
               ]
             }
           },
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "omop:792649",
-              "code": "792649",
-              "name": "abemaciclib",
+              "id": "omop:43532299",
+              "code": "43532299",
+              "name": "dabrafenib",
               "system": "OMOP",
               "systemVersion": "v20260227",
               "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/792649"
+                "https://athena.ohdsi.org/search-terms/terms/43532299"
               ]
             }
           },
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "sctid:761851004",
-              "code": "761851004",
-              "name": "Abemaciclib",
+              "id": "sctid:703641001",
+              "code": "703641001",
+              "name": "Dabrafenib",
               "system": "SNOMED",
               "systemVersion": "2025-03-01",
               "iris": [
-                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=761851004&edition=MAIN/2025-03-01&release=&languages=en"
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=703641001&edition=MAIN/2025-03-01&release=&languages=en"
               ]
             }
           },
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "omop:42539316",
-              "code": "42539316",
-              "name": "Abemaciclib",
+              "id": "omop:45766476",
+              "code": "45766476",
+              "name": "Dabrafenib",
               "system": "OMOP",
               "systemVersion": "v20260227",
               "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/42539316"
+                "https://athena.ohdsi.org/search-terms/terms/45766476"
               ]
             }
           }
@@ -283,7 +231,7 @@
           {
             "name": "therapy_strategy",
             "value": [
-              "CDK4/6 inhibition"
+              "B-RAF inhibition"
             ],
             "description": "Associated therapeutic strategy or mechanism of action of the therapy."
           },
@@ -294,27 +242,81 @@
           }
         ],
         "primaryCoding": {
-          "id": "ncit:C97660",
-          "code": "C97660",
-          "name": "Abemaciclib",
+          "id": "ncit:C82386",
+          "code": "C82386",
+          "name": "Dabrafenib",
           "system": "https://evsexplore.semantics.cancer.gov",
           "systemVersion": "25.01d",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C97660"
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C82386"
           ]
         }
       },
       {
-        "id": 167,
+        "id": 66,
         "conceptType": "Drug",
-        "name": "Camizestrant",
-        "mappings": [],
+        "name": "Trametinib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "rxcui:1425099",
+              "code": "1425099",
+              "name": "trametinib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1425099"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:43532497",
+              "code": "43532497",
+              "name": "trametinib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/43532497"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "sctid:708711009",
+              "code": "708711009",
+              "name": "Trametinib",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=708711009&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "omop:46270750",
+              "code": "46270750",
+              "name": "Trametinib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/46270750"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "therapy_strategy",
             "value": [
-              "Estrogen receptor inhibition"
-            ]
+              "MEK inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
           },
           {
             "name": "therapy_type",
@@ -323,13 +325,13 @@
           }
         ],
         "primaryCoding": {
-          "id": "ncit:C160603",
-          "code": "C160603",
-          "name": "Camizestrant",
+          "id": "ncit:C77908",
+          "code": "C77908",
+          "name": "Trametinib",
           "system": "https://evsexplore.semantics.cancer.gov",
           "systemVersion": "25.01d",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C160603"
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C77908"
           ]
         }
       }

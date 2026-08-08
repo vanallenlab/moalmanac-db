@@ -1,24 +1,11 @@
 {
   "id": 163,
   "conceptType": "Drug",
-<<<<<<< HEAD
-  "name": "Dexamethasone",
-=======
   "name": "Fruquintinib",
->>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
   "mappings": [
     {
       "relation": "relatedMatch",
       "coding": {
-<<<<<<< HEAD
-        "id": "rxcui:3264",
-        "code": "3264",
-        "name": "dexamethasone",
-        "system": "RxNorm",
-        "systemVersion": "02-Mar-2026",
-        "iris": [
-          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3264"
-=======
         "id": "rxcui:2670179",
         "code": "2670179",
         "name": "fruquintinib",
@@ -26,48 +13,12 @@
         "systemVersion": "20250602",
         "iris": [
           "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2670179"
->>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
         ]
       }
     },
     {
       "relation": "relatedMatch",
       "coding": {
-<<<<<<< HEAD
-        "id": "omop:1518254",
-        "code": "1518254",
-        "name": "dexamethasone",
-        "system": "OMOP",
-        "systemVersion": "v20260227",
-        "iris": [
-          "https://athena.ohdsi.org/search-terms/terms/1518254"
-        ]
-      }
-    },
-    {
-      "relation": "relatedMatch",
-      "coding": {
-        "id": "sctid:372584003",
-        "code": "372584003",
-        "name": "Dexamethasone",
-        "system": "SNOMED",
-        "systemVersion": "2025-03-01",
-        "iris": [
-          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=372584003&edition=MAIN/2025-03-01&release=&languages=en"
-        ]
-      }
-    },
-    {
-      "relation": "relatedMatch",
-      "coding": {
-        "id": "omop:4156734",
-        "code": "4156734",
-        "name": "Dexamethasone",
-        "system": "OMOP",
-        "systemVersion": "v20260227",
-        "iris": [
-          "https://athena.ohdsi.org/search-terms/terms/4156734"
-=======
         "id": "omop:747237",
         "code": "747237",
         "name": "fruquintinib",
@@ -75,7 +26,6 @@
         "systemVersion": "v20250827",
         "iris": [
           "https://athena.ohdsi.org/search-terms/terms/747237"
->>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
         ]
       }
     }
@@ -84,14 +34,6 @@
     {
       "name": "therapy_strategy",
       "value": [
-<<<<<<< HEAD
-        "Corticosteroid"
-      ]
-    },
-    {
-      "name": "therapy_type",
-      "value": "Chemotherapy",
-=======
         "VEGF/VEGFR inhibition"
       ],
       "description": "Associated therapeutic strategy or mechanism of action of the therapy."
@@ -99,20 +41,10 @@
     {
       "name": "therapy_type",
       "value": "Targeted therapy",
->>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
       "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
     }
   ],
   "primaryCoding": {
-<<<<<<< HEAD
-    "id": "ncit:C422",
-    "code": "C422",
-    "name": "Dexamethasone",
-    "system": "https://evsexplore.semantics.cancer.gov",
-    "systemVersion": "25.01d",
-    "iris": [
-      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C422"
-=======
     "id": "ncit:C102852",
     "code": "C102852",
     "name": "Fruquintinib",
@@ -120,7 +52,6 @@
     "systemVersion": "25.01d",
     "iris": [
       "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C102852"
->>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
     ]
   }
 }
