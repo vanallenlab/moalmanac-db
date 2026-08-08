@@ -9228,5 +9228,51 @@
         "value": true
       }
     ]
+  },
+  {
+    "id": 181,
+    "type": "CategoricalVariant",
+    "name": "PD-L1 > 0%",
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Protein expression"
+      },
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Tumor Proportion Score (TPS)"
+      },
+      {
+        "name": "equality",
+        "value": ">"
+      },
+      {
+        "name": "value",
+        "value": 0.00
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "type": "CategoricalVariant",
+    "name": "HLA-A*02:01",
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Haplotype genotype"
+      },
+      {
+        "name": "_present",
+        "value": true
+      }
+    ]
   }
 ]

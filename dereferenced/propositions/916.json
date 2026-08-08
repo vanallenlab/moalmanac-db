@@ -4,6 +4,7 @@
   "predicate": "predictSensitivityTo",
   "biomarkers": [
     {
+<<<<<<< HEAD
       "id": 16,
       "type": "CategoricalVariant",
       "name": "BRAF p.V600E",
@@ -119,6 +120,31 @@
         {
           "name": "hgvsc",
           "value": "ENST00000288602.6:c.1799T>A"
+=======
+      "id": 181,
+      "type": "CategoricalVariant",
+      "name": "PD-L1 > 0%",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "PD-L1"
+        },
+        {
+          "name": "unit",
+          "value": "Tumor Proportion Score (TPS)"
+        },
+        {
+          "name": "equality",
+          "value": ">"
+        },
+        {
+          "name": "value",
+          "value": 0.0
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
         },
         {
           "name": "_present",
@@ -129,6 +155,7 @@
   ],
   "subjectVariant": {},
   "conditionQualifier": {
+<<<<<<< HEAD
     "id": 100,
     "conceptType": "Disease",
     "name": "Differentiated Thyroid Gland Carcinoma",
@@ -147,6 +174,12 @@
         }
       }
     ],
+=======
+    "id": 47,
+    "conceptType": "Disease",
+    "name": "Non-Small Cell Lung Cancer",
+    "mappings": [],
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
     "extensions": [
       {
         "name": "solid_tumor",
@@ -155,6 +188,7 @@
       }
     ],
     "primaryCoding": {
+<<<<<<< HEAD
       "id": "ncit:C7153",
       "code": "C7153",
       "name": "Differentiated Thyroid Gland Carcinoma",
@@ -162,10 +196,20 @@
       "systemVersion": "25.01d",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C113792"
+=======
+      "id": "oncotree:NSCLC",
+      "code": "NSCLC",
+      "name": "Non-Small Cell Lung Cancer",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
       ]
     }
   },
   "objectTherapeutic": {
+<<<<<<< HEAD
     "id": 18,
     "membershipOperator": "AND",
     "therapies": [
@@ -249,10 +293,27 @@
           "systemVersion": "25.01d",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C82386"
+=======
+    "id": 72,
+    "conceptType": "Drug",
+    "name": "Nivolumab",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "rxcui:1597876",
+          "code": "1597876",
+          "name": "nivolumab",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597876"
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
           ]
         }
       },
       {
+<<<<<<< HEAD
         "id": 66,
         "conceptType": "Drug",
         "name": "Trametinib",
@@ -336,5 +397,70 @@
         }
       }
     ]
+=======
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:45892628",
+          "code": "45892628",
+          "name": "nivolumab",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/45892628"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "sctid:704191007",
+          "code": "704191007",
+          "name": "Nivolumab",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704191007&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "omop:45766924",
+          "code": "45766924",
+          "name": "Nivolumab",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/45766924"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "PD-1/PD-L1 inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Immunotherapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "ncit:C68814",
+      "code": "C68814",
+      "name": "Nivolumab",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
+      ]
+    }
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
   }
 }

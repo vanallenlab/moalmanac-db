@@ -1,14 +1,78 @@
 {
   "id": 164,
   "conceptType": "Drug",
+<<<<<<< HEAD
   "name": "Aumolertinib",
   "mappings": [],
+=======
+  "name": "Tebentafusp",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "rxcui:2590743",
+        "code": "2590743",
+        "name": "tebentafusp",
+        "system": "RxNorm",
+        "systemVersion": "20250602",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2590743"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1758886",
+        "code": "1758886",
+        "name": "tebentafusp",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1758886"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "sctid:1025311000122109",
+        "code": "1025311000122109",
+        "name": "Tebentafusp",
+        "system": "SNOMED",
+        "systemVersion": "2025-03-01",
+        "iris": [
+          "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1025311000122109&edition=MAIN/2025-03-01&release=&languages=en"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "omop:1448506",
+        "code": "1448506",
+        "name": "Tebentafusp",
+        "system": "OMOP",
+        "systemVersion": "v20250827",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1448506"
+        ]
+      }
+    }
+  ],
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
   "extensions": [
     {
       "name": "therapy_strategy",
       "value": [
+<<<<<<< HEAD
         "EGFR inhibition"
       ]
+=======
+        "gp100-directed T-cell engagement"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
     },
     {
       "name": "therapy_type",
@@ -17,6 +81,7 @@
     }
   ],
   "primaryCoding": {
+<<<<<<< HEAD
     "id": "ncit:C133691",
     "code": "C133691",
     "name": "Aumolertinib",
@@ -24,6 +89,15 @@
     "systemVersion": "25.01d",
     "iris": [
       "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C133691"
+=======
+    "id": "ncit:C94208",
+    "code": "C94208",
+    "name": "Tebentafusp",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "25.01d",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C94208"
+>>>>>>> 30e26f48f0d458e50d77305c5deff5df3cb213c3
     ]
   }
 }
