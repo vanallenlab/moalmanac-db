@@ -4,6 +4,7 @@ Interim change log for the 2028-08-02-hse-updates branch.
 
 ## Added entries
 
+- (HSE) CD20+ and sensitivity to obinutuzumab in combination with bendamustine for patients with follicular lymphoma.
 - (HSE) CCND1 over expression and sensitivity to ibrutinib for patients with mantle cell lymphoma.
 - (HSE) t(11;14) and sensitivity to ibrutinib for patients with mantle cell lymphoma.
 
