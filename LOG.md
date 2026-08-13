@@ -4,6 +4,9 @@ Interim change log for the 2028-08-02-hse-updates branch.
 
 ## Added entries
 
+- (HSE) BCR::ABL1 and sensitivity to daunorubicin, dexamethasone, imatinib, methotrexate, and vincristine for patients with acute lymphoblastic leukemia.
+- (HSE) BCR::ABL1 and CD20+ and sensitivity to daunorubicin, dexamethasone, imatinib, methotrexate, rituximab, and vincristine for patients with acute lymphoblastic leukemia.
+- (HSE) CD20+ and sensitivity to daunorubicin, dexamethasone, methotrexate, rituximab, and vincristine for patients with acute lymphoblastic leukemia.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with bendamustine for patients with follicular lymphoma.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with CHOP chemotherapy for patients with follicular lymphoma.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with CVP chemotherapy for patients with follicular lymphoma.
