@@ -8,6 +8,7 @@ Interim change log for the 2028-08-02-hse-updates branch.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with CHOP chemotherapy for patients with follicular lymphoma.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with CVP chemotherapy for patients with follicular lymphoma.
 - (HSE) CCND1 over expression and sensitivity to ibrutinib for patients with mantle cell lymphoma.
+- (HSE) HER-2 negative and PD-L1 (CPS) >= 5% and sensitivity to nivolumab in combination with XELOX (capecitabine and oxaliplatin) for patients with gastric cancer, gastroesophageal junction cancer, or esophageal adenocarcinoma.
 - (HSE) t(11;14) and sensitivity to ibrutinib for patients with mantle cell lymphoma.
 
 ## Revised entries
