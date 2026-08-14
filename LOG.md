@@ -11,13 +11,18 @@ Interim change log for the 2028-08-02-hse-updates branch.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with CHOP chemotherapy for patients with follicular lymphoma.
 - (HSE) CD20+ and sensitivity to obinutuzumab in combination with CVP chemotherapy for patients with follicular lymphoma.
 - (HSE) CCND1 over expression and sensitivity to ibrutinib for patients with mantle cell lymphoma.
+- (HSE) dMMR / MSI-H and sensitivity to dostarlimab in combination with carboplatin and paclitaxel for patients with endometrial cancer.
+- (HSE) FLT3-ITD and sensitivity to quizartinib for patients with acute myeloid leukemia.
 - (HSE) FLT3-ITD and sensitivity to quizartinib in combination with cytarabine consolidation chemotherapy for patients with acute myeloid leukemia.
+- (HSE) FLT3-ITD and sensitivity to quizartinib in combination with standard idarubicin and cytarabine induction chemotherapy for patients with acute myeloid leukemia.
 - (HSE) HER-2 negative and PD-L1 (CPS) >= 5% and sensitivity to nivolumab in combination with XELOX (capecitabine and oxaliplatin) for patients with gastric cancer, gastroesophageal junction cancer, or esophageal adenocarcinoma.
+- (HSE) PD-L1 (TAP) >= 5% and sensitivity to tislelizumab in combination with capecitabine and oxaliplatin for patients with esophageal squamous cell carcinoma.
+- (HSE) PD-L1 (TAP) >= 5% and sensitivity to tislelizumab in combination with 5-fluorouracil and oxaliplatin for patients with esophageal squamous cell carcinoma.
 - (HSE) t(11;14) and sensitivity to ibrutinib for patients with mantle cell lymphoma.
 
 ## Revised entries
 
-Revised reimbursement dates and/or scheme for the following HSE approvals:
+Revised reimbursement dates and/or reimbursement scheme for the following HSE approvals:
 
 - ind:hse.00204:a
 - ind:hse.00206:a
