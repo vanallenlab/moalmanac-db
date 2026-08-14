@@ -732,6 +732,39 @@ def populate_statement_description(statements: list[dict], indications: list[dic
     return statements
 
 
+def populate_statement_status(statements: list[dict], indications: list[dict]):
+    """
+    Populates the status field for statements from the status field from the associated indication.
+
+    Args:
+        indications (list[dict]): List of dictionaries of database indications.
+        statements (list[dict]): List of dictionaries of database statements.
+
+    Returns:
+        list[dict]: List of dictionaries of database statements, with status value copied from indications for statements associated with an indication.
+    """
+    status_map = {
+        "Approved": "Active",
+        "Accelerated": "Active",
+        "Superseded": "Superseded",
+        "Withdrawn": "Deprecated",
+    }
+
+    for statement in statements:
+        indication_id = statement.get("indication_id", None)
+        if indication_id:
+            indication_record = json_utils.get_record_by_key_value(
+                records=indications, key="id", value=indication_id
+            )
+            if indication_record:
+                statement["status"] = status_map.get(indication_record["status"])
+    write.records(
+        data=statements,
+        file=os.path.join("referenced", "statements.json"),
+    )
+    return statements
+
+
 def clear_output_dir(output_dir: str, quiet: bool = False) -> None:
     """
     Removes all JSON files from the given output directory.
@@ -873,6 +906,10 @@ def main(input_paths):
     urls = read.json_records(file=input_paths["urls"])
 
     statements = populate_statement_description(
+        indications=indications,
+        statements=statements,
+    )
+    statements = populate_statement_status(
         indications=indications,
         statements=statements,
     )

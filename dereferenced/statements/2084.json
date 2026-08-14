@@ -1,7 +1,7 @@
 {
   "id": 2084,
   "type": "Statement",
-  "description": "Health Canada approved Pembrolizumab for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] \u22651), as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
+  "description": "Health Canada approved Pembrolizumab for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] >=1), as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
   "contributions": [
     {
       "id": 0,
@@ -83,15 +83,17 @@
     }
   ],
   "direction": "supports",
+  "status": "Active",
   "indication": {
     "id": "ind:hc.keytruda:11",
-    "indication": "KEYTRUDA is indicated for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] \u22651), as determined by a validated test, as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
+    "indication": "KEYTRUDA is indicated for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] >=1), as determined by a validated test, as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
     "initial_approval_date": null,
     "initial_approval_url": null,
-    "description": "Health Canada approved Pembrolizumab for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] \u22651), as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
-    "raw_biomarkers": "PD-L1 (Combined Positive Score [CPS] \u22651)",
+    "description": "Health Canada approved Pembrolizumab for the treatment of adult patients with resectable locally advanced head and neck squamous cell carcinoma (HNSCC) whose tumours express PD-L1 (Combined Positive Score [CPS] >=1), as neoadjuvant treatment as monotherapy, continued as adjuvant treatment in combination with radiotherapy (RT) with or without cisplatin and then as monotherapy.",
+    "raw_biomarkers": "PD-L1 (Combined Positive Score [CPS] >=1)",
     "raw_cancer_type": "resectable locally advanced head and neck squamous cell carcinoma (HNSCC)",
     "raw_therapeutics": "Keytruda (pembrolizumab)",
+    "status": "Approved",
     "document": {
       "id": "doc:hc.keytruda",
       "type": "Document",
