@@ -1,8 +1,9 @@
-# Testing
-This directory contains tests for this repository, using [pytest](https://docs.pytest.org/en/stable/). 
+This directory contains tests for this repository, using [pytest](https://docs.pytest.org/en/stable/).
 
 ### Structure
+
 Tests are organized by type data being tested. The files are:
+
 - [`conftest.py`](conftest.py) - shared fixtures to be used by all tests, such as loading data files.
 - [`helpers.py`](helpers.py) - helper functions for tests.
 - [`test_dates.py`](test_dates.py) - checks that date fields are logically consistent.
@@ -15,7 +16,9 @@ Tests are organized by type data being tested. The files are:
 Pytest settings can be configured from [pytest.ini](../pytest.ini).
 
 ### Running tests
+
 Run all tests from the repository's root directory:
+
 ```bash
 pytest tests/
 ```
