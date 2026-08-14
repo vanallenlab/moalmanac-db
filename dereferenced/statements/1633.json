@@ -1,0 +1,800 @@
+{
+  "id": 1633,
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved UKALL14 phase 1 standard induction therapy as a treatment option for the induction of remission in newly diagnosed, previously untreated adult patients with acute lymphoblastic leukaemia (ALL) patients (aged 25-65 years) treated on UKALL14-protocol. The treatment regimen notes that this is a clinical trial protocol intended for off-trial use, and that rituximab is to be included in CD20 positive patients (defined as >20% positivity). The treatment regimen also defines eligibility criteria as aged >= 25 and <= 65. years old with acute lymphoblastic leukaemia OR >= 19 and <= 65 years old with Philadelphia Chromosome Positive acute lymphoblastic leukaemia. Core treatments constituting the regimen are dexamethasone, daunorubicin, vincristine, and methotrexate, with rituximab to be included for CD20 positive patients, imatinib to be included for Philadelphia chromosome positive patients, or PEG-asparaginase for philadelphia chromosome negative patients.",
+  "contributions": [
+    {
+      "id": 57,
+      "type": "Contribution",
+      "description": "Initial curation of into moalmanac-db",
+      "date": "2026-08-02",
+      "contributor": {
+        "id": "vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse.00874",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "UKALL14 Phase 1 Standard Induction Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "UKALL14 Phase 1 Standard Induction Therapy, 2026, version number 1a, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/7011/874_UKALL14_Phase_1_Standard_Induction_Therapy.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/7011/874_UKALL14_Phase_1_Standard_Induction_Therapy.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2025-10-01",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2026-02-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "indication": {
+    "id": "ind:hse.00874:a",
+    "indication": "Induction of remission in newly diagnosed, previously untreated adult acute lymphoblastic leukaemia (ALL) patients (aged 25-65 years) treated on UKALL14-protocol.",
+    "initial_approval_date": "2025-10-01",
+    "initial_approval_url": null,
+    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved UKALL14 phase 1 standard induction therapy as a treatment option for the induction of remission in newly diagnosed, previously untreated adult patients with acute lymphoblastic leukaemia (ALL) patients (aged 25-65 years) treated on UKALL14-protocol. The treatment regimen notes that this is a clinical trial protocol intended for off-trial use, and that rituximab is to be included in CD20 positive patients (defined as >20% positivity). The treatment regimen also defines eligibility criteria as aged >= 25 and <= 65. years old with acute lymphoblastic leukaemia OR >= 19 and <= 65 years old with Philadelphia Chromosome Positive acute lymphoblastic leukaemia. Core treatments constituting the regimen are dexamethasone, daunorubicin, vincristine, and methotrexate, with rituximab to be included for CD20 positive patients, imatinib to be included for Philadelphia chromosome positive patients, or PEG-asparaginase for philadelphia chromosome negative patients.",
+    "raw_biomarkers": "CD20 positive, Ph+ and Ph-",
+    "raw_cancer_type": "acute lymphoblastic leukaemia (ALL)",
+    "raw_therapeutics": "UKALL14-protocol",
+    "reimbursement_scheme": "Incomplete Reimbursement",
+    "reimbursement_comment": "Imatinib - CDS; other drugs - N/A",
+    "document": {
+      "id": "doc:hse.00874",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "UKALL14 Phase 1 Standard Induction Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "UKALL14 Phase 1 Standard Induction Therapy, 2026, version number 1a, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/7011/874_UKALL14_Phase_1_Standard_Induction_Therapy.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/7011/874_UKALL14_Phase_1_Standard_Induction_Therapy.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2025-10-01",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2026-02-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  },
+  "proposition": {
+    "id": 936,
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictSensitivityTo",
+    "biomarkers": [
+      {
+        "id": 12,
+        "type": "CategoricalVariant",
+        "name": "BCR::ABL1",
+        "genes": [
+          {
+            "id": 6,
+            "conceptType": "Gene",
+            "name": "BCR",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000186716",
+                  "code": "ENSG00000186716",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000186716"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:613",
+                  "code": "613",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/613"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004327.4",
+                  "code": "NM_004327.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "22q11.23"
+              },
+              {
+                "name": "location_sortable",
+                "value": "22q11.23"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:1014",
+              "code": "HGNC:1014",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+              ]
+            }
+          },
+          {
+            "id": 0,
+            "conceptType": "Gene",
+            "name": "ABL1",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000097007",
+                  "code": "ENSG00000097007",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000097007"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:25",
+                  "code": "25",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/25"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_005157.6",
+                  "code": "NM_005157.6",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "9q34.12"
+              },
+              {
+                "name": "location_sortable",
+                "value": "09q34.12"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:76",
+              "code": "HGNC:76",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Rearrangement"
+          },
+          {
+            "name": "rearrangement_type",
+            "value": "Fusion"
+          },
+          {
+            "name": "locus",
+            "value": null
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "type": "CategoricalVariant",
+        "name": "CD20 +",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "CD20"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          },
+          {
+            "name": "_present",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": 0,
+      "conceptType": "Disease",
+      "name": "Acute Lymphoid Leukemia",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "oncotree:ALL",
+        "code": "ALL",
+        "name": "Acute Lymphoid Leukemia",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": 206,
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": 68,
+          "conceptType": "Drug",
+          "name": "Daunorubicin",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:3109",
+                "code": "3109",
+                "name": "daunorubicin",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3109"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1311799",
+                "code": "1311799",
+                "name": "daunorubicin",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1311799"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:372715008",
+                "code": "372715008",
+                "name": "Daunorubicin",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=372715008&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4156866",
+                "code": "4156866",
+                "name": "Daunorubicin",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4156866"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Topoisomerase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C62091",
+            "code": "C62091",
+            "name": "Daunorubicin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62091"
+            ]
+          }
+        },
+        {
+          "id": 165,
+          "conceptType": "Drug",
+          "name": "Dexamethasone",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:3264",
+                "code": "3264",
+                "name": "dexamethasone",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3264"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1518254",
+                "code": "1518254",
+                "name": "dexamethasone",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1518254"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:372584003",
+                "code": "372584003",
+                "name": "Dexamethasone",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=372584003&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4156734",
+                "code": "4156734",
+                "name": "Dexamethasone",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4156734"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Corticosteroid"
+              ]
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C422",
+            "code": "C422",
+            "name": "Dexamethasone",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C422"
+            ]
+          }
+        },
+        {
+          "id": 41,
+          "conceptType": "Drug",
+          "name": "Imatinib",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:282388",
+                "code": "282388",
+                "name": "imatinib",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=282388"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4185917",
+                "code": "4185917",
+                "name": "Imatinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4185917"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:414460008",
+                "code": "414460008",
+                "name": "Imatinib",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=414460008&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1304107",
+                "code": "1304107",
+                "name": "imatinib",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1304107"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Bcr-Abl inhibition",
+                "c-Kit inhibition",
+                "PDGF-R inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C62035",
+            "code": "C62035",
+            "name": "Imatinib",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
+            ]
+          }
+        },
+        {
+          "id": 65,
+          "conceptType": "Drug",
+          "name": "Methotrexate",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:6851",
+                "code": "6851",
+                "name": "methotrexate",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=6851"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1305058",
+                "code": "1305058",
+                "name": "methotrexate",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1305058"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387381009",
+                "code": "387381009",
+                "name": "Methotrexate",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387381009&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4301206",
+                "code": "4301206",
+                "name": "Methotrexate",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4301206"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Antifolate"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C642",
+            "code": "C642",
+            "name": "Methotrexate",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C642"
+            ]
+          }
+        },
+        {
+          "id": 61,
+          "conceptType": "Drug",
+          "name": "Vincristine",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:11202",
+                "code": "11202",
+                "name": "vincristine",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=11202"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1308290",
+                "code": "1308290",
+                "name": "vincristine",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1308290"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:387126006",
+                "code": "387126006",
+                "name": "Vincristine",
+                "system": "SNOMED",
+                "systemVersion": "2025-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387126006&edition=MAIN/2025-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4304296",
+                "code": "4304296",
+                "name": "Vincristine",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4304296"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Vinca alkaloid chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C933",
+            "code": "C933",
+            "name": "Vincristine",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C933"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strength": {
+    "id": 0,
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  }
+}
