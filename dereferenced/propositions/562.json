@@ -4,6 +4,37 @@
   "predicate": "predictSensitivityTo",
   "biomarkers": [
     {
+      "id": 1,
+      "type": "CategoricalVariant",
+      "name": "ER positive",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "Estrogen receptor (ER)"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    },
+    {
       "id": 20,
       "type": "CategoricalVariant",
       "name": "HER2-positive",
@@ -15,6 +46,37 @@
         {
           "name": "marker",
           "value": "Human epidermal growth factor receptor 2 (HER2)"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CategoricalVariant",
+      "name": "PR positive",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "Progesterone receptor (PR)"
         },
         {
           "name": "unit",

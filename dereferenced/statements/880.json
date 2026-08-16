@@ -1,7 +1,7 @@
 {
   "id": 880,
   "type": "Statement",
-  "description": "The European Medicines Agency (EMA) has authorized nivolumab in combination with fluoropyrimidine- and platinum-based combination chemotherapy for the first-line treatment of adult patients with HER2-negative advanced or metastatic gastric, gastro-esophageal junction, or esophageal adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 5. This indication is based on CA209649, a phase 3, randomized, open-label study where the choice of chemotherapy was FOLFOX (oxaliplatin, leucovorin, and fluorouracil) or CapeOX (oxaliplatin).",
+  "description": "The European Medicines Agency (EMA) has authorized nivolumab in combination with fluoropyrimidine- and platinum-based combination chemotherapy for the first-line treatment of adult patients with HER2-negative advanced or metastatic gastric, gastro-esophageal junction, or esophageal adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 5. This indication is based on CA209649, a phase 3, randomized, open-label study where the choice of chemotherapy was FOLFOX (oxaliplatin, leucovorin, and fluorouracil) or CapeOX (capecitabine and oxaliplatin).",
   "contributions": [
     {
       "id": 13,
@@ -89,7 +89,7 @@
     "indication": "OPDIVO in combination with fluoropyrimidine- and platinum-based combination chemotherapy is indicated for the first-line treatment of adult patients with HER2-negative advanced or metastatic gastric, gastro-oesophageal junction or oesophageal adenocarcinoma whose tumours express PD-L1 with a combined positive score (CPS) >= 5.",
     "initial_approval_date": "2021-10-19",
     "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/opdivo-h-c-003985-ii-0096-epar-assessment-report-variation_en.pdf",
-    "description": "The European Medicines Agency (EMA) has authorized nivolumab in combination with fluoropyrimidine- and platinum-based combination chemotherapy for the first-line treatment of adult patients with HER2-negative advanced or metastatic gastric, gastro-esophageal junction, or esophageal adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 5. This indication is based on CA209649, a phase 3, randomized, open-label study where the choice of chemotherapy was FOLFOX (oxaliplatin, leucovorin, and fluorouracil) or CapeOX (oxaliplatin).",
+    "description": "The European Medicines Agency (EMA) has authorized nivolumab in combination with fluoropyrimidine- and platinum-based combination chemotherapy for the first-line treatment of adult patients with HER2-negative advanced or metastatic gastric, gastro-esophageal junction, or esophageal adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 5. This indication is based on CA209649, a phase 3, randomized, open-label study where the choice of chemotherapy was FOLFOX (oxaliplatin, leucovorin, and fluorouracil) or CapeOX (capecitabine and oxaliplatin).",
     "raw_biomarkers": null,
     "raw_cancer_type": "gastric, gastro-oesophageal junction or oesophageal adenocarcinoma",
     "raw_therapeutics": "Opdivo (nivolumab) in combination with fluoropyrimidine- and platinum-based combination chemotherapy",
@@ -159,7 +159,7 @@
     }
   },
   "proposition": {
-    "id": 647,
+    "id": 933,
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
     "biomarkers": [
@@ -228,9 +228,9 @@
     ],
     "subjectVariant": {},
     "conditionQualifier": {
-      "id": 81,
+      "id": 2,
       "conceptType": "Disease",
-      "name": "Esophagogastric Adenocarcinoma",
+      "name": "Adenocarcinoma of the Gastroesophageal Junction",
       "mappings": [],
       "extensions": [
         {
@@ -240,20 +240,103 @@
         }
       ],
       "primaryCoding": {
-        "id": "oncotree:EGC",
-        "code": "EGC",
-        "name": "Esophagogastric Adenocarcinoma",
+        "id": "oncotree:GEJ",
+        "code": "GEJ",
+        "name": "Adenocarcinoma of the Gastroesophageal Junction",
         "system": "https://oncotree.mskcc.org",
         "systemVersion": "oncotree_2021_11_02",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=EGC"
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=GEJ"
         ]
       }
     },
     "objectTherapeutic": {
-      "id": 130,
+      "id": 205,
       "membershipOperator": "AND",
       "therapies": [
+        {
+          "id": 38,
+          "conceptType": "Drug",
+          "name": "Capecitabine",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "rxcui:194000",
+                "code": "194000",
+                "name": "capecitabine",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=194000"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:4305099",
+                "code": "4305099",
+                "name": "Capecitabine",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4305099"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "sctid:386906001",
+                "code": "386906001",
+                "name": "Capecitabine",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386906001&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "omop:1337620",
+                "code": "1337620",
+                "name": "capecitabine",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1337620"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Thymidylate synthase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "ncit:C1794",
+            "code": "C1794",
+            "name": "Capecitabine",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "25.01d",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1794"
+            ]
+          }
+        },
         {
           "id": 72,
           "conceptType": "Drug",
