@@ -1,7 +1,7 @@
 {
   "id": 1364,
   "type": "Statement",
-  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved trastuzumab (subcutaneous - 21 days) in combination with an aromatase inhibitor as a treatment option for the treatment of HER2 positive, hormone-receptor positive metastatic breast cancer not previously treated with trastuzumab for patients who are postmenopausal. The corresponding European Medicines Agency approval for this indication cites the clinical trial BO16216 as rationale for the approval where Herceptin (trastuzumab) and anastrozole were administered.",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved trastuzumab (subcutaneous - 21 days) in combination with an aromatase inhibitor as a treatment option for the treatment of HER2 positive, hormone-receptor positive metastatic breast cancer not previously treated with trastuzumab for patients who are postmenopausal. The corresponding European Medicines Agency (EMA) approval for this indication cites the clinical trial BO16216 as rationale for the approval where Herceptin (trastuzumab) and anastrozole were administered. The EMA product information for trastuzumab also notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
   "contributions": [
     {
       "id": 41,
@@ -88,7 +88,7 @@
     "indication": "HER2 positive metastatic breast cancer (MBC) in combination with an aromatase inhibitor for the treatment of postmenopausal patients with hormone-receptor positive MBC, not previously treated with trastuzumab.",
     "initial_approval_date": "2019-09-21",
     "initial_approval_url": null,
-    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved trastuzumab (subcutaneous - 21 days) in combination with an aromatase inhibitor as a treatment option for the treatment of HER2 positive, hormone-receptor positive metastatic breast cancer not previously treated with trastuzumab for patients who are postmenopausal. The corresponding European Medicines Agency approval for this indication cites the clinical trial BO16216 as rationale for the approval where Herceptin (trastuzumab) and anastrozole were administered.",
+    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved trastuzumab (subcutaneous - 21 days) in combination with an aromatase inhibitor as a treatment option for the treatment of HER2 positive, hormone-receptor positive metastatic breast cancer not previously treated with trastuzumab for patients who are postmenopausal. The corresponding European Medicines Agency (EMA) approval for this indication cites the clinical trial BO16216 as rationale for the approval where Herceptin (trastuzumab) and anastrozole were administered. The EMA product information for trastuzumab also notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
     "raw_biomarkers": null,
     "raw_cancer_type": "breast cancer",
     "raw_therapeutics": "Trastuzumab in combination with an aromatase inhibitor",
@@ -164,29 +164,81 @@
     "predicate": "predictSensitivityTo",
     "biomarkers": [
       {
-        "id": 20,
+        "id": 21,
         "type": "CategoricalVariant",
-        "name": "HER2-positive",
+        "name": "ERBB2 amplification",
+        "genes": [
+          {
+            "id": 18,
+            "conceptType": "Gene",
+            "name": "ERBB2",
+            "mappings": [
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ensembl:ensg00000141736",
+                  "code": "ENSG00000141736",
+                  "system": "https://www.ensembl.org",
+                  "iris": [
+                    "https://www.ensembl.org/id/ENSG00000141736"
+                  ]
+                }
+              },
+              {
+                "relation": "exactMatch",
+                "coding": {
+                  "id": "ncbi:2064",
+                  "code": "2064",
+                  "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/gene/2064"
+                  ]
+                }
+              },
+              {
+                "relation": "relatedMatch",
+                "coding": {
+                  "id": "refseq:NM_004448.4",
+                  "code": "NM_004448.4",
+                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                  "iris": [
+                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004448.4"
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "location",
+                "value": "17q12"
+              },
+              {
+                "name": "location_sortable",
+                "value": "17q12"
+              }
+            ],
+            "primaryCoding": {
+              "id": "hgnc:3430",
+              "code": "HGNC:3430",
+              "system": "https://genenames.org",
+              "iris": [
+                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
+              ]
+            }
+          }
+        ],
         "extensions": [
           {
             "name": "biomarker_type",
-            "value": "Protein expression"
+            "value": "Copy Number"
           },
           {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
+            "name": "direction",
+            "value": "Amplification"
           },
           {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
+            "name": "cytoband",
+            "value": null
           },
           {
             "name": "_present",
