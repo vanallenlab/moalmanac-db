@@ -543,7 +543,7 @@ class Propositions(BaseTable):
                     new_key="objectTherapeutic",
                 )
                 self.remove_key(record=record, key="therapy_group_id")
-            elif isinstance(record["therapy_group_id"], int):
+            elif isinstance(record["therapy_group_id"], str):
                 self.dereference_single(
                     record=record,
                     referenced_key="therapy_group_id",
