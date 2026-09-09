@@ -1,0 +1,83 @@
+{
+  "id": "bmkr:154",
+  "type": "CategoricalVariant",
+  "name": "v::BRAF",
+  "genes": [
+    {
+      "id": "gene:hgnc:1097",
+      "conceptType": "Gene",
+      "name": "BRAF",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:ensembl:ensg00000157764",
+            "code": "ENSG00000157764",
+            "system": "https://www.ensembl.org",
+            "iris": [
+              "https://www.ensembl.org/id/ENSG00000157764"
+            ]
+          }
+        },
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:ncbi:673",
+            "code": "673",
+            "system": "https://www.ncbi.nlm.nih.gov/gene",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/gene/673"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:refseq:NM_004333.6",
+            "code": "NM_004333.6",
+            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+            "iris": [
+              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "location",
+          "value": "7q34"
+        },
+        {
+          "name": "location_sortable",
+          "value": "07q34"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:hgnc:1097",
+        "code": "HGNC:1097",
+        "system": "https://genenames.org",
+        "iris": [
+          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "biomarker_type",
+      "value": "Rearrangement"
+    },
+    {
+      "name": "rearrangement_type",
+      "value": "Fusion"
+    },
+    {
+      "name": "locus",
+      "value": null
+    },
+    {
+      "name": "_present",
+      "value": true
+    }
+  ]
+}

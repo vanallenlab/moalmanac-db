@@ -1,0 +1,152 @@
+{
+  "id": "prop:vtxr:927",
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictSensitivityTo",
+  "biomarkers": [
+    {
+      "id": "bmkr:183",
+      "type": "CategoricalVariant",
+      "name": "t(11;14)",
+      "genes": [],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Rearrangement"
+        },
+        {
+          "name": "rearrangement_type",
+          "value": "Translocation"
+        },
+        {
+          "name": "locus",
+          "value": null
+        },
+        {
+          "name": "_present",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:ncit:C4337",
+    "conceptType": "Disease",
+    "name": "Mantle Cell Lymphoma",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:MCL",
+          "code": "MCL",
+          "name": "Mantle Cell Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2021_11_02",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UM"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C4337",
+      "code": "C4337",
+      "name": "Mantle Cell Lymphoma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4337"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": "tx:ncit:C81934",
+    "conceptType": "Drug",
+    "name": "Ibrutinib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:rxcui:1442981",
+          "code": "1442981",
+          "name": "ibrutinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1442981"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:44507848",
+          "code": "44507848",
+          "name": "ibrutinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/44507848"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:sctid:710228002",
+          "code": "710228002",
+          "name": "Ibrutinib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=710228002&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:46271948",
+          "code": "46271948",
+          "name": "Ibrutinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/46271948"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "BTK inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C81934",
+      "code": "C81934",
+      "name": "Ibrutinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C81934"
+      ]
+    }
+  }
+}
