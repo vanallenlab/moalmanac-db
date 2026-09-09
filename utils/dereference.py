@@ -531,7 +531,7 @@ class Propositions(BaseTable):
             KeyError: If neither referenced_key values, `therapy_id` or `therapy_group_id, are not found in a record.
         """
         for record in self.records:
-            if isinstance(record["therapy_id"], int):
+            if isinstance(record["therapy_id"], str):
                 self.dereference_single(
                     record=record,
                     referenced_key="therapy_id",
