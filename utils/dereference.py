@@ -199,6 +199,22 @@ class BaseTable:
             record[referenced_key] = _values
 
     @staticmethod
+    def remove_key(record: dict, key: str) -> None:
+        """
+        Removes a key from the provided dictionary.
+
+        Args:
+            record (dict): the dictionary that contains a key to remove.
+            key (str): name of the key in `record` to remove.
+
+        Raises:
+            KeyError: If the `key` is not found in `record`.
+        """
+        if key not in record:
+            raise KeyError(f"Key '{key}' not found in {record}")
+        record.pop(key)
+
+    @staticmethod
     def replace_key(record: dict, old_key: str, new_key: str) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
@@ -215,22 +231,6 @@ class BaseTable:
             raise KeyError(f"Key '{old_key}' not found in {record}")
 
         record[new_key] = record.pop(old_key)
-
-    @staticmethod
-    def remove_key(record: dict, key: str) -> None:
-        """
-        Removes a key from the provided dictionary.
-
-        Args:
-            record (dict): the dictionary that contains a key to remove.
-            key (str): name of the key in `record` to remove.
-
-        Raises:
-            KeyError: If the `key` is not found in `record`.
-        """
-        if key not in record:
-            raise KeyError(f"Key '{key}' not found in {record}")
-        record.pop(key)
 
     def write_records(self, output_dir: str, quiet: bool = False) -> None:
         """
@@ -339,9 +339,17 @@ class Documents(BaseTable):
 
     foreign_keys = [
         FKSingle(
-            "agent_id", "agent", lambda db: db.agents, post=strip_keys("extensions")
+            "agent_id",
+            "agent",
+            lambda db: db.agents,
+            post=strip_keys("extensions"),
         ),
-        FKList("urls", "urls", lambda db: db.urls, post=extract_url_value),
+        FKList(
+            "urls",
+            "urls",
+            lambda db: db.urls,
+            post=extract_url_value,
+        ),
     ]
 
     def convert_fields_to_extensions(self):
@@ -447,15 +455,88 @@ class Indications(BaseTable):
     """
     Represents the Indications table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Documents (initial key: `document_id`, resulting key: `document`)
+    - Contributions (initial key: `contributions`, resulting key: `contributions`)
+    - Documents (initial key: `reportedIn`, resulting key: `reportedIn`)
+
+    After foreign keys are resolved, table-specific fields (`status` and, for HSE
+    indications, `reimbursement_scheme` and `reimbursement_comment`) are converted to
+    extensions and the remaining referenced-only fields are dropped.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the indication records.
     """
 
     foreign_keys = [
-        FKSingle("document_id", "document", lambda db: db.documents),
+        FKList("contributions", "contributions", lambda db: db.contributions),
+        FKList("reportedIn", "reportedIn", lambda db: db.documents),
     ]
+
+    def convert_fields_to_extensions(self) -> None:
+        """
+        Converts relevant keys to extensions
+        """
+
+        extension_fields = [
+            "status",
+            "superseded_by",
+            "reimbursement_scheme",
+            "reimbursement_comment",
+        ]
+
+        for record in self.records:
+            extensions = [
+                {
+                    "name": "status",
+                    "value": record["status"],
+                    "description": "Current approval status.",
+                },
+            ]
+            if str(record["id"]).startswith("ind:hse:"):
+                extensions.append(
+                    {
+                        "name": "reimbursement_scheme",
+                        "value": record["reimbursement_scheme"],
+                        "description": "Current scheme used to reimburse indication.",
+                    }
+                )
+                extensions.append(
+                    {
+                        "name": "reimbursement_comment",
+                        "value": record["reimbursement_comment"],
+                        "description": (
+                            "More details about the current reimbursement scheme(s)."
+                        ),
+                    }
+                )
+            record["extensions"] = extensions
+            for field in extension_fields:
+                if field in record:
+                    self.remove_key(record=record, key=field)
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all referenced keys within the Indications table, then converts fields
+        to extensions.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.convert_fields_to_extensions()
+        self.remove_keys()
+
+    def remove_keys(self) -> None:
+        fields_to_remove = [
+            "statement_description",
+            "raw_biomarkers",
+            "raw_cancer_types",
+            "raw_therapeutics",
+        ]
+        for record in self.records:
+            for field in fields_to_remove:
+                self.remove_key(record=record, key=field)
 
 
 class Mappings(BaseTable):
@@ -583,27 +664,6 @@ class Statements(BaseTable):
         FKSingle("strength_id", "strength", lambda db: db.strengths),
     ]
 
-    def dereference(self, db: Database) -> None:
-        """
-        Dereferences all referenced keys within the Statements table.
-
-        Resolves foreign keys declared in `foreign_keys` via the base class, then copies the indication
-        description onto each statement record. Each table is resolved at most once; subsequent calls are
-        no-ops.
-
-        Args:
-            db (Database): An instance of the Database class containing all tables.
-        """
-        if self._resolved:
-            return
-        super().dereference(db)
-        for record in self.records:
-            indication = record.get("indication")
-            if isinstance(indication, dict):
-                description = indication.get("description")
-                if description is not None:
-                    record["description"] = description
-
 
 class Strengths(BaseTable):
     """
@@ -706,16 +766,22 @@ class Database:
     urls: URLs
 
 
-def populate_statement_description(statements: list[dict], indications: list[dict]):
+def populate_statements_from_indications(
+    statements: list[dict],
+    indications: list[dict],
+) -> list[dict]:
     """
-    Populates the description field for statements from the description field from the associated indication.
+    Propagates `description`, `reportedIn`, and `contributions` from each indication onto the
+    statements associated with it, so that an indication and its statements carry identical
+    values. The statement `description` is taken from the indication's `statement_description`.
 
     Args:
         indications (list[dict]): List of dictionaries of database indications.
         statements (list[dict]): List of dictionaries of database statements.
 
     Returns:
-        list[dict]: List of dictionaries of database statements, with description value copied from indications for statements associated with an indication.
+        list[dict]: List of dictionaries of database statements, with `description`,
+        `reportedIn`, and `contributions` copied from the associated indication.
     """
     for statement in statements:
         indication_id = statement.get("indication_id", None)
@@ -724,7 +790,9 @@ def populate_statement_description(statements: list[dict], indications: list[dic
                 records=indications, key="id", value=indication_id
             )
             if indication_record:
-                statement["description"] = indication_record["description"]
+                statement["description"] = indication_record["statement_description"]
+                statement["reportedIn"] = list(indication_record["reportedIn"])
+                statement["contributions"] = list(indication_record["contributions"])
     write.records(
         data=statements,
         file=os.path.join("referenced", "statements.json"),
@@ -732,7 +800,10 @@ def populate_statement_description(statements: list[dict], indications: list[dic
     return statements
 
 
-def populate_statement_status(statements: list[dict], indications: list[dict]):
+def populate_statement_status(
+    statements: list[dict],
+    indications: list[dict],
+) -> list[dict]:
     """
     Populates the status field for statements from the status field from the associated indication.
 
@@ -905,7 +976,7 @@ def main(input_paths):
     therapy_groups = read.json_records(file=input_paths["therapy_groups"])
     urls = read.json_records(file=input_paths["urls"])
 
-    statements = populate_statement_description(
+    statements = populate_statements_from_indications(
         indications=indications,
         statements=statements,
     )
