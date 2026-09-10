@@ -1,75 +1,114 @@
 {
   "id": "ind:hse:00832:a",
-  "indication": "Nivolumab in combination with fluoropyrimidine and platinum-based combination chemotherapy for the first-line treatment of adult patients with unresectable advanced, recurrent or metastatic oesophageal squamous cell carcinoma (OSCC) with tumour cell programmed death ligand 1 (PD-L1) expression >= 1%.",
-  "initial_approval_date": "2023-07-01",
-  "initial_approval_url": null,
-  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved nivolumab (480mg) in combination with flouropyrimidine and platinum-based chemotherapy for reimbursement as a treatment option for the first-line treatment of adult patients with unresectable advanced, recurrent, or metastatic esophageal squamous cell carcinoma (OSCC) with tumor cell programmed death ligang 1 (PD-L1) expression >= 1%.",
-  "raw_biomarkers": null,
-  "raw_cancer_type": "oesophageal squamous cell carcinoma",
-  "raw_therapeutics": "Nivolumab 480 mg, cisplatin 80mg/m2 and 5-fluorouracil infusional therapy",
-  "reimbursement_scheme": "Incomplete Reimbursement",
-  "reimbursement_comment": "Nivolumab - ODMS; Cisplatin, 5-Fluorouracil - N/A",
-  "status": "Approved",
-  "document": {
-    "id": "doc:hse:00832",
-    "type": "Document",
-    "documentType": "Regulatory approval",
-    "name": "Nivolumab 480mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy. NCCP National SACT Regimen. HSE.",
-    "title": null,
-    "aliases": [],
-    "description": "Nivolumab 480mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy, 2023, version number 1, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6433/832_Nivolumab_28-day_Cisplatin_5FU_.pdf",
-    "urls": [
-      "https://healthservice.hse.ie/documents/6433/832_Nivolumab_28-day_Cisplatin_5FU_.pdf"
-    ],
-    "doi": null,
-    "pmid": null,
-    "extensions": [
-      {
-        "name": "agent",
-        "value": {
-          "id": "agent:org:hse",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Health Service Executive",
-          "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
-        },
-        "description": "The organization that published this document."
-      },
-      {
-        "name": "company",
-        "value": "",
-        "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_brand",
-        "value": null,
-        "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_generic",
-        "value": null,
-        "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "first_publication_date",
-        "value": null,
-        "description": "The publication date for the initial version of this document."
-      },
-      {
-        "name": "identification_number",
-        "value": null,
-        "description": "Identification number used by the publishing organization."
-      },
-      {
-        "name": "publication_date",
-        "value": "2024-01-08",
-        "description": "The publication date for the document."
-      },
-      {
-        "name": "status",
-        "value": "Active",
-        "description": "Whether this document is Active or Deprecated within moalmanac-db."
+  "type": "Indication",
+  "description": "Nivolumab in combination with fluoropyrimidine and platinum-based combination chemotherapy for the first-line treatment of adult patients with unresectable advanced, recurrent or metastatic oesophageal squamous cell carcinoma (OSCC) with tumour cell programmed death ligand 1 (PD-L1) expression >= 1%.",
+  "contributions": [
+    {
+      "id": "ctrb:hse:2023-07-01:0",
+      "type": "Contribution",
+      "description": "Indication approved for reimbursement.",
+      "date": "2023-07-01",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
       }
-    ]
-  }
+    },
+    {
+      "id": "ctrb:vanallenlab:2024-01-16:0",
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00832",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Nivolumab 480mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Nivolumab 480mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy, 2023, version number 1, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6433/832_Nivolumab_28-day_Cisplatin_5FU_.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6433/832_Nivolumab_28-day_Cisplatin_5FU_.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-01-08",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Approved",
+      "description": "Current approval status."
+    },
+    {
+      "name": "reimbursement_scheme",
+      "value": "Incomplete Reimbursement",
+      "description": "Current scheme used to reimburse indication."
+    },
+    {
+      "name": "reimbursement_comment",
+      "value": "Nivolumab - ODMS; Cisplatin, 5-Fluorouracil - N/A",
+      "description": "More details about the current reimbursement scheme(s)."
+    }
+  ]
 }

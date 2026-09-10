@@ -4,6 +4,19 @@
   "description": "The European Medicines Agency (EMA) has authorized trametinib as a monotherapy or in combination with dabrafenib for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 variant. Trametinib's product information further states that trametinib as a monotherapy has not demonstrated clinical activity in patients who have progressed on prior BRAF inhibitor therapy.",
   "contributions": [
     {
+      "id": "ctrb:ema:2015-08-25:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2015-08-25",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
       "description": "Adding EMA approvals for use to database",
@@ -86,77 +99,108 @@
   "status": "Active",
   "indication": {
     "id": "ind:ema:mekinist:0",
-    "indication": "Trametinib as monotherapy or in combination with dabrafenib is indicated for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
-    "initial_approval_date": "2015-08-25",
-    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/mekinist-h-c-2643-ws-0736-epar-assessment-report-variation_en.pdf",
-    "description": "The European Medicines Agency (EMA) has authorized trametinib as a monotherapy or in combination with dabrafenib for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 variant. Trametinib's product information further states that trametinib as a monotherapy has not demonstrated clinical activity in patients who have progressed on prior BRAF inhibitor therapy.",
-    "raw_biomarkers": null,
-    "raw_cancer_type": "Melanoma",
-    "raw_therapeutics": "trametinib as a monotherapy or in combination with dabrafenib",
-    "status": "Approved",
-    "document": {
-      "id": "doc:ema:mekinist",
-      "type": "Document",
-      "documentType": "Regulatory approval",
-      "name": "Mekinist (trametinib) [product information]. EMA.",
-      "title": null,
-      "aliases": [],
-      "description": "Novartis Europharm Limited. Mekinist (trametinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/mekinist-epar-product-information_en.pdf. Revised May 2026. Accessed August 2, 2026.",
-      "urls": [
-        "https://www.ema.europa.eu/en/documents/product-information/mekinist-epar-product-information_en.pdf",
-        "https://www.ema.europa.eu/en/medicines/human/EPAR/mekinist"
-      ],
-      "doi": null,
-      "pmid": null,
-      "extensions": [
-        {
-          "name": "agent",
-          "value": {
-            "id": "agent:org:ema",
-            "type": "Agent",
-            "agentType": "organization",
-            "name": "European Medicines Agency",
-            "description": "Regulatory agency that approves medicines for use in the European Union."
-          },
-          "description": "The organization that published this document."
-        },
-        {
-          "name": "company",
-          "value": "Novartis Europharm Limited.",
-          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-        },
-        {
-          "name": "drug_name_brand",
-          "value": "Mekinist",
-          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-        },
-        {
-          "name": "drug_name_generic",
-          "value": "trametinib",
-          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-        },
-        {
-          "name": "first_publication_date",
-          "value": "2014-07-09",
-          "description": "The publication date for the initial version of this document."
-        },
-        {
-          "name": "identification_number",
-          "value": null,
-          "description": "Identification number used by the publishing organization."
-        },
-        {
-          "name": "publication_date",
-          "value": "2026-05-22",
-          "description": "The publication date for the document."
-        },
-        {
-          "name": "status",
-          "value": "Active",
-          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+    "type": "Indication",
+    "description": "Trametinib as monotherapy or in combination with dabrafenib is indicated for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
+    "contributions": [
+      {
+        "id": "ctrb:ema:2015-08-25:0",
+        "type": "Contribution",
+        "description": "Indication received approval from the European Commission.",
+        "date": "2015-08-25",
+        "contributor": {
+          "id": "agent:org:ema",
+          "type": "Agent",
+          "agentType": "organization",
+          "name": "European Medicines Agency",
+          "description": "Regulatory agency that approves medicines for use in the European Union."
         }
-      ]
-    }
+      },
+      {
+        "id": "ctrb:vanallenlab:2024-10-20:0",
+        "type": "Contribution",
+        "description": "Adding EMA approvals for use to database",
+        "date": "2024-10-20",
+        "contributor": {
+          "id": "agent:user:vanallenlab",
+          "type": "Agent",
+          "agentType": "contributor",
+          "name": "Van Allen lab",
+          "description": "Van Allen lab, Dana-Farber Cancer Institute"
+        }
+      }
+    ],
+    "reportedIn": [
+      {
+        "id": "doc:ema:mekinist",
+        "type": "Document",
+        "documentType": "Regulatory approval",
+        "name": "Mekinist (trametinib) [product information]. EMA.",
+        "title": null,
+        "aliases": [],
+        "description": "Novartis Europharm Limited. Mekinist (trametinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/mekinist-epar-product-information_en.pdf. Revised May 2026. Accessed August 2, 2026.",
+        "urls": [
+          "https://www.ema.europa.eu/en/documents/product-information/mekinist-epar-product-information_en.pdf",
+          "https://www.ema.europa.eu/en/medicines/human/EPAR/mekinist"
+        ],
+        "doi": null,
+        "pmid": null,
+        "extensions": [
+          {
+            "name": "agent",
+            "value": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            },
+            "description": "The organization that published this document."
+          },
+          {
+            "name": "company",
+            "value": "Novartis Europharm Limited.",
+            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+          },
+          {
+            "name": "drug_name_brand",
+            "value": "Mekinist",
+            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+          },
+          {
+            "name": "drug_name_generic",
+            "value": "trametinib",
+            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+          },
+          {
+            "name": "first_publication_date",
+            "value": "2014-07-09",
+            "description": "The publication date for the initial version of this document."
+          },
+          {
+            "name": "identification_number",
+            "value": null,
+            "description": "Identification number used by the publishing organization."
+          },
+          {
+            "name": "publication_date",
+            "value": "2026-05-22",
+            "description": "The publication date for the document."
+          },
+          {
+            "name": "status",
+            "value": "Active",
+            "description": "Whether this document is Active or Deprecated within moalmanac-db."
+          }
+        ]
+      }
+    ],
+    "extensions": [
+      {
+        "name": "status",
+        "value": "Approved",
+        "description": "Current approval status."
+      }
+    ]
   },
   "proposition": {
     "id": "prop:vtxr:416",

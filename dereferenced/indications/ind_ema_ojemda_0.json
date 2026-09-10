@@ -1,74 +1,105 @@
 {
   "id": "ind:ema:ojemda:0",
-  "indication": "Ojemda is indicated as monotherapy for the treatment of patients 6 months of age and older with paediatric low-grade glioma (LGG) harbouring a BRAF fusion or rearrangement, or BRAF V600 mutation, who have progressed after one or more prior systemic therapies.",
-  "initial_approval_date": "2026-04-20",
-  "initial_approval_url": "https://www.ema.europa.eu/en/documents/assessment-report/ojemda-epar-public-assessment-report_en.pdf",
-  "description": "The European Medicines Agency (EMA) has authorized tovorafenib as a monotherapy for treatment of paediatric patients 6 months of age or older with low-grade glioma (LGG) harrbouring a BRAF fusion, rearrangement or V600 variant, who have progressed after one or more prior systemic therapies.",
-  "raw_biomarkers": "BRAF fusion or rearrangement, or BRAF V600 mutation",
-  "raw_cancer_type": "low-grade glioma (LGG)",
-  "raw_therapeutics": "Ojemda (tovorafenib)",
-  "status": "Approved",
-  "document": {
-    "id": "doc:ema:ojemda",
-    "type": "Document",
-    "documentType": "Regulatory approval",
-    "name": "Ojemda (tovorafenib) [product information]. EMA.",
-    "title": null,
-    "aliases": [],
-    "description": "Ipsen Pharma. Ojemda (tovorafenib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/ojemda-epar-product-information_en.pdf. Revised May 2026. Accessed August 2, 2026.",
-    "urls": [
-      "https://www.ema.europa.eu/en/documents/product-information/ojemda-epar-product-information_en.pdf",
-      "https://www.ema.europa.eu/en/medicines/human/EPAR/ojemda"
-    ],
-    "doi": null,
-    "pmid": null,
-    "extensions": [
-      {
-        "name": "agent",
-        "value": {
-          "id": "agent:org:ema",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "European Medicines Agency",
-          "description": "Regulatory agency that approves medicines for use in the European Union."
-        },
-        "description": "The organization that published this document."
-      },
-      {
-        "name": "company",
-        "value": "Ipsen Pharma",
-        "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_brand",
-        "value": "Ojemda",
-        "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_generic",
-        "value": "tovorafenib",
-        "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "first_publication_date",
-        "value": "2026-05-11",
-        "description": "The publication date for the initial version of this document."
-      },
-      {
-        "name": "identification_number",
-        "value": "EMEA/H/C/006140",
-        "description": "Identification number used by the publishing organization."
-      },
-      {
-        "name": "publication_date",
-        "value": "2026-05-11",
-        "description": "The publication date for the document."
-      },
-      {
-        "name": "status",
-        "value": "Active",
-        "description": "Whether this document is Active or Deprecated within moalmanac-db."
+  "type": "Indication",
+  "description": "Ojemda is indicated as monotherapy for the treatment of patients 6 months of age and older with paediatric low-grade glioma (LGG) harbouring a BRAF fusion or rearrangement, or BRAF V600 mutation, who have progressed after one or more prior systemic therapies.",
+  "contributions": [
+    {
+      "id": "ctrb:ema:2026-04-20:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2026-04-20",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
       }
-    ]
-  }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-08-02:0",
+      "type": "Contribution",
+      "description": "Initial curation of into moalmanac-db",
+      "date": "2026-08-02",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema:ojemda",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Ojemda (tovorafenib) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Ipsen Pharma. Ojemda (tovorafenib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/ojemda-epar-product-information_en.pdf. Revised May 2026. Accessed August 2, 2026.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/ojemda-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/ojemda"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Ipsen Pharma",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Ojemda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "tovorafenib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2026-05-11",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": "EMEA/H/C/006140",
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2026-05-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Approved",
+      "description": "Current approval status."
+    }
+  ]
 }
