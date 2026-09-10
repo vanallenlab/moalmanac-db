@@ -1,5 +1,7 @@
 import pathlib
+
 import pytest
+
 from utils import read
 
 
@@ -35,7 +37,9 @@ def dereferenced_paths():
     return {
         "agents": root / "agents",
         "codings": root / "codings",
+        "contributions": root / "contributions",
         "documents": root / "documents",
+        "indications": root / "indications",
     }
 
 
