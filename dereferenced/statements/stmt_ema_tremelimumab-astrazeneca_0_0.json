@@ -109,125 +109,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Deprecated",
-  "indication": {
-    "id": "ind:ema:tremelimumab-astrazeneca:0",
-    "type": "Indication",
-    "description": "Tremelimumab AstraZeneca in combination with durvalumab and platinum-based chemotherapy is indicated for the first-line treatment of adults with metastatic non-small cell lung cancer (NSCLC) with no sensitising EGFR mutations or ALK positive mutations.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2025-09-05:4",
-        "type": "Contribution",
-        "description": "On 2023-11-06, the European Commission withdrew the market authorization for Tremelimumab AstraZeneca (tremelimumab) in the European Union at the request of the marketing authorization holder, AstraZeneca AB, due to their decision to permanently discontinue the marketing of the product for commercial reasons.",
-        "date": "2025-09-05",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:vanallenlab:2024-10-20:0",
-        "type": "Contribution",
-        "description": "Adding EMA approvals for use to database",
-        "date": "2024-10-20",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:ema:2023-02-20:0",
-        "type": "Contribution",
-        "description": "Indication received approval from the European Commission.",
-        "date": "2023-02-20",
-        "contributor": {
-          "id": "agent:org:ema",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "European Medicines Agency",
-          "description": "Regulatory agency that approves medicines for use in the European Union."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:ema:tremelimumab-astrazeneca",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Tremelimumab AstraZeneca (tremelimumab) [product information]. EMA.",
-        "title": null,
-        "aliases": [],
-        "description": "AstraZeneca AB. Tremelimumab AstraZeneca (tremelimumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/tremelimumab-astrazeneca-epar-product-information_en.pdf. Revised September 2023. Accessed March 25, 2024.",
-        "urls": [
-          "https://www.ema.europa.eu/en/documents/product-information/tremelimumab-astrazeneca-epar-product-information_en.pdf",
-          "https://www.ema.europa.eu/en/medicines/human/EPAR/tremelimumab-astrazeneca"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:ema",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "European Medicines Agency",
-              "description": "Regulatory agency that approves medicines for use in the European Union."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "AstraZeneca AB.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Tremelimumab AstraZeneca",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "tremelimumab",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": "2023-04-04",
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": null,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2024-08-22",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Deprecated",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Withdrawn",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:104",
     "type": "VariantTherapeuticResponseProposition",
@@ -762,5 +643,134 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Deprecated",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:ema:tremelimumab-astrazeneca:0",
+        "type": "Indication",
+        "description": "Tremelimumab AstraZeneca in combination with durvalumab and platinum-based chemotherapy is indicated for the first-line treatment of adults with metastatic non-small cell lung cancer (NSCLC) with no sensitising EGFR mutations or ALK positive mutations.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2025-09-05:4",
+            "type": "Contribution",
+            "description": "On 2023-11-06, the European Commission withdrew the market authorization for Tremelimumab AstraZeneca (tremelimumab) in the European Union at the request of the marketing authorization holder, AstraZeneca AB, due to their decision to permanently discontinue the marketing of the product for commercial reasons.",
+            "date": "2025-09-05",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2024-10-20:0",
+            "type": "Contribution",
+            "description": "Adding EMA approvals for use to database",
+            "date": "2024-10-20",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:ema:2023-02-20:0",
+            "type": "Contribution",
+            "description": "Indication received approval from the European Commission.",
+            "date": "2023-02-20",
+            "contributor": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:ema:tremelimumab-astrazeneca",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Tremelimumab AstraZeneca (tremelimumab) [product information]. EMA.",
+            "title": null,
+            "aliases": [],
+            "description": "AstraZeneca AB. Tremelimumab AstraZeneca (tremelimumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/tremelimumab-astrazeneca-epar-product-information_en.pdf. Revised September 2023. Accessed March 25, 2024.",
+            "urls": [
+              "https://www.ema.europa.eu/en/documents/product-information/tremelimumab-astrazeneca-epar-product-information_en.pdf",
+              "https://www.ema.europa.eu/en/medicines/human/EPAR/tremelimumab-astrazeneca"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:ema",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "European Medicines Agency",
+                  "description": "Regulatory agency that approves medicines for use in the European Union."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "AstraZeneca AB.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Tremelimumab AstraZeneca",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "tremelimumab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2023-04-04",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-08-22",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Withdrawn",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

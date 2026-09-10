@@ -96,112 +96,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:ema:balversa:0",
-    "type": "Indication",
-    "description": "Balversa as monotherapy is indicated for the treatment of adult patients with unresectable or metastatic urothelial carcinoma (UC), harbouring susceptible FGFR3 genetic alterations who have previously received at least one line of therapy containing a PD-1 or PD-L1 inhibitor in the unresectable or metastatic treatment setting.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2024-10-20:0",
-        "type": "Contribution",
-        "description": "Adding EMA approvals for use to database",
-        "date": "2024-10-20",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:ema:2024-08-22:0",
-        "type": "Contribution",
-        "description": "Indication received approval from the European Commission.",
-        "date": "2024-08-22",
-        "contributor": {
-          "id": "agent:org:ema",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "European Medicines Agency",
-          "description": "Regulatory agency that approves medicines for use in the European Union."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:ema:balversa",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Balversa (erdafitinib) [product information]. EMA.",
-        "title": null,
-        "aliases": [],
-        "description": "Janssen-Cilag International N.V. Balversa (erdafitinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/balversa-epar-product-information_en.pdf. Revised August 2024. Accessed October 19, 2024.",
-        "urls": [
-          "https://www.ema.europa.eu/en/documents/product-information/balversa-epar-product-information_en.pdf",
-          "https://www.ema.europa.eu/en/medicines/human/EPAR/balversa"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:ema",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "European Medicines Agency",
-              "description": "Regulatory agency that approves medicines for use in the European Union."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "Janssen-Cilag International N.V.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Balversa",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "erdafitinib",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": "2024-08-29",
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": null,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2024-08-29",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Approved",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:127",
     "type": "VariantTherapeuticResponseProposition",
@@ -454,5 +348,121 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:ema:balversa:0",
+        "type": "Indication",
+        "description": "Balversa as monotherapy is indicated for the treatment of adult patients with unresectable or metastatic urothelial carcinoma (UC), harbouring susceptible FGFR3 genetic alterations who have previously received at least one line of therapy containing a PD-1 or PD-L1 inhibitor in the unresectable or metastatic treatment setting.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-20:0",
+            "type": "Contribution",
+            "description": "Adding EMA approvals for use to database",
+            "date": "2024-10-20",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:ema:2024-08-22:0",
+            "type": "Contribution",
+            "description": "Indication received approval from the European Commission.",
+            "date": "2024-08-22",
+            "contributor": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:ema:balversa",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Balversa (erdafitinib) [product information]. EMA.",
+            "title": null,
+            "aliases": [],
+            "description": "Janssen-Cilag International N.V. Balversa (erdafitinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/balversa-epar-product-information_en.pdf. Revised August 2024. Accessed October 19, 2024.",
+            "urls": [
+              "https://www.ema.europa.eu/en/documents/product-information/balversa-epar-product-information_en.pdf",
+              "https://www.ema.europa.eu/en/medicines/human/EPAR/balversa"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:ema",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "European Medicines Agency",
+                  "description": "Regulatory agency that approves medicines for use in the European Union."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Janssen-Cilag International N.V.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Balversa",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "erdafitinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2024-08-29",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-08-29",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

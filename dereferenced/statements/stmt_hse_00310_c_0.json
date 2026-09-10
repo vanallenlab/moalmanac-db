@@ -95,121 +95,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:hse:00310:c",
-    "type": "Indication",
-    "description": "In combination with nivolumab for the neoadjuvant treatment of resectable NSCLC at high risk of recurrence in adult patients whose tumours have PD-L1 expression >= 1% (3 cycles only). This combination is available in NCIS (00849.2)",
-    "contributions": [
-      {
-        "id": "ctrb:hse:2024-05-01:0",
-        "type": "Contribution",
-        "description": "Indication approved for reimbursement.",
-        "date": "2024-05-01",
-        "contributor": {
-          "id": "agent:org:hse",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Health Service Executive",
-          "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
-        }
-      },
-      {
-        "id": "ctrb:vanallenlab:2024-01-16:0",
-        "type": "Contribution",
-        "description": "Adding HSE approvals for reimbursement to database",
-        "date": "2024-01-16",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:hse:00310",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Gemcitabine (1000mg/m2) and CARBOplatin (AUC 5) Therapy - 21 day. NCCP National SACT Regimen. HSE.",
-        "title": null,
-        "aliases": [],
-        "description": "Gemcitabine (1000mg/m2) and CARBOplatin (AUC 5) Therapy - 21 day, 2025, version number 7, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6713/310_v7_GemCARBOAUC_5.pdf",
-        "urls": [
-          "https://healthservice.hse.ie/documents/6713/310_v7_GemCARBOAUC_5.pdf"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:hse",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Health Service Executive",
-              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": null,
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": null,
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": null,
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": null,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2024-05-01",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Approved",
-        "description": "Current approval status."
-      },
-      {
-        "name": "reimbursement_scheme",
-        "value": "Incomplete Reimbursement",
-        "description": "Current scheme used to reimburse indication."
-      },
-      {
-        "name": "reimbursement_comment",
-        "value": "Nivolumab - ODMS 2024-05-01; Chemotherapy - N/A",
-        "description": "More details about the current reimbursement scheme(s)."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:767",
     "type": "VariantTherapeuticResponseProposition",
@@ -542,5 +427,130 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00310:c",
+        "type": "Indication",
+        "description": "In combination with nivolumab for the neoadjuvant treatment of resectable NSCLC at high risk of recurrence in adult patients whose tumours have PD-L1 expression >= 1% (3 cycles only). This combination is available in NCIS (00849.2)",
+        "contributions": [
+          {
+            "id": "ctrb:hse:2024-05-01:0",
+            "type": "Contribution",
+            "description": "Indication approved for reimbursement.",
+            "date": "2024-05-01",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2024-01-16:0",
+            "type": "Contribution",
+            "description": "Adding HSE approvals for reimbursement to database",
+            "date": "2024-01-16",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00310",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Gemcitabine (1000mg/m2) and CARBOplatin (AUC 5) Therapy - 21 day. NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Gemcitabine (1000mg/m2) and CARBOplatin (AUC 5) Therapy - 21 day, 2025, version number 7, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6713/310_v7_GemCARBOAUC_5.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6713/310_v7_GemCARBOAUC_5.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-05-01",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "Incomplete Reimbursement",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": "Nivolumab - ODMS 2024-05-01; Chemotherapy - N/A",
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

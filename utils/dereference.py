@@ -652,6 +652,9 @@ class Statements(BaseTable):
     - Propositions (initial key: `proposition_id`, resulting key: `proposition`)
     - Strengths (initial key: `strength_id`, resulting key: `strength`)
 
+    After foreign keys are resolved, `status` and the dereferenced `indication`
+    record are converted to extensions.
+
     Attributes:
         records (list[dict]): A list of dictionaries representing the statement records.
     """
@@ -663,6 +666,46 @@ class Statements(BaseTable):
         FKSingle("proposition_id", "proposition", lambda db: db.propositions),
         FKSingle("strength_id", "strength", lambda db: db.strengths),
     ]
+
+    def convert_fields_to_extensions(self) -> None:
+        """
+        Converts `status` and the dereferenced `indication` record to extensions.
+        """
+        extension_fields = ["status", "indication"]
+        for record in self.records:
+            extensions = [
+                {
+                    "name": "status",
+                    "value": record["status"],
+                    "description": (
+                        "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+                    ),
+                },
+                {
+                    "name": "indication",
+                    "value": record["indication"],
+                    "description": (
+                        "The underlying Indication supporting this Statement."
+                    ),
+                },
+            ]
+            record["extensions"] = extensions
+            for field in extension_fields:
+                if field in record:
+                    self.remove_key(record=record, key=field)
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all referenced keys within the Statements table, then converts
+        `status` and the dereferenced `indication` to extensions.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.convert_fields_to_extensions()
 
 
 class Strengths(BaseTable):
@@ -829,6 +872,8 @@ def populate_statement_status(
             )
             if indication_record:
                 statement["status"] = status_map.get(indication_record["status"])
+        if "indication_id" in statement:
+            statement["indication_id"] = statement.pop("indication_id")
     write.records(
         data=statements,
         file=os.path.join("referenced", "statements.json"),

@@ -96,112 +96,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:fda:gleevec:0",
-    "type": "Indication",
-    "description": "Gleevec is a kinase inhibitor indicated for the treatment of newly diagnosed adult and pediatric patients with Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2024-10-30:0",
-        "type": "Contribution",
-        "description": "Initial access of FDA approvals",
-        "date": "2024-10-30",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:fda:2006-09-27:0",
-        "type": "Contribution",
-        "description": "Indication received traditional approval.",
-        "date": "2006-09-27",
-        "contributor": {
-          "id": "agent:org:fda",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Food and Drug Administration",
-          "description": "Regulatory agency that approves drugs for use in the United States."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:fda:gleevec",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Gleevec (imatinib) [package insert]. FDA.",
-        "title": null,
-        "aliases": [],
-        "description": "Novartis Pharmaceuticals Corporation. Gleevec (imatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/021588s062lbl.pdf. Revised August 2022. Accessed October 30, 2024.",
-        "urls": [
-          "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/021588s062lbl.pdf",
-          "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021588"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:fda",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Food and Drug Administration",
-              "description": "Regulatory agency that approves drugs for use in the United States."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "Novartis Pharmaceuticals Corporation.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Gleevec",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "imatinib",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": null,
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": 21588,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2024-03-01",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Approved",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:158",
     "type": "VariantTherapeuticResponseProposition",
@@ -474,5 +368,121 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:gleevec:0",
+        "type": "Indication",
+        "description": "Gleevec is a kinase inhibitor indicated for the treatment of newly diagnosed adult and pediatric patients with Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-30:0",
+            "type": "Contribution",
+            "description": "Initial access of FDA approvals",
+            "date": "2024-10-30",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2006-09-27:0",
+            "type": "Contribution",
+            "description": "Indication received traditional approval.",
+            "date": "2006-09-27",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:gleevec",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Gleevec (imatinib) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Novartis Pharmaceuticals Corporation. Gleevec (imatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/021588s062lbl.pdf. Revised August 2022. Accessed October 30, 2024.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/021588s062lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021588"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Novartis Pharmaceuticals Corporation.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Gleevec",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "imatinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 21588,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-03-01",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

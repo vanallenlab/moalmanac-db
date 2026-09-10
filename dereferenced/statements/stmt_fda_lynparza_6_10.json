@@ -96,112 +96,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:fda:lynparza:6",
-    "type": "Indication",
-    "description": "Lynparza is a poly (ADP-ribose) polymerase (PARP) inhibitor indicated for the treatment of adult patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC) who have progressed following prior treatment with enzalutamide or abiraterone. Select patients for therapy based on an FDA-approved companion diagnostic for Lynparza.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2024-10-30:0",
-        "type": "Contribution",
-        "description": "Initial access of FDA approvals",
-        "date": "2024-10-30",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:fda:2020-05-19:0",
-        "type": "Contribution",
-        "description": "Indication received traditional approval.",
-        "date": "2020-05-19",
-        "contributor": {
-          "id": "agent:org:fda",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Food and Drug Administration",
-          "description": "Regulatory agency that approves drugs for use in the United States."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:fda:lynparza",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Lynparza (olaparib) [package insert]. FDA.",
-        "title": null,
-        "aliases": [],
-        "description": "AstraZeneca Pharmaceuticals, LP. Lynparza (olaparib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf. Revised November 2023. Accessed October 30, 2024.",
-        "urls": [
-          "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf",
-          "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208558"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:fda",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Food and Drug Administration",
-              "description": "Regulatory agency that approves drugs for use in the United States."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "AstraZeneca Pharmaceuticals, LP.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Lynparza",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "olaparib",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": null,
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": 208558,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2023-11-06",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Approved",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:273",
     "type": "VariantTherapeuticResponseProposition",
@@ -458,5 +352,121 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:lynparza:6",
+        "type": "Indication",
+        "description": "Lynparza is a poly (ADP-ribose) polymerase (PARP) inhibitor indicated for the treatment of adult patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC) who have progressed following prior treatment with enzalutamide or abiraterone. Select patients for therapy based on an FDA-approved companion diagnostic for Lynparza.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-30:0",
+            "type": "Contribution",
+            "description": "Initial access of FDA approvals",
+            "date": "2024-10-30",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2020-05-19:0",
+            "type": "Contribution",
+            "description": "Indication received traditional approval.",
+            "date": "2020-05-19",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:lynparza",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Lynparza (olaparib) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "AstraZeneca Pharmaceuticals, LP. Lynparza (olaparib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf. Revised November 2023. Accessed October 30, 2024.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/208558s028lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208558"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "AstraZeneca Pharmaceuticals, LP.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Lynparza",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "olaparib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 208558,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2023-11-06",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

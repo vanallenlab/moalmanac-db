@@ -95,121 +95,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Deprecated",
-  "indication": {
-    "id": "ind:hse:00254:c",
-    "type": "Indication",
-    "description": "Extended adjuvant treatment of hormone-dependent-invasive breast cancer in postmenopausal women who have received 2 to 3 years of adjuvant tamoxifen.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2024-01-16:0",
-        "type": "Contribution",
-        "description": "Adding HSE approvals for reimbursement to database",
-        "date": "2024-01-16",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:hse:2014-11-01:0",
-        "type": "Contribution",
-        "description": "Indication approved for reimbursement.",
-        "date": "2014-11-01",
-        "contributor": {
-          "id": "agent:org:hse",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Health Service Executive",
-          "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:hse:00254",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Anastrozole Monotherapy. NCCP National SACT Regimen. HSE.",
-        "title": null,
-        "aliases": [],
-        "description": "Anastrozole Monotherapy, 2025, version number 5, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/6358/254_v5_Anastrazole.pdf",
-        "urls": [
-          "https://healthservice.hse.ie/documents/6358/254_v5_Anastrazole.pdf"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:hse",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Health Service Executive",
-              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": null,
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": null,
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": "2014-11-01",
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": null,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2025-12-19",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Deprecated",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Withdrawn",
-        "description": "Current approval status."
-      },
-      {
-        "name": "reimbursement_scheme",
-        "value": "N/A",
-        "description": "Current scheme used to reimburse indication."
-      },
-      {
-        "name": "reimbursement_comment",
-        "value": null,
-        "description": "More details about the current reimbursement scheme(s)."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:824",
     "type": "VariantTherapeuticResponseProposition",
@@ -370,5 +255,130 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Deprecated",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00254:c",
+        "type": "Indication",
+        "description": "Extended adjuvant treatment of hormone-dependent-invasive breast cancer in postmenopausal women who have received 2 to 3 years of adjuvant tamoxifen.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-01-16:0",
+            "type": "Contribution",
+            "description": "Adding HSE approvals for reimbursement to database",
+            "date": "2024-01-16",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2014-11-01:0",
+            "type": "Contribution",
+            "description": "Indication approved for reimbursement.",
+            "date": "2014-11-01",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00254",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Anastrozole Monotherapy. NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Anastrozole Monotherapy, 2025, version number 5, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/6358/254_v5_Anastrazole.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6358/254_v5_Anastrazole.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2014-11-01",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-12-19",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Withdrawn",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "N/A",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": null,
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

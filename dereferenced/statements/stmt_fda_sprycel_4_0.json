@@ -109,125 +109,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:fda:sprycel:4",
-    "type": "Indication",
-    "description": "SPRYCEL is a kinase inhibitor indicated for the treatment of pediatric patients 1 year of age and older with newly diagnosed Ph+ ALL in combination with chemotherapy.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2025-06-26:0",
-        "type": "Contribution",
-        "description": "Resolving statements mapped to incorrect propositions",
-        "date": "2025-06-26",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:vanallenlab:2024-10-30:0",
-        "type": "Contribution",
-        "description": "Initial access of FDA approvals",
-        "date": "2024-10-30",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:fda:2018-12-21:0",
-        "type": "Contribution",
-        "description": "Indication received traditional approval.",
-        "date": "2018-12-21",
-        "contributor": {
-          "id": "agent:org:fda",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Food and Drug Administration",
-          "description": "Regulatory agency that approves drugs for use in the United States."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:fda:sprycel",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Sprycel (dasatinib) [package insert]. FDA.",
-        "title": null,
-        "aliases": [],
-        "description": "Bristol-Myers Squibb Company. Sprycel (dasatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021986s027lbl.pdf. Revised February 2023. Accessed October 30, 2024.",
-        "urls": [
-          "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021986s027lbl.pdf",
-          "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021986"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:fda",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Food and Drug Administration",
-              "description": "Regulatory agency that approves drugs for use in the United States."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "Bristol-Myers Squibb Company.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Sprycel",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "dasatinib",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": null,
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": 21986,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2023-02-08",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Approved",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:99",
     "type": "VariantTherapeuticResponseProposition",
@@ -498,5 +379,134 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:sprycel:4",
+        "type": "Indication",
+        "description": "SPRYCEL is a kinase inhibitor indicated for the treatment of pediatric patients 1 year of age and older with newly diagnosed Ph+ ALL in combination with chemotherapy.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2025-06-26:0",
+            "type": "Contribution",
+            "description": "Resolving statements mapped to incorrect propositions",
+            "date": "2025-06-26",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2024-10-30:0",
+            "type": "Contribution",
+            "description": "Initial access of FDA approvals",
+            "date": "2024-10-30",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2018-12-21:0",
+            "type": "Contribution",
+            "description": "Indication received traditional approval.",
+            "date": "2018-12-21",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:sprycel",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Sprycel (dasatinib) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Bristol-Myers Squibb Company. Sprycel (dasatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021986s027lbl.pdf. Revised February 2023. Accessed October 30, 2024.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021986s027lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021986"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Bristol-Myers Squibb Company.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Sprycel",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "dasatinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 21986,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2023-02-08",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }
