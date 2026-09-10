@@ -96,112 +96,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:ema:imfinzi:3",
-    "type": "Indication",
-    "description": "IMFINZI in combination with platinum-based chemotherapy as neoadjuvant treatment, followed by IMFINZI as monotherapy as adjuvant treatment, is indicated for the treatment of adults with resectable NSCLC at high risk of recurrence and no EGFR mutations or ALK rearrangements.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2025-08-29:5",
-        "type": "Contribution",
-        "description": "On 2025-06-18, the EMA published an EPAR - Assessment report - Variation that added an extension indication to durvalumab for the treatment of adults with resectable NSCLC at high risk of recurrence and no EGFR mutations or ALK rearrangements.",
-        "date": "2025-08-29",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:ema:2025-03-31:0",
-        "type": "Contribution",
-        "description": "Indication received approval from the European Commission.",
-        "date": "2025-03-31",
-        "contributor": {
-          "id": "agent:org:ema",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "European Medicines Agency",
-          "description": "Regulatory agency that approves medicines for use in the European Union."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:ema:imfinzi",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Imfinzi (durvalumab) [product information]. EMA.",
-        "title": null,
-        "aliases": [],
-        "description": "AstraZeneca AB. Imfinzi (durvalumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/imfinzi-epar-product-information_en.pdf. Revised July 2025. Accessed August 29, 2025.",
-        "urls": [
-          "https://www.ema.europa.eu/en/documents/product-information/imfinzi-epar-product-information_en.pdf",
-          "https://www.ema.europa.eu/en/medicines/human/EPAR/imfinzi"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:ema",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "European Medicines Agency",
-              "description": "Regulatory agency that approves medicines for use in the European Union."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "AstraZeneca AB.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Imfinzi",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "durvalumab",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": "2018-10-30",
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": null,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2025-07-11",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Approved",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:475",
     "type": "VariantTherapeuticResponseProposition",
@@ -653,5 +547,121 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:ema:imfinzi:3",
+        "type": "Indication",
+        "description": "IMFINZI in combination with platinum-based chemotherapy as neoadjuvant treatment, followed by IMFINZI as monotherapy as adjuvant treatment, is indicated for the treatment of adults with resectable NSCLC at high risk of recurrence and no EGFR mutations or ALK rearrangements.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2025-08-29:5",
+            "type": "Contribution",
+            "description": "On 2025-06-18, the EMA published an EPAR - Assessment report - Variation that added an extension indication to durvalumab for the treatment of adults with resectable NSCLC at high risk of recurrence and no EGFR mutations or ALK rearrangements.",
+            "date": "2025-08-29",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:ema:2025-03-31:0",
+            "type": "Contribution",
+            "description": "Indication received approval from the European Commission.",
+            "date": "2025-03-31",
+            "contributor": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:ema:imfinzi",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Imfinzi (durvalumab) [product information]. EMA.",
+            "title": null,
+            "aliases": [],
+            "description": "AstraZeneca AB. Imfinzi (durvalumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/imfinzi-epar-product-information_en.pdf. Revised July 2025. Accessed August 29, 2025.",
+            "urls": [
+              "https://www.ema.europa.eu/en/documents/product-information/imfinzi-epar-product-information_en.pdf",
+              "https://www.ema.europa.eu/en/medicines/human/EPAR/imfinzi"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:ema",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "European Medicines Agency",
+                  "description": "Regulatory agency that approves medicines for use in the European Union."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "AstraZeneca AB.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Imfinzi",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "durvalumab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2018-10-30",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-07-11",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

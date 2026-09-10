@@ -96,112 +96,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:fda:avmapki-fakzynja:0",
-    "type": "Indication",
-    "description": "AVMAPKI FAKZYNJA CO-PACK, a combination of avutometinib and defactinib, each kinase inhibitors, is indicated for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2025-06-12:0",
-        "type": "Contribution",
-        "description": "The FDA provided regular approval to taletrectinib for the treatment of patients with ROS1 positive non-small cell lung cancer, accelerated approval to telisotuzumab vedotin-tllv for the treatment of patients with non-squamous non-small cell lung cancer with high c-Met expression, and avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer.",
-        "date": "2025-06-12",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:fda:2025-05-08:0",
-        "type": "Contribution",
-        "description": "Indication received accelerated approval.",
-        "date": "2025-05-08",
-        "contributor": {
-          "id": "agent:org:fda",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Food and Drug Administration",
-          "description": "Regulatory agency that approves drugs for use in the United States."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:fda:avmapki-fakzynja",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. FDA.",
-        "title": null,
-        "aliases": [],
-        "description": "Verastem Inc. Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf. Revised May 2025. Accessed June 12, 2025.",
-        "urls": [
-          "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
-          "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219616"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:fda",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Food and Drug Administration",
-              "description": "Regulatory agency that approves drugs for use in the United States."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "Verastem Inc",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Avmapki Fakzynja co-pack",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "avutometinib; defactinib",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": "2025-05-08",
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": 219616,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2025-05-08",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Accelerated",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:839",
     "type": "VariantTherapeuticResponseProposition",
@@ -492,5 +386,121 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:avmapki-fakzynja:0",
+        "type": "Indication",
+        "description": "AVMAPKI FAKZYNJA CO-PACK, a combination of avutometinib and defactinib, each kinase inhibitors, is indicated for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2025-06-12:0",
+            "type": "Contribution",
+            "description": "The FDA provided regular approval to taletrectinib for the treatment of patients with ROS1 positive non-small cell lung cancer, accelerated approval to telisotuzumab vedotin-tllv for the treatment of patients with non-squamous non-small cell lung cancer with high c-Met expression, and avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer.",
+            "date": "2025-06-12",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2025-05-08:0",
+            "type": "Contribution",
+            "description": "Indication received accelerated approval.",
+            "date": "2025-05-08",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:avmapki-fakzynja",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Verastem Inc. Avmapki Fakzynja co-pack (avutometinib potassium; defactinib hydrochloride) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf. Revised May 2025. Accessed June 12, 2025.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219616s000lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219616"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Verastem Inc",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Avmapki Fakzynja co-pack",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "avutometinib; defactinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2025-05-08",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 219616,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-05-08",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Accelerated",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }

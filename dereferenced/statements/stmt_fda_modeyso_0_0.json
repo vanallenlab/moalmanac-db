@@ -96,112 +96,6 @@
     }
   ],
   "direction": "supports",
-  "status": "Active",
-  "indication": {
-    "id": "ind:fda:modeyso:0",
-    "type": "Indication",
-    "description": "MODEYSO is a protease activator indicated for the treatment of adult and pediatric patients 1 year of age and older with diffuse midline glioma harboring an H3 K27M mutation with progressive disease following prior therapy.",
-    "contributions": [
-      {
-        "id": "ctrb:vanallenlab:2025-10-02:0",
-        "type": "Contribution",
-        "description": "On 2025-08-06, the US FDA granted accelerated approval to Modeyso (dordaviprone) for the treatment of adult and pediatric patients 1 year of age and older with diffuse midline glioma harboring an H3 K27M mutation with progressive disease following prior therapy.",
-        "date": "2025-10-02",
-        "contributor": {
-          "id": "agent:user:vanallenlab",
-          "type": "Agent",
-          "agentType": "contributor",
-          "name": "Van Allen lab",
-          "description": "Van Allen lab, Dana-Farber Cancer Institute"
-        }
-      },
-      {
-        "id": "ctrb:fda:2025-08-06:0",
-        "type": "Contribution",
-        "description": "Indication received accelerated approval.",
-        "date": "2025-08-06",
-        "contributor": {
-          "id": "agent:org:fda",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Food and Drug Administration",
-          "description": "Regulatory agency that approves drugs for use in the United States."
-        }
-      }
-    ],
-    "reportedIn": [
-      {
-        "id": "doc:fda:modeyso",
-        "type": "Document",
-        "documentType": "Regulatory approval",
-        "name": "Modeyso (dordaviprone) [package insert]. FDA.",
-        "title": null,
-        "aliases": [],
-        "description": "Chimerix, Inc. Modeyso (dordaviprone) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219876s000lbl.pdf. Revised August 2025. Accessed October 2, 2025.",
-        "urls": [
-          "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219876s000lbl.pdf",
-          "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219876"
-        ],
-        "doi": null,
-        "pmid": null,
-        "extensions": [
-          {
-            "name": "agent",
-            "value": {
-              "id": "agent:org:fda",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "Food and Drug Administration",
-              "description": "Regulatory agency that approves drugs for use in the United States."
-            },
-            "description": "The organization that published this document."
-          },
-          {
-            "name": "company",
-            "value": "Chimerix, Inc.",
-            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_brand",
-            "value": "Modeyso",
-            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "drug_name_generic",
-            "value": "dordaviprone",
-            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-          },
-          {
-            "name": "first_publication_date",
-            "value": "2025-08-06",
-            "description": "The publication date for the initial version of this document."
-          },
-          {
-            "name": "identification_number",
-            "value": 219876,
-            "description": "Identification number used by the publishing organization."
-          },
-          {
-            "name": "publication_date",
-            "value": "2025-08-06",
-            "description": "The publication date for the document."
-          },
-          {
-            "name": "status",
-            "value": "Active",
-            "description": "Whether this document is Active or Deprecated within moalmanac-db."
-          }
-        ]
-      }
-    ],
-    "extensions": [
-      {
-        "name": "status",
-        "value": "Accelerated",
-        "description": "Current approval status."
-      }
-    ]
-  },
   "proposition": {
     "id": "prop:vtxr:874",
     "type": "VariantTherapeuticResponseProposition",
@@ -442,5 +336,121 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:modeyso:0",
+        "type": "Indication",
+        "description": "MODEYSO is a protease activator indicated for the treatment of adult and pediatric patients 1 year of age and older with diffuse midline glioma harboring an H3 K27M mutation with progressive disease following prior therapy.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2025-10-02:0",
+            "type": "Contribution",
+            "description": "On 2025-08-06, the US FDA granted accelerated approval to Modeyso (dordaviprone) for the treatment of adult and pediatric patients 1 year of age and older with diffuse midline glioma harboring an H3 K27M mutation with progressive disease following prior therapy.",
+            "date": "2025-10-02",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2025-08-06:0",
+            "type": "Contribution",
+            "description": "Indication received accelerated approval.",
+            "date": "2025-08-06",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:modeyso",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Modeyso (dordaviprone) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Chimerix, Inc. Modeyso (dordaviprone) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219876s000lbl.pdf. Revised August 2025. Accessed October 2, 2025.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219876s000lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219876"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Chimerix, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Modeyso",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "dordaviprone",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2025-08-06",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 219876,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-08-06",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Accelerated",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
 }
