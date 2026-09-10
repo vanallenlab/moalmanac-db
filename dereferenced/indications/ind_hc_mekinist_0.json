@@ -1,74 +1,92 @@
 {
   "id": "ind:hc:mekinist:0",
-  "indication": "MEKINIST (trametinib) is indicated, as a monotherapy or in combination with dabrafenib, for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
-  "initial_approval_date": null,
-  "initial_approval_url": null,
-  "description": "Health Canada approved trametinib, as monotherapy or in combination with dabrafenib, for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600E or V600K mutation. Clinical data are stronger for BRAF V600E than V600K.",
-  "raw_biomarkers": "BRAF V600E or V600K mutation",
-  "raw_cancer_type": "unresectable or metastatic melanoma",
-  "raw_therapeutics": "Mekinist (trametinib) monotherapy or dabrafenib",
-  "status": "Approved",
-  "document": {
-    "id": "doc:hc:mekinist",
-    "type": "Document",
-    "documentType": "Regulatory approval",
-    "name": "Mekinist (trametinib) [product monograph]. HC.",
-    "title": null,
-    "aliases": [],
-    "description": "Novartis Pharmaceuticals Canada Inc. Mekinist (trametinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00083524.PDF. Revised February 2026. Accessed April 2026.",
-    "urls": [
-      "https://pdf.hres.ca/dpd_pm/00083524.PDF",
-      "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=89431"
-    ],
-    "doi": null,
-    "pmid": null,
-    "extensions": [
-      {
-        "name": "agent",
-        "value": {
-          "id": "agent:org:hc",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "Health Canada",
-          "description": "Regulatory agency that approves drugs for sale and use in Canada."
-        },
-        "description": "The organization that published this document."
-      },
-      {
-        "name": "company",
-        "value": "Novartis Pharmaceuticals Canada Inc.",
-        "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_brand",
-        "value": "Mekinist",
-        "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_generic",
-        "value": "trametinib",
-        "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "first_publication_date",
-        "value": "2013-07-18",
-        "description": "The publication date for the initial version of this document."
-      },
-      {
-        "name": "identification_number",
-        "value": null,
-        "description": "Identification number used by the publishing organization."
-      },
-      {
-        "name": "publication_date",
-        "value": "2026-02-16",
-        "description": "The publication date for the document."
-      },
-      {
-        "name": "status",
-        "value": "Active",
-        "description": "Whether this document is Active or Deprecated within moalmanac-db."
+  "type": "Indication",
+  "description": "MEKINIST (trametinib) is indicated, as a monotherapy or in combination with dabrafenib, for the treatment of patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-10-30:0",
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
       }
-    ]
-  }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hc:mekinist",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Mekinist (trametinib) [product monograph]. HC.",
+      "title": null,
+      "aliases": [],
+      "description": "Novartis Pharmaceuticals Canada Inc. Mekinist (trametinib) [product monograph]. Health Canada website. https://pdf.hres.ca/dpd_pm/00083524.PDF. Revised February 2026. Accessed April 2026.",
+      "urls": [
+        "https://pdf.hres.ca/dpd_pm/00083524.PDF",
+        "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code=89431"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hc",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Canada",
+            "description": "Regulatory agency that approves drugs for sale and use in Canada."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Novartis Pharmaceuticals Canada Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Mekinist",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "trametinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-07-18",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2026-02-16",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Approved",
+      "description": "Current approval status."
+    }
+  ]
 }

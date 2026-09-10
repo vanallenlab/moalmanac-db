@@ -9,7 +9,7 @@ Tests are organized by type data being tested. The files are:
 - [`test_dates.py`](test_dates.py) - checks that date fields are logically consistent.
 - [`test_formatting.py`](test_formatting.py) - checks for formatting conventions in strings.
 - [`test_hygiene.py`](test_hygiene.py) - checks that field values within a single dataset are entered as expected.
-- [`test_ordering.py`](test_ordering.py) - checks that list values are ordered as expected (alphabetically).
+- [`test_ordering.py`](test_ordering.py) - checks that list values are ordered as expected.
 - [`test_reference.py`](test_references.py) - checks that foreign keys or cross-file references are valid.
 - [`test_validation.py`](test_validation.py) - checks that schemas are followed.
 

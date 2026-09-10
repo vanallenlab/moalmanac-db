@@ -1,21 +1,22 @@
-# Utility scripts for the Molecular Oncology Almanac database
 This directory contains a collection of utility scripts designed to facilitate the management and processing of the Molecular Oncology Almanac (moalmanac) database.
 
 **Note: The default arguments for scripts within this directory assume execution from the root directory of this repository.**
 
-# Table of contents
+## Table of contents
+
 - [dereference.py](#dereferencepy)
-- [populate_statement_description_from_indication.py](#populate_statement_description_from_indicationpy)
 - [json_utils.py](#json_utilspy)
 - [read.py](#readpy)
 - [write.py](#writepy)
 
-# Scripts
 ## dereference.py
+
 `dereference.py` creates a single JSON file for the moalmanac database by dereferencing referenced JSON files. By default, these are located in the `referenced/` folder of this repository.
 
 ### Usage
+
 Optional arguments:
+
 ```bash
     --about           <string>    referenced JSON for database metadata. Default: referenced/about.json
     --agents          <string>    referenced JSON for agents that either contribute to the database or publish documents cited within the database. Default: referenced/agents.json
@@ -39,12 +40,15 @@ Optional arguments:
 ```
 
 ### Example
+
 To run with default parameters:
+
 ```bash
 python -m utils.dereference
 ```
 
 Alternatively, all arguments can be specified explicitly:
+
 ```bash
 python -m utils.dereference \
   --about referenced/about.json \

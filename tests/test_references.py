@@ -38,9 +38,12 @@ def test_no_mismatch_between_document_for_indication_and_statement(data):
         f"  - Statement ID: {statement['id']}\n"
         f"  - Indication ID: {indication['id']}\n"
         f"  - Statement documents: {statement_docs}\n"
-        f"  - Indication document: {indication['document_id']}"
+        f"  - Indication documents: {indication['reportedIn']}"
         )
-        assert indication['document_id'] in statement['reportedIn'], error_message
+        assert all(
+            document_id in statement['reportedIn']
+            for document_id in indication['reportedIn']
+        ), error_message
 
 def test_status_active_document_has_approved_or_accelerated_indication(data):
     """
@@ -49,11 +52,11 @@ def test_status_active_document_has_approved_or_accelerated_indication(data):
     for document in data['documents']:
         if document['status'] != 'Active':
             continue
-        indications = json_utils.get_records_by_key_value(
-            records=data['indications'],
-            key='document_id',
-            value=document['id']
-        )
+        indications = [
+            indication
+            for indication in data['indications']
+            if document['id'] in indication['reportedIn']
+        ]
         if not any(i['status'] in ('Approved', 'Accelerated') for i in indications):
             error_message = (
             f"Active document has no Approved or Accelerated indication.\n"
@@ -69,11 +72,11 @@ def test_status_deprecated_document_has_only_withdrawn_or_superseded_indications
     for document in data['documents']:
         if document['status'] != 'Deprecated':
             continue
-        indications = json_utils.get_records_by_key_value(
-            records=data['indications'],
-            key='document_id',
-            value=document['id']
-        )
+        indications = [
+            indication
+            for indication in data['indications']
+            if document['id'] in indication['reportedIn']
+        ]
         for indication in indications:
             error_message = (
             f"Indication associated with a Deprecated document is not Withdrawn or Superseded.\n"

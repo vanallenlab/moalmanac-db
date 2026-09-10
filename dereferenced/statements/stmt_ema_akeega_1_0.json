@@ -15,6 +15,19 @@
         "name": "Van Allen lab",
         "description": "Van Allen lab, Dana-Farber Cancer Institute"
       }
+    },
+    {
+      "id": "ctrb:ema:2026-03-05:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2026-03-05",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
     }
   ],
   "reportedIn": [
@@ -86,77 +99,108 @@
   "status": "Active",
   "indication": {
     "id": "ind:ema:akeega:1",
-    "indication": "Akeega is indicated with prednisone or prednisolone in combination with androgen deprivation therapy (ADT) for the treatment of adult patients with metastatic hormone-sensitive prostate cancer (mHSPC) and BRCA 1/2 mutations (germline or somatic).",
-    "initial_approval_date": "2026-03-05",
-    "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/akeega-vr-0000282377-epar-assessment-report-variation_en.pdf",
-    "description": "The European Medicines Agency (EMA) has authorized niraparib with abiraterone acetate (Akeega) in combination with prednisone or prednisolone and androgen deprivation therapy (ADT) for the treatment of adult patients with metastatic hormone-sensitive prostate cancer (mHSPC) and BRCA 1/2 mutations (germline or somatic). This indication is based on the AMPLITUDE trial (NCT04497844), a phase 3, randomized, double-blind, placebo-controlled multinational study. Patients were required to have started ADT >= 14 days prior to randomization and have been willing to continue ADT throughout the treatment phase. Specific ADT was the choice of which was at the discretion of the investigator.",
-    "raw_biomarkers": "BRCA1/2 variants, germline or somatic",
-    "raw_cancer_type": "prostate cancer",
-    "raw_therapeutics": "Akeega (abiraterone acetate and niraparib), prednisone or prednisolone, ADT",
-    "status": "Approved",
-    "document": {
-      "id": "doc:ema:akeega",
-      "type": "Document",
-      "documentType": "Regulatory approval",
-      "name": "Akeega (abiraterone acetate and niraparib) [product information]. EMA.",
-      "title": null,
-      "aliases": [],
-      "description": "Janssen-Cilag International N.V. Akeega (abiraterone acetate and niraparib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/akeega-epar-product-information_en.pdf. Revised March 2026. Accessed August 2, 2026.",
-      "urls": [
-        "https://www.ema.europa.eu/en/documents/product-information/akeega-epar-product-information_en.pdf",
-        "https://www.ema.europa.eu/en/medicines/human/EPAR/akeega"
-      ],
-      "doi": null,
-      "pmid": null,
-      "extensions": [
-        {
-          "name": "agent",
-          "value": {
-            "id": "agent:org:ema",
-            "type": "Agent",
-            "agentType": "organization",
-            "name": "European Medicines Agency",
-            "description": "Regulatory agency that approves medicines for use in the European Union."
-          },
-          "description": "The organization that published this document."
-        },
-        {
-          "name": "company",
-          "value": "Janssen-Cilag International N.V.",
-          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-        },
-        {
-          "name": "drug_name_brand",
-          "value": "Akeega",
-          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-        },
-        {
-          "name": "drug_name_generic",
-          "value": "abiraterone acetate and niraparib",
-          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-        },
-        {
-          "name": "first_publication_date",
-          "value": "2023-06-02",
-          "description": "The publication date for the initial version of this document."
-        },
-        {
-          "name": "identification_number",
-          "value": null,
-          "description": "Identification number used by the publishing organization."
-        },
-        {
-          "name": "publication_date",
-          "value": "2026-03-17",
-          "description": "The publication date for the document."
-        },
-        {
-          "name": "status",
-          "value": "Active",
-          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+    "type": "Indication",
+    "description": "Akeega is indicated with prednisone or prednisolone in combination with androgen deprivation therapy (ADT) for the treatment of adult patients with metastatic hormone-sensitive prostate cancer (mHSPC) and BRCA 1/2 mutations (germline or somatic).",
+    "contributions": [
+      {
+        "id": "ctrb:vanallenlab:2026-08-02:0",
+        "type": "Contribution",
+        "description": "Initial curation of into moalmanac-db",
+        "date": "2026-08-02",
+        "contributor": {
+          "id": "agent:user:vanallenlab",
+          "type": "Agent",
+          "agentType": "contributor",
+          "name": "Van Allen lab",
+          "description": "Van Allen lab, Dana-Farber Cancer Institute"
         }
-      ]
-    }
+      },
+      {
+        "id": "ctrb:ema:2026-03-05:0",
+        "type": "Contribution",
+        "description": "Indication received approval from the European Commission.",
+        "date": "2026-03-05",
+        "contributor": {
+          "id": "agent:org:ema",
+          "type": "Agent",
+          "agentType": "organization",
+          "name": "European Medicines Agency",
+          "description": "Regulatory agency that approves medicines for use in the European Union."
+        }
+      }
+    ],
+    "reportedIn": [
+      {
+        "id": "doc:ema:akeega",
+        "type": "Document",
+        "documentType": "Regulatory approval",
+        "name": "Akeega (abiraterone acetate and niraparib) [product information]. EMA.",
+        "title": null,
+        "aliases": [],
+        "description": "Janssen-Cilag International N.V. Akeega (abiraterone acetate and niraparib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/akeega-epar-product-information_en.pdf. Revised March 2026. Accessed August 2, 2026.",
+        "urls": [
+          "https://www.ema.europa.eu/en/documents/product-information/akeega-epar-product-information_en.pdf",
+          "https://www.ema.europa.eu/en/medicines/human/EPAR/akeega"
+        ],
+        "doi": null,
+        "pmid": null,
+        "extensions": [
+          {
+            "name": "agent",
+            "value": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            },
+            "description": "The organization that published this document."
+          },
+          {
+            "name": "company",
+            "value": "Janssen-Cilag International N.V.",
+            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+          },
+          {
+            "name": "drug_name_brand",
+            "value": "Akeega",
+            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+          },
+          {
+            "name": "drug_name_generic",
+            "value": "abiraterone acetate and niraparib",
+            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+          },
+          {
+            "name": "first_publication_date",
+            "value": "2023-06-02",
+            "description": "The publication date for the initial version of this document."
+          },
+          {
+            "name": "identification_number",
+            "value": null,
+            "description": "Identification number used by the publishing organization."
+          },
+          {
+            "name": "publication_date",
+            "value": "2026-03-17",
+            "description": "The publication date for the document."
+          },
+          {
+            "name": "status",
+            "value": "Active",
+            "description": "Whether this document is Active or Deprecated within moalmanac-db."
+          }
+        ]
+      }
+    ],
+    "extensions": [
+      {
+        "name": "status",
+        "value": "Approved",
+        "description": "Current approval status."
+      }
+    ]
   },
   "proposition": {
     "id": "prop:vtxr:15",

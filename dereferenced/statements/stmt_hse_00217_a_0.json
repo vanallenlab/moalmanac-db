@@ -4,6 +4,19 @@
   "description": "The Republic of Ireland's Health Service Executive (HSE) has approved lapatinib in combination with capecitabine for reimbursement as a treatment option for the treatment of adult patients with advanced or metastatic breast cancer whose tumors overexpress HER2 with disease progression following prior therapy, which should have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting. The European Medicine Agency product information sheet for lapatinib defines HER2 (ErbB2) overexpressing tumors as IHC3+, or IHC2+ with gene amplification or gene amplification alone.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-08-02:0",
+      "type": "Contribution",
+      "description": "Initial curation of into moalmanac-db",
+      "date": "2026-08-02",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
       "description": "Adding HSE approvals for reimbursement to database",
@@ -14,6 +27,19 @@
         "agentType": "contributor",
         "name": "Van Allen lab",
         "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2015-01-10:0",
+      "type": "Contribution",
+      "description": "Indication approved for reimbursement.",
+      "date": "2015-01-10",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
       }
     }
   ],
@@ -85,78 +111,130 @@
   "status": "Active",
   "indication": {
     "id": "ind:hse:00217:a",
-    "indication": "Treatment of adult patients with breast cancer, whose tumours overexpress HER2 in combination with capecitabine for patients with advanced or metastatic disease with progression following prior therapy, which should have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting.",
-    "initial_approval_date": "2015-01-10",
-    "initial_approval_url": null,
-    "description": "The Republic of Ireland's Health Service Executive (HSE) has approved lapatinib in combination with capecitabine for reimbursement as a treatment option for the treatment of adult patients with advanced or metastatic breast cancer whose tumors overexpress HER2 with disease progression following prior therapy, which should have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting. The European Medicine Agency product information sheet for lapatinib defines HER2 (ErbB2) overexpressing tumors as IHC3+, or IHC2+ with gene amplification or gene amplification alone.",
-    "raw_biomarkers": null,
-    "raw_cancer_type": "Breast cancer",
-    "raw_therapeutics": "Lapatinib in combination with Capecitabine",
-    "reimbursement_scheme": "CDS",
-    "reimbursement_comment": null,
-    "status": "Approved",
-    "document": {
-      "id": "doc:hse:00217",
-      "type": "Document",
-      "documentType": "Regulatory approval",
-      "name": "Lapatinib and Capecitabine Therapy. NCCP National SACT Regimen. HSE.",
-      "title": null,
-      "aliases": [],
-      "description": "Lapatinib and Capecitabine Therapy, 2020, version number 5, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6559/217_v6b_Lapatinib_Capecitabine_therapy.pdf",
-      "urls": [
-        "https://healthservice.hse.ie/documents/6559/217_v6b_Lapatinib_Capecitabine_therapy.pdf"
-      ],
-      "doi": null,
-      "pmid": null,
-      "extensions": [
-        {
-          "name": "agent",
-          "value": {
-            "id": "agent:org:hse",
-            "type": "Agent",
-            "agentType": "organization",
-            "name": "Health Service Executive",
-            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
-          },
-          "description": "The organization that published this document."
-        },
-        {
-          "name": "company",
-          "value": "",
-          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-        },
-        {
-          "name": "drug_name_brand",
-          "value": null,
-          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-        },
-        {
-          "name": "drug_name_generic",
-          "value": null,
-          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-        },
-        {
-          "name": "first_publication_date",
-          "value": null,
-          "description": "The publication date for the initial version of this document."
-        },
-        {
-          "name": "identification_number",
-          "value": null,
-          "description": "Identification number used by the publishing organization."
-        },
-        {
-          "name": "publication_date",
-          "value": "2021-02-10",
-          "description": "The publication date for the document."
-        },
-        {
-          "name": "status",
-          "value": "Active",
-          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+    "type": "Indication",
+    "description": "Treatment of adult patients with breast cancer, whose tumours overexpress HER2 in combination with capecitabine for patients with advanced or metastatic disease with progression following prior therapy, which should have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting.",
+    "contributions": [
+      {
+        "id": "ctrb:vanallenlab:2026-08-02:0",
+        "type": "Contribution",
+        "description": "Initial curation of into moalmanac-db",
+        "date": "2026-08-02",
+        "contributor": {
+          "id": "agent:user:vanallenlab",
+          "type": "Agent",
+          "agentType": "contributor",
+          "name": "Van Allen lab",
+          "description": "Van Allen lab, Dana-Farber Cancer Institute"
         }
-      ]
-    }
+      },
+      {
+        "id": "ctrb:vanallenlab:2024-01-16:0",
+        "type": "Contribution",
+        "description": "Adding HSE approvals for reimbursement to database",
+        "date": "2024-01-16",
+        "contributor": {
+          "id": "agent:user:vanallenlab",
+          "type": "Agent",
+          "agentType": "contributor",
+          "name": "Van Allen lab",
+          "description": "Van Allen lab, Dana-Farber Cancer Institute"
+        }
+      },
+      {
+        "id": "ctrb:hse:2015-01-10:0",
+        "type": "Contribution",
+        "description": "Indication approved for reimbursement.",
+        "date": "2015-01-10",
+        "contributor": {
+          "id": "agent:org:hse",
+          "type": "Agent",
+          "agentType": "organization",
+          "name": "Health Service Executive",
+          "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+        }
+      }
+    ],
+    "reportedIn": [
+      {
+        "id": "doc:hse:00217",
+        "type": "Document",
+        "documentType": "Regulatory approval",
+        "name": "Lapatinib and Capecitabine Therapy. NCCP National SACT Regimen. HSE.",
+        "title": null,
+        "aliases": [],
+        "description": "Lapatinib and Capecitabine Therapy, 2020, version number 5, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6559/217_v6b_Lapatinib_Capecitabine_therapy.pdf",
+        "urls": [
+          "https://healthservice.hse.ie/documents/6559/217_v6b_Lapatinib_Capecitabine_therapy.pdf"
+        ],
+        "doi": null,
+        "pmid": null,
+        "extensions": [
+          {
+            "name": "agent",
+            "value": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+            },
+            "description": "The organization that published this document."
+          },
+          {
+            "name": "company",
+            "value": "",
+            "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+          },
+          {
+            "name": "drug_name_brand",
+            "value": null,
+            "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+          },
+          {
+            "name": "drug_name_generic",
+            "value": null,
+            "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+          },
+          {
+            "name": "first_publication_date",
+            "value": null,
+            "description": "The publication date for the initial version of this document."
+          },
+          {
+            "name": "identification_number",
+            "value": null,
+            "description": "Identification number used by the publishing organization."
+          },
+          {
+            "name": "publication_date",
+            "value": "2021-02-10",
+            "description": "The publication date for the document."
+          },
+          {
+            "name": "status",
+            "value": "Active",
+            "description": "Whether this document is Active or Deprecated within moalmanac-db."
+          }
+        ]
+      }
+    ],
+    "extensions": [
+      {
+        "name": "status",
+        "value": "Approved",
+        "description": "Current approval status."
+      },
+      {
+        "name": "reimbursement_scheme",
+        "value": "CDS",
+        "description": "Current scheme used to reimburse indication."
+      },
+      {
+        "name": "reimbursement_comment",
+        "value": null,
+        "description": "More details about the current reimbursement scheme(s)."
+      }
+    ]
   },
   "proposition": {
     "id": "prop:vtxr:195",

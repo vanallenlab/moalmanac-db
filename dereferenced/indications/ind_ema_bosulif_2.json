@@ -1,74 +1,105 @@
 {
   "id": "ind:ema:bosulif:2",
-  "indication": "Bosulif is indicated for the treatment of adult and paediatric patients aged 6 years and older with CP Ph+ CML previously treated with one or more tyrosine kinase inhibitor(s) [TKI(s)] and for whom imatinib, nilotinib and dasatinib are not considered appropriate treatment options.",
-  "initial_approval_date": "2025-06-02",
-  "initial_approval_url": "https://www.ema.europa.eu/en/documents/variation-report/bosulif-h-c-002373-x-0058-g-epar-assessment-report-variation_en.pdf",
-  "description": "The European Medicines Agency (EMA) has authorized bosutinib as for the treatment of adult and pediatric patients aged 6 years and older with chronic phase Philadelphia chromosome-positive chronic myelogenous leukemia (Ph+ CML) previously treated with one or more tyrosine kinase inhibitors and for whom imatinib, nilotinib, and dasatinib are not considered appropriate treatment options.",
-  "raw_biomarkers": "Philadelphia chromosome-positive",
-  "raw_cancer_type": "Chronic Myelogenous Leukemia",
-  "raw_therapeutics": "Bosulif (bosutinib)",
-  "status": "Approved",
-  "document": {
-    "id": "doc:ema:bosulif",
-    "type": "Document",
-    "documentType": "Regulatory approval",
-    "name": "Bosulif (bosutinib) [product information]. EMA.",
-    "title": null,
-    "aliases": [],
-    "description": "Pfizer Europe MA EEIG. Bosulif (bosutinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf. Revised August 2025. Accessed August 29, 2025.",
-    "urls": [
-      "https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf",
-      "https://www.ema.europa.eu/en/medicines/human/EPAR/bosulif"
-    ],
-    "doi": null,
-    "pmid": null,
-    "extensions": [
-      {
-        "name": "agent",
-        "value": {
-          "id": "agent:org:ema",
-          "type": "Agent",
-          "agentType": "organization",
-          "name": "European Medicines Agency",
-          "description": "Regulatory agency that approves medicines for use in the European Union."
-        },
-        "description": "The organization that published this document."
-      },
-      {
-        "name": "company",
-        "value": "Pfizer Europe MA EEIG.",
-        "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_brand",
-        "value": "Bosulif",
-        "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "drug_name_generic",
-        "value": "bosutinib",
-        "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
-      },
-      {
-        "name": "first_publication_date",
-        "value": "2013-04-09",
-        "description": "The publication date for the initial version of this document."
-      },
-      {
-        "name": "identification_number",
-        "value": null,
-        "description": "Identification number used by the publishing organization."
-      },
-      {
-        "name": "publication_date",
-        "value": "2025-08-26",
-        "description": "The publication date for the document."
-      },
-      {
-        "name": "status",
-        "value": "Active",
-        "description": "Whether this document is Active or Deprecated within moalmanac-db."
+  "type": "Indication",
+  "description": "Bosulif is indicated for the treatment of adult and paediatric patients aged 6 years and older with CP Ph+ CML previously treated with one or more tyrosine kinase inhibitor(s) [TKI(s)] and for whom imatinib, nilotinib and dasatinib are not considered appropriate treatment options.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2025-08-29:2",
+      "type": "Contribution",
+      "description": "On 2025-08-26, the EMA published an EPAR - Assessment report - Variation that revised indications for Bosulif (bosutinib) to support pediatric patients with chronic phase Ph+ CML.",
+      "date": "2025-08-29",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
       }
-    ]
-  }
+    },
+    {
+      "id": "ctrb:ema:2025-06-02:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2025-06-02",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema:bosulif",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Bosulif (bosutinib) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Pfizer Europe MA EEIG. Bosulif (bosutinib) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf. Revised August 2025. Accessed August 29, 2025.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/bosulif-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/bosulif"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Pfizer Europe MA EEIG.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Bosulif",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "bosutinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2013-04-09",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-08-26",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Approved",
+      "description": "Current approval status."
+    }
+  ]
 }
