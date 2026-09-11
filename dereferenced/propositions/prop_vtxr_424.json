@@ -2,6 +2,30 @@
   "id": "prop:vtxr:424",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:ncit:C132146",
+    "conceptType": "Disease",
+    "name": "Any solid tumor",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C132146",
+      "code": "C132146",
+      "name": "Malignant Solid Neoplasm",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "25.01d",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C132146"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:20",
@@ -27,38 +51,11 @@
         {
           "name": "value",
           "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:ncit:C132146",
-    "conceptType": "Disease",
-    "name": "Any solid tumor",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:ncit:C132146",
-      "code": "C132146",
-      "name": "Malignant Solid Neoplasm",
-      "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
-      "iris": [
-        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C132146"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "tx:ncit:C128799",
     "conceptType": "Drug",

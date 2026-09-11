@@ -2,27 +2,6 @@
   "id": "prop:vtxr:507",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:36",
-      "type": "CategoricalVariant",
-      "name": "dMMR",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Mismatch Repair"
-        },
-        {
-          "name": "status",
-          "value": "Deficient"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:oncotree:COADREAD",
@@ -47,6 +26,24 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:36",
+      "type": "CategoricalVariant",
+      "name": "dMMR",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Mismatch Repair"
+        },
+        {
+          "name": "status",
+          "value": "Deficient"
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "txgrp:29",
     "membershipOperator": "AND",

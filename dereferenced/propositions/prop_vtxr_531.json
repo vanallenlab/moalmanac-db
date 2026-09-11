@@ -2,6 +2,30 @@
   "id": "prop:vtxr:531",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:oncotree:ALAL",
+    "conceptType": "Disease",
+    "name": "Acute Leukemias of Ambiguous Lineage",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:oncotree:ALAL",
+      "code": "ALAL",
+      "name": "Acute Leukemias of Ambiguous Lineage",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALAL"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:157",
@@ -79,38 +103,11 @@
         {
           "name": "locus",
           "value": null
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:oncotree:ALAL",
-    "conceptType": "Disease",
-    "name": "Acute Leukemias of Ambiguous Lineage",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:oncotree:ALAL",
-      "code": "ALAL",
-      "name": "Acute Leukemias of Ambiguous Lineage",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
-      "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALAL"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "tx:ncit:C165776",
     "conceptType": "Drug",

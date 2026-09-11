@@ -99,39 +99,6 @@
     "id": "prop:vtxr:928",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:184",
-        "type": "CategoricalVariant",
-        "name": "CCND1",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "CCND1"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
     "subjectVariant": {},
     "conditionQualifier": {
       "id": "dis:ncit:C4337",
@@ -170,6 +137,36 @@
         ]
       }
     },
+    "biomarkers": [
+      {
+        "id": "bmkr:184",
+        "type": "CategoricalVariant",
+        "name": "CCND1",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Protein expression"
+          },
+          {
+            "name": "marker",
+            "value": "CCND1"
+          },
+          {
+            "name": "unit",
+            "value": "status"
+          },
+          {
+            "name": "equality",
+            "value": "="
+          },
+          {
+            "name": "value",
+            "value": "Positive"
+          }
+        ],
+        "present": true
+      }
+    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C81934",
       "conceptType": "Drug",

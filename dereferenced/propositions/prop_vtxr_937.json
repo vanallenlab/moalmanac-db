@@ -2,6 +2,30 @@
   "id": "prop:vtxr:937",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:oncotree:ALL",
+    "conceptType": "Disease",
+    "name": "Acute Lymphoid Leukemia",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:oncotree:ALL",
+      "code": "ALL",
+      "name": "Acute Lymphoid Leukemia",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:54",
@@ -27,38 +51,11 @@
         {
           "name": "value",
           "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:oncotree:ALL",
-    "conceptType": "Disease",
-    "name": "Acute Lymphoid Leukemia",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:oncotree:ALL",
-      "code": "ALL",
-      "name": "Acute Lymphoid Leukemia",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
-      "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "txgrp:207",
     "membershipOperator": "AND",

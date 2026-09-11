@@ -87,6 +87,30 @@
     "id": "prop:vtxr:538",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:PRAD",
+      "conceptType": "Disease",
+      "name": "Prostate Adenocarcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:PRAD",
+        "code": "PRAD",
+        "name": "Prostate Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PRAD"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:49",
@@ -208,38 +232,11 @@
           {
             "name": "requires_oncogenic",
             "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:PRAD",
-      "conceptType": "Disease",
-      "name": "Prostate Adenocarcinoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": true,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:PRAD",
-        "code": "PRAD",
-        "name": "Prostate Adenocarcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PRAD"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "txgrp:105",
       "membershipOperator": "AND",

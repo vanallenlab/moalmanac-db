@@ -2,6 +2,30 @@
   "id": "prop:vtxr:839",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:oncotree:LGSOC",
+    "conceptType": "Disease",
+    "name": "Low-Grade Serous Ovarian Cancer",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:oncotree:LGSOC",
+      "code": "LGSOC",
+      "name": "Low-Grade Serous Ovarian Cancer",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:171",
@@ -119,38 +143,11 @@
         {
           "name": "hgvsc",
           "value": "ENST00000311936.3:c.35G>T"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:oncotree:LGSOC",
-    "conceptType": "Disease",
-    "name": "Low-Grade Serous Ovarian Cancer",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:oncotree:LGSOC",
-      "code": "LGSOC",
-      "name": "Low-Grade Serous Ovarian Cancer",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
-      "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "txgrp:182",
     "membershipOperator": "AND",

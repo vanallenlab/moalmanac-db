@@ -2,35 +2,6 @@
   "id": "prop:vtxr:344",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:144",
-      "type": "CategoricalVariant",
-      "name": "TMB-H (>= 10 mutations / Mb)",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Tumor mutational burden"
-        },
-        {
-          "name": "classification",
-          "value": "High"
-        },
-        {
-          "name": "minimum_mutations",
-          "value": null
-        },
-        {
-          "name": "minimum_mutations_per_megabase",
-          "value": 10
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:ncit:C132146",
@@ -55,6 +26,32 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:144",
+      "type": "CategoricalVariant",
+      "name": "TMB-H (>= 10 mutations / Mb)",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Tumor mutational burden"
+        },
+        {
+          "name": "classification",
+          "value": "High"
+        },
+        {
+          "name": "minimum_mutations",
+          "value": null
+        },
+        {
+          "name": "minimum_mutations_per_megabase",
+          "value": 10
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C106432",
     "conceptType": "Drug",

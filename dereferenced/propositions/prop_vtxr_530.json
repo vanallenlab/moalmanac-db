@@ -2,6 +2,30 @@
   "id": "prop:vtxr:530",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:oncotree:BL",
+    "conceptType": "Disease",
+    "name": "Burkitt Lymphoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:oncotree:BL",
+      "code": "BL",
+      "name": "Burkitt Lymphoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BL"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:157",
@@ -79,38 +103,11 @@
         {
           "name": "locus",
           "value": null
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:oncotree:BL",
-    "conceptType": "Disease",
-    "name": "Burkitt Lymphoma",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:oncotree:BL",
-      "code": "BL",
-      "name": "Burkitt Lymphoma",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
-      "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BL"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "tx:ncit:C165776",
     "conceptType": "Drug",

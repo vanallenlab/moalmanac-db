@@ -100,6 +100,30 @@
     "id": "prop:vtxr:127",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:BLCA",
+      "conceptType": "Disease",
+      "name": "Bladder Urothelial Carcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:BLCA",
+        "code": "BLCA",
+        "name": "Bladder Urothelial Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BLCA"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:102",
@@ -217,38 +241,11 @@
           {
             "name": "hgvsc",
             "value": "ENST00000260795.2:c.1118A>G"
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:BLCA",
-      "conceptType": "Disease",
-      "name": "Bladder Urothelial Carcinoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": true,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:BLCA",
-        "code": "BLCA",
-        "name": "Bladder Urothelial Carcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BLCA"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "tx:ncit:C103273",
       "conceptType": "Drug",

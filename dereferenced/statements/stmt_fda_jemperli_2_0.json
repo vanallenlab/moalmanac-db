@@ -100,27 +100,6 @@
     "id": "prop:vtxr:103",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:36",
-        "type": "CategoricalVariant",
-        "name": "dMMR",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Mismatch Repair"
-          },
-          {
-            "name": "status",
-            "value": "Deficient"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
     "subjectVariant": {},
     "conditionQualifier": {
       "id": "dis:ncit:C132146",
@@ -145,6 +124,24 @@
         ]
       }
     },
+    "biomarkers": [
+      {
+        "id": "bmkr:36",
+        "type": "CategoricalVariant",
+        "name": "dMMR",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Mismatch Repair"
+          },
+          {
+            "name": "status",
+            "value": "Deficient"
+          }
+        ],
+        "present": true
+      }
+    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C126799",
       "conceptType": "Drug",

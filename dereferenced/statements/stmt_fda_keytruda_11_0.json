@@ -87,27 +87,6 @@
     "id": "prop:vtxr:341",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:142",
-        "type": "CategoricalVariant",
-        "name": "MSI-L",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Microsatellite Stability"
-          },
-          {
-            "name": "status",
-            "value": "Microsatellite instability-low (MSI-L)"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
     "subjectVariant": {},
     "conditionQualifier": {
       "id": "dis:oncotree:UCEC",
@@ -132,6 +111,24 @@
         ]
       }
     },
+    "biomarkers": [
+      {
+        "id": "bmkr:142",
+        "type": "CategoricalVariant",
+        "name": "MSI-L",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Microsatellite Stability"
+          },
+          {
+            "name": "status",
+            "value": "Microsatellite instability-low (MSI-L)"
+          }
+        ],
+        "present": true
+      }
+    ],
     "objectTherapeutic": {
       "id": "txgrp:61",
       "membershipOperator": "AND",

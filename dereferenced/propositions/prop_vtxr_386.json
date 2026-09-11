@@ -2,39 +2,6 @@
   "id": "prop:vtxr:386",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:54",
-      "type": "CategoricalVariant",
-      "name": "CD20 +",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "CD20"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:ncit:C3163",
@@ -73,6 +40,36 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:54",
+      "type": "CategoricalVariant",
+      "name": "CD20 +",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Protein expression"
+        },
+        {
+          "name": "marker",
+          "value": "CD20"
+        },
+        {
+          "name": "unit",
+          "value": "status"
+        },
+        {
+          "name": "equality",
+          "value": "="
+        },
+        {
+          "name": "value",
+          "value": "Positive"
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "txgrp:83",
     "membershipOperator": "AND",

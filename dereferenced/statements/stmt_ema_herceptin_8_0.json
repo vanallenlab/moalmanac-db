@@ -100,6 +100,30 @@
     "id": "prop:vtxr:570",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:EGC",
+      "conceptType": "Disease",
+      "name": "Esophagogastric Adenocarcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:EGC",
+        "code": "EGC",
+        "name": "Esophagogastric Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=EGC"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:20",
@@ -125,38 +149,11 @@
           {
             "name": "value",
             "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:EGC",
-      "conceptType": "Disease",
-      "name": "Esophagogastric Adenocarcinoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": true,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:EGC",
-        "code": "EGC",
-        "name": "Esophagogastric Adenocarcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=EGC"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "txgrp:115",
       "membershipOperator": "AND",

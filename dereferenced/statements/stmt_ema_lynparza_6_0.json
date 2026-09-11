@@ -100,27 +100,6 @@
     "id": "prop:vtxr:620",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:37",
-        "type": "CategoricalVariant",
-        "name": "pMMR",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Mismatch Repair"
-          },
-          {
-            "name": "status",
-            "value": "Proficient"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
     "subjectVariant": {},
     "conditionQualifier": {
       "id": "dis:oncotree:UCEC",
@@ -145,6 +124,24 @@
         ]
       }
     },
+    "biomarkers": [
+      {
+        "id": "bmkr:37",
+        "type": "CategoricalVariant",
+        "name": "pMMR",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Mismatch Repair"
+          },
+          {
+            "name": "status",
+            "value": "Proficient"
+          }
+        ],
+        "present": true
+      }
+    ],
     "objectTherapeutic": {
       "id": "txgrp:123",
       "membershipOperator": "AND",

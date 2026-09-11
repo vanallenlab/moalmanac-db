@@ -2,35 +2,6 @@
   "id": "prop:vtxr:202",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:61",
-      "type": "CategoricalVariant",
-      "name": "5q deletion",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Copy Number (arm level)"
-        },
-        {
-          "name": "chromosome",
-          "value": "5"
-        },
-        {
-          "name": "arm",
-          "value": "q"
-        },
-        {
-          "name": "direction",
-          "value": "Deletion"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:oncotree:MDS",
@@ -55,6 +26,32 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:61",
+      "type": "CategoricalVariant",
+      "name": "5q deletion",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Copy Number (arm level)"
+        },
+        {
+          "name": "chromosome",
+          "value": "5"
+        },
+        {
+          "name": "arm",
+          "value": "q"
+        },
+        {
+          "name": "direction",
+          "value": "Deletion"
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C2668",
     "conceptType": "Drug",

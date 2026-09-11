@@ -99,6 +99,30 @@
     "id": "prop:vtxr:42",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:MEL",
+      "conceptType": "Disease",
+      "name": "Melanoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:MEL",
+        "code": "MEL",
+        "name": "Melanoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MEL"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:17",
@@ -216,38 +240,11 @@
           {
             "name": "hgvsc",
             "value": "ENST00000288602.6:c.1798_1799delinsAA"
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:MEL",
-      "conceptType": "Disease",
-      "name": "Melanoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": true,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:MEL",
-        "code": "MEL",
-        "name": "Melanoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=MEL"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "txgrp:10",
       "membershipOperator": "AND",

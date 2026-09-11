@@ -100,6 +100,30 @@
     "id": "prop:vtxr:433",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:FL",
+      "conceptType": "Disease",
+      "name": "Follicular Lymphoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:FL",
+        "code": "FL",
+        "name": "Follicular Lymphoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=FL"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:149",
@@ -217,38 +241,11 @@
           {
             "name": "hgvsc",
             "value": "ENST00000320356.2:c.1937A>G"
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:FL",
-      "conceptType": "Disease",
-      "name": "Follicular Lymphoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": false,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:FL",
-        "code": "FL",
-        "name": "Follicular Lymphoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=FL"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "tx:ncit:C107506",
       "conceptType": "Drug",

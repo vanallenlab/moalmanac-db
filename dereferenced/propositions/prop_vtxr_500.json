@@ -2,6 +2,30 @@
   "id": "prop:vtxr:500",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:oncotree:BRCA",
+    "conceptType": "Disease",
+    "name": "Invasive Breast Carcinoma",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:oncotree:BRCA",
+      "code": "BRCA",
+      "name": "Invasive Breast Carcinoma",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:2",
@@ -27,12 +51,9 @@
         {
           "name": "value",
           "value": "Negative"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     },
     {
       "id": "bmkr:3",
@@ -58,38 +79,11 @@
         {
           "name": "value",
           "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:oncotree:BRCA",
-    "conceptType": "Disease",
-    "name": "Invasive Breast Carcinoma",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:oncotree:BRCA",
-      "code": "BRCA",
-      "name": "Invasive Breast Carcinoma",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
-      "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=BRCA"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "txgrp:91",
     "membershipOperator": "AND",

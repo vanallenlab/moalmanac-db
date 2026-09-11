@@ -2,23 +2,6 @@
   "id": "prop:vtxr:918",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:182",
-      "type": "CategoricalVariant",
-      "name": "HLA-A*02:01",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Haplotype genotype"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:oncotree:UM",
@@ -57,6 +40,20 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:182",
+      "type": "CategoricalVariant",
+      "name": "HLA-A*02:01",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Haplotype genotype"
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C94208",
     "conceptType": "Drug",

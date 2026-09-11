@@ -2,6 +2,30 @@
   "id": "prop:vtxr:76",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
+  "subjectVariant": {},
+  "conditionQualifier": {
+    "id": "dis:oncotree:NSCLC",
+    "conceptType": "Disease",
+    "name": "Non-Small Cell Lung Cancer",
+    "mappings": [],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:oncotree:NSCLC",
+      "code": "NSCLC",
+      "name": "Non-Small Cell Lung Cancer",
+      "system": "https://oncotree.mskcc.org",
+      "systemVersion": "oncotree_2021_11_02",
+      "iris": [
+        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+      ]
+    }
+  },
   "biomarkers": [
     {
       "id": "bmkr:34",
@@ -71,12 +95,9 @@
         {
           "name": "biomarker_type",
           "value": "Wild type"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     },
     {
       "id": "bmkr:35",
@@ -146,12 +167,9 @@
         {
           "name": "biomarker_type",
           "value": "Wild type"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     },
     {
       "id": "bmkr:36",
@@ -165,12 +183,9 @@
         {
           "name": "status",
           "value": "Deficient"
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     },
     {
       "id": "bmkr:39",
@@ -196,38 +211,11 @@
         {
           "name": "value",
           "value": 0.5
-        },
-        {
-          "name": "_present",
-          "value": true
         }
-      ]
+      ],
+      "present": true
     }
   ],
-  "subjectVariant": {},
-  "conditionQualifier": {
-    "id": "dis:oncotree:NSCLC",
-    "conceptType": "Disease",
-    "name": "Non-Small Cell Lung Cancer",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ],
-    "primaryCoding": {
-      "id": "coding:oncotree:NSCLC",
-      "code": "NSCLC",
-      "name": "Non-Small Cell Lung Cancer",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
-      "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
-      ]
-    }
-  },
   "objectTherapeutic": {
     "id": "tx:ncit:C121540",
     "conceptType": "Drug",

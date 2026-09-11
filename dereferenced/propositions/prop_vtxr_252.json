@@ -2,27 +2,6 @@
   "id": "prop:vtxr:252",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:51",
-      "type": "CategoricalVariant",
-      "name": "HRD",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Homologous Recombination"
-        },
-        {
-          "name": "status",
-          "value": "Deficient"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:oncotree:HGSFT",
@@ -47,6 +26,24 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:51",
+      "type": "CategoricalVariant",
+      "name": "HRD",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Homologous Recombination"
+        },
+        {
+          "name": "status",
+          "value": "Deficient"
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "txgrp:43",
     "membershipOperator": "AND",

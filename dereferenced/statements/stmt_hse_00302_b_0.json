@@ -99,9 +99,33 @@
     "id": "prop:vtxr:582",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:ALL",
+      "conceptType": "Disease",
+      "name": "Acute Lymphoid Leukemia",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:ALL",
+        "code": "ALL",
+        "name": "Acute Lymphoid Leukemia",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+        ]
+      }
+    },
     "biomarkers": [
       {
-        "id": "bmkr:15",
+        "id": "bmkr:12",
         "type": "CategoricalVariant",
         "name": "BCR::ABL1",
         "genes": [
@@ -234,38 +258,11 @@
           {
             "name": "locus",
             "value": null
-          },
-          {
-            "name": "_present",
-            "value": false
           }
-        ]
+        ],
+        "present": false
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:ALL",
-      "conceptType": "Disease",
-      "name": "Acute Lymphoid Leukemia",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": false,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:ALL",
-        "code": "ALL",
-        "name": "Acute Lymphoid Leukemia",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "tx:ncit:C95777",
       "conceptType": "Drug",

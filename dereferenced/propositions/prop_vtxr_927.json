@@ -2,32 +2,6 @@
   "id": "prop:vtxr:927",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:183",
-      "type": "CategoricalVariant",
-      "name": "t(11;14)",
-      "genes": [],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Rearrangement"
-        },
-        {
-          "name": "rearrangement_type",
-          "value": "Translocation"
-        },
-        {
-          "name": "locus",
-          "value": null
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:ncit:C4337",
@@ -66,6 +40,29 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:183",
+      "type": "CategoricalVariant",
+      "name": "t(11;14)",
+      "genes": [],
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Rearrangement"
+        },
+        {
+          "name": "rearrangement_type",
+          "value": "Translocation"
+        },
+        {
+          "name": "locus",
+          "value": null
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C81934",
     "conceptType": "Drug",

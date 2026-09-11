@@ -99,6 +99,30 @@
     "id": "prop:vtxr:261",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:PAAD",
+      "conceptType": "Disease",
+      "name": "Pancreatic Adenocarcinoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:PAAD",
+        "code": "PAAD",
+        "name": "Pancreatic Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PAAD"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:50",
@@ -220,38 +244,11 @@
           {
             "name": "requires_pathogenic",
             "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:PAAD",
-      "conceptType": "Disease",
-      "name": "Pancreatic Adenocarcinoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": true,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:PAAD",
-        "code": "PAAD",
-        "name": "Pancreatic Adenocarcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PAAD"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "tx:ncit:C71721",
       "conceptType": "Drug",

@@ -2,27 +2,6 @@
   "id": "prop:vtxr:324",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:38",
-      "type": "CategoricalVariant",
-      "name": "MSI-H",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Microsatellite Stability"
-        },
-        {
-          "name": "status",
-          "value": "Microsatellite instability-high (MSI-H)"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
   "subjectVariant": {},
   "conditionQualifier": {
     "id": "dis:oncotree:COADREAD",
@@ -47,6 +26,24 @@
       ]
     }
   },
+  "biomarkers": [
+    {
+      "id": "bmkr:38",
+      "type": "CategoricalVariant",
+      "name": "MSI-H",
+      "extensions": [
+        {
+          "name": "biomarker_type",
+          "value": "Microsatellite Stability"
+        },
+        {
+          "name": "status",
+          "value": "Microsatellite instability-high (MSI-H)"
+        }
+      ],
+      "present": true
+    }
+  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C106432",
     "conceptType": "Drug",

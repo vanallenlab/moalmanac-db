@@ -100,6 +100,44 @@
     "id": "prop:vtxr:694",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:ncit:C3163",
+      "conceptType": "Disease",
+      "name": "Chronic Lymphocytic Leukemia",
+      "mappings": [
+        {
+          "relation": "broadMatch",
+          "coding": {
+            "id": "coding:oncotree:CLLSLL",
+            "code": "CLLSLL",
+            "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2021_11_02",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C3163",
+        "code": "C3163",
+        "name": "Chronic Lymphocytic Leukemia",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "25.01d",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:81",
@@ -177,52 +215,11 @@
           {
             "name": "cytoband",
             "value": null
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:ncit:C3163",
-      "conceptType": "Disease",
-      "name": "Chronic Lymphocytic Leukemia",
-      "mappings": [
-        {
-          "relation": "broadMatch",
-          "coding": {
-            "id": "coding:oncotree:CLLSLL",
-            "code": "CLLSLL",
-            "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
-            "system": "https://oncotree.mskcc.org",
-            "systemVersion": "oncotree_2021_11_02",
-            "iris": [
-              "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": false,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:ncit:C3163",
-        "code": "C3163",
-        "name": "Chronic Lymphocytic Leukemia",
-        "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
-        "iris": [
-          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "tx:ncit:C103147",
       "conceptType": "Drug",

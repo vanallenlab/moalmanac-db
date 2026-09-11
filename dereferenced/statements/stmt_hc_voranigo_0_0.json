@@ -87,6 +87,30 @@
     "id": "prop:vtxr:479",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
+    "subjectVariant": {},
+    "conditionQualifier": {
+      "id": "dis:oncotree:ASTR",
+      "conceptType": "Disease",
+      "name": "Astrocytoma",
+      "mappings": [],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:oncotree:ASTR",
+        "code": "ASTR",
+        "name": "Astrocytoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2021_11_02",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ASTR"
+        ]
+      }
+    },
     "biomarkers": [
       {
         "id": "bmkr:74",
@@ -204,38 +228,11 @@
           {
             "name": "hgvsc",
             "value": "ENST00000345146.2:c.394C>T"
-          },
-          {
-            "name": "_present",
-            "value": true
           }
-        ]
+        ],
+        "present": true
       }
     ],
-    "subjectVariant": {},
-    "conditionQualifier": {
-      "id": "dis:oncotree:ASTR",
-      "conceptType": "Disease",
-      "name": "Astrocytoma",
-      "mappings": [],
-      "extensions": [
-        {
-          "name": "solid_tumor",
-          "value": true,
-          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:oncotree:ASTR",
-        "code": "ASTR",
-        "name": "Astrocytoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
-        "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ASTR"
-        ]
-      }
-    },
     "objectTherapeutic": {
       "id": "tx:ncit:C152914",
       "conceptType": "Drug",
