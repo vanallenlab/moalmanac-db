@@ -126,60 +126,66 @@
     },
     "biomarkers": [
       {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:2",
+        "present": true,
+        "subject": {
+          "id": "bmkr:2",
+          "type": "CategoricalVariant",
+          "name": "HER2-negative",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Human epidermal growth factor receptor 2 (HER2)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Negative"
+            }
+          ]
+        }
       },
       {
-        "id": "bmkr:178",
-        "type": "CategoricalVariant",
-        "name": "PD-L1 (TAP) >= 1%",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "PD-L1"
-          },
-          {
-            "name": "unit",
-            "value": "Tumor Area Positivity (TAP)"
-          },
-          {
-            "name": "equality",
-            "value": ">="
-          },
-          {
-            "name": "value",
-            "value": 0.01
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:178",
+        "present": true,
+        "subject": {
+          "id": "bmkr:178",
+          "type": "CategoricalVariant",
+          "name": "PD-L1 (TAP) >= 1%",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "PD-L1"
+            },
+            {
+              "name": "unit",
+              "value": "Tumor Area Positivity (TAP)"
+            },
+            {
+              "name": "equality",
+              "value": ">="
+            },
+            {
+              "name": "value",
+              "value": 0.01
+            }
+          ]
+        }
       }
     ],
     "objectTherapeutic": {

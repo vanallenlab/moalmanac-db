@@ -126,88 +126,97 @@
     },
     "biomarkers": [
       {
-        "id": "bmkr:1",
-        "type": "CategoricalVariant",
-        "name": "ER positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Estrogen receptor (ER)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:1",
+        "present": true,
+        "subject": {
+          "id": "bmkr:1",
+          "type": "CategoricalVariant",
+          "name": "ER positive",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Estrogen receptor (ER)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Positive"
+            }
+          ]
+        }
       },
       {
-        "id": "bmkr:22",
-        "type": "CategoricalVariant",
-        "name": "HER2-low",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Low"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:22",
+        "present": true,
+        "subject": {
+          "id": "bmkr:22",
+          "type": "CategoricalVariant",
+          "name": "HER2-low",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Human epidermal growth factor receptor 2 (HER2)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Low"
+            }
+          ]
+        }
       },
       {
-        "id": "bmkr:3",
-        "type": "CategoricalVariant",
-        "name": "PR positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Progesterone receptor (PR)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:3",
+        "present": true,
+        "subject": {
+          "id": "bmkr:3",
+          "type": "CategoricalVariant",
+          "name": "PR positive",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Progesterone receptor (PR)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Positive"
+            }
+          ]
+        }
       }
     ],
     "objectTherapeutic": {

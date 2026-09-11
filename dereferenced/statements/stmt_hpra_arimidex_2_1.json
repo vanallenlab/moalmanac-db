@@ -113,32 +113,35 @@
     },
     "biomarkers": [
       {
-        "id": "bmkr:3",
-        "type": "CategoricalVariant",
-        "name": "PR positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Progesterone receptor (PR)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:3",
+        "present": true,
+        "subject": {
+          "id": "bmkr:3",
+          "type": "CategoricalVariant",
+          "name": "PR positive",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "Progesterone receptor (PR)"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Positive"
+            }
+          ]
+        }
       }
     ],
     "objectTherapeutic": {

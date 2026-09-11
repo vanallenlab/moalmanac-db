@@ -274,6 +274,24 @@ class Biomarkers(BaseTable):
     ]
 
 
+class BiomarkerCriteria(BaseTable):
+    """
+    Represents the BiomarkerCriteria table, an interim biomarker-to-proposition link
+    (a draft Cat-VRS "categorical variant criterion"). Each record pairs a biomarker
+    with a `present` flag describing whether that biomarker is asserted present or
+    absent in the referencing proposition. This class inherits common functionality
+    from the BaseTable class and references the following tables:
+    - Biomarkers (initial key: `subject`, resulting key: `subject`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the criterion records.
+    """
+
+    foreign_keys = [
+        FKSingle("subject", "subject", lambda db: db.biomarkers),
+    ]
+
+
 class Codings(BaseTable):
     """
     Represents the Codings table. This class inherits common functionality from the BaseTable class and
@@ -558,7 +576,9 @@ class Propositions(BaseTable):
     """
     Represents the Propositions table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Biomarkers (initial key: `biomarkers`, resulting key: `biomarkers`)
+    - BiomarkerCriteria (initial key: `biomarker_criteria`, resulting key: `biomarkers`; each
+      element is the dereferenced criterion record, i.e. `{id, subject, present}` with
+      `subject` itself resolved to the full biomarker record)
     - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`)
     - Therapies (initial key: `therapy_id`, resulting key: `objectTherapeutic`)
     - TherapyGroups (initial_key: `therapy_group_id`, resulting key: `objectTherapeutic`)
@@ -569,7 +589,11 @@ class Propositions(BaseTable):
 
     foreign_keys = [
         FKSingle("conditionQualifier_id", "conditionQualifier", lambda db: db.diseases),
-        FKList("biomarkers", "biomarkers", lambda db: db.biomarkers),
+        FKList(
+            "biomarker_criteria",
+            "biomarkers",
+            lambda db: db.biomarker_criteria,
+        ),
     ]
 
     def dereference(self, db: Database) -> None:
@@ -777,6 +801,7 @@ class Database:
     Attributes:
         agents (Agents): An instance of the Agents class.
         biomarkers (Biomarkers): An instance of the Biomarkers class.
+        biomarker_criteria (BiomarkerCriteria): An instance of the BiomarkerCriteria class.
         codings (Codings): An instance of the Codings class.
         contributions (Contributions): An instance of the Contributions class.
         diseases (Diseases): An instance of the Diseases class.
@@ -794,6 +819,7 @@ class Database:
 
     agents: Agents
     biomarkers: Biomarkers
+    biomarker_criteria: BiomarkerCriteria
     codings: Codings
     contributions: Contributions
     diseases: Diseases
@@ -899,6 +925,7 @@ def clear_output_dir(output_dir: str, quiet: bool = False) -> None:
 _CONCEPT_DIRS = [
     ("agents", os.path.join("dereferenced", "agents")),
     ("biomarkers", os.path.join("dereferenced", "biomarkers")),
+    ("biomarker_criteria", os.path.join("dereferenced", "biomarker_criteria")),
     ("codings", os.path.join("dereferenced", "codings")),
     ("contributions", os.path.join("dereferenced", "contributions")),
     ("diseases", os.path.join("dereferenced", "diseases")),
@@ -918,7 +945,7 @@ def write_all_concepts(
     input_paths: dict, clear: bool = False, quiet: bool = False
 ) -> None:
     """
-    Writes per-concept JSON files for all 14 entity types to their output directories.
+    Writes per-concept JSON files for all 15 entity types to their output directories.
 
     Constructs a fresh Database from the raw input files (independent of any already-resolved
     full-DB tables), dereferences each entity, and writes one JSON file per record to
@@ -941,6 +968,9 @@ def write_all_concepts(
         ),
         biomarkers=Biomarkers(
             records=read.json_records(file=input_paths["biomarkers"])
+        ),
+        biomarker_criteria=BiomarkerCriteria(
+            records=read.json_records(file=input_paths["biomarker_criteria"])
         ),
         codings=Codings(
             records=read.json_records(file=input_paths["codings"]),
@@ -1007,6 +1037,7 @@ def main(input_paths):
     about = read.json_records(file=input_paths["about"])
     agents = read.json_records(file=input_paths["agents"])
     biomarkers = read.json_records(file=input_paths["biomarkers"])
+    biomarker_criteria = read.json_records(file=input_paths["biomarker_criteria"])
     codings = read.json_records(file=input_paths["codings"])
     contributions = read.json_records(file=input_paths["contributions"])
     diseases = read.json_records(file=input_paths["diseases"])
@@ -1033,6 +1064,7 @@ def main(input_paths):
     # Step 2: Generate table objects
     agents = Agents(records=agents)
     biomarkers = Biomarkers(records=biomarkers)
+    biomarker_criteria = BiomarkerCriteria(records=biomarker_criteria)
     codings = Codings(records=codings)
     contributions = Contributions(records=contributions)
     diseases = Diseases(records=diseases)
@@ -1051,6 +1083,7 @@ def main(input_paths):
     db = Database(
         agents=agents,
         biomarkers=biomarkers,
+        biomarker_criteria=biomarker_criteria,
         codings=codings,
         contributions=contributions,
         diseases=diseases,
@@ -1091,6 +1124,11 @@ if __name__ == "__main__":
         "--biomarkers",
         help="json detailing db biomarkers",
         default=os.path.join("referenced", "biomarkers.json"),
+    )
+    arg_parser.add_argument(
+        "--biomarker-criteria",
+        help="json detailing db biomarker criteria",
+        default=os.path.join("referenced", "biomarker_criteria.json"),
     )
     arg_parser.add_argument(
         "--codings",
@@ -1184,6 +1222,7 @@ if __name__ == "__main__":
         "about": args.about,
         "agents": args.agents,
         "biomarkers": args.biomarkers,
+        "biomarker_criteria": args.biomarker_criteria,
         "codings": args.codings,
         "contributions": args.contributions,
         "diseases": args.diseases,

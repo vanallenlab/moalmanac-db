@@ -152,20 +152,23 @@
     },
     "biomarkers": [
       {
-        "id": "bmkr:38",
-        "type": "CategoricalVariant",
-        "name": "MSI-H",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Microsatellite Stability"
-          },
-          {
-            "name": "status",
-            "value": "Microsatellite instability-high (MSI-H)"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:38",
+        "present": true,
+        "subject": {
+          "id": "bmkr:38",
+          "type": "CategoricalVariant",
+          "name": "MSI-H",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Microsatellite Stability"
+            },
+            {
+              "name": "status",
+              "value": "Microsatellite instability-high (MSI-H)"
+            }
+          ]
+        }
       }
     ],
     "objectTherapeutic": {

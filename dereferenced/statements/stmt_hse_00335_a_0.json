@@ -125,32 +125,35 @@
     },
     "biomarkers": [
       {
-        "id": "bmkr:31",
-        "type": "CategoricalVariant",
-        "name": "CD117 +",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "CD117"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:31",
+        "present": true,
+        "subject": {
+          "id": "bmkr:31",
+          "type": "CategoricalVariant",
+          "name": "CD117 +",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "CD117"
+            },
+            {
+              "name": "unit",
+              "value": "status"
+            },
+            {
+              "name": "equality",
+              "value": "="
+            },
+            {
+              "name": "value",
+              "value": "Positive"
+            }
+          ]
+        }
       }
     ],
     "objectTherapeutic": {

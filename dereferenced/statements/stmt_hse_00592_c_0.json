@@ -125,32 +125,35 @@
     },
     "biomarkers": [
       {
-        "id": "bmkr:71",
-        "type": "CategoricalVariant",
-        "name": "PD-L1 >= 5%",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "PD-L1"
-          },
-          {
-            "name": "unit",
-            "value": "Tumor Proportion Score (TPS)"
-          },
-          {
-            "name": "equality",
-            "value": ">="
-          },
-          {
-            "name": "value",
-            "value": 0.05
-          }
-        ],
-        "present": true
+        "id": "bmkr.criterion:71",
+        "present": true,
+        "subject": {
+          "id": "bmkr:71",
+          "type": "CategoricalVariant",
+          "name": "PD-L1 >= 5%",
+          "extensions": [
+            {
+              "name": "biomarker_type",
+              "value": "Protein expression"
+            },
+            {
+              "name": "marker",
+              "value": "PD-L1"
+            },
+            {
+              "name": "unit",
+              "value": "Tumor Proportion Score (TPS)"
+            },
+            {
+              "name": "equality",
+              "value": ">="
+            },
+            {
+              "name": "value",
+              "value": 0.05
+            }
+          ]
+        }
       }
     ],
     "objectTherapeutic": {

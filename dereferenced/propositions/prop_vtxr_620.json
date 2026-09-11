@@ -28,20 +28,23 @@
   },
   "biomarkers": [
     {
-      "id": "bmkr:37",
-      "type": "CategoricalVariant",
-      "name": "pMMR",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Mismatch Repair"
-        },
-        {
-          "name": "status",
-          "value": "Proficient"
-        }
-      ],
-      "present": true
+      "id": "bmkr.criterion:37",
+      "present": true,
+      "subject": {
+        "id": "bmkr:37",
+        "type": "CategoricalVariant",
+        "name": "pMMR",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Mismatch Repair"
+          },
+          {
+            "name": "status",
+            "value": "Proficient"
+          }
+        ]
+      }
     }
   ],
   "objectTherapeutic": {

@@ -28,20 +28,23 @@
   },
   "biomarkers": [
     {
-      "id": "bmkr:36",
-      "type": "CategoricalVariant",
-      "name": "dMMR",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Mismatch Repair"
-        },
-        {
-          "name": "status",
-          "value": "Deficient"
-        }
-      ],
-      "present": true
+      "id": "bmkr.criterion:36",
+      "present": true,
+      "subject": {
+        "id": "bmkr:36",
+        "type": "CategoricalVariant",
+        "name": "dMMR",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Mismatch Repair"
+          },
+          {
+            "name": "status",
+            "value": "Deficient"
+          }
+        ]
+      }
     }
   ],
   "objectTherapeutic": {

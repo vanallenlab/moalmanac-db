@@ -10,6 +10,7 @@ def input_paths():
     return {
         "agents": "referenced/agents.json",
         "biomarkers": "referenced/biomarkers.json",
+        "biomarker_criteria": "referenced/biomarker_criteria.json",
         "codings": "referenced/codings.json",
         "contributions": "referenced/contributions.json",
         "diseases": "referenced/diseases.json",

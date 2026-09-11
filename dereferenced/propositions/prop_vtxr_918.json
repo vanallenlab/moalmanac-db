@@ -42,16 +42,19 @@
   },
   "biomarkers": [
     {
-      "id": "bmkr:182",
-      "type": "CategoricalVariant",
-      "name": "HLA-A*02:01",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Haplotype genotype"
-        }
-      ],
-      "present": true
+      "id": "bmkr.criterion:182",
+      "present": true,
+      "subject": {
+        "id": "bmkr:182",
+        "type": "CategoricalVariant",
+        "name": "HLA-A*02:01",
+        "extensions": [
+          {
+            "name": "biomarker_type",
+            "value": "Haplotype genotype"
+          }
+        ]
+      }
     }
   ],
   "objectTherapeutic": {
