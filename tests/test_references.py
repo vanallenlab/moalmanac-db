@@ -184,3 +184,39 @@ def test_status_superseded_indication_has_only_superseded_statements(data):
             f"  - Statement status: {statement.get('status')}"
             )
             assert statement.get('status') == 'Superseded', error_message
+
+def test_biomarker_gene_ids_resolve(data):
+    """
+    Ensures every id in a biomarker's `genes` resolves to a record in genes.json
+    """
+    for biomarker in data['biomarkers']:
+        for gene_id in biomarker['genes']:
+            matched = json_utils.get_records_by_key_value(
+                records=data['genes'],
+                key='id',
+                value=gene_id
+            )
+            error_message = (
+            f"Biomarker gene id does not resolve to a gene record.\n"
+            f"  - Biomarker ID: {biomarker['id']}\n"
+            f"  - Gene ID: {gene_id}"
+            )
+            assert len(matched) == 1, error_message
+
+def test_biomarker_copy_change_ids_resolve(data):
+    """
+    Ensures every id in a biomarker's `copyChange` resolves to a record in copy_changes.json
+    """
+    for biomarker in data['biomarkers']:
+        for copy_change_id in biomarker['copyChange']:
+            matched = json_utils.get_records_by_key_value(
+                records=data['copy_change'],
+                key='id',
+                value=copy_change_id
+            )
+            error_message = (
+            f"Biomarker copyChange id does not resolve to a copy_change record.\n"
+            f"  - Biomarker ID: {biomarker['id']}\n"
+            f"  - CopyChange ID: {copy_change_id}"
+            )
+            assert len(matched) == 1, error_message

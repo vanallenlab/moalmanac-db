@@ -13,6 +13,7 @@ def input_paths():
         "biomarker_criteria": "referenced/biomarker_criteria.json",
         "codings": "referenced/codings.json",
         "contributions": "referenced/contributions.json",
+        "copy_change": "referenced/copy_changes.json",
         "diseases": "referenced/diseases.json",
         "documents": "referenced/documents.json",
         "genes": "referenced/genes.json",

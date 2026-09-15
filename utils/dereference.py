@@ -300,34 +300,48 @@ def is_fusion(record: dict) -> bool:
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables, then shapes the resolved genes into Cat-VRS constraint
-    objects. This table references the following tables:
-    - Genes (initial key: `constraints`, resulting key: `constraints`)
+    dereferences keys that reference other tables, then shapes the resolved genes and copy changes into
+    Cat-VRS constraint objects. This table references the following tables:
+    - Genes (initial key: `genes`, resulting key: `genes`)
+    - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
 
     For most records, each dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions
     (`rearrangement_type` extension equal to "Fusion"), the resolved genes are instead collapsed into a
     single `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known.
+    Each dereferenced copy change is wrapped as a `CopyChangeConstraint`. All resulting constraints are
+    merged into a single `constraints` list.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
     foreign_keys = [
-        FKList("constraints", "constraints", lambda db: db.genes),
+        FKList("genes", "genes", lambda db: db.genes),
+        FKList(
+            "copyChange",
+            "copyChange",
+            lambda db: db.copy_change,
+            post=lambda record: {
+                "type": "CopyChangeConstraint",
+                "copyChange": record["name"],
+            },
+        ),
     ]
 
     def wrap_constraints(self) -> None:
         """
-        Wraps each record's dereferenced genes into Cat-VRS constraint objects.
+        Wraps each record's dereferenced genes and copy changes into Cat-VRS constraint objects.
 
         Non-fusion records get one `FeatureContextConstraint` per gene. Fusion records collapse their
         genes into a single `AdjacencyConstraint`, with `orderKnown` True only when both fusion partners
-        are known (two genes).
+        are known (two genes). Each copy change becomes a `CopyChangeConstraint`. All constraints are
+        merged into a single `constraints` list.
         """
         for record in self.records:
-            genes = record["constraints"]
+            genes = record.pop("genes")
+            copy_changes = record.pop("copyChange")
             if is_fusion(record):
-                record["constraints"] = [
+                gene_constraints = [
                     {
                         "type": "AdjacencyConstraint",
                         "orderKnown": len(genes) == 2,
@@ -335,10 +349,11 @@ class Biomarkers(BaseTable):
                     },
                 ]
             else:
-                record["constraints"] = [
+                gene_constraints = [
                     {"type": "FeatureContextConstraint", "featureContext": gene}
                     for gene in genes
                 ]
+            record["constraints"] = gene_constraints + copy_changes
 
     def dereference(self, db: Database) -> None:
         """
@@ -354,6 +369,10 @@ class Biomarkers(BaseTable):
             return
         super().dereference(db)
         self.wrap_constraints()
+        for record in self.records:
+            self.reorder_keys(
+                record, ["id", "type", "name", "constraints", "extensions"]
+            )
 
 
 class BiomarkerCriteria(BaseTable):
@@ -402,6 +421,16 @@ class Contributions(BaseTable):
             post=strip_keys("extensions"),
         ),
     ]
+
+
+class CopyChanges(BaseTable):
+    """
+    Represents the CopyChanges table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the copy change records.
+    """
 
 
 class Diseases(BaseTable):
@@ -916,6 +945,7 @@ class Database:
         biomarker_criteria (BiomarkerCriteria): An instance of the BiomarkerCriteria class.
         codings (Codings): An instance of the Codings class.
         contributions (Contributions): An instance of the Contributions class.
+        copy_change (CopyChanges): An instance of the CopyChanges class.
         diseases (Diseases): An instance of the Diseases class.
         documents (Documents): An instance of the Documents class.
         genes (Genes): An instance of the Genes class.
@@ -934,6 +964,7 @@ class Database:
     biomarker_criteria: BiomarkerCriteria
     codings: Codings
     contributions: Contributions
+    copy_change: CopyChanges
     diseases: Diseases
     documents: Documents
     genes: Genes
@@ -1040,6 +1071,7 @@ _CONCEPT_DIRS = [
     ("biomarker_criteria", os.path.join("dereferenced", "biomarker_criteria")),
     ("codings", os.path.join("dereferenced", "codings")),
     ("contributions", os.path.join("dereferenced", "contributions")),
+    ("copy_change", os.path.join("dereferenced", "copy_change")),
     ("diseases", os.path.join("dereferenced", "diseases")),
     ("documents", os.path.join("dereferenced", "documents")),
     ("genes", os.path.join("dereferenced", "genes")),
@@ -1089,6 +1121,9 @@ def write_all_concepts(
         ),
         contributions=Contributions(
             records=read.json_records(file=input_paths["contributions"])
+        ),
+        copy_change=CopyChanges(
+            records=read.json_records(file=input_paths["copy_change"]),
         ),
         diseases=Diseases(
             records=read.json_records(file=input_paths["diseases"]),
@@ -1152,6 +1187,7 @@ def main(input_paths):
     biomarker_criteria = read.json_records(file=input_paths["biomarker_criteria"])
     codings = read.json_records(file=input_paths["codings"])
     contributions = read.json_records(file=input_paths["contributions"])
+    copy_change = read.json_records(file=input_paths["copy_change"])
     diseases = read.json_records(file=input_paths["diseases"])
     documents = read.json_records(file=input_paths["documents"])
     genes = read.json_records(file=input_paths["genes"])
@@ -1179,6 +1215,7 @@ def main(input_paths):
     biomarker_criteria = BiomarkerCriteria(records=biomarker_criteria)
     codings = Codings(records=codings)
     contributions = Contributions(records=contributions)
+    copy_change = CopyChanges(records=copy_change)
     diseases = Diseases(records=diseases)
     documents = Documents(records=documents)
     genes = Genes(records=genes)
@@ -1198,6 +1235,7 @@ def main(input_paths):
         biomarker_criteria=biomarker_criteria,
         codings=codings,
         contributions=contributions,
+        copy_change=copy_change,
         diseases=diseases,
         documents=documents,
         genes=genes,
@@ -1251,6 +1289,11 @@ if __name__ == "__main__":
         "--contributions",
         help="json detailing db contributions",
         default=os.path.join("referenced", "contributions.json"),
+    )
+    arg_parser.add_argument(
+        "--copy-change",
+        help="json detailing db copy changes",
+        default=os.path.join("referenced", "copy_changes.json"),
     )
     arg_parser.add_argument(
         "--diseases",
@@ -1337,6 +1380,7 @@ if __name__ == "__main__":
         "biomarker_criteria": args.biomarker_criteria,
         "codings": args.codings,
         "contributions": args.contributions,
+        "copy_change": args.copy_change,
         "diseases": args.diseases,
         "documents": args.documents,
         "genes": args.genes,
