@@ -215,6 +215,28 @@ class BaseTable:
         record.pop(key)
 
     @staticmethod
+    def reorder_keys(record: dict, key_order: list[str]) -> None:
+        """
+        Reorders a record's keys in place to match the given order.
+
+        Args:
+            record (dict): the dictionary whose keys will be reordered.
+            key_order (list[str]): keys in their desired order. Keys present in `record` but not listed
+                here keep their relative order and are appended after the listed keys.
+
+        Raises:
+            KeyError: If a key in `key_order` is not found in `record`.
+        """
+        for key in key_order:
+            if key not in record:
+                raise KeyError(f"Key '{key}' not found in {record}")
+
+        remaining = [key for key in record if key not in key_order]
+        reordered = {key: record[key] for key in [*key_order, *remaining]}
+        record.clear()
+        record.update(reordered)
+
+    @staticmethod
     def replace_key(record: dict, old_key: str, new_key: str) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
@@ -259,19 +281,79 @@ class Agents(BaseTable):
     """
 
 
+def is_fusion(record: dict) -> bool:
+    """
+    Checks whether a biomarker record's extensions mark it as a gene fusion.
+
+    Args:
+        record (dict): A biomarker record with an `extensions` list.
+
+    Returns:
+        bool: True if the record has a `rearrangement_type` extension valued "Fusion".
+    """
+    return any(
+        extension["name"] == "rearrangement_type" and extension["value"] == "Fusion"
+        for extension in record["extensions"]
+    )
+
+
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table references the following tables:
-    - Genes (initial key: `genes`, resulting key: `genes`)
+    dereferences keys that reference other tables, then shapes the resolved genes into Cat-VRS constraint
+    objects. This table references the following tables:
+    - Genes (initial key: `constraints`, resulting key: `constraints`)
+
+    For most records, each dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions
+    (`rearrangement_type` extension equal to "Fusion"), the resolved genes are instead collapsed into a
+    single `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
     foreign_keys = [
-        FKList("genes", "genes", lambda db: db.genes, key_always_present=False),
+        FKList("constraints", "constraints", lambda db: db.genes),
     ]
+
+    def wrap_constraints(self) -> None:
+        """
+        Wraps each record's dereferenced genes into Cat-VRS constraint objects.
+
+        Non-fusion records get one `FeatureContextConstraint` per gene. Fusion records collapse their
+        genes into a single `AdjacencyConstraint`, with `orderKnown` True only when both fusion partners
+        are known (two genes).
+        """
+        for record in self.records:
+            genes = record["constraints"]
+            if is_fusion(record):
+                record["constraints"] = [
+                    {
+                        "type": "AdjacencyConstraint",
+                        "orderKnown": len(genes) == 2,
+                        "adjoinedElements": genes,
+                    },
+                ]
+            else:
+                record["constraints"] = [
+                    {"type": "FeatureContextConstraint", "featureContext": gene}
+                    for gene in genes
+                ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all referenced keys within the Biomarkers table, then wraps genes into constraints.
+
+        Resolves foreign keys declared in `foreign_keys` via the base class, then applies
+        `wrap_constraints`. Each table is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.wrap_constraints()
 
 
 class BiomarkerCriteria(BaseTable):
@@ -454,6 +536,9 @@ class Genes(BaseTable):
     - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
     - Mappings (initial key: `mappings`, resulting_key: `mappings`)
 
+    After foreign keys are resolved, each record's keys are reordered to
+    `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`.
+
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
     """
@@ -467,6 +552,33 @@ class Genes(BaseTable):
             post=strip_keys("id", "primary_coding_id"),
         ),
     ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all referenced keys within the Genes table, then reorders each record's keys.
+
+        Resolves foreign keys declared in `foreign_keys` via the base class, then reorders keys to
+        `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`. Each table is resolved
+        at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "conceptType",
+                    "name",
+                    "primaryCoding",
+                    "mappings",
+                    "extensions",
+                ],
+            )
 
 
 class Indications(BaseTable):
