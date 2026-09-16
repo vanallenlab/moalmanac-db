@@ -9,6 +9,7 @@ from utils import read
 def input_paths():
     return {
         "agents": "referenced/agents.json",
+        "alleles": "referenced/alleles.json",
         "biomarkers": "referenced/biomarkers.json",
         "biomarker_criteria": "referenced/biomarker_criteria.json",
         "codings": "referenced/codings.json",
@@ -20,6 +21,8 @@ def input_paths():
         "indications": "referenced/indications.json",
         "mappings": "referenced/mappings.json",
         "propositions": "referenced/propositions.json",
+        "sequence_locations": "referenced/sequence_locations.json",
+        "sequence_references": "referenced/sequence_references.json",
         "statements": "referenced/statements.json",
         "strengths": "referenced/strengths.json",
         "therapies": "referenced/therapies.json",
