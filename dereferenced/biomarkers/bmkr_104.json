@@ -2,62 +2,69 @@
   "id": "bmkr:104",
   "type": "CategoricalVariant",
   "name": "ATM pathogenic variants",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:795",
-      "conceptType": "Gene",
-      "name": "ATM",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000149311",
-            "code": "ENSG00000149311",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000149311"
-            ]
-          }
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:795",
+        "conceptType": "Gene",
+        "name": "ATM",
+        "primaryCoding": {
+          "id": "coding:hgnc:795",
+          "code": "HGNC:795",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:795"
+          ]
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:472",
-            "code": "472",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/472"
-            ]
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000149311",
+              "code": "ENSG00000149311",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000149311"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:472",
+              "code": "472",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/472"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_000051.4",
+              "code": "NM_000051.4",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_000051.4"
+              ]
+            }
           }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_000051.4",
-            "code": "NM_000051.4",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000051.4"
-            ]
+        ],
+        "extensions": [
+          {
+            "name": "location",
+            "value": "11q22.3"
+          },
+          {
+            "name": "location_sortable",
+            "value": "11q22.3"
+          },
+          {
+            "name": "protein_product",
+            "value": "NP_000042.3"
           }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "11q22.3"
-        },
-        {
-          "name": "location_sortable",
-          "value": "11q22.3"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:795",
-        "code": "HGNC:795",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:795"
         ]
       }
     }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8031",
   "conceptType": "Gene",
   "name": "NTRK1",
+  "primaryCoding": {
+    "id": "coding:hgnc:8031",
+    "code": "HGNC:8031",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8031"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "01q23.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_002520.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8031",
-    "code": "HGNC:8031",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8031"
-    ]
-  }
+  ]
 }

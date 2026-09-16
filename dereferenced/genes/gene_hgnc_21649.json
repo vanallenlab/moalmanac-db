@@ -2,6 +2,14 @@
   "id": "gene:hgnc:21649",
   "conceptType": "Gene",
   "name": "BAIAP2L1",
+  "primaryCoding": {
+    "id": "coding:hgnc:21649",
+    "code": "HGNC:21649",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:21649"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "07q21.3-q22.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_061330.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:21649",
-    "code": "HGNC:21649",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:21649"
-    ]
-  }
+  ]
 }

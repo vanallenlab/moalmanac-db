@@ -2,62 +2,69 @@
   "id": "bmkr:127",
   "type": "CategoricalVariant",
   "name": "CHEK1 oncogenic variants",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:1925",
-      "conceptType": "Gene",
-      "name": "CHEK1",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000149554",
-            "code": "ENSG00000149554",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000149554"
-            ]
-          }
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:1925",
+        "conceptType": "Gene",
+        "name": "CHEK1",
+        "primaryCoding": {
+          "id": "coding:hgnc:1925",
+          "code": "HGNC:1925",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1925"
+          ]
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:1111",
-            "code": "1111",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/1111"
-            ]
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000149554",
+              "code": "ENSG00000149554",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000149554"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:1111",
+              "code": "1111",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/1111"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_001114122.3",
+              "code": "NM_001114122.3",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_001114122.3"
+              ]
+            }
           }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_001114122.3",
-            "code": "NM_001114122.3",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_001114122.3"
-            ]
+        ],
+        "extensions": [
+          {
+            "name": "location",
+            "value": "11q24.2"
+          },
+          {
+            "name": "location_sortable",
+            "value": "11q24.2"
+          },
+          {
+            "name": "protein_product",
+            "value": "NP_001107594.1"
           }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "11q24.2"
-        },
-        {
-          "name": "location_sortable",
-          "value": "11q24.2"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:1925",
-        "code": "HGNC:1925",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1925"
         ]
       }
     }

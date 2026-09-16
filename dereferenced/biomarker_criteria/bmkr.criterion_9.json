@@ -5,62 +5,116 @@
     "id": "bmkr:9",
     "type": "CategoricalVariant",
     "name": "EGFR p.L858R",
-    "genes": [
+    "constraints": [
       {
-        "id": "gene:hgnc:3236",
-        "conceptType": "Gene",
-        "name": "EGFR",
-        "mappings": [
-          {
-            "relation": "exactMatch",
-            "coding": {
-              "id": "coding:ensembl:ensg00000146648",
-              "code": "ENSG00000146648",
-              "system": "https://www.ensembl.org",
-              "iris": [
-                "https://www.ensembl.org/id/ENSG00000146648"
-              ]
-            }
+        "type": "DefiningAlleleConstraint",
+        "allele": {
+          "id": "ga4gh:VA.S41CcMJT2bcd8R4-qXZWH1PoHWNtG2PZ",
+          "type": "Allele",
+          "name": "NP_005219.2:p.Leu858Arg",
+          "aliases": [
+            "NP_005219.2:p.L858R",
+            "EGFR p.L858R"
+          ],
+          "description": "VRS variation of NP_005219.2:p.Leu858Arg",
+          "digest": "S41CcMJT2bcd8R4-qXZWH1PoHWNtG2PZ",
+          "hgvs.g": null,
+          "hgvs.c": null,
+          "hgvs.c_short": null,
+          "hgvs.p": "NP_005219.2:p.Leu858Arg",
+          "hgvs.p_short": "p.L858R",
+          "location": {
+            "id": "ga4gh:SL.v0_edynH98OIu-0QPVT5anCSOriAFSDQ",
+            "type": "SequenceLocation",
+            "name": null,
+            "aliases": [],
+            "description": "Amino acid position 858 of the Refseq protein NP_005219.2, which is the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5).",
+            "digest": "v0_edynH98OIu-0QPVT5anCSOriAFSDQ",
+            "sequenceReference": {
+              "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "type": "SequenceReference",
+              "name": "NP_005219.2",
+              "aliases": [
+                "ensembl:ENSP00000275493.2",
+                "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                "refseq:NP_005219.2"
+              ],
+              "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+              "moleculeType": "protein",
+              "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "residueAlphabet": "aa"
+            },
+            "start": 857,
+            "end": 858,
+            "sequence": "L"
           },
-          {
-            "relation": "exactMatch",
-            "coding": {
-              "id": "coding:ncbi:1956",
-              "code": "1956",
-              "system": "https://www.ncbi.nlm.nih.gov/gene",
-              "iris": [
-                "https://www.ncbi.nlm.nih.gov/gene/1956"
-              ]
-            }
+          "state_type": "LiteralSequenceExpression",
+          "state_value": "R"
+        },
+        "relations": []
+      },
+      {
+        "type": "FeatureContextConstraint",
+        "featureContext": {
+          "id": "gene:hgnc:3236",
+          "conceptType": "Gene",
+          "name": "EGFR",
+          "primaryCoding": {
+            "id": "coding:hgnc:3236",
+            "code": "HGNC:3236",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+            ]
           },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:refseq:NM_005228.5",
-              "code": "NM_005228.5",
-              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-              "iris": [
-                "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
-              ]
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:ensembl:ensg00000146648",
+                "code": "ENSG00000146648",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000146648"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:ncbi:1956",
+                "code": "1956",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/1956"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:refseq:NM_005228.5",
+                "code": "NM_005228.5",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                ]
+              }
             }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "location",
-            "value": "7p11.2"
-          },
-          {
-            "name": "location_sortable",
-            "value": "07p11.2"
-          }
-        ],
-        "primaryCoding": {
-          "id": "coding:hgnc:3236",
-          "code": "HGNC:3236",
-          "system": "https://genenames.org",
-          "iris": [
-            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+          ],
+          "extensions": [
+            {
+              "name": "location",
+              "value": "7p11.2"
+            },
+            {
+              "name": "location_sortable",
+              "value": "07p11.2"
+            },
+            {
+              "name": "protein_product",
+              "value": "NP_005219.2"
+            }
           ]
         }
       }

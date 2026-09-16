@@ -2,6 +2,14 @@
   "id": "gene:hgnc:6342",
   "conceptType": "Gene",
   "name": "KIT",
+  "primaryCoding": {
+    "id": "coding:hgnc:6342",
+    "code": "HGNC:6342",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6342"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "04q12"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000213.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:6342",
-    "code": "HGNC:6342",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6342"
-    ]
-  }
+  ]
 }

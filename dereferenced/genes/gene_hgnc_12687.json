@@ -2,6 +2,16 @@
   "id": "gene:hgnc:12687",
   "conceptType": "Gene",
   "name": "VHL",
+  "primaryCoding": {
+    "id": "coding:hgnc:12687",
+    "code": "HGNC:12687",
+    "name": "VHL",
+    "system": "https://genenames.org",
+    "systemVersion": "2026-05-05",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,16 +55,10 @@
     {
       "name": "location_sortable",
       "value": "03p25.3"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000542.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:12687",
-    "code": "HGNC:12687",
-    "name": "VHL",
-    "system": "https://genenames.org",
-    "systemVersion": "2026-05-05",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
-    ]
-  }
+  ]
 }

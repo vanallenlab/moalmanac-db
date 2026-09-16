@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3582",
   "conceptType": "Gene",
   "name": "FANCA",
+  "primaryCoding": {
+    "id": "coding:hgnc:3582",
+    "code": "HGNC:3582",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3582"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "16q24.3"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000126.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3582",
-    "code": "HGNC:3582",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3582"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:5382",
   "conceptType": "Gene",
   "name": "IDH1",
+  "primaryCoding": {
+    "id": "coding:hgnc:5382",
+    "code": "HGNC:5382",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "02q34"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_005887.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:5382",
-    "code": "HGNC:5382",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
-    ]
-  }
+  ]
 }

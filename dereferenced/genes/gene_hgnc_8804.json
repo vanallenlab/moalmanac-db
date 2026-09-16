@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8804",
   "conceptType": "Gene",
   "name": "PDGFRB",
+  "primaryCoding": {
+    "id": "coding:hgnc:8804",
+    "code": "HGNC:8804",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "05q32"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_002600.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8804",
-    "code": "HGNC:8804",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:7997",
   "conceptType": "Gene",
   "name": "NRG1",
+  "primaryCoding": {
+    "id": "coding:hgnc:7997",
+    "code": "HGNC:7997",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7997"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "08p12"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_039258.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7997",
-    "code": "HGNC:7997",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7997"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3430",
   "conceptType": "Gene",
   "name": "ERBB2",
+  "primaryCoding": {
+    "id": "coding:hgnc:3430",
+    "code": "HGNC:3430",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "17q12"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_004439.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3430",
-    "code": "HGNC:3430",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
-    ]
-  }
+  ]
 }

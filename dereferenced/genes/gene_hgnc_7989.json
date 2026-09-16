@@ -2,6 +2,14 @@
   "id": "gene:hgnc:7989",
   "conceptType": "Gene",
   "name": "NRAS",
+  "primaryCoding": {
+    "id": "coding:hgnc:7989",
+    "code": "HGNC:7989",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "01p13.2"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_002515.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7989",
-    "code": "HGNC:7989",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
-    ]
-  }
+  ]
 }

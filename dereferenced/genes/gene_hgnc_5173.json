@@ -2,6 +2,14 @@
   "id": "gene:hgnc:5173",
   "conceptType": "Gene",
   "name": "HRAS",
+  "primaryCoding": {
+    "id": "coding:hgnc:5173",
+    "code": "HGNC:5173",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5173"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "11p15.5"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_005334.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:5173",
-    "code": "HGNC:5173",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5173"
-    ]
-  }
+  ]
 }

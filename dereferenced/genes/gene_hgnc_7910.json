@@ -2,6 +2,15 @@
   "id": "gene:hgnc:7910",
   "conceptType": "Gene",
   "name": "NPM1",
+  "primaryCoding": {
+    "id": "coding:hgnc:7910",
+    "code": "HGNC:7910",
+    "name": "NPM1",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7910"
+    ]
+  },
   "mappings": [
     {
       "relation": "relatedMatch",
@@ -45,15 +54,10 @@
     {
       "name": "location_sortable",
       "value": "05q35.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_002511.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7910",
-    "code": "HGNC:7910",
-    "name": "NPM1",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7910"
-    ]
-  }
+  ]
 }

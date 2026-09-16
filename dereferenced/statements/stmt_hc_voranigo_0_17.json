@@ -119,62 +119,116 @@
           "id": "bmkr:113",
           "type": "CategoricalVariant",
           "name": "IDH2 p.R172G",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:5383",
-              "conceptType": "Gene",
-              "name": "IDH2",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000182054",
-                    "code": "ENSG00000182054",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000182054"
-                    ]
-                  }
+              "type": "DefiningAlleleConstraint",
+              "allele": {
+                "id": "ga4gh:VA.txHJtzV2lyBzSL2ojpjSYksGmi6310O7",
+                "type": "Allele",
+                "name": "NP_002159.2:p.Arg172Gly",
+                "aliases": [
+                  "NP_002159.2:p.R172G",
+                  "IDH2 p.R172G"
+                ],
+                "description": "VRS variation of NP_002159.2:p.Arg172Gly",
+                "digest": "txHJtzV2lyBzSL2ojpjSYksGmi6310O7",
+                "hgvs.g": null,
+                "hgvs.c": null,
+                "hgvs.c_short": null,
+                "hgvs.p": "NP_002159.2:p.Arg172Gly",
+                "hgvs.p_short": "p.R172G",
+                "location": {
+                  "id": "ga4gh:SL.UuG3IrLVJV7S2Qjtt99SWVQuiYDLlHxa",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Amino acid position 172 of the Refseq protein NP_002159.2, which is the protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4).",
+                  "digest": "UuG3IrLVJV7S2Qjtt99SWVQuiYDLlHxa",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+                    "type": "SequenceReference",
+                    "name": "NP_002159.2",
+                    "aliases": [
+                      "ensembl:ENSP00000331897.3",
+                      "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+                      "refseq:NP_002159.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4), corresponding to the Refseq protein accession NP_002159.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 171,
+                  "end": 172,
+                  "sequence": "R"
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:3418",
-                    "code": "3418",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/3418"
-                    ]
-                  }
+                "state_type": "LiteralSequenceExpression",
+                "state_value": "G"
+              },
+              "relations": []
+            },
+            {
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:5383",
+                "conceptType": "Gene",
+                "name": "IDH2",
+                "primaryCoding": {
+                  "id": "coding:hgnc:5383",
+                  "code": "HGNC:5383",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5383"
+                  ]
                 },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_002168.4",
-                    "code": "NM_002168.4",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_002168.4"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000182054",
+                      "code": "ENSG00000182054",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000182054"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:3418",
+                      "code": "3418",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/3418"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_002168.4",
+                      "code": "NM_002168.4",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_002168.4"
+                      ]
+                    }
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "15q26.1"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "15q26.1"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:5383",
-                "code": "HGNC:5383",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5383"
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "15q26.1"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "15q26.1"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_002159.2"
+                  }
                 ]
               }
             }

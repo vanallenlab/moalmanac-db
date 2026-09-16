@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3527",
   "conceptType": "Gene",
   "name": "EZH2",
+  "primaryCoding": {
+    "id": "coding:hgnc:3527",
+    "code": "HGNC:3527",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "07q36.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_004447.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3527",
-    "code": "HGNC:3527",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
-    ]
-  }
+  ]
 }

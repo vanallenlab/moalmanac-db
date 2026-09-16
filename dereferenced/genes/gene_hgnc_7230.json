@@ -2,6 +2,14 @@
   "id": "gene:hgnc:7230",
   "conceptType": "Gene",
   "name": "MRE11",
+  "primaryCoding": {
+    "id": "coding:hgnc:7230",
+    "code": "HGNC:7230",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7230"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "11q21"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_005582.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7230",
-    "code": "HGNC:7230",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7230"
-    ]
-  }
+  ]
 }

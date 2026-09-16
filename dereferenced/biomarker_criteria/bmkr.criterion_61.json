@@ -5,6 +5,12 @@
     "id": "bmkr:61",
     "type": "CategoricalVariant",
     "name": "5q deletion",
+    "constraints": [
+      {
+        "type": "CopyChangeConstraint",
+        "copyChange": "loss"
+      }
+    ],
     "extensions": [
       {
         "name": "biomarker_type",
@@ -17,10 +23,6 @@
       {
         "name": "arm",
         "value": "q"
-      },
-      {
-        "name": "direction",
-        "value": "Deletion"
       }
     ]
   }

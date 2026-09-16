@@ -2,6 +2,14 @@
   "id": "gene:hgnc:391",
   "conceptType": "Gene",
   "name": "AKT1",
+  "primaryCoding": {
+    "id": "coding:hgnc:391",
+    "code": "HGNC:391",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:391"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "14q32.33"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_001369359.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:391",
-    "code": "HGNC:391",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:391"
-    ]
-  }
+  ]
 }

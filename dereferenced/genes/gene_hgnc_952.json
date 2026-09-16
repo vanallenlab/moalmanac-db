@@ -2,6 +2,14 @@
   "id": "gene:hgnc:952",
   "conceptType": "Gene",
   "name": "BARD1",
+  "primaryCoding": {
+    "id": "coding:hgnc:952",
+    "code": "HGNC:952",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:952"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "02q35"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000456.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:952",
-    "code": "HGNC:952",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:952"
-    ]
-  }
+  ]
 }

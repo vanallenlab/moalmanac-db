@@ -2,6 +2,14 @@
   "id": "gene:hgnc:19124",
   "conceptType": "Gene",
   "name": "FIP1L1",
+  "primaryCoding": {
+    "id": "coding:hgnc:19124",
+    "code": "HGNC:19124",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "04q12"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_112179.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:19124",
-    "code": "HGNC:19124",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:9826",
   "conceptType": "Gene",
   "name": "RAD54L",
+  "primaryCoding": {
+    "id": "coding:hgnc:9826",
+    "code": "HGNC:9826",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9826"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "01p34.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_003570.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:9826",
-    "code": "HGNC:9826",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9826"
-    ]
-  }
+  ]
 }

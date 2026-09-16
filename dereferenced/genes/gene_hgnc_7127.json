@@ -2,6 +2,14 @@
   "id": "gene:hgnc:7127",
   "conceptType": "Gene",
   "name": "MLH1",
+  "primaryCoding": {
+    "id": "coding:hgnc:7127",
+    "code": "HGNC:7127",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "03p22.2"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000240.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7127",
-    "code": "HGNC:7127",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
-    ]
-  }
+  ]
 }

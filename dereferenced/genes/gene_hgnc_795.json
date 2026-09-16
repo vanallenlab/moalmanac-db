@@ -2,6 +2,14 @@
   "id": "gene:hgnc:795",
   "conceptType": "Gene",
   "name": "ATM",
+  "primaryCoding": {
+    "id": "coding:hgnc:795",
+    "code": "HGNC:795",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:795"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "11q22.3"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000042.3"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:795",
-    "code": "HGNC:795",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:795"
-    ]
-  }
+  ]
 }

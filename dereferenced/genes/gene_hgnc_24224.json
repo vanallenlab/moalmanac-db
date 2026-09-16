@@ -2,6 +2,14 @@
   "id": "gene:hgnc:24224",
   "conceptType": "Gene",
   "name": "CDK12",
+  "primaryCoding": {
+    "id": "coding:hgnc:24224",
+    "code": "HGNC:24224",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:24224"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "17q12"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_057591.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:24224",
-    "code": "HGNC:24224",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:24224"
-    ]
-  }
+  ]
 }

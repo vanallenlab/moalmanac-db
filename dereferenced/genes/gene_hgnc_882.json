@@ -2,6 +2,14 @@
   "id": "gene:hgnc:882",
   "conceptType": "Gene",
   "name": "ATR",
+  "primaryCoding": {
+    "id": "coding:hgnc:882",
+    "code": "HGNC:882",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:882"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "03q23"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_001175.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:882",
-    "code": "HGNC:882",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:882"
-    ]
-  }
+  ]
 }

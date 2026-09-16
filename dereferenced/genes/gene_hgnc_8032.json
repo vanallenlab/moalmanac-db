@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8032",
   "conceptType": "Gene",
   "name": "NTRK2",
+  "primaryCoding": {
+    "id": "coding:hgnc:8032",
+    "code": "HGNC:8032",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "09q21.33"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_006171.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8032",
-    "code": "HGNC:8032",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
-    ]
-  }
+  ]
 }

@@ -132,122 +132,136 @@
           "id": "bmkr:30",
           "type": "CategoricalVariant",
           "name": "FIP1L1::PDGFRA",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:19124",
-              "conceptType": "Gene",
-              "name": "FIP1L1",
-              "mappings": [
+              "type": "AdjacencyConstraint",
+              "orderKnown": true,
+              "adjoinedElements": [
                 {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000145216",
-                    "code": "ENSG00000145216",
-                    "system": "https://www.ensembl.org",
+                  "id": "gene:hgnc:19124",
+                  "conceptType": "Gene",
+                  "name": "FIP1L1",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:19124",
+                    "code": "HGNC:19124",
+                    "system": "https://genenames.org",
                     "iris": [
-                      "https://www.ensembl.org/id/ENSG00000145216"
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
                     ]
-                  }
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000145216",
+                        "code": "ENSG00000145216",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000145216"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:81608",
+                        "code": "81608",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/81608"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_030917.4",
+                        "code": "NM_030917.4",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_030917.4"
+                        ]
+                      }
+                    }
+                  ],
+                  "extensions": [
+                    {
+                      "name": "location",
+                      "value": "4q12"
+                    },
+                    {
+                      "name": "location_sortable",
+                      "value": "04q12"
+                    },
+                    {
+                      "name": "protein_product",
+                      "value": "NP_112179.2"
+                    }
+                  ]
                 },
                 {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:81608",
-                    "code": "81608",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
+                  "id": "gene:hgnc:8803",
+                  "conceptType": "Gene",
+                  "name": "PDGFRA",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:8803",
+                    "code": "HGNC:8803",
+                    "system": "https://genenames.org",
                     "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/81608"
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
                     ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_030917.4",
-                    "code": "NM_030917.4",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_030917.4"
-                    ]
-                  }
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000134853",
+                        "code": "ENSG00000134853",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000134853"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:5156",
+                        "code": "5156",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/5156"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_006206.6",
+                        "code": "NM_006206.6",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
+                        ]
+                      }
+                    }
+                  ],
+                  "extensions": [
+                    {
+                      "name": "location",
+                      "value": "4q12"
+                    },
+                    {
+                      "name": "location_sortable",
+                      "value": "04q12"
+                    },
+                    {
+                      "name": "protein_product",
+                      "value": "NP_006197.1"
+                    }
+                  ]
                 }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "4q12"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "04q12"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:19124",
-                "code": "HGNC:19124",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
-                ]
-              }
-            },
-            {
-              "id": "gene:hgnc:8803",
-              "conceptType": "Gene",
-              "name": "PDGFRA",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000134853",
-                    "code": "ENSG00000134853",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000134853"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:5156",
-                    "code": "5156",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/5156"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_006206.6",
-                    "code": "NM_006206.6",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
-                    ]
-                  }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "4q12"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "04q12"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:8803",
-                "code": "HGNC:8803",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
-                ]
-              }
+              ]
             }
           ],
           "extensions": [

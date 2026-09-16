@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8803",
   "conceptType": "Gene",
   "name": "PDGFRA",
+  "primaryCoding": {
+    "id": "coding:hgnc:8803",
+    "code": "HGNC:8803",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "04q12"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_006197.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8803",
-    "code": "HGNC:8803",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
-    ]
-  }
+  ]
 }

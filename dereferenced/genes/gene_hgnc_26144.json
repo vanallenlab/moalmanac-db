@@ -2,6 +2,14 @@
   "id": "gene:hgnc:26144",
   "conceptType": "Gene",
   "name": "PALB2",
+  "primaryCoding": {
+    "id": "coding:hgnc:26144",
+    "code": "HGNC:26144",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:26144"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "16p12.2"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_078951.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:26144",
-    "code": "HGNC:26144",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:26144"
-    ]
-  }
+  ]
 }

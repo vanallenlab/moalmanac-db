@@ -2,6 +2,14 @@
   "id": "gene:hgnc:1100",
   "conceptType": "Gene",
   "name": "BRCA1",
+  "primaryCoding": {
+    "id": "coding:hgnc:1100",
+    "code": "HGNC:1100",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1100"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "17q21.31"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_009225.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:1100",
-    "code": "HGNC:1100",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1100"
-    ]
-  }
+  ]
 }

@@ -48,6 +48,12 @@
         "id": "bmkr:82",
         "type": "CategoricalVariant",
         "name": "17p deletion",
+        "constraints": [
+          {
+            "type": "CopyChangeConstraint",
+            "copyChange": "loss"
+          }
+        ],
         "extensions": [
           {
             "name": "biomarker_type",
@@ -60,10 +66,6 @@
           {
             "name": "arm",
             "value": "p"
-          },
-          {
-            "name": "direction",
-            "value": "Deletion"
           }
         ]
       }

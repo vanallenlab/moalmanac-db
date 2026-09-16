@@ -2,6 +2,14 @@
   "id": "gene:hgnc:9588",
   "conceptType": "Gene",
   "name": "PTEN",
+  "primaryCoding": {
+    "id": "coding:hgnc:9588",
+    "code": "HGNC:9588",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "10q23.31"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000305.3"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:9588",
-    "code": "HGNC:9588",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
-    ]
-  }
+  ]
 }

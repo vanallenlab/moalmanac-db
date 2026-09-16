@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8975",
   "conceptType": "Gene",
   "name": "PIK3CA",
+  "primaryCoding": {
+    "id": "coding:hgnc:8975",
+    "code": "HGNC:8975",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8975"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "03q26.32"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_006209.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8975",
-    "code": "HGNC:8975",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8975"
-    ]
-  }
+  ]
 }

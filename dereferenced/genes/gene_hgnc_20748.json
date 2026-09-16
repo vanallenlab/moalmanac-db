@@ -2,6 +2,14 @@
   "id": "gene:hgnc:20748",
   "conceptType": "Gene",
   "name": "FANCL",
+  "primaryCoding": {
+    "id": "coding:hgnc:20748",
+    "code": "HGNC:20748",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:20748"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "02p16.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_060532.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:20748",
-    "code": "HGNC:20748",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:20748"
-    ]
-  }
+  ]
 }

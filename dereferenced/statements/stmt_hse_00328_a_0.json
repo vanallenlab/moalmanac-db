@@ -131,62 +131,69 @@
           "id": "bmkr:25",
           "type": "CategoricalVariant",
           "name": "Wild type KRAS",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:6407",
-              "conceptType": "Gene",
-              "name": "KRAS",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000133703",
-                    "code": "ENSG00000133703",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000133703"
-                    ]
-                  }
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:6407",
+                "conceptType": "Gene",
+                "name": "KRAS",
+                "primaryCoding": {
+                  "id": "coding:hgnc:6407",
+                  "code": "HGNC:6407",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+                  ]
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:3845",
-                    "code": "3845",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/3845"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000133703",
+                      "code": "ENSG00000133703",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000133703"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:3845",
+                      "code": "3845",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/3845"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_004985.5",
+                      "code": "NM_004985.5",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                      ]
+                    }
                   }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_004985.5",
-                    "code": "NM_004985.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
-                    ]
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "12p12.1"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "12p12.1"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_004976.2"
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "12p12.1"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "12p12.1"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:6407",
-                "code": "HGNC:6407",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
                 ]
               }
             }
@@ -206,62 +213,69 @@
           "id": "bmkr:27",
           "type": "CategoricalVariant",
           "name": "Wild type NRAS",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:7989",
-              "conceptType": "Gene",
-              "name": "NRAS",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000213281",
-                    "code": "ENSG00000213281",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000213281"
-                    ]
-                  }
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:7989",
+                "conceptType": "Gene",
+                "name": "NRAS",
+                "primaryCoding": {
+                  "id": "coding:hgnc:7989",
+                  "code": "HGNC:7989",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
+                  ]
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:4893",
-                    "code": "4893",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/4893"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000213281",
+                      "code": "ENSG00000213281",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000213281"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:4893",
+                      "code": "4893",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/4893"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_002524.5",
+                      "code": "NM_002524.5",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_002524.5"
+                      ]
+                    }
                   }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_002524.5",
-                    "code": "NM_002524.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_002524.5"
-                    ]
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "1p13.2"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "01p13.2"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_002515.1"
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "1p13.2"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "01p13.2"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:7989",
-                "code": "HGNC:7989",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
                 ]
               }
             }

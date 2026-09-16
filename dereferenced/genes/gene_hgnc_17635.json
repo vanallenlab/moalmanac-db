@@ -2,6 +2,14 @@
   "id": "gene:hgnc:17635",
   "conceptType": "Gene",
   "name": "CD274",
+  "primaryCoding": {
+    "id": "coding:hgnc:17635",
+    "code": "HGNC:17635",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:17635"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "09p24.1"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_054862.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:17635",
-    "code": "HGNC:17635",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:17635"
-    ]
-  }
+  ]
 }

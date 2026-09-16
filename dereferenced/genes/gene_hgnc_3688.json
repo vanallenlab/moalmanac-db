@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3688",
   "conceptType": "Gene",
   "name": "FGFR1",
+  "primaryCoding": {
+    "id": "coding:hgnc:3688",
+    "code": "HGNC:3688",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3688"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "08p11.23"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_075598.2"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3688",
-    "code": "HGNC:3688",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3688"
-    ]
-  }
+  ]
 }

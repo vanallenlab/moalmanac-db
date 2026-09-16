@@ -2,6 +2,14 @@
   "id": "gene:hgnc:9967",
   "conceptType": "Gene",
   "name": "RET",
+  "primaryCoding": {
+    "id": "coding:hgnc:9967",
+    "code": "HGNC:9967",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9967"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "10q11.21"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_066124.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:9967",
-    "code": "HGNC:9967",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9967"
-    ]
-  }
+  ]
 }

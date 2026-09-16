@@ -131,62 +131,116 @@
           "id": "bmkr:99",
           "type": "CategoricalVariant",
           "name": "FGFR3 p.R248C",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:3690",
-              "conceptType": "Gene",
-              "name": "FGFR3",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000068078",
-                    "code": "ENSG00000068078",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000068078"
-                    ]
-                  }
+              "type": "DefiningAlleleConstraint",
+              "allele": {
+                "id": "ga4gh:VA.6fDQOuVnlKrDjTq3rkMY-1UHbT41h332",
+                "type": "Allele",
+                "name": "NP_000133.1:p.Arg248Cys",
+                "aliases": [
+                  "NP_000133.1:p.R248C",
+                  "FGFR3 p.R248C"
+                ],
+                "description": "VRS variation of NP_000133.1:p.Arg248Cys",
+                "digest": "6fDQOuVnlKrDjTq3rkMY-1UHbT41h332",
+                "hgvs.g": null,
+                "hgvs.c": null,
+                "hgvs.c_short": null,
+                "hgvs.p": "NP_000133.1:p.Arg248Cys",
+                "hgvs.p_short": "p.R248C",
+                "location": {
+                  "id": "ga4gh:SL.60nnfAgrzhZopUQU1HdoEDIqpIzQBOiE",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Amino acid position 248 of the Refseq protein NP_000133.1, which is the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5).",
+                  "digest": "60nnfAgrzhZopUQU1HdoEDIqpIzQBOiE",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+                    "type": "SequenceReference",
+                    "name": "NP_000133.1",
+                    "aliases": [
+                      "ensembl:ENSP00000260795.2",
+                      "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+                      "refseq:NP_000133.1"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 247,
+                  "end": 248,
+                  "sequence": "R"
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:2261",
-                    "code": "2261",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/2261"
-                    ]
-                  }
+                "state_type": "LiteralSequenceExpression",
+                "state_value": "C"
+              },
+              "relations": []
+            },
+            {
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:3690",
+                "conceptType": "Gene",
+                "name": "FGFR3",
+                "primaryCoding": {
+                  "id": "coding:hgnc:3690",
+                  "code": "HGNC:3690",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3690"
+                  ]
                 },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_000142.5",
-                    "code": "NM_000142.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_000142.5"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000068078",
+                      "code": "ENSG00000068078",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000068078"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:2261",
+                      "code": "2261",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/2261"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_000142.5",
+                      "code": "NM_000142.5",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_000142.5"
+                      ]
+                    }
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "4p16.3"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "04p16.3"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:3690",
-                "code": "HGNC:3690",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3690"
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "4p16.3"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "04p16.3"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_000133.1"
+                  }
                 ]
               }
             }

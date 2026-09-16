@@ -2,6 +2,14 @@
   "id": "gene:hgnc:12362",
   "conceptType": "Gene",
   "name": "TSC1",
+  "primaryCoding": {
+    "id": "coding:hgnc:12362",
+    "code": "HGNC:12362",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12362"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -45,14 +53,10 @@
     {
       "name": "location_sortable",
       "value": "09q34.13"
+    },
+    {
+      "name": "protein_product",
+      "value": "NP_000359.1"
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:12362",
-    "code": "HGNC:12362",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12362"
-    ]
-  }
+  ]
 }

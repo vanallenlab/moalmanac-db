@@ -131,74 +131,81 @@
           "id": "bmkr:40",
           "type": "CategoricalVariant",
           "name": "CD274 amplification",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:17635",
-              "conceptType": "Gene",
-              "name": "CD274",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000120217",
-                    "code": "ENSG00000120217",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000120217"
-                    ]
-                  }
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:17635",
+                "conceptType": "Gene",
+                "name": "CD274",
+                "primaryCoding": {
+                  "id": "coding:hgnc:17635",
+                  "code": "HGNC:17635",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:17635"
+                  ]
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:29126",
-                    "code": "29126",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/29126"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000120217",
+                      "code": "ENSG00000120217",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000120217"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:29126",
+                      "code": "29126",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/29126"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_014143.4",
+                      "code": "NM_014143.4",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_014143.4"
+                      ]
+                    }
                   }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_014143.4",
-                    "code": "NM_014143.4",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_014143.4"
-                    ]
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "9p24.1"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "09p24.1"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_054862.1"
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "9p24.1"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "09p24.1"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:17635",
-                "code": "HGNC:17635",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:17635"
                 ]
               }
+            },
+            {
+              "type": "CopyChangeConstraint",
+              "copyChange": "gain"
             }
           ],
           "extensions": [
             {
               "name": "biomarker_type",
               "value": "Copy Number"
-            },
-            {
-              "name": "direction",
-              "value": "Amplification"
             },
             {
               "name": "cytoband",
@@ -214,62 +221,69 @@
           "id": "bmkr:35",
           "type": "CategoricalVariant",
           "name": "Wild type EGFR",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:3236",
-              "conceptType": "Gene",
-              "name": "EGFR",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000146648",
-                    "code": "ENSG00000146648",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000146648"
-                    ]
-                  }
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:3236",
+                "conceptType": "Gene",
+                "name": "EGFR",
+                "primaryCoding": {
+                  "id": "coding:hgnc:3236",
+                  "code": "HGNC:3236",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+                  ]
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:1956",
-                    "code": "1956",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/1956"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000146648",
+                      "code": "ENSG00000146648",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000146648"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:1956",
+                      "code": "1956",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/1956"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_005228.5",
+                      "code": "NM_005228.5",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                      ]
+                    }
                   }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_005228.5",
-                    "code": "NM_005228.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
-                    ]
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "7p11.2"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "07p11.2"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_005219.2"
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "7p11.2"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "07p11.2"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:3236",
-                "code": "HGNC:3236",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
                 ]
               }
             }
@@ -289,62 +303,69 @@
           "id": "bmkr:34",
           "type": "CategoricalVariant",
           "name": "Wild type ALK",
-          "genes": [
+          "constraints": [
             {
-              "id": "gene:hgnc:427",
-              "conceptType": "Gene",
-              "name": "ALK",
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000171094",
-                    "code": "ENSG00000171094",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000171094"
-                    ]
-                  }
+              "type": "FeatureContextConstraint",
+              "featureContext": {
+                "id": "gene:hgnc:427",
+                "conceptType": "Gene",
+                "name": "ALK",
+                "primaryCoding": {
+                  "id": "coding:hgnc:427",
+                  "code": "HGNC:427",
+                  "system": "https://genenames.org",
+                  "iris": [
+                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
+                  ]
                 },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:238",
-                    "code": "238",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/238"
-                    ]
+                "mappings": [
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ensembl:ensg00000171094",
+                      "code": "ENSG00000171094",
+                      "system": "https://www.ensembl.org",
+                      "iris": [
+                        "https://www.ensembl.org/id/ENSG00000171094"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "exactMatch",
+                    "coding": {
+                      "id": "coding:ncbi:238",
+                      "code": "238",
+                      "system": "https://www.ncbi.nlm.nih.gov/gene",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/gene/238"
+                      ]
+                    }
+                  },
+                  {
+                    "relation": "relatedMatch",
+                    "coding": {
+                      "id": "coding:refseq:NM_004304.5",
+                      "code": "NM_004304.5",
+                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                      "iris": [
+                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_004304.5"
+                      ]
+                    }
                   }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_004304.5",
-                    "code": "NM_004304.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_004304.5"
-                    ]
+                ],
+                "extensions": [
+                  {
+                    "name": "location",
+                    "value": "2p23.2-p23.1"
+                  },
+                  {
+                    "name": "location_sortable",
+                    "value": "02p23.2-p23.1"
+                  },
+                  {
+                    "name": "protein_product",
+                    "value": "NP_004295.2"
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "2p23.2-p23.1"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "02p23.2-p23.1"
-                }
-              ],
-              "primaryCoding": {
-                "id": "coding:hgnc:427",
-                "code": "HGNC:427",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
                 ]
               }
             }
