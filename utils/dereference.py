@@ -23,12 +23,15 @@ class FKSingle:
         src_key (str): The key in the record whose value is the foreign key.
         dest_key (str): The key name written after dereferencing (replaces src_key).
         get_table (typing.Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+        nullable (bool): If True, a None value in src_key is left as None instead of being looked up.
         post (typing.Callable[[dict], dict] | None): Optional function applied to the resolved record.
+            Not applied when the resolved value is None.
     """
 
     src_key: str
     dest_key: str
     get_table: typing.Callable[[Database], BaseTable]
+    nullable: bool = False
     post: typing.Callable[[dict], dict] | None = None
 
 
@@ -121,9 +124,10 @@ class BaseTable:
             table.dereference(db)
             for record in self.records:
                 if isinstance(fk, FKSingle):
-                    self.dereference_single(record, fk.src_key, table.records)
+                    if not (fk.nullable and record.get(fk.src_key) is None):
+                        self.dereference_single(record, fk.src_key, table.records)
                     self.replace_key(record, fk.src_key, fk.dest_key)
-                    if fk.post is not None:
+                    if fk.post is not None and record[fk.dest_key] is not None:
                         record[fk.dest_key] = fk.post(dict(record[fk.dest_key]))
                 else:
                     self.dereference_list(
@@ -401,28 +405,29 @@ def is_fusion(record: dict) -> bool:
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables, then shapes the resolved alleles, genes, and copy changes
+    dereferences keys that reference other tables, then shapes the resolved allele, genes, and copy change
     into Cat-VRS constraint objects. This table references the following tables:
-    - Alleles (initial key: `alleles`, resulting key: `alleles`)
+    - Alleles (initial key: `allele`, resulting key: `allele`)
     - Genes (initial key: `genes`, resulting key: `genes`)
     - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
 
-    Each dereferenced allele is wrapped as a `DefiningAlleleConstraint`. For most records, each dereferenced
-    gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`rearrangement_type` extension equal
-    to "Fusion"), the resolved genes are instead collapsed into a single `AdjacencyConstraint`, with
-    `orderKnown` set based on whether both fusion partners are known. Each dereferenced copy change is
-    wrapped as a `CopyChangeConstraint`. All resulting constraints are merged into a single `constraints`
-    list.
+    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. For most records,
+    each dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions
+    (`rearrangement_type` extension equal to "Fusion"), the resolved genes are instead collapsed into a
+    single `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known.
+    The dereferenced copy change, when present, is wrapped as a `CopyChangeConstraint`. All resulting
+    constraints are merged into a single `constraints` list.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
     foreign_keys = [
-        FKList(
-            "alleles",
-            "alleles",
+        FKSingle(
+            "allele",
+            "allele",
             lambda db: db.alleles,
+            nullable=True,
             post=lambda record: {
                 "type": "DefiningAlleleConstraint",
                 "allele": record,
@@ -430,10 +435,11 @@ class Biomarkers(BaseTable):
             },
         ),
         FKList("genes", "genes", lambda db: db.genes),
-        FKList(
+        FKSingle(
             "copyChange",
             "copyChange",
             lambda db: db.copy_change,
+            nullable=True,
             post=lambda record: {
                 "type": "CopyChangeConstraint",
                 "copyChange": record["name"],
@@ -443,18 +449,18 @@ class Biomarkers(BaseTable):
 
     def wrap_constraints(self) -> None:
         """
-        Wraps each record's dereferenced alleles, genes, and copy changes into Cat-VRS constraint objects.
+        Wraps each record's dereferenced allele, genes, and copy change into Cat-VRS constraint objects.
 
-        Each allele becomes a `DefiningAlleleConstraint`. Non-fusion records get one
+        The allele, when present, becomes a `DefiningAlleleConstraint`. Non-fusion records get one
         `FeatureContextConstraint` per gene. Fusion records collapse their genes into a single
         `AdjacencyConstraint`, with `orderKnown` True only when both fusion partners are known (two genes).
-        Each copy change becomes a `CopyChangeConstraint`. All constraints are merged into a single
-        `constraints` list.
+        The copy change, when present, becomes a `CopyChangeConstraint`. All resulting constraints are
+        merged into a single `constraints` list.
         """
         for record in self.records:
-            allele_constraints = record.pop("alleles")
+            allele_constraint = record.pop("allele")
             genes = record.pop("genes")
-            copy_changes = record.pop("copyChange")
+            copy_change = record.pop("copyChange")
             if is_fusion(record):
                 gene_constraints = [
                     {
@@ -468,6 +474,8 @@ class Biomarkers(BaseTable):
                     {"type": "FeatureContextConstraint", "featureContext": gene}
                     for gene in genes
                 ]
+            allele_constraints = [allele_constraint] if allele_constraint else []
+            copy_changes = [copy_change] if copy_change else []
             record["constraints"] = allele_constraints + gene_constraints + copy_changes
 
     def dereference(self, db: Database) -> None:
