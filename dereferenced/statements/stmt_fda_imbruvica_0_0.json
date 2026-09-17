@@ -148,6 +148,41 @@
           "name": "17p deletion",
           "constraints": [
             {
+              "type": "DefiningLocationConstraint",
+              "location": {
+                "id": "ga4gh:SL.qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
+                "type": "SequenceLocation",
+                "name": null,
+                "aliases": [],
+                "description": "The p arm of GRCh38 chromosome 17 (NC_000017.11), from the start of the chromosome to the start of the centromere.",
+                "digest": "qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
+                "sequenceReference": {
+                  "id": "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                  "type": "SequenceReference",
+                  "name": "NC_000017.11",
+                  "aliases": [
+                    "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                    "refseq:NC_000017.11"
+                  ],
+                  "description": "GRCh38 chromosome 17 (RefSeq NC_000017.11).",
+                  "moleculeType": "genomic",
+                  "refgetAccession": "SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                  "residueAlphabet": "na"
+                },
+                "start": 0,
+                "end": 22813679,
+                "sequence": null
+              },
+              "relations": [],
+              "matchCharacteristic": {
+                "type": "MappableConcept",
+                "primaryCoding": {
+                  "code": "is_within",
+                  "system": "ga4gh-gks-term:location-match"
+                }
+              }
+            },
+            {
               "type": "CopyChangeConstraint",
               "copyChange": "loss"
             }

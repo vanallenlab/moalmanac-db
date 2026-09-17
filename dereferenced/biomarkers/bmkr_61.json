@@ -4,6 +4,41 @@
   "name": "5q deletion",
   "constraints": [
     {
+      "type": "DefiningLocationConstraint",
+      "location": {
+        "id": "ga4gh:SL.KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "The q arm of GRCh38 chromosome 5 (NC_000005.10), from the end of the centromere to the end of the chromosome.",
+        "digest": "KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.aUiQCzCPZ2d0csHbMSbh2NzInhonSXwI",
+          "type": "SequenceReference",
+          "name": "NC_000005.10",
+          "aliases": [
+            "ga4gh:SQ.aUiQCzCPZ2d0csHbMSbh2NzInhonSXwI",
+            "refseq:NC_000005.10"
+          ],
+          "description": "GRCh38 chromosome 5 (RefSeq NC_000005.10).",
+          "moleculeType": "genomic",
+          "refgetAccession": "SQ.aUiQCzCPZ2d0csHbMSbh2NzInhonSXwI",
+          "residueAlphabet": "na"
+        },
+        "start": 50059807,
+        "end": 181538259,
+        "sequence": null
+      },
+      "relations": [],
+      "matchCharacteristic": {
+        "type": "MappableConcept",
+        "primaryCoding": {
+          "code": "is_within",
+          "system": "ga4gh-gks-term:location-match"
+        }
+      }
+    },
+    {
       "type": "CopyChangeConstraint",
       "copyChange": "loss"
     }
