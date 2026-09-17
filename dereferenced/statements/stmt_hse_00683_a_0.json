@@ -133,6 +133,42 @@
           "name": "FLT3-ITD",
           "constraints": [
             {
+              "type": "DefiningLocationConstraint",
+              "location": {
+                "id": "ga4gh:SL.53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
+                "type": "SequenceLocation",
+                "name": "FLT3 ITD Region (Exons 14-15), protein",
+                "aliases": [],
+                "description": "Sequence within refseq:NP_004110.2, the protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the juxtamembrane domain and N-terminal portion of tyrosine kinase subdomain 1 (Exons 14-15).",
+                "digest": "53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
+                "sequenceReference": {
+                  "id": "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                  "type": "SequenceReference",
+                  "name": "NP_004110.2",
+                  "aliases": [
+                    "ensembl:ENSP00000241453.7",
+                    "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                    "refseq:NP_004110.2"
+                  ],
+                  "description": "The protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the Refseq protein accession NP_004110.2.",
+                  "moleculeType": "protein",
+                  "refgetAccession": "SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                  "residueAlphabet": "aa"
+                },
+                "start": 568,
+                "end": 648,
+                "sequence": null
+              },
+              "relations": [],
+              "matchCharacteristic": {
+                "type": "MappableConcept",
+                "primaryCoding": {
+                  "code": "is_within",
+                  "system": "ga4gh-gks-term:location-match"
+                }
+              }
+            },
+            {
               "type": "FeatureContextConstraint",
               "featureContext": {
                 "id": "gene:hgnc:3765",
