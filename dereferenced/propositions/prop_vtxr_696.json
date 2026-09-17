@@ -50,6 +50,42 @@
         "name": "Wild type TP53",
         "constraints": [
           {
+            "type": "DefiningLocationConstraint",
+            "location": {
+              "id": "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi",
+              "type": "SequenceLocation",
+              "name": null,
+              "aliases": [],
+              "description": "Sequence spanning the length of refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6).",
+              "digest": "-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi",
+              "sequenceReference": {
+                "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+                "type": "SequenceReference",
+                "name": "NP_000537.3",
+                "aliases": [
+                  "ensembl:ENSP00000269305.4",
+                  "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+                  "refseq:NP_000537.3"
+                ],
+                "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+                "moleculeType": "protein",
+                "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+                "residueAlphabet": "aa"
+              },
+              "start": 0,
+              "end": 393,
+              "sequence": null
+            },
+            "relations": [],
+            "matchCharacteristic": {
+              "type": "MappableConcept",
+              "primaryCoding": {
+                "code": "is_within",
+                "system": "ga4gh-gks-term:location-match"
+              }
+            }
+          },
+          {
             "type": "FeatureContextConstraint",
             "featureContext": {
               "id": "gene:hgnc:11998",
@@ -96,20 +132,6 @@
                       "https://www.ncbi.nlm.nih.gov/nuccore/NM_000546.6"
                     ]
                   }
-                }
-              ],
-              "extensions": [
-                {
-                  "name": "location",
-                  "value": "17p13.1"
-                },
-                {
-                  "name": "location_sortable",
-                  "value": "17p13.1"
-                },
-                {
-                  "name": "protein_product",
-                  "value": "NP_000537.3"
                 }
               ]
             }

@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "4q12"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_112179.2"
+      "value": {
+        "id": "ga4gh:SL.9tQ9RRIxDlta-QUyPaEmF3ldhpgWevWo",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_112179.2, the protein product of the MANE Select coding transcript for FIP1L1 (refseq:NM_030917.4).",
+        "digest": "9tQ9RRIxDlta-QUyPaEmF3ldhpgWevWo",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.l_Fbxn4URDKhZEq4FkZCL_kL7yqbsKjL",
+          "type": "SequenceReference",
+          "name": "NP_112179.2",
+          "aliases": [
+            "ensembl:ENSP00000336752.6",
+            "ga4gh:SQ.l_Fbxn4URDKhZEq4FkZCL_kL7yqbsKjL",
+            "refseq:NP_112179.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for FIP1L1 (refseq:NM_030917.4), corresponding to the Refseq protein accession NP_112179.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.l_Fbxn4URDKhZEq4FkZCL_kL7yqbsKjL",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 594,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.5hRflwIkobtlracPCdzMGu-9RMNtJVV1",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_030917.4, the MANE Select coding transcript for FIP1L1.",
+        "digest": "5hRflwIkobtlracPCdzMGu-9RMNtJVV1",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.Oi5NgtqEc5vgMsdzrcwFCnhc8Xlw8N3f",
+          "type": "SequenceReference",
+          "name": "NM_030917.4",
+          "aliases": [
+            "ensembl:ENST00000337488.11",
+            "ga4gh:SQ.Oi5NgtqEc5vgMsdzrcwFCnhc8Xlw8N3f",
+            "refseq:NM_030917.4"
+          ],
+          "description": "The MANE Select coding transcript for FIP1L1, corresponding to the Refseq transcript accession NM_030917.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.Oi5NgtqEc5vgMsdzrcwFCnhc8Xlw8N3f",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 3396,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

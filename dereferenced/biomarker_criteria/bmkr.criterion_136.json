@@ -7,6 +7,42 @@
     "name": "RAD51C pathogenic variants",
     "constraints": [
       {
+        "type": "DefiningLocationConstraint",
+        "location": {
+          "id": "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence spanning the length of refseq:NP_478123.1, the protein product of the MANE Select coding transcript for RAD51C (refseq:NM_058216.3).",
+          "digest": "5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GMP4RuPu7Q_irnmwoRIbnsFiecXnnHlw",
+            "type": "SequenceReference",
+            "name": "NP_478123.1",
+            "aliases": [
+              "ensembl:ENSP00000336701.4",
+              "ga4gh:SQ.GMP4RuPu7Q_irnmwoRIbnsFiecXnnHlw",
+              "refseq:NP_478123.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51C (refseq:NM_058216.3), corresponding to the Refseq protein accession NP_478123.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GMP4RuPu7Q_irnmwoRIbnsFiecXnnHlw",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 376,
+          "sequence": null
+        },
+        "relations": [],
+        "matchCharacteristic": {
+          "type": "MappableConcept",
+          "primaryCoding": {
+            "code": "is_within",
+            "system": "ga4gh-gks-term:location-match"
+          }
+        }
+      },
+      {
         "type": "FeatureContextConstraint",
         "featureContext": {
           "id": "gene:hgnc:9820",
@@ -53,20 +89,6 @@
                   "https://www.ncbi.nlm.nih.gov/nuccore/NM_058216.3"
                 ]
               }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "17q22"
-            },
-            {
-              "name": "location_sortable",
-              "value": "17q22"
-            },
-            {
-              "name": "protein_product",
-              "value": "NP_478123.1"
             }
           ]
         }

@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "17q12"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_004439.2"
+      "value": {
+        "id": "ga4gh:SL.tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4).",
+        "digest": "tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+          "type": "SequenceReference",
+          "name": "NP_004439.2",
+          "aliases": [
+            "ensembl:ENSP00000269571.4",
+            "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "refseq:NP_004439.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1255,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.7Wf-m-axbtA92nOv_dVsWuWMD8FYaItO",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004448.4, the MANE Select coding transcript for ERBB2.",
+        "digest": "7Wf-m-axbtA92nOv_dVsWuWMD8FYaItO",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+          "type": "SequenceReference",
+          "name": "NM_004448.4",
+          "aliases": [
+            "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "refseq:NM_004448.4"
+          ],
+          "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 4557,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

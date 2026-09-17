@@ -134,6 +134,42 @@
           "name": "BRIP1 pathogenic variants",
           "constraints": [
             {
+              "type": "DefiningLocationConstraint",
+              "location": {
+                "id": "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx",
+                "type": "SequenceLocation",
+                "name": null,
+                "aliases": [],
+                "description": "Sequence spanning the length of refseq:NP_114432.2, the protein product of the MANE Select coding transcript for BRIP1 (refseq:NM_032043.3).",
+                "digest": "r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx",
+                "sequenceReference": {
+                  "id": "ga4gh:SQ.QbBbJgMg_WE9lzY1G5Fbmh_k5tOm_DMS",
+                  "type": "SequenceReference",
+                  "name": "NP_114432.2",
+                  "aliases": [
+                    "ensembl:ENSP00000259008.2",
+                    "ga4gh:SQ.QbBbJgMg_WE9lzY1G5Fbmh_k5tOm_DMS",
+                    "refseq:NP_114432.2"
+                  ],
+                  "description": "The protein product of the MANE Select coding transcript for BRIP1 (refseq:NM_032043.3), corresponding to the Refseq protein accession NP_114432.2.",
+                  "moleculeType": "protein",
+                  "refgetAccession": "SQ.QbBbJgMg_WE9lzY1G5Fbmh_k5tOm_DMS",
+                  "residueAlphabet": "aa"
+                },
+                "start": 0,
+                "end": 1249,
+                "sequence": null
+              },
+              "relations": [],
+              "matchCharacteristic": {
+                "type": "MappableConcept",
+                "primaryCoding": {
+                  "code": "is_within",
+                  "system": "ga4gh-gks-term:location-match"
+                }
+              }
+            },
+            {
               "type": "FeatureContextConstraint",
               "featureContext": {
                 "id": "gene:hgnc:20473",
@@ -180,20 +216,6 @@
                         "https://www.ncbi.nlm.nih.gov/nuccore/NM_032043.3"
                       ]
                     }
-                  }
-                ],
-                "extensions": [
-                  {
-                    "name": "location",
-                    "value": "17q23.2"
-                  },
-                  {
-                    "name": "location_sortable",
-                    "value": "17q23.2"
-                  },
-                  {
-                    "name": "protein_product",
-                    "value": "NP_114432.2"
                   }
                 ]
               }

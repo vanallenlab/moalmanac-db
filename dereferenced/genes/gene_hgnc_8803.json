@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "4q12"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_006197.1"
+      "value": {
+        "id": "ga4gh:SL.IN6-gg6jR9Jn80letY5KPb5b32tl4AYZ",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_006197.1, the protein product of the MANE Select coding transcript for PDGFRA (refseq:NM_006206.6).",
+        "digest": "IN6-gg6jR9Jn80letY5KPb5b32tl4AYZ",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
+          "type": "SequenceReference",
+          "name": "NP_006197.1",
+          "aliases": [
+            "ensembl:ENSP00000257290.5",
+            "ga4gh:SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
+            "refseq:NP_006197.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for PDGFRA (refseq:NM_006206.6), corresponding to the Refseq protein accession NP_006197.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1089,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.LAYhhPDC_EIi0ppLfZtqyO5RGHzgaTbc",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_006206.6, the MANE Select coding transcript for PDGFRA.",
+        "digest": "LAYhhPDC_EIi0ppLfZtqyO5RGHzgaTbc",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.P_hYEl9XPZMg9zb-vhiwr4SNXtkCutiu",
+          "type": "SequenceReference",
+          "name": "NM_006206.6",
+          "aliases": [
+            "ensembl:ENST00000257290.10",
+            "ga4gh:SQ.P_hYEl9XPZMg9zb-vhiwr4SNXtkCutiu",
+            "refseq:NM_006206.6"
+          ],
+          "description": "The MANE Select coding transcript for PDGFRA, corresponding to the Refseq transcript accession NM_006206.6.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.P_hYEl9XPZMg9zb-vhiwr4SNXtkCutiu",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6378,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

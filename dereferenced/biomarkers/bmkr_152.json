@@ -4,6 +4,42 @@
   "name": "RET oncogenic variants",
   "constraints": [
     {
+      "type": "DefiningLocationConstraint",
+      "location": {
+        "id": "ga4gh:SL.8tMatnGHpju4GOKF3BvEBkQkhD68tww2",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_066124.1, the protein product of the MANE Select coding transcript for RET (refseq:NM_020975.6).",
+        "digest": "8tMatnGHpju4GOKF3BvEBkQkhD68tww2",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.jMu9-ItXSycQsm4hyABeW_UfSNRXRVnl",
+          "type": "SequenceReference",
+          "name": "NP_066124.1",
+          "aliases": [
+            "ensembl:ENSP00000347942.3",
+            "ga4gh:SQ.jMu9-ItXSycQsm4hyABeW_UfSNRXRVnl",
+            "refseq:NP_066124.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for RET (refseq:NM_020975.6), corresponding to the Refseq protein accession NP_066124.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.jMu9-ItXSycQsm4hyABeW_UfSNRXRVnl",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1114,
+        "sequence": null
+      },
+      "relations": [],
+      "matchCharacteristic": {
+        "type": "MappableConcept",
+        "primaryCoding": {
+          "code": "is_within",
+          "system": "ga4gh-gks-term:location-match"
+        }
+      }
+    },
+    {
       "type": "FeatureContextConstraint",
       "featureContext": {
         "id": "gene:hgnc:9967",
@@ -50,20 +86,6 @@
                 "https://www.ncbi.nlm.nih.gov/nuccore/NM_020975.6"
               ]
             }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "location",
-            "value": "10q11.21"
-          },
-          {
-            "name": "location_sortable",
-            "value": "10q11.21"
-          },
-          {
-            "name": "protein_product",
-            "value": "NP_066124.1"
           }
         ]
       }

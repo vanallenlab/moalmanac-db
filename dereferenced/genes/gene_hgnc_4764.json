@@ -48,6 +48,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "1q42.12"
     },
@@ -57,7 +61,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_002098.1"
+      "value": {
+        "id": "ga4gh:SL.xSaaAz5CV8j48804vW4nZ0EqIUHPJC6O",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_002098.1, the protein product of the MANE Select coding transcript for H3-3A (refseq:NM_002107.7).",
+        "digest": "xSaaAz5CV8j48804vW4nZ0EqIUHPJC6O",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.2uEiKlgt3rV_axllFiEObLHYBOl2mT38",
+          "type": "SequenceReference",
+          "name": "NP_002098.1",
+          "aliases": [
+            "ensembl:ENSP00000254810.3",
+            "ga4gh:SQ.2uEiKlgt3rV_axllFiEObLHYBOl2mT38",
+            "refseq:NP_002098.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for H3-3A (refseq:NM_002107.7), corresponding to the Refseq protein accession NP_002098.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.2uEiKlgt3rV_axllFiEObLHYBOl2mT38",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 136,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.xYXyd8DxlH-AAUXOtN5dpkyeiLALlKfH",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_002107.7, the MANE Select coding transcript for H3-3A.",
+        "digest": "xYXyd8DxlH-AAUXOtN5dpkyeiLALlKfH",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.vLaiXMs4BSQjw5TT96wK8JQxa4urHv65",
+          "type": "SequenceReference",
+          "name": "NM_002107.7",
+          "aliases": [
+            "ga4gh:SQ.vLaiXMs4BSQjw5TT96wK8JQxa4urHv65",
+            "refseq:NM_002107.7"
+          ],
+          "description": "The MANE Select coding transcript for H3-3A, corresponding to the Refseq transcript accession NM_002107.7.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.vLaiXMs4BSQjw5TT96wK8JQxa4urHv65",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 1070,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

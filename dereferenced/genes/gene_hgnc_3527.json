@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "7q36.1"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_004447.2"
+      "value": {
+        "id": "ga4gh:SL.RO1UbQjcUlb5tedoMhjsHH-ouXoR22gM",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004447.2, the protein product of the MANE Select coding transcript for EZH2 (refseq:NM_004456.5).",
+        "digest": "RO1UbQjcUlb5tedoMhjsHH-ouXoR22gM",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.fZuyp1_QKM5vGWsn-O-CrPHPm5jR403J",
+          "type": "SequenceReference",
+          "name": "NP_004447.2",
+          "aliases": [
+            "ensembl:ENSP00000320147.2",
+            "ga4gh:SQ.fZuyp1_QKM5vGWsn-O-CrPHPm5jR403J",
+            "refseq:NP_004447.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for EZH2 (refseq:NM_004456.5), corresponding to the Refseq protein accession NP_004447.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.fZuyp1_QKM5vGWsn-O-CrPHPm5jR403J",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 751,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.hctY6DO9z0DFzex6maeqp56W-gEzb1Af",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004456.5, the MANE Select coding transcript for EZH2.",
+        "digest": "hctY6DO9z0DFzex6maeqp56W-gEzb1Af",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.3ncEFnxFwGZglra5EbPzX2HUvhzwMsj3",
+          "type": "SequenceReference",
+          "name": "NM_004456.5",
+          "aliases": [
+            "ensembl:ENST00000320356.7",
+            "ga4gh:SQ.3ncEFnxFwGZglra5EbPzX2HUvhzwMsj3",
+            "refseq:NM_004456.5"
+          ],
+          "description": "The MANE Select coding transcript for EZH2, corresponding to the Refseq transcript accession NM_004456.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.3ncEFnxFwGZglra5EbPzX2HUvhzwMsj3",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 2654,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

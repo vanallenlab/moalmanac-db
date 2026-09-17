@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "4q12"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_000213.1"
+      "value": {
+        "id": "ga4gh:SL.wN0yp7NoFgBPvp2sm-afK-fr89azhJN4",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000213.1, the protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3).",
+        "digest": "wN0yp7NoFgBPvp2sm-afK-fr89azhJN4",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+          "type": "SequenceReference",
+          "name": "NP_000213.1",
+          "aliases": [
+            "ensembl:ENSP00000288135.5",
+            "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+            "refseq:NP_000213.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3), corresponding to the Refseq protein accession NP_000213.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 976,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.UjjKxVl2yY23ieUK_ShupoUUkRNWpuz8",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000222.3, the MANE Select coding transcript for KIT.",
+        "digest": "UjjKxVl2yY23ieUK_ShupoUUkRNWpuz8",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.5UOthuwxqhwdsrbA4bVonC2ps_Njx1gh",
+          "type": "SequenceReference",
+          "name": "NM_000222.3",
+          "aliases": [
+            "ga4gh:SQ.5UOthuwxqhwdsrbA4bVonC2ps_Njx1gh",
+            "refseq:NM_000222.3"
+          ],
+          "description": "The MANE Select coding transcript for KIT, corresponding to the Refseq transcript accession NM_000222.3.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.5UOthuwxqhwdsrbA4bVonC2ps_Njx1gh",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5147,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "7q31.2"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_000236.2"
+      "value": {
+        "id": "ga4gh:SL.FpwyB8LUTpBqQV2qgaSdj4TosJsaji64",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000236.2, the protein product of the MANE Select coding transcript for MET (refseq:NM_000245.4).",
+        "digest": "FpwyB8LUTpBqQV2qgaSdj4TosJsaji64",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.QITcgkaDXSK1bJllcGyJVlXeD_SiQdfo",
+          "type": "SequenceReference",
+          "name": "NP_000236.2",
+          "aliases": [
+            "ensembl:ENSP00000380860.3",
+            "ga4gh:SQ.QITcgkaDXSK1bJllcGyJVlXeD_SiQdfo",
+            "refseq:NP_000236.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for MET (refseq:NM_000245.4), corresponding to the Refseq protein accession NP_000236.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.QITcgkaDXSK1bJllcGyJVlXeD_SiQdfo",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1390,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.a88RmALvNFDcq7ta67OQMgXtq0wNAfeC",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000245.4, the MANE Select coding transcript for MET.",
+        "digest": "a88RmALvNFDcq7ta67OQMgXtq0wNAfeC",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.gk1AHQsR0zs96bSrnH7iRLWACugBZRNz",
+          "type": "SequenceReference",
+          "name": "NM_000245.4",
+          "aliases": [
+            "ga4gh:SQ.gk1AHQsR0zs96bSrnH7iRLWACugBZRNz",
+            "refseq:NM_000245.4"
+          ],
+          "description": "The MANE Select coding transcript for MET, corresponding to the Refseq transcript accession NM_000245.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.gk1AHQsR0zs96bSrnH7iRLWACugBZRNz",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6822,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

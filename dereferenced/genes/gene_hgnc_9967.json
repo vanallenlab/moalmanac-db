@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "10q11.21"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_066124.1"
+      "value": {
+        "id": "ga4gh:SL.8tMatnGHpju4GOKF3BvEBkQkhD68tww2",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_066124.1, the protein product of the MANE Select coding transcript for RET (refseq:NM_020975.6).",
+        "digest": "8tMatnGHpju4GOKF3BvEBkQkhD68tww2",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.jMu9-ItXSycQsm4hyABeW_UfSNRXRVnl",
+          "type": "SequenceReference",
+          "name": "NP_066124.1",
+          "aliases": [
+            "ensembl:ENSP00000347942.3",
+            "ga4gh:SQ.jMu9-ItXSycQsm4hyABeW_UfSNRXRVnl",
+            "refseq:NP_066124.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for RET (refseq:NM_020975.6), corresponding to the Refseq protein accession NP_066124.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.jMu9-ItXSycQsm4hyABeW_UfSNRXRVnl",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1114,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.j_M6qmFeISJuSJ_kiJNnnvbKooLtR7B7",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_020975.6, the MANE Select coding transcript for RET.",
+        "digest": "j_M6qmFeISJuSJ_kiJNnnvbKooLtR7B7",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.jHlgYyFWJThVNL_o5UXEBwcQVNEPc62c",
+          "type": "SequenceReference",
+          "name": "NM_020975.6",
+          "aliases": [
+            "ensembl:ENST00000355710.8",
+            "ga4gh:SQ.jHlgYyFWJThVNL_o5UXEBwcQVNEPc62c",
+            "refseq:NM_020975.6"
+          ],
+          "description": "The MANE Select coding transcript for RET, corresponding to the Refseq transcript accession NM_020975.6.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.jHlgYyFWJThVNL_o5UXEBwcQVNEPc62c",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5617,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

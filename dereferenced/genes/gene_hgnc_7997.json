@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "8p12"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_039258.1"
+      "value": {
+        "id": "ga4gh:SL.WaCeH5maSlytRgNUPouoxfHrEgXOjBJe",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_039258.1, the protein product of the MANE Select coding transcript for NRG1 (refseq:NM_013964.5).",
+        "digest": "WaCeH5maSlytRgNUPouoxfHrEgXOjBJe",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.D91XmTvw16jTe8iu-ZB7ggvmS0ueYTib",
+          "type": "SequenceReference",
+          "name": "NP_039258.1",
+          "aliases": [
+            "ensembl:ENSP00000384620.2",
+            "ga4gh:SQ.D91XmTvw16jTe8iu-ZB7ggvmS0ueYTib",
+            "refseq:NP_039258.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for NRG1 (refseq:NM_013964.5), corresponding to the Refseq protein accession NP_039258.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.D91XmTvw16jTe8iu-ZB7ggvmS0ueYTib",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 640,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.gyhCM2MFxeFc9EPkoAtBvOhy1MGnKGqn",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_013964.5, the MANE Select coding transcript for NRG1.",
+        "digest": "gyhCM2MFxeFc9EPkoAtBvOhy1MGnKGqn",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.OPVeJm9T3KcdeHmV_EI5RbIhnEnLm2O4",
+          "type": "SequenceReference",
+          "name": "NM_013964.5",
+          "aliases": [
+            "ga4gh:SQ.OPVeJm9T3KcdeHmV_EI5RbIhnEnLm2O4",
+            "refseq:NM_013964.5"
+          ],
+          "description": "The MANE Select coding transcript for NRG1, corresponding to the Refseq transcript accession NM_013964.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.OPVeJm9T3KcdeHmV_EI5RbIhnEnLm2O4",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 11983,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

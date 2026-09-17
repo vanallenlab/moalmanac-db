@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "11q24.2"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_001107594.1"
+      "value": {
+        "id": "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001107594.1, the protein product of the MANE Select coding transcript for CHEK1 (refseq:NM_001114122.3).",
+        "digest": "5dNKPfg6jae-YLpxGvcKICpigmrDOxxK",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.WMs6RQSZbbJ1MxVvh-xYvwkeIqoTB3-s",
+          "type": "SequenceReference",
+          "name": "NP_001107594.1",
+          "aliases": [
+            "ensembl:ENSP00000388648.1",
+            "ga4gh:SQ.WMs6RQSZbbJ1MxVvh-xYvwkeIqoTB3-s",
+            "refseq:NP_001107594.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for CHEK1 (refseq:NM_001114122.3), corresponding to the Refseq protein accession NP_001107594.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.WMs6RQSZbbJ1MxVvh-xYvwkeIqoTB3-s",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 476,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.ogsOFaxdxhat-8hQfCS8FoFkvuf0XOHU",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_001114122.3, the MANE Select coding transcript for CHEK1.",
+        "digest": "ogsOFaxdxhat-8hQfCS8FoFkvuf0XOHU",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.yYtQgMfHKdxFY1fKqf5-Aka_c69seS6m",
+          "type": "SequenceReference",
+          "name": "NM_001114122.3",
+          "aliases": [
+            "ga4gh:SQ.yYtQgMfHKdxFY1fKqf5-Aka_c69seS6m",
+            "refseq:NM_001114122.3"
+          ],
+          "description": "The MANE Select coding transcript for CHEK1, corresponding to the Refseq transcript accession NM_001114122.3.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.yYtQgMfHKdxFY1fKqf5-Aka_c69seS6m",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 4128,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

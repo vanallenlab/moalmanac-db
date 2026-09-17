@@ -134,6 +134,42 @@
           "name": "NBN pathogenic variants",
           "constraints": [
             {
+              "type": "DefiningLocationConstraint",
+              "location": {
+                "id": "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq",
+                "type": "SequenceLocation",
+                "name": null,
+                "aliases": [],
+                "description": "Sequence spanning the length of refseq:NP_476432.2, the protein product of the MANE Select coding transcript for NBN (refseq:NM_057091.3).",
+                "digest": "O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq",
+                "sequenceReference": {
+                  "id": "ga4gh:SQ.T4LwZqLKWSYumPA4OW8G35Q3I81OGuma",
+                  "type": "SequenceReference",
+                  "name": "NP_476432.2",
+                  "aliases": [
+                    "ensembl:ENSP00000361429.3",
+                    "ga4gh:SQ.T4LwZqLKWSYumPA4OW8G35Q3I81OGuma",
+                    "refseq:NP_476432.2"
+                  ],
+                  "description": "The protein product of the MANE Select coding transcript for NBN (refseq:NM_057091.3), corresponding to the Refseq protein accession NP_476432.2.",
+                  "moleculeType": "protein",
+                  "refgetAccession": "SQ.T4LwZqLKWSYumPA4OW8G35Q3I81OGuma",
+                  "residueAlphabet": "aa"
+                },
+                "start": 0,
+                "end": 220,
+                "sequence": null
+              },
+              "relations": [],
+              "matchCharacteristic": {
+                "type": "MappableConcept",
+                "primaryCoding": {
+                  "code": "is_within",
+                  "system": "ga4gh-gks-term:location-match"
+                }
+              }
+            },
+            {
               "type": "FeatureContextConstraint",
               "featureContext": {
                 "id": "gene:hgnc:7652",
@@ -180,20 +216,6 @@
                         "https://www.ncbi.nlm.nih.gov/nuccore/NM_057091.3"
                       ]
                     }
-                  }
-                ],
-                "extensions": [
-                  {
-                    "name": "location",
-                    "value": "8q21.3"
-                  },
-                  {
-                    "name": "location_sortable",
-                    "value": "08q21.3"
-                  },
-                  {
-                    "name": "protein_product",
-                    "value": "NP_476432.2"
                   }
                 ]
               }

@@ -7,6 +7,42 @@
     "name": "FANCA pathogenic variants",
     "constraints": [
       {
+        "type": "DefiningLocationConstraint",
+        "location": {
+          "id": "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence spanning the length of refseq:NP_000126.2, the protein product of the MANE Select coding transcript for FANCA (refseq:NM_000135.4).",
+          "digest": "pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KwYjv-grMNUxuIxOiA6uorz1iWXpSqA1",
+            "type": "SequenceReference",
+            "name": "NP_000126.2",
+            "aliases": [
+              "ensembl:ENSP00000373952.3",
+              "ga4gh:SQ.KwYjv-grMNUxuIxOiA6uorz1iWXpSqA1",
+              "refseq:NP_000126.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FANCA (refseq:NM_000135.4), corresponding to the Refseq protein accession NP_000126.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KwYjv-grMNUxuIxOiA6uorz1iWXpSqA1",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 1455,
+          "sequence": null
+        },
+        "relations": [],
+        "matchCharacteristic": {
+          "type": "MappableConcept",
+          "primaryCoding": {
+            "code": "is_within",
+            "system": "ga4gh-gks-term:location-match"
+          }
+        }
+      },
+      {
         "type": "FeatureContextConstraint",
         "featureContext": {
           "id": "gene:hgnc:3582",
@@ -53,20 +89,6 @@
                   "https://www.ncbi.nlm.nih.gov/nuccore/NM_000135.4"
                 ]
               }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "16q24.3"
-            },
-            {
-              "name": "location_sortable",
-              "value": "16q24.3"
-            },
-            {
-              "name": "protein_product",
-              "value": "NP_000126.2"
             }
           ]
         }

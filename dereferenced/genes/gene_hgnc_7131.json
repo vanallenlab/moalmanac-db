@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "11q23.3"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_001184033.1"
+      "value": {
+        "id": "ga4gh:SL.WwfA99q7x9oHDRjnqVK3mgrmmKk27JA7",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001184033.1, the protein product of the MANE Select coding transcript for KMT2A (refseq:NM_001197104.2).",
+        "digest": "WwfA99q7x9oHDRjnqVK3mgrmmKk27JA7",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.AxiFiHR1KWySlGgSpw28vKBbBXfXEKcq",
+          "type": "SequenceReference",
+          "name": "NP_001184033.1",
+          "aliases": [
+            "ensembl:ENSP00000436786.1",
+            "ga4gh:SQ.AxiFiHR1KWySlGgSpw28vKBbBXfXEKcq",
+            "refseq:NP_001184033.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for KMT2A (refseq:NM_001197104.2), corresponding to the Refseq protein accession NP_001184033.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.AxiFiHR1KWySlGgSpw28vKBbBXfXEKcq",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 3972,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.mDdiUyZXdFN2v18bo0htP_ALhBxHvPzF",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_001197104.2, the MANE Select coding transcript for KMT2A.",
+        "digest": "mDdiUyZXdFN2v18bo0htP_ALhBxHvPzF",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.WVWB4Tjgo5_Dy86d5IpZ_YVznfWH-1Eb",
+          "type": "SequenceReference",
+          "name": "NM_001197104.2",
+          "aliases": [
+            "ensembl:ENST00000534358.7",
+            "ga4gh:SQ.WVWB4Tjgo5_Dy86d5IpZ_YVznfWH-1Eb",
+            "refseq:NM_001197104.2"
+          ],
+          "description": "The MANE Select coding transcript for KMT2A, corresponding to the Refseq transcript accession NM_001197104.2.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.WVWB4Tjgo5_Dy86d5IpZ_YVznfWH-1Eb",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 16600,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

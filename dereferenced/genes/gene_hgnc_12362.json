@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "9q34.13"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_000359.1"
+      "value": {
+        "id": "ga4gh:SL.o0qRqlKBKx4X0_JQslgG31SX69ml6liV",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000359.1, the protein product of the MANE Select coding transcript for TSC1 (refseq:NM_000368.5).",
+        "digest": "o0qRqlKBKx4X0_JQslgG31SX69ml6liV",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.a1L5tWilMgJeKiIWlg_QAnVAgy2wvJsp",
+          "type": "SequenceReference",
+          "name": "NP_000359.1",
+          "aliases": [
+            "ensembl:ENSP00000298552.3",
+            "ga4gh:SQ.a1L5tWilMgJeKiIWlg_QAnVAgy2wvJsp",
+            "refseq:NP_000359.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for TSC1 (refseq:NM_000368.5), corresponding to the Refseq protein accession NP_000359.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.a1L5tWilMgJeKiIWlg_QAnVAgy2wvJsp",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1164,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.4Nqm44fGbzfEVG09LJcjaQ7mk-UielMY",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000368.5, the MANE Select coding transcript for TSC1.",
+        "digest": "4Nqm44fGbzfEVG09LJcjaQ7mk-UielMY",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.hv3drkSsI-0waYxq8ZzVYU4qf1XiTkjN",
+          "type": "SequenceReference",
+          "name": "NM_000368.5",
+          "aliases": [
+            "ensembl:ENST00000298552.9",
+            "ga4gh:SQ.hv3drkSsI-0waYxq8ZzVYU4qf1XiTkjN",
+            "refseq:NM_000368.5"
+          ],
+          "description": "The MANE Select coding transcript for TSC1, corresponding to the Refseq transcript accession NM_000368.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.hv3drkSsI-0waYxq8ZzVYU4qf1XiTkjN",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 8598,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

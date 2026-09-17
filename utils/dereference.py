@@ -720,11 +720,14 @@ class Genes(BaseTable):
     - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
     - Mappings (initial key: `mappings`, resulting_key: `mappings`)
     - SequenceLocations (initial key: `protein_product`, resulting key: `protein_product`)
+    - SequenceLocations (initial key: `protein_product_exons`, resulting key: `protein_product_exons`)
     - SequenceLocations (initial key: `transcript`, resulting key: `transcript`)
+    - SequenceLocations (initial key: `transcript_exons`, resulting key: `transcript_exons`)
 
-    After foreign keys are resolved, `location`, `location_sortable`, `protein_product`, and
-    `transcript` are folded into an `extensions` list (see `build_extensions`), and each record's
-    keys are reordered to `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`.
+    After foreign keys are resolved, `cds_start`, `location`, `location_sortable`, `protein_product`,
+    `protein_product_exons`, `transcript`, and `transcript_exons` are folded into an `extensions` list
+    (see `build_extensions`), and each record's keys are reordered to `id`, `conceptType`, `name`,
+    `primaryCoding`, `mappings`, `extensions`.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
@@ -741,39 +744,56 @@ class Genes(BaseTable):
         FKSingle(
             "protein_product", "protein_product", lambda db: db.sequence_locations
         ),
+        FKList(
+            "protein_product_exons",
+            "protein_product_exons",
+            lambda db: db.sequence_locations,
+        ),
         FKSingle("transcript", "transcript", lambda db: db.sequence_locations),
+        FKList(
+            "transcript_exons", "transcript_exons", lambda db: db.sequence_locations
+        ),
     ]
 
     def build_extensions(self) -> None:
         """
-        Folds `location`, `location_sortable`, `protein_product`, and `transcript` into an
-        `extensions` list, in place.
+        Folds `cds_start`, `location`, `location_sortable`, `protein_product`,
+        `protein_product_exons`, `transcript`, and `transcript_exons` into an `extensions` list,
+        in place.
 
-        `protein_product` and `transcript` are already dereferenced SequenceLocation objects by the
-        time this runs. This only runs on the Genes table's own records, so it produces the richer
-        standalone/per-concept form; a gene embedded elsewhere (e.g. via Biomarkers' `genes` foreign
-        key) has this `extensions` list stripped at the embedding site instead.
+        `protein_product`, `protein_product_exons`, `transcript`, and `transcript_exons` are already
+        dereferenced SequenceLocation objects by the time this runs. This only runs on the Genes
+        table's own records, so it produces the richer standalone/per-concept form; a gene embedded
+        elsewhere (e.g. via Biomarkers' `genes` foreign key) has this `extensions` list stripped at
+        the embedding site instead.
         """
         for record in self.records:
+            cds_start = record.pop("cds_start")
             location = record.pop("location")
             location_sortable = record.pop("location_sortable")
             protein_product = record.pop("protein_product")
+            protein_product_exons = record.pop("protein_product_exons")
             transcript = record.pop("transcript")
+            transcript_exons = record.pop("transcript_exons")
             record["extensions"] = [
+                {"name": "cds_start", "value": cds_start},
                 {"name": "location", "value": location},
                 {"name": "location_sortable", "value": location_sortable},
                 {"name": "protein_product", "value": protein_product},
+                {"name": "protein_product_exons", "value": protein_product_exons},
                 {"name": "transcript", "value": transcript},
+                {"name": "transcript_exons", "value": transcript_exons},
             ]
 
     def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Genes table, then reorders each record's keys.
 
-        Resolves foreign keys declared in `foreign_keys` via the base class, folds `location`,
-        `location_sortable`, `protein_product`, and `transcript` into an `extensions` list via
-        `build_extensions`, then reorders keys to `id`, `conceptType`, `name`, `primaryCoding`,
-        `mappings`, `extensions`. Each table is resolved at most once; subsequent calls are no-ops.
+        Resolves foreign keys declared in `foreign_keys` via the base class, folds `cds_start`,
+        `location`, `location_sortable`, `protein_product`, `protein_product_exons`, `transcript`,
+        and `transcript_exons` into an `extensions` list via `build_extensions`, then reorders keys
+        to `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`. Each table is
+        resolved at most once; subsequent calls are no-ops.
 
         Args:
             db (Database): An instance of the Database class containing all tables.

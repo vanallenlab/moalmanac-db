@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 193
+    },
+    {
       "name": "location",
       "value": "9q34.12"
     },
@@ -56,7 +60,619 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_005148.2"
+      "value": {
+        "id": "ga4gh:SL.Lp6o6wNWSpH7pnqzbqe8yEw_F9XfY08V",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_005148.2, the protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6).",
+        "digest": "Lp6o6wNWSpH7pnqzbqe8yEw_F9XfY08V",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+          "type": "SequenceReference",
+          "name": "NP_005148.2",
+          "aliases": [
+            "ensembl:ENSP00000323315.5",
+            "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "refseq:NP_005148.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1130,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.fXZkUMxqNfm0IJSsi7qEhq2TqY5GUFFH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 1 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "fXZkUMxqNfm0IJSsi7qEhq2TqY5GUFFH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 27,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.v8Pm2sEn5pYSuEv2JU3KaSEwZR1kFes0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 2 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "v8Pm2sEn5pYSuEv2JU3KaSEwZR1kFes0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 26,
+          "end": 85,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.38ZgtpLXdCcz84gRTj1qG3WmLlNCh2LW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 3 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "38ZgtpLXdCcz84gRTj1qG3WmLlNCh2LW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 84,
+          "end": 183,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ThcbG_I0xjnlTl8wbS9nbli39Gqmi0Y-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 4 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates.",
+          "digest": "ThcbG_I0xjnlTl8wbS9nbli39Gqmi0Y-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 183,
+          "end": 274,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dQ8yaXz1J5zTcYUuYTLR2yJzpyUxXTyk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 5 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "dQ8yaXz1J5zTcYUuYTLR2yJzpyUxXTyk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 274,
+          "end": 303,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HSM0025X66MP3uw-hZuUVQ0Z3ctBQCzr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 6 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "HSM0025X66MP3uw-hZuUVQ0Z3ctBQCzr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 302,
+          "end": 362,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.W3aemmvHphZTHbEIsqpzuF5pCg1RkTEc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 7 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "W3aemmvHphZTHbEIsqpzuF5pCg1RkTEc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 361,
+          "end": 424,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7krZueQB5QZH_5MUKf2ZFv7Jo2dq0p0D",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 8 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "7krZueQB5QZH_5MUKf2ZFv7Jo2dq0p0D",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 423,
+          "end": 475,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.PkcZPGOYf8C_JKa6sCkh6CCqbWVuBKqq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 9 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "PkcZPGOYf8C_JKa6sCkh6CCqbWVuBKqq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 474,
+          "end": 505,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hBos4eznWcoBoxzDYxcB0MGid7gcvwbO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 10 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "hBos4eznWcoBoxzDYxcB0MGid7gcvwbO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 504,
+          "end": 560,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yHZh3pssjZSFfvcL_5ccnp8MRId9WjfA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 11 of refseq:NM_005157.6 (refseq:NP_005148.2), the protein product of the MANE Select coding transcript for ABL1, in protein coordinates. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "yHZh3pssjZSFfvcL_5ccnp8MRId9WjfA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "type": "SequenceReference",
+            "name": "NP_005148.2",
+            "aliases": [
+              "ensembl:ENSP00000323315.5",
+              "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+              "refseq:NP_005148.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+            "residueAlphabet": "aa"
+          },
+          "start": 559,
+          "end": 1130,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.otvzOz2L6GPX3KbkKC4wHAVS19LrSvWp",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_005157.6, the MANE Select coding transcript for ABL1.",
+        "digest": "otvzOz2L6GPX3KbkKC4wHAVS19LrSvWp",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+          "type": "SequenceReference",
+          "name": "NM_005157.6",
+          "aliases": [
+            "ensembl:ENST00000318560.6",
+            "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "refseq:NM_005157.6"
+          ],
+          "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5578,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.8gWvU89ZwLSiIXbR5zjHtHYbnKknZJWs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 1 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "8gWvU89ZwLSiIXbR5zjHtHYbnKknZJWs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 272,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.aPHj-ihPmLe23xXCF0a5HEuwXqDaFyTP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 2 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "aPHj-ihPmLe23xXCF0a5HEuwXqDaFyTP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 272,
+          "end": 446,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ylQqA2bLQsTwo6N2wSov6H1cMxt5mIK1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 3 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "ylQqA2bLQsTwo6N2wSov6H1cMxt5mIK1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 446,
+          "end": 742,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.blFerxhEWUek9_NOGt_br3kGnf5Cx8l3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 4 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "blFerxhEWUek9_NOGt_br3kGnf5Cx8l3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 742,
+          "end": 1015,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.M0RuyTgGb0QIMdiYgUmgvXSy-HxLwpcA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 5 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "M0RuyTgGb0QIMdiYgUmgvXSy-HxLwpcA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1015,
+          "end": 1100,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.R7EC6rdWzoqeW3AF2AUdlvVgfU2Li9JH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 6 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "R7EC6rdWzoqeW3AF2AUdlvVgfU2Li9JH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1100,
+          "end": 1278,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.uHQ4AffjTGTz_LDT8MWztArhphXO4FGl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 7 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "uHQ4AffjTGTz_LDT8MWztArhphXO4FGl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1278,
+          "end": 1463,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sjWKuRMWCLfdKLqdbZAxADTWzU_7V9W0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 8 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "sjWKuRMWCLfdKLqdbZAxADTWzU_7V9W0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1463,
+          "end": 1616,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._KwkbUbsqlzaKLAln8jJ9O9KxS4qeP10",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 9 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "_KwkbUbsqlzaKLAln8jJ9O9KxS4qeP10",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1616,
+          "end": 1706,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9fHc_isW9eO-n0HiOb-lkKuIcD2BMAWk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 10 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "9fHc_isW9eO-n0HiOb-lkKuIcD2BMAWk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1706,
+          "end": 1871,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JuQ--BPb6p5n6dDXICYiBeciFZzMeG5q",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Exon 11 of refseq:NM_005157.6, the MANE Select coding transcript for ABL1, in transcript coordinates.",
+          "digest": "JuQ--BPb6p5n6dDXICYiBeciFZzMeG5q",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "type": "SequenceReference",
+            "name": "NM_005157.6",
+            "aliases": [
+              "ensembl:ENST00000318560.6",
+              "ga4gh:SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+              "refseq:NM_005157.6"
+            ],
+            "description": "The MANE Select coding transcript for ABL1, corresponding to the Refseq transcript accession NM_005157.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.w8Qg3x-PQ2akJrJQeGEN-_eBUMo1H1CL",
+            "residueAlphabet": "na"
+          },
+          "start": 1871,
+          "end": 5578,
+          "sequence": null
+        }
+      ]
     }
   ]
 }

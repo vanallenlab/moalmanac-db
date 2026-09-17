@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "16p12.2"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_078951.2"
+      "value": {
+        "id": "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_078951.2, the protein product of the MANE Select coding transcript for PALB2 (refseq:NM_024675.4).",
+        "digest": "JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.85BXujWlzyC-ox2aXR65RGEyfTIZ-VGC",
+          "type": "SequenceReference",
+          "name": "NP_078951.2",
+          "aliases": [
+            "ensembl:ENSP00000261584.4",
+            "ga4gh:SQ.85BXujWlzyC-ox2aXR65RGEyfTIZ-VGC",
+            "refseq:NP_078951.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for PALB2 (refseq:NM_024675.4), corresponding to the Refseq protein accession NP_078951.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.85BXujWlzyC-ox2aXR65RGEyfTIZ-VGC",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1186,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.DpHReD_SKXN2eJAodrbVbvs0PlmZnNqS",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_024675.4, the MANE Select coding transcript for PALB2.",
+        "digest": "DpHReD_SKXN2eJAodrbVbvs0PlmZnNqS",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.nW8vLDh-RKGKxcFTgtPq1zLHH02uP_MB",
+          "type": "SequenceReference",
+          "name": "NM_024675.4",
+          "aliases": [
+            "ensembl:ENST00000261584.9",
+            "ga4gh:SQ.nW8vLDh-RKGKxcFTgtPq1zLHH02uP_MB",
+            "refseq:NM_024675.4"
+          ],
+          "description": "The MANE Select coding transcript for PALB2, corresponding to the Refseq transcript accession NM_024675.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.nW8vLDh-RKGKxcFTgtPq1zLHH02uP_MB",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 4008,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

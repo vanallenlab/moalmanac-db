@@ -230,6 +230,42 @@
           "name": "PTEN frameshift variants",
           "constraints": [
             {
+              "type": "DefiningLocationConstraint",
+              "location": {
+                "id": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+                "type": "SequenceLocation",
+                "name": null,
+                "aliases": [],
+                "description": "Sequence spanning the length of refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8).",
+                "digest": "5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+                "sequenceReference": {
+                  "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+                  "type": "SequenceReference",
+                  "name": "NP_000305.3",
+                  "aliases": [
+                    "ensembl:ENSP00000361021.3",
+                    "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+                    "refseq:NP_000305.3"
+                  ],
+                  "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+                  "moleculeType": "protein",
+                  "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+                  "residueAlphabet": "aa"
+                },
+                "start": 0,
+                "end": 403,
+                "sequence": null
+              },
+              "relations": [],
+              "matchCharacteristic": {
+                "type": "MappableConcept",
+                "primaryCoding": {
+                  "code": "is_within",
+                  "system": "ga4gh-gks-term:location-match"
+                }
+              }
+            },
+            {
               "type": "FeatureContextConstraint",
               "featureContext": {
                 "id": "gene:hgnc:9588",
@@ -276,20 +312,6 @@
                         "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8"
                       ]
                     }
-                  }
-                ],
-                "extensions": [
-                  {
-                    "name": "location",
-                    "value": "10q23.31"
-                  },
-                  {
-                    "name": "location_sortable",
-                    "value": "10q23.31"
-                  },
-                  {
-                    "name": "protein_product",
-                    "value": "NP_000305.3"
                   }
                 ]
               }

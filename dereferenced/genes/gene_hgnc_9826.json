@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "1p34.1"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_003570.2"
+      "value": {
+        "id": "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_003570.2, the protein product of the MANE Select coding transcript for RAD54L (refseq:NM_003579.4).",
+        "digest": "eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.DXgKJjYIbYNezTiqHoDJruFEZGjOb02N",
+          "type": "SequenceReference",
+          "name": "NP_003570.2",
+          "aliases": [
+            "ensembl:ENSP00000361043.4",
+            "ga4gh:SQ.DXgKJjYIbYNezTiqHoDJruFEZGjOb02N",
+            "refseq:NP_003570.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for RAD54L (refseq:NM_003579.4), corresponding to the Refseq protein accession NP_003570.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.DXgKJjYIbYNezTiqHoDJruFEZGjOb02N",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 747,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.J4GsWScNSH_2qcOJIxLXxDufchNCweCd",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_003579.4, the MANE Select coding transcript for RAD54L.",
+        "digest": "J4GsWScNSH_2qcOJIxLXxDufchNCweCd",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.tNZAyn8RUGUHf3uv_d-0CavFX1_w5kBy",
+          "type": "SequenceReference",
+          "name": "NM_003579.4",
+          "aliases": [
+            "ensembl:ENST00000371975.9",
+            "ga4gh:SQ.tNZAyn8RUGUHf3uv_d-0CavFX1_w5kBy",
+            "refseq:NM_003579.4"
+          ],
+          "description": "The MANE Select coding transcript for RAD54L, corresponding to the Refseq transcript accession NM_003579.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.tNZAyn8RUGUHf3uv_d-0CavFX1_w5kBy",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 3078,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

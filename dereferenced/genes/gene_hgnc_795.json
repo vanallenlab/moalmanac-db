@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "11q22.3"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_000042.3"
+      "value": {
+        "id": "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000042.3, the protein product of the MANE Select coding transcript for ATM (refseq:NM_000051.4).",
+        "digest": "nTKI61Ceq66FC_3x6O4gLclwI3blof6R",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.6k1y4bTo7pEJ-a1GaniRBaCJXXGkBGFO",
+          "type": "SequenceReference",
+          "name": "NP_000042.3",
+          "aliases": [
+            "ensembl:ENSP00000278616.4",
+            "ga4gh:SQ.6k1y4bTo7pEJ-a1GaniRBaCJXXGkBGFO",
+            "refseq:NP_000042.3"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ATM (refseq:NM_000051.4), corresponding to the Refseq protein accession NP_000042.3.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.6k1y4bTo7pEJ-a1GaniRBaCJXXGkBGFO",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 3056,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.3jcAgdoWuHCyOo6-y6ODFjxLZksTY6J1",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000051.4, the MANE Select coding transcript for ATM.",
+        "digest": "3jcAgdoWuHCyOo6-y6ODFjxLZksTY6J1",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.XOHmaNgj4t4WeRzFBLzrbQG_pOe-qLOG",
+          "type": "SequenceReference",
+          "name": "NM_000051.4",
+          "aliases": [
+            "ga4gh:SQ.XOHmaNgj4t4WeRzFBLzrbQG_pOe-qLOG",
+            "refseq:NM_000051.4"
+          ],
+          "description": "The MANE Select coding transcript for ATM, corresponding to the Refseq transcript accession NM_000051.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.XOHmaNgj4t4WeRzFBLzrbQG_pOe-qLOG",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 12915,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "14q24.1"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_598194.1"
+      "value": {
+        "id": "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_598194.1, the protein product of the MANE Select coding transcript for RAD51B (refseq:NM_133510.4).",
+        "digest": "VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.dfqZs4jDJ6N1C11aIESDwT6EaWur5fEN",
+          "type": "SequenceReference",
+          "name": "NP_598194.1",
+          "aliases": [
+            "ensembl:ENSP00000418859.1",
+            "ga4gh:SQ.dfqZs4jDJ6N1C11aIESDwT6EaWur5fEN",
+            "refseq:NP_598194.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for RAD51B (refseq:NM_133510.4), corresponding to the Refseq protein accession NP_598194.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.dfqZs4jDJ6N1C11aIESDwT6EaWur5fEN",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 350,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.-uWBULDhbXWlnYslCSJma5x0_hPO5pJX",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_133510.4, the MANE Select coding transcript for RAD51B.",
+        "digest": "-uWBULDhbXWlnYslCSJma5x0_hPO5pJX",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.Dd2xNDIze2PtEuiSk1Myqqyvje42ajoD",
+          "type": "SequenceReference",
+          "name": "NM_133510.4",
+          "aliases": [
+            "ga4gh:SQ.Dd2xNDIze2PtEuiSk1Myqqyvje42ajoD",
+            "refseq:NM_133510.4"
+          ],
+          "description": "The MANE Select coding transcript for RAD51B, corresponding to the Refseq transcript accession NM_133510.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.Dd2xNDIze2PtEuiSk1Myqqyvje42ajoD",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 1559,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

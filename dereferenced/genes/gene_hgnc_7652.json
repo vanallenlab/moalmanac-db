@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "8q21.3"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_476432.2"
+      "value": {
+        "id": "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_476432.2, the protein product of the MANE Select coding transcript for NBN (refseq:NM_057091.3).",
+        "digest": "O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.T4LwZqLKWSYumPA4OW8G35Q3I81OGuma",
+          "type": "SequenceReference",
+          "name": "NP_476432.2",
+          "aliases": [
+            "ensembl:ENSP00000361429.3",
+            "ga4gh:SQ.T4LwZqLKWSYumPA4OW8G35Q3I81OGuma",
+            "refseq:NP_476432.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for NBN (refseq:NM_057091.3), corresponding to the Refseq protein accession NP_476432.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.T4LwZqLKWSYumPA4OW8G35Q3I81OGuma",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 220,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.ZiQB1OAMs-GjLoKn15K_eX8vkao7bBVl",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_057091.3, the MANE Select coding transcript for NBN.",
+        "digest": "ZiQB1OAMs-GjLoKn15K_eX8vkao7bBVl",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.EKPoUVT6-4jjrWBzGGKMGEYxc2bkajSc",
+          "type": "SequenceReference",
+          "name": "NM_057091.3",
+          "aliases": [
+            "ensembl:ENST00000372359.10",
+            "ga4gh:SQ.EKPoUVT6-4jjrWBzGGKMGEYxc2bkajSc",
+            "refseq:NM_057091.3"
+          ],
+          "description": "The MANE Select coding transcript for NBN, corresponding to the Refseq transcript accession NM_057091.3.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.EKPoUVT6-4jjrWBzGGKMGEYxc2bkajSc",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 1439,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

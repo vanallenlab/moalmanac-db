@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "16q24.3"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_000126.2"
+      "value": {
+        "id": "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000126.2, the protein product of the MANE Select coding transcript for FANCA (refseq:NM_000135.4).",
+        "digest": "pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.KwYjv-grMNUxuIxOiA6uorz1iWXpSqA1",
+          "type": "SequenceReference",
+          "name": "NP_000126.2",
+          "aliases": [
+            "ensembl:ENSP00000373952.3",
+            "ga4gh:SQ.KwYjv-grMNUxuIxOiA6uorz1iWXpSqA1",
+            "refseq:NP_000126.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for FANCA (refseq:NM_000135.4), corresponding to the Refseq protein accession NP_000126.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.KwYjv-grMNUxuIxOiA6uorz1iWXpSqA1",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1455,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.8ViSx8Um9d06ueKDMiXLeupB5yD02bLk",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000135.4, the MANE Select coding transcript for FANCA.",
+        "digest": "8ViSx8Um9d06ueKDMiXLeupB5yD02bLk",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.c2-CiembnFu7l7c5R-UDOD8l6cj9t6xY",
+          "type": "SequenceReference",
+          "name": "NM_000135.4",
+          "aliases": [
+            "ensembl:ENST00000389301.8",
+            "ga4gh:SQ.c2-CiembnFu7l7c5R-UDOD8l6cj9t6xY",
+            "refseq:NM_000135.4"
+          ],
+          "description": "The MANE Select coding transcript for FANCA, corresponding to the Refseq transcript accession NM_000135.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.c2-CiembnFu7l7c5R-UDOD8l6cj9t6xY",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5452,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "10q21.1"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_001073981.1"
+      "value": {
+        "id": "ga4gh:SL.YcDQAS6iIcu6_B61Tq5K2vHCe5T-EtmX",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3).",
+        "digest": "YcDQAS6iIcu6_B61Tq5K2vHCe5T-EtmX",
+        "sequenceReference": {
+          "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+          "type": "SequenceReference",
+          "name": "NP_001073981.1",
+          "aliases": [
+            "ensembl:ENSP00000362993.3",
+            "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "refseq:NP_001073981.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 974,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.ywiLkaBiXmxxWWd0RqDOj2_ZdZoRLpsh",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_001080512.3, the MANE Select coding transcript for BICC1.",
+        "digest": "ywiLkaBiXmxxWWd0RqDOj2_ZdZoRLpsh",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+          "type": "SequenceReference",
+          "name": "NM_001080512.3",
+          "aliases": [
+            "ensembl:ENST00000373886.8",
+            "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "refseq:NM_001080512.3"
+          ],
+          "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5741,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

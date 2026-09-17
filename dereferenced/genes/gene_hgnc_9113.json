@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "15q24.1"
     },
@@ -56,7 +60,67 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_150241.2"
+      "value": {
+        "id": "ga4gh:SL._hLaa5i70Ji18gtyc6m1E_stf9ymjY3C",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_150241.2, the protein product of the MANE Select coding transcript for PML (refseq:NM_033238.3).",
+        "digest": "_hLaa5i70Ji18gtyc6m1E_stf9ymjY3C",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.IBNzApIQ28Rg3cKNRef7l7tn9sQfOD7H",
+          "type": "SequenceReference",
+          "name": "NP_150241.2",
+          "aliases": [
+            "ensembl:ENSP00000268058.3",
+            "ga4gh:SQ.IBNzApIQ28Rg3cKNRef7l7tn9sQfOD7H",
+            "refseq:NP_150241.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for PML (refseq:NM_033238.3), corresponding to the Refseq protein accession NP_150241.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.IBNzApIQ28Rg3cKNRef7l7tn9sQfOD7H",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 882,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.EN9fD6OpcV3OTbTRYatsiUUUpvoF4kDl",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_033238.3, the MANE Select coding transcript for PML.",
+        "digest": "EN9fD6OpcV3OTbTRYatsiUUUpvoF4kDl",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.VrxkCsqbeWJgf5xM2olEyHLlvAXfW0sY",
+          "type": "SequenceReference",
+          "name": "NM_033238.3",
+          "aliases": [
+            "ensembl:ENST00000268058.8",
+            "ga4gh:SQ.VrxkCsqbeWJgf5xM2olEyHLlvAXfW0sY",
+            "refseq:NM_033238.3"
+          ],
+          "description": "The MANE Select coding transcript for PML, corresponding to the Refseq transcript accession NM_033238.3.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.VrxkCsqbeWJgf5xM2olEyHLlvAXfW0sY",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5565,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "2p16.1"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_060532.2"
+      "value": {
+        "id": "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_060532.2, the protein product of the MANE Select coding transcript for FANCL (refseq:NM_018062.4).",
+        "digest": "AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.G3G0Ucx5r-KCzWlXefmXourUC3iMYPTw",
+          "type": "SequenceReference",
+          "name": "NP_060532.2",
+          "aliases": [
+            "ensembl:ENSP00000233741.4",
+            "ga4gh:SQ.G3G0Ucx5r-KCzWlXefmXourUC3iMYPTw",
+            "refseq:NP_060532.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for FANCL (refseq:NM_018062.4), corresponding to the Refseq protein accession NP_060532.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.G3G0Ucx5r-KCzWlXefmXourUC3iMYPTw",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 375,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.LosVlGUSwe5ofdvtjHuBHeKws6rL-Gl-",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_018062.4, the MANE Select coding transcript for FANCL.",
+        "digest": "LosVlGUSwe5ofdvtjHuBHeKws6rL-Gl-",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.KO6UlcxktPl_JyLJRTQ4Tcz1c-12VFHY",
+          "type": "SequenceReference",
+          "name": "NM_018062.4",
+          "aliases": [
+            "ga4gh:SQ.KO6UlcxktPl_JyLJRTQ4Tcz1c-12VFHY",
+            "refseq:NM_018062.4"
+          ],
+          "description": "The MANE Select coding transcript for FANCL, corresponding to the Refseq transcript accession NM_018062.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.KO6UlcxktPl_JyLJRTQ4Tcz1c-12VFHY",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 1658,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

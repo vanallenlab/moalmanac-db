@@ -121,6 +121,42 @@
           "name": "MLH1 pathogenic variants",
           "constraints": [
             {
+              "type": "DefiningLocationConstraint",
+              "location": {
+                "id": "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+                "type": "SequenceLocation",
+                "name": null,
+                "aliases": [],
+                "description": "Sequence spanning the length of refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4).",
+                "digest": "Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+                "sequenceReference": {
+                  "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+                  "type": "SequenceReference",
+                  "name": "NP_000240.1",
+                  "aliases": [
+                    "ensembl:ENSP00000231790.2",
+                    "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+                    "refseq:NP_000240.1"
+                  ],
+                  "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+                  "moleculeType": "protein",
+                  "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+                  "residueAlphabet": "aa"
+                },
+                "start": 0,
+                "end": 756,
+                "sequence": null
+              },
+              "relations": [],
+              "matchCharacteristic": {
+                "type": "MappableConcept",
+                "primaryCoding": {
+                  "code": "is_within",
+                  "system": "ga4gh-gks-term:location-match"
+                }
+              }
+            },
+            {
               "type": "FeatureContextConstraint",
               "featureContext": {
                 "id": "gene:hgnc:7127",
@@ -167,20 +203,6 @@
                         "https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4"
                       ]
                     }
-                  }
-                ],
-                "extensions": [
-                  {
-                    "name": "location",
-                    "value": "3p22.2"
-                  },
-                  {
-                    "name": "location_sortable",
-                    "value": "03p22.2"
-                  },
-                  {
-                    "name": "protein_product",
-                    "value": "NP_000240.1"
                   }
                 ]
               }

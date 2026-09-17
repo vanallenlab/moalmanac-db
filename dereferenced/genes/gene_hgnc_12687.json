@@ -49,6 +49,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "3p25.3"
     },
@@ -58,7 +62,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_000542.1"
+      "value": {
+        "id": "ga4gh:SL.4ZL9FBDsZlXDnOHo7yDCm6OamB2fFdbe",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000542.1, the protein product of the MANE Select coding transcript for VHL (refseq:NM_000551.4).",
+        "digest": "4ZL9FBDsZlXDnOHo7yDCm6OamB2fFdbe",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.z-Oa0pZkJ6GHJHOYM7h5mY_umc0SJzTu",
+          "type": "SequenceReference",
+          "name": "NP_000542.1",
+          "aliases": [
+            "ensembl:ENSP00000256474.2",
+            "ga4gh:SQ.z-Oa0pZkJ6GHJHOYM7h5mY_umc0SJzTu",
+            "refseq:NP_000542.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for VHL (refseq:NM_000551.4), corresponding to the Refseq protein accession NP_000542.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.z-Oa0pZkJ6GHJHOYM7h5mY_umc0SJzTu",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 213,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.vvVXG8BmWeYAkI8f7v08HSF5vF5raFA5",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000551.4, the MANE Select coding transcript for VHL.",
+        "digest": "vvVXG8BmWeYAkI8f7v08HSF5vF5raFA5",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.xBKOKptLLDr-k4hTyCetvARn16pDS_rW",
+          "type": "SequenceReference",
+          "name": "NM_000551.4",
+          "aliases": [
+            "ga4gh:SQ.xBKOKptLLDr-k4hTyCetvARn16pDS_rW",
+            "refseq:NM_000551.4"
+          ],
+          "description": "The MANE Select coding transcript for VHL, corresponding to the Refseq transcript accession NM_000551.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.xBKOKptLLDr-k4hTyCetvARn16pDS_rW",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 4414,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }

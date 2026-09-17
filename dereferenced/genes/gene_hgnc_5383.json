@@ -47,6 +47,10 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": null
+    },
+    {
       "name": "location",
       "value": "15q26.1"
     },
@@ -56,7 +60,66 @@
     },
     {
       "name": "protein_product",
-      "value": "NP_002159.2"
+      "value": {
+        "id": "ga4gh:SL.6Mlsfn_pwEBi8WG38E9fpzemhHCEZy8C",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_002159.2, the protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4).",
+        "digest": "6Mlsfn_pwEBi8WG38E9fpzemhHCEZy8C",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+          "type": "SequenceReference",
+          "name": "NP_002159.2",
+          "aliases": [
+            "ensembl:ENSP00000331897.3",
+            "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+            "refseq:NP_002159.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4), corresponding to the Refseq protein accession NP_002159.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 452,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": []
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.Ne7JO0zFytoMvuN9c2WJTYWTyfzhBLXi",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_002168.4, the MANE Select coding transcript for IDH2.",
+        "digest": "Ne7JO0zFytoMvuN9c2WJTYWTyfzhBLXi",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.kirLjhm3sLodOO90EOQJ9e41ZMcln-Q6",
+          "type": "SequenceReference",
+          "name": "NM_002168.4",
+          "aliases": [
+            "ga4gh:SQ.kirLjhm3sLodOO90EOQJ9e41ZMcln-Q6",
+            "refseq:NM_002168.4"
+          ],
+          "description": "The MANE Select coding transcript for IDH2, corresponding to the Refseq transcript accession NM_002168.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.kirLjhm3sLodOO90EOQJ9e41ZMcln-Q6",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 2658,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": []
     }
   ]
 }
