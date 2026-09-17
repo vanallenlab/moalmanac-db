@@ -405,18 +405,23 @@ def is_fusion(record: dict) -> bool:
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables, then shapes the resolved allele, genes, and copy change
-    into Cat-VRS constraint objects. This table references the following tables:
+    dereferences keys that reference other tables, then shapes the resolved allele, location, genes, and
+    copy change into Cat-VRS constraint objects. This table references the following tables:
     - Alleles (initial key: `allele`, resulting key: `allele`)
+    - SequenceLocations (initial key: `location`, resulting key: `location`)
     - Genes (initial key: `genes`, resulting key: `genes`)
     - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
 
-    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. For most records,
-    each dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions
-    (`rearrangement_type` extension equal to "Fusion"), the resolved genes are instead collapsed into a
-    single `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known.
-    The dereferenced copy change, when present, is wrapped as a `CopyChangeConstraint`. All resulting
-    constraints are merged into a single `constraints` list.
+    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. The dereferenced
+    location, when present, is wrapped as a `DefiningLocationConstraint` (used for biomarkers defined
+    against a gene's whole protein product rather than a specific allele). For most records, each
+    dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`rearrangement_type`
+    extension equal to "Fusion"), the resolved genes are instead collapsed into a single
+    `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known. Each
+    gene has its `extensions` stripped before embedding (`Genes.build_extensions` output is only meant
+    for a gene's own standalone/per-concept record). The dereferenced copy change, when present, is
+    wrapped as a `CopyChangeConstraint`. All resulting constraints are merged into a single `constraints`
+    list.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the biomarker records.
@@ -434,7 +439,25 @@ class Biomarkers(BaseTable):
                 "relations": [],
             },
         ),
-        FKList("genes", "genes", lambda db: db.genes),
+        FKSingle(
+            "location",
+            "location",
+            lambda db: db.sequence_locations,
+            nullable=True,
+            post=lambda record: {
+                "type": "DefiningLocationConstraint",
+                "location": record,
+                "relations": [],
+                "matchCharacteristic": {
+                    "type": "MappableConcept",
+                    "primaryCoding": {
+                        "code": "is_within",
+                        "system": "ga4gh-gks-term:location-match",
+                    },
+                },
+            },
+        ),
+        FKList("genes", "genes", lambda db: db.genes, post=strip_keys("extensions")),
         FKSingle(
             "copyChange",
             "copyChange",
@@ -449,16 +472,19 @@ class Biomarkers(BaseTable):
 
     def wrap_constraints(self) -> None:
         """
-        Wraps each record's dereferenced allele, genes, and copy change into Cat-VRS constraint objects.
+        Wraps each record's dereferenced allele, location, genes, and copy change into Cat-VRS
+        constraint objects.
 
-        The allele, when present, becomes a `DefiningAlleleConstraint`. Non-fusion records get one
-        `FeatureContextConstraint` per gene. Fusion records collapse their genes into a single
-        `AdjacencyConstraint`, with `orderKnown` True only when both fusion partners are known (two genes).
-        The copy change, when present, becomes a `CopyChangeConstraint`. All resulting constraints are
-        merged into a single `constraints` list.
+        The allele, when present, becomes a `DefiningAlleleConstraint`. The location, when present,
+        becomes a `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
+        per gene. Fusion records collapse their genes into a single `AdjacencyConstraint`, with
+        `orderKnown` True only when both fusion partners are known (two genes). The copy change, when
+        present, becomes a `CopyChangeConstraint`. All resulting constraints are merged into a single
+        `constraints` list.
         """
         for record in self.records:
             allele_constraint = record.pop("allele")
+            location_constraint = record.pop("location")
             genes = record.pop("genes")
             copy_change = record.pop("copyChange")
             if is_fusion(record):
@@ -475,8 +501,14 @@ class Biomarkers(BaseTable):
                     for gene in genes
                 ]
             allele_constraints = [allele_constraint] if allele_constraint else []
+            location_constraints = [location_constraint] if location_constraint else []
             copy_changes = [copy_change] if copy_change else []
-            record["constraints"] = allele_constraints + gene_constraints + copy_changes
+            record["constraints"] = (
+                allele_constraints
+                + location_constraints
+                + gene_constraints
+                + copy_changes
+            )
 
     def dereference(self, db: Database) -> None:
         """
@@ -687,9 +719,12 @@ class Genes(BaseTable):
     dereferences keys that reference other tables. This table references the following tables:
     - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
     - Mappings (initial key: `mappings`, resulting_key: `mappings`)
+    - SequenceLocations (initial key: `protein_product`, resulting key: `protein_product`)
+    - SequenceLocations (initial key: `transcript`, resulting key: `transcript`)
 
-    After foreign keys are resolved, each record's keys are reordered to
-    `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`.
+    After foreign keys are resolved, `location`, `location_sortable`, `protein_product`, and
+    `transcript` are folded into an `extensions` list (see `build_extensions`), and each record's
+    keys are reordered to `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
@@ -703,15 +738,42 @@ class Genes(BaseTable):
             lambda db: db.mappings,
             post=strip_keys("id", "primary_coding_id"),
         ),
+        FKSingle(
+            "protein_product", "protein_product", lambda db: db.sequence_locations
+        ),
+        FKSingle("transcript", "transcript", lambda db: db.sequence_locations),
     ]
+
+    def build_extensions(self) -> None:
+        """
+        Folds `location`, `location_sortable`, `protein_product`, and `transcript` into an
+        `extensions` list, in place.
+
+        `protein_product` and `transcript` are already dereferenced SequenceLocation objects by the
+        time this runs. This only runs on the Genes table's own records, so it produces the richer
+        standalone/per-concept form; a gene embedded elsewhere (e.g. via Biomarkers' `genes` foreign
+        key) has this `extensions` list stripped at the embedding site instead.
+        """
+        for record in self.records:
+            location = record.pop("location")
+            location_sortable = record.pop("location_sortable")
+            protein_product = record.pop("protein_product")
+            transcript = record.pop("transcript")
+            record["extensions"] = [
+                {"name": "location", "value": location},
+                {"name": "location_sortable", "value": location_sortable},
+                {"name": "protein_product", "value": protein_product},
+                {"name": "transcript", "value": transcript},
+            ]
 
     def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Genes table, then reorders each record's keys.
 
-        Resolves foreign keys declared in `foreign_keys` via the base class, then reorders keys to
-        `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`. Each table is resolved
-        at most once; subsequent calls are no-ops.
+        Resolves foreign keys declared in `foreign_keys` via the base class, folds `location`,
+        `location_sortable`, `protein_product`, and `transcript` into an `extensions` list via
+        `build_extensions`, then reorders keys to `id`, `conceptType`, `name`, `primaryCoding`,
+        `mappings`, `extensions`. Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             db (Database): An instance of the Database class containing all tables.
@@ -719,6 +781,7 @@ class Genes(BaseTable):
         if self._resolved:
             return
         super().dereference(db)
+        self.build_extensions()
         for record in self.records:
             self.reorder_keys(
                 record,
