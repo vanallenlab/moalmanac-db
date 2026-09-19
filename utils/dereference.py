@@ -417,7 +417,8 @@ class Biomarkers(BaseTable):
     against a gene's whole protein product rather than a specific allele). For most records, each
     dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`rearrangement_type`
     extension equal to "Fusion"), the resolved genes are instead collapsed into a single
-    `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known. Each
+    `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known; a
+    fusion with only one known partner gets a trailing `UnspecifiedElement` for the other. Each
     gene has its `extensions` stripped before embedding (`Genes.build_extensions` output is only meant
     for a gene's own standalone/per-concept record). The dereferenced copy change, when present, is
     wrapped as a `CopyChangeConstraint`. All resulting constraints are merged into a single `constraints`
@@ -478,7 +479,8 @@ class Biomarkers(BaseTable):
         The allele, when present, becomes a `DefiningAlleleConstraint`. The location, when present,
         becomes a `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
         per gene. Fusion records collapse their genes into a single `AdjacencyConstraint`, with
-        `orderKnown` True only when both fusion partners are known (two genes). The copy change, when
+        `orderKnown` True only when both fusion partners are known (two genes); a single-gene fusion
+        has an `UnspecifiedElement` appended to `adjoinedElements` for the unknown partner. The copy change, when
         present, becomes a `CopyChangeConstraint`. All resulting constraints are merged into a single
         `constraints` list.
         """
@@ -488,11 +490,14 @@ class Biomarkers(BaseTable):
             genes = record.pop("genes")
             copy_change = record.pop("copyChange")
             if is_fusion(record):
+                adjoined_elements = list(genes)
+                if len(genes) == 1:
+                    adjoined_elements.append({"type": "UnspecifiedElement"})
                 gene_constraints = [
                     {
                         "type": "AdjacencyConstraint",
                         "orderKnown": len(genes) == 2,
-                        "adjoinedElements": genes,
+                        "adjoinedElements": adjoined_elements,
                     },
                 ]
             else:
