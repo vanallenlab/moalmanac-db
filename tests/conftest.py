@@ -41,10 +41,23 @@ def dereferenced_paths():
     root = pathlib.Path("dereferenced")
     return {
         "agents": root / "agents",
+        "alleles": root / "alleles",
+        "biomarker_criteria": root / "biomarker_criteria",
+        "biomarkers": root / "biomarkers",
         "codings": root / "codings",
         "contributions": root / "contributions",
+        "diseases": root / "diseases",
         "documents": root / "documents",
+        "genes": root / "genes",
         "indications": root / "indications",
+        "mappings": root / "mappings",
+        "propositions": root / "propositions",
+        "sequence_locations": root / "sequence_locations",
+        "sequence_references": root / "sequence_references",
+        "statements": root / "statements",
+        "strengths": root / "strengths",
+        "therapies": root / "therapies",
+        "therapy_groups": root / "therapy_groups"
     }
 
 
