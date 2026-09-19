@@ -460,7 +460,6 @@ class Biomarkers(BaseTable):
                 "location": record,
                 "relations": [],
                 "matchCharacteristic": {
-                    "type": "MappableConcept",
                     "primaryCoding": {
                         "code": "is_within",
                         "system": "ga4gh-gks-term:location-match",
