@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import dataclasses
 import os
 import pathlib
@@ -53,6 +54,15 @@ class FKList:
     get_table: typing.Callable[[Database], BaseTable]
     key_always_present: bool = True
     post: typing.Callable[[dict], object] | None = None
+
+
+SUBJECT_VARIANT_PLACEHOLDER = {
+    "type": "CategoricalVariant",
+    "description": (
+        "Placeholder. Cat-VRS does not yet support sets of categorical variants. "
+        "See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    ),
+}
 
 
 def strip_keys(*keys: str) -> typing.Callable[[dict], dict]:
@@ -930,7 +940,9 @@ class Propositions(BaseTable):
     dereferences keys that reference other tables. This table references the following tables:
     - BiomarkerCriteria (initial key: `biomarker_criteria`, resulting key: `biomarkers`; each
       element is the dereferenced criterion record, i.e. `{id, subject, present}` with
-      `subject` itself resolved to the full biomarker record)
+      `subject` itself resolved to the full biomarker record). Since Cat-VRS does not yet support
+      sets of categorical variants, `biomarkers` is then moved into an extension of the same name
+      and `subjectVariant` is set to `SUBJECT_VARIANT_PLACEHOLDER`.
     - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`)
     - Therapies (initial key: `therapy_id`, resulting key: `objectTherapeutic`)
     - TherapyGroups (initial_key: `therapy_group_id`, resulting key: `objectTherapeutic`)
@@ -948,13 +960,43 @@ class Propositions(BaseTable):
         ),
     ]
 
+    def convert_fields_to_extensions(self) -> None:
+        """
+        Moves the dereferenced `biomarkers` into a `biomarkers` extension and adds the placeholder `subjectVariant`.
+
+        Each record is rebuilt in place with the key order `id`, `type`, `predicate`, `subjectVariant`,
+        `conditionQualifier`, `objectTherapeutic`, `extensions`, followed by any other keys.
+        """
+        leading_keys = ["id", "type", "predicate"]
+        middle_keys = ["conditionQualifier", "objectTherapeutic"]
+        for record in self.records:
+            extensions = [
+                {
+                    "name": "biomarkers",
+                    "value": record.pop("biomarkers"),
+                    "description": (
+                        "The biomarkers associated with this Proposition, each with a `present` flag "
+                        "indicating if the biomarker is present (true) or absent (false). "
+                        "Multiple biomarkers are combined with implied AND logic."
+                    ),
+                },
+            ]
+            ordered = {key: record.pop(key) for key in leading_keys}
+            ordered["subjectVariant"] = copy.deepcopy(SUBJECT_VARIANT_PLACEHOLDER)
+            for key in middle_keys:
+                ordered[key] = record.pop(key)
+            ordered.update(record)
+            ordered["extensions"] = extensions
+            record.clear()
+            record.update(ordered)
+
     def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Propositions table.
 
         Resolves therapies and therapy groups before delegating FK resolution to the base class,
-        then applies the custom therapeutics dereferencing. Each table is resolved at most once;
-        subsequent calls are no-ops.
+        then applies the custom therapeutics dereferencing and converts `biomarkers` to an extension.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             db (Database): An instance of the Database class containing all tables.
@@ -970,6 +1012,7 @@ class Propositions(BaseTable):
         self.dereference_therapeutics(
             therapies=db.therapies, therapy_groups=db.therapy_groups
         )
+        self.convert_fields_to_extensions()
 
     def dereference_therapeutics(
         self, therapies: Therapies, therapy_groups: TherapyGroups

@@ -100,7 +100,10 @@
     "id": "prop:vtxr:640",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:NSCLC",
       "conceptType": "Disease",
@@ -124,40 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:33",
-        "present": true,
-        "subject": {
-          "id": "bmkr:33",
-          "type": "CategoricalVariant",
-          "name": "PD-L1 >= 1%",
-          "constraints": [],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Protein expression"
-            },
-            {
-              "name": "marker",
-              "value": "PD-L1"
-            },
-            {
-              "name": "unit",
-              "value": "Tumor Proportion Score (TPS)"
-            },
-            {
-              "name": "equality",
-              "value": ">="
-            },
-            {
-              "name": "value",
-              "value": 0.01
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "txgrp:94",
       "membershipOperator": "AND",
@@ -412,7 +381,47 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:33",
+            "present": true,
+            "subject": {
+              "id": "bmkr:33",
+              "type": "CategoricalVariant",
+              "name": "PD-L1 >= 1%",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "PD-L1"
+                },
+                {
+                  "name": "unit",
+                  "value": "Tumor Proportion Score (TPS)"
+                },
+                {
+                  "name": "equality",
+                  "value": ">="
+                },
+                {
+                  "name": "value",
+                  "value": 0.01
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

@@ -99,7 +99,10 @@
     "id": "prop:vtxr:208",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:AML",
       "conceptType": "Disease",
@@ -123,164 +126,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:66",
-        "present": true,
-        "subject": {
-          "id": "bmkr:66",
-          "type": "CategoricalVariant",
-          "name": "FLT3-ITD",
-          "constraints": [
-            {
-              "type": "DefiningLocationConstraint",
-              "location": {
-                "id": "ga4gh:SL.53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
-                "type": "SequenceLocation",
-                "name": "FLT3 ITD Region (Exons 14-15), protein",
-                "aliases": [],
-                "description": "Sequence within refseq:NP_004110.2, the protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the juxtamembrane domain and N-terminal portion of tyrosine kinase subdomain 1 (Exons 14-15).",
-                "digest": "53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
-                "sequenceReference": {
-                  "id": "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
-                  "type": "SequenceReference",
-                  "name": "NP_004110.2",
-                  "aliases": [
-                    "ensembl:ENSP00000241453.7",
-                    "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
-                    "refseq:NP_004110.2"
-                  ],
-                  "description": "The protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the Refseq protein accession NP_004110.2.",
-                  "moleculeType": "protein",
-                  "refgetAccession": "SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
-                  "residueAlphabet": "aa"
-                },
-                "start": 568,
-                "end": 648,
-                "sequence": null
-              },
-              "relations": [],
-              "matchCharacteristic": {
-                "type": "MappableConcept",
-                "primaryCoding": {
-                  "code": "is_within",
-                  "system": "ga4gh-gks-term:location-match"
-                }
-              }
-            },
-            {
-              "type": "FeatureContextConstraint",
-              "featureContext": {
-                "id": "gene:hgnc:3765",
-                "conceptType": "Gene",
-                "name": "FLT3",
-                "primaryCoding": {
-                  "id": "coding:hgnc:3765",
-                  "code": "HGNC:3765",
-                  "system": "https://genenames.org",
-                  "iris": [
-                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
-                  ]
-                },
-                "mappings": [
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ensembl:ensg00000122025",
-                      "code": "ENSG00000122025",
-                      "system": "https://www.ensembl.org",
-                      "iris": [
-                        "https://www.ensembl.org/id/ENSG00000122025"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ncbi:2322",
-                      "code": "2322",
-                      "system": "https://www.ncbi.nlm.nih.gov/gene",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/gene/2322"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "relatedMatch",
-                    "coding": {
-                      "id": "coding:refseq:NM_004119.3",
-                      "code": "NM_004119.3",
-                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Somatic Variant"
-            },
-            {
-              "name": "chromosome",
-              "value": "13"
-            },
-            {
-              "name": "start_position",
-              "value": null
-            },
-            {
-              "name": "end_position",
-              "value": null
-            },
-            {
-              "name": "reference_allele",
-              "value": null
-            },
-            {
-              "name": "alternate_allele",
-              "value": null
-            },
-            {
-              "name": "cdna_change",
-              "value": null
-            },
-            {
-              "name": "protein_change",
-              "value": null
-            },
-            {
-              "name": "variant_annotation",
-              "value": "Internal Tandem Duplication (ITD)"
-            },
-            {
-              "name": "exon",
-              "value": null
-            },
-            {
-              "name": "rsid",
-              "value": null
-            },
-            {
-              "name": "hgvsg",
-              "value": null
-            },
-            {
-              "name": "hgvsc",
-              "value": null
-            },
-            {
-              "name": "requires_oncogenic",
-              "value": true
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "txgrp:40",
       "membershipOperator": "AND",
@@ -535,7 +380,171 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:66",
+            "present": true,
+            "subject": {
+              "id": "bmkr:66",
+              "type": "CategoricalVariant",
+              "name": "FLT3-ITD",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
+                    "type": "SequenceLocation",
+                    "name": "FLT3 ITD Region (Exons 14-15), protein",
+                    "aliases": [],
+                    "description": "Sequence within refseq:NP_004110.2, the protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the juxtamembrane domain and N-terminal portion of tyrosine kinase subdomain 1 (Exons 14-15).",
+                    "digest": "53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                      "type": "SequenceReference",
+                      "name": "NP_004110.2",
+                      "aliases": [
+                        "ensembl:ENSP00000241453.7",
+                        "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                        "refseq:NP_004110.2"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the Refseq protein accession NP_004110.2.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 568,
+                    "end": 648,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "type": "MappableConcept",
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3765",
+                    "conceptType": "Gene",
+                    "name": "FLT3",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3765",
+                      "code": "HGNC:3765",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000122025",
+                          "code": "ENSG00000122025",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000122025"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:2322",
+                          "code": "2322",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/2322"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_004119.3",
+                          "code": "NM_004119.3",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "13"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Internal Tandem Duplication (ITD)"
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_oncogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

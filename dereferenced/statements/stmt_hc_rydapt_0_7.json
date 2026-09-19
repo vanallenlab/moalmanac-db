@@ -87,7 +87,10 @@
     "id": "prop:vtxr:215",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:AML",
       "conceptType": "Disease",
@@ -111,171 +114,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:121",
-        "present": true,
-        "subject": {
-          "id": "bmkr:121",
-          "type": "CategoricalVariant",
-          "name": "FLT3 p.D835V",
-          "constraints": [
-            {
-              "type": "DefiningAlleleConstraint",
-              "allele": {
-                "id": "ga4gh:VA.hl8sXt8vGcWF3EST2vU5SoHuWQ1AO_eO",
-                "type": "Allele",
-                "name": "NP_004110.2:p.Asp835Val",
-                "aliases": [
-                  "NP_004110.2:p.D835V",
-                  "FLT3 p.D835V"
-                ],
-                "description": "VRS variation of NP_004110.2:p.Asp835Val",
-                "digest": "hl8sXt8vGcWF3EST2vU5SoHuWQ1AO_eO",
-                "hgvs.g": null,
-                "hgvs.c": null,
-                "hgvs.c_short": null,
-                "hgvs.p": "NP_004110.2:p.Asp835Val",
-                "hgvs.p_short": "p.D835V",
-                "location": {
-                  "id": "ga4gh:SL.2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
-                  "type": "SequenceLocation",
-                  "name": null,
-                  "aliases": [],
-                  "description": "Amino acid position 835 of the Refseq protein NP_004110.2, which is the protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3).",
-                  "digest": "2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
-                  "sequenceReference": {
-                    "id": "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
-                    "type": "SequenceReference",
-                    "name": "NP_004110.2",
-                    "aliases": [
-                      "ensembl:ENSP00000241453.7",
-                      "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
-                      "refseq:NP_004110.2"
-                    ],
-                    "description": "The protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the Refseq protein accession NP_004110.2.",
-                    "moleculeType": "protein",
-                    "refgetAccession": "SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
-                    "residueAlphabet": "aa"
-                  },
-                  "start": 834,
-                  "end": 835,
-                  "sequence": "D"
-                },
-                "state_type": "LiteralSequenceExpression",
-                "state_value": "V"
-              },
-              "relations": []
-            },
-            {
-              "type": "FeatureContextConstraint",
-              "featureContext": {
-                "id": "gene:hgnc:3765",
-                "conceptType": "Gene",
-                "name": "FLT3",
-                "primaryCoding": {
-                  "id": "coding:hgnc:3765",
-                  "code": "HGNC:3765",
-                  "system": "https://genenames.org",
-                  "iris": [
-                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
-                  ]
-                },
-                "mappings": [
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ensembl:ensg00000122025",
-                      "code": "ENSG00000122025",
-                      "system": "https://www.ensembl.org",
-                      "iris": [
-                        "https://www.ensembl.org/id/ENSG00000122025"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ncbi:2322",
-                      "code": "2322",
-                      "system": "https://www.ncbi.nlm.nih.gov/gene",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/gene/2322"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "relatedMatch",
-                    "coding": {
-                      "id": "coding:refseq:NM_004119.3",
-                      "code": "NM_004119.3",
-                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Somatic Variant"
-            },
-            {
-              "name": "chromosome",
-              "value": "13"
-            },
-            {
-              "name": "start_position",
-              "value": 28592641
-            },
-            {
-              "name": "end_position",
-              "value": 28592641
-            },
-            {
-              "name": "reference_allele",
-              "value": "T"
-            },
-            {
-              "name": "alternate_allele",
-              "value": "A"
-            },
-            {
-              "name": "cdna_change",
-              "value": "c.2504A>T"
-            },
-            {
-              "name": "protein_change",
-              "value": "p.D835V"
-            },
-            {
-              "name": "variant_annotation",
-              "value": "Missense"
-            },
-            {
-              "name": "exon",
-              "value": 20
-            },
-            {
-              "name": "rsid",
-              "value": "rs121909646"
-            },
-            {
-              "name": "hgvsg",
-              "value": "13:g.28592641T>A"
-            },
-            {
-              "name": "hgvsc",
-              "value": "ENST00000241453.7:c.2504A>T"
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "txgrp:40",
       "membershipOperator": "AND",
@@ -530,7 +368,178 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:121",
+            "present": true,
+            "subject": {
+              "id": "bmkr:121",
+              "type": "CategoricalVariant",
+              "name": "FLT3 p.D835V",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.hl8sXt8vGcWF3EST2vU5SoHuWQ1AO_eO",
+                    "type": "Allele",
+                    "name": "NP_004110.2:p.Asp835Val",
+                    "aliases": [
+                      "NP_004110.2:p.D835V",
+                      "FLT3 p.D835V"
+                    ],
+                    "description": "VRS variation of NP_004110.2:p.Asp835Val",
+                    "digest": "hl8sXt8vGcWF3EST2vU5SoHuWQ1AO_eO",
+                    "hgvs.g": null,
+                    "hgvs.c": null,
+                    "hgvs.c_short": null,
+                    "hgvs.p": "NP_004110.2:p.Asp835Val",
+                    "hgvs.p_short": "p.D835V",
+                    "location": {
+                      "id": "ga4gh:SL.2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 835 of the Refseq protein NP_004110.2, which is the protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3).",
+                      "digest": "2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                        "type": "SequenceReference",
+                        "name": "NP_004110.2",
+                        "aliases": [
+                          "ensembl:ENSP00000241453.7",
+                          "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                          "refseq:NP_004110.2"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the Refseq protein accession NP_004110.2.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 834,
+                      "end": 835,
+                      "sequence": "D"
+                    },
+                    "state_type": "LiteralSequenceExpression",
+                    "state_value": "V"
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3765",
+                    "conceptType": "Gene",
+                    "name": "FLT3",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3765",
+                      "code": "HGNC:3765",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000122025",
+                          "code": "ENSG00000122025",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000122025"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:2322",
+                          "code": "2322",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/2322"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_004119.3",
+                          "code": "NM_004119.3",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "13"
+                },
+                {
+                  "name": "start_position",
+                  "value": 28592641
+                },
+                {
+                  "name": "end_position",
+                  "value": 28592641
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "T"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "A"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.2504A>T"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.D835V"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 20
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121909646"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "13:g.28592641T>A"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000241453.7:c.2504A>T"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

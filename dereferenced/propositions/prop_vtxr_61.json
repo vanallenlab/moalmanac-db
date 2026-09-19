@@ -2,7 +2,10 @@
   "id": "prop:vtxr:61",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:BRCA",
     "conceptType": "Disease",
@@ -26,228 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:1",
-      "present": true,
-      "subject": {
-        "id": "bmkr:1",
-        "type": "CategoricalVariant",
-        "name": "ER positive",
-        "constraints": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Estrogen receptor (ER)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          }
-        ]
-      }
-    },
-    {
-      "id": "bmkr.criterion:2",
-      "present": true,
-      "subject": {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "constraints": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          }
-        ]
-      }
-    },
-    {
-      "id": "bmkr.criterion:91",
-      "present": true,
-      "subject": {
-        "id": "bmkr:91",
-        "type": "CategoricalVariant",
-        "name": "PTEN nonsense variants",
-        "constraints": [
-          {
-            "type": "DefiningLocationConstraint",
-            "location": {
-              "id": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
-              "type": "SequenceLocation",
-              "name": null,
-              "aliases": [],
-              "description": "Sequence spanning the length of refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8).",
-              "digest": "5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
-              "sequenceReference": {
-                "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
-                "type": "SequenceReference",
-                "name": "NP_000305.3",
-                "aliases": [
-                  "ensembl:ENSP00000361021.3",
-                  "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
-                  "refseq:NP_000305.3"
-                ],
-                "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
-                "moleculeType": "protein",
-                "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
-                "residueAlphabet": "aa"
-              },
-              "start": 0,
-              "end": 403,
-              "sequence": null
-            },
-            "relations": [],
-            "matchCharacteristic": {
-              "type": "MappableConcept",
-              "primaryCoding": {
-                "code": "is_within",
-                "system": "ga4gh-gks-term:location-match"
-              }
-            }
-          },
-          {
-            "type": "FeatureContextConstraint",
-            "featureContext": {
-              "id": "gene:hgnc:9588",
-              "conceptType": "Gene",
-              "name": "PTEN",
-              "primaryCoding": {
-                "id": "coding:hgnc:9588",
-                "code": "HGNC:9588",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
-                ]
-              },
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000171862",
-                    "code": "ENSG00000171862",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000171862"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:5728",
-                    "code": "5728",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/5728"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_000314.8",
-                    "code": "NM_000314.8",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "10"
-          },
-          {
-            "name": "start_position",
-            "value": null
-          },
-          {
-            "name": "end_position",
-            "value": null
-          },
-          {
-            "name": "reference_allele",
-            "value": null
-          },
-          {
-            "name": "alternate_allele",
-            "value": null
-          },
-          {
-            "name": "cdna_change",
-            "value": null
-          },
-          {
-            "name": "protein_change",
-            "value": null
-          },
-          {
-            "name": "variant_annotation",
-            "value": "Nonsense"
-          },
-          {
-            "name": "exon",
-            "value": null
-          },
-          {
-            "name": "rsid",
-            "value": null
-          },
-          {
-            "name": "hgvsg",
-            "value": null
-          },
-          {
-            "name": "hgvsc",
-            "value": null
-          },
-          {
-            "name": "requires_oncogenic",
-            "value": true
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "txgrp:12",
     "membershipOperator": "AND",
@@ -393,5 +174,233 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:1",
+          "present": true,
+          "subject": {
+            "id": "bmkr:1",
+            "type": "CategoricalVariant",
+            "name": "ER positive",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Estrogen receptor (ER)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:2",
+          "present": true,
+          "subject": {
+            "id": "bmkr:2",
+            "type": "CategoricalVariant",
+            "name": "HER2-negative",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Human epidermal growth factor receptor 2 (HER2)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Negative"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:91",
+          "present": true,
+          "subject": {
+            "id": "bmkr:91",
+            "type": "CategoricalVariant",
+            "name": "PTEN nonsense variants",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8).",
+                  "digest": "5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+                    "type": "SequenceReference",
+                    "name": "NP_000305.3",
+                    "aliases": [
+                      "ensembl:ENSP00000361021.3",
+                      "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+                      "refseq:NP_000305.3"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 403,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "type": "MappableConcept",
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:9588",
+                  "conceptType": "Gene",
+                  "name": "PTEN",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:9588",
+                    "code": "HGNC:9588",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000171862",
+                        "code": "ENSG00000171862",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000171862"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:5728",
+                        "code": "5728",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/5728"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_000314.8",
+                        "code": "NM_000314.8",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000314.8"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "10"
+              },
+              {
+                "name": "start_position",
+                "value": null
+              },
+              {
+                "name": "end_position",
+                "value": null
+              },
+              {
+                "name": "reference_allele",
+                "value": null
+              },
+              {
+                "name": "alternate_allele",
+                "value": null
+              },
+              {
+                "name": "cdna_change",
+                "value": null
+              },
+              {
+                "name": "protein_change",
+                "value": null
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Nonsense"
+              },
+              {
+                "name": "exon",
+                "value": null
+              },
+              {
+                "name": "rsid",
+                "value": null
+              },
+              {
+                "name": "hgvsg",
+                "value": null
+              },
+              {
+                "name": "hgvsc",
+                "value": null
+              },
+              {
+                "name": "requires_oncogenic",
+                "value": true
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

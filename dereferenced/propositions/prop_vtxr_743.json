@@ -2,7 +2,10 @@
   "id": "prop:vtxr:743",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:ncit:C3163",
     "conceptType": "Disease",
@@ -40,72 +43,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:84",
-      "present": false,
-      "subject": {
-        "id": "bmkr:82",
-        "type": "CategoricalVariant",
-        "name": "17p deletion",
-        "constraints": [
-          {
-            "type": "DefiningLocationConstraint",
-            "location": {
-              "id": "ga4gh:SL.qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
-              "type": "SequenceLocation",
-              "name": null,
-              "aliases": [],
-              "description": "The p arm of GRCh38 chromosome 17 (NC_000017.11), from the start of the chromosome to the start of the centromere.",
-              "digest": "qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
-              "sequenceReference": {
-                "id": "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
-                "type": "SequenceReference",
-                "name": "NC_000017.11",
-                "aliases": [
-                  "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
-                  "refseq:NC_000017.11"
-                ],
-                "description": "GRCh38 chromosome 17 (RefSeq NC_000017.11).",
-                "moleculeType": "genomic",
-                "refgetAccession": "SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
-                "residueAlphabet": "na"
-              },
-              "start": 0,
-              "end": 22813679,
-              "sequence": null
-            },
-            "relations": [],
-            "matchCharacteristic": {
-              "type": "MappableConcept",
-              "primaryCoding": {
-                "code": "is_within",
-                "system": "ga4gh-gks-term:location-match"
-              }
-            }
-          },
-          {
-            "type": "CopyChangeConstraint",
-            "copyChange": "loss"
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Copy Number (arm level)"
-          },
-          {
-            "name": "chromosome",
-            "value": "17"
-          },
-          {
-            "name": "arm",
-            "value": "p"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C141428",
     "conceptType": "Drug",
@@ -188,5 +125,77 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C141428"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:84",
+          "present": false,
+          "subject": {
+            "id": "bmkr:82",
+            "type": "CategoricalVariant",
+            "name": "17p deletion",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "The p arm of GRCh38 chromosome 17 (NC_000017.11), from the start of the chromosome to the start of the centromere.",
+                  "digest": "qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                    "type": "SequenceReference",
+                    "name": "NC_000017.11",
+                    "aliases": [
+                      "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                      "refseq:NC_000017.11"
+                    ],
+                    "description": "GRCh38 chromosome 17 (RefSeq NC_000017.11).",
+                    "moleculeType": "genomic",
+                    "refgetAccession": "SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                    "residueAlphabet": "na"
+                  },
+                  "start": 0,
+                  "end": 22813679,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "type": "MappableConcept",
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "CopyChangeConstraint",
+                "copyChange": "loss"
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Copy Number (arm level)"
+              },
+              {
+                "name": "chromosome",
+                "value": "17"
+              },
+              {
+                "name": "arm",
+                "value": "p"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

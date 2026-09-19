@@ -113,7 +113,10 @@
     "id": "prop:vtxr:28",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:APLPMLRARA",
       "conceptType": "Disease",
@@ -137,135 +140,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:79",
-        "present": true,
-        "subject": {
-          "id": "bmkr:79",
-          "type": "CategoricalVariant",
-          "name": "PML::RARA",
-          "constraints": [
-            {
-              "type": "AdjacencyConstraint",
-              "orderKnown": true,
-              "adjoinedElements": [
-                {
-                  "id": "gene:hgnc:9113",
-                  "conceptType": "Gene",
-                  "name": "PML",
-                  "primaryCoding": {
-                    "id": "coding:hgnc:9113",
-                    "code": "HGNC:9113",
-                    "system": "https://genenames.org",
-                    "iris": [
-                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9113"
-                    ]
-                  },
-                  "mappings": [
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ensembl:ensg00000140464",
-                        "code": "ENSG00000140464",
-                        "system": "https://www.ensembl.org",
-                        "iris": [
-                          "https://www.ensembl.org/id/ENSG00000140464"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ncbi:5371",
-                        "code": "5371",
-                        "system": "https://www.ncbi.nlm.nih.gov/gene",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/gene/5371"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "relatedMatch",
-                      "coding": {
-                        "id": "coding:refseq:NM_033238.3",
-                        "code": "NM_033238.3",
-                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_033238.3"
-                        ]
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "gene:hgnc:9864",
-                  "conceptType": "Gene",
-                  "name": "RARA",
-                  "primaryCoding": {
-                    "id": "coding:hgnc:9864",
-                    "code": "HGNC:9864",
-                    "system": "https://genenames.org",
-                    "iris": [
-                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9864"
-                    ]
-                  },
-                  "mappings": [
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ensembl:ensg00000131759",
-                        "code": "ENSG00000131759",
-                        "system": "https://www.ensembl.org",
-                        "iris": [
-                          "https://www.ensembl.org/id/ENSG00000131759"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ncbi:5914",
-                        "code": "5914",
-                        "system": "https://www.ncbi.nlm.nih.gov/gene",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/gene/5914"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "relatedMatch",
-                      "coding": {
-                        "id": "coding:refseq:NM_000964.4",
-                        "code": "NM_000964.4",
-                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000964.4"
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Rearrangement"
-            },
-            {
-              "name": "rearrangement_type",
-              "value": "Fusion"
-            },
-            {
-              "name": "locus",
-              "value": null
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C1005",
       "conceptType": "Drug",
@@ -348,7 +222,142 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1005"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:79",
+            "present": true,
+            "subject": {
+              "id": "bmkr:79",
+              "type": "CategoricalVariant",
+              "name": "PML::RARA",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": true,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:9113",
+                      "conceptType": "Gene",
+                      "name": "PML",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:9113",
+                        "code": "HGNC:9113",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9113"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000140464",
+                            "code": "ENSG00000140464",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000140464"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:5371",
+                            "code": "5371",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/5371"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_033238.3",
+                            "code": "NM_033238.3",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_033238.3"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gene:hgnc:9864",
+                      "conceptType": "Gene",
+                      "name": "RARA",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:9864",
+                        "code": "HGNC:9864",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9864"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000131759",
+                            "code": "ENSG00000131759",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000131759"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:5914",
+                            "code": "5914",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/5914"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_000964.4",
+                            "code": "NM_000964.4",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000964.4"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Rearrangement"
+                },
+                {
+                  "name": "rearrangement_type",
+                  "value": "Fusion"
+                },
+                {
+                  "name": "locus",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

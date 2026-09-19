@@ -2,7 +2,10 @@
   "id": "prop:vtxr:798",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:COADREAD",
     "conceptType": "Disease",
@@ -26,216 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:25",
-      "present": true,
-      "subject": {
-        "id": "bmkr:25",
-        "type": "CategoricalVariant",
-        "name": "Wild type KRAS",
-        "constraints": [
-          {
-            "type": "DefiningLocationConstraint",
-            "location": {
-              "id": "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
-              "type": "SequenceLocation",
-              "name": null,
-              "aliases": [],
-              "description": "Sequence spanning the length of refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5).",
-              "digest": "fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
-              "sequenceReference": {
-                "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
-                "type": "SequenceReference",
-                "name": "NP_004976.2",
-                "aliases": [
-                  "ensembl:ENSP00000308495.3",
-                  "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
-                  "refseq:NP_004976.2"
-                ],
-                "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
-                "moleculeType": "protein",
-                "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
-                "residueAlphabet": "aa"
-              },
-              "start": 0,
-              "end": 188,
-              "sequence": null
-            },
-            "relations": [],
-            "matchCharacteristic": {
-              "type": "MappableConcept",
-              "primaryCoding": {
-                "code": "is_within",
-                "system": "ga4gh-gks-term:location-match"
-              }
-            }
-          },
-          {
-            "type": "FeatureContextConstraint",
-            "featureContext": {
-              "id": "gene:hgnc:6407",
-              "conceptType": "Gene",
-              "name": "KRAS",
-              "primaryCoding": {
-                "id": "coding:hgnc:6407",
-                "code": "HGNC:6407",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
-                ]
-              },
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000133703",
-                    "code": "ENSG00000133703",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000133703"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:3845",
-                    "code": "3845",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/3845"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_004985.5",
-                    "code": "NM_004985.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Wild type"
-          }
-        ]
-      }
-    },
-    {
-      "id": "bmkr.criterion:27",
-      "present": true,
-      "subject": {
-        "id": "bmkr:27",
-        "type": "CategoricalVariant",
-        "name": "Wild type NRAS",
-        "constraints": [
-          {
-            "type": "DefiningLocationConstraint",
-            "location": {
-              "id": "ga4gh:SL.PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd",
-              "type": "SequenceLocation",
-              "name": null,
-              "aliases": [],
-              "description": "Sequence spanning the length of refseq:NP_002515.1, the protein product of the MANE Select coding transcript for NRAS (refseq:NM_002524.5).",
-              "digest": "PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd",
-              "sequenceReference": {
-                "id": "ga4gh:SQ.974-EgvIQKi6ptqsI6XUZthCv-Py3S18",
-                "type": "SequenceReference",
-                "name": "NP_002515.1",
-                "aliases": [
-                  "ensembl:ENSP00000358548.4",
-                  "ga4gh:SQ.974-EgvIQKi6ptqsI6XUZthCv-Py3S18",
-                  "refseq:NP_002515.1"
-                ],
-                "description": "The protein product of the MANE Select coding transcript for NRAS (refseq:NM_002524.5), corresponding to the Refseq protein accession NP_002515.1.",
-                "moleculeType": "protein",
-                "refgetAccession": "SQ.974-EgvIQKi6ptqsI6XUZthCv-Py3S18",
-                "residueAlphabet": "aa"
-              },
-              "start": 0,
-              "end": 189,
-              "sequence": null
-            },
-            "relations": [],
-            "matchCharacteristic": {
-              "type": "MappableConcept",
-              "primaryCoding": {
-                "code": "is_within",
-                "system": "ga4gh-gks-term:location-match"
-              }
-            }
-          },
-          {
-            "type": "FeatureContextConstraint",
-            "featureContext": {
-              "id": "gene:hgnc:7989",
-              "conceptType": "Gene",
-              "name": "NRAS",
-              "primaryCoding": {
-                "id": "coding:hgnc:7989",
-                "code": "HGNC:7989",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
-                ]
-              },
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000213281",
-                    "code": "ENSG00000213281",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000213281"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:4893",
-                    "code": "4893",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/4893"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_002524.5",
-                    "code": "NM_002524.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_002524.5"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Wild type"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "txgrp:15",
     "membershipOperator": "AND",
@@ -407,5 +200,221 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:25",
+          "present": true,
+          "subject": {
+            "id": "bmkr:25",
+            "type": "CategoricalVariant",
+            "name": "Wild type KRAS",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5).",
+                  "digest": "fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                    "type": "SequenceReference",
+                    "name": "NP_004976.2",
+                    "aliases": [
+                      "ensembl:ENSP00000308495.3",
+                      "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                      "refseq:NP_004976.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 188,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "type": "MappableConcept",
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:6407",
+                  "conceptType": "Gene",
+                  "name": "KRAS",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:6407",
+                    "code": "HGNC:6407",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000133703",
+                        "code": "ENSG00000133703",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000133703"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:3845",
+                        "code": "3845",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/3845"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_004985.5",
+                        "code": "NM_004985.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Wild type"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:27",
+          "present": true,
+          "subject": {
+            "id": "bmkr:27",
+            "type": "CategoricalVariant",
+            "name": "Wild type NRAS",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_002515.1, the protein product of the MANE Select coding transcript for NRAS (refseq:NM_002524.5).",
+                  "digest": "PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.974-EgvIQKi6ptqsI6XUZthCv-Py3S18",
+                    "type": "SequenceReference",
+                    "name": "NP_002515.1",
+                    "aliases": [
+                      "ensembl:ENSP00000358548.4",
+                      "ga4gh:SQ.974-EgvIQKi6ptqsI6XUZthCv-Py3S18",
+                      "refseq:NP_002515.1"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for NRAS (refseq:NM_002524.5), corresponding to the Refseq protein accession NP_002515.1.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.974-EgvIQKi6ptqsI6XUZthCv-Py3S18",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 189,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "type": "MappableConcept",
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:7989",
+                  "conceptType": "Gene",
+                  "name": "NRAS",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:7989",
+                    "code": "HGNC:7989",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7989"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000213281",
+                        "code": "ENSG00000213281",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000213281"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:4893",
+                        "code": "4893",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/4893"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_002524.5",
+                        "code": "NM_002524.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_002524.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Wild type"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

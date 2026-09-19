@@ -100,7 +100,10 @@
     "id": "prop:vtxr:164",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:CELNOS",
       "conceptType": "Disease",
@@ -124,135 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:30",
-        "present": true,
-        "subject": {
-          "id": "bmkr:30",
-          "type": "CategoricalVariant",
-          "name": "FIP1L1::PDGFRA",
-          "constraints": [
-            {
-              "type": "AdjacencyConstraint",
-              "orderKnown": true,
-              "adjoinedElements": [
-                {
-                  "id": "gene:hgnc:19124",
-                  "conceptType": "Gene",
-                  "name": "FIP1L1",
-                  "primaryCoding": {
-                    "id": "coding:hgnc:19124",
-                    "code": "HGNC:19124",
-                    "system": "https://genenames.org",
-                    "iris": [
-                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
-                    ]
-                  },
-                  "mappings": [
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ensembl:ensg00000145216",
-                        "code": "ENSG00000145216",
-                        "system": "https://www.ensembl.org",
-                        "iris": [
-                          "https://www.ensembl.org/id/ENSG00000145216"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ncbi:81608",
-                        "code": "81608",
-                        "system": "https://www.ncbi.nlm.nih.gov/gene",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/gene/81608"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "relatedMatch",
-                      "coding": {
-                        "id": "coding:refseq:NM_030917.4",
-                        "code": "NM_030917.4",
-                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_030917.4"
-                        ]
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "gene:hgnc:8803",
-                  "conceptType": "Gene",
-                  "name": "PDGFRA",
-                  "primaryCoding": {
-                    "id": "coding:hgnc:8803",
-                    "code": "HGNC:8803",
-                    "system": "https://genenames.org",
-                    "iris": [
-                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
-                    ]
-                  },
-                  "mappings": [
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ensembl:ensg00000134853",
-                        "code": "ENSG00000134853",
-                        "system": "https://www.ensembl.org",
-                        "iris": [
-                          "https://www.ensembl.org/id/ENSG00000134853"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ncbi:5156",
-                        "code": "5156",
-                        "system": "https://www.ncbi.nlm.nih.gov/gene",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/gene/5156"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "relatedMatch",
-                      "coding": {
-                        "id": "coding:refseq:NM_006206.6",
-                        "code": "NM_006206.6",
-                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Rearrangement"
-            },
-            {
-              "name": "rearrangement_type",
-              "value": "Fusion"
-            },
-            {
-              "name": "locus",
-              "value": null
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C62035",
       "conceptType": "Drug",
@@ -337,7 +211,142 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:30",
+            "present": true,
+            "subject": {
+              "id": "bmkr:30",
+              "type": "CategoricalVariant",
+              "name": "FIP1L1::PDGFRA",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": true,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:19124",
+                      "conceptType": "Gene",
+                      "name": "FIP1L1",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:19124",
+                        "code": "HGNC:19124",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19124"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000145216",
+                            "code": "ENSG00000145216",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000145216"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:81608",
+                            "code": "81608",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/81608"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_030917.4",
+                            "code": "NM_030917.4",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_030917.4"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gene:hgnc:8803",
+                      "conceptType": "Gene",
+                      "name": "PDGFRA",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:8803",
+                        "code": "HGNC:8803",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000134853",
+                            "code": "ENSG00000134853",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000134853"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:5156",
+                            "code": "5156",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/5156"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_006206.6",
+                            "code": "NM_006206.6",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Rearrangement"
+                },
+                {
+                  "name": "rearrangement_type",
+                  "value": "Fusion"
+                },
+                {
+                  "name": "locus",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

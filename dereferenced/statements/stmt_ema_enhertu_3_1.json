@@ -100,7 +100,10 @@
     "id": "prop:vtxr:553",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:GEJ",
       "conceptType": "Disease",
@@ -124,84 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:21",
-        "present": true,
-        "subject": {
-          "id": "bmkr:21",
-          "type": "CategoricalVariant",
-          "name": "ERBB2 amplification",
-          "constraints": [
-            {
-              "type": "FeatureContextConstraint",
-              "featureContext": {
-                "id": "gene:hgnc:3430",
-                "conceptType": "Gene",
-                "name": "ERBB2",
-                "primaryCoding": {
-                  "id": "coding:hgnc:3430",
-                  "code": "HGNC:3430",
-                  "system": "https://genenames.org",
-                  "iris": [
-                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
-                  ]
-                },
-                "mappings": [
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ensembl:ensg00000141736",
-                      "code": "ENSG00000141736",
-                      "system": "https://www.ensembl.org",
-                      "iris": [
-                        "https://www.ensembl.org/id/ENSG00000141736"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ncbi:2064",
-                      "code": "2064",
-                      "system": "https://www.ncbi.nlm.nih.gov/gene",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/gene/2064"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "relatedMatch",
-                    "coding": {
-                      "id": "coding:refseq:NM_004448.4",
-                      "code": "NM_004448.4",
-                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_004448.4"
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "CopyChangeConstraint",
-              "copyChange": "gain"
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Copy Number"
-            },
-            {
-              "name": "cytoband",
-              "value": null
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C128799",
       "conceptType": "Drug",
@@ -284,7 +209,91 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C128799"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:21",
+            "present": true,
+            "subject": {
+              "id": "bmkr:21",
+              "type": "CategoricalVariant",
+              "name": "ERBB2 amplification",
+              "constraints": [
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3430",
+                    "conceptType": "Gene",
+                    "name": "ERBB2",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3430",
+                      "code": "HGNC:3430",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000141736",
+                          "code": "ENSG00000141736",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000141736"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:2064",
+                          "code": "2064",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/2064"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_004448.4",
+                          "code": "NM_004448.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_004448.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "CopyChangeConstraint",
+                  "copyChange": "gain"
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Copy Number"
+                },
+                {
+                  "name": "cytoband",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

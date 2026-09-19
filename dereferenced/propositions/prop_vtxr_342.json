@@ -2,7 +2,10 @@
   "id": "prop:vtxr:342",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:UCEC",
     "conceptType": "Disease",
@@ -26,28 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:37",
-      "present": true,
-      "subject": {
-        "id": "bmkr:37",
-        "type": "CategoricalVariant",
-        "name": "pMMR",
-        "constraints": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Mismatch Repair"
-          },
-          {
-            "name": "status",
-            "value": "Proficient"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C106432",
     "conceptType": "Drug",
@@ -130,5 +111,33 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:37",
+          "present": true,
+          "subject": {
+            "id": "bmkr:37",
+            "type": "CategoricalVariant",
+            "name": "pMMR",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Mismatch Repair"
+              },
+              {
+                "name": "status",
+                "value": "Proficient"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

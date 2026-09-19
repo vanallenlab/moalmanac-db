@@ -2,7 +2,10 @@
   "id": "prop:vtxr:478",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:COADREAD",
     "conceptType": "Disease",
@@ -26,171 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:45",
-      "present": true,
-      "subject": {
-        "id": "bmkr:45",
-        "type": "CategoricalVariant",
-        "name": "KRAS p.G12C",
-        "constraints": [
-          {
-            "type": "DefiningAlleleConstraint",
-            "allele": {
-              "id": "ga4gh:VA.udBCHwlrf8xNiRy_19bLi-h5LhnZLgCt",
-              "type": "Allele",
-              "name": "NP_004976.2:p.Gly12Cys",
-              "aliases": [
-                "NP_004976.2:p.G12C",
-                "KRAS p.G12C"
-              ],
-              "description": "VRS variation of NP_004976.2:p.Gly12Cys",
-              "digest": "udBCHwlrf8xNiRy_19bLi-h5LhnZLgCt",
-              "hgvs.g": null,
-              "hgvs.c": null,
-              "hgvs.c_short": null,
-              "hgvs.p": "NP_004976.2:p.Gly12Cys",
-              "hgvs.p_short": "p.G12C",
-              "location": {
-                "id": "ga4gh:SL.ovJR3lKrIflg4zDUU3Q-XH715XkwgTJl",
-                "type": "SequenceLocation",
-                "name": null,
-                "aliases": [],
-                "description": "Amino acid position 12 of the Refseq protein NP_004976.2, which is the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5).",
-                "digest": "ovJR3lKrIflg4zDUU3Q-XH715XkwgTJl",
-                "sequenceReference": {
-                  "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
-                  "type": "SequenceReference",
-                  "name": "NP_004976.2",
-                  "aliases": [
-                    "ensembl:ENSP00000308495.3",
-                    "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
-                    "refseq:NP_004976.2"
-                  ],
-                  "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
-                  "moleculeType": "protein",
-                  "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
-                  "residueAlphabet": "aa"
-                },
-                "start": 11,
-                "end": 12,
-                "sequence": "G"
-              },
-              "state_type": "LiteralSequenceExpression",
-              "state_value": "C"
-            },
-            "relations": []
-          },
-          {
-            "type": "FeatureContextConstraint",
-            "featureContext": {
-              "id": "gene:hgnc:6407",
-              "conceptType": "Gene",
-              "name": "KRAS",
-              "primaryCoding": {
-                "id": "coding:hgnc:6407",
-                "code": "HGNC:6407",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
-                ]
-              },
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000133703",
-                    "code": "ENSG00000133703",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000133703"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:3845",
-                    "code": "3845",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/3845"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_004985.5",
-                    "code": "NM_004985.5",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "12"
-          },
-          {
-            "name": "start_position",
-            "value": 25398285
-          },
-          {
-            "name": "end_position",
-            "value": 25398285
-          },
-          {
-            "name": "reference_allele",
-            "value": "C"
-          },
-          {
-            "name": "alternate_allele",
-            "value": "A"
-          },
-          {
-            "name": "cdna_change",
-            "value": "c.34G>T"
-          },
-          {
-            "name": "protein_change",
-            "value": "p.G12C"
-          },
-          {
-            "name": "variant_annotation",
-            "value": "Missense"
-          },
-          {
-            "name": "exon",
-            "value": 2
-          },
-          {
-            "name": "rsid",
-            "value": "rs121913530"
-          },
-          {
-            "name": "hgvsg",
-            "value": "12:g.25398285C>A"
-          },
-          {
-            "name": "hgvsc",
-            "value": "ENST00000256078.4:c.34G>T"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "txgrp:90",
     "membershipOperator": "AND",
@@ -336,5 +174,176 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:45",
+          "present": true,
+          "subject": {
+            "id": "bmkr:45",
+            "type": "CategoricalVariant",
+            "name": "KRAS p.G12C",
+            "constraints": [
+              {
+                "type": "DefiningAlleleConstraint",
+                "allele": {
+                  "id": "ga4gh:VA.udBCHwlrf8xNiRy_19bLi-h5LhnZLgCt",
+                  "type": "Allele",
+                  "name": "NP_004976.2:p.Gly12Cys",
+                  "aliases": [
+                    "NP_004976.2:p.G12C",
+                    "KRAS p.G12C"
+                  ],
+                  "description": "VRS variation of NP_004976.2:p.Gly12Cys",
+                  "digest": "udBCHwlrf8xNiRy_19bLi-h5LhnZLgCt",
+                  "hgvs.g": null,
+                  "hgvs.c": null,
+                  "hgvs.c_short": null,
+                  "hgvs.p": "NP_004976.2:p.Gly12Cys",
+                  "hgvs.p_short": "p.G12C",
+                  "location": {
+                    "id": "ga4gh:SL.ovJR3lKrIflg4zDUU3Q-XH715XkwgTJl",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Amino acid position 12 of the Refseq protein NP_004976.2, which is the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5).",
+                    "digest": "ovJR3lKrIflg4zDUU3Q-XH715XkwgTJl",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                      "type": "SequenceReference",
+                      "name": "NP_004976.2",
+                      "aliases": [
+                        "ensembl:ENSP00000308495.3",
+                        "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                        "refseq:NP_004976.2"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 11,
+                    "end": 12,
+                    "sequence": "G"
+                  },
+                  "state_type": "LiteralSequenceExpression",
+                  "state_value": "C"
+                },
+                "relations": []
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:6407",
+                  "conceptType": "Gene",
+                  "name": "KRAS",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:6407",
+                    "code": "HGNC:6407",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000133703",
+                        "code": "ENSG00000133703",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000133703"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:3845",
+                        "code": "3845",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/3845"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_004985.5",
+                        "code": "NM_004985.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "12"
+              },
+              {
+                "name": "start_position",
+                "value": 25398285
+              },
+              {
+                "name": "end_position",
+                "value": 25398285
+              },
+              {
+                "name": "reference_allele",
+                "value": "C"
+              },
+              {
+                "name": "alternate_allele",
+                "value": "A"
+              },
+              {
+                "name": "cdna_change",
+                "value": "c.34G>T"
+              },
+              {
+                "name": "protein_change",
+                "value": "p.G12C"
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Missense"
+              },
+              {
+                "name": "exon",
+                "value": 2
+              },
+              {
+                "name": "rsid",
+                "value": "rs121913530"
+              },
+              {
+                "name": "hgvsg",
+                "value": "12:g.25398285C>A"
+              },
+              {
+                "name": "hgvsc",
+                "value": "ENST00000256078.4:c.34G>T"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

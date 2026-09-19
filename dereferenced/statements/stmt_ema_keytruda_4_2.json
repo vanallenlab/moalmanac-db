@@ -100,7 +100,10 @@
     "id": "prop:vtxr:597",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:HNSC",
       "conceptType": "Disease",
@@ -124,40 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:42",
-        "present": true,
-        "subject": {
-          "id": "bmkr:42",
-          "type": "CategoricalVariant",
-          "name": "PD-L1 (CPS) >= 1",
-          "constraints": [],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Protein expression"
-            },
-            {
-              "name": "marker",
-              "value": "PD-L1"
-            },
-            {
-              "name": "unit",
-              "value": "Combined Positive Score (CPS)"
-            },
-            {
-              "name": "equality",
-              "value": ">="
-            },
-            {
-              "name": "value",
-              "value": 1
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "txgrp:55",
       "membershipOperator": "AND",
@@ -412,7 +381,47 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:42",
+            "present": true,
+            "subject": {
+              "id": "bmkr:42",
+              "type": "CategoricalVariant",
+              "name": "PD-L1 (CPS) >= 1",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "PD-L1"
+                },
+                {
+                  "name": "unit",
+                  "value": "Combined Positive Score (CPS)"
+                },
+                {
+                  "name": "equality",
+                  "value": ">="
+                },
+                {
+                  "name": "value",
+                  "value": 1
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

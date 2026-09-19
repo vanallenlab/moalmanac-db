@@ -100,7 +100,10 @@
     "id": "prop:vtxr:247",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:OVT",
       "conceptType": "Disease",
@@ -124,28 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:51",
-        "present": true,
-        "subject": {
-          "id": "bmkr:51",
-          "type": "CategoricalVariant",
-          "name": "HRD",
-          "constraints": [],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Homologous Recombination"
-            },
-            {
-              "name": "status",
-              "value": "Deficient"
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "txgrp:43",
       "membershipOperator": "AND",
@@ -317,7 +298,35 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:51",
+            "present": true,
+            "subject": {
+              "id": "bmkr:51",
+              "type": "CategoricalVariant",
+              "name": "HRD",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Homologous Recombination"
+                },
+                {
+                  "name": "status",
+                  "value": "Deficient"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

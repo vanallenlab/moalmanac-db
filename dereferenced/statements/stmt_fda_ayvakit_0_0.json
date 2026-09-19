@@ -100,7 +100,10 @@
     "id": "prop:vtxr:40",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:GIST",
       "conceptType": "Disease",
@@ -124,171 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:11",
-        "present": true,
-        "subject": {
-          "id": "bmkr:11",
-          "type": "CategoricalVariant",
-          "name": "PDGFRA p.D842V",
-          "constraints": [
-            {
-              "type": "DefiningAlleleConstraint",
-              "allele": {
-                "id": "ga4gh:VA.Dy7soaZQU1vH9Eb93xG_pJyhu7xTDDC9",
-                "type": "Allele",
-                "name": "NP_006197.1:p.Asp842Val",
-                "aliases": [
-                  "NP_006197.1:p.D842V",
-                  "PDGFRA p.D842V"
-                ],
-                "description": "VRS variation of NP_006197.1:p.Asp842Val",
-                "digest": "Dy7soaZQU1vH9Eb93xG_pJyhu7xTDDC9",
-                "hgvs.g": null,
-                "hgvs.c": null,
-                "hgvs.c_short": null,
-                "hgvs.p": "NP_006197.1:p.Asp842Val",
-                "hgvs.p_short": "p.D842V",
-                "location": {
-                  "id": "ga4gh:SL.xuh2OFm73UN7_0uLySrRY2Xe3FW7KJ5h",
-                  "type": "SequenceLocation",
-                  "name": null,
-                  "aliases": [],
-                  "description": "Amino acid position 842 of the Refseq protein NP_006197.1, which is the protein product of the MANE Select coding transcript for PDGFRA (refseq:NM_006206.6).",
-                  "digest": "xuh2OFm73UN7_0uLySrRY2Xe3FW7KJ5h",
-                  "sequenceReference": {
-                    "id": "ga4gh:SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
-                    "type": "SequenceReference",
-                    "name": "NP_006197.1",
-                    "aliases": [
-                      "ensembl:ENSP00000257290.5",
-                      "ga4gh:SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
-                      "refseq:NP_006197.1"
-                    ],
-                    "description": "The protein product of the MANE Select coding transcript for PDGFRA (refseq:NM_006206.6), corresponding to the Refseq protein accession NP_006197.1.",
-                    "moleculeType": "protein",
-                    "refgetAccession": "SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
-                    "residueAlphabet": "aa"
-                  },
-                  "start": 841,
-                  "end": 842,
-                  "sequence": "D"
-                },
-                "state_type": "LiteralSequenceExpression",
-                "state_value": "V"
-              },
-              "relations": []
-            },
-            {
-              "type": "FeatureContextConstraint",
-              "featureContext": {
-                "id": "gene:hgnc:8803",
-                "conceptType": "Gene",
-                "name": "PDGFRA",
-                "primaryCoding": {
-                  "id": "coding:hgnc:8803",
-                  "code": "HGNC:8803",
-                  "system": "https://genenames.org",
-                  "iris": [
-                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
-                  ]
-                },
-                "mappings": [
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ensembl:ensg00000134853",
-                      "code": "ENSG00000134853",
-                      "system": "https://www.ensembl.org",
-                      "iris": [
-                        "https://www.ensembl.org/id/ENSG00000134853"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ncbi:5156",
-                      "code": "5156",
-                      "system": "https://www.ncbi.nlm.nih.gov/gene",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/gene/5156"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "relatedMatch",
-                    "coding": {
-                      "id": "coding:refseq:NM_006206.6",
-                      "code": "NM_006206.6",
-                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Somatic Variant"
-            },
-            {
-              "name": "chromosome",
-              "value": "4"
-            },
-            {
-              "name": "start_position",
-              "value": 55152093
-            },
-            {
-              "name": "end_position",
-              "value": 55152093
-            },
-            {
-              "name": "reference_allele",
-              "value": "A"
-            },
-            {
-              "name": "alternate_allele",
-              "value": "T"
-            },
-            {
-              "name": "cdna_change",
-              "value": "c.2525A>T"
-            },
-            {
-              "name": "protein_change",
-              "value": "p.D842V"
-            },
-            {
-              "name": "variant_annotation",
-              "value": "Missense"
-            },
-            {
-              "name": "exon",
-              "value": 18
-            },
-            {
-              "name": "rsid",
-              "value": "rs121908585"
-            },
-            {
-              "name": "hgvsg",
-              "value": "4:g.55152093A>T"
-            },
-            {
-              "name": "hgvsc",
-              "value": "ENST00000257290.5:c.2525A>T"
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C123827",
       "conceptType": "Drug",
@@ -371,7 +209,178 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C123827"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:11",
+            "present": true,
+            "subject": {
+              "id": "bmkr:11",
+              "type": "CategoricalVariant",
+              "name": "PDGFRA p.D842V",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.Dy7soaZQU1vH9Eb93xG_pJyhu7xTDDC9",
+                    "type": "Allele",
+                    "name": "NP_006197.1:p.Asp842Val",
+                    "aliases": [
+                      "NP_006197.1:p.D842V",
+                      "PDGFRA p.D842V"
+                    ],
+                    "description": "VRS variation of NP_006197.1:p.Asp842Val",
+                    "digest": "Dy7soaZQU1vH9Eb93xG_pJyhu7xTDDC9",
+                    "hgvs.g": null,
+                    "hgvs.c": null,
+                    "hgvs.c_short": null,
+                    "hgvs.p": "NP_006197.1:p.Asp842Val",
+                    "hgvs.p_short": "p.D842V",
+                    "location": {
+                      "id": "ga4gh:SL.xuh2OFm73UN7_0uLySrRY2Xe3FW7KJ5h",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 842 of the Refseq protein NP_006197.1, which is the protein product of the MANE Select coding transcript for PDGFRA (refseq:NM_006206.6).",
+                      "digest": "xuh2OFm73UN7_0uLySrRY2Xe3FW7KJ5h",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
+                        "type": "SequenceReference",
+                        "name": "NP_006197.1",
+                        "aliases": [
+                          "ensembl:ENSP00000257290.5",
+                          "ga4gh:SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
+                          "refseq:NP_006197.1"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for PDGFRA (refseq:NM_006206.6), corresponding to the Refseq protein accession NP_006197.1.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.XpQn9sZLGv_GU3uiWO7YHq9-_alGjrVX",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 841,
+                      "end": 842,
+                      "sequence": "D"
+                    },
+                    "state_type": "LiteralSequenceExpression",
+                    "state_value": "V"
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:8803",
+                    "conceptType": "Gene",
+                    "name": "PDGFRA",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:8803",
+                      "code": "HGNC:8803",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8803"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000134853",
+                          "code": "ENSG00000134853",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000134853"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:5156",
+                          "code": "5156",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/5156"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_006206.6",
+                          "code": "NM_006206.6",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_006206.6"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "4"
+                },
+                {
+                  "name": "start_position",
+                  "value": 55152093
+                },
+                {
+                  "name": "end_position",
+                  "value": 55152093
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "A"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "T"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.2525A>T"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.D842V"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 18
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121908585"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "4:g.55152093A>T"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000257290.5:c.2525A>T"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

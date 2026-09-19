@@ -2,7 +2,10 @@
   "id": "prop:vtxr:761",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:GEJ",
     "conceptType": "Disease",
@@ -26,72 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:41",
-      "present": true,
-      "subject": {
-        "id": "bmkr:41",
-        "type": "CategoricalVariant",
-        "name": "PD-L1 (CPS) >= 10",
-        "constraints": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "PD-L1"
-          },
-          {
-            "name": "unit",
-            "value": "Combined Positive Score (CPS)"
-          },
-          {
-            "name": "equality",
-            "value": ">="
-          },
-          {
-            "name": "value",
-            "value": 10
-          }
-        ]
-      }
-    },
-    {
-      "id": "bmkr.criterion:2",
-      "present": true,
-      "subject": {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "constraints": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "txgrp:55",
     "membershipOperator": "AND",
@@ -346,5 +283,77 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:41",
+          "present": true,
+          "subject": {
+            "id": "bmkr:41",
+            "type": "CategoricalVariant",
+            "name": "PD-L1 (CPS) >= 10",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "PD-L1"
+              },
+              {
+                "name": "unit",
+                "value": "Combined Positive Score (CPS)"
+              },
+              {
+                "name": "equality",
+                "value": ">="
+              },
+              {
+                "name": "value",
+                "value": 10
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:2",
+          "present": true,
+          "subject": {
+            "id": "bmkr:2",
+            "type": "CategoricalVariant",
+            "name": "HER2-negative",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Human epidermal growth factor receptor 2 (HER2)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Negative"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

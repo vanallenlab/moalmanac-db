@@ -100,7 +100,10 @@
     "id": "prop:vtxr:111",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:AML",
       "conceptType": "Disease",
@@ -124,171 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:107",
-        "present": true,
-        "subject": {
-          "id": "bmkr:107",
-          "type": "CategoricalVariant",
-          "name": "IDH2 p.R140Q",
-          "constraints": [
-            {
-              "type": "DefiningAlleleConstraint",
-              "allele": {
-                "id": "ga4gh:VA.HK1caYli9110rSKDTqSXAgzjzajRFBBv",
-                "type": "Allele",
-                "name": "NP_002159.2:p.Arg140Gln",
-                "aliases": [
-                  "NP_002159.2:p.R140Q",
-                  "IDH2 p.R140Q"
-                ],
-                "description": "VRS variation of NP_002159.2:p.Arg140Gln",
-                "digest": "HK1caYli9110rSKDTqSXAgzjzajRFBBv",
-                "hgvs.g": null,
-                "hgvs.c": null,
-                "hgvs.c_short": null,
-                "hgvs.p": "NP_002159.2:p.Arg140Gln",
-                "hgvs.p_short": "p.R140Q",
-                "location": {
-                  "id": "ga4gh:SL.Oh1pTL0eECaO9-0FUtmM8h_iJqWu_zVO",
-                  "type": "SequenceLocation",
-                  "name": null,
-                  "aliases": [],
-                  "description": "Amino acid position 140 of the Refseq protein NP_002159.2, which is the protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4).",
-                  "digest": "Oh1pTL0eECaO9-0FUtmM8h_iJqWu_zVO",
-                  "sequenceReference": {
-                    "id": "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
-                    "type": "SequenceReference",
-                    "name": "NP_002159.2",
-                    "aliases": [
-                      "ensembl:ENSP00000331897.3",
-                      "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
-                      "refseq:NP_002159.2"
-                    ],
-                    "description": "The protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4), corresponding to the Refseq protein accession NP_002159.2.",
-                    "moleculeType": "protein",
-                    "refgetAccession": "SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
-                    "residueAlphabet": "aa"
-                  },
-                  "start": 139,
-                  "end": 140,
-                  "sequence": "R"
-                },
-                "state_type": "LiteralSequenceExpression",
-                "state_value": "Q"
-              },
-              "relations": []
-            },
-            {
-              "type": "FeatureContextConstraint",
-              "featureContext": {
-                "id": "gene:hgnc:5383",
-                "conceptType": "Gene",
-                "name": "IDH2",
-                "primaryCoding": {
-                  "id": "coding:hgnc:5383",
-                  "code": "HGNC:5383",
-                  "system": "https://genenames.org",
-                  "iris": [
-                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5383"
-                  ]
-                },
-                "mappings": [
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ensembl:ensg00000182054",
-                      "code": "ENSG00000182054",
-                      "system": "https://www.ensembl.org",
-                      "iris": [
-                        "https://www.ensembl.org/id/ENSG00000182054"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ncbi:3418",
-                      "code": "3418",
-                      "system": "https://www.ncbi.nlm.nih.gov/gene",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/gene/3418"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "relatedMatch",
-                    "coding": {
-                      "id": "coding:refseq:NM_002168.4",
-                      "code": "NM_002168.4",
-                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_002168.4"
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Somatic Variant"
-            },
-            {
-              "name": "chromosome",
-              "value": "15"
-            },
-            {
-              "name": "start_position",
-              "value": 90631934
-            },
-            {
-              "name": "end_position",
-              "value": 90631934
-            },
-            {
-              "name": "reference_allele",
-              "value": "C"
-            },
-            {
-              "name": "alternate_allele",
-              "value": "T"
-            },
-            {
-              "name": "cdna_change",
-              "value": "c.419G>A"
-            },
-            {
-              "name": "protein_change",
-              "value": "p.R140Q"
-            },
-            {
-              "name": "variant_annotation",
-              "value": "Missense"
-            },
-            {
-              "name": "exon",
-              "value": 4
-            },
-            {
-              "name": "rsid",
-              "value": "rs121913502"
-            },
-            {
-              "name": "hgvsg",
-              "value": "15:g.90631934C>T"
-            },
-            {
-              "name": "hgvsc",
-              "value": "ENST00000330062.3:c.419G>A"
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C111573",
       "conceptType": "Drug",
@@ -371,7 +209,178 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C111573"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:107",
+            "present": true,
+            "subject": {
+              "id": "bmkr:107",
+              "type": "CategoricalVariant",
+              "name": "IDH2 p.R140Q",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.HK1caYli9110rSKDTqSXAgzjzajRFBBv",
+                    "type": "Allele",
+                    "name": "NP_002159.2:p.Arg140Gln",
+                    "aliases": [
+                      "NP_002159.2:p.R140Q",
+                      "IDH2 p.R140Q"
+                    ],
+                    "description": "VRS variation of NP_002159.2:p.Arg140Gln",
+                    "digest": "HK1caYli9110rSKDTqSXAgzjzajRFBBv",
+                    "hgvs.g": null,
+                    "hgvs.c": null,
+                    "hgvs.c_short": null,
+                    "hgvs.p": "NP_002159.2:p.Arg140Gln",
+                    "hgvs.p_short": "p.R140Q",
+                    "location": {
+                      "id": "ga4gh:SL.Oh1pTL0eECaO9-0FUtmM8h_iJqWu_zVO",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 140 of the Refseq protein NP_002159.2, which is the protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4).",
+                      "digest": "Oh1pTL0eECaO9-0FUtmM8h_iJqWu_zVO",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+                        "type": "SequenceReference",
+                        "name": "NP_002159.2",
+                        "aliases": [
+                          "ensembl:ENSP00000331897.3",
+                          "ga4gh:SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+                          "refseq:NP_002159.2"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for IDH2 (refseq:NM_002168.4), corresponding to the Refseq protein accession NP_002159.2.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.xop1Mrzn5Llu7Dj-BULoAd8Xmlbs-l-y",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 139,
+                      "end": 140,
+                      "sequence": "R"
+                    },
+                    "state_type": "LiteralSequenceExpression",
+                    "state_value": "Q"
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:5383",
+                    "conceptType": "Gene",
+                    "name": "IDH2",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:5383",
+                      "code": "HGNC:5383",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5383"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000182054",
+                          "code": "ENSG00000182054",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000182054"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:3418",
+                          "code": "3418",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/3418"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_002168.4",
+                          "code": "NM_002168.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_002168.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "15"
+                },
+                {
+                  "name": "start_position",
+                  "value": 90631934
+                },
+                {
+                  "name": "end_position",
+                  "value": 90631934
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "C"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "T"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.419G>A"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.R140Q"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 4
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121913502"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "15:g.90631934C>T"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000330062.3:c.419G>A"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

@@ -100,7 +100,10 @@
     "id": "prop:vtxr:888",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:ESCC",
       "conceptType": "Disease",
@@ -124,40 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:178",
-        "present": true,
-        "subject": {
-          "id": "bmkr:178",
-          "type": "CategoricalVariant",
-          "name": "PD-L1 (TAP) >= 1%",
-          "constraints": [],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Protein expression"
-            },
-            {
-              "name": "marker",
-              "value": "PD-L1"
-            },
-            {
-              "name": "unit",
-              "value": "Tumor Area Positivity (TAP)"
-            },
-            {
-              "name": "equality",
-              "value": ">="
-            },
-            {
-              "name": "value",
-              "value": 0.01
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "txgrp:189",
       "membershipOperator": "AND",
@@ -386,7 +355,47 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:178",
+            "present": true,
+            "subject": {
+              "id": "bmkr:178",
+              "type": "CategoricalVariant",
+              "name": "PD-L1 (TAP) >= 1%",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "PD-L1"
+                },
+                {
+                  "name": "unit",
+                  "value": "Tumor Area Positivity (TAP)"
+                },
+                {
+                  "name": "equality",
+                  "value": ">="
+                },
+                {
+                  "name": "value",
+                  "value": 0.01
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

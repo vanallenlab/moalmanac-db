@@ -2,7 +2,10 @@
   "id": "prop:vtxr:162",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:MDS",
     "conceptType": "Disease",
@@ -26,84 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:29",
-      "present": true,
-      "subject": {
-        "id": "bmkr:29",
-        "type": "CategoricalVariant",
-        "name": "PDGFRB rearrangements",
-        "constraints": [
-          {
-            "type": "FeatureContextConstraint",
-            "featureContext": {
-              "id": "gene:hgnc:8804",
-              "conceptType": "Gene",
-              "name": "PDGFRB",
-              "primaryCoding": {
-                "id": "coding:hgnc:8804",
-                "code": "HGNC:8804",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
-                ]
-              },
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000113721",
-                    "code": "ENSG00000113721",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000113721"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:5159",
-                    "code": "5159",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/5159"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_002609.4",
-                    "code": "NM_002609.4",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_002609.4"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Rearrangement"
-          },
-          {
-            "name": "rearrangement_type",
-            "value": null
-          },
-          {
-            "name": "locus",
-            "value": null
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C62035",
     "conceptType": "Drug",
@@ -188,5 +113,89 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:29",
+          "present": true,
+          "subject": {
+            "id": "bmkr:29",
+            "type": "CategoricalVariant",
+            "name": "PDGFRB rearrangements",
+            "constraints": [
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:8804",
+                  "conceptType": "Gene",
+                  "name": "PDGFRB",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:8804",
+                    "code": "HGNC:8804",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000113721",
+                        "code": "ENSG00000113721",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000113721"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:5159",
+                        "code": "5159",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/5159"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_002609.4",
+                        "code": "NM_002609.4",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_002609.4"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Rearrangement"
+              },
+              {
+                "name": "rearrangement_type",
+                "value": null
+              },
+              {
+                "name": "locus",
+                "value": null
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

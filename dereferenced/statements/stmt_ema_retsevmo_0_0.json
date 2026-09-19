@@ -100,7 +100,10 @@
     "id": "prop:vtxr:407",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:NSCLC",
       "conceptType": "Disease",
@@ -124,90 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:18",
-        "present": true,
-        "subject": {
-          "id": "bmkr:18",
-          "type": "CategoricalVariant",
-          "name": "v::RET",
-          "constraints": [
-            {
-              "type": "AdjacencyConstraint",
-              "orderKnown": false,
-              "adjoinedElements": [
-                {
-                  "id": "gene:hgnc:9967",
-                  "conceptType": "Gene",
-                  "name": "RET",
-                  "primaryCoding": {
-                    "id": "coding:hgnc:9967",
-                    "code": "HGNC:9967",
-                    "system": "https://genenames.org",
-                    "iris": [
-                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9967"
-                    ]
-                  },
-                  "mappings": [
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ensembl:ensg00000165731",
-                        "code": "ENSG00000165731",
-                        "system": "https://www.ensembl.org",
-                        "iris": [
-                          "https://www.ensembl.org/id/ENSG00000165731"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ncbi:5979",
-                        "code": "5979",
-                        "system": "https://www.ncbi.nlm.nih.gov/gene",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/gene/5979"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "relatedMatch",
-                      "coding": {
-                        "id": "coding:refseq:NM_020975.6",
-                        "code": "NM_020975.6",
-                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_020975.6"
-                        ]
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "UnspecifiedElement"
-                }
-              ]
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Rearrangement"
-            },
-            {
-              "name": "rearrangement_type",
-              "value": "Fusion"
-            },
-            {
-              "name": "locus",
-              "value": null
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C134987",
       "conceptType": "Drug",
@@ -290,7 +209,97 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C134987"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:18",
+            "present": true,
+            "subject": {
+              "id": "bmkr:18",
+              "type": "CategoricalVariant",
+              "name": "v::RET",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": false,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:9967",
+                      "conceptType": "Gene",
+                      "name": "RET",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:9967",
+                        "code": "HGNC:9967",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9967"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000165731",
+                            "code": "ENSG00000165731",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000165731"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:5979",
+                            "code": "5979",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/5979"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_020975.6",
+                            "code": "NM_020975.6",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_020975.6"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "UnspecifiedElement"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Rearrangement"
+                },
+                {
+                  "name": "rearrangement_type",
+                  "value": "Fusion"
+                },
+                {
+                  "name": "locus",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

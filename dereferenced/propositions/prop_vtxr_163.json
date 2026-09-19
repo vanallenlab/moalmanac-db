@@ -2,7 +2,10 @@
   "id": "prop:vtxr:163",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:ASM",
     "conceptType": "Disease",
@@ -26,171 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:122",
-      "present": false,
-      "subject": {
-        "id": "bmkr:122",
-        "type": "CategoricalVariant",
-        "name": "KIT p.D816V",
-        "constraints": [
-          {
-            "type": "DefiningAlleleConstraint",
-            "allele": {
-              "id": "ga4gh:VA.nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
-              "type": "Allele",
-              "name": "NP_000213.1:p.Asp816Val",
-              "aliases": [
-                "NP_000213.1:p.D816V",
-                "KIT p.D816V"
-              ],
-              "description": "VRS variation of NP_000213.1:p.Asp816Val",
-              "digest": "nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
-              "hgvs.g": null,
-              "hgvs.c": null,
-              "hgvs.c_short": null,
-              "hgvs.p": "NP_000213.1:p.Asp816Val",
-              "hgvs.p_short": "p.D816V",
-              "location": {
-                "id": "ga4gh:SL.FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
-                "type": "SequenceLocation",
-                "name": null,
-                "aliases": [],
-                "description": "Amino acid position 816 of the Refseq protein NP_000213.1, which is the protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3).",
-                "digest": "FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
-                "sequenceReference": {
-                  "id": "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
-                  "type": "SequenceReference",
-                  "name": "NP_000213.1",
-                  "aliases": [
-                    "ensembl:ENSP00000288135.5",
-                    "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
-                    "refseq:NP_000213.1"
-                  ],
-                  "description": "The protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3), corresponding to the Refseq protein accession NP_000213.1.",
-                  "moleculeType": "protein",
-                  "refgetAccession": "SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
-                  "residueAlphabet": "aa"
-                },
-                "start": 815,
-                "end": 816,
-                "sequence": "D"
-              },
-              "state_type": "LiteralSequenceExpression",
-              "state_value": "V"
-            },
-            "relations": []
-          },
-          {
-            "type": "FeatureContextConstraint",
-            "featureContext": {
-              "id": "gene:hgnc:6342",
-              "conceptType": "Gene",
-              "name": "KIT",
-              "primaryCoding": {
-                "id": "coding:hgnc:6342",
-                "code": "HGNC:6342",
-                "system": "https://genenames.org",
-                "iris": [
-                  "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6342"
-                ]
-              },
-              "mappings": [
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ensembl:ensg00000157404",
-                    "code": "ENSG00000157404",
-                    "system": "https://www.ensembl.org",
-                    "iris": [
-                      "https://www.ensembl.org/id/ENSG00000157404"
-                    ]
-                  }
-                },
-                {
-                  "relation": "exactMatch",
-                  "coding": {
-                    "id": "coding:ncbi:3815",
-                    "code": "3815",
-                    "system": "https://www.ncbi.nlm.nih.gov/gene",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/gene/3815"
-                    ]
-                  }
-                },
-                {
-                  "relation": "relatedMatch",
-                  "coding": {
-                    "id": "coding:refseq:NM_000222.3",
-                    "code": "NM_000222.3",
-                    "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                    "iris": [
-                      "https://www.ncbi.nlm.nih.gov/nuccore/NM_000222.3"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "4"
-          },
-          {
-            "name": "start_position",
-            "value": 55599321
-          },
-          {
-            "name": "end_position",
-            "value": 55599321
-          },
-          {
-            "name": "reference_allele",
-            "value": "A"
-          },
-          {
-            "name": "alternate_allele",
-            "value": "T"
-          },
-          {
-            "name": "cdna_change",
-            "value": "c.2447A>T"
-          },
-          {
-            "name": "protein_change",
-            "value": "p.D816V"
-          },
-          {
-            "name": "variant_annotation",
-            "value": "Missense"
-          },
-          {
-            "name": "exon",
-            "value": 17
-          },
-          {
-            "name": "rsid",
-            "value": "rs121913507"
-          },
-          {
-            "name": "hgvsg",
-            "value": "4:g.55599321A>T"
-          },
-          {
-            "name": "hgvsc",
-            "value": "ENST00000288135.5:c.2447A>T"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "tx:ncit:C62035",
     "conceptType": "Drug",
@@ -275,5 +113,176 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:122",
+          "present": false,
+          "subject": {
+            "id": "bmkr:122",
+            "type": "CategoricalVariant",
+            "name": "KIT p.D816V",
+            "constraints": [
+              {
+                "type": "DefiningAlleleConstraint",
+                "allele": {
+                  "id": "ga4gh:VA.nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
+                  "type": "Allele",
+                  "name": "NP_000213.1:p.Asp816Val",
+                  "aliases": [
+                    "NP_000213.1:p.D816V",
+                    "KIT p.D816V"
+                  ],
+                  "description": "VRS variation of NP_000213.1:p.Asp816Val",
+                  "digest": "nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
+                  "hgvs.g": null,
+                  "hgvs.c": null,
+                  "hgvs.c_short": null,
+                  "hgvs.p": "NP_000213.1:p.Asp816Val",
+                  "hgvs.p_short": "p.D816V",
+                  "location": {
+                    "id": "ga4gh:SL.FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Amino acid position 816 of the Refseq protein NP_000213.1, which is the protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3).",
+                    "digest": "FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+                      "type": "SequenceReference",
+                      "name": "NP_000213.1",
+                      "aliases": [
+                        "ensembl:ENSP00000288135.5",
+                        "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+                        "refseq:NP_000213.1"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3), corresponding to the Refseq protein accession NP_000213.1.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 815,
+                    "end": 816,
+                    "sequence": "D"
+                  },
+                  "state_type": "LiteralSequenceExpression",
+                  "state_value": "V"
+                },
+                "relations": []
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:6342",
+                  "conceptType": "Gene",
+                  "name": "KIT",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:6342",
+                    "code": "HGNC:6342",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6342"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000157404",
+                        "code": "ENSG00000157404",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000157404"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:3815",
+                        "code": "3815",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/3815"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_000222.3",
+                        "code": "NM_000222.3",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000222.3"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "4"
+              },
+              {
+                "name": "start_position",
+                "value": 55599321
+              },
+              {
+                "name": "end_position",
+                "value": 55599321
+              },
+              {
+                "name": "reference_allele",
+                "value": "A"
+              },
+              {
+                "name": "alternate_allele",
+                "value": "T"
+              },
+              {
+                "name": "cdna_change",
+                "value": "c.2447A>T"
+              },
+              {
+                "name": "protein_change",
+                "value": "p.D816V"
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Missense"
+              },
+              {
+                "name": "exon",
+                "value": 17
+              },
+              {
+                "name": "rsid",
+                "value": "rs121913507"
+              },
+              {
+                "name": "hgvsg",
+                "value": "4:g.55599321A>T"
+              },
+              {
+                "name": "hgvsc",
+                "value": "ENST00000288135.5:c.2447A>T"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

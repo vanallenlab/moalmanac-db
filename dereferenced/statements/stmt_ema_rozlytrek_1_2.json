@@ -100,7 +100,10 @@
     "id": "prop:vtxr:123",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:ncit:C132146",
       "conceptType": "Disease",
@@ -124,90 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:65",
-        "present": true,
-        "subject": {
-          "id": "bmkr:65",
-          "type": "CategoricalVariant",
-          "name": "v::NTRK3",
-          "constraints": [
-            {
-              "type": "AdjacencyConstraint",
-              "orderKnown": false,
-              "adjoinedElements": [
-                {
-                  "id": "gene:hgnc:8033",
-                  "conceptType": "Gene",
-                  "name": "NTRK3",
-                  "primaryCoding": {
-                    "id": "coding:hgnc:8033",
-                    "code": "HGNC:8033",
-                    "system": "https://genenames.org",
-                    "iris": [
-                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8033"
-                    ]
-                  },
-                  "mappings": [
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ensembl:ensg00000140538",
-                        "code": "ENSG00000140538",
-                        "system": "https://www.ensembl.org",
-                        "iris": [
-                          "https://www.ensembl.org/id/ENSG00000140538"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "exactMatch",
-                      "coding": {
-                        "id": "coding:ncbi:4916",
-                        "code": "4916",
-                        "system": "https://www.ncbi.nlm.nih.gov/gene",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/gene/4916"
-                        ]
-                      }
-                    },
-                    {
-                      "relation": "relatedMatch",
-                      "coding": {
-                        "id": "coding:refseq:NM_001012338.3",
-                        "code": "NM_001012338.3",
-                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                        "iris": [
-                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_001012338.3"
-                        ]
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "UnspecifiedElement"
-                }
-              ]
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Rearrangement"
-            },
-            {
-              "name": "rearrangement_type",
-              "value": "Fusion"
-            },
-            {
-              "name": "locus",
-              "value": null
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C114984",
       "conceptType": "Drug",
@@ -292,7 +211,97 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C114984"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:65",
+            "present": true,
+            "subject": {
+              "id": "bmkr:65",
+              "type": "CategoricalVariant",
+              "name": "v::NTRK3",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": false,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:8033",
+                      "conceptType": "Gene",
+                      "name": "NTRK3",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:8033",
+                        "code": "HGNC:8033",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8033"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000140538",
+                            "code": "ENSG00000140538",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000140538"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:4916",
+                            "code": "4916",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/4916"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_001012338.3",
+                            "code": "NM_001012338.3",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_001012338.3"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "UnspecifiedElement"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Rearrangement"
+                },
+                {
+                  "name": "rearrangement_type",
+                  "value": "Fusion"
+                },
+                {
+                  "name": "locus",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

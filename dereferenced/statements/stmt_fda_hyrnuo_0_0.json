@@ -100,7 +100,10 @@
     "id": "prop:vtxr:881",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictSensitivityTo",
-    "subjectVariant": {},
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:ncit:C135017",
       "conceptType": "Disease",
@@ -124,164 +127,6 @@
         ]
       }
     },
-    "biomarkers": [
-      {
-        "id": "bmkr.criterion:173",
-        "present": true,
-        "subject": {
-          "id": "bmkr:173",
-          "type": "CategoricalVariant",
-          "name": "ERBB2 TKD activating variants",
-          "constraints": [
-            {
-              "type": "DefiningLocationConstraint",
-              "location": {
-                "id": "ga4gh:SL.gpkyq48rchUXfr_dVmt7BXbjBYofmUvG",
-                "type": "SequenceLocation",
-                "name": null,
-                "aliases": [],
-                "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the tyrosine kinase domain (residues 712-990; NCBI CDD PTKc_HER2, cd05109).",
-                "digest": "gpkyq48rchUXfr_dVmt7BXbjBYofmUvG",
-                "sequenceReference": {
-                  "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
-                  "type": "SequenceReference",
-                  "name": "NP_004439.2",
-                  "aliases": [
-                    "ensembl:ENSP00000269571.4",
-                    "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
-                    "refseq:NP_004439.2"
-                  ],
-                  "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
-                  "moleculeType": "protein",
-                  "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
-                  "residueAlphabet": "aa"
-                },
-                "start": 711,
-                "end": 990,
-                "sequence": null
-              },
-              "relations": [],
-              "matchCharacteristic": {
-                "type": "MappableConcept",
-                "primaryCoding": {
-                  "code": "is_within",
-                  "system": "ga4gh-gks-term:location-match"
-                }
-              }
-            },
-            {
-              "type": "FeatureContextConstraint",
-              "featureContext": {
-                "id": "gene:hgnc:3430",
-                "conceptType": "Gene",
-                "name": "ERBB2",
-                "primaryCoding": {
-                  "id": "coding:hgnc:3430",
-                  "code": "HGNC:3430",
-                  "system": "https://genenames.org",
-                  "iris": [
-                    "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
-                  ]
-                },
-                "mappings": [
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ensembl:ensg00000141736",
-                      "code": "ENSG00000141736",
-                      "system": "https://www.ensembl.org",
-                      "iris": [
-                        "https://www.ensembl.org/id/ENSG00000141736"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "exactMatch",
-                    "coding": {
-                      "id": "coding:ncbi:2064",
-                      "code": "2064",
-                      "system": "https://www.ncbi.nlm.nih.gov/gene",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/gene/2064"
-                      ]
-                    }
-                  },
-                  {
-                    "relation": "relatedMatch",
-                    "coding": {
-                      "id": "coding:refseq:NM_004448.4",
-                      "code": "NM_004448.4",
-                      "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                      "iris": [
-                        "https://www.ncbi.nlm.nih.gov/nuccore/NM_004448.4"
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "biomarker_type",
-              "value": "Somatic Variant"
-            },
-            {
-              "name": "chromosome",
-              "value": "17"
-            },
-            {
-              "name": "start_position",
-              "value": null
-            },
-            {
-              "name": "end_position",
-              "value": null
-            },
-            {
-              "name": "reference_allele",
-              "value": null
-            },
-            {
-              "name": "alternate_allele",
-              "value": null
-            },
-            {
-              "name": "cdna_change",
-              "value": null
-            },
-            {
-              "name": "protein_change",
-              "value": null
-            },
-            {
-              "name": "variant_annotation",
-              "value": null
-            },
-            {
-              "name": "exon",
-              "value": null
-            },
-            {
-              "name": "rsid",
-              "value": null
-            },
-            {
-              "name": "hgvsg",
-              "value": null
-            },
-            {
-              "name": "hgvsc",
-              "value": null
-            },
-            {
-              "name": "requires_oncogenic",
-              "value": true
-            }
-          ]
-        }
-      }
-    ],
     "objectTherapeutic": {
       "id": "tx:ncit:C185187",
       "conceptType": "Drug",
@@ -338,7 +183,171 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C185187"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:173",
+            "present": true,
+            "subject": {
+              "id": "bmkr:173",
+              "type": "CategoricalVariant",
+              "name": "ERBB2 TKD activating variants",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.gpkyq48rchUXfr_dVmt7BXbjBYofmUvG",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the tyrosine kinase domain (residues 712-990; NCBI CDD PTKc_HER2, cd05109).",
+                    "digest": "gpkyq48rchUXfr_dVmt7BXbjBYofmUvG",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+                      "type": "SequenceReference",
+                      "name": "NP_004439.2",
+                      "aliases": [
+                        "ensembl:ENSP00000269571.4",
+                        "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+                        "refseq:NP_004439.2"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 711,
+                    "end": 990,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "type": "MappableConcept",
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3430",
+                    "conceptType": "Gene",
+                    "name": "ERBB2",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3430",
+                      "code": "HGNC:3430",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000141736",
+                          "code": "ENSG00000141736",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000141736"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:2064",
+                          "code": "2064",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/2064"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_004448.4",
+                          "code": "NM_004448.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_004448.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "17"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": null
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_oncogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
     "id": 0,

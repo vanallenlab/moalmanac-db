@@ -2,7 +2,10 @@
   "id": "prop:vtxr:341",
   "type": "VariantTherapeuticResponseProposition",
   "predicate": "predictSensitivityTo",
-  "subjectVariant": {},
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:UCEC",
     "conceptType": "Disease",
@@ -26,28 +29,6 @@
       ]
     }
   },
-  "biomarkers": [
-    {
-      "id": "bmkr.criterion:142",
-      "present": true,
-      "subject": {
-        "id": "bmkr:142",
-        "type": "CategoricalVariant",
-        "name": "MSI-L",
-        "constraints": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Microsatellite Stability"
-          },
-          {
-            "name": "status",
-            "value": "Microsatellite instability-low (MSI-L)"
-          }
-        ]
-      }
-    }
-  ],
   "objectTherapeutic": {
     "id": "txgrp:61",
     "membershipOperator": "AND",
@@ -219,5 +200,33 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:142",
+          "present": true,
+          "subject": {
+            "id": "bmkr:142",
+            "type": "CategoricalVariant",
+            "name": "MSI-L",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Microsatellite Stability"
+              },
+              {
+                "name": "status",
+                "value": "Microsatellite instability-low (MSI-L)"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }
