@@ -36,6 +36,7 @@ def test_diseases(dereferenced_records):
             )
             pytest.fail(error_message)
 
+
 def test_genes(dereferenced_records):
     """
     Assess if genes are following GKM Core schema for Mappable Concepts
@@ -57,10 +58,8 @@ def test_mappings(dereferenced_records):
     Assess if mappings are following GKM Core schema for Concept Mappings
     """
     for mapping in dereferenced_records["mappings"]:
-        # primary_coding_id is the join table's foreign key, not part of the GKM schema
-        record = {k: v for k, v in mapping.items() if k != "primary_coding_id"}
         try:
-            ConceptMapping.model_validate(record)
+            ConceptMapping.model_validate(mapping)
         except pydantic.ValidationError as e:
             error_message = (
                 f"Mapping failed to validate against GKM Core:\n"

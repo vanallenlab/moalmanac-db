@@ -988,6 +988,17 @@ class Mappings(BaseTable):
         FKSingle("coding_id", "coding", lambda db: db.codings),
     ]
 
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences `coding_id`, then removes `primary_coding_id`, which is the join table's foreign key
+        and is not part of the GKM Core concept mapping.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        super().dereference(db)
+        self.records = [strip_keys("primary_coding_id")(r) for r in self.records]
+
 
 class Propositions(BaseTable):
     """
