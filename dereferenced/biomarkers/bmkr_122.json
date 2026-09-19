@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_000213.1:p.Asp816Val",
         "digest": "nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_000213.1:p.Asp816Val",
-        "hgvs.p_short": "p.D816V",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_000213.1:p.Asp816Val",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.D816V"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 816,
           "sequence": "D"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "V"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "V"
+        }
       },
       "relations": []
     },

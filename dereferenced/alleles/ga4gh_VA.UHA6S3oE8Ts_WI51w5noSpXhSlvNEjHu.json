@@ -8,11 +8,18 @@
   ],
   "description": "VRS variation of NP_000133.1:p.Tyr373Cys",
   "digest": "UHA6S3oE8Ts_WI51w5noSpXhSlvNEjHu",
-  "hgvs.g": null,
-  "hgvs.c": null,
-  "hgvs.c_short": null,
-  "hgvs.p": "NP_000133.1:p.Tyr373Cys",
-  "hgvs.p_short": "p.Y373C",
+  "expressions": [
+    {
+      "syntax": "hgvs.p",
+      "value": "NP_000133.1:p.Tyr373Cys",
+      "extensions": [
+        {
+          "name": "hgvs.p_short",
+          "value": "p.Y373C"
+        }
+      ]
+    }
+  ],
   "location": {
     "id": "ga4gh:SL.g33H1Cf5jJONJO2upu64mfFipyfSK6MZ",
     "type": "SequenceLocation",
@@ -38,6 +45,8 @@
     "end": 373,
     "sequence": "Y"
   },
-  "state_type": "LiteralSequenceExpression",
-  "state_value": "C"
+  "state": {
+    "type": "LiteralSequenceExpression",
+    "sequence": "C"
+  }
 }

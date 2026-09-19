@@ -18,11 +18,18 @@
           ],
           "description": "VRS variation of NP_002098.1:p.Lys28Met, generated with the VICC Variation Normalizer",
           "digest": "OfwVrrqBRkySvtnpfO30-a5S3_NUw3P6",
-          "hgvs.g": null,
-          "hgvs.c": null,
-          "hgvs.c_short": null,
-          "hgvs.p": "NP_002098.1:p.Lys28Met",
-          "hgvs.p_short": "p.K28M",
+          "expressions": [
+            {
+              "syntax": "hgvs.p",
+              "value": "NP_002098.1:p.Lys28Met",
+              "extensions": [
+                {
+                  "name": "hgvs.p_short",
+                  "value": "p.K28M"
+                }
+              ]
+            }
+          ],
           "location": {
             "id": "ga4gh:SL._IRpRraJX9DRf4zdTMt615TYq-_pQaMG",
             "type": "SequenceLocation",
@@ -48,8 +55,10 @@
             "end": 28,
             "sequence": "K"
           },
-          "state_type": "LiteralSequenceExpression",
-          "state_value": "M"
+          "state": {
+            "type": "LiteralSequenceExpression",
+            "sequence": "M"
+          }
         },
         "relations": []
       },

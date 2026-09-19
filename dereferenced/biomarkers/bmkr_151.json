@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_004447.2:p.Ala692Val",
         "digest": "Asy9WpmrMOSunO4H7D3OU7t4MvIbBWK9",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_004447.2:p.Ala692Val",
-        "hgvs.p_short": "p.A692V",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004447.2:p.Ala692Val",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.A692V"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.zgMYyYar7JOGCMcyd4F4CKRQMoBqM7qY",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 692,
           "sequence": "A"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "V"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "V"
+        }
       },
       "relations": []
     },

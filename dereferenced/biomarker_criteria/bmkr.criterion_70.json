@@ -18,11 +18,18 @@
           ],
           "description": "VRS variation of NP_005219.2:p.Thr790Met",
           "digest": "sMA9h8fzDi0RvweMlxtD0_Oi8B-JZ1V-",
-          "hgvs.g": null,
-          "hgvs.c": null,
-          "hgvs.c_short": null,
-          "hgvs.p": "NP_005219.2:p.Thr790Met",
-          "hgvs.p_short": "p.T790M",
+          "expressions": [
+            {
+              "syntax": "hgvs.p",
+              "value": "NP_005219.2:p.Thr790Met",
+              "extensions": [
+                {
+                  "name": "hgvs.p_short",
+                  "value": "p.T790M"
+                }
+              ]
+            }
+          ],
           "location": {
             "id": "ga4gh:SL.UOSDv-_5QNbKqgbCf--isFjvNZ5ZST09",
             "type": "SequenceLocation",
@@ -48,8 +55,10 @@
             "end": 790,
             "sequence": "T"
           },
-          "state_type": "LiteralSequenceExpression",
-          "state_value": "M"
+          "state": {
+            "type": "LiteralSequenceExpression",
+            "sequence": "M"
+          }
         },
         "relations": []
       },

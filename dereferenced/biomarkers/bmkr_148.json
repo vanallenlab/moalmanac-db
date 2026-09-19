@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_004447.2:p.Tyr646Ser",
         "digest": "DQqLTUMpwlXsTmBYuKdu55Ep5DeVKUfw",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_004447.2:p.Tyr646Ser",
-        "hgvs.p_short": "p.Y646S",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004447.2:p.Tyr646Ser",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.Y646S"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.7PJtwRMwSyrWxfU3VBIOb5LbGlGxJs2n",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 646,
           "sequence": "Y"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "S"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "S"
+        }
       },
       "relations": []
     },

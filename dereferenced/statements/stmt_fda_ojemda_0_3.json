@@ -208,11 +208,18 @@
                     ],
                     "description": "VRS variation of NP_004324.2:p.Val600Lys",
                     "digest": "pfWn9x9oFBRzGda1xXcOrE-BrX0R__N8",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_004324.2:p.Val600Lys",
-                    "hgvs.p_short": "p.V600K",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004324.2:p.Val600Lys",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.V600K"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.t-3DrWALhgLdXHsupI-e-M00aL3HgK3y",
                       "type": "SequenceLocation",
@@ -238,8 +245,10 @@
                       "end": 600,
                       "sequence": "V"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "K"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "K"
+                    }
                   },
                   "relations": []
                 },

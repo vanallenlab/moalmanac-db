@@ -357,10 +357,11 @@ class Alleles(BaseTable):
     tables:
     - SequenceLocations (initial key: `location`, resulting key: `location`)
 
-    After foreign keys are resolved, each record's keys are reordered to `id`, `type`, `name`,
-    `aliases`, `description`, `digest`, `hgvs.g`, `hgvs.c`, `hgvs.c_short`, `hgvs.p`, `hgvs.p_short`,
-    `location`, `state_type`, `state_value` — `replace_key` moves a resolved key to the end of the
-    dict even when its name is unchanged, so this reorder is needed to restore the source field order.
+    After foreign keys are resolved, the flat `hgvs.*` keys are folded into a VRS `expressions` list
+    and the `state_*` keys are folded into a VRS `state` object. Each record's keys are then
+    reordered to `id`, `type`, `name`, `aliases`, `description`, `digest`, `expressions`, `location`,
+    `state` — `replace_key` moves a resolved key to the end of the dict even when its name is unchanged,
+    so this reorder is needed to restore the source field order.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the allele records.
@@ -370,11 +371,71 @@ class Alleles(BaseTable):
         FKSingle("location", "location", lambda db: db.sequence_locations),
     ]
 
+    @staticmethod
+    def build_expressions(record: dict) -> None:
+        """
+        Folds `hgvs.g`, `hgvs.c`, `hgvs.c_short`, `hgvs.p`, and `hgvs.p_short` into an `expressions`
+        list, in place.
+
+        Each non-null `hgvs.g`, `hgvs.c`, and `hgvs.p` becomes an expression of the form
+        `{"syntax": key, "value": value}`; null values are omitted, since a VRS Expression requires a
+        string `value`. `hgvs.c_short` and `hgvs.p_short` are not valid VRS syntaxes, so each is attached
+        as an extension, named for its referenced key, on the corresponding `hgvs.c` or `hgvs.p`
+        expression. A short form with no corresponding long form is dropped, as there is no expression
+        to attach it to.
+
+        Args:
+            record (dict): An allele record with flat `hgvs.*` keys.
+        """
+        short_forms = {
+            "hgvs.c": record.pop("hgvs.c_short"),
+            "hgvs.p": record.pop("hgvs.p_short"),
+        }
+        expressions = []
+        for syntax in ("hgvs.g", "hgvs.c", "hgvs.p"):
+            value = record.pop(syntax)
+            if value is None:
+                continue
+            expression = {"syntax": syntax, "value": value}
+            if short_forms.get(syntax) is not None:
+                expression["extensions"] = [
+                    {"name": f"{syntax}_short", "value": short_forms[syntax]},
+                ]
+            expressions.append(expression)
+        record["expressions"] = expressions
+
+    @staticmethod
+    def build_state(record: dict) -> None:
+        """
+        Folds `state_type`, `state_sequence`, `state_length`, and `state_repeat_subunit_length` into
+        a `state` object, in place.
+
+        `state_type` and `state_sequence` become `type` and `sequence`. `state_length` and
+        `state_repeat_subunit_length` become `length` and `repeatSubunitLength`, and are only included
+        for a `ReferenceLengthExpression`, the only state type that defines them; they are null for
+        all other state types.
+
+        Args:
+            record (dict): An allele record with flat `state_*` keys.
+        """
+        state = {
+            "type": record.pop("state_type"),
+            "sequence": record.pop("state_sequence"),
+        }
+        length = record.pop("state_length")
+        repeat_subunit_length = record.pop("state_repeat_subunit_length")
+        if state["type"] == "ReferenceLengthExpression":
+            state["length"] = length
+            state["repeatSubunitLength"] = repeat_subunit_length
+        record["state"] = state
+
     def dereference(self, db: Database) -> None:
         if self._resolved:
             return
         super().dereference(db)
         for record in self.records:
+            self.build_expressions(record)
+            self.build_state(record)
             self.reorder_keys(
                 record,
                 [
@@ -384,14 +445,9 @@ class Alleles(BaseTable):
                     "aliases",
                     "description",
                     "digest",
-                    "hgvs.g",
-                    "hgvs.c",
-                    "hgvs.c_short",
-                    "hgvs.p",
-                    "hgvs.p_short",
+                    "expressions",
                     "location",
-                    "state_type",
-                    "state_value",
+                    "state",
                 ],
             )
 

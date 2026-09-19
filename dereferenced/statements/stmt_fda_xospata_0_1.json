@@ -234,11 +234,18 @@
                     ],
                     "description": "VRS variation of NP_004110.2:p.Asp835Tyr",
                     "digest": "5IlCMFNnlu-2_HkwIZZSXGH2e6okHl2W",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_004110.2:p.Asp835Tyr",
-                    "hgvs.p_short": "p.D835Y",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004110.2:p.Asp835Tyr",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.D835Y"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
                       "type": "SequenceLocation",
@@ -264,8 +271,10 @@
                       "end": 835,
                       "sequence": "D"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "Y"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "Y"
+                    }
                   },
                   "relations": []
                 },

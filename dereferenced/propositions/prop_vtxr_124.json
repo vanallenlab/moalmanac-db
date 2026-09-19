@@ -136,11 +136,18 @@
                   ],
                   "description": "VRS variation of NP_000133.1:p.Arg248Cys",
                   "digest": "6fDQOuVnlKrDjTq3rkMY-1UHbT41h332",
-                  "hgvs.g": null,
-                  "hgvs.c": null,
-                  "hgvs.c_short": null,
-                  "hgvs.p": "NP_000133.1:p.Arg248Cys",
-                  "hgvs.p_short": "p.R248C",
+                  "expressions": [
+                    {
+                      "syntax": "hgvs.p",
+                      "value": "NP_000133.1:p.Arg248Cys",
+                      "extensions": [
+                        {
+                          "name": "hgvs.p_short",
+                          "value": "p.R248C"
+                        }
+                      ]
+                    }
+                  ],
                   "location": {
                     "id": "ga4gh:SL.60nnfAgrzhZopUQU1HdoEDIqpIzQBOiE",
                     "type": "SequenceLocation",
@@ -166,8 +173,10 @@
                     "end": 248,
                     "sequence": "R"
                   },
-                  "state_type": "LiteralSequenceExpression",
-                  "state_value": "C"
+                  "state": {
+                    "type": "LiteralSequenceExpression",
+                    "sequence": "C"
+                  }
                 },
                 "relations": []
               },

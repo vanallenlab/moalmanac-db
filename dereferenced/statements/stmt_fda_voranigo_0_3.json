@@ -208,11 +208,18 @@
                     ],
                     "description": "VRS variation of NP_005887.2:p.Arg132Leu",
                     "digest": "2zh_S3hn7AWJd00rhirLhhDW8VcVBo9N",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_005887.2:p.Arg132Leu",
-                    "hgvs.p_short": "p.R132L",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005887.2:p.Arg132Leu",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.R132L"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.c1wumiCWSPL2vagoeYClRf5Z1SuyrIdx",
                       "type": "SequenceLocation",
@@ -238,8 +245,10 @@
                       "end": 132,
                       "sequence": "R"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "L"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "L"
+                    }
                   },
                   "relations": []
                 },

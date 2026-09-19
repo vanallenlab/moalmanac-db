@@ -8,18 +8,25 @@
       "allele": {
         "id": "ga4gh:VA.kAxvBo041Uk8NB2ofSx_oSlei1LUdrAG",
         "type": "Allele",
-        "name": "NP_004110.2:p.I836del",
+        "name": "NP_004110.2:p.Ile836del",
         "aliases": [
           "NP_004110.2:p.I836del",
           "FLT3 p.I836del"
         ],
         "description": "VRS variation of NP_004110.2:p.I836del",
         "digest": "kAxvBo041Uk8NB2ofSx_oSlei1LUdrAG",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": null,
-        "hgvs.p_short": "p.I836del",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004110.2:p.Ile836del",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.I836del"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.m0RvuwlsAgZZKCRcmPhITDwDO3DljCA8",
           "type": "SequenceLocation",
@@ -45,8 +52,12 @@
           "end": 836,
           "sequence": "I"
         },
-        "state_type": "ReferenceLengthExpression",
-        "state_value": ""
+        "state": {
+          "type": "ReferenceLengthExpression",
+          "sequence": "",
+          "length": 0,
+          "repeatSubunitLength": 1
+        }
       },
       "relations": []
     },

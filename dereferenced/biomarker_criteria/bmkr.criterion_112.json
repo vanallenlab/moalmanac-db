@@ -18,11 +18,18 @@
           ],
           "description": "VRS variation of NP_002159.2:p.Arg172Met",
           "digest": "9BOlPSowhYbGI4EQavf1Slsj922_xMqJ",
-          "hgvs.g": null,
-          "hgvs.c": null,
-          "hgvs.c_short": null,
-          "hgvs.p": "NP_002159.2:p.Arg172Met",
-          "hgvs.p_short": "p.R172M",
+          "expressions": [
+            {
+              "syntax": "hgvs.p",
+              "value": "NP_002159.2:p.Arg172Met",
+              "extensions": [
+                {
+                  "name": "hgvs.p_short",
+                  "value": "p.R172M"
+                }
+              ]
+            }
+          ],
           "location": {
             "id": "ga4gh:SL.UuG3IrLVJV7S2Qjtt99SWVQuiYDLlHxa",
             "type": "SequenceLocation",
@@ -48,8 +55,10 @@
             "end": 172,
             "sequence": "R"
           },
-          "state_type": "LiteralSequenceExpression",
-          "state_value": "M"
+          "state": {
+            "type": "LiteralSequenceExpression",
+            "sequence": "M"
+          }
         },
         "relations": []
       },

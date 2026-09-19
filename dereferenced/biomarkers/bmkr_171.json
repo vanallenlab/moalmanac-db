@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_004976.2:p.Gly12Val",
         "digest": "AhXGahW4SCTEgBSXlABoqX7N4mWXL-MD",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_004976.2:p.Gly12Val",
-        "hgvs.p_short": "p.G12V",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004976.2:p.Gly12Val",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.G12V"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.ovJR3lKrIflg4zDUU3Q-XH715XkwgTJl",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 12,
           "sequence": "G"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "V"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "V"
+        }
       },
       "relations": []
     },

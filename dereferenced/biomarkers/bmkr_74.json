@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_005887.2:p.Arg132Cys",
         "digest": "lAST62ntkEaXy6RDDOF1V4C3jd-jaAJ5",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_005887.2:p.Arg132Cys",
-        "hgvs.p_short": "p.R132C",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_005887.2:p.Arg132Cys",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.R132C"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.c1wumiCWSPL2vagoeYClRf5Z1SuyrIdx",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 132,
           "sequence": "R"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "C"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "C"
+        }
       },
       "relations": []
     },

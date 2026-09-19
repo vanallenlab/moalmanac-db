@@ -18,11 +18,18 @@
           ],
           "description": "VRS variation of NP_006197.1:p.Asp842Val",
           "digest": "Dy7soaZQU1vH9Eb93xG_pJyhu7xTDDC9",
-          "hgvs.g": null,
-          "hgvs.c": null,
-          "hgvs.c_short": null,
-          "hgvs.p": "NP_006197.1:p.Asp842Val",
-          "hgvs.p_short": "p.D842V",
+          "expressions": [
+            {
+              "syntax": "hgvs.p",
+              "value": "NP_006197.1:p.Asp842Val",
+              "extensions": [
+                {
+                  "name": "hgvs.p_short",
+                  "value": "p.D842V"
+                }
+              ]
+            }
+          ],
           "location": {
             "id": "ga4gh:SL.xuh2OFm73UN7_0uLySrRY2Xe3FW7KJ5h",
             "type": "SequenceLocation",
@@ -48,8 +55,10 @@
             "end": 842,
             "sequence": "D"
           },
-          "state_type": "LiteralSequenceExpression",
-          "state_value": "V"
+          "state": {
+            "type": "LiteralSequenceExpression",
+            "sequence": "V"
+          }
         },
         "relations": []
       },

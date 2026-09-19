@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_000133.1:p.Ser249Cys",
         "digest": "lCQZ8ie3k9M8N7wpd4BxHSpFYLKd0fVI",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_000133.1:p.Ser249Cys",
-        "hgvs.p_short": "p.S249C",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_000133.1:p.Ser249Cys",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.S249C"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.grxGJfSaMBBsfK5DECZSAECGGUC1gixU",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 249,
           "sequence": "S"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "C"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "C"
+        }
       },
       "relations": []
     },

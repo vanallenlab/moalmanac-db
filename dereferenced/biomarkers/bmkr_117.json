@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_004110.2:p.Asp835Glu",
         "digest": "Nv1XTacktYzkx3bUln7SzYVpMCmHnl34",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_004110.2:p.Asp835Glu",
-        "hgvs.p_short": "p.D835E",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004110.2:p.Asp835Glu",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.D835E"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 835,
           "sequence": "D"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "E"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "E"
+        }
       },
       "relations": []
     },

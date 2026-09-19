@@ -234,11 +234,18 @@
                     ],
                     "description": "VRS variation of NP_004447.2:p.Tyr646Phe",
                     "digest": "oYK6HfZD2veVeRV_OCMXdMY8mM2k8riu",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_004447.2:p.Tyr646Phe",
-                    "hgvs.p_short": "p.Y646F",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004447.2:p.Tyr646Phe",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.Y646F"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.7PJtwRMwSyrWxfU3VBIOb5LbGlGxJs2n",
                       "type": "SequenceLocation",
@@ -264,8 +271,10 @@
                       "end": 646,
                       "sequence": "Y"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "F"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "F"
+                    }
                   },
                   "relations": []
                 },

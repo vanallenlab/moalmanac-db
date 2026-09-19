@@ -393,11 +393,18 @@
                     ],
                     "description": "VRS variation of NP_005219.2:p.Leu858Arg",
                     "digest": "S41CcMJT2bcd8R4-qXZWH1PoHWNtG2PZ",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_005219.2:p.Leu858Arg",
-                    "hgvs.p_short": "p.L858R",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005219.2:p.Leu858Arg",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.L858R"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.v0_edynH98OIu-0QPVT5anCSOriAFSDQ",
                       "type": "SequenceLocation",
@@ -423,8 +430,10 @@
                       "end": 858,
                       "sequence": "L"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "R"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "R"
+                    }
                   },
                   "relations": []
                 },

@@ -15,11 +15,18 @@
         ],
         "description": "VRS variation of NP_004110.2:p.Ile836Asn",
         "digest": "uAt9RLe5vhtcqDHUNglU4H_0mbs5KhBz",
-        "hgvs.g": null,
-        "hgvs.c": null,
-        "hgvs.c_short": null,
-        "hgvs.p": "NP_004110.2:p.Ile836Asn",
-        "hgvs.p_short": "p.I836N",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004110.2:p.Ile836Asn",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.I836N"
+              }
+            ]
+          }
+        ],
         "location": {
           "id": "ga4gh:SL.m0RvuwlsAgZZKCRcmPhITDwDO3DljCA8",
           "type": "SequenceLocation",
@@ -45,8 +52,10 @@
           "end": 836,
           "sequence": "I"
         },
-        "state_type": "LiteralSequenceExpression",
-        "state_value": "N"
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "N"
+        }
       },
       "relations": []
     },

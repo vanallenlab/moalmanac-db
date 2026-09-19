@@ -234,11 +234,18 @@
                     ],
                     "description": "VRS variation of NP_066124.1:p.Met918Thr",
                     "digest": "hEybNB_CeKflfFhT5AKOU5i1lgZPP-aS",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_066124.1:p.Met918Thr",
-                    "hgvs.p_short": "p.M918T",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_066124.1:p.Met918Thr",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.M918T"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.oIeqSfOEuqO7KNOPt8YUIa9vo1f6yMao",
                       "type": "SequenceLocation",
@@ -264,8 +271,10 @@
                       "end": 918,
                       "sequence": "M"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "T"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "T"
+                    }
                   },
                   "relations": []
                 },

@@ -361,11 +361,18 @@
                     ],
                     "description": "VRS variation of NP_005148.2:p.Thr315Ile",
                     "digest": "D6NzpWXKqBnbcZZrXNSXj4tMUwROKbsQ",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_005148.2:p.Thr315Ile",
-                    "hgvs.p_short": "p.T315I",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005148.2:p.Thr315Ile",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.T315I"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.jGElwyBPYNWI-BkFFHKfgLJynt9zuNPs",
                       "type": "SequenceLocation",
@@ -391,8 +398,10 @@
                       "end": 315,
                       "sequence": "T"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "I"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "I"
+                    }
                   },
                   "relations": []
                 },

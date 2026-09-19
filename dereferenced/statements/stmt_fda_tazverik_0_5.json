@@ -234,11 +234,18 @@
                     ],
                     "description": "VRS variation of NP_004447.2:p.Ala682Gly, generated with the VICC Variation Normalizer",
                     "digest": "0XRkkEA2HWTplj8pneW7IzKzkJh_VTdi",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_004447.2:p.Ala682Gly",
-                    "hgvs.p_short": "p.A682G",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004447.2:p.Ala682Gly",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.A682G"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.K46cEnNhN_EnyHbnGqPUSZJsrdHH-Ema",
                       "type": "SequenceLocation",
@@ -264,8 +271,10 @@
                       "end": 682,
                       "sequence": "A"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "G"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "G"
+                    }
                   },
                   "relations": []
                 },

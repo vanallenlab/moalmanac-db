@@ -174,11 +174,18 @@
                   ],
                   "description": "VRS variation of NP_004976.2:p.Gly12Cys",
                   "digest": "udBCHwlrf8xNiRy_19bLi-h5LhnZLgCt",
-                  "hgvs.g": null,
-                  "hgvs.c": null,
-                  "hgvs.c_short": null,
-                  "hgvs.p": "NP_004976.2:p.Gly12Cys",
-                  "hgvs.p_short": "p.G12C",
+                  "expressions": [
+                    {
+                      "syntax": "hgvs.p",
+                      "value": "NP_004976.2:p.Gly12Cys",
+                      "extensions": [
+                        {
+                          "name": "hgvs.p_short",
+                          "value": "p.G12C"
+                        }
+                      ]
+                    }
+                  ],
                   "location": {
                     "id": "ga4gh:SL.ovJR3lKrIflg4zDUU3Q-XH715XkwgTJl",
                     "type": "SequenceLocation",
@@ -204,8 +211,10 @@
                     "end": 12,
                     "sequence": "G"
                   },
-                  "state_type": "LiteralSequenceExpression",
-                  "state_value": "C"
+                  "state": {
+                    "type": "LiteralSequenceExpression",
+                    "sequence": "C"
+                  }
                 },
                 "relations": []
               },

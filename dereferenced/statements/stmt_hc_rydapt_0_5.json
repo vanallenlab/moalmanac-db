@@ -393,11 +393,18 @@
                     ],
                     "description": "VRS variation of NP_004110.2:p.Asp835Asn",
                     "digest": "mSwj38b0KeHcoBAkKnA1oe1NvNS94mw3",
-                    "hgvs.g": null,
-                    "hgvs.c": null,
-                    "hgvs.c_short": null,
-                    "hgvs.p": "NP_004110.2:p.Asp835Asn",
-                    "hgvs.p_short": "p.D835N",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004110.2:p.Asp835Asn",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.D835N"
+                          }
+                        ]
+                      }
+                    ],
                     "location": {
                       "id": "ga4gh:SL.2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
                       "type": "SequenceLocation",
@@ -423,8 +430,10 @@
                       "end": 835,
                       "sequence": "D"
                     },
-                    "state_type": "LiteralSequenceExpression",
-                    "state_value": "N"
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "N"
+                    }
                   },
                   "relations": []
                 },

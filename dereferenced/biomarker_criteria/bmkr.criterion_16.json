@@ -18,11 +18,18 @@
           ],
           "description": "VRS variation of NP_004324.2:p.Val600Glu",
           "digest": "j4XnsLZcdzDIYa5pvvXM7t1wn9OITr0L",
-          "hgvs.g": null,
-          "hgvs.c": null,
-          "hgvs.c_short": null,
-          "hgvs.p": "NP_004324.2:p.Val600Glu",
-          "hgvs.p_short": "p.V600E",
+          "expressions": [
+            {
+              "syntax": "hgvs.p",
+              "value": "NP_004324.2:p.Val600Glu",
+              "extensions": [
+                {
+                  "name": "hgvs.p_short",
+                  "value": "p.V600E"
+                }
+              ]
+            }
+          ],
           "location": {
             "id": "ga4gh:SL.t-3DrWALhgLdXHsupI-e-M00aL3HgK3y",
             "type": "SequenceLocation",
@@ -48,8 +55,10 @@
             "end": 600,
             "sequence": "V"
           },
-          "state_type": "LiteralSequenceExpression",
-          "state_value": "E"
+          "state": {
+            "type": "LiteralSequenceExpression",
+            "sequence": "E"
+          }
         },
         "relations": []
       },
