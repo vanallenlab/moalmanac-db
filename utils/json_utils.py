@@ -1,8 +1,12 @@
-import json
 import typing
 
 
-def get_record_by_key_value(records: list[dict], value: typing.Any, key: str = "id", strict: bool = True) -> typing.Optional[dict] | None:
+def get_record_by_key_value(
+    records: list[dict],
+    value: typing.Any,
+    key: str = "id",
+    strict: bool = True,
+) -> typing.Optional[dict] | None:
     """
     Retrieves a single record where a specified key matches the given value.
     Raises ValueError if zero or multiple matches are found, unless strict is False.
@@ -21,24 +25,36 @@ def get_record_by_key_value(records: list[dict], value: typing.Any, key: str = "
     """
     matches = get_records_by_key_value(records=records, key=key, value=value)
     if strict and len(matches) != 1:
-        raise ValueError(f"Warning: Expected 1 result for {key} == {value}, found {len(matches)}.")
+        raise ValueError(
+            f"Warning: Expected 1 result for {key} == {value}, found {len(matches)}."
+        )
     return matches[0] if matches else None
 
-def get_records_by_key_value(records: list[dict], value: typing.Any, key: str = "id") -> list[dict]:
+
+def get_records_by_key_value(
+    records: list[dict],
+    value: typing.Any,
+    key: str = "id",
+) -> list[dict]:
     """
-        Retrieves a records from a list where a specified key matches the given value.
+    Retrieves a records from a list where a specified key matches the given value.
 
-        Args:
-            records (list[dict]): A list of dictionaries to search.
-            value (any): The value to match.
-            key (str): The key to check (default: "id").
+    Args:
+        records (list[dict]): A list of dictionaries to search.
+        value (any): The value to match.
+        key (str): The key to check (default: "id").
 
-        Returns:
-            list[dict]: A list of matching records.
+    Returns:
+        list[dict]: A list of matching records.
     """
     return [record for record in records if record.get(key) == value]
 
-def rename_key(dictionary: dict, old_key: str, new_key: str) -> None:
+
+def rename_key(
+    dictionary: dict,
+    old_key: str,
+    new_key: str,
+) -> None:
     """
     Renames a key in a dictionary.
 
