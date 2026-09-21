@@ -270,7 +270,8 @@ class BaseTable:
 
     def write_records(self, output_dir: str, quiet: bool = False) -> None:
         """
-        Writes each record in this table to its own JSON file in the given directory.
+        Writes each record in this table to its own JSON file in the given directory, creating the
+        directory if it does not exist.
 
         Each file is named `{record['id']}.json`, with semicolons replaced by
         underscores and spaces replaced by dashes.
@@ -279,6 +280,7 @@ class BaseTable:
             output_dir (str): Directory path to write the individual record files into.
             quiet (bool): Suppress print statements if True.
         """
+        os.makedirs(output_dir, exist_ok=True)
         for record in self.records:
             filename = f"{str(record['id']).replace(':', '_').replace(' ', '-')}.json"
             path = os.path.join(output_dir, filename)
@@ -471,11 +473,12 @@ def is_fusion(record: dict) -> bool:
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables, then shapes the resolved allele, location, genes, and
-    copy change into Cat-VRS constraint objects. This table references the following tables:
+    dereferences keys that reference other tables, then shapes the resolved allele, location, genes, function,
+    and copy change into Cat-VRS constraint objects. This table references the following tables:
     - Alleles (initial key: `allele`, resulting key: `allele`)
     - SequenceLocations (initial key: `location`, resulting key: `location`)
     - Genes (initial key: `genes`, resulting key: `genes`)
+    - FunctionConsequences (initial key: `function`, resulting key: `function`)
     - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
 
     The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. The dereferenced
@@ -486,9 +489,10 @@ class Biomarkers(BaseTable):
     `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known; a
     fusion with only one known partner gets a trailing `UnspecifiedElement` for the other. Each
     gene has its `extensions` stripped before embedding (`Genes.build_extensions` output is only meant
-    for a gene's own standalone/per-concept record). The dereferenced copy change, when present, is
-    wrapped as a `CopyChangeConstraint`. All resulting constraints are merged into a single `constraints`
-    list.
+    for a gene's own standalone/per-concept record). The dereferenced function consequence, when present,
+    is wrapped as a `FunctionConstraint`. The dereferenced copy change, when present, is wrapped as a
+    `CopyChangeConstraint`. All resulting constraints are merged into a single `constraints` list, ordered
+    allele, location, gene, function, copy change.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the biomarker records.
@@ -523,7 +527,22 @@ class Biomarkers(BaseTable):
                 },
             },
         ),
-        FKList("genes", "genes", lambda db: db.genes, post=strip_keys("extensions")),
+        FKList(
+            "genes",
+            "genes",
+            lambda db: db.genes,
+            post=strip_keys("extensions"),
+        ),
+        FKSingle(
+            "function",
+            "function",
+            lambda db: db.function_consequences,
+            nullable=True,
+            post=lambda record: {
+                "type": "FunctionConstraint",
+                "functionConsequence": record,
+            },
+        ),
         FKSingle(
             "copyChange",
             "copyChange",
@@ -538,21 +557,23 @@ class Biomarkers(BaseTable):
 
     def wrap_constraints(self) -> None:
         """
-        Wraps each record's dereferenced allele, location, genes, and copy change into Cat-VRS
+        Wraps each record's dereferenced allele, location, genes, function, and copy change into Cat-VRS
         constraint objects.
 
         The allele, when present, becomes a `DefiningAlleleConstraint`. The location, when present,
         becomes a `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
         per gene. Fusion records collapse their genes into a single `AdjacencyConstraint`, with
         `orderKnown` True only when both fusion partners are known (two genes); a single-gene fusion
-        has an `UnspecifiedElement` appended to `adjoinedElements` for the unknown partner. The copy change, when
-        present, becomes a `CopyChangeConstraint`. All resulting constraints are merged into a single
-        `constraints` list.
+        has an `UnspecifiedElement` appended to `adjoinedElements` for the unknown partner. The function
+        consequence, when present, becomes a `FunctionConstraint` and follows the gene constraints. The copy
+        change, when present, becomes a `CopyChangeConstraint`. All resulting constraints are merged into a
+        single `constraints` list.
         """
         for record in self.records:
             allele_constraint = record.pop("allele")
             location_constraint = record.pop("location")
             genes = record.pop("genes")
+            function_constraint = record.pop("function")
             copy_change = record.pop("copyChange")
             if is_fusion(record):
                 adjoined_elements = list(genes)
@@ -572,11 +593,13 @@ class Biomarkers(BaseTable):
                 ]
             allele_constraints = [allele_constraint] if allele_constraint else []
             location_constraints = [location_constraint] if location_constraint else []
+            function_constraints = [function_constraint] if function_constraint else []
             copy_changes = [copy_change] if copy_change else []
             record["constraints"] = (
                 allele_constraints
                 + location_constraints
                 + gene_constraints
+                + function_constraints
                 + copy_changes
             )
 
@@ -781,6 +804,21 @@ class Documents(BaseTable):
             return
         super().dereference(db)
         self.convert_fields_to_extensions()
+
+
+class FunctionConsequences(BaseTable):
+    """
+    Represents the FunctionConsequences table. This class inherits common functionality from the BaseTable class
+    and dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `primary_coding_id`, resulting key: `primaryCoding`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the function consequence records.
+    """
+
+    foreign_keys = [
+        FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+    ]
 
 
 class Genes(BaseTable):
@@ -1269,6 +1307,7 @@ class Database:
         copy_change (CopyChanges): An instance of the CopyChanges class.
         diseases (Diseases): An instance of the Diseases class.
         documents (Documents): An instance of the Documents class.
+        function_consequences (FunctionConsequences): An instance of the FunctionConsequences class.
         genes (Genes): An instance of the Genes class.
         indications (Indications): An instance of the Indications class.
         mappings (Mappings): An instance of the Mappings class.
@@ -1291,6 +1330,7 @@ class Database:
     copy_change: CopyChanges
     diseases: Diseases
     documents: Documents
+    function_consequences: FunctionConsequences
     genes: Genes
     indications: Indications
     mappings: Mappings
@@ -1401,6 +1441,7 @@ _CONCEPT_DIRS = [
     ("copy_change", os.path.join("dereferenced", "copy_change")),
     ("diseases", os.path.join("dereferenced", "diseases")),
     ("documents", os.path.join("dereferenced", "documents")),
+    ("function_consequences", os.path.join("dereferenced", "function_consequences")),
     ("genes", os.path.join("dereferenced", "genes")),
     ("indications", os.path.join("dereferenced", "indications")),
     ("mappings", os.path.join("dereferenced", "mappings")),
@@ -1462,6 +1503,9 @@ def write_all_concepts(
         ),
         documents=Documents(
             records=read.json_records(file=input_paths["documents"]),
+        ),
+        function_consequences=FunctionConsequences(
+            records=read.json_records(file=input_paths["function_consequences"]),
         ),
         genes=Genes(
             records=read.json_records(file=input_paths["genes"]),
@@ -1529,6 +1573,7 @@ def main(input_paths):
     copy_change = read.json_records(file=input_paths["copy_change"])
     diseases = read.json_records(file=input_paths["diseases"])
     documents = read.json_records(file=input_paths["documents"])
+    function_consequences = read.json_records(file=input_paths["function_consequences"])
     genes = read.json_records(file=input_paths["genes"])
     indications = read.json_records(file=input_paths["indications"])
     mappings = read.json_records(file=input_paths["mappings"])
@@ -1560,6 +1605,7 @@ def main(input_paths):
     copy_change = CopyChanges(records=copy_change)
     diseases = Diseases(records=diseases)
     documents = Documents(records=documents)
+    function_consequences = FunctionConsequences(records=function_consequences)
     genes = Genes(records=genes)
     indications = Indications(records=indications)
     mappings = Mappings(records=mappings)
@@ -1583,6 +1629,7 @@ def main(input_paths):
         copy_change=copy_change,
         diseases=diseases,
         documents=documents,
+        function_consequences=function_consequences,
         genes=genes,
         indications=indications,
         mappings=mappings,
@@ -1656,6 +1703,11 @@ if __name__ == "__main__":
         "--documents",
         help="json detailing db documents",
         default=os.path.join("referenced", "documents.json"),
+    )
+    arg_parser.add_argument(
+        "--function-consequences",
+        help="json detailing db function consequences",
+        default=os.path.join("referenced", "function_consequences.json"),
     )
     arg_parser.add_argument(
         "--genes",
@@ -1746,6 +1798,7 @@ if __name__ == "__main__":
         "copy_change": args.copy_change,
         "diseases": args.diseases,
         "documents": args.documents,
+        "function_consequences": args.function_consequences,
         "genes": args.genes,
         "indications": args.indications,
         "mappings": args.mappings,
