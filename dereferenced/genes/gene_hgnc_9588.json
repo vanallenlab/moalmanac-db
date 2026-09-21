@@ -2,6 +2,14 @@
   "id": "gene:hgnc:9588",
   "conceptType": "Gene",
   "name": "PTEN",
+  "primaryCoding": {
+    "id": "coding:hgnc:9588",
+    "code": "HGNC:9588",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,532 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 845
+    },
+    {
       "name": "location",
       "value": "10q23.31"
     },
     {
       "name": "location_sortable",
       "value": "10q23.31"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8).",
+        "digest": "5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+          "type": "SequenceReference",
+          "name": "NP_000305.3",
+          "aliases": [
+            "ensembl:ENSP00000361021.3",
+            "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "refseq:NP_000305.3"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 403,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.Z74q59BsGUVekZ_j6NiOF0hEySHhuQGb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Z74q59BsGUVekZ_j6NiOF0hEySHhuQGb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 27,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.prAJdr9Yb9p458Ou983fmrle_dTMO-xi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 2. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "prAJdr9Yb9p458Ou983fmrle_dTMO-xi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 26,
+          "end": 55,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Bn7wpwveA3vEs_4Rp4yvFfJrbAIHIvvf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "Bn7wpwveA3vEs_4Rp4yvFfJrbAIHIvvf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 54,
+          "end": 70,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.PL0ZHtdc_m1UkYNFbXiX6Ly82WHEf4wb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "PL0ZHtdc_m1UkYNFbXiX6Ly82WHEf4wb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 69,
+          "end": 85,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.BJTBfzejGiuL4gQTKbCjRRtFhBkPXn_j",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "BJTBfzejGiuL4gQTKbCjRRtFhBkPXn_j",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 84,
+          "end": 164,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.f89e43aEFr1t8icfw1TW1NpwXV6H-hrP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "f89e43aEFr1t8icfw1TW1NpwXV6H-hrP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 164,
+          "end": 212,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.N_7IWL3TlJQwMCXzHtapQvJ4GTkPgxT8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "N_7IWL3TlJQwMCXzHtapQvJ4GTkPgxT8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 211,
+          "end": 267,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5uGxY4a-T0BR9VKJKHjH_XoAOONuvs0a",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 8.",
+          "digest": "5uGxY4a-T0BR9VKJKHjH_XoAOONuvs0a",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 267,
+          "end": 342,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JiQbqBY8Fb40Nf4mMScdY--Pphtys_05",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000305.3, the protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to Exon 9.",
+          "digest": "JiQbqBY8Fb40Nf4mMScdY--Pphtys_05",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "type": "SequenceReference",
+            "name": "NP_000305.3",
+            "aliases": [
+              "ensembl:ENSP00000361021.3",
+              "ga4gh:SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+              "refseq:NP_000305.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PTEN (refseq:NM_000314.8), corresponding to the Refseq protein accession NP_000305.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.w7LxW0PSaVPNsPFvOL24weFjHcfaHyOi",
+            "residueAlphabet": "aa"
+          },
+          "start": 342,
+          "end": 403,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.E2lmiqympQj4rq0NjWh0IkwBanio9gbG",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000314.8, the MANE Select coding transcript for PTEN.",
+        "digest": "E2lmiqympQj4rq0NjWh0IkwBanio9gbG",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+          "type": "SequenceReference",
+          "name": "NM_000314.8",
+          "aliases": [
+            "ensembl:ENST00000371953.8",
+            "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "refseq:NM_000314.8"
+          ],
+          "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 8515,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.XEwGieUJ189yI5OOea3JhD-OotuxXPbh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 1.",
+          "digest": "XEwGieUJ189yI5OOea3JhD-OotuxXPbh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 924,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.v0zC_7U0gTQtoThIbr8a7g3-Siran1JI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 2.",
+          "digest": "v0zC_7U0gTQtoThIbr8a7g3-Siran1JI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 924,
+          "end": 1009,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wvzCKufk-10oX1EOujFITYxiR2HLkLG4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 3.",
+          "digest": "wvzCKufk-10oX1EOujFITYxiR2HLkLG4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1009,
+          "end": 1054,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3-azkyJBwrUk_EDuq_RkTmGev-4xn0EP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 4.",
+          "digest": "3-azkyJBwrUk_EDuq_RkTmGev-4xn0EP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1054,
+          "end": 1098,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.VMI_1wxB1YYJEHdMAK2gc3uoIG_wIdID",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 5.",
+          "digest": "VMI_1wxB1YYJEHdMAK2gc3uoIG_wIdID",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1098,
+          "end": 1337,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.DuZ3M5vMuGVswzy4Tu9FLHeCFiwqcaGI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 6.",
+          "digest": "DuZ3M5vMuGVswzy4Tu9FLHeCFiwqcaGI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1337,
+          "end": 1479,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.mEgjcsmYbKuW4km5KCwr4NzB72ZodZtB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 7.",
+          "digest": "mEgjcsmYbKuW4km5KCwr4NzB72ZodZtB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1479,
+          "end": 1646,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._7Hfd2xZgTUE52FP_d1kzslkBNyoLise",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 8.",
+          "digest": "_7Hfd2xZgTUE52FP_d1kzslkBNyoLise",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1646,
+          "end": 1871,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iPnXPQYTpQPuPUs0IR46IGN44HC3-8B4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000314.8, the MANE Select coding transcript for PTEN, corresponding to Exon 9.",
+          "digest": "iPnXPQYTpQPuPUs0IR46IGN44HC3-8B4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "type": "SequenceReference",
+            "name": "NM_000314.8",
+            "aliases": [
+              "ensembl:ENST00000371953.8",
+              "ga4gh:SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+              "refseq:NM_000314.8"
+            ],
+            "description": "The MANE Select coding transcript for PTEN, corresponding to the Refseq transcript accession NM_000314.8.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.RIfJpMILSswfBAZcymNnpBgP4JGSRZWL",
+            "residueAlphabet": "na"
+          },
+          "start": 1871,
+          "end": 8515,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:9588",
-    "code": "HGNC:9588",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9588"
-    ]
-  }
+  ]
 }

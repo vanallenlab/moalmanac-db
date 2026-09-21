@@ -1,199 +1,11 @@
 {
   "id": "prop:vtxr:52",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:1",
-      "type": "CategoricalVariant",
-      "name": "ER positive",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Estrogen receptor (ER)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": "bmkr:2",
-      "type": "CategoricalVariant",
-      "name": "HER2-negative",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Human epidermal growth factor receptor 2 (HER2)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Negative"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": "bmkr:59",
-      "type": "CategoricalVariant",
-      "name": "PIK3CA somatic variants",
-      "genes": [
-        {
-          "id": "gene:hgnc:8975",
-          "conceptType": "Gene",
-          "name": "PIK3CA",
-          "mappings": [
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ensembl:ensg00000121879",
-                "code": "ENSG00000121879",
-                "system": "https://www.ensembl.org",
-                "iris": [
-                  "https://www.ensembl.org/id/ENSG00000121879"
-                ]
-              }
-            },
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ncbi:5290",
-                "code": "5290",
-                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/5290"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:refseq:NM_006218.4",
-                "code": "NM_006218.4",
-                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_006218.4"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "3q26.32"
-            },
-            {
-              "name": "location_sortable",
-              "value": "03q26.32"
-            }
-          ],
-          "primaryCoding": {
-            "id": "coding:hgnc:8975",
-            "code": "HGNC:8975",
-            "system": "https://genenames.org",
-            "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8975"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Somatic Variant"
-        },
-        {
-          "name": "chromosome",
-          "value": "7"
-        },
-        {
-          "name": "start_position",
-          "value": null
-        },
-        {
-          "name": "end_position",
-          "value": null
-        },
-        {
-          "name": "reference_allele",
-          "value": null
-        },
-        {
-          "name": "alternate_allele",
-          "value": null
-        },
-        {
-          "name": "cdna_change",
-          "value": null
-        },
-        {
-          "name": "protein_change",
-          "value": null
-        },
-        {
-          "name": "variant_annotation",
-          "value": null
-        },
-        {
-          "name": "exon",
-          "value": null
-        },
-        {
-          "name": "rsid",
-          "value": null
-        },
-        {
-          "name": "hgvsg",
-          "value": null
-        },
-        {
-          "name": "hgvsc",
-          "value": null
-        },
-        {
-          "name": "requires_oncogenic",
-          "value": false
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:BRCA",
     "conceptType": "Disease",
@@ -223,7 +35,7 @@
     "therapies": [
       {
         "id": "tx:ncit:C102564",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Capivasertib",
         "mappings": [
           {
@@ -280,7 +92,7 @@
       },
       {
         "id": "tx:ncit:C1379",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Fulvestrant",
         "mappings": [
           {
@@ -362,5 +174,232 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:1",
+          "present": true,
+          "subject": {
+            "id": "bmkr:1",
+            "type": "CategoricalVariant",
+            "name": "ER positive",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Estrogen receptor (ER)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:2",
+          "present": true,
+          "subject": {
+            "id": "bmkr:2",
+            "type": "CategoricalVariant",
+            "name": "HER2-negative",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Human epidermal growth factor receptor 2 (HER2)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Negative"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:59",
+          "present": true,
+          "subject": {
+            "id": "bmkr:59",
+            "type": "CategoricalVariant",
+            "name": "PIK3CA somatic variants",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_006209.2, the protein product of the MANE Select coding transcript for PIK3CA (refseq:NM_006218.4).",
+                  "digest": "LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.km8C9FORJbErpAh7Ub63pZLUzEm-au9D",
+                    "type": "SequenceReference",
+                    "name": "NP_006209.2",
+                    "aliases": [
+                      "ensembl:ENSP00000263967.3",
+                      "ga4gh:SQ.km8C9FORJbErpAh7Ub63pZLUzEm-au9D",
+                      "refseq:NP_006209.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for PIK3CA (refseq:NM_006218.4), corresponding to the Refseq protein accession NP_006209.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.km8C9FORJbErpAh7Ub63pZLUzEm-au9D",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 1068,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:8975",
+                  "conceptType": "Gene",
+                  "name": "PIK3CA",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:8975",
+                    "code": "HGNC:8975",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8975"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000121879",
+                        "code": "ENSG00000121879",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000121879"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:5290",
+                        "code": "5290",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/5290"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_006218.4",
+                        "code": "NM_006218.4",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_006218.4"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "7"
+              },
+              {
+                "name": "start_position",
+                "value": null
+              },
+              {
+                "name": "end_position",
+                "value": null
+              },
+              {
+                "name": "reference_allele",
+                "value": null
+              },
+              {
+                "name": "alternate_allele",
+                "value": null
+              },
+              {
+                "name": "cdna_change",
+                "value": null
+              },
+              {
+                "name": "protein_change",
+                "value": null
+              },
+              {
+                "name": "variant_annotation",
+                "value": null
+              },
+              {
+                "name": "exon",
+                "value": null
+              },
+              {
+                "name": "rsid",
+                "value": null
+              },
+              {
+                "name": "hgvsg",
+                "value": null
+              },
+              {
+                "name": "hgvsc",
+                "value": null
+              },
+              {
+                "name": "requires_oncogenic",
+                "value": false
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

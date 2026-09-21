@@ -1,25 +1,11 @@
 {
   "id": "prop:vtxr:918",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:182",
-      "type": "CategoricalVariant",
-      "name": "HLA-A*02:01",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Haplotype genotype"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:UM",
     "conceptType": "Disease",
@@ -59,7 +45,7 @@
   },
   "objectTherapeutic": {
     "id": "tx:ncit:C94208",
-    "conceptType": "Drug",
+    "conceptType": "Therapy",
     "name": "Tebentafusp",
     "mappings": [
       {
@@ -139,5 +125,29 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C94208"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:182",
+          "present": true,
+          "subject": {
+            "id": "bmkr:182",
+            "type": "CategoricalVariant",
+            "name": "HLA-A*02:01",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Haplotype genotype"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

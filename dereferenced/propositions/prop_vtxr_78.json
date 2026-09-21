@@ -1,116 +1,11 @@
 {
   "id": "prop:vtxr:78",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:24",
-      "type": "CategoricalVariant",
-      "name": "EGFR positive",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "EGFR"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    },
-    {
-      "id": "bmkr:25",
-      "type": "CategoricalVariant",
-      "name": "Wild type KRAS",
-      "genes": [
-        {
-          "id": "gene:hgnc:6407",
-          "conceptType": "Gene",
-          "name": "KRAS",
-          "mappings": [
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ensembl:ensg00000133703",
-                "code": "ENSG00000133703",
-                "system": "https://www.ensembl.org",
-                "iris": [
-                  "https://www.ensembl.org/id/ENSG00000133703"
-                ]
-              }
-            },
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ncbi:3845",
-                "code": "3845",
-                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/3845"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:refseq:NM_004985.5",
-                "code": "NM_004985.5",
-                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "12p12.1"
-            },
-            {
-              "name": "location_sortable",
-              "value": "12p12.1"
-            }
-          ],
-          "primaryCoding": {
-            "id": "coding:hgnc:6407",
-            "code": "HGNC:6407",
-            "system": "https://genenames.org",
-            "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Wild type"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:COADREAD",
     "conceptType": "Disease",
@@ -140,7 +35,7 @@
     "therapies": [
       {
         "id": "tx:ncit:C1723",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Cetuximab",
         "mappings": [
           {
@@ -223,7 +118,7 @@
       },
       {
         "id": "tx:ncit:C62040",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Irinotecan",
         "mappings": [
           {
@@ -306,7 +201,7 @@
       },
       {
         "id": "tx:ncit:C505",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Fluorouracil",
         "mappings": [
           {
@@ -388,5 +283,148 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:24",
+          "present": true,
+          "subject": {
+            "id": "bmkr:24",
+            "type": "CategoricalVariant",
+            "name": "EGFR positive",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "EGFR"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:25",
+          "present": true,
+          "subject": {
+            "id": "bmkr:25",
+            "type": "CategoricalVariant",
+            "name": "Wild type KRAS",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5).",
+                  "digest": "fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                    "type": "SequenceReference",
+                    "name": "NP_004976.2",
+                    "aliases": [
+                      "ensembl:ENSP00000308495.3",
+                      "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                      "refseq:NP_004976.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 188,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:6407",
+                  "conceptType": "Gene",
+                  "name": "KRAS",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:6407",
+                    "code": "HGNC:6407",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000133703",
+                        "code": "ENSG00000133703",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000133703"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:3845",
+                        "code": "3845",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/3845"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_004985.5",
+                        "code": "NM_004985.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004985.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Wild type"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

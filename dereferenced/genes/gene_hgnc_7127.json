@@ -2,6 +2,14 @@
   "id": "gene:hgnc:7127",
   "conceptType": "Gene",
   "name": "MLH1",
+  "primaryCoding": {
+    "id": "coding:hgnc:7127",
+    "code": "HGNC:7127",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1032 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 30
+    },
+    {
       "name": "location",
       "value": "3p22.2"
     },
     {
       "name": "location_sortable",
       "value": "03p22.2"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4).",
+        "digest": "Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+          "type": "SequenceReference",
+          "name": "NP_000240.1",
+          "aliases": [
+            "ensembl:ENSP00000231790.2",
+            "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "refseq:NP_000240.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 756,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.8Ty5cpC0mYSGDZXDowp_GOtbzPTIqLns",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "8Ty5cpC0mYSGDZXDowp_GOtbzPTIqLns",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 39,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Us7iZZZk4ZRSzOL70wx621ShCdwDX5yd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Us7iZZZk4ZRSzOL70wx621ShCdwDX5yd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 38,
+          "end": 69,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9-CM8GwFjLkNn5mRfgejs1fau5yM0n4z",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 3.",
+          "digest": "9-CM8GwFjLkNn5mRfgejs1fau5yM0n4z",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 69,
+          "end": 102,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.n9H3PVuAw8O2o_xQgZCp1OJ1gaADmNLm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "n9H3PVuAw8O2o_xQgZCp1OJ1gaADmNLm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 102,
+          "end": 127,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nXYAXctpVTeL_xrvqW3xMyagxYtebBuZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "nXYAXctpVTeL_xrvqW3xMyagxYtebBuZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 126,
+          "end": 151,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.orSctDr73ljrWnQTSIromqmpFyvhnUv4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "orSctDr73ljrWnQTSIromqmpFyvhnUv4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 151,
+          "end": 182,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nhTbgBvR7oKZDMR6GQo9QmZhXGc5xBrv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "nhTbgBvR7oKZDMR6GQo9QmZhXGc5xBrv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 181,
+          "end": 196,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YLvrcUWEOssP-Cljl2gZkczvttHhIwui",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "YLvrcUWEOssP-Cljl2gZkczvttHhIwui",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 196,
+          "end": 226,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cgVlAMVsFZGrbPm5Wiw9gFxsbAvynbA2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "cgVlAMVsFZGrbPm5Wiw9gFxsbAvynbA2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 225,
+          "end": 264,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.U7Gwv_4x0kA_uDm1R7e3-Yfb8MViXYja",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "U7Gwv_4x0kA_uDm1R7e3-Yfb8MViXYja",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 263,
+          "end": 295,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gk1YQEfjHg11q5IyGjmYQ74otXmBEmSj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 11. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "gk1YQEfjHg11q5IyGjmYQ74otXmBEmSj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 294,
+          "end": 346,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MkuPHA3d0DLb_qvulxYXXUAExZnKhMsy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "MkuPHA3d0DLb_qvulxYXXUAExZnKhMsy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 346,
+          "end": 470,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vLKV2RvaKl7RnnMP2JFWfHJMcmO4Fts8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "vLKV2RvaKl7RnnMP2JFWfHJMcmO4Fts8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 469,
+          "end": 520,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LqLUbjGiVcNYnwExuISGMKe6kOQ0wbu6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "LqLUbjGiVcNYnwExuISGMKe6kOQ0wbu6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 519,
+          "end": 556,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZOg2LFE9FZHGlZNzEnYVYPdjAHF5Cdek",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "ZOg2LFE9FZHGlZNzEnYVYPdjAHF5Cdek",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 555,
+          "end": 577,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NWuFml2-j3O3mFcMPEznU2Axu-ysn18K",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 16.",
+          "digest": "NWuFml2-j3O3mFcMPEznU2Axu-ysn18K",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 577,
+          "end": 632,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.M_tFX1ohJcTvX5zFpsbJwfw9CWnWVwOj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 17.",
+          "digest": "M_tFX1ohJcTvX5zFpsbJwfw9CWnWVwOj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 632,
+          "end": 663,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2G0E70ZS71oG5BGVC6-7mGY5MlaNE6xN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 18.",
+          "digest": "2G0E70ZS71oG5BGVC6-7mGY5MlaNE6xN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 663,
+          "end": 701,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2fPXGgif78RA6GlUD7_uk48cC84jGqhg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to Exon 19.",
+          "digest": "2fPXGgif78RA6GlUD7_uk48cC84jGqhg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "type": "SequenceReference",
+            "name": "NP_000240.1",
+            "aliases": [
+              "ensembl:ENSP00000231790.2",
+              "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+              "refseq:NP_000240.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "residueAlphabet": "aa"
+          },
+          "start": 701,
+          "end": 756,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.vthYo4OSDQZtykw0YH08ydeeI_R1ZfrQ",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000249.4, the MANE Select coding transcript for MLH1.",
+        "digest": "vthYo4OSDQZtykw0YH08ydeeI_R1ZfrQ",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+          "type": "SequenceReference",
+          "name": "NM_000249.4",
+          "aliases": [
+            "ensembl:ENST00000231790.7",
+            "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "refseq:NM_000249.4"
+          ],
+          "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 2494,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.XuKEvECwWFJ9MFUM6yAUCRwKDEhKY4Br",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 1.",
+          "digest": "XuKEvECwWFJ9MFUM6yAUCRwKDEhKY4Br",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 146,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KxdUd8S3EyQ9IOkYDsX4U7W5fvZ332Qh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 2.",
+          "digest": "KxdUd8S3EyQ9IOkYDsX4U7W5fvZ332Qh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 146,
+          "end": 237,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MWIgNN4AnZjq2lqEIFSNyr66DyuCUiEr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 3.",
+          "digest": "MWIgNN4AnZjq2lqEIFSNyr66DyuCUiEr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 237,
+          "end": 336,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2qQbQ96l2r6CZ5aaeRISHJxBKs8g6YIM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 4.",
+          "digest": "2qQbQ96l2r6CZ5aaeRISHJxBKs8g6YIM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 336,
+          "end": 410,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6mew1K3YPGV2AEfD9uA8XGxqsPOiUloZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 5.",
+          "digest": "6mew1K3YPGV2AEfD9uA8XGxqsPOiUloZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 410,
+          "end": 483,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.VbQfQkogsSb_hVTPSyY7f4nuVDkFDqjA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 6.",
+          "digest": "VbQfQkogsSb_hVTPSyY7f4nuVDkFDqjA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 483,
+          "end": 575,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-6s1JlC993ugZo7qKZxaah0HAFQ6v37Z",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 7.",
+          "digest": "-6s1JlC993ugZo7qKZxaah0HAFQ6v37Z",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 575,
+          "end": 618,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6aAE13ja0f1cLSHWKb37g_MDCP8eNdfU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 8.",
+          "digest": "6aAE13ja0f1cLSHWKb37g_MDCP8eNdfU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 618,
+          "end": 707,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lyaZ9LYsw-TDjAXRffva90Rt2HqBQtJC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 9.",
+          "digest": "lyaZ9LYsw-TDjAXRffva90Rt2HqBQtJC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 707,
+          "end": 820,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kr4EAv812bRocqk9Z5tqxDKoIOvIQs5J",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 10.",
+          "digest": "kr4EAv812bRocqk9Z5tqxDKoIOvIQs5J",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 820,
+          "end": 914,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sWSsHRNWk0FN2IL70rR1PbnjPtYwQZKX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 11.",
+          "digest": "sWSsHRNWk0FN2IL70rR1PbnjPtYwQZKX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 914,
+          "end": 1068,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JliG85p-H862MrWu2P2yMwloZh4Vi6nP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 12.",
+          "digest": "JliG85p-H862MrWu2P2yMwloZh4Vi6nP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 1068,
+          "end": 1439,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0qyi3rh7IK3w6_DEF_gzy9rm1U7L6iEi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 13.",
+          "digest": "0qyi3rh7IK3w6_DEF_gzy9rm1U7L6iEi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 1439,
+          "end": 1588,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qZ_pMKoJ9fFFVjOfqcQAXeOkeAocuWkk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 14.",
+          "digest": "qZ_pMKoJ9fFFVjOfqcQAXeOkeAocuWkk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 1588,
+          "end": 1697,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cJBz7sNvlu3scYRqabCnaMCejQlieDCm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 15.",
+          "digest": "cJBz7sNvlu3scYRqabCnaMCejQlieDCm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 1697,
+          "end": 1761,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vRqmz3AnWVVYnh-WtH8MznGP2IowhONu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 16.",
+          "digest": "vRqmz3AnWVVYnh-WtH8MznGP2IowhONu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 1761,
+          "end": 1926,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.82PQnIs2QmuaeDxC-X38krAf2efHj1TQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 17.",
+          "digest": "82PQnIs2QmuaeDxC-X38krAf2efHj1TQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 1926,
+          "end": 2019,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Xz5G_gN8Njf6g5oGlttm6vXutK1n0d-f",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 18.",
+          "digest": "Xz5G_gN8Njf6g5oGlttm6vXutK1n0d-f",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 2019,
+          "end": 2133,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vnBtlqlS-hFDxFH0F7g_Plon45ID0hnv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000249.4, the MANE Select coding transcript for MLH1, corresponding to Exon 19.",
+          "digest": "vnBtlqlS-hFDxFH0F7g_Plon45ID0hnv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "type": "SequenceReference",
+            "name": "NM_000249.4",
+            "aliases": [
+              "ensembl:ENST00000231790.7",
+              "ga4gh:SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+              "refseq:NM_000249.4"
+            ],
+            "description": "The MANE Select coding transcript for MLH1, corresponding to the Refseq transcript accession NM_000249.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.civKxB4lFGDaCc9f9ysIRzQ2XdeatfG6",
+            "residueAlphabet": "na"
+          },
+          "start": 2133,
+          "end": 2494,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7127",
-    "code": "HGNC:7127",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
-    ]
-  }
+  ]
 }

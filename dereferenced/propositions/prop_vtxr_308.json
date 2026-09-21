@@ -1,137 +1,11 @@
 {
   "id": "prop:vtxr:308",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:10",
-      "type": "CategoricalVariant",
-      "name": "EGFR Exon 19 (Deletion)",
-      "genes": [
-        {
-          "id": "gene:hgnc:3236",
-          "conceptType": "Gene",
-          "name": "EGFR",
-          "mappings": [
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ensembl:ensg00000146648",
-                "code": "ENSG00000146648",
-                "system": "https://www.ensembl.org",
-                "iris": [
-                  "https://www.ensembl.org/id/ENSG00000146648"
-                ]
-              }
-            },
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ncbi:1956",
-                "code": "1956",
-                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/1956"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:refseq:NM_005228.5",
-                "code": "NM_005228.5",
-                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "7p11.2"
-            },
-            {
-              "name": "location_sortable",
-              "value": "07p11.2"
-            }
-          ],
-          "primaryCoding": {
-            "id": "coding:hgnc:3236",
-            "code": "HGNC:3236",
-            "system": "https://genenames.org",
-            "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Somatic Variant"
-        },
-        {
-          "name": "chromosome",
-          "value": "7"
-        },
-        {
-          "name": "start_position",
-          "value": null
-        },
-        {
-          "name": "end_position",
-          "value": null
-        },
-        {
-          "name": "reference_allele",
-          "value": null
-        },
-        {
-          "name": "alternate_allele",
-          "value": null
-        },
-        {
-          "name": "cdna_change",
-          "value": null
-        },
-        {
-          "name": "protein_change",
-          "value": null
-        },
-        {
-          "name": "variant_annotation",
-          "value": "Deletion"
-        },
-        {
-          "name": "exon",
-          "value": 19
-        },
-        {
-          "name": "rsid",
-          "value": null
-        },
-        {
-          "name": "hgvsg",
-          "value": null
-        },
-        {
-          "name": "hgvsc",
-          "value": null
-        },
-        {
-          "name": "requires_oncogenic",
-          "value": true
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:NSCLC",
     "conceptType": "Disease",
@@ -161,7 +35,7 @@
     "therapies": [
       {
         "id": "tx:ncit:C1282",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Carboplatin",
         "mappings": [
           {
@@ -244,7 +118,7 @@
       },
       {
         "id": "tx:ncit:C116377",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Osimertinib",
         "mappings": [
           {
@@ -327,7 +201,7 @@
       },
       {
         "id": "tx:ncit:C61614",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Pemetrexed",
         "mappings": [
           {
@@ -409,5 +283,168 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:10",
+          "present": true,
+          "subject": {
+            "id": "bmkr:10",
+            "type": "CategoricalVariant",
+            "name": "EGFR Exon 19 (Deletion)",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 19.",
+                  "digest": "d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                    "type": "SequenceReference",
+                    "name": "NP_005219.2",
+                    "aliases": [
+                      "ensembl:ENSP00000275493.2",
+                      "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                      "refseq:NP_005219.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 728,
+                  "end": 761,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:3236",
+                  "conceptType": "Gene",
+                  "name": "EGFR",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:3236",
+                    "code": "HGNC:3236",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000146648",
+                        "code": "ENSG00000146648",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000146648"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:1956",
+                        "code": "1956",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/1956"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_005228.5",
+                        "code": "NM_005228.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "7"
+              },
+              {
+                "name": "start_position",
+                "value": null
+              },
+              {
+                "name": "end_position",
+                "value": null
+              },
+              {
+                "name": "reference_allele",
+                "value": null
+              },
+              {
+                "name": "alternate_allele",
+                "value": null
+              },
+              {
+                "name": "cdna_change",
+                "value": null
+              },
+              {
+                "name": "protein_change",
+                "value": null
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Deletion"
+              },
+              {
+                "name": "exon",
+                "value": 19
+              },
+              {
+                "name": "rsid",
+                "value": null
+              },
+              {
+                "name": "hgvsg",
+                "value": null
+              },
+              {
+                "name": "hgvsc",
+                "value": null
+              },
+              {
+                "name": "requires_oncogenic",
+                "value": true
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

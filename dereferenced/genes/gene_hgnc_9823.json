@@ -2,6 +2,14 @@
   "id": "gene:hgnc:9823",
   "conceptType": "Gene",
   "name": "RAD51D",
+  "primaryCoding": {
+    "id": "coding:hgnc:9823",
+    "code": "HGNC:9823",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9823"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,571 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 247
+    },
+    {
       "name": "location",
       "value": "17q12"
     },
     {
       "name": "location_sortable",
       "value": "17q12"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4).",
+        "digest": "IkXXRIfF7miGDktL6yDbsxBSu3OOpel1",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+          "type": "SequenceReference",
+          "name": "NP_002869.3",
+          "aliases": [
+            "ensembl:ENSP00000338790.6",
+            "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "refseq:NP_002869.3"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 328,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.hLL9RB8LaWR37WtDA-NPWNTuBKjyF4TM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "hLL9RB8LaWR37WtDA-NPWNTuBKjyF4TM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 28,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3Q-zhl5_Jiwi3pWVgryghXFwq9mVg7s2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "3Q-zhl5_Jiwi3pWVgryghXFwq9mVg7s2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 27,
+          "end": 48,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4Imc-J-wIteGkCe3dEThh6lLNP9LqlgG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "4Imc-J-wIteGkCe3dEThh6lLNP9LqlgG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 48,
+          "end": 88,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Ipbn5HtOI49TbX5VHuqjh_cncmG6IslL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Ipbn5HtOI49TbX5VHuqjh_cncmG6IslL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 87,
+          "end": 115,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.P8Ifw5-wKBOwwZB1xeswqd1zJ5p70aVP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 5.",
+          "digest": "P8Ifw5-wKBOwwZB1xeswqd1zJ5p70aVP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 115,
+          "end": 160,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0S46osy911R9hWxL1Y1gjuBi3BaUDUDe",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 6.",
+          "digest": "0S46osy911R9hWxL1Y1gjuBi3BaUDUDe",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 160,
+          "end": 192,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Nvhmebm_daGytZwU4IfKgySaB4Sz3HWj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Nvhmebm_daGytZwU4IfKgySaB4Sz3HWj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 192,
+          "end": 223,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jTpNXLNj1CReFT6fkZNDt0TUtofdIRzk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "jTpNXLNj1CReFT6fkZNDt0TUtofdIRzk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 222,
+          "end": 246,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CBvJ_tD-YxjvXRIZ58VnXIQ3oJfGKAQy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 9.",
+          "digest": "CBvJ_tD-YxjvXRIZ58VnXIQ3oJfGKAQy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 246,
+          "end": 301,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wkDnT_Mtg3LUkmtt3wJLPGmafi5Aj_K9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002869.3, the protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to Exon 10.",
+          "digest": "wkDnT_Mtg3LUkmtt3wJLPGmafi5Aj_K9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "type": "SequenceReference",
+            "name": "NP_002869.3",
+            "aliases": [
+              "ensembl:ENSP00000338790.6",
+              "ga4gh:SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+              "refseq:NP_002869.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for RAD51D (refseq:NM_002878.4), corresponding to the Refseq protein accession NP_002869.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.y1tRGdjAvXPNKaFBDDAe5JX5EUimorjo",
+            "residueAlphabet": "aa"
+          },
+          "start": 301,
+          "end": 328,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.sIdxCHPUHn8AQcK2NStvEhPtUIuai7aT",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_002878.4, the MANE Select coding transcript for RAD51D.",
+        "digest": "sIdxCHPUHn8AQcK2NStvEhPtUIuai7aT",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+          "type": "SequenceReference",
+          "name": "NM_002878.4",
+          "aliases": [
+            "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "refseq:NM_002878.4"
+          ],
+          "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 9966,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.eQsr6d55msSaneLRJb-roaWGUXytwfg3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 1.",
+          "digest": "eQsr6d55msSaneLRJb-roaWGUXytwfg3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 329,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vOR2-6Pu4v6HtfPk14cHXgod4nakBePU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 2.",
+          "digest": "vOR2-6Pu4v6HtfPk14cHXgod4nakBePU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 329,
+          "end": 391,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LA06Zm98ssNr5IzOFYJU91gXF19Dn4Tb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 3.",
+          "digest": "LA06Zm98ssNr5IzOFYJU91gXF19Dn4Tb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 391,
+          "end": 510,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JaBkJdIkMVXA1DQ02Tyq2iowhQBeiIxi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 4.",
+          "digest": "JaBkJdIkMVXA1DQ02Tyq2iowhQBeiIxi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 510,
+          "end": 592,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Vhbei6Qa4etQoKEibOwL6xPKtkZtJfBk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 5.",
+          "digest": "Vhbei6Qa4etQoKEibOwL6xPKtkZtJfBk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 592,
+          "end": 727,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TOVebaM8o2PCaUGnvFrtoP75b33QAt1z",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 6.",
+          "digest": "TOVebaM8o2PCaUGnvFrtoP75b33QAt1z",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 727,
+          "end": 823,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._TzMl0x_TTvB1dau3cNPeTpnWqpGMDf8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 7.",
+          "digest": "_TzMl0x_TTvB1dau3cNPeTpnWqpGMDf8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 823,
+          "end": 914,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tONSp6DkDOLeDDZJFaoJ2Z7Xd-ckOxfc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 8.",
+          "digest": "tONSp6DkDOLeDDZJFaoJ2Z7Xd-ckOxfc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 914,
+          "end": 985,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0mrvFLKEFU9lyrlqjCjfw1MEoMieK52f",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 9.",
+          "digest": "0mrvFLKEFU9lyrlqjCjfw1MEoMieK52f",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 985,
+          "end": 1150,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3W6sIZ-b7dZ_vh_HkGjfvuYyfxfVb5vU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002878.4, the MANE Select coding transcript for RAD51D, corresponding to Exon 10.",
+          "digest": "3W6sIZ-b7dZ_vh_HkGjfvuYyfxfVb5vU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "type": "SequenceReference",
+            "name": "NM_002878.4",
+            "aliases": [
+              "ga4gh:SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+              "refseq:NM_002878.4"
+            ],
+            "description": "The MANE Select coding transcript for RAD51D, corresponding to the Refseq transcript accession NM_002878.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.VDU4XPRbhi2rlHeTcu3pDcEOElSzo6Ae",
+            "residueAlphabet": "na"
+          },
+          "start": 1150,
+          "end": 9966,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:9823",
-    "code": "HGNC:9823",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9823"
-    ]
-  }
+  ]
 }

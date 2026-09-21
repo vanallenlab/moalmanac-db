@@ -1,41 +1,11 @@
 {
   "id": "prop:vtxr:928",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:184",
-      "type": "CategoricalVariant",
-      "name": "CCND1",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "CCND1"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:ncit:C4337",
     "conceptType": "Disease",
@@ -75,7 +45,7 @@
   },
   "objectTherapeutic": {
     "id": "tx:ncit:C81934",
-    "conceptType": "Drug",
+    "conceptType": "Therapy",
     "name": "Ibrutinib",
     "mappings": [
       {
@@ -155,5 +125,45 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C81934"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:184",
+          "present": true,
+          "subject": {
+            "id": "bmkr:184",
+            "type": "CategoricalVariant",
+            "name": "CCND1",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "CCND1"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

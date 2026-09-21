@@ -2,62 +2,90 @@
   "id": "bmkr:160",
   "type": "CategoricalVariant",
   "name": "ATR oncogenic variants",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:882",
-      "conceptType": "Gene",
-      "name": "ATR",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000175054",
-            "code": "ENSG00000175054",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000175054"
-            ]
-          }
+      "type": "DefiningLocationConstraint",
+      "location": {
+        "id": "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001175.2, the protein product of the MANE Select coding transcript for ATR (refseq:NM_001184.4).",
+        "digest": "F_qtQbfMiOKc-wr1QCtUimxtab32QOKL",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.u5Gzhlhn3KDy6pYiIe9mcVKXFMualGBl",
+          "type": "SequenceReference",
+          "name": "NP_001175.2",
+          "aliases": [
+            "ensembl:ENSP00000343741.4",
+            "ga4gh:SQ.u5Gzhlhn3KDy6pYiIe9mcVKXFMualGBl",
+            "refseq:NP_001175.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ATR (refseq:NM_001184.4), corresponding to the Refseq protein accession NP_001175.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.u5Gzhlhn3KDy6pYiIe9mcVKXFMualGBl",
+          "residueAlphabet": "aa"
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:545",
-            "code": "545",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/545"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_001184.4",
-            "code": "NM_001184.4",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_001184.4"
-            ]
-          }
+        "start": 0,
+        "end": 2644,
+        "sequence": null
+      },
+      "relations": [],
+      "matchCharacteristic": {
+        "primaryCoding": {
+          "code": "is_within",
+          "system": "ga4gh-gks-term:location-match"
         }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "3q23"
+      }
+    },
+    {
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:882",
+        "conceptType": "Gene",
+        "name": "ATR",
+        "primaryCoding": {
+          "id": "coding:hgnc:882",
+          "code": "HGNC:882",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:882"
+          ]
         },
-        {
-          "name": "location_sortable",
-          "value": "03q23"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:882",
-        "code": "HGNC:882",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:882"
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000175054",
+              "code": "ENSG00000175054",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000175054"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:545",
+              "code": "545",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/545"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_001184.4",
+              "code": "NM_001184.4",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_001184.4"
+              ]
+            }
+          }
         ]
       }
     }
@@ -117,10 +145,6 @@
     },
     {
       "name": "requires_oncogenic",
-      "value": true
-    },
-    {
-      "name": "_present",
       "value": true
     }
   ]

@@ -99,37 +99,11 @@
   "proposition": {
     "id": "prop:vtxr:202",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:61",
-        "type": "CategoricalVariant",
-        "name": "5q deletion",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Copy Number (arm level)"
-          },
-          {
-            "name": "chromosome",
-            "value": "5"
-          },
-          {
-            "name": "arm",
-            "value": "q"
-          },
-          {
-            "name": "direction",
-            "value": "Deletion"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:MDS",
       "conceptType": "Disease",
@@ -155,7 +129,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C2668",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Lenalidomide",
       "mappings": [
         {
@@ -235,10 +209,81 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2668"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:61",
+            "present": true,
+            "subject": {
+              "id": "bmkr:61",
+              "type": "CategoricalVariant",
+              "name": "5q deletion",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "The q arm of GRCh38 chromosome 5 (NC_000005.10), from the end of the centromere to the end of the chromosome.",
+                    "digest": "KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.aUiQCzCPZ2d0csHbMSbh2NzInhonSXwI",
+                      "type": "SequenceReference",
+                      "name": "NC_000005.10",
+                      "aliases": [
+                        "ga4gh:SQ.aUiQCzCPZ2d0csHbMSbh2NzInhonSXwI",
+                        "refseq:NC_000005.10"
+                      ],
+                      "description": "GRCh38 chromosome 5 (RefSeq NC_000005.10).",
+                      "moleculeType": "genomic",
+                      "refgetAccession": "SQ.aUiQCzCPZ2d0csHbMSbh2NzInhonSXwI",
+                      "residueAlphabet": "na"
+                    },
+                    "start": 50059807,
+                    "end": 181538259,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "CopyChangeConstraint",
+                  "copyChange": "loss"
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Copy Number (arm level)"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "5"
+                },
+                {
+                  "name": "arm",
+                  "value": "q"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

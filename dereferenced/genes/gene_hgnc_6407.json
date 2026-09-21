@@ -2,6 +2,14 @@
   "id": "gene:hgnc:6407",
   "conceptType": "Gene",
   "name": "KRAS",
+  "primaryCoding": {
+    "id": "coding:hgnc:6407",
+    "code": "HGNC:6407",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,307 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 190
+    },
+    {
       "name": "location",
       "value": "12p12.1"
     },
     {
       "name": "location_sortable",
       "value": "12p12.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5).",
+        "digest": "fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+          "type": "SequenceReference",
+          "name": "NP_004976.2",
+          "aliases": [
+            "ensembl:ENSP00000308495.3",
+            "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "refseq:NP_004976.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 188,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.UiQzffM1GKT2bnuZUsDdXPfP6qicQ0E1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to Exon 2.",
+          "digest": "UiQzffM1GKT2bnuZUsDdXPfP6qicQ0E1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "type": "SequenceReference",
+            "name": "NP_004976.2",
+            "aliases": [
+              "ensembl:ENSP00000308495.3",
+              "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+              "refseq:NP_004976.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 37,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lwYiG1731nXatKfy6IeKpzuVpy77dRhw",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "lwYiG1731nXatKfy6IeKpzuVpy77dRhw",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "type": "SequenceReference",
+            "name": "NP_004976.2",
+            "aliases": [
+              "ensembl:ENSP00000308495.3",
+              "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+              "refseq:NP_004976.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "residueAlphabet": "aa"
+          },
+          "start": 37,
+          "end": 97,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.S_NWLIvdzljGrsNMyH8bjWv8kYU1D54a",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "S_NWLIvdzljGrsNMyH8bjWv8kYU1D54a",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "type": "SequenceReference",
+            "name": "NP_004976.2",
+            "aliases": [
+              "ensembl:ENSP00000308495.3",
+              "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+              "refseq:NP_004976.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "residueAlphabet": "aa"
+          },
+          "start": 96,
+          "end": 150,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dvZQG2wGmOwthzM06C-ySBxeVckRI2NE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004976.2, the protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to Exon 5.",
+          "digest": "dvZQG2wGmOwthzM06C-ySBxeVckRI2NE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "type": "SequenceReference",
+            "name": "NP_004976.2",
+            "aliases": [
+              "ensembl:ENSP00000308495.3",
+              "ga4gh:SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+              "refseq:NP_004976.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for KRAS (refseq:NM_004985.5), corresponding to the Refseq protein accession NP_004976.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.fytWhQSNGnA-86vDiQCxTSzgkk_WfQRS",
+            "residueAlphabet": "aa"
+          },
+          "start": 150,
+          "end": 188,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.-GfrhbzO5au7EY7RB1VwkAmGifB-rOLC",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004985.5, the MANE Select coding transcript for KRAS.",
+        "digest": "-GfrhbzO5au7EY7RB1VwkAmGifB-rOLC",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+          "type": "SequenceReference",
+          "name": "NM_004985.5",
+          "aliases": [
+            "ensembl:ENST00000311936.8",
+            "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "refseq:NM_004985.5"
+          ],
+          "description": "The MANE Select coding transcript for KRAS, corresponding to the Refseq transcript accession NM_004985.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5306,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.qPSuKKOZfbEz_bbAu8_XUAx16JzaOB5q",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004985.5, the MANE Select coding transcript for KRAS, corresponding to Exon 1.",
+          "digest": "qPSuKKOZfbEz_bbAu8_XUAx16JzaOB5q",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "type": "SequenceReference",
+            "name": "NM_004985.5",
+            "aliases": [
+              "ensembl:ENST00000311936.8",
+              "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+              "refseq:NM_004985.5"
+            ],
+            "description": "The MANE Select coding transcript for KRAS, corresponding to the Refseq transcript accession NM_004985.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 179,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.miMxyquKvDdBrgI545uRhDiNfV_0xpYb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004985.5, the MANE Select coding transcript for KRAS, corresponding to Exon 2.",
+          "digest": "miMxyquKvDdBrgI545uRhDiNfV_0xpYb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "type": "SequenceReference",
+            "name": "NM_004985.5",
+            "aliases": [
+              "ensembl:ENST00000311936.8",
+              "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+              "refseq:NM_004985.5"
+            ],
+            "description": "The MANE Select coding transcript for KRAS, corresponding to the Refseq transcript accession NM_004985.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "residueAlphabet": "na"
+          },
+          "start": 179,
+          "end": 301,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.A1GQ0h7shhtAcFcYajGMMtAJOnUESfGp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004985.5, the MANE Select coding transcript for KRAS, corresponding to Exon 3.",
+          "digest": "A1GQ0h7shhtAcFcYajGMMtAJOnUESfGp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "type": "SequenceReference",
+            "name": "NM_004985.5",
+            "aliases": [
+              "ensembl:ENST00000311936.8",
+              "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+              "refseq:NM_004985.5"
+            ],
+            "description": "The MANE Select coding transcript for KRAS, corresponding to the Refseq transcript accession NM_004985.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "residueAlphabet": "na"
+          },
+          "start": 301,
+          "end": 480,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WPtpjSmNB-JgcYcJOkiSE4HYimQG7D89",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004985.5, the MANE Select coding transcript for KRAS, corresponding to Exon 4.",
+          "digest": "WPtpjSmNB-JgcYcJOkiSE4HYimQG7D89",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "type": "SequenceReference",
+            "name": "NM_004985.5",
+            "aliases": [
+              "ensembl:ENST00000311936.8",
+              "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+              "refseq:NM_004985.5"
+            ],
+            "description": "The MANE Select coding transcript for KRAS, corresponding to the Refseq transcript accession NM_004985.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "residueAlphabet": "na"
+          },
+          "start": 480,
+          "end": 640,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4Y8RUbTPYn23TgZDAN8L9tsELNAnL0zc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004985.5, the MANE Select coding transcript for KRAS, corresponding to Exon 5.",
+          "digest": "4Y8RUbTPYn23TgZDAN8L9tsELNAnL0zc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "type": "SequenceReference",
+            "name": "NM_004985.5",
+            "aliases": [
+              "ensembl:ENST00000311936.8",
+              "ga4gh:SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+              "refseq:NM_004985.5"
+            ],
+            "description": "The MANE Select coding transcript for KRAS, corresponding to the Refseq transcript accession NM_004985.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.mV9x7yUE8hqh6UtCvnz8oC62CdAEpV4T",
+            "residueAlphabet": "na"
+          },
+          "start": 640,
+          "end": 5306,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:6407",
-    "code": "HGNC:6407",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6407"
-    ]
-  }
+  ]
 }

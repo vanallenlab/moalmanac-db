@@ -99,199 +99,11 @@
   "proposition": {
     "id": "prop:vtxr:110",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:1",
-        "type": "CategoricalVariant",
-        "name": "ER positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Estrogen receptor (ER)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      },
-      {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      },
-      {
-        "id": "bmkr:58",
-        "type": "CategoricalVariant",
-        "name": "ESR1 activating variants",
-        "genes": [
-          {
-            "id": "gene:hgnc:3467",
-            "conceptType": "Gene",
-            "name": "ESR1",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000091831",
-                  "code": "ENSG00000091831",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000091831"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:2099",
-                  "code": "2099",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/2099"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_000125.4",
-                  "code": "NM_000125.4",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000125.4"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "6q25.1-q25.2"
-              },
-              {
-                "name": "location_sortable",
-                "value": "06q25.1-q25.2"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:3467",
-              "code": "HGNC:3467",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "6"
-          },
-          {
-            "name": "start_position",
-            "value": null
-          },
-          {
-            "name": "end_position",
-            "value": null
-          },
-          {
-            "name": "reference_allele",
-            "value": null
-          },
-          {
-            "name": "alternate_allele",
-            "value": null
-          },
-          {
-            "name": "cdna_change",
-            "value": null
-          },
-          {
-            "name": "protein_change",
-            "value": null
-          },
-          {
-            "name": "variant_annotation",
-            "value": null
-          },
-          {
-            "name": "exon",
-            "value": null
-          },
-          {
-            "name": "rsid",
-            "value": null
-          },
-          {
-            "name": "hgvsg",
-            "value": null
-          },
-          {
-            "name": "hgvsc",
-            "value": null
-          },
-          {
-            "name": "requires_oncogenic",
-            "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:BRCA",
       "conceptType": "Disease",
@@ -317,7 +129,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C120211",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Elacestrant",
       "mappings": [
         {
@@ -371,10 +183,253 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C120211"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:1",
+            "present": true,
+            "subject": {
+              "id": "bmkr:1",
+              "type": "CategoricalVariant",
+              "name": "ER positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Estrogen receptor (ER)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:2",
+            "present": true,
+            "subject": {
+              "id": "bmkr:2",
+              "type": "CategoricalVariant",
+              "name": "HER2-negative",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Negative"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:58",
+            "present": true,
+            "subject": {
+              "id": "bmkr:58",
+              "type": "CategoricalVariant",
+              "name": "ESR1 activating variants",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.thGX8CTtcNkncOw3rgSDk0uL1txXvlWk",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Sequence spanning the length of refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4).",
+                    "digest": "thGX8CTtcNkncOw3rgSDk0uL1txXvlWk",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+                      "type": "SequenceReference",
+                      "name": "NP_000116.2",
+                      "aliases": [
+                        "ensembl:ENSP00000206249.3",
+                        "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+                        "refseq:NP_000116.2"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 0,
+                    "end": 595,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3467",
+                    "conceptType": "Gene",
+                    "name": "ESR1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3467",
+                      "code": "HGNC:3467",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000091831",
+                          "code": "ENSG00000091831",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000091831"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:2099",
+                          "code": "2099",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/2099"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_000125.4",
+                          "code": "NM_000125.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_000125.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "FunctionConstraint",
+                  "functionConsequence": {
+                    "id": "func:so:0002053",
+                    "name": "Gain-of-function",
+                    "primaryCoding": {
+                      "id": "coding:so:0002053",
+                      "name": "gain_of_function_variant",
+                      "system": "https://www.ebi.ac.uk/ols4/ontologies/so",
+                      "code": "SO:0002053",
+                      "iris": [
+                        "https://www.ebi.ac.uk/ols4/ontologies/so/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FSO_0002053"
+                      ]
+                    }
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "6"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": null
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_oncogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

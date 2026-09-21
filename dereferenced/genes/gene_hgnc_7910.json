@@ -2,6 +2,15 @@
   "id": "gene:hgnc:7910",
   "conceptType": "Gene",
   "name": "NPM1",
+  "primaryCoding": {
+    "id": "coding:hgnc:7910",
+    "code": "HGNC:7910",
+    "name": "NPM1",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7910"
+    ]
+  },
   "mappings": [
     {
       "relation": "relatedMatch",
@@ -39,21 +48,620 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 100
+    },
+    {
       "name": "location",
       "value": "5q35.1"
     },
     {
       "name": "location_sortable",
       "value": "05q35.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.45UaTcp2-Lkif7Xkbd1-yujhsd1lcm5h",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7).",
+        "digest": "45UaTcp2-Lkif7Xkbd1-yujhsd1lcm5h",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+          "type": "SequenceReference",
+          "name": "NP_002511.1",
+          "aliases": [
+            "ensembl:ENSP00000296930.5",
+            "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "refseq:NP_002511.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 294,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.eOYT0lm2_WB2qQB1b2b55T6uCSJ_NfR-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "eOYT0lm2_WB2qQB1b2b55T6uCSJ_NfR-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 20,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iOG9W8qwSu6QcQQlKeSZDorYsysEbku-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "iOG9W8qwSu6QcQQlKeSZDorYsysEbku-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 19,
+          "end": 46,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.C47Rm06HTEh5aI_skLzaaGnAx8G6Nctg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 3.",
+          "digest": "C47Rm06HTEh5aI_skLzaaGnAx8G6Nctg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 46,
+          "end": 86,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SqA84g5BFWDLUEDIlGRjKNJd5mJWfZo3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "SqA84g5BFWDLUEDIlGRjKNJd5mJWfZo3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 86,
+          "end": 118,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3tvOFJu_PEFZ6T6ppodKMuwPvs5W-BH0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "3tvOFJu_PEFZ6T6ppodKMuwPvs5W-BH0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 117,
+          "end": 153,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.faZIbR8Tym8bSrDtkYH8kFULXG23DSTf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "faZIbR8Tym8bSrDtkYH8kFULXG23DSTf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 153,
+          "end": 175,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kv2VUgEXQD_T-dqDzyLQ8UIp587gtypt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "kv2VUgEXQD_T-dqDzyLQ8UIp587gtypt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 174,
+          "end": 194,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.y8wPkr7Ugc8U5V7CxGLQsVRii2N4ZUJw",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 8.",
+          "digest": "y8wPkr7Ugc8U5V7CxGLQsVRii2N4ZUJw",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 194,
+          "end": 223,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6bOfX9VSY5ZEEBTpiQs1Yvn87W6yDr_u",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 9.",
+          "digest": "6bOfX9VSY5ZEEBTpiQs1Yvn87W6yDr_u",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 223,
+          "end": 257,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2cVHJTCOyh8NwOMpHMfEkhbDE71-CKzg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 10.",
+          "digest": "2cVHJTCOyh8NwOMpHMfEkhbDE71-CKzg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 257,
+          "end": 282,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.u2TMUwRXNDi46xut4oNxsncL8qEHgQRT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002511.1, the protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to Exon 11.",
+          "digest": "u2TMUwRXNDi46xut4oNxsncL8qEHgQRT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "type": "SequenceReference",
+            "name": "NP_002511.1",
+            "aliases": [
+              "ensembl:ENSP00000296930.5",
+              "ga4gh:SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+              "refseq:NP_002511.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NPM1 (refseq:NM_002520.7), corresponding to the Refseq protein accession NP_002511.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Oz6v6IKyFwfrmM1uRsDIj-TA37ui2RDd",
+            "residueAlphabet": "aa"
+          },
+          "start": 282,
+          "end": 294,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.Up_S4YlAUTdRg40ho7c0b1fCF-l8s-Yq",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_002520.7, the MANE Select coding transcript for NPM1.",
+        "digest": "Up_S4YlAUTdRg40ho7c0b1fCF-l8s-Yq",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+          "type": "SequenceReference",
+          "name": "NM_002520.7",
+          "aliases": [
+            "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "refseq:NM_002520.7"
+          ],
+          "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 1320,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.vYzGp9lLYEwPJmBiIPFqsPUHGq_xXLMi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 1.",
+          "digest": "vYzGp9lLYEwPJmBiIPFqsPUHGq_xXLMi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 158,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.USpnGWnhGwPprQCU-gxYlDSTmBktccPO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 2.",
+          "digest": "USpnGWnhGwPprQCU-gxYlDSTmBktccPO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 158,
+          "end": 238,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5DwPnyKUqgnXKQ2vgIH4kSSlEaHIwVt7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 3.",
+          "digest": "5DwPnyKUqgnXKQ2vgIH4kSSlEaHIwVt7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 238,
+          "end": 358,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IJ2XlpAszo9cyGwES0DIExrkj6Ge3Yfj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 4.",
+          "digest": "IJ2XlpAszo9cyGwES0DIExrkj6Ge3Yfj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 358,
+          "end": 452,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jRSLiIscc5CDbiaOctmDgxNSp2GanfCx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 5.",
+          "digest": "jRSLiIscc5CDbiaOctmDgxNSp2GanfCx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 452,
+          "end": 559,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1UNQTuWW2zTrwGFXBwuayJ6NTxx83n2P",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 6.",
+          "digest": "1UNQTuWW2zTrwGFXBwuayJ6NTxx83n2P",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 559,
+          "end": 624,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XWB0l8adEWZhuj0nPsWFbCNepLxJnJvs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 7.",
+          "digest": "XWB0l8adEWZhuj0nPsWFbCNepLxJnJvs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 624,
+          "end": 682,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IzpOIiwvlNHmmbHNqG2rTPB99Ud0xBmn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 8.",
+          "digest": "IzpOIiwvlNHmmbHNqG2rTPB99Ud0xBmn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 682,
+          "end": 769,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZPScG9Xg1rw-CQLtpIpHsc-0MXBLbOxU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 9.",
+          "digest": "ZPScG9Xg1rw-CQLtpIpHsc-0MXBLbOxU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 769,
+          "end": 871,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7sBrUc8yz7HCr0RMuF4LwWn2LjjX4IFM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 10.",
+          "digest": "7sBrUc8yz7HCr0RMuF4LwWn2LjjX4IFM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 871,
+          "end": 946,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2ae32qQvfU4H5x1MLV82eMzp4jCY8D24",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002520.7, the MANE Select coding transcript for NPM1, corresponding to Exon 11.",
+          "digest": "2ae32qQvfU4H5x1MLV82eMzp4jCY8D24",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "type": "SequenceReference",
+            "name": "NM_002520.7",
+            "aliases": [
+              "ga4gh:SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+              "refseq:NM_002520.7"
+            ],
+            "description": "The MANE Select coding transcript for NPM1, corresponding to the Refseq transcript accession NM_002520.7.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.p5CgS305hKz6_N-ySfuiEXFuPP8i3aYc",
+            "residueAlphabet": "na"
+          },
+          "start": 946,
+          "end": 1320,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:7910",
-    "code": "HGNC:7910",
-    "name": "NPM1",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7910"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3467",
   "conceptType": "Gene",
   "name": "ESR1",
+  "primaryCoding": {
+    "id": "coding:hgnc:3467",
+    "code": "HGNC:3467",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,473 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 231
+    },
+    {
       "name": "location",
       "value": "6q25.1-q25.2"
     },
     {
       "name": "location_sortable",
       "value": "06q25.1-q25.2"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.thGX8CTtcNkncOw3rgSDk0uL1txXvlWk",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4).",
+        "digest": "thGX8CTtcNkncOw3rgSDk0uL1txXvlWk",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+          "type": "SequenceReference",
+          "name": "NP_000116.2",
+          "aliases": [
+            "ensembl:ENSP00000206249.3",
+            "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "refseq:NP_000116.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 595,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.iibEWPCVqIuC_ol4VFZnNaM2W8eD2nGP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "iibEWPCVqIuC_ol4VFZnNaM2W8eD2nGP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 151,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.VId8C0eLk5a06ZTPAUirL4U57OiZPvhC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 2. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "VId8C0eLk5a06ZTPAUirL4U57OiZPvhC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 150,
+          "end": 215,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.oConrQLaMSpkTzWFt1s7PTnZwWGtr0d5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "oConrQLaMSpkTzWFt1s7PTnZwWGtr0d5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 214,
+          "end": 254,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kuKbDi4JZNHDt9wycU5lVCc9cZarGd2B",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "kuKbDi4JZNHDt9wycU5lVCc9cZarGd2B",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 253,
+          "end": 366,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.BflZKIMnXwrMWMao8xPDE9FKfApoajF7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "BflZKIMnXwrMWMao8xPDE9FKfApoajF7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 365,
+          "end": 412,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YyOSqD2xryWmUO4XL_r1ONhd5mHql9W1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 6. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "YyOSqD2xryWmUO4XL_r1ONhd5mHql9W1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 411,
+          "end": 457,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6Tdgvxib6XhbMRnV8q1qQw7uwRnfBlIl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 7. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "6Tdgvxib6XhbMRnV8q1qQw7uwRnfBlIl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 456,
+          "end": 518,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jCR7qlVCqN5R0itWM0xBsKa6vepXCUFx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000116.2, the protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "jCR7qlVCqN5R0itWM0xBsKa6vepXCUFx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "type": "SequenceReference",
+            "name": "NP_000116.2",
+            "aliases": [
+              "ensembl:ENSP00000206249.3",
+              "ga4gh:SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+              "refseq:NP_000116.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ESR1 (refseq:NM_000125.4), corresponding to the Refseq protein accession NP_000116.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.Dcv_jfZMRcmxme6pot93DNwG0ypAfGol",
+            "residueAlphabet": "aa"
+          },
+          "start": 517,
+          "end": 595,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.c_NG72gPE2dvbkjXe_aQK5M2PN87611c",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000125.4, the MANE Select coding transcript for ESR1.",
+        "digest": "c_NG72gPE2dvbkjXe_aQK5M2PN87611c",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+          "type": "SequenceReference",
+          "name": "NM_000125.4",
+          "aliases": [
+            "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "refseq:NM_000125.4"
+          ],
+          "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6327,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.LnJxsv-_e9VxnN0E_DD8cOS1ttmMTt9h",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 1.",
+          "digest": "LnJxsv-_e9VxnN0E_DD8cOS1ttmMTt9h",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 683,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YjUL4Ah5YINjELrLOwk2A1VCh1DM-q-S",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 2.",
+          "digest": "YjUL4Ah5YINjELrLOwk2A1VCh1DM-q-S",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 683,
+          "end": 874,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pjYNFqf7VzmKSDkmslD4GwYTegsHuBGs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 3.",
+          "digest": "pjYNFqf7VzmKSDkmslD4GwYTegsHuBGs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 874,
+          "end": 991,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.62XemWUk98omRnv2sQdlJtBfrlOakjFF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 4.",
+          "digest": "62XemWUk98omRnv2sQdlJtBfrlOakjFF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 991,
+          "end": 1327,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sjjEvW-VC5bB33n4ZDQaffjlrydR366E",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 5.",
+          "digest": "sjjEvW-VC5bB33n4ZDQaffjlrydR366E",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 1327,
+          "end": 1466,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IQRVwyIHNqAgJnpl9zsbgvWsXp7Afqyz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 6.",
+          "digest": "IQRVwyIHNqAgJnpl9zsbgvWsXp7Afqyz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 1466,
+          "end": 1600,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lFCYCMiIH4r--DSUbIx_aem3FM56UQDu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 7.",
+          "digest": "lFCYCMiIH4r--DSUbIx_aem3FM56UQDu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 1600,
+          "end": 1784,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jpzgVMWjYummsxrHvzYCUMQrTe_MKyKr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000125.4, the MANE Select coding transcript for ESR1, corresponding to Exon 8.",
+          "digest": "jpzgVMWjYummsxrHvzYCUMQrTe_MKyKr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "type": "SequenceReference",
+            "name": "NM_000125.4",
+            "aliases": [
+              "ga4gh:SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+              "refseq:NM_000125.4"
+            ],
+            "description": "The MANE Select coding transcript for ESR1, corresponding to the Refseq transcript accession NM_000125.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.cqmaZfirZhWDI-LOHf3OONYhLhos9ATK",
+            "residueAlphabet": "na"
+          },
+          "start": 1784,
+          "end": 6327,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3467",
-    "code": "HGNC:3467",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3467"
-    ]
-  }
+  ]
 }

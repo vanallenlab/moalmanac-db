@@ -2,6 +2,14 @@
   "id": "gene:hgnc:10261",
   "conceptType": "Gene",
   "name": "ROS1",
+  "primaryCoding": {
+    "id": "coding:hgnc:10261",
+    "code": "HGNC:10261",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:10261"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,2237 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 286
+    },
+    {
       "name": "location",
       "value": "6q22.1"
     },
     {
       "name": "location_sortable",
       "value": "06q22.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.hC1t5wa3TfUMtSYa_g0a5hP5qipSxyku",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1).",
+        "digest": "hC1t5wa3TfUMtSYa_g0a5hP5qipSxyku",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+          "type": "SequenceReference",
+          "name": "NP_001365831.1",
+          "aliases": [
+            "ensembl:ENSP00000357493.3",
+            "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "refseq:NP_001365831.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 2341,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.6JjiYYQHO9eUcytq0FpgoYRLQwwDtVC8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 1.",
+          "digest": "6JjiYYQHO9eUcytq0FpgoYRLQwwDtVC8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 41,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4wBWpkEDR3s8v8dZhsn1c160xO8XJYGv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 2.",
+          "digest": "4wBWpkEDR3s8v8dZhsn1c160xO8XJYGv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 41,
+          "end": 56,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dDt7vDWJl--g91qnkQWN6zTCJOD4Rflg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 3.",
+          "digest": "dDt7vDWJl--g91qnkQWN6zTCJOD4Rflg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 56,
+          "end": 76,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Aw5Iuuz1TlKIVmJZe1Bn5hgGPtfZXUB0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 4.",
+          "digest": "Aw5Iuuz1TlKIVmJZe1Bn5hgGPtfZXUB0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 76,
+          "end": 85,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MncGfXikG0tmcIzpkhxBdL2iKROcw1FB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "MncGfXikG0tmcIzpkhxBdL2iKROcw1FB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 85,
+          "end": 106,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NMK1qJcLjjka2Yv0rTZtc9g5Ia2iglYT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "NMK1qJcLjjka2Yv0rTZtc9g5Ia2iglYT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 105,
+          "end": 155,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NLzm_P9TgHNubWQCfJa4m7I_Pt2q4mgo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "NLzm_P9TgHNubWQCfJa4m7I_Pt2q4mgo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 155,
+          "end": 202,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.S3V2OV2eKeO1NNkK8M9JZde2NKvcUeKN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 8. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "S3V2OV2eKeO1NNkK8M9JZde2NKvcUeKN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 201,
+          "end": 269,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xfFQDvQo9QhfTJFa2HkfBxwvMG0ojtvt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "xfFQDvQo9QhfTJFa2HkfBxwvMG0ojtvt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 268,
+          "end": 295,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JoaiV7ZW6VFQIRcVprvSJCGecMss1OGH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "JoaiV7ZW6VFQIRcVprvSJCGecMss1OGH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 294,
+          "end": 336,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.bbnwnBpNCpYJNFtiKZt9XILR7BPrjYYr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 11. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "bbnwnBpNCpYJNFtiKZt9XILR7BPrjYYr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 335,
+          "end": 397,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XonzVJRWPCsWPPTS3NQZVK36OArIkQQp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "XonzVJRWPCsWPPTS3NQZVK36OArIkQQp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 397,
+          "end": 430,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.X-KI4lOsokciapFMkfHuTeJwljWg8uQp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "X-KI4lOsokciapFMkfHuTeJwljWg8uQp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 429,
+          "end": 596,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HwIIo5VG_MBqzLDfyBFo3rJNiwHoWVXQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "HwIIo5VG_MBqzLDfyBFo3rJNiwHoWVXQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 595,
+          "end": 667,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JXCv7hFfinr91BWCnqgjl98YrfNs0kPd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 15. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "JXCv7hFfinr91BWCnqgjl98YrfNs0kPd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 666,
+          "end": 704,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7odtu5ECGIldpxwGIE3bpJVB4AJp2YY1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 16. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "7odtu5ECGIldpxwGIE3bpJVB4AJp2YY1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 703,
+          "end": 763,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.OfLypSqq67E3S1XCYBjSzY26MCcz6M_t",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 17.",
+          "digest": "OfLypSqq67E3S1XCYBjSzY26MCcz6M_t",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 763,
+          "end": 827,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ySxujh1y33gdwNH-qvoYC5Efhyf5aXbv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 18. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "ySxujh1y33gdwNH-qvoYC5Efhyf5aXbv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 827,
+          "end": 861,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4w-OcYG0XCGlr_b_hSFxhyIaHl-seISM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 19. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4w-OcYG0XCGlr_b_hSFxhyIaHl-seISM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 860,
+          "end": 933,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.GUZpUmX9w825D5DpIlAZwWtj6lcd-ZWb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 20. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "GUZpUmX9w825D5DpIlAZwWtj6lcd-ZWb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 932,
+          "end": 986,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HhPuqzmUnFCC0dAgdqNdAprE0Hw43W4G",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 21. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "HhPuqzmUnFCC0dAgdqNdAprE0Hw43W4G",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 986,
+          "end": 1035,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.RzETEn8AzB4fPuNzIXA3v-gkNfJS19pK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "RzETEn8AzB4fPuNzIXA3v-gkNfJS19pK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1034,
+          "end": 1122,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.chH7E5isw96sF4Sw2af8LN6uDZSC9_dd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 23. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "chH7E5isw96sF4Sw2af8LN6uDZSC9_dd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1122,
+          "end": 1144,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gxpHkuUo4xkzOK5vT6J7NwyBdDPty-Pd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 24. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "gxpHkuUo4xkzOK5vT6J7NwyBdDPty-Pd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1143,
+          "end": 1211,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jg_tTqWaGRyvZhUMZMGczrxCk1QNphOq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 25. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "jg_tTqWaGRyvZhUMZMGczrxCk1QNphOq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1211,
+          "end": 1280,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.l39uEycyewGF_kUUdMxHamjJALX1U8qH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 26. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "l39uEycyewGF_kUUdMxHamjJALX1U8qH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1279,
+          "end": 1376,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TXIBIg7Ht8EASuFsVOv4u7PQxRx3Vi08",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 27. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "TXIBIg7Ht8EASuFsVOv4u7PQxRx3Vi08",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1375,
+          "end": 1435,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gg29MBhH9JkuW20qnWVjykPrhlVAAOJo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 28. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "gg29MBhH9JkuW20qnWVjykPrhlVAAOJo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1434,
+          "end": 1502,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EezTG_5Kx6fQyM_7ZRlCH3sbn4dK8Veg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 29. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "EezTG_5Kx6fQyM_7ZRlCH3sbn4dK8Veg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1502,
+          "end": 1551,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.uWfFK_zQSzi5W6IoQJUGJMuNiKcP2AiW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 30. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "uWfFK_zQSzi5W6IoQJUGJMuNiKcP2AiW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1550,
+          "end": 1628,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EyZtfXrbmthPxPwQ34UCDW5PipjOn-pT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 31.",
+          "digest": "EyZtfXrbmthPxPwQ34UCDW5PipjOn-pT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1628,
+          "end": 1687,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dGUNZC7dIP4a2alpbt-LKc_hOyQMM5O6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 32. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "dGUNZC7dIP4a2alpbt-LKc_hOyQMM5O6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1687,
+          "end": 1744,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.azMBZP8ncbebsoyTlsvGEvvQ2qKfKey1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 33. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "azMBZP8ncbebsoyTlsvGEvvQ2qKfKey1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1743,
+          "end": 1783,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kDOL2Cek9r5YibJea4smWbNhrArIKGeX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 34. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "kDOL2Cek9r5YibJea4smWbNhrArIKGeX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1782,
+          "end": 1847,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4YLeR0GTHHXXEpmJKHMu3t5klEG6V20C",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 35. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4YLeR0GTHHXXEpmJKHMu3t5klEG6V20C",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1846,
+          "end": 1875,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3X0N9yzyTQQFacwPXdvmFKckG07HbcN3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 36. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "3X0N9yzyTQQFacwPXdvmFKckG07HbcN3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1874,
+          "end": 1920,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EO1VFl4TJpMUJkMHcL7NyK3qIiswL67B",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 37. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "EO1VFl4TJpMUJkMHcL7NyK3qIiswL67B",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1919,
+          "end": 1974,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.S7gaX1bIuJ33SFYy9TYju7ZjHWATVA7L",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 38. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "S7gaX1bIuJ33SFYy9TYju7ZjHWATVA7L",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1974,
+          "end": 1996,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NlGIciwbvbCEISMT0mMo_kyxxug1UXa8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 39. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "NlGIciwbvbCEISMT0mMo_kyxxug1UXa8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 1995,
+          "end": 2039,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wHoyw-A7zfNpkmWsjFx9w4nbflhULE5w",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 40. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "wHoyw-A7zfNpkmWsjFx9w4nbflhULE5w",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 2039,
+          "end": 2072,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.PfHx_YILi8I1x1jc_qU8RxtzdQkd6PGA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 41. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "PfHx_YILi8I1x1jc_qU8RxtzdQkd6PGA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 2071,
+          "end": 2139,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2JNzF47GLd5igRWP_x1LtkQ2eHyUPLPm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 42. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "2JNzF47GLd5igRWP_x1LtkQ2eHyUPLPm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 2138,
+          "end": 2184,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2YHGGlHu3Hscou9wTEM1Sk5Td8swKQPL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 43. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "2YHGGlHu3Hscou9wTEM1Sk5Td8swKQPL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 2183,
+          "end": 2239,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3Uj5R928strTkqfqrNj4sggdGCVlTgxJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001365831.1, the protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to Exon 44. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "3Uj5R928strTkqfqrNj4sggdGCVlTgxJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "type": "SequenceReference",
+            "name": "NP_001365831.1",
+            "aliases": [
+              "ensembl:ENSP00000357493.3",
+              "ga4gh:SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+              "refseq:NP_001365831.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ROS1 (refseq:NM_001378902.1), corresponding to the Refseq protein accession NP_001365831.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.22Sf5cMxU4cVHRP44TPGjT-lO17K4Dfc",
+            "residueAlphabet": "aa"
+          },
+          "start": 2238,
+          "end": 2341,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.uoVccx_2EflXMHOxltLPoLPFTZQblsF-",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_001378902.1, the MANE Select coding transcript for ROS1.",
+        "digest": "uoVccx_2EflXMHOxltLPoLPFTZQblsF-",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+          "type": "SequenceReference",
+          "name": "NM_001378902.1",
+          "aliases": [
+            "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "refseq:NM_001378902.1"
+          ],
+          "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 8451,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.OTNoDwXGQQkfNEmSady-Ay4WQS6UqTT7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 1.",
+          "digest": "OTNoDwXGQQkfNEmSady-Ay4WQS6UqTT7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 409,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NCuLhCV6CBkTORK7WT8hBNaMfkwL756S",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 2.",
+          "digest": "NCuLhCV6CBkTORK7WT8hBNaMfkwL756S",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 409,
+          "end": 454,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cBxp6ZCzqJA8-LHiAv77BylkBwstKRAd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 3.",
+          "digest": "cBxp6ZCzqJA8-LHiAv77BylkBwstKRAd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 454,
+          "end": 514,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.192i9cK7aXMre8KsADB7j7ORHpYAnlYH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 4.",
+          "digest": "192i9cK7aXMre8KsADB7j7ORHpYAnlYH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 514,
+          "end": 541,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gME48AYoXZCT-OY6PIDmIfNRIUcentdy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 5.",
+          "digest": "gME48AYoXZCT-OY6PIDmIfNRIUcentdy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 541,
+          "end": 602,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xXf1w-f3eDYUESl3dHZRX5iVP6_FKvBN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 6.",
+          "digest": "xXf1w-f3eDYUESl3dHZRX5iVP6_FKvBN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 602,
+          "end": 751,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.QAUaDJ93Hcq-cSmpCwqWWR6MZ1-U9KCP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 7.",
+          "digest": "QAUaDJ93Hcq-cSmpCwqWWR6MZ1-U9KCP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 751,
+          "end": 890,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.fF1qmH6lTBy7in84qWJBdBxuOY_xOfGf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 8.",
+          "digest": "fF1qmH6lTBy7in84qWJBdBxuOY_xOfGf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 890,
+          "end": 1092,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HU0YZ_3grRPVb7FYWGVdgdD4Vhfdyv0q",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 9.",
+          "digest": "HU0YZ_3grRPVb7FYWGVdgdD4Vhfdyv0q",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 1092,
+          "end": 1169,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cYcwH3S2Sb27VmDsmcD9TivNTLsQDG_O",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 10.",
+          "digest": "cYcwH3S2Sb27VmDsmcD9TivNTLsQDG_O",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 1169,
+          "end": 1292,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Up9iEyMv7ZRqfD_29BuCC5443jJXm7iu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 11.",
+          "digest": "Up9iEyMv7ZRqfD_29BuCC5443jJXm7iu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 1292,
+          "end": 1477,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UtcirQXRRTSfK5v7nmoatyBZTOpkIaAD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 12.",
+          "digest": "UtcirQXRRTSfK5v7nmoatyBZTOpkIaAD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 1477,
+          "end": 1575,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.aqu0U8YptcPOgPeSndclzN3lfx3Or2wO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 13.",
+          "digest": "aqu0U8YptcPOgPeSndclzN3lfx3Or2wO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 1575,
+          "end": 2072,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sRiULY7R1Rc2kLf7jVLSZMzlHroEi-1E",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 14.",
+          "digest": "sRiULY7R1Rc2kLf7jVLSZMzlHroEi-1E",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 2072,
+          "end": 2285,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EmghN1XGpW3WQcp0n5tlt8oCMHZnF3f7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 15.",
+          "digest": "EmghN1XGpW3WQcp0n5tlt8oCMHZnF3f7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 2285,
+          "end": 2396,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qcsk7u_zJV1C3SDPlN3jzO7TZF0Zdc1C",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 16.",
+          "digest": "qcsk7u_zJV1C3SDPlN3jzO7TZF0Zdc1C",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 2396,
+          "end": 2575,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.oI69WWVRZCv_e4sGEZd_zr1BS1KzM0GB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 17.",
+          "digest": "oI69WWVRZCv_e4sGEZd_zr1BS1KzM0GB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 2575,
+          "end": 2767,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HDrEGh1i17ie819RJskY7QWnzWPUgIkv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 18.",
+          "digest": "HDrEGh1i17ie819RJskY7QWnzWPUgIkv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 2767,
+          "end": 2868,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.RasdxSNWltA9AwBYWocg3r77NZizAHDW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 19.",
+          "digest": "RasdxSNWltA9AwBYWocg3r77NZizAHDW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 2868,
+          "end": 3083,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.rMdwlyrB8po4cQH27WCjcIm9Rlog2iTl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 20.",
+          "digest": "rMdwlyrB8po4cQH27WCjcIm9Rlog2iTl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 3083,
+          "end": 3244,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.shescRtIxpU_75e9Iisrcilw9IEvMskU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 21.",
+          "digest": "shescRtIxpU_75e9Iisrcilw9IEvMskU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 3244,
+          "end": 3389,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TiEKWPo3keX4PaLDkqdb6xHBPQqDyXn1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 22.",
+          "digest": "TiEKWPo3keX4PaLDkqdb6xHBPQqDyXn1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 3389,
+          "end": 3652,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KBtSFFZeM047Ps1oD9Q7DOTjnGA9FJ_W",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 23.",
+          "digest": "KBtSFFZeM047Ps1oD9Q7DOTjnGA9FJ_W",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 3652,
+          "end": 3716,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._g_AJqFELhkeGW1b3JFuBOOaK6dngrND",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 24.",
+          "digest": "_g_AJqFELhkeGW1b3JFuBOOaK6dngrND",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 3716,
+          "end": 3919,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iNfzzxnLq9PEWRTH52QeVi9k-ASCXp-5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 25.",
+          "digest": "iNfzzxnLq9PEWRTH52QeVi9k-ASCXp-5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 3919,
+          "end": 4125,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-mQBxmqVTT8vVwBhhlGTqVWYewEr9X9G",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 26.",
+          "digest": "-mQBxmqVTT8vVwBhhlGTqVWYewEr9X9G",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 4125,
+          "end": 4412,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KNE4wwCV1O2AbnmVd-Dh9s7pU_KDh562",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 27.",
+          "digest": "KNE4wwCV1O2AbnmVd-Dh9s7pU_KDh562",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 4412,
+          "end": 4589,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.u1AhCaOcrj5JbSawVGGFDrcgvnWkhDM6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 28.",
+          "digest": "u1AhCaOcrj5JbSawVGGFDrcgvnWkhDM6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 4589,
+          "end": 4792,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.u3mEI67OeuWttXB8gXcGxKFd7Mj6-UzX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 29.",
+          "digest": "u3mEI67OeuWttXB8gXcGxKFd7Mj6-UzX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 4792,
+          "end": 4937,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KpGDTANpZOzubv2sarJBP1Ajwn9jJH-a",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 30.",
+          "digest": "KpGDTANpZOzubv2sarJBP1Ajwn9jJH-a",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 4937,
+          "end": 5170,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.uMUyS3WkBYHVsCepgiTwkQhw4Lr84gpp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 31.",
+          "digest": "uMUyS3WkBYHVsCepgiTwkQhw4Lr84gpp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 5170,
+          "end": 5347,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zBsSDTjEXmjoi1uC-8MeQybQ-YjiYtsR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 32.",
+          "digest": "zBsSDTjEXmjoi1uC-8MeQybQ-YjiYtsR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 5347,
+          "end": 5516,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Gjq-AEyP7uIQ1JzIpmgHudDABSrfZc2x",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 33.",
+          "digest": "Gjq-AEyP7uIQ1JzIpmgHudDABSrfZc2x",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 5516,
+          "end": 5634,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0MVeSOh6Txj3HXJ2CtJTJ2nN7g4yc0kX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 34.",
+          "digest": "0MVeSOh6Txj3HXJ2CtJTJ2nN7g4yc0kX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 5634,
+          "end": 5825,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Ww1OEFKXzOoz7nR_gG8LaSru6mtYB6rO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 35.",
+          "digest": "Ww1OEFKXzOoz7nR_gG8LaSru6mtYB6rO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 5825,
+          "end": 5909,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.8zySIduOGZwB_lHLWrEbHuVH85-9Eqgr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 36.",
+          "digest": "8zySIduOGZwB_lHLWrEbHuVH85-9Eqgr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 5909,
+          "end": 6045,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.aept2xTXzthoxkf7rj_36UbB0GrKvP1b",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 37.",
+          "digest": "aept2xTXzthoxkf7rj_36UbB0GrKvP1b",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6045,
+          "end": 6208,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2KRwf7r2QohY-zq9iJDCmbZ9cO1Bph7v",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 38.",
+          "digest": "2KRwf7r2QohY-zq9iJDCmbZ9cO1Bph7v",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6208,
+          "end": 6273,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LAfaxl-qC4g4j78Ui5DwT5ug2XEdTMD1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 39.",
+          "digest": "LAfaxl-qC4g4j78Ui5DwT5ug2XEdTMD1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6273,
+          "end": 6403,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NT_GjeQhfKGeTopUTGR9U500500WzhOk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 40.",
+          "digest": "NT_GjeQhfKGeTopUTGR9U500500WzhOk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6403,
+          "end": 6501,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.mbj1rvbNR5hW5ylvwujSBjc6JrAEmkMW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 41.",
+          "digest": "mbj1rvbNR5hW5ylvwujSBjc6JrAEmkMW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6501,
+          "end": 6702,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.inL_93nFyR-X6Hel9y2e9kE9n-q_OJZs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 42.",
+          "digest": "inL_93nFyR-X6Hel9y2e9kE9n-q_OJZs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6702,
+          "end": 6837,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cwwMaZzsM_ctuAHSNzW0HNahKKtK1qpT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 43.",
+          "digest": "cwwMaZzsM_ctuAHSNzW0HNahKKtK1qpT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 6837,
+          "end": 7001,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.bB550ruPpubkDrJGljOhK_8c0bNfqKA8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001378902.1, the MANE Select coding transcript for ROS1, corresponding to Exon 44.",
+          "digest": "bB550ruPpubkDrJGljOhK_8c0bNfqKA8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "type": "SequenceReference",
+            "name": "NM_001378902.1",
+            "aliases": [
+              "ga4gh:SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+              "refseq:NM_001378902.1"
+            ],
+            "description": "The MANE Select coding transcript for ROS1, corresponding to the Refseq transcript accession NM_001378902.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hYVZzuZrPn1VrB9RHYs4Ol6teXASzu2j",
+            "residueAlphabet": "na"
+          },
+          "start": 7001,
+          "end": 8451,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:10261",
-    "code": "HGNC:10261",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:10261"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:1101",
   "conceptType": "Gene",
   "name": "BRCA2",
+  "primaryCoding": {
+    "id": "coding:hgnc:1101",
+    "code": "HGNC:1101",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1379 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 199
+    },
+    {
       "name": "location",
       "value": "13q13.1"
     },
     {
       "name": "location_sortable",
       "value": "13q13.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4).",
+        "digest": "7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+          "type": "SequenceReference",
+          "name": "NP_000050.3",
+          "aliases": [
+            "ensembl:ENSP00000369497.3",
+            "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "refseq:NP_000050.3"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 3418,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.mc5y9aEIOueb9zP0bIQrV1WR1aMKgM7r",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "mc5y9aEIOueb9zP0bIQrV1WR1aMKgM7r",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 23,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.N5xJF3j9gs1ZledAGH30EZzN-rdlcajC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "N5xJF3j9gs1ZledAGH30EZzN-rdlcajC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 22,
+          "end": 106,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2-HzYKLKUgqf8JHcha2Gv7Ufa8m6ELua",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "2-HzYKLKUgqf8JHcha2Gv7Ufa8m6ELua",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 105,
+          "end": 142,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yI9pJCJBBceDBCmJgD2Qm0CNts6h6yvn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "yI9pJCJBBceDBCmJgD2Qm0CNts6h6yvn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 141,
+          "end": 159,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.C5R-B6dj3p63zTwA0mIuW83EDaXxdw7S",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "C5R-B6dj3p63zTwA0mIuW83EDaXxdw7S",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 158,
+          "end": 172,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Hc6rCI9RCxk3f6q3NHfqBxZr6OKUOZ6L",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Hc6rCI9RCxk3f6q3NHfqBxZr6OKUOZ6L",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 172,
+          "end": 211,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FoFDtM-TcXZJqLWaELFWBttMBeuspqM4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "FoFDtM-TcXZJqLWaELFWBttMBeuspqM4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 210,
+          "end": 227,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.W72RHTXUKUDVmEWQ89X4a162WXcO7cNC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "W72RHTXUKUDVmEWQ89X4a162WXcO7cNC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 227,
+          "end": 265,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NwlNffMaQQ7zIVRpwqWRUnLj3G5A-Xae",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "NwlNffMaQQ7zIVRpwqWRUnLj3G5A-Xae",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 264,
+          "end": 637,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cd2_HJO941hRUT5aFDWIMSYtPM5D0JgN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "cd2_HJO941hRUT5aFDWIMSYtPM5D0JgN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 636,
+          "end": 2281,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3rsS-5GLZgreYB5JUD4PKsbISNuqNmtR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 12. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "3rsS-5GLZgreYB5JUD4PKsbISNuqNmtR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2280,
+          "end": 2313,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0xV0jJortmb2x306sX-WSxR36IKn4VkO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "0xV0jJortmb2x306sX-WSxR36IKn4VkO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2312,
+          "end": 2336,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dbyokxGMQwP3nyL13y9GKTuMnYTku0eD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "dbyokxGMQwP3nyL13y9GKTuMnYTku0eD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2335,
+          "end": 2479,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ccZ17zsHzsXoLeGtVg3k0obfzUqWcCqv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "ccZ17zsHzsXoLeGtVg3k0obfzUqWcCqv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2478,
+          "end": 2539,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.i4WecIWjABAk_YBi6NDCRKZGxdXj9507",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 16. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "i4WecIWjABAk_YBi6NDCRKZGxdXj9507",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2539,
+          "end": 2602,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Xgh0gXgpgz7eKmXtGZ6WxNv4HSR9UcIb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 17. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "Xgh0gXgpgz7eKmXtGZ6WxNv4HSR9UcIb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2601,
+          "end": 2659,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UXmF8dcGGbt0vASPppWay0xe30sYhJRE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 18. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "UXmF8dcGGbt0vASPppWay0xe30sYhJRE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2658,
+          "end": 2777,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1RqpeAddmOvGEJlWcWV6RW12jQ9wpWFX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 19.",
+          "digest": "1RqpeAddmOvGEJlWcWV6RW12jQ9wpWFX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2777,
+          "end": 2829,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.L6ZanY14LHIZOmnMT6P5_AVgrTx75ZLo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 20. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "L6ZanY14LHIZOmnMT6P5_AVgrTx75ZLo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2829,
+          "end": 2878,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.I6KqVvJRfrFojixarqaYGwCxg1oV1Zf-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 21. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "I6KqVvJRfrFojixarqaYGwCxg1oV1Zf-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2877,
+          "end": 2918,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.DKcwXzz6B6wuYSXZsVJ8-PGYZrmaE6Tn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "DKcwXzz6B6wuYSXZsVJ8-PGYZrmaE6Tn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2918,
+          "end": 2985,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cRHQ5ssGSwWhl1Lsn_LIzExLXvr_YTja",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 23. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "cRHQ5ssGSwWhl1Lsn_LIzExLXvr_YTja",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 2984,
+          "end": 3039,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.n0opQncgLqVF09MzCZGgzfpn0jx-vluH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 24. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "n0opQncgLqVF09MzCZGgzfpn0jx-vluH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 3039,
+          "end": 3086,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0xTznLhg5GkjEeeK0_zVgsAouPjYgCPO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 25. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "0xTznLhg5GkjEeeK0_zVgsAouPjYgCPO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 3085,
+          "end": 3167,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SZJQHxsheey3jCU8R4e9h2kW14Ki6Juu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 26.",
+          "digest": "SZJQHxsheey3jCU8R4e9h2kW14Ki6Juu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 3167,
+          "end": 3216,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._sdZph2f_CeyTKDWjfgeqMI5EBhXiE3c",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000050.3, the protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to Exon 27.",
+          "digest": "_sdZph2f_CeyTKDWjfgeqMI5EBhXiE3c",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "type": "SequenceReference",
+            "name": "NP_000050.3",
+            "aliases": [
+              "ensembl:ENSP00000369497.3",
+              "ga4gh:SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+              "refseq:NP_000050.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRCA2 (refseq:NM_000059.4), corresponding to the Refseq protein accession NP_000050.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.A6rzuv6kdsuIp6gy6fykzgzyJe9NJOC9",
+            "residueAlphabet": "aa"
+          },
+          "start": 3216,
+          "end": 3418,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.86FBnkWMt0m77Jr4QdWufdwFaTMdCLpH",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000059.4, the MANE Select coding transcript for BRCA2.",
+        "digest": "86FBnkWMt0m77Jr4QdWufdwFaTMdCLpH",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+          "type": "SequenceReference",
+          "name": "NM_000059.4",
+          "aliases": [
+            "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "refseq:NM_000059.4"
+          ],
+          "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 11954,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.uZ1al8Wes2ujrTPHk_Q0YgpZf_EZbzYN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 1.",
+          "digest": "uZ1al8Wes2ujrTPHk_Q0YgpZf_EZbzYN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 160,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xLsWyVhDecYDqu-uIRgsPlWWGeYxd4D0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 2.",
+          "digest": "xLsWyVhDecYDqu-uIRgsPlWWGeYxd4D0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 160,
+          "end": 266,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5ORbjwGZNDwREmOHzqE_1EWBdD6hlSIN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 3.",
+          "digest": "5ORbjwGZNDwREmOHzqE_1EWBdD6hlSIN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 266,
+          "end": 515,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zC-GFZVJxjMtNc3W0Dpki6FIRI_4gHJd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 4.",
+          "digest": "zC-GFZVJxjMtNc3W0Dpki6FIRI_4gHJd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 515,
+          "end": 624,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._Zw_Gvmb16uZhfhEhLxkr6XwQdaVINPV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 5.",
+          "digest": "_Zw_Gvmb16uZhfhEhLxkr6XwQdaVINPV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 624,
+          "end": 674,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HS-jItfYpMYRQEX0bHlr2EkXPLpkxsmV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 6.",
+          "digest": "HS-jItfYpMYRQEX0bHlr2EkXPLpkxsmV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 674,
+          "end": 715,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XvJgz754_j9FpkdSo-Ms_GKLj1-AJ5iJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 7.",
+          "digest": "XvJgz754_j9FpkdSo-Ms_GKLj1-AJ5iJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 715,
+          "end": 830,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.RcEQ5KWmjIaiUWHzuera6yMWPJ70PA7L",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 8.",
+          "digest": "RcEQ5KWmjIaiUWHzuera6yMWPJ70PA7L",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 830,
+          "end": 880,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MiKG3glHo-ku3ZehpUAs6q9wjvyUMkVV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 9.",
+          "digest": "MiKG3glHo-ku3ZehpUAs6q9wjvyUMkVV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 880,
+          "end": 992,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HdzQIgtLdaHkQH-iH8aDhZJ8vnERlbJ-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 10.",
+          "digest": "HdzQIgtLdaHkQH-iH8aDhZJ8vnERlbJ-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 992,
+          "end": 2108,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sMfm99KbFPnCcsg1krzAPXpqtrIyvAbx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 11.",
+          "digest": "sMfm99KbFPnCcsg1krzAPXpqtrIyvAbx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 2108,
+          "end": 7040,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.RQzAjn803elqljw1mukkr9BFdbcqt_Vf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 12.",
+          "digest": "RQzAjn803elqljw1mukkr9BFdbcqt_Vf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 7040,
+          "end": 7136,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.mMohYH9q8livpA0k18w-lskQoWvF4iF6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 13.",
+          "digest": "mMohYH9q8livpA0k18w-lskQoWvF4iF6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 7136,
+          "end": 7206,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.i5lD8hopAWYGpZl45dEw0WeWo4wuAjUX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 14.",
+          "digest": "i5lD8hopAWYGpZl45dEw0WeWo4wuAjUX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 7206,
+          "end": 7634,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nKzEjAZNzzvgOv5fVIAYVAogZO_mjX6Z",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 15.",
+          "digest": "nKzEjAZNzzvgOv5fVIAYVAogZO_mjX6Z",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 7634,
+          "end": 7816,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6jtHSM0Y3ZPQtlX84j-X6tdbcwg9rPt-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 16.",
+          "digest": "6jtHSM0Y3ZPQtlX84j-X6tdbcwg9rPt-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 7816,
+          "end": 8004,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CuYAiNrBjyx0NednxcoxpJivlNO7waER",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 17.",
+          "digest": "CuYAiNrBjyx0NednxcoxpJivlNO7waER",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 8004,
+          "end": 8175,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1U9zMk-BSPaQMtZczPiqY9ho999vtibo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 18.",
+          "digest": "1U9zMk-BSPaQMtZczPiqY9ho999vtibo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 8175,
+          "end": 8530,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LXZ4peddkGjJH851JiGrOWEgyaSde8Bc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 19.",
+          "digest": "LXZ4peddkGjJH851JiGrOWEgyaSde8Bc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 8530,
+          "end": 8686,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LM2D9b_YUbgq65tWYioPZGEEbjlRtNIZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 20.",
+          "digest": "LM2D9b_YUbgq65tWYioPZGEEbjlRtNIZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 8686,
+          "end": 8831,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wMPQCuwz09CV4A3fZKBM9elhmRpFrg6o",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 21.",
+          "digest": "wMPQCuwz09CV4A3fZKBM9elhmRpFrg6o",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 8831,
+          "end": 8953,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cBcYCO8GlrMsXxvLtkKdxIheJTaq-PIa",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 22.",
+          "digest": "cBcYCO8GlrMsXxvLtkKdxIheJTaq-PIa",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 8953,
+          "end": 9152,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CcIazb76c5I3C3HwrtbUbr83nYDaO3XZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 23.",
+          "digest": "CcIazb76c5I3C3HwrtbUbr83nYDaO3XZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 9152,
+          "end": 9316,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sKUxJi0GJu6z5yU42rZKjTfMnBbI-GXQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 24.",
+          "digest": "sKUxJi0GJu6z5yU42rZKjTfMnBbI-GXQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 9316,
+          "end": 9455,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZceIBug-uM4ehJTCvNyfpFErV0EuaSzx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 25.",
+          "digest": "ZceIBug-uM4ehJTCvNyfpFErV0EuaSzx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 9455,
+          "end": 9700,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XjxUC-VzcoAW_djTEYqdWgVLhWMJKQnl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 26.",
+          "digest": "XjxUC-VzcoAW_djTEYqdWgVLhWMJKQnl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 9700,
+          "end": 9847,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IoA0XLDKHpfDncIoR_ag4hC57iASj4GC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000059.4, the MANE Select coding transcript for BRCA2, corresponding to Exon 27.",
+          "digest": "IoA0XLDKHpfDncIoR_ag4hC57iASj4GC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "type": "SequenceReference",
+            "name": "NM_000059.4",
+            "aliases": [
+              "ga4gh:SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+              "refseq:NM_000059.4"
+            ],
+            "description": "The MANE Select coding transcript for BRCA2, corresponding to the Refseq transcript accession NM_000059.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.-ujJUd6rxZtuUoJFk3a-fspt-G05G7wt",
+            "residueAlphabet": "na"
+          },
+          "start": 9847,
+          "end": 11954,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:1101",
-    "code": "HGNC:1101",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1101"
-    ]
-  }
+  ]
 }

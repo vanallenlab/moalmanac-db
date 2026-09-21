@@ -99,137 +99,11 @@
   "proposition": {
     "id": "prop:vtxr:285",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:136",
-        "type": "CategoricalVariant",
-        "name": "RAD51C pathogenic variants",
-        "genes": [
-          {
-            "id": "gene:hgnc:9820",
-            "conceptType": "Gene",
-            "name": "RAD51C",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000108384",
-                  "code": "ENSG00000108384",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000108384"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:5889",
-                  "code": "5889",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/5889"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_058216.3",
-                  "code": "NM_058216.3",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_058216.3"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "17q22"
-              },
-              {
-                "name": "location_sortable",
-                "value": "17q22"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:9820",
-              "code": "HGNC:9820",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9820"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Germline Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "17"
-          },
-          {
-            "name": "start_position",
-            "value": null
-          },
-          {
-            "name": "end_position",
-            "value": null
-          },
-          {
-            "name": "reference_allele",
-            "value": null
-          },
-          {
-            "name": "alternate_allele",
-            "value": null
-          },
-          {
-            "name": "cdna_change",
-            "value": null
-          },
-          {
-            "name": "protein_change",
-            "value": null
-          },
-          {
-            "name": "variant_annotation",
-            "value": null
-          },
-          {
-            "name": "exon",
-            "value": null
-          },
-          {
-            "name": "rsid",
-            "value": null
-          },
-          {
-            "name": "hgvsg",
-            "value": null
-          },
-          {
-            "name": "hgvsc",
-            "value": null
-          },
-          {
-            "name": "requires_pathogenic",
-            "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:PRAD",
       "conceptType": "Disease",
@@ -255,7 +129,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C71721",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Olaparib",
       "mappings": [
         {
@@ -335,10 +209,173 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71721"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:136",
+            "present": true,
+            "subject": {
+              "id": "bmkr:136",
+              "type": "CategoricalVariant",
+              "name": "RAD51C pathogenic variants",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Sequence spanning the length of refseq:NP_478123.1, the protein product of the MANE Select coding transcript for RAD51C (refseq:NM_058216.3).",
+                    "digest": "5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.GMP4RuPu7Q_irnmwoRIbnsFiecXnnHlw",
+                      "type": "SequenceReference",
+                      "name": "NP_478123.1",
+                      "aliases": [
+                        "ensembl:ENSP00000336701.4",
+                        "ga4gh:SQ.GMP4RuPu7Q_irnmwoRIbnsFiecXnnHlw",
+                        "refseq:NP_478123.1"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for RAD51C (refseq:NM_058216.3), corresponding to the Refseq protein accession NP_478123.1.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.GMP4RuPu7Q_irnmwoRIbnsFiecXnnHlw",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 0,
+                    "end": 376,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:9820",
+                    "conceptType": "Gene",
+                    "name": "RAD51C",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:9820",
+                      "code": "HGNC:9820",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:9820"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000108384",
+                          "code": "ENSG00000108384",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000108384"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:5889",
+                          "code": "5889",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/5889"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_058216.3",
+                          "code": "NM_058216.3",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_058216.3"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Germline Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "17"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": null
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_pathogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

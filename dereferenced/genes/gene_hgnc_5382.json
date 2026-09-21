@@ -2,6 +2,14 @@
   "id": "gene:hgnc:5382",
   "conceptType": "Gene",
   "name": "IDH1",
+  "primaryCoding": {
+    "id": "coding:hgnc:5382",
+    "code": "HGNC:5382",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,521 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 223
+    },
+    {
       "name": "location",
       "value": "2q34"
     },
     {
       "name": "location_sortable",
       "value": "02q34"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.YlsoEx5O2bo-T9DgprqMy_mzQDsvdfWd",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4).",
+        "digest": "YlsoEx5O2bo-T9DgprqMy_mzQDsvdfWd",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+          "type": "SequenceReference",
+          "name": "NP_005887.2",
+          "aliases": [
+            "ensembl:ENSP00000260985.2",
+            "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "refseq:NP_005887.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 414,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.LAu3Yx5-C9NGEhzFqKKQ3CupAOmk9wMU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "LAu3Yx5-C9NGEhzFqKKQ3CupAOmk9wMU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 41,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pZtjeVVkGGyq3Nsfk5y8-06YY3WFUAqe",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "pZtjeVVkGGyq3Nsfk5y8-06YY3WFUAqe",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 40,
+          "end": 138,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.15gUrq-jV76iwMjVxDUIbZLfvKK8JHJx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "15gUrq-jV76iwMjVxDUIbZLfvKK8JHJx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 138,
+          "end": 174,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.z9-aIW7Z0kcjbkXeURzDRNINTfhFJtWh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 6. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "z9-aIW7Z0kcjbkXeURzDRNINTfhFJtWh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 173,
+          "end": 233,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4D71En9MYmrhXPXU0H93ga5Cm1m5diEi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 7. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4D71En9MYmrhXPXU0H93ga5Cm1m5diEi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 232,
+          "end": 284,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WsSu7FHQLzkgKK1f0rX5iMGUMJxkjCrf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 8. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "WsSu7FHQLzkgKK1f0rX5iMGUMJxkjCrf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 283,
+          "end": 331,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.b3zVj6T3S0Pj_IoJcooMGAGxidHlcK-p",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "b3zVj6T3S0Pj_IoJcooMGAGxidHlcK-p",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 330,
+          "end": 385,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MAsMGPg4k9XtfejoxKes9yY_4DTgqf6D",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005887.2, the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "MAsMGPg4k9XtfejoxKes9yY_4DTgqf6D",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "type": "SequenceReference",
+            "name": "NP_005887.2",
+            "aliases": [
+              "ensembl:ENSP00000260985.2",
+              "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+              "refseq:NP_005887.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+            "residueAlphabet": "aa"
+          },
+          "start": 384,
+          "end": 414,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.uckEDu87qAS24984qgFfczvtFYRe0yhw",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_005896.4, the MANE Select coding transcript for IDH1.",
+        "digest": "uckEDu87qAS24984qgFfczvtFYRe0yhw",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+          "type": "SequenceReference",
+          "name": "NM_005896.4",
+          "aliases": [
+            "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "refseq:NM_005896.4"
+          ],
+          "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 2318,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.kJgFj6h-C9q-Q-OTO2W9sq06b2VTCclF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 1.",
+          "digest": "kJgFj6h-C9q-Q-OTO2W9sq06b2VTCclF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 133,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MEvQFEzxXQofkOckMv7MF-6FpKXQskiu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 2.",
+          "digest": "MEvQFEzxXQofkOckMv7MF-6FpKXQskiu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 133,
+          "end": 207,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kopuOtaNdu_ACkkJ1jOeLEQjAaNgKvkP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 3.",
+          "digest": "kopuOtaNdu_ACkkJ1jOeLEQjAaNgKvkP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 207,
+          "end": 345,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1J9Wg2-KpR_xh8CO00giLkMUHM-yXHE9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 4.",
+          "digest": "1J9Wg2-KpR_xh8CO00giLkMUHM-yXHE9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 345,
+          "end": 637,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.bx4RQg70K6cED5UhegfX-3Vy3K1Jru0c",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 5.",
+          "digest": "bx4RQg70K6cED5UhegfX-3Vy3K1Jru0c",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 637,
+          "end": 743,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YshEx_3If7CN4C9hAOELtDdTW761jPo9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 6.",
+          "digest": "YshEx_3If7CN4C9hAOELtDdTW761jPo9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 743,
+          "end": 921,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WJpnVDzAWzilPoJwTn6hPngxJOr1Ypme",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 7.",
+          "digest": "WJpnVDzAWzilPoJwTn6hPngxJOr1Ypme",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 921,
+          "end": 1073,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.OW5s04cG3jvoUttnkAzaDkC_cq86IhuC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 8.",
+          "digest": "OW5s04cG3jvoUttnkAzaDkC_cq86IhuC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 1073,
+          "end": 1214,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tlcS_iz7fBg_n1jdTsJEaUaH4dRk7ubF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 9.",
+          "digest": "tlcS_iz7fBg_n1jdTsJEaUaH4dRk7ubF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 1214,
+          "end": 1377,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WpfTeE0kjQZDMB2dJO8iIcJrDVi6f37T",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005896.4, the MANE Select coding transcript for IDH1, corresponding to Exon 10.",
+          "digest": "WpfTeE0kjQZDMB2dJO8iIcJrDVi6f37T",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "type": "SequenceReference",
+            "name": "NM_005896.4",
+            "aliases": [
+              "ga4gh:SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+              "refseq:NM_005896.4"
+            ],
+            "description": "The MANE Select coding transcript for IDH1, corresponding to the Refseq transcript accession NM_005896.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.hEJsBr70h9e45MBBbLD_tzRFmmQbLynI",
+            "residueAlphabet": "na"
+          },
+          "start": 1377,
+          "end": 2318,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:5382",
-    "code": "HGNC:5382",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
-    ]
-  }
+  ]
 }

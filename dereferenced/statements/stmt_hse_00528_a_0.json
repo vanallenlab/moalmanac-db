@@ -98,72 +98,11 @@
   "proposition": {
     "id": "prop:vtxr:760",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:0",
-        "type": "CategoricalVariant",
-        "name": "CD30 +",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "CD30"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      },
-      {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:HL",
       "conceptType": "Disease",
@@ -193,7 +132,7 @@
       "therapies": [
         {
           "id": "tx:ncit:C66944",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Brentuximab vedotin",
           "mappings": [
             {
@@ -276,7 +215,7 @@
         },
         {
           "id": "tx:ncit:C1282",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Carboplatin",
           "mappings": [
             {
@@ -359,7 +298,7 @@
         },
         {
           "id": "tx:ncit:C491",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Etoposide",
           "mappings": [
             {
@@ -442,7 +381,7 @@
         },
         {
           "id": "tx:ncit:C564",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Ifosfamide",
           "mappings": [
             {
@@ -524,10 +463,82 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:0",
+            "present": true,
+            "subject": {
+              "id": "bmkr:0",
+              "type": "CategoricalVariant",
+              "name": "CD30 +",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "CD30"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:2",
+            "present": true,
+            "subject": {
+              "id": "bmkr:2",
+              "type": "CategoricalVariant",
+              "name": "HER2-negative",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Negative"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

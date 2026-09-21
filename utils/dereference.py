@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import dataclasses
 import os
 import pathlib
@@ -23,12 +24,15 @@ class FKSingle:
         src_key (str): The key in the record whose value is the foreign key.
         dest_key (str): The key name written after dereferencing (replaces src_key).
         get_table (typing.Callable[[Database], BaseTable]): Returns the referenced table from the Database.
+        nullable (bool): If True, a None value in src_key is left as None instead of being looked up.
         post (typing.Callable[[dict], dict] | None): Optional function applied to the resolved record.
+            Not applied when the resolved value is None.
     """
 
     src_key: str
     dest_key: str
     get_table: typing.Callable[[Database], BaseTable]
+    nullable: bool = False
     post: typing.Callable[[dict], dict] | None = None
 
 
@@ -50,6 +54,15 @@ class FKList:
     get_table: typing.Callable[[Database], BaseTable]
     key_always_present: bool = True
     post: typing.Callable[[dict], object] | None = None
+
+
+SUBJECT_VARIANT_PLACEHOLDER = {
+    "type": "CategoricalVariant",
+    "description": (
+        "Placeholder. Cat-VRS does not yet support sets of categorical variants. "
+        "See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    ),
+}
 
 
 def strip_keys(*keys: str) -> typing.Callable[[dict], dict]:
@@ -121,9 +134,10 @@ class BaseTable:
             table.dereference(db)
             for record in self.records:
                 if isinstance(fk, FKSingle):
-                    self.dereference_single(record, fk.src_key, table.records)
+                    if not (fk.nullable and record.get(fk.src_key) is None):
+                        self.dereference_single(record, fk.src_key, table.records)
                     self.replace_key(record, fk.src_key, fk.dest_key)
-                    if fk.post is not None:
+                    if fk.post is not None and record[fk.dest_key] is not None:
                         record[fk.dest_key] = fk.post(dict(record[fk.dest_key]))
                 else:
                     self.dereference_list(
@@ -215,6 +229,28 @@ class BaseTable:
         record.pop(key)
 
     @staticmethod
+    def reorder_keys(record: dict, key_order: list[str]) -> None:
+        """
+        Reorders a record's keys in place to match the given order.
+
+        Args:
+            record (dict): the dictionary whose keys will be reordered.
+            key_order (list[str]): keys in their desired order. Keys present in `record` but not listed
+                here keep their relative order and are appended after the listed keys.
+
+        Raises:
+            KeyError: If a key in `key_order` is not found in `record`.
+        """
+        for key in key_order:
+            if key not in record:
+                raise KeyError(f"Key '{key}' not found in {record}")
+
+        remaining = [key for key in record if key not in key_order]
+        reordered = {key: record[key] for key in [*key_order, *remaining]}
+        record.clear()
+        record.update(reordered)
+
+    @staticmethod
     def replace_key(record: dict, old_key: str, new_key: str) -> None:
         """
         Dereferences a key for each record in records, where the key's value references a single record.
@@ -234,7 +270,8 @@ class BaseTable:
 
     def write_records(self, output_dir: str, quiet: bool = False) -> None:
         """
-        Writes each record in this table to its own JSON file in the given directory.
+        Writes each record in this table to its own JSON file in the given directory, creating the
+        directory if it does not exist.
 
         Each file is named `{record['id']}.json`, with semicolons replaced by
         underscores and spaces replaced by dashes.
@@ -243,6 +280,7 @@ class BaseTable:
             output_dir (str): Directory path to write the individual record files into.
             quiet (bool): Suppress print statements if True.
         """
+        os.makedirs(output_dir, exist_ok=True)
         for record in self.records:
             filename = f"{str(record['id']).replace(':', '_').replace(' ', '-')}.json"
             path = os.path.join(output_dir, filename)
@@ -259,18 +297,347 @@ class Agents(BaseTable):
     """
 
 
+class SequenceReferences(BaseTable):
+    """
+    Represents the SequenceReferences table (VRS SequenceReference objects). This class inherits common
+    functionality from the BaseTable class and dereferences keys that reference other tables. This table
+    does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the sequence reference records.
+    """
+
+
+class SequenceLocations(BaseTable):
+    """
+    Represents the SequenceLocations table (VRS SequenceLocation objects). This class inherits common
+    functionality from the BaseTable class and dereferences keys that reference other tables. This table
+    references the following tables:
+    - SequenceReferences (initial key: `sequenceReference`, resulting key: `sequenceReference`)
+
+    After foreign keys are resolved, each record's keys are reordered to `id`, `type`, `name`,
+    `aliases`, `description`, `digest`, `sequenceReference`, `start`, `end`, `sequence` — `replace_key`
+    moves a resolved key to the end of the dict even when its name is unchanged, so this reorder is
+    needed to restore the source field order.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the sequence location records.
+    """
+
+    foreign_keys = [
+        FKSingle(
+            "sequenceReference", "sequenceReference", lambda db: db.sequence_references
+        ),
+    ]
+
+    def dereference(self, db: Database) -> None:
+        if self._resolved:
+            return
+        super().dereference(db)
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "type",
+                    "name",
+                    "aliases",
+                    "description",
+                    "digest",
+                    "sequenceReference",
+                    "start",
+                    "end",
+                    "sequence",
+                ],
+            )
+
+
+class Alleles(BaseTable):
+    """
+    Represents the Alleles table (VRS Allele objects). This class inherits common functionality from the
+    BaseTable class and dereferences keys that reference other tables. This table references the following
+    tables:
+    - SequenceLocations (initial key: `location`, resulting key: `location`)
+
+    After foreign keys are resolved, the flat `hgvs.*` keys are folded into a VRS `expressions` list
+    and the `state_*` keys are folded into a VRS `state` object. Each record's keys are then
+    reordered to `id`, `type`, `name`, `aliases`, `description`, `digest`, `expressions`, `location`,
+    `state` — `replace_key` moves a resolved key to the end of the dict even when its name is unchanged,
+    so this reorder is needed to restore the source field order.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the allele records.
+    """
+
+    foreign_keys = [
+        FKSingle("location", "location", lambda db: db.sequence_locations),
+    ]
+
+    @staticmethod
+    def build_expressions(record: dict) -> None:
+        """
+        Folds `hgvs.g`, `hgvs.c`, `hgvs.c_short`, `hgvs.p`, and `hgvs.p_short` into an `expressions`
+        list, in place.
+
+        Each non-null `hgvs.g`, `hgvs.c`, and `hgvs.p` becomes an expression of the form
+        `{"syntax": key, "value": value}`; null values are omitted, since a VRS Expression requires a
+        string `value`. `hgvs.c_short` and `hgvs.p_short` are not valid VRS syntaxes, so each is attached
+        as an extension, named for its referenced key, on the corresponding `hgvs.c` or `hgvs.p`
+        expression. A short form with no corresponding long form is dropped, as there is no expression
+        to attach it to.
+
+        Args:
+            record (dict): An allele record with flat `hgvs.*` keys.
+        """
+        short_forms = {
+            "hgvs.c": record.pop("hgvs.c_short"),
+            "hgvs.p": record.pop("hgvs.p_short"),
+        }
+        expressions = []
+        for syntax in ("hgvs.g", "hgvs.c", "hgvs.p"):
+            value = record.pop(syntax)
+            if value is None:
+                continue
+            expression = {"syntax": syntax, "value": value}
+            if short_forms.get(syntax) is not None:
+                expression["extensions"] = [
+                    {"name": f"{syntax}_short", "value": short_forms[syntax]},
+                ]
+            expressions.append(expression)
+        record["expressions"] = expressions
+
+    @staticmethod
+    def build_state(record: dict) -> None:
+        """
+        Folds `state_type`, `state_sequence`, `state_length`, and `state_repeat_subunit_length` into
+        a `state` object, in place.
+
+        `state_type` and `state_sequence` become `type` and `sequence`. `state_length` and
+        `state_repeat_subunit_length` become `length` and `repeatSubunitLength`, and are only included
+        for a `ReferenceLengthExpression`, the only state type that defines them; they are null for
+        all other state types.
+
+        Args:
+            record (dict): An allele record with flat `state_*` keys.
+        """
+        state = {
+            "type": record.pop("state_type"),
+            "sequence": record.pop("state_sequence"),
+        }
+        length = record.pop("state_length")
+        repeat_subunit_length = record.pop("state_repeat_subunit_length")
+        if state["type"] == "ReferenceLengthExpression":
+            state["length"] = length
+            state["repeatSubunitLength"] = repeat_subunit_length
+        record["state"] = state
+
+    def dereference(self, db: Database) -> None:
+        if self._resolved:
+            return
+        super().dereference(db)
+        for record in self.records:
+            self.build_expressions(record)
+            self.build_state(record)
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "type",
+                    "name",
+                    "aliases",
+                    "description",
+                    "digest",
+                    "expressions",
+                    "location",
+                    "state",
+                ],
+            )
+
+
+def is_fusion(record: dict) -> bool:
+    """
+    Checks whether a biomarker record's extensions mark it as a gene fusion.
+
+    Args:
+        record (dict): A biomarker record with an `extensions` list.
+
+    Returns:
+        bool: True if the record has a `rearrangement_type` extension valued "Fusion".
+    """
+    return any(
+        extension["name"] == "rearrangement_type" and extension["value"] == "Fusion"
+        for extension in record["extensions"]
+    )
+
+
 class Biomarkers(BaseTable):
     """
     Represents the Biomarkers table. This class inherits common functionality from the BaseTable class and
-    dereferences keys that reference other tables. This table references the following tables:
+    dereferences keys that reference other tables, then shapes the resolved allele, location, genes, function,
+    and copy change into Cat-VRS constraint objects. This table references the following tables:
+    - Alleles (initial key: `allele`, resulting key: `allele`)
+    - SequenceLocations (initial key: `location`, resulting key: `location`)
     - Genes (initial key: `genes`, resulting key: `genes`)
+    - FunctionConsequences (initial key: `function`, resulting key: `function`)
+    - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
+
+    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. The dereferenced
+    location, when present, is wrapped as a `DefiningLocationConstraint` (used for biomarkers defined
+    against a gene's whole protein product rather than a specific allele). For most records, each
+    dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`rearrangement_type`
+    extension equal to "Fusion"), the resolved genes are instead collapsed into a single
+    `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known; a
+    fusion with only one known partner gets a trailing `UnspecifiedElement` for the other. Each
+    gene has its `extensions` stripped before embedding (`Genes.build_extensions` output is only meant
+    for a gene's own standalone/per-concept record). The dereferenced function consequence, when present,
+    is wrapped as a `FunctionConstraint`. The dereferenced copy change, when present, is wrapped as a
+    `CopyChangeConstraint`. All resulting constraints are merged into a single `constraints` list, ordered
+    allele, location, gene, function, copy change.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the biomarker records.
     """
 
     foreign_keys = [
-        FKList("genes", "genes", lambda db: db.genes, key_always_present=False),
+        FKSingle(
+            "allele",
+            "allele",
+            lambda db: db.alleles,
+            nullable=True,
+            post=lambda record: {
+                "type": "DefiningAlleleConstraint",
+                "allele": record,
+                "relations": [],
+            },
+        ),
+        FKSingle(
+            "location",
+            "location",
+            lambda db: db.sequence_locations,
+            nullable=True,
+            post=lambda record: {
+                "type": "DefiningLocationConstraint",
+                "location": record,
+                "relations": [],
+                "matchCharacteristic": {
+                    "primaryCoding": {
+                        "code": "is_within",
+                        "system": "ga4gh-gks-term:location-match",
+                    },
+                },
+            },
+        ),
+        FKList(
+            "genes",
+            "genes",
+            lambda db: db.genes,
+            post=strip_keys("extensions"),
+        ),
+        FKSingle(
+            "function",
+            "function",
+            lambda db: db.function_consequences,
+            nullable=True,
+            post=lambda record: {
+                "type": "FunctionConstraint",
+                "functionConsequence": record,
+            },
+        ),
+        FKSingle(
+            "copyChange",
+            "copyChange",
+            lambda db: db.copy_change,
+            nullable=True,
+            post=lambda record: {
+                "type": "CopyChangeConstraint",
+                "copyChange": record["name"],
+            },
+        ),
+    ]
+
+    def wrap_constraints(self) -> None:
+        """
+        Wraps each record's dereferenced allele, location, genes, function, and copy change into Cat-VRS
+        constraint objects.
+
+        The allele, when present, becomes a `DefiningAlleleConstraint`. The location, when present,
+        becomes a `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
+        per gene. Fusion records collapse their genes into a single `AdjacencyConstraint`, with
+        `orderKnown` True only when both fusion partners are known (two genes); a single-gene fusion
+        has an `UnspecifiedElement` appended to `adjoinedElements` for the unknown partner. The function
+        consequence, when present, becomes a `FunctionConstraint` and follows the gene constraints. The copy
+        change, when present, becomes a `CopyChangeConstraint`. All resulting constraints are merged into a
+        single `constraints` list.
+        """
+        for record in self.records:
+            allele_constraint = record.pop("allele")
+            location_constraint = record.pop("location")
+            genes = record.pop("genes")
+            function_constraint = record.pop("function")
+            copy_change = record.pop("copyChange")
+            if is_fusion(record):
+                adjoined_elements = list(genes)
+                if len(genes) == 1:
+                    adjoined_elements.append({"type": "UnspecifiedElement"})
+                gene_constraints = [
+                    {
+                        "type": "AdjacencyConstraint",
+                        "orderKnown": len(genes) == 2,
+                        "adjoinedElements": adjoined_elements,
+                    },
+                ]
+            else:
+                gene_constraints = [
+                    {"type": "FeatureContextConstraint", "featureContext": gene}
+                    for gene in genes
+                ]
+            allele_constraints = [allele_constraint] if allele_constraint else []
+            location_constraints = [location_constraint] if location_constraint else []
+            function_constraints = [function_constraint] if function_constraint else []
+            copy_changes = [copy_change] if copy_change else []
+            record["constraints"] = (
+                allele_constraints
+                + location_constraints
+                + gene_constraints
+                + function_constraints
+                + copy_changes
+            )
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all referenced keys within the Biomarkers table, then wraps genes into constraints.
+
+        Resolves foreign keys declared in `foreign_keys` via the base class, then applies
+        `wrap_constraints`. Each table is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.wrap_constraints()
+        for record in self.records:
+            self.reorder_keys(
+                record, ["id", "type", "name", "constraints", "extensions"]
+            )
+
+
+class BiomarkerCriteria(BaseTable):
+    """
+    Represents the BiomarkerCriteria table, an interim biomarker-to-proposition link
+    (a draft Cat-VRS "categorical variant criterion"). Each record pairs a biomarker
+    with a `present` flag describing whether that biomarker is asserted present or
+    absent in the referencing proposition. This class inherits common functionality
+    from the BaseTable class and references the following tables:
+    - Biomarkers (initial key: `subject`, resulting key: `subject`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the criterion records.
+    """
+
+    foreign_keys = [
+        FKSingle("subject", "subject", lambda db: db.biomarkers),
     ]
 
 
@@ -302,6 +669,16 @@ class Contributions(BaseTable):
             post=strip_keys("extensions"),
         ),
     ]
+
+
+class CopyChanges(BaseTable):
+    """
+    Represents the CopyChanges table. This class inherits common functionality from the BaseTable class and
+    dereferences keys that reference other tables. This table does not currently reference any other tables.
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the copy change records.
+    """
 
 
 class Diseases(BaseTable):
@@ -429,12 +806,36 @@ class Documents(BaseTable):
         self.convert_fields_to_extensions()
 
 
+class FunctionConsequences(BaseTable):
+    """
+    Represents the FunctionConsequences table. This class inherits common functionality from the BaseTable class
+    and dereferences keys that reference other tables. This table references the following tables:
+    - Codings (initial key: `primary_coding_id`, resulting key: `primaryCoding`)
+
+    Attributes:
+        records (list[dict]): A list of dictionaries representing the function consequence records.
+    """
+
+    foreign_keys = [
+        FKSingle("primary_coding_id", "primaryCoding", lambda db: db.codings),
+    ]
+
+
 class Genes(BaseTable):
     """
     Represents the Genes table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
     - Codings (initial key: `primary_coding_id`, resulting_key: `primaryCoding`)
     - Mappings (initial key: `mappings`, resulting_key: `mappings`)
+    - SequenceLocations (initial key: `protein_product`, resulting key: `protein_product`)
+    - SequenceLocations (initial key: `protein_product_exons`, resulting key: `protein_product_exons`)
+    - SequenceLocations (initial key: `transcript`, resulting key: `transcript`)
+    - SequenceLocations (initial key: `transcript_exons`, resulting key: `transcript_exons`)
+
+    After foreign keys are resolved, `cds_start`, `location`, `location_sortable`, `protein_product`,
+    `protein_product_exons`, `transcript`, and `transcript_exons` are folded into an `extensions` list
+    (see `build_extensions`), and each record's keys are reordered to `id`, `conceptType`, `name`,
+    `primaryCoding`, `mappings`, `extensions`.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the therapy records.
@@ -448,7 +849,79 @@ class Genes(BaseTable):
             lambda db: db.mappings,
             post=strip_keys("id", "primary_coding_id"),
         ),
+        FKSingle(
+            "protein_product", "protein_product", lambda db: db.sequence_locations
+        ),
+        FKList(
+            "protein_product_exons",
+            "protein_product_exons",
+            lambda db: db.sequence_locations,
+        ),
+        FKSingle("transcript", "transcript", lambda db: db.sequence_locations),
+        FKList(
+            "transcript_exons", "transcript_exons", lambda db: db.sequence_locations
+        ),
     ]
+
+    def build_extensions(self) -> None:
+        """
+        Folds `cds_start`, `location`, `location_sortable`, `protein_product`,
+        `protein_product_exons`, `transcript`, and `transcript_exons` into an `extensions` list,
+        in place.
+
+        `protein_product`, `protein_product_exons`, `transcript`, and `transcript_exons` are already
+        dereferenced SequenceLocation objects by the time this runs. This only runs on the Genes
+        table's own records, so it produces the richer standalone/per-concept form; a gene embedded
+        elsewhere (e.g. via Biomarkers' `genes` foreign key) has this `extensions` list stripped at
+        the embedding site instead.
+        """
+        for record in self.records:
+            cds_start = record.pop("cds_start")
+            location = record.pop("location")
+            location_sortable = record.pop("location_sortable")
+            protein_product = record.pop("protein_product")
+            protein_product_exons = record.pop("protein_product_exons")
+            transcript = record.pop("transcript")
+            transcript_exons = record.pop("transcript_exons")
+            record["extensions"] = [
+                {"name": "cds_start", "value": cds_start},
+                {"name": "location", "value": location},
+                {"name": "location_sortable", "value": location_sortable},
+                {"name": "protein_product", "value": protein_product},
+                {"name": "protein_product_exons", "value": protein_product_exons},
+                {"name": "transcript", "value": transcript},
+                {"name": "transcript_exons", "value": transcript_exons},
+            ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all referenced keys within the Genes table, then reorders each record's keys.
+
+        Resolves foreign keys declared in `foreign_keys` via the base class, folds `cds_start`,
+        `location`, `location_sortable`, `protein_product`, `protein_product_exons`, `transcript`,
+        and `transcript_exons` into an `extensions` list via `build_extensions`, then reorders keys
+        to `id`, `conceptType`, `name`, `primaryCoding`, `mappings`, `extensions`. Each table is
+        resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "conceptType",
+                    "name",
+                    "primaryCoding",
+                    "mappings",
+                    "extensions",
+                ],
+            )
 
 
 class Indications(BaseTable):
@@ -553,12 +1026,27 @@ class Mappings(BaseTable):
         FKSingle("coding_id", "coding", lambda db: db.codings),
     ]
 
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences `coding_id`, then removes `primary_coding_id`, which is the join table's foreign key
+        and is not part of the GKM Core concept mapping.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        super().dereference(db)
+        self.records = [strip_keys("primary_coding_id")(r) for r in self.records]
+
 
 class Propositions(BaseTable):
     """
     Represents the Propositions table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Biomarkers (initial key: `biomarkers`, resulting key: `biomarkers`)
+    - BiomarkerCriteria (initial key: `biomarker_criteria`, resulting key: `biomarkers`; each
+      element is the dereferenced criterion record, i.e. `{id, subject, present}` with
+      `subject` itself resolved to the full biomarker record). Since Cat-VRS does not yet support
+      sets of categorical variants, `biomarkers` is then moved into an extension of the same name
+      and `subjectVariant` is set to `SUBJECT_VARIANT_PLACEHOLDER`.
     - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`)
     - Therapies (initial key: `therapy_id`, resulting key: `objectTherapeutic`)
     - TherapyGroups (initial_key: `therapy_group_id`, resulting key: `objectTherapeutic`)
@@ -569,16 +1057,50 @@ class Propositions(BaseTable):
 
     foreign_keys = [
         FKSingle("conditionQualifier_id", "conditionQualifier", lambda db: db.diseases),
-        FKList("biomarkers", "biomarkers", lambda db: db.biomarkers),
+        FKList(
+            "biomarker_criteria",
+            "biomarkers",
+            lambda db: db.biomarker_criteria,
+        ),
     ]
+
+    def convert_fields_to_extensions(self) -> None:
+        """
+        Moves the dereferenced `biomarkers` into a `biomarkers` extension and adds the placeholder `subjectVariant`.
+
+        Each record is rebuilt in place with the key order `id`, `type`, `predicate`, `subjectVariant`,
+        `conditionQualifier`, `objectTherapeutic`, `extensions`, followed by any other keys.
+        """
+        leading_keys = ["id", "type", "predicate"]
+        middle_keys = ["conditionQualifier", "objectTherapeutic"]
+        for record in self.records:
+            extensions = [
+                {
+                    "name": "biomarkers",
+                    "value": record.pop("biomarkers"),
+                    "description": (
+                        "The biomarkers associated with this Proposition, each with a `present` flag "
+                        "indicating if the biomarker is present (true) or absent (false). "
+                        "Multiple biomarkers are combined with implied AND logic."
+                    ),
+                },
+            ]
+            ordered = {key: record.pop(key) for key in leading_keys}
+            ordered["subjectVariant"] = copy.deepcopy(SUBJECT_VARIANT_PLACEHOLDER)
+            for key in middle_keys:
+                ordered[key] = record.pop(key)
+            ordered.update(record)
+            ordered["extensions"] = extensions
+            record.clear()
+            record.update(ordered)
 
     def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Propositions table.
 
         Resolves therapies and therapy groups before delegating FK resolution to the base class,
-        then applies the custom therapeutics dereferencing. Each table is resolved at most once;
-        subsequent calls are no-ops.
+        then applies the custom therapeutics dereferencing and converts `biomarkers` to an extension.
+        Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
             db (Database): An instance of the Database class containing all tables.
@@ -594,6 +1116,7 @@ class Propositions(BaseTable):
         self.dereference_therapeutics(
             therapies=db.therapies, therapy_groups=db.therapy_groups
         )
+        self.convert_fields_to_extensions()
 
     def dereference_therapeutics(
         self, therapies: Therapies, therapy_groups: TherapyGroups
@@ -776,15 +1299,21 @@ class Database:
 
     Attributes:
         agents (Agents): An instance of the Agents class.
+        alleles (Alleles): An instance of the Alleles class.
         biomarkers (Biomarkers): An instance of the Biomarkers class.
+        biomarker_criteria (BiomarkerCriteria): An instance of the BiomarkerCriteria class.
         codings (Codings): An instance of the Codings class.
         contributions (Contributions): An instance of the Contributions class.
+        copy_change (CopyChanges): An instance of the CopyChanges class.
         diseases (Diseases): An instance of the Diseases class.
         documents (Documents): An instance of the Documents class.
+        function_consequences (FunctionConsequences): An instance of the FunctionConsequences class.
         genes (Genes): An instance of the Genes class.
         indications (Indications): An instance of the Indications class.
         mappings (Mappings): An instance of the Mappings class.
         propositions (Propositions): An instance of the Propositions class.
+        sequence_locations (SequenceLocations): An instance of the SequenceLocations class.
+        sequence_references (SequenceReferences): An instance of the SequenceReferences class.
         statements (Statements): An instance of the Statements class.
         strengths (Strengths): An instance of the Strengths class.
         therapies (Therapies): An instance of the Therapies class.
@@ -793,15 +1322,21 @@ class Database:
     """
 
     agents: Agents
+    alleles: Alleles
     biomarkers: Biomarkers
+    biomarker_criteria: BiomarkerCriteria
     codings: Codings
     contributions: Contributions
+    copy_change: CopyChanges
     diseases: Diseases
     documents: Documents
+    function_consequences: FunctionConsequences
     genes: Genes
     indications: Indications
     mappings: Mappings
     propositions: Propositions
+    sequence_locations: SequenceLocations
+    sequence_references: SequenceReferences
     statements: Statements
     strengths: Strengths
     therapies: Therapies
@@ -898,15 +1433,21 @@ def clear_output_dir(output_dir: str, quiet: bool = False) -> None:
 
 _CONCEPT_DIRS = [
     ("agents", os.path.join("dereferenced", "agents")),
+    ("alleles", os.path.join("dereferenced", "alleles")),
     ("biomarkers", os.path.join("dereferenced", "biomarkers")),
+    ("biomarker_criteria", os.path.join("dereferenced", "biomarker_criteria")),
     ("codings", os.path.join("dereferenced", "codings")),
     ("contributions", os.path.join("dereferenced", "contributions")),
+    ("copy_change", os.path.join("dereferenced", "copy_change")),
     ("diseases", os.path.join("dereferenced", "diseases")),
     ("documents", os.path.join("dereferenced", "documents")),
+    ("function_consequences", os.path.join("dereferenced", "function_consequences")),
     ("genes", os.path.join("dereferenced", "genes")),
     ("indications", os.path.join("dereferenced", "indications")),
     ("mappings", os.path.join("dereferenced", "mappings")),
     ("propositions", os.path.join("dereferenced", "propositions")),
+    ("sequence_locations", os.path.join("dereferenced", "sequence_locations")),
+    ("sequence_references", os.path.join("dereferenced", "sequence_references")),
     ("statements", os.path.join("dereferenced", "statements")),
     ("strengths", os.path.join("dereferenced", "strengths")),
     ("therapies", os.path.join("dereferenced", "therapies")),
@@ -918,7 +1459,7 @@ def write_all_concepts(
     input_paths: dict, clear: bool = False, quiet: bool = False
 ) -> None:
     """
-    Writes per-concept JSON files for all 14 entity types to their output directories.
+    Writes per-concept JSON files for all entity types in `_CONCEPT_DIRS` to their output directories.
 
     Constructs a fresh Database from the raw input files (independent of any already-resolved
     full-DB tables), dereferences each entity, and writes one JSON file per record to
@@ -939,8 +1480,14 @@ def write_all_concepts(
         agents=Agents(
             records=read.json_records(file=input_paths["agents"]),
         ),
+        alleles=Alleles(
+            records=read.json_records(file=input_paths["alleles"]),
+        ),
         biomarkers=Biomarkers(
             records=read.json_records(file=input_paths["biomarkers"])
+        ),
+        biomarker_criteria=BiomarkerCriteria(
+            records=read.json_records(file=input_paths["biomarker_criteria"])
         ),
         codings=Codings(
             records=read.json_records(file=input_paths["codings"]),
@@ -948,11 +1495,17 @@ def write_all_concepts(
         contributions=Contributions(
             records=read.json_records(file=input_paths["contributions"])
         ),
+        copy_change=CopyChanges(
+            records=read.json_records(file=input_paths["copy_change"]),
+        ),
         diseases=Diseases(
             records=read.json_records(file=input_paths["diseases"]),
         ),
         documents=Documents(
             records=read.json_records(file=input_paths["documents"]),
+        ),
+        function_consequences=FunctionConsequences(
+            records=read.json_records(file=input_paths["function_consequences"]),
         ),
         genes=Genes(
             records=read.json_records(file=input_paths["genes"]),
@@ -965,6 +1518,12 @@ def write_all_concepts(
         ),
         propositions=Propositions(
             records=read.json_records(file=input_paths["propositions"])
+        ),
+        sequence_locations=SequenceLocations(
+            records=read.json_records(file=input_paths["sequence_locations"]),
+        ),
+        sequence_references=SequenceReferences(
+            records=read.json_records(file=input_paths["sequence_references"]),
         ),
         statements=Statements(
             records=read.json_records(file=input_paths["statements"])
@@ -1006,15 +1565,21 @@ def main(input_paths):
     # Step 1: Read JSON files
     about = read.json_records(file=input_paths["about"])
     agents = read.json_records(file=input_paths["agents"])
+    alleles = read.json_records(file=input_paths["alleles"])
     biomarkers = read.json_records(file=input_paths["biomarkers"])
+    biomarker_criteria = read.json_records(file=input_paths["biomarker_criteria"])
     codings = read.json_records(file=input_paths["codings"])
     contributions = read.json_records(file=input_paths["contributions"])
+    copy_change = read.json_records(file=input_paths["copy_change"])
     diseases = read.json_records(file=input_paths["diseases"])
     documents = read.json_records(file=input_paths["documents"])
+    function_consequences = read.json_records(file=input_paths["function_consequences"])
     genes = read.json_records(file=input_paths["genes"])
     indications = read.json_records(file=input_paths["indications"])
     mappings = read.json_records(file=input_paths["mappings"])
     propositions = read.json_records(file=input_paths["propositions"])
+    sequence_locations = read.json_records(file=input_paths["sequence_locations"])
+    sequence_references = read.json_records(file=input_paths["sequence_references"])
     statements = read.json_records(file=input_paths["statements"])
     strengths = read.json_records(file=input_paths["strengths"])
     therapies = read.json_records(file=input_paths["therapies"])
@@ -1032,15 +1597,21 @@ def main(input_paths):
 
     # Step 2: Generate table objects
     agents = Agents(records=agents)
+    alleles = Alleles(records=alleles)
     biomarkers = Biomarkers(records=biomarkers)
+    biomarker_criteria = BiomarkerCriteria(records=biomarker_criteria)
     codings = Codings(records=codings)
     contributions = Contributions(records=contributions)
+    copy_change = CopyChanges(records=copy_change)
     diseases = Diseases(records=diseases)
     documents = Documents(records=documents)
+    function_consequences = FunctionConsequences(records=function_consequences)
     genes = Genes(records=genes)
     indications = Indications(records=indications)
     mappings = Mappings(records=mappings)
     propositions = Propositions(records=propositions)
+    sequence_locations = SequenceLocations(records=sequence_locations)
+    sequence_references = SequenceReferences(records=sequence_references)
     statements = Statements(records=statements)
     strengths = Strengths(records=strengths)
     therapies = Therapies(records=therapies)
@@ -1050,15 +1621,21 @@ def main(input_paths):
     # Step 3: Dereference the database and generate statements
     db = Database(
         agents=agents,
+        alleles=alleles,
         biomarkers=biomarkers,
+        biomarker_criteria=biomarker_criteria,
         codings=codings,
         contributions=contributions,
+        copy_change=copy_change,
         diseases=diseases,
         documents=documents,
+        function_consequences=function_consequences,
         genes=genes,
         indications=indications,
         mappings=mappings,
         propositions=propositions,
+        sequence_locations=sequence_locations,
+        sequence_references=sequence_references,
         statements=statements,
         strengths=strengths,
         therapies=therapies,
@@ -1088,9 +1665,19 @@ if __name__ == "__main__":
         default=os.path.join("referenced", "agents.json"),
     )
     arg_parser.add_argument(
+        "--alleles",
+        help="json detailing db alleles",
+        default=os.path.join("referenced", "alleles.json"),
+    )
+    arg_parser.add_argument(
         "--biomarkers",
         help="json detailing db biomarkers",
         default=os.path.join("referenced", "biomarkers.json"),
+    )
+    arg_parser.add_argument(
+        "--biomarker-criteria",
+        help="json detailing db biomarker criteria",
+        default=os.path.join("referenced", "biomarker_criteria.json"),
     )
     arg_parser.add_argument(
         "--codings",
@@ -1103,6 +1690,11 @@ if __name__ == "__main__":
         default=os.path.join("referenced", "contributions.json"),
     )
     arg_parser.add_argument(
+        "--copy-change",
+        help="json detailing db copy changes",
+        default=os.path.join("referenced", "copy_changes.json"),
+    )
+    arg_parser.add_argument(
         "--diseases",
         help="json detailing db diseases",
         default=os.path.join("referenced", "diseases.json"),
@@ -1111,6 +1703,11 @@ if __name__ == "__main__":
         "--documents",
         help="json detailing db documents",
         default=os.path.join("referenced", "documents.json"),
+    )
+    arg_parser.add_argument(
+        "--function-consequences",
+        help="json detailing db function consequences",
+        default=os.path.join("referenced", "function_consequences.json"),
     )
     arg_parser.add_argument(
         "--genes",
@@ -1131,6 +1728,16 @@ if __name__ == "__main__":
         "--propositions",
         help="json detailing db propositions",
         default=os.path.join("referenced", "propositions.json"),
+    )
+    arg_parser.add_argument(
+        "--sequence-locations",
+        help="json detailing db sequence locations",
+        default=os.path.join("referenced", "sequence_locations.json"),
+    )
+    arg_parser.add_argument(
+        "--sequence-references",
+        help="json detailing db sequence references",
+        default=os.path.join("referenced", "sequence_references.json"),
     )
     arg_parser.add_argument(
         "--statements",
@@ -1183,15 +1790,21 @@ if __name__ == "__main__":
     input_data = {
         "about": args.about,
         "agents": args.agents,
+        "alleles": args.alleles,
         "biomarkers": args.biomarkers,
+        "biomarker_criteria": args.biomarker_criteria,
         "codings": args.codings,
         "contributions": args.contributions,
+        "copy_change": args.copy_change,
         "diseases": args.diseases,
         "documents": args.documents,
+        "function_consequences": args.function_consequences,
         "genes": args.genes,
         "indications": args.indications,
         "mappings": args.mappings,
         "propositions": args.propositions,
+        "sequence_locations": args.sequence_locations,
+        "sequence_references": args.sequence_references,
         "statements": args.statements,
         "strengths": args.strengths,
         "therapies": args.therapies,

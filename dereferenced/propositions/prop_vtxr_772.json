@@ -1,41 +1,11 @@
 {
   "id": "prop:vtxr:772",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:1",
-      "type": "CategoricalVariant",
-      "name": "ER positive",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "Estrogen receptor (ER)"
-        },
-        {
-          "name": "unit",
-          "value": "status"
-        },
-        {
-          "name": "equality",
-          "value": "="
-        },
-        {
-          "name": "value",
-          "value": "Positive"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:BRCA",
     "conceptType": "Disease",
@@ -61,7 +31,7 @@
   },
   "objectTherapeutic": {
     "id": "tx:ncit:C62078",
-    "conceptType": "Drug",
+    "conceptType": "Therapy",
     "name": "Tamoxifen",
     "mappings": [
       {
@@ -141,5 +111,45 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62078"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:1",
+          "present": true,
+          "subject": {
+            "id": "bmkr:1",
+            "type": "CategoricalVariant",
+            "name": "ER positive",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Estrogen receptor (ER)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

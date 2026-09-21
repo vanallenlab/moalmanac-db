@@ -1,29 +1,11 @@
 {
   "id": "prop:vtxr:509",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:36",
-      "type": "CategoricalVariant",
-      "name": "dMMR",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Mismatch Repair"
-        },
-        {
-          "name": "status",
-          "value": "Deficient"
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:COADREAD",
     "conceptType": "Disease",
@@ -49,7 +31,7 @@
   },
   "objectTherapeutic": {
     "id": "tx:ncit:C68814",
-    "conceptType": "Drug",
+    "conceptType": "Therapy",
     "name": "Nivolumab",
     "mappings": [
       {
@@ -129,5 +111,33 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:36",
+          "present": true,
+          "subject": {
+            "id": "bmkr:36",
+            "type": "CategoricalVariant",
+            "name": "dMMR",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Mismatch Repair"
+              },
+              {
+                "name": "status",
+                "value": "Deficient"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:391",
   "conceptType": "Gene",
   "name": "AKT1",
+  "primaryCoding": {
+    "id": "coding:hgnc:391",
+    "code": "HGNC:391",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:391"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,766 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 522
+    },
+    {
       "name": "location",
       "value": "14q32.33"
     },
     {
       "name": "location_sortable",
       "value": "14q32.33"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1).",
+        "digest": "hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+          "type": "SequenceReference",
+          "name": "NP_001369359.1",
+          "aliases": [
+            "ensembl:ENSP00000270202.4",
+            "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "refseq:NP_001369359.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 480,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.6Jz4q11zSt0DDJSnIOjBzgO5mvp9Ar_D",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6Jz4q11zSt0DDJSnIOjBzgO5mvp9Ar_D",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 16,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-k73KKrg7c1tkosAkA9gkiMXGI2UtMr1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "-k73KKrg7c1tkosAkA9gkiMXGI2UtMr1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 15,
+          "end": 59,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HJekkgLybtZ3xe-vuf5F9ZnHT2tKrvyP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "HJekkgLybtZ3xe-vuf5F9ZnHT2tKrvyP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 58,
+          "end": 96,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kWRDZaVzgAig9n3ScDqb7RyiRh19v650",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "kWRDZaVzgAig9n3ScDqb7RyiRh19v650",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 95,
+          "end": 145,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._zbSfgltJ92P8y0R28mEAGLLzIyJaqOJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 7.",
+          "digest": "_zbSfgltJ92P8y0R28mEAGLLzIyJaqOJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 145,
+          "end": 189,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sTCdpYrk0n1zbUspj9IGrcJrcd5k_E-Q",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 8.",
+          "digest": "sTCdpYrk0n1zbUspj9IGrcJrcd5k_E-Q",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 189,
+          "end": 211,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MO7MInzTTQy1F1_XWhHeXiB1vHwTx16i",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 9.",
+          "digest": "MO7MInzTTQy1F1_XWhHeXiB1vHwTx16i",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 211,
+          "end": 234,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tnuwsRKD_7SS4l7YmjxlOH4jGP25lfXz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 10.",
+          "digest": "tnuwsRKD_7SS4l7YmjxlOH4jGP25lfXz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 234,
+          "end": 276,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vlf_sVBtNREspCWIYoAIAVdFOW34kk1V",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 11.",
+          "digest": "vlf_sVBtNREspCWIYoAIAVdFOW34kk1V",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 276,
+          "end": 319,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lBdey3-LZRXboBcvbktnhuqe52F7H13K",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "lBdey3-LZRXboBcvbktnhuqe52F7H13K",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 319,
+          "end": 391,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Qps-NDmyei7GGr2DYgJ7XBotY9WH5OzH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 13. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Qps-NDmyei7GGr2DYgJ7XBotY9WH5OzH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 390,
+          "end": 420,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.i4IYjsRdVwSKiflzchCMZh1lU84ngUft",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 14. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "i4IYjsRdVwSKiflzchCMZh1lU84ngUft",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 420,
+          "end": 455,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FFj60MbxSFm0POV7cCyUUQygqTRyMLZ5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "FFj60MbxSFm0POV7cCyUUQygqTRyMLZ5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "type": "SequenceReference",
+            "name": "NP_001369359.1",
+            "aliases": [
+              "ensembl:ENSP00000270202.4",
+              "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+              "refseq:NP_001369359.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+            "residueAlphabet": "aa"
+          },
+          "start": 454,
+          "end": 480,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.j82Z5UBE8fbu1jWjIRj6YAqgYKhNnrkO",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_001382430.1, the MANE Select coding transcript for AKT1.",
+        "digest": "j82Z5UBE8fbu1jWjIRj6YAqgYKhNnrkO",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+          "type": "SequenceReference",
+          "name": "NM_001382430.1",
+          "aliases": [
+            "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "refseq:NM_001382430.1"
+          ],
+          "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 2957,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.W3iZBulmbQFjETt1KyFZOfgS-SNqAIFJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 1.",
+          "digest": "W3iZBulmbQFjETt1KyFZOfgS-SNqAIFJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 265,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.N9kj_QIGiMCNArbHNw_giaERNtY7uWmN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 2.",
+          "digest": "N9kj_QIGiMCNArbHNw_giaERNtY7uWmN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 265,
+          "end": 443,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TwOpybbeQOcrStdPNmrrp0m2k1MBwL-T",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 3.",
+          "digest": "TwOpybbeQOcrStdPNmrrp0m2k1MBwL-T",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 443,
+          "end": 568,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TX3VhhwKhFFG_BEInKeAz49i2Oa4FBe3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 4.",
+          "digest": "TX3VhhwKhFFG_BEInKeAz49i2Oa4FBe3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 568,
+          "end": 697,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.D6zVW7xVxr1rKDbSlzbwFL2nKBr6wojm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 5.",
+          "digest": "D6zVW7xVxr1rKDbSlzbwFL2nKBr6wojm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 697,
+          "end": 809,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yUv5xIG1GN-jGZvru4zljKcbcT_In7vn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 6.",
+          "digest": "yUv5xIG1GN-jGZvru4zljKcbcT_In7vn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 809,
+          "end": 957,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TCxuNVa1jWnUhCc2Prci977P76Hqqvjl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 7.",
+          "digest": "TCxuNVa1jWnUhCc2Prci977P76Hqqvjl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 957,
+          "end": 1089,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6WjyxTHhhSucvZigkAkIuHtixQy02BB6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 8.",
+          "digest": "6WjyxTHhhSucvZigkAkIuHtixQy02BB6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1089,
+          "end": 1155,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2Yq3AD_pR0Xcz4BuffWNTur2ddhwDvcv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 9.",
+          "digest": "2Yq3AD_pR0Xcz4BuffWNTur2ddhwDvcv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1155,
+          "end": 1224,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jeLeV1q5zjnPDYK8BKMPbiTRaN33Kzn-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 10.",
+          "digest": "jeLeV1q5zjnPDYK8BKMPbiTRaN33Kzn-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1224,
+          "end": 1350,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.glTyRiPiZ98rnyot76_2cPyGw3wsaqKt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 11.",
+          "digest": "glTyRiPiZ98rnyot76_2cPyGw3wsaqKt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1350,
+          "end": 1479,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4yQ87kel9chJtQuBIoc7FOmwQr1r3UN4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 12.",
+          "digest": "4yQ87kel9chJtQuBIoc7FOmwQr1r3UN4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1479,
+          "end": 1694,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hGdfmocvUWkJaTA8JxVNtjN0ObwYMssj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 13.",
+          "digest": "hGdfmocvUWkJaTA8JxVNtjN0ObwYMssj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1694,
+          "end": 1782,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.8IieP-XpBVARto1F0Dj8lWhQw5BaXKZK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 14.",
+          "digest": "8IieP-XpBVARto1F0Dj8lWhQw5BaXKZK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1782,
+          "end": 1885,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._ZfvXi4Ch6-61LzuQLDJeqUG7Eq0rcgB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001382430.1, the MANE Select coding transcript for AKT1, corresponding to Exon 15.",
+          "digest": "_ZfvXi4Ch6-61LzuQLDJeqUG7Eq0rcgB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "type": "SequenceReference",
+            "name": "NM_001382430.1",
+            "aliases": [
+              "ga4gh:SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+              "refseq:NM_001382430.1"
+            ],
+            "description": "The MANE Select coding transcript for AKT1, corresponding to the Refseq transcript accession NM_001382430.1.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.LsY9zL9m1CqLwjH_pNEAJxISnsQmNoG3",
+            "residueAlphabet": "na"
+          },
+          "start": 1885,
+          "end": 2957,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:391",
-    "code": "HGNC:391",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:391"
-    ]
-  }
+  ]
 }

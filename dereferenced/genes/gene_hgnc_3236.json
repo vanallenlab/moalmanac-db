@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3236",
   "conceptType": "Gene",
   "name": "EGFR",
+  "primaryCoding": {
+    "id": "coding:hgnc:3236",
+    "code": "HGNC:3236",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1482 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 261
+    },
+    {
       "name": "location",
       "value": "7p11.2"
     },
     {
       "name": "location_sortable",
       "value": "07p11.2"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5).",
+        "digest": "gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+          "type": "SequenceReference",
+          "name": "NP_005219.2",
+          "aliases": [
+            "ensembl:ENSP00000275493.2",
+            "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "refseq:NP_005219.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1210,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.RnxLhC0tqwD0iCf0VJ_noZlgdxCrWA4A",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "RnxLhC0tqwD0iCf0VJ_noZlgdxCrWA4A",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 30,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eLB7MW-_sKoqeorP37NamVjBPR24AOgE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "eLB7MW-_sKoqeorP37NamVjBPR24AOgE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 29,
+          "end": 80,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.D4brpbiN2Wv8tqv3QGwE8c4mrDQ0sJNc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "D4brpbiN2Wv8tqv3QGwE8c4mrDQ0sJNc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 80,
+          "end": 142,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dfGnsQUeLSMYu4FXRJgUIEd3pK_5WG31",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "dfGnsQUeLSMYu4FXRJgUIEd3pK_5WG31",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 141,
+          "end": 187,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7PHKL7vidiEbI6qa48VfBGZeD9FE5IF7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "7PHKL7vidiEbI6qa48VfBGZeD9FE5IF7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 186,
+          "end": 210,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pupNBYttvoLQzUHwTmVfbaW_EO_mwTRL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "pupNBYttvoLQzUHwTmVfbaW_EO_mwTRL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 209,
+          "end": 249,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IUK2R6zJ5N2sNYr0_timWEqJVkJGbfgA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "IUK2R6zJ5N2sNYr0_timWEqJVkJGbfgA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 249,
+          "end": 297,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4SnQ0ak6CKr0RRWxqB2WzBd4Lu0zGdmu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 8. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4SnQ0ak6CKr0RRWxqB2WzBd4Lu0zGdmu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 296,
+          "end": 336,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FWTP_PtqNI9RUm7WLzsZ5AoXNjjnqKDQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "FWTP_PtqNI9RUm7WLzsZ5AoXNjjnqKDQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 335,
+          "end": 378,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2VWm2_v1dENZy5TIqwGShD5S764yYWUN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "2VWm2_v1dENZy5TIqwGShD5S764yYWUN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 377,
+          "end": 403,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.H1pVopvdnzxzsbpj_785q1B8_UaIll23",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "H1pVopvdnzxzsbpj_785q1B8_UaIll23",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 402,
+          "end": 433,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nAaZvXHp3N99Y7W-O85euKxgPAhow0gu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 12. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "nAaZvXHp3N99Y7W-O85euKxgPAhow0gu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 432,
+          "end": 500,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.mqvh1YikAHccqXQwAdYl970T30jGllW1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "mqvh1YikAHccqXQwAdYl970T30jGllW1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 499,
+          "end": 544,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.riK-47HbP8MBUmMF-xEATnNFuQxWzQK5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 14. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "riK-47HbP8MBUmMF-xEATnNFuQxWzQK5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 543,
+          "end": 574,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sbrso_1Gn8UaNcd9VTGFCI-WZw770WUR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "sbrso_1Gn8UaNcd9VTGFCI-WZw770WUR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 574,
+          "end": 627,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.H1ZeefeYB_9cSYq5jprs3UeJvXRSa7dT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 16. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "H1ZeefeYB_9cSYq5jprs3UeJvXRSa7dT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 626,
+          "end": 640,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.OHcIU640uS1JfCcx4-onMCzCwpZbxBN5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 17. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "OHcIU640uS1JfCcx4-onMCzCwpZbxBN5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 639,
+          "end": 687,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4uAu3JpC6wrzH6nW6jFpzpA7eGMGgNCj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 18.",
+          "digest": "4uAu3JpC6wrzH6nW6jFpzpA7eGMGgNCj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 687,
+          "end": 728,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 19.",
+          "digest": "d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 728,
+          "end": 761,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wk0fEATa_DkPqxGhMRCFFPOXY9PMWpc1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 20.",
+          "digest": "wk0fEATa_DkPqxGhMRCFFPOXY9PMWpc1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 761,
+          "end": 823,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.akn_Vh8KH8pq1gqBihdCHT3NzFFUBwV8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 21.",
+          "digest": "akn_Vh8KH8pq1gqBihdCHT3NzFFUBwV8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 823,
+          "end": 875,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zwvuITYULGxy6jVRIrpVWwaoFsz0NmLo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "zwvuITYULGxy6jVRIrpVWwaoFsz0NmLo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 875,
+          "end": 901,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HCa64hDKau8aMyWUm5QmW3Q3385dS78_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 23. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "HCa64hDKau8aMyWUm5QmW3Q3385dS78_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 900,
+          "end": 950,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.c8gObeiH1npLnIqMGqWmTSOP5pNwz52j",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 24. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "c8gObeiH1npLnIqMGqWmTSOP5pNwz52j",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 949,
+          "end": 982,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KPaL2AAq7Mal3Yu4J1NWGm373SqTkLxh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 25.",
+          "digest": "KPaL2AAq7Mal3Yu4J1NWGm373SqTkLxh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 982,
+          "end": 1038,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.S5vElgqyP4UEkgZTAQzoqxcGeM7MHeQT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 26.",
+          "digest": "S5vElgqyP4UEkgZTAQzoqxcGeM7MHeQT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 1038,
+          "end": 1054,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xPQXqtF-aL10958Wn_YISjSxA57RFRVG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 27. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "xPQXqtF-aL10958Wn_YISjSxA57RFRVG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 1054,
+          "end": 1091,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6Zo7ymVBXjRefLDduyUDErGH7vk4qPpw",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 28. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6Zo7ymVBXjRefLDduyUDErGH7vk4qPpw",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "type": "SequenceReference",
+            "name": "NP_005219.2",
+            "aliases": [
+              "ensembl:ENSP00000275493.2",
+              "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+              "refseq:NP_005219.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+            "residueAlphabet": "aa"
+          },
+          "start": 1090,
+          "end": 1210,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.V4PljZEMRLQMVk63NZM_MJzCzuLY-zXC",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_005228.5, the MANE Select coding transcript for EGFR.",
+        "digest": "V4PljZEMRLQMVk63NZM_MJzCzuLY-zXC",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+          "type": "SequenceReference",
+          "name": "NM_005228.5",
+          "aliases": [
+            "ensembl:ENST00000275493.7",
+            "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "refseq:NM_005228.5"
+          ],
+          "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 9905,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.UrGUFrP0MDMEF3hAT1M3P2UdokuzYDUH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 1.",
+          "digest": "UrGUFrP0MDMEF3hAT1M3P2UdokuzYDUH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 349,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.b7X-9CD7ctoVfkSa6OB0JMK6n_FuGh2y",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 2.",
+          "digest": "b7X-9CD7ctoVfkSa6OB0JMK6n_FuGh2y",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 349,
+          "end": 501,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.no2y6WbQrPFtATVgssHKZqad9yu5BopY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 3.",
+          "digest": "no2y6WbQrPFtATVgssHKZqad9yu5BopY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 501,
+          "end": 685,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FjjRbeBafw9WXexnkk6jemETXHN0oGrW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 4.",
+          "digest": "FjjRbeBafw9WXexnkk6jemETXHN0oGrW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 685,
+          "end": 820,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YDT2w1DGkRwC17adsKzbZI5Nz4CpKlp3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 5.",
+          "digest": "YDT2w1DGkRwC17adsKzbZI5Nz4CpKlp3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 820,
+          "end": 889,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.R-EUpDjIT1rXNL804Wvqp5w8r8bVGOqX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 6.",
+          "digest": "R-EUpDjIT1rXNL804Wvqp5w8r8bVGOqX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 889,
+          "end": 1008,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.bWwFZcdkhLPAiSllyOPIKtvIW9uECDz0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 7.",
+          "digest": "bWwFZcdkhLPAiSllyOPIKtvIW9uECDz0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1008,
+          "end": 1150,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UXX2xwQfg2wgpCme2WidcREYQ6TG_sX-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 8.",
+          "digest": "UXX2xwQfg2wgpCme2WidcREYQ6TG_sX-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1150,
+          "end": 1267,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.E5uHWzkGhEf937EC3-c7G_S0-5AQKfZ8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 9.",
+          "digest": "E5uHWzkGhEf937EC3-c7G_S0-5AQKfZ8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1267,
+          "end": 1394,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pFrKjCDpFtY4NedBRNOOJ7fWLwBqXBlx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 10.",
+          "digest": "pFrKjCDpFtY4NedBRNOOJ7fWLwBqXBlx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1394,
+          "end": 1468,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yac5rWFt1IRy3gpvKJ4qU_HEZDt2cyHn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 11.",
+          "digest": "yac5rWFt1IRy3gpvKJ4qU_HEZDt2cyHn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1468,
+          "end": 1559,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kd8a-3_Xjv21qfBi0i5w_N3_SuRMDkEa",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 12.",
+          "digest": "kd8a-3_Xjv21qfBi0i5w_N3_SuRMDkEa",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1559,
+          "end": 1759,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0TvQ-D6twQ9xZ2IrrJ8Zj509Vtn4gmqo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 13.",
+          "digest": "0TvQ-D6twQ9xZ2IrrJ8Zj509Vtn4gmqo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1759,
+          "end": 1892,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xu8npvA-tjIgz7omCdj09CV8O89bZh0C",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 14.",
+          "digest": "xu8npvA-tjIgz7omCdj09CV8O89bZh0C",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1892,
+          "end": 1983,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hIsh2QwpKM46WTvYensgrdsiTKImar6R",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 15.",
+          "digest": "hIsh2QwpKM46WTvYensgrdsiTKImar6R",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 1983,
+          "end": 2141,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UZ7CvZ4MyDxbp1eJe5o_JzgC5sES02k2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 16.",
+          "digest": "UZ7CvZ4MyDxbp1eJe5o_JzgC5sES02k2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2141,
+          "end": 2180,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FR-sH38v2BCauQCoMJ9qoxxWqf6pOxzY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 17.",
+          "digest": "FR-sH38v2BCauQCoMJ9qoxxWqf6pOxzY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2180,
+          "end": 2322,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IES7FRGi7jYzOYbb8H-2j3rUKM7rHzxw",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 18.",
+          "digest": "IES7FRGi7jYzOYbb8H-2j3rUKM7rHzxw",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2322,
+          "end": 2445,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.b1E3ArDna9YWPivwK8izj7BHGKRCRBmf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 19.",
+          "digest": "b1E3ArDna9YWPivwK8izj7BHGKRCRBmf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2445,
+          "end": 2544,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TkiMLSQPqOnAGkBJLYogaql0MQyXCByT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 20.",
+          "digest": "TkiMLSQPqOnAGkBJLYogaql0MQyXCByT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2544,
+          "end": 2730,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.elSQ56Ax2TmSkcYMPKMrWg0H3V7Qg3c5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 21.",
+          "digest": "elSQ56Ax2TmSkcYMPKMrWg0H3V7Qg3c5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2730,
+          "end": 2886,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._f_HmlF-sd1gxkIczCWvIc1Hp69HNmdc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 22.",
+          "digest": "_f_HmlF-sd1gxkIczCWvIc1Hp69HNmdc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2886,
+          "end": 2962,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NSkHqYMz_fFFdDEZH06BXyaRx-9Xe0s4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 23.",
+          "digest": "NSkHqYMz_fFFdDEZH06BXyaRx-9Xe0s4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 2962,
+          "end": 3109,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Ut2iIwBii2OK_vDrm_CDJ3070WAmvRY9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 24.",
+          "digest": "Ut2iIwBii2OK_vDrm_CDJ3070WAmvRY9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 3109,
+          "end": 3207,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.g09hLvR3LwpDv0AR4aK5-My083ROuHZk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 25.",
+          "digest": "g09hLvR3LwpDv0AR4aK5-My083ROuHZk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 3207,
+          "end": 3375,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qfHEdtj_YbkEse7Sk8aFpYCy0jbYcFsN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 26.",
+          "digest": "qfHEdtj_YbkEse7Sk8aFpYCy0jbYcFsN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 3375,
+          "end": 3423,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0F2hOPqSQkjsLgCxhcV7AIlazf_1IkuT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 27.",
+          "digest": "0F2hOPqSQkjsLgCxhcV7AIlazf_1IkuT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 3423,
+          "end": 3532,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.mgRWKZ1xzZzZ_iCtaGOsxsavRcNH4JVL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_005228.5, the MANE Select coding transcript for EGFR, corresponding to Exon 28.",
+          "digest": "mgRWKZ1xzZzZ_iCtaGOsxsavRcNH4JVL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "type": "SequenceReference",
+            "name": "NM_005228.5",
+            "aliases": [
+              "ensembl:ENST00000275493.7",
+              "ga4gh:SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+              "refseq:NM_005228.5"
+            ],
+            "description": "The MANE Select coding transcript for EGFR, corresponding to the Refseq transcript accession NM_005228.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.d_QsP29RWJi6bac7GOC9cJ9AO7s_HUMN",
+            "residueAlphabet": "na"
+          },
+          "start": 3532,
+          "end": 9905,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3236",
-    "code": "HGNC:3236",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
-    ]
-  }
+  ]
 }

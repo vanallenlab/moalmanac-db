@@ -86,137 +86,11 @@
   "proposition": {
     "id": "prop:vtxr:236",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:48",
-        "type": "CategoricalVariant",
-        "name": "BRCA1 pathogenic variants",
-        "genes": [
-          {
-            "id": "gene:hgnc:1100",
-            "conceptType": "Gene",
-            "name": "BRCA1",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000012048",
-                  "code": "ENSG00000012048",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000012048"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:672",
-                  "code": "672",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/672"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_007294.4",
-                  "code": "NM_007294.4",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_007294.4"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "17q21.31"
-              },
-              {
-                "name": "location_sortable",
-                "value": "17q21.31"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:1100",
-              "code": "HGNC:1100",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1100"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Germline Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "17"
-          },
-          {
-            "name": "start_position",
-            "value": null
-          },
-          {
-            "name": "end_position",
-            "value": null
-          },
-          {
-            "name": "reference_allele",
-            "value": null
-          },
-          {
-            "name": "alternate_allele",
-            "value": null
-          },
-          {
-            "name": "cdna_change",
-            "value": null
-          },
-          {
-            "name": "protein_change",
-            "value": null
-          },
-          {
-            "name": "variant_annotation",
-            "value": null
-          },
-          {
-            "name": "exon",
-            "value": null
-          },
-          {
-            "name": "rsid",
-            "value": null
-          },
-          {
-            "name": "hgvsg",
-            "value": null
-          },
-          {
-            "name": "hgvsc",
-            "value": null
-          },
-          {
-            "name": "requires_pathogenic",
-            "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:HGSFT",
       "conceptType": "Disease",
@@ -242,7 +116,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C71721",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Olaparib",
       "mappings": [
         {
@@ -322,10 +196,173 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71721"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:48",
+            "present": true,
+            "subject": {
+              "id": "bmkr:48",
+              "type": "CategoricalVariant",
+              "name": "BRCA1 pathogenic variants",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Sequence spanning the length of refseq:NP_009225.1, the protein product of the MANE Select coding transcript for BRCA1 (refseq:NM_007294.4).",
+                    "digest": "weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.nUzIPnHMyQV52hzgBbKl5vlbSwx8M8_Y",
+                      "type": "SequenceReference",
+                      "name": "NP_009225.1",
+                      "aliases": [
+                        "ensembl:ENSP00000350283.3",
+                        "ga4gh:SQ.nUzIPnHMyQV52hzgBbKl5vlbSwx8M8_Y",
+                        "refseq:NP_009225.1"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for BRCA1 (refseq:NM_007294.4), corresponding to the Refseq protein accession NP_009225.1.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.nUzIPnHMyQV52hzgBbKl5vlbSwx8M8_Y",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 0,
+                    "end": 1863,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:1100",
+                    "conceptType": "Gene",
+                    "name": "BRCA1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:1100",
+                      "code": "HGNC:1100",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1100"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000012048",
+                          "code": "ENSG00000012048",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000012048"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:672",
+                          "code": "672",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/672"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_007294.4",
+                          "code": "NM_007294.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_007294.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Germline Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "17"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": null
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_pathogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

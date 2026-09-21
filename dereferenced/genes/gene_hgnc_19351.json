@@ -2,6 +2,14 @@
   "id": "gene:hgnc:19351",
   "conceptType": "Gene",
   "name": "BICC1",
+  "primaryCoding": {
+    "id": "coding:hgnc:19351",
+    "code": "HGNC:19351",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19351"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1132 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 272
+    },
+    {
       "name": "location",
       "value": "10q21.1"
     },
     {
       "name": "location_sortable",
       "value": "10q21.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.YcDQAS6iIcu6_B61Tq5K2vHCe5T-EtmX",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3).",
+        "digest": "YcDQAS6iIcu6_B61Tq5K2vHCe5T-EtmX",
+        "sequenceReference": {
+          "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+          "type": "SequenceReference",
+          "name": "NP_001073981.1",
+          "aliases": [
+            "ensembl:ENSP00000362993.3",
+            "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "refseq:NP_001073981.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 974,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.sDDuuFW7p7EXXqCyzmGkfakqm_IWBwwA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "sDDuuFW7p7EXXqCyzmGkfakqm_IWBwwA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 64,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.f79U_xrKPdAfbBQyJniBlgWO8ck-GWri",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "f79U_xrKPdAfbBQyJniBlgWO8ck-GWri",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 63,
+          "end": 79,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0L8_e6owB_jJ-1A-qOKrMLv9LLNnpmlX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "0L8_e6owB_jJ-1A-qOKrMLv9LLNnpmlX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 79,
+          "end": 103,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CUZWHPcKwTy-1Z5rpikfa2LUDxFDd5kt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "CUZWHPcKwTy-1Z5rpikfa2LUDxFDd5kt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 102,
+          "end": 129,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1QfgR9A8fzzDcBuF-1RJDE72LGCFj60I",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 5.",
+          "digest": "1QfgR9A8fzzDcBuF-1RJDE72LGCFj60I",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 129,
+          "end": 182,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.K-r9CF1263Czt4jtRu-B8Yzk1u7aHKCO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 6.",
+          "digest": "K-r9CF1263Czt4jtRu-B8Yzk1u7aHKCO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 182,
+          "end": 200,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ivTeUgZO0qCN7pGyi4JE1FzKMA_XVyhH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 7.",
+          "digest": "ivTeUgZO0qCN7pGyi4JE1FzKMA_XVyhH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 200,
+          "end": 265,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.a8LYnX5MWWDKxLVoLCCpBrX3J9jdkqBX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 8.",
+          "digest": "a8LYnX5MWWDKxLVoLCCpBrX3J9jdkqBX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 265,
+          "end": 349,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jNK9NbY-efQOfs51OrGfmyyh6AKEl3Um",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 9.",
+          "digest": "jNK9NbY-efQOfs51OrGfmyyh6AKEl3Um",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 349,
+          "end": 393,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vPhER6duvCN2Kt_tDI81Gf_PKn6F1By5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "vPhER6duvCN2Kt_tDI81Gf_PKn6F1By5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 393,
+          "end": 456,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yoviRrLWTkS-HdGaxWMyiUVSABykZQMb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "yoviRrLWTkS-HdGaxWMyiUVSABykZQMb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 455,
+          "end": 510,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yXPpCMzjxwlWa3yA7p5OBCl_KhIUEK2J",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "yXPpCMzjxwlWa3yA7p5OBCl_KhIUEK2J",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 509,
+          "end": 575,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YgGl130SSTu_eKjk4-Ao8LSV5Bf7jjKn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 13. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "YgGl130SSTu_eKjk4-Ao8LSV5Bf7jjKn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 575,
+          "end": 620,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IKgP4v6GXWmMdkxfa3We-q-xahA9j5bU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "IKgP4v6GXWmMdkxfa3We-q-xahA9j5bU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 619,
+          "end": 672,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._CQAUAmxVU0Q0xuDwgFepGbj9G0CzF_d",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "_CQAUAmxVU0Q0xuDwgFepGbj9G0CzF_d",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 671,
+          "end": 727,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KDaPoYuICQ-rGiUuyogJAhCg88SScImu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 16. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "KDaPoYuICQ-rGiUuyogJAhCg88SScImu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 727,
+          "end": 741,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-33nBd4UcB9IJCeRMKgRq0L6q_5NMMBm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 17. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "-33nBd4UcB9IJCeRMKgRq0L6q_5NMMBm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 740,
+          "end": 792,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-j7NCw55H0Pi11Nsh-eiaMztrIebVF2d",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 18. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "-j7NCw55H0Pi11Nsh-eiaMztrIebVF2d",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 792,
+          "end": 845,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vx4KDGRANeCBxSEFRz9sGB-kbh7sDE0V",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 19. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "vx4KDGRANeCBxSEFRz9sGB-kbh7sDE0V",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 844,
+          "end": 898,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JDF3aqsDf29-GA2fTvWXa1VCUhMgNc_T",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 20. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "JDF3aqsDf29-GA2fTvWXa1VCUhMgNc_T",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 898,
+          "end": 932,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.DekOysXYdixbxtL6txsOJc7eM-PROhXh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_001073981.1, the protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to Exon 21. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "DekOysXYdixbxtL6txsOJc7eM-PROhXh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "type": "SequenceReference",
+            "name": "NP_001073981.1",
+            "aliases": [
+              "ensembl:ENSP00000362993.3",
+              "ga4gh:SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+              "refseq:NP_001073981.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BICC1 (refseq:NM_001080512.3), corresponding to the Refseq protein accession NP_001073981.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ._qQYOQ9IvNnke24f0-wy6ipO_dSY-aiD",
+            "residueAlphabet": "aa"
+          },
+          "start": 931,
+          "end": 974,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.ywiLkaBiXmxxWWd0RqDOj2_ZdZoRLpsh",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_001080512.3, the MANE Select coding transcript for BICC1.",
+        "digest": "ywiLkaBiXmxxWWd0RqDOj2_ZdZoRLpsh",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+          "type": "SequenceReference",
+          "name": "NM_001080512.3",
+          "aliases": [
+            "ensembl:ENST00000373886.8",
+            "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "refseq:NM_001080512.3"
+          ],
+          "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5741,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.Km_iXt1ddv2Y5Q2XMvkihahMyS-VBS1b",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 1.",
+          "digest": "Km_iXt1ddv2Y5Q2XMvkihahMyS-VBS1b",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 462,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9LwoP8OHsMsWwpZ_NfLO6RsWBeadrOKD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 2.",
+          "digest": "9LwoP8OHsMsWwpZ_NfLO6RsWBeadrOKD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 462,
+          "end": 509,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZntdsnywuTlBz2YxYLEs8-trhVpXUc_C",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 3.",
+          "digest": "ZntdsnywuTlBz2YxYLEs8-trhVpXUc_C",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 509,
+          "end": 579,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pUe4TqEJ1mH-3tESFdwmRL3msAjwUECX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 4.",
+          "digest": "pUe4TqEJ1mH-3tESFdwmRL3msAjwUECX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 579,
+          "end": 659,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.OHWRP2CbxTJBdWgTJtVoO2Z0g2ZdS68f",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 5.",
+          "digest": "OHWRP2CbxTJBdWgTJtVoO2Z0g2ZdS68f",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 659,
+          "end": 818,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TfwBmTgLyrCZUioym7l2iMpyMQg7ro3Z",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 6.",
+          "digest": "TfwBmTgLyrCZUioym7l2iMpyMQg7ro3Z",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 818,
+          "end": 872,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.63WumMJyE9Vm2zSVY6u-rwY78Miu4fyl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 7.",
+          "digest": "63WumMJyE9Vm2zSVY6u-rwY78Miu4fyl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 872,
+          "end": 1067,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.h7i3d0N5Mt6gYohJYGqZh028imkPtFCx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 8.",
+          "digest": "h7i3d0N5Mt6gYohJYGqZh028imkPtFCx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 1067,
+          "end": 1319,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.I5oFuFCOuUHJ4EE23r8pN2Ntrg_wcSKN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 9.",
+          "digest": "I5oFuFCOuUHJ4EE23r8pN2Ntrg_wcSKN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 1319,
+          "end": 1451,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pUaxCbMlK0r7HtfLV0gHm96fFkAi1c6v",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 10.",
+          "digest": "pUaxCbMlK0r7HtfLV0gHm96fFkAi1c6v",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 1451,
+          "end": 1638,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iBm5gZ8o39OfmwnLa9ytvhWAw1TrSfIe",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 11.",
+          "digest": "iBm5gZ8o39OfmwnLa9ytvhWAw1TrSfIe",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 1638,
+          "end": 1800,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CbJXttxxTuRbROCjINuBRel-Csw8zQ74",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 12.",
+          "digest": "CbJXttxxTuRbROCjINuBRel-Csw8zQ74",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 1800,
+          "end": 1997,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SSKwjlCVGPzuBbGE5fli69NFp5dMiEhJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 13.",
+          "digest": "SSKwjlCVGPzuBbGE5fli69NFp5dMiEhJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 1997,
+          "end": 2130,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.axIHqnvrI1nenthvlXJhbOKjn7roOGSr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 14.",
+          "digest": "axIHqnvrI1nenthvlXJhbOKjn7roOGSr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2130,
+          "end": 2287,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UtmvFtyHEqGH7Um3O2Os3vC8Gncb7BGR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 15.",
+          "digest": "UtmvFtyHEqGH7Um3O2Os3vC8Gncb7BGR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2287,
+          "end": 2453,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gtQPHINyUSTB2BR1seLNDKHZkNkc1Ehf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 16.",
+          "digest": "gtQPHINyUSTB2BR1seLNDKHZkNkc1Ehf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2453,
+          "end": 2493,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kNPyKfBR-25FCnbWmRZuqf14yAptBsvh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 17.",
+          "digest": "kNPyKfBR-25FCnbWmRZuqf14yAptBsvh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2493,
+          "end": 2648,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YK6hzEsYNtBEO5s8BqUC5D6Na4ljhMH8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 18.",
+          "digest": "YK6hzEsYNtBEO5s8BqUC5D6Na4ljhMH8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2648,
+          "end": 2805,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Lz6M0PB5vQJKwpXfiXBy53UUFnYqr2-D",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 19.",
+          "digest": "Lz6M0PB5vQJKwpXfiXBy53UUFnYqr2-D",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2805,
+          "end": 2966,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.v3XVvBddjujVhKJ7Rtm-To5i9LgGFsPN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 20.",
+          "digest": "v3XVvBddjujVhKJ7Rtm-To5i9LgGFsPN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 2966,
+          "end": 3066,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Y-OIF9Kb37XDvJ82PNv5XkR6gQc50faZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_001080512.3, the MANE Select coding transcript for BICC1, corresponding to Exon 21.",
+          "digest": "Y-OIF9Kb37XDvJ82PNv5XkR6gQc50faZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "type": "SequenceReference",
+            "name": "NM_001080512.3",
+            "aliases": [
+              "ensembl:ENST00000373886.8",
+              "ga4gh:SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+              "refseq:NM_001080512.3"
+            ],
+            "description": "The MANE Select coding transcript for BICC1, corresponding to the Refseq transcript accession NM_001080512.3.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.vmFd6M-DdHnOpBrqQk3tzwdtRgfqD91k",
+            "residueAlphabet": "na"
+          },
+          "start": 3066,
+          "end": 5741,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:19351",
-    "code": "HGNC:19351",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:19351"
-    ]
-  }
+  ]
 }

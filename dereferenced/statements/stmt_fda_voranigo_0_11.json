@@ -99,133 +99,11 @@
   "proposition": {
     "id": "prop:vtxr:490",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:75",
-        "type": "CategoricalVariant",
-        "name": "IDH1 p.R132G",
-        "genes": [
-          {
-            "id": "gene:hgnc:5382",
-            "conceptType": "Gene",
-            "name": "IDH1",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000138413",
-                  "code": "ENSG00000138413",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000138413"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:3417",
-                  "code": "3417",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/3417"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_005896.4",
-                  "code": "NM_005896.4",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_005896.4"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "2q34"
-              },
-              {
-                "name": "location_sortable",
-                "value": "02q34"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:5382",
-              "code": "HGNC:5382",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "2"
-          },
-          {
-            "name": "start_position",
-            "value": 209113113
-          },
-          {
-            "name": "end_position",
-            "value": 209113113
-          },
-          {
-            "name": "reference_allele",
-            "value": "G"
-          },
-          {
-            "name": "alternate_allele",
-            "value": "C"
-          },
-          {
-            "name": "cdna_change",
-            "value": "c.394C>G"
-          },
-          {
-            "name": "protein_change",
-            "value": "p.R132G"
-          },
-          {
-            "name": "variant_annotation",
-            "value": "Missense"
-          },
-          {
-            "name": "exon",
-            "value": 4
-          },
-          {
-            "name": "rsid",
-            "value": "rs121913499"
-          },
-          {
-            "name": "hgvsg",
-            "value": "2:g.209113113G>C"
-          },
-          {
-            "name": "hgvsc",
-            "value": "ENST00000345146.2:c.394C>G"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:ODG",
       "conceptType": "Disease",
@@ -251,7 +129,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C152914",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Vorasidenib",
       "mappings": [
         {
@@ -305,10 +183,190 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C152914"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:75",
+            "present": true,
+            "subject": {
+              "id": "bmkr:75",
+              "type": "CategoricalVariant",
+              "name": "IDH1 p.R132G",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.aAXNeFGBgeJUGbun-bKvgoW204tC1xdp",
+                    "type": "Allele",
+                    "name": "NP_005887.2:p.Arg132Gly",
+                    "aliases": [
+                      "NP_005887.2:p.R132G",
+                      "IDH1 p.R132G"
+                    ],
+                    "description": "VRS variation of NP_005887.2:p.Arg132Gly",
+                    "digest": "aAXNeFGBgeJUGbun-bKvgoW204tC1xdp",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005887.2:p.Arg132Gly",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.R132G"
+                          }
+                        ]
+                      }
+                    ],
+                    "location": {
+                      "id": "ga4gh:SL.c1wumiCWSPL2vagoeYClRf5Z1SuyrIdx",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 132 of the Refseq protein NP_005887.2, which is the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4).",
+                      "digest": "c1wumiCWSPL2vagoeYClRf5Z1SuyrIdx",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+                        "type": "SequenceReference",
+                        "name": "NP_005887.2",
+                        "aliases": [
+                          "ensembl:ENSP00000260985.2",
+                          "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+                          "refseq:NP_005887.2"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 131,
+                      "end": 132,
+                      "sequence": "R"
+                    },
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "G"
+                    }
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:5382",
+                    "conceptType": "Gene",
+                    "name": "IDH1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:5382",
+                      "code": "HGNC:5382",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000138413",
+                          "code": "ENSG00000138413",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000138413"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:3417",
+                          "code": "3417",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/3417"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_005896.4",
+                          "code": "NM_005896.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_005896.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "2"
+                },
+                {
+                  "name": "start_position",
+                  "value": 209113113
+                },
+                {
+                  "name": "end_position",
+                  "value": 209113113
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "G"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "C"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.394C>G"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.R132G"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 4
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121913499"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "2:g.209113113G>C"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000345146.2:c.394C>G"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

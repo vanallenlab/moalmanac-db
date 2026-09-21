@@ -2,62 +2,90 @@
   "id": "bmkr:4",
   "type": "CategoricalVariant",
   "name": "BARD1 oncogenic variants",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:952",
-      "conceptType": "Gene",
-      "name": "BARD1",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000138376",
-            "code": "ENSG00000138376",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000138376"
-            ]
-          }
+      "type": "DefiningLocationConstraint",
+      "location": {
+        "id": "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4).",
+        "digest": "6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+          "type": "SequenceReference",
+          "name": "NP_000456.2",
+          "aliases": [
+            "ensembl:ENSP00000260947.4",
+            "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "refseq:NP_000456.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+          "residueAlphabet": "aa"
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:580",
-            "code": "580",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/580"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_000465.4",
-            "code": "NM_000465.4",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000465.4"
-            ]
-          }
+        "start": 0,
+        "end": 777,
+        "sequence": null
+      },
+      "relations": [],
+      "matchCharacteristic": {
+        "primaryCoding": {
+          "code": "is_within",
+          "system": "ga4gh-gks-term:location-match"
         }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "2q35"
+      }
+    },
+    {
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:952",
+        "conceptType": "Gene",
+        "name": "BARD1",
+        "primaryCoding": {
+          "id": "coding:hgnc:952",
+          "code": "HGNC:952",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:952"
+          ]
         },
-        {
-          "name": "location_sortable",
-          "value": "02q35"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:952",
-        "code": "HGNC:952",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:952"
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000138376",
+              "code": "ENSG00000138376",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000138376"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:580",
+              "code": "580",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/580"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_000465.4",
+              "code": "NM_000465.4",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_000465.4"
+              ]
+            }
+          }
         ]
       }
     }
@@ -117,10 +145,6 @@
     },
     {
       "name": "requires_oncogenic",
-      "value": true
-    },
-    {
-      "name": "_present",
       "value": true
     }
   ]

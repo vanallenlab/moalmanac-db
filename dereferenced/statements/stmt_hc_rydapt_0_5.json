@@ -86,133 +86,11 @@
   "proposition": {
     "id": "prop:vtxr:213",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:119",
-        "type": "CategoricalVariant",
-        "name": "FLT3 p.D835N",
-        "genes": [
-          {
-            "id": "gene:hgnc:3765",
-            "conceptType": "Gene",
-            "name": "FLT3",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000122025",
-                  "code": "ENSG00000122025",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000122025"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:2322",
-                  "code": "2322",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/2322"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_004119.3",
-                  "code": "NM_004119.3",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "13q12.2"
-              },
-              {
-                "name": "location_sortable",
-                "value": "13q12.2"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:3765",
-              "code": "HGNC:3765",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "13"
-          },
-          {
-            "name": "start_position",
-            "value": 28592642
-          },
-          {
-            "name": "end_position",
-            "value": 28592642
-          },
-          {
-            "name": "reference_allele",
-            "value": "C"
-          },
-          {
-            "name": "alternate_allele",
-            "value": "T"
-          },
-          {
-            "name": "cdna_change",
-            "value": "c.2503G>A"
-          },
-          {
-            "name": "protein_change",
-            "value": "p.D835N"
-          },
-          {
-            "name": "variant_annotation",
-            "value": "Missense"
-          },
-          {
-            "name": "exon",
-            "value": 20
-          },
-          {
-            "name": "rsid",
-            "value": "rs121913488"
-          },
-          {
-            "name": "hgvsg",
-            "value": "13:g.28592642C>T"
-          },
-          {
-            "name": "hgvsc",
-            "value": "ENST00000241453.7:c.2503G>A"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:AML",
       "conceptType": "Disease",
@@ -242,7 +120,7 @@
       "therapies": [
         {
           "id": "tx:ncit:C408",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Cytarabine",
           "mappings": [
             {
@@ -325,7 +203,7 @@
         },
         {
           "id": "tx:ncit:C62091",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Daunorubicin",
           "mappings": [
             {
@@ -408,7 +286,7 @@
         },
         {
           "id": "tx:ncit:C1872",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Midostaurin",
           "mappings": [
             {
@@ -490,10 +368,190 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:119",
+            "present": true,
+            "subject": {
+              "id": "bmkr:119",
+              "type": "CategoricalVariant",
+              "name": "FLT3 p.D835N",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.mSwj38b0KeHcoBAkKnA1oe1NvNS94mw3",
+                    "type": "Allele",
+                    "name": "NP_004110.2:p.Asp835Asn",
+                    "aliases": [
+                      "NP_004110.2:p.D835N",
+                      "FLT3 p.D835N"
+                    ],
+                    "description": "VRS variation of NP_004110.2:p.Asp835Asn",
+                    "digest": "mSwj38b0KeHcoBAkKnA1oe1NvNS94mw3",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004110.2:p.Asp835Asn",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.D835N"
+                          }
+                        ]
+                      }
+                    ],
+                    "location": {
+                      "id": "ga4gh:SL.2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 835 of the Refseq protein NP_004110.2, which is the protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3).",
+                      "digest": "2Tbt2D_8w_Jg3P2HhGEBwmwasbpLtfwP",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                        "type": "SequenceReference",
+                        "name": "NP_004110.2",
+                        "aliases": [
+                          "ensembl:ENSP00000241453.7",
+                          "ga4gh:SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                          "refseq:NP_004110.2"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for FLT3 (refseq:NM_004119.3), corresponding to the Refseq protein accession NP_004110.2.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.0dtDG7QKyvW7BntvQVpLS83mYRA58LKH",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 834,
+                      "end": 835,
+                      "sequence": "D"
+                    },
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "N"
+                    }
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3765",
+                    "conceptType": "Gene",
+                    "name": "FLT3",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3765",
+                      "code": "HGNC:3765",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3765"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000122025",
+                          "code": "ENSG00000122025",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000122025"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:2322",
+                          "code": "2322",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/2322"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_004119.3",
+                          "code": "NM_004119.3",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_004119.3"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "13"
+                },
+                {
+                  "name": "start_position",
+                  "value": 28592642
+                },
+                {
+                  "name": "end_position",
+                  "value": 28592642
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "C"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "T"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.2503G>A"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.D835N"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 20
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121913488"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "13:g.28592642C>T"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000241453.7:c.2503G>A"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

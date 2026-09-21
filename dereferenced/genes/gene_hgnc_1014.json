@@ -2,6 +2,14 @@
   "id": "gene:hgnc:1014",
   "conceptType": "Gene",
   "name": "BCR",
+  "primaryCoding": {
+    "id": "coding:hgnc:1014",
+    "code": "HGNC:1014",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1232 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 452
+    },
+    {
       "name": "location",
       "value": "22q11.23"
     },
     {
       "name": "location_sortable",
       "value": "22q11.23"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.RGxfsgLpWZfb39fXGJI2reabXYKI4Evw",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4).",
+        "digest": "RGxfsgLpWZfb39fXGJI2reabXYKI4Evw",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+          "type": "SequenceReference",
+          "name": "NP_004318.3",
+          "aliases": [
+            "ensembl:ENSP00000303507.8",
+            "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "refseq:NP_004318.3"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1271,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.hcMs6j3Xa-JfKOpYEqMjadyV6AmFIHYB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "hcMs6j3Xa-JfKOpYEqMjadyV6AmFIHYB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 427,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SUg4KdHeAPaGmuQoDDDFljKi1u3K8OOY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "SUg4KdHeAPaGmuQoDDDFljKi1u3K8OOY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 426,
+          "end": 487,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xupsrwqc48KGhmUPy2RFuWzMBWMUX0UL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 3.",
+          "digest": "xupsrwqc48KGhmUPy2RFuWzMBWMUX0UL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 487,
+          "end": 522,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tMk79_p7aQ33XVg0epx02UFiXqyLxXua",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 4.",
+          "digest": "tMk79_p7aQ33XVg0epx02UFiXqyLxXua",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 522,
+          "end": 584,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.f3tIph7Hxsb0ak0YWct8BpRLLUp01bzx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 5.",
+          "digest": "f3tIph7Hxsb0ak0YWct8BpRLLUp01bzx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 584,
+          "end": 620,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5wP7TWzZVNQUbARFoboIHJ11ZeaXXO6s",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "5wP7TWzZVNQUbARFoboIHJ11ZeaXXO6s",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 620,
+          "end": 641,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FCFVEs37E83HK-I0vyBjZrG3N8LH-gHz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "FCFVEs37E83HK-I0vyBjZrG3N8LH-gHz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 640,
+          "end": 658,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sPv4bdhXYwJ1oSO0_-hI8xW03t9Z0KzU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 8.",
+          "digest": "sPv4bdhXYwJ1oSO0_-hI8xW03t9Z0KzU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 658,
+          "end": 705,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HTKPt8woY9TL8KRaZE-wNVoy7PGYg87d",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "HTKPt8woY9TL8KRaZE-wNVoy7PGYg87d",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 705,
+          "end": 746,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.C_hiO0fdZQDadXEdSQs1C557awUdK9cg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "C_hiO0fdZQDadXEdSQs1C557awUdK9cg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 745,
+          "end": 802,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SgIRVgAMVN-EmHw11IMXvd8Re6vg-slt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 11.",
+          "digest": "SgIRVgAMVN-EmHw11IMXvd8Re6vg-slt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 802,
+          "end": 842,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XF-nCbPti2Hcr_A6wczNDSeoN6xdAxUU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "XF-nCbPti2Hcr_A6wczNDSeoN6xdAxUU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 842,
+          "end": 868,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nbXvaEpDoDtjXEhw2LDiCV5l1gkZ-CN8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "nbXvaEpDoDtjXEhw2LDiCV5l1gkZ-CN8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 867,
+          "end": 903,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.e2tiVhxai8Jbe2HQ5lM-wWqeJTXfr4Og",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "e2tiVhxai8Jbe2HQ5lM-wWqeJTXfr4Og",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 902,
+          "end": 928,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.S3YLrm4xqgprJUqCSlh9QrpsX2eeyhYo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "S3YLrm4xqgprJUqCSlh9QrpsX2eeyhYo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 927,
+          "end": 960,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7-gbMo7eZ4qOXlRprj1UdFN8H0hHOpQv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 16.",
+          "digest": "7-gbMo7eZ4qOXlRprj1UdFN8H0hHOpQv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 960,
+          "end": 1004,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CEL2uWsggZK8-Uk1vaRgRU13yh0YISYN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 17.",
+          "digest": "CEL2uWsggZK8-Uk1vaRgRU13yh0YISYN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1004,
+          "end": 1024,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KaMRnVNbOVSMuxP_pmYj5mMtAGLNYW2T",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 18. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "KaMRnVNbOVSMuxP_pmYj5mMtAGLNYW2T",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1024,
+          "end": 1061,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KTchXbFE5pV0PcUWc5bPQussptN5AIOA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 19. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "KTchXbFE5pV0PcUWc5bPQussptN5AIOA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1060,
+          "end": 1108,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.PFNYejrTe1FIXXBfxrntnlgM_G0nigKv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 20. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "PFNYejrTe1FIXXBfxrntnlgM_G0nigKv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1107,
+          "end": 1153,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1xlAXbXLMlrB9DRF0lJ25BUasWw22lo5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 21. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "1xlAXbXLMlrB9DRF0lJ25BUasWw22lo5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1152,
+          "end": 1188,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FKyta_X536Mo3mLr2Zdle16nIWbNwpP7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "FKyta_X536Mo3mLr2Zdle16nIWbNwpP7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1187,
+          "end": 1242,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tN0VamwBexeQHpZcJNF0x-poqlXPpN9f",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004318.3, the protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to Exon 23.",
+          "digest": "tN0VamwBexeQHpZcJNF0x-poqlXPpN9f",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "type": "SequenceReference",
+            "name": "NP_004318.3",
+            "aliases": [
+              "ensembl:ENSP00000303507.8",
+              "ga4gh:SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+              "refseq:NP_004318.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BCR (refseq:NM_004327.4), corresponding to the Refseq protein accession NP_004318.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.SxBpEM58AQ1LNDeiYvRIruR0hkgymcB5",
+            "residueAlphabet": "aa"
+          },
+          "start": 1242,
+          "end": 1271,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.HpZ6HiZnNOmnt5McNioHiblTrZWwpNqX",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004327.4, the MANE Select coding transcript for BCR.",
+        "digest": "HpZ6HiZnNOmnt5McNioHiblTrZWwpNqX",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+          "type": "SequenceReference",
+          "name": "NM_004327.4",
+          "aliases": [
+            "ensembl:ENST00000305877.13",
+            "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "refseq:NM_004327.4"
+          ],
+          "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6783,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.0mTX2aX0-UPv4iBL7sqsgKTQ6LNasYWy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 1.",
+          "digest": "0mTX2aX0-UPv4iBL7sqsgKTQ6LNasYWy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 1731,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xrTQlkyKy5i_RjGcffHuTocsg9cqwATd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 2.",
+          "digest": "xrTQlkyKy5i_RjGcffHuTocsg9cqwATd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 1731,
+          "end": 1913,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.77IdTUeiYY3oeZdK4IQWrcyAkBpkBeIl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 3.",
+          "digest": "77IdTUeiYY3oeZdK4IQWrcyAkBpkBeIl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 1913,
+          "end": 2018,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vvbiVvdIVlGO6YXrl4fT5C0IgVXlvw5M",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 4.",
+          "digest": "vvbiVvdIVlGO6YXrl4fT5C0IgVXlvw5M",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2018,
+          "end": 2204,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dKJpWHa1yHSxMowQXJ0Y7ESbp4ImdMq-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 5.",
+          "digest": "dKJpWHa1yHSxMowQXJ0Y7ESbp4ImdMq-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2204,
+          "end": 2312,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KDAlm8qA5UPbopiDKNbnf-73DDQcDfGn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 6.",
+          "digest": "KDAlm8qA5UPbopiDKNbnf-73DDQcDfGn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2312,
+          "end": 2373,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vAnhffJwwhKBeoGGz1XZTvDRp4Dq-xz-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 7.",
+          "digest": "vAnhffJwwhKBeoGGz1XZTvDRp4Dq-xz-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2373,
+          "end": 2426,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jZCJMap50l4skF-JXOPgqCgZO8S-ubVB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 8.",
+          "digest": "jZCJMap50l4skF-JXOPgqCgZO8S-ubVB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2426,
+          "end": 2567,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.bzHBvVJz-W-1lH-VUUXGHXh8BzIXk7Yt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 9.",
+          "digest": "bzHBvVJz-W-1lH-VUUXGHXh8BzIXk7Yt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2567,
+          "end": 2689,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FNxtdhbaukZ6PKutDAZofQGXuGE6CLjO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 10.",
+          "digest": "FNxtdhbaukZ6PKutDAZofQGXuGE6CLjO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2689,
+          "end": 2858,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.p1pdJbqb5uvhiScHW3dMEVbVfMLgrod_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 11.",
+          "digest": "p1pdJbqb5uvhiScHW3dMEVbVfMLgrod_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2858,
+          "end": 2978,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.C5aJwOdDNQ0pDqlBSnUTxTid9YFeypUG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 12.",
+          "digest": "C5aJwOdDNQ0pDqlBSnUTxTid9YFeypUG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 2978,
+          "end": 3054,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.arPkTBrWuht_ORJZ2N7UslvxdjZSzmfi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 13.",
+          "digest": "arPkTBrWuht_ORJZ2N7UslvxdjZSzmfi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3054,
+          "end": 3159,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SNorLouTOLvSt4wAxBAdz0NV4p1s3Mm-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 14.",
+          "digest": "SNorLouTOLvSt4wAxBAdz0NV4p1s3Mm-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3159,
+          "end": 3234,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UwXrpWnqiUflvRS6I03JsMDE8LESOX4O",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 15.",
+          "digest": "UwXrpWnqiUflvRS6I03JsMDE8LESOX4O",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3234,
+          "end": 3332,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Reyqz1hisQqS_m0GKbKo3WXsHbFptqda",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 16.",
+          "digest": "Reyqz1hisQqS_m0GKbKo3WXsHbFptqda",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3332,
+          "end": 3464,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.QTK-WZWUSrNDxpvsD45KgNiaDXIetFZK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 17.",
+          "digest": "QTK-WZWUSrNDxpvsD45KgNiaDXIetFZK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3464,
+          "end": 3524,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AdqzldW5bn5-FD6sOjLpA5MMvaFKC3i1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 18.",
+          "digest": "AdqzldW5bn5-FD6sOjLpA5MMvaFKC3i1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3524,
+          "end": 3634,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.GOTz4d0DJ6yG5h2c8B5r_qlMPxjb5-Ve",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 19.",
+          "digest": "GOTz4d0DJ6yG5h2c8B5r_qlMPxjb5-Ve",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3634,
+          "end": 3774,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.y_RTJAXo-reSHjCv_cFrC_yPilvTUOUY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 20.",
+          "digest": "y_RTJAXo-reSHjCv_cFrC_yPilvTUOUY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3774,
+          "end": 3909,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TkWyanXW1UAxXyuQuz13j50pGIACEkbG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 21.",
+          "digest": "TkWyanXW1UAxXyuQuz13j50pGIACEkbG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 3909,
+          "end": 4015,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Np14J2C-E-4BGHTNn0h6rU6CyLwVdY5t",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 22.",
+          "digest": "Np14J2C-E-4BGHTNn0h6rU6CyLwVdY5t",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 4015,
+          "end": 4178,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.GCMXrEuScjdLUZ56kaktQ58dIhc66SC6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004327.4, the MANE Select coding transcript for BCR, corresponding to Exon 23.",
+          "digest": "GCMXrEuScjdLUZ56kaktQ58dIhc66SC6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "type": "SequenceReference",
+            "name": "NM_004327.4",
+            "aliases": [
+              "ensembl:ENST00000305877.13",
+              "ga4gh:SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+              "refseq:NM_004327.4"
+            ],
+            "description": "The MANE Select coding transcript for BCR, corresponding to the Refseq transcript accession NM_004327.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.kpytJsXw3BwLC3oBSjHQS1kwxs4WO3I3",
+            "residueAlphabet": "na"
+          },
+          "start": 4178,
+          "end": 6783,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:1014",
-    "code": "HGNC:1014",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
-    ]
-  }
+  ]
 }

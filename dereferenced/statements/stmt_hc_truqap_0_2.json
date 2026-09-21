@@ -86,199 +86,11 @@
   "proposition": {
     "id": "prop:vtxr:55",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:1",
-        "type": "CategoricalVariant",
-        "name": "ER positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Estrogen receptor (ER)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      },
-      {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      },
-      {
-        "id": "bmkr:90",
-        "type": "CategoricalVariant",
-        "name": "AKT1 somatic variants",
-        "genes": [
-          {
-            "id": "gene:hgnc:391",
-            "conceptType": "Gene",
-            "name": "AKT1",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000142208",
-                  "code": "ENSG00000142208",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000142208"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:207",
-                  "code": "207",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/207"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_001382430.1",
-                  "code": "NM_001382430.1",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_001382430.1"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "14q32.33"
-              },
-              {
-                "name": "location_sortable",
-                "value": "14q32.33"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:391",
-              "code": "HGNC:391",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:391"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Somatic Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "14"
-          },
-          {
-            "name": "start_position",
-            "value": null
-          },
-          {
-            "name": "end_position",
-            "value": null
-          },
-          {
-            "name": "reference_allele",
-            "value": null
-          },
-          {
-            "name": "alternate_allele",
-            "value": null
-          },
-          {
-            "name": "cdna_change",
-            "value": null
-          },
-          {
-            "name": "protein_change",
-            "value": null
-          },
-          {
-            "name": "variant_annotation",
-            "value": null
-          },
-          {
-            "name": "exon",
-            "value": null
-          },
-          {
-            "name": "rsid",
-            "value": null
-          },
-          {
-            "name": "hgvsg",
-            "value": null
-          },
-          {
-            "name": "hgvsc",
-            "value": null
-          },
-          {
-            "name": "requires_oncogenic",
-            "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:BRCA",
       "conceptType": "Disease",
@@ -308,7 +120,7 @@
       "therapies": [
         {
           "id": "tx:ncit:C102564",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Capivasertib",
           "mappings": [
             {
@@ -365,7 +177,7 @@
         },
         {
           "id": "tx:ncit:C1379",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Fulvestrant",
           "mappings": [
             {
@@ -447,10 +259,237 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:1",
+            "present": true,
+            "subject": {
+              "id": "bmkr:1",
+              "type": "CategoricalVariant",
+              "name": "ER positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Estrogen receptor (ER)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:2",
+            "present": true,
+            "subject": {
+              "id": "bmkr:2",
+              "type": "CategoricalVariant",
+              "name": "HER2-negative",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Negative"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:90",
+            "present": true,
+            "subject": {
+              "id": "bmkr:90",
+              "type": "CategoricalVariant",
+              "name": "AKT1 somatic variants",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Sequence spanning the length of refseq:NP_001369359.1, the protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1).",
+                    "digest": "hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+                      "type": "SequenceReference",
+                      "name": "NP_001369359.1",
+                      "aliases": [
+                        "ensembl:ENSP00000270202.4",
+                        "ga4gh:SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+                        "refseq:NP_001369359.1"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for AKT1 (refseq:NM_001382430.1), corresponding to the Refseq protein accession NP_001369359.1.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.GTSPIWYvuDZU59cW1RECFEU1FMiKdEyc",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 0,
+                    "end": 480,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:391",
+                    "conceptType": "Gene",
+                    "name": "AKT1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:391",
+                      "code": "HGNC:391",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:391"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000142208",
+                          "code": "ENSG00000142208",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000142208"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:207",
+                          "code": "207",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/207"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_001382430.1",
+                          "code": "NM_001382430.1",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_001382430.1"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "14"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": null
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_oncogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

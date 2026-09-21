@@ -21,6 +21,7 @@ Optional arguments:
     --about           <string>    referenced JSON for database metadata. Default: referenced/about.json
     --agents          <string>    referenced JSON for agents that either contribute to the database or publish documents cited within the database. Default: referenced/agents.json
     --biomarkers      <string>    referenced JSON for biomarkers. Default: referenced/biomarkers.json
+    --biomarker-criteria <string> referenced JSON for biomarker criteria (biomarker-to-proposition links carrying the `present` flag). Default: referenced/biomarker_criteria.json
     --codings         <string>    referenced JSON for codings. Default: referenced/codings.json
     --contributions   <string>    referenced JSON for contributions to database. Default: referenced/contributions.json
     --diseases        <string>    referenced JSON for cancer types. Default: referenced/diseases.json
@@ -54,6 +55,7 @@ python -m utils.dereference \
   --about referenced/about.json \
   --agents referenced/agents.json \
   --biomarkers referenced/biomarkers.json \
+  --biomarker-criteria referenced/biomarker_criteria.json \
   --codings referenced/codings.json \
   --contributions referenced/contributions.json \
   --diseases referenced/diseases.json \

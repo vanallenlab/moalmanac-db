@@ -86,137 +86,11 @@
   "proposition": {
     "id": "prop:vtxr:451",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:165",
-        "type": "CategoricalVariant",
-        "name": "MLH1 pathogenic variants",
-        "genes": [
-          {
-            "id": "gene:hgnc:7127",
-            "conceptType": "Gene",
-            "name": "MLH1",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000076242",
-                  "code": "ENSG00000076242",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000076242"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:4292",
-                  "code": "4292",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/4292"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_000249.4",
-                  "code": "NM_000249.4",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "3p22.2"
-              },
-              {
-                "name": "location_sortable",
-                "value": "03p22.2"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:7127",
-              "code": "HGNC:7127",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Germline Variant"
-          },
-          {
-            "name": "chromosome",
-            "value": "3"
-          },
-          {
-            "name": "start_position",
-            "value": null
-          },
-          {
-            "name": "end_position",
-            "value": null
-          },
-          {
-            "name": "reference_allele",
-            "value": null
-          },
-          {
-            "name": "alternate_allele",
-            "value": null
-          },
-          {
-            "name": "cdna_change",
-            "value": null
-          },
-          {
-            "name": "protein_change",
-            "value": null
-          },
-          {
-            "name": "variant_annotation",
-            "value": null
-          },
-          {
-            "name": "exon",
-            "value": null
-          },
-          {
-            "name": "rsid",
-            "value": null
-          },
-          {
-            "name": "hgvsg",
-            "value": null
-          },
-          {
-            "name": "hgvsc",
-            "value": null
-          },
-          {
-            "name": "requires_pathogenic",
-            "value": true
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:PRAD",
       "conceptType": "Disease",
@@ -246,7 +120,7 @@
       "therapies": [
         {
           "id": "tx:ncit:C71744",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Enzalutamide",
           "mappings": [
             {
@@ -329,7 +203,7 @@
         },
         {
           "id": "tx:ncit:C95733",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Talazoparib",
           "mappings": [
             {
@@ -411,10 +285,173 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:165",
+            "present": true,
+            "subject": {
+              "id": "bmkr:165",
+              "type": "CategoricalVariant",
+              "name": "MLH1 pathogenic variants",
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Sequence spanning the length of refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4).",
+                    "digest": "Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+                      "type": "SequenceReference",
+                      "name": "NP_000240.1",
+                      "aliases": [
+                        "ensembl:ENSP00000231790.2",
+                        "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+                        "refseq:NP_000240.1"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 0,
+                    "end": 756,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:7127",
+                    "conceptType": "Gene",
+                    "name": "MLH1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:7127",
+                      "code": "HGNC:7127",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000076242",
+                          "code": "ENSG00000076242",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000076242"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:4292",
+                          "code": "4292",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/4292"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_000249.4",
+                          "code": "NM_000249.4",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Germline Variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "3"
+                },
+                {
+                  "name": "start_position",
+                  "value": null
+                },
+                {
+                  "name": "end_position",
+                  "value": null
+                },
+                {
+                  "name": "reference_allele",
+                  "value": null
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": null
+                },
+                {
+                  "name": "cdna_change",
+                  "value": null
+                },
+                {
+                  "name": "protein_change",
+                  "value": null
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": null
+                },
+                {
+                  "name": "exon",
+                  "value": null
+                },
+                {
+                  "name": "rsid",
+                  "value": null
+                },
+                {
+                  "name": "hgvsg",
+                  "value": null
+                },
+                {
+                  "name": "hgvsc",
+                  "value": null
+                },
+                {
+                  "name": "requires_pathogenic",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

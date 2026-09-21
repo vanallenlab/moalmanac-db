@@ -2,6 +2,14 @@
   "id": "gene:hgnc:12363",
   "conceptType": "Gene",
   "name": "TSC2",
+  "primaryCoding": {
+    "id": "coding:hgnc:12363",
+    "code": "HGNC:12363",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12363"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,2157 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 110
+    },
+    {
       "name": "location",
       "value": "16p13.3"
     },
     {
       "name": "location_sortable",
       "value": "16p13.3"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5).",
+        "digest": "s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+          "type": "SequenceReference",
+          "name": "NP_000539.2",
+          "aliases": [
+            "ensembl:ENSP00000219476.3",
+            "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "refseq:NP_000539.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1807,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.MHHP64736AlESRDTNj63MitlFEmzdV26",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 2.",
+          "digest": "MHHP64736AlESRDTNj63MitlFEmzdV26",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 46,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4IGMoiEG78vFKvd9fNQI0t8A4DB8CMs2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 3.",
+          "digest": "4IGMoiEG78vFKvd9fNQI0t8A4DB8CMs2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 46,
+          "end": 75,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.I4lQtef_eJRJSQYAgMOBTKpFwjw2mD1U",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 4.",
+          "digest": "I4lQtef_eJRJSQYAgMOBTKpFwjw2mD1U",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 75,
+          "end": 112,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YoXvWPI9AaTYzFXXquknjc54Nqm89dZO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "YoXvWPI9AaTYzFXXquknjc54Nqm89dZO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 112,
+          "end": 161,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IvS-dt2vJ4fQKYp7xtVQuj0JwejVwWzR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 6. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "IvS-dt2vJ4fQKYp7xtVQuj0JwejVwWzR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 160,
+          "end": 200,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._j2xnnVvuSuMvkHtlbd_lGF7kpfRoopz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "_j2xnnVvuSuMvkHtlbd_lGF7kpfRoopz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 199,
+          "end": 216,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zuZGK-1yf6P_Ic_FqXUkIQTVEX5Q9hek",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 8.",
+          "digest": "zuZGK-1yf6P_Ic_FqXUkIQTVEX5Q9hek",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 216,
+          "end": 258,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pR29uoG8P3Kd0FyhNOHMjwQhiBj_FDEk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "pR29uoG8P3Kd0FyhNOHMjwQhiBj_FDEk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 258,
+          "end": 283,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hUi-YnanuqbC_Idhtwdlc5u92PEF25v1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "hUi-YnanuqbC_Idhtwdlc5u92PEF25v1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 282,
+          "end": 325,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kw9ExMavWn40DpG4ycWJYpq1nlE2IJVv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 11.",
+          "digest": "kw9ExMavWn40DpG4ycWJYpq1nlE2IJVv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 325,
+          "end": 373,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XR_YcTvtBvt1yFgKbrELdb7Br9FF_lJ1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 12.",
+          "digest": "XR_YcTvtBvt1yFgKbrELdb7Br9FF_lJ1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 373,
+          "end": 419,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YRpU_p8_BgE8HtgmCKouEqP8rPsDDuSy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 13. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "YRpU_p8_BgE8HtgmCKouEqP8rPsDDuSy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 419,
+          "end": 454,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LzXbKo59ovBLMyBFxE9HoPV1cZwSx8YW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 14. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "LzXbKo59ovBLMyBFxE9HoPV1cZwSx8YW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 453,
+          "end": 481,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.8Hrsyhp5as4M46OaYZhvU0UZVhmqhwrF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 15.",
+          "digest": "8Hrsyhp5as4M46OaYZhvU0UZVhmqhwrF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 481,
+          "end": 533,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZXFqEiQGmenq65478gWdCqWHAgWPsEmD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 16.",
+          "digest": "ZXFqEiQGmenq65478gWdCqWHAgWPsEmD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 533,
+          "end": 572,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NuVOLcVdMIOC7fNDNNSsMR5Oy_9quBtZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 17.",
+          "digest": "NuVOLcVdMIOC7fNDNNSsMR5Oy_9quBtZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 572,
+          "end": 613,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.U8IKfMj8tfuIA6_cPfVT-W0c9He3o9_x",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 18. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "U8IKfMj8tfuIA6_cPfVT-W0c9He3o9_x",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 613,
+          "end": 649,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Yp2PZnBASeV1nQq8bhXp8s87TB8F-4dg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 19. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Yp2PZnBASeV1nQq8bhXp8s87TB8F-4dg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 648,
+          "end": 699,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eGuzLbHOijL18gOPDr8-XWKNu2eq_Wte",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 20.",
+          "digest": "eGuzLbHOijL18gOPDr8-XWKNu2eq_Wte",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 699,
+          "end": 740,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pXrm2XpuHUgABg5YIDesoviuEQMMI6QL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 21.",
+          "digest": "pXrm2XpuHUgABg5YIDesoviuEQMMI6QL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 740,
+          "end": 785,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6RizxfbP9VXRNhMXJt9tfQg06ufd-jCB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6RizxfbP9VXRNhMXJt9tfQg06ufd-jCB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 785,
+          "end": 849,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.T4e1K-ESkqFfLGLbysq4ekeUIn1Uc4KV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 23. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "T4e1K-ESkqFfLGLbysq4ekeUIn1Uc4KV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 848,
+          "end": 880,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7b3Bv9_DA91FnQ79TSsVKQl45dXpeZEV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 24. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "7b3Bv9_DA91FnQ79TSsVKQl45dXpeZEV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 879,
+          "end": 914,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iBO2R2YOs-SiK9tO3cdZ87wzypP7lsJO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 25. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "iBO2R2YOs-SiK9tO3cdZ87wzypP7lsJO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 914,
+          "end": 946,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.G6EeQo47B_bzmA32xp5yIwdKsRLLCN_k",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 26. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "G6EeQo47B_bzmA32xp5yIwdKsRLLCN_k",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 945,
+          "end": 989,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LTyWs6dFIlmiAG8Q8LT_U6EOvTpdPrpp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 27. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "LTyWs6dFIlmiAG8Q8LT_U6EOvTpdPrpp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 988,
+          "end": 1044,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dEoZbdd1FuR3BIAEuhcYPyYpiAhG-qZ-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 28. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "dEoZbdd1FuR3BIAEuhcYPyYpiAhG-qZ-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1043,
+          "end": 1095,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jgO5Dy9pAYZAmkaxQvy0pv56ziuZNdf8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 29. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "jgO5Dy9pAYZAmkaxQvy0pv56ziuZNdf8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1094,
+          "end": 1133,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.npQk8Kg-5zBWPiroWDErgEWB5hGf-beA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 30. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "npQk8Kg-5zBWPiroWDErgEWB5hGf-beA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1132,
+          "end": 1204,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NBAXJibu2eKWniSIgT3iiI1yGLT4Hg2J",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 31. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "NBAXJibu2eKWniSIgT3iiI1yGLT4Hg2J",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1203,
+          "end": 1272,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6YO4tIEvSk2VLDo9D7ii3JU6VjkW4sEd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 32. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "6YO4tIEvSk2VLDo9D7ii3JU6VjkW4sEd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1271,
+          "end": 1295,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yVCfJBx50o7wV_HQbaLki_s2c-mRlq_3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 33. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "yVCfJBx50o7wV_HQbaLki_s2c-mRlq_3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1294,
+          "end": 1335,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.MRVhKS5YZNGPvbZ3hHh5AHW5ONj20rYP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 34. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "MRVhKS5YZNGPvbZ3hHh5AHW5ONj20rYP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1335,
+          "end": 1498,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._5C0iYxtO_rZwiAtGuK58KKKdk6Kg960",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 35. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "_5C0iYxtO_rZwiAtGuK58KKKdk6Kg960",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1497,
+          "end": 1523,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lmFgYh-amv2EXlXYZq-X71DEhgwayP_v",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 36.",
+          "digest": "lmFgYh-amv2EXlXYZq-X71DEhgwayP_v",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1523,
+          "end": 1554,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xTSkOJ_Pmacd0hx2Db9GoZDfP9sYkUdI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 37. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "xTSkOJ_Pmacd0hx2Db9GoZDfP9sYkUdI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1554,
+          "end": 1617,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lPrzEGBXCv-xzeMx25Jptbo1PENqCc95",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 38. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "lPrzEGBXCv-xzeMx25Jptbo1PENqCc95",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1616,
+          "end": 1663,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lQKz1Lg2mRUXvUska7SWI4DNWxvKNKXx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 39. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "lQKz1Lg2mRUXvUska7SWI4DNWxvKNKXx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1663,
+          "end": 1690,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wEIUiYU2xWCjUMuRpI25FHHYHP2NiVxz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 40. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "wEIUiYU2xWCjUMuRpI25FHHYHP2NiVxz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1689,
+          "end": 1720,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zhwb_1drTjhRMliSgUkiHj079JH40CEW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 41.",
+          "digest": "zhwb_1drTjhRMliSgUkiHj079JH40CEW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1720,
+          "end": 1753,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Hn3ExDEXlUENiqYU_tH9SevoJ2UUzHmP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to Exon 42.",
+          "digest": "Hn3ExDEXlUENiqYU_tH9SevoJ2UUzHmP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "type": "SequenceReference",
+            "name": "NP_000539.2",
+            "aliases": [
+              "ensembl:ENSP00000219476.3",
+              "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+              "refseq:NP_000539.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+            "residueAlphabet": "aa"
+          },
+          "start": 1753,
+          "end": 1807,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.VLcHBEHIbkbGIUQ9OsqqfIQc5uYD4NIj",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000548.5, the MANE Select coding transcript for TSC2.",
+        "digest": "VLcHBEHIbkbGIUQ9OsqqfIQc5uYD4NIj",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+          "type": "SequenceReference",
+          "name": "NM_000548.5",
+          "aliases": [
+            "ensembl:ENST00000219476.9",
+            "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "refseq:NM_000548.5"
+          ],
+          "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6415,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.zRaCQWxh7ZBQaj5WUMmQc-4RG4mYcNuE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 1.",
+          "digest": "zRaCQWxh7ZBQaj5WUMmQc-4RG4mYcNuE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 81,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eEpbPJsQNIDt-qUWdAbS686gGFsDQlMT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 2.",
+          "digest": "eEpbPJsQNIDt-qUWdAbS686gGFsDQlMT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 81,
+          "end": 248,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TsBDns8askjWYa96YQoK8YbBj26MzQ7l",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 3.",
+          "digest": "TsBDns8askjWYa96YQoK8YbBj26MzQ7l",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 248,
+          "end": 335,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.g_l2p9VKR9EBEZB58gRWSfY0DwKntKHn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 4.",
+          "digest": "g_l2p9VKR9EBEZB58gRWSfY0DwKntKHn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 335,
+          "end": 446,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jbXj8Lry-GTEKe2AcS1UIQmkkXIiqQNg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 5.",
+          "digest": "jbXj8Lry-GTEKe2AcS1UIQmkkXIiqQNg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 446,
+          "end": 591,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.XbKgZ-uWyC0uhOrfx8KcJjtyD5vIMkVH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 6.",
+          "digest": "XbKgZ-uWyC0uhOrfx8KcJjtyD5vIMkVH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 591,
+          "end": 709,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.QccRf8hn9Hd39C0NfS5MNvZ8cjjmSJnZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 7.",
+          "digest": "QccRf8hn9Hd39C0NfS5MNvZ8cjjmSJnZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 709,
+          "end": 758,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qQMjP-nnT9o9B_6AADiDRm2DFZo1zFuJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 8.",
+          "digest": "qQMjP-nnT9o9B_6AADiDRm2DFZo1zFuJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 758,
+          "end": 884,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LucJtqM9L5aCpwM1YppOo1QKeOJlpN04",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 9.",
+          "digest": "LucJtqM9L5aCpwM1YppOo1QKeOJlpN04",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 884,
+          "end": 958,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.GHme9G6KRj6UvqrWLout8gT2cOvCbNjE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 10.",
+          "digest": "GHme9G6KRj6UvqrWLout8gT2cOvCbNjE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 958,
+          "end": 1085,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zIQ7n1-_3F0MYFRK25FXGYyCCMwAwl-m",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 11.",
+          "digest": "zIQ7n1-_3F0MYFRK25FXGYyCCMwAwl-m",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1085,
+          "end": 1229,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KnTN1pw97Edy3BxYgDytzn9BagMDULv2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 12.",
+          "digest": "KnTN1pw97Edy3BxYgDytzn9BagMDULv2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1229,
+          "end": 1367,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.o9nhg4q3q7xV1eposbLfzjEMlPrISPsc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 13.",
+          "digest": "o9nhg4q3q7xV1eposbLfzjEMlPrISPsc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1367,
+          "end": 1471,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.01XpRt5w88zbl5dSZVvbfVdwhsrwd-ja",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 14.",
+          "digest": "01XpRt5w88zbl5dSZVvbfVdwhsrwd-ja",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1471,
+          "end": 1553,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-s58EfLQpefM5c0EK-2RJukNM-KB6teM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 15.",
+          "digest": "-s58EfLQpefM5c0EK-2RJukNM-KB6teM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1553,
+          "end": 1709,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xWjxDUEHwYm1Fb3J1E7E_YJkfkh0jZVK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 16.",
+          "digest": "xWjxDUEHwYm1Fb3J1E7E_YJkfkh0jZVK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1709,
+          "end": 1826,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.VEosZn7Alu7DtVeEPbL5WqGQipbOST8r",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 17.",
+          "digest": "VEosZn7Alu7DtVeEPbL5WqGQipbOST8r",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1826,
+          "end": 1949,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._2mdIExQzjj3OSh1wE409US4Le-Lzx_p",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 18.",
+          "digest": "_2mdIExQzjj3OSh1wE409US4Le-Lzx_p",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 1949,
+          "end": 2056,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1tX3vQbFVx07PJk2MzBtBak1yx4K2Zab",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 19.",
+          "digest": "1tX3vQbFVx07PJk2MzBtBak1yx4K2Zab",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2056,
+          "end": 2207,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.I3JFxOaZQSSngdT11740r8PKAp44idoj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 20.",
+          "digest": "I3JFxOaZQSSngdT11740r8PKAp44idoj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2207,
+          "end": 2330,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sJqtbTIXl8alE0Iq5o_pPDHnCbOyWdtQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 21.",
+          "digest": "sJqtbTIXl8alE0Iq5o_pPDHnCbOyWdtQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2330,
+          "end": 2465,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EvDg--AMfYskGu7PeyuJBlgAEmwScsrp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 22.",
+          "digest": "EvDg--AMfYskGu7PeyuJBlgAEmwScsrp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2465,
+          "end": 2655,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ur6tlPEBWluvNOqO52qW7zOoQn-uBUXM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 23.",
+          "digest": "ur6tlPEBWluvNOqO52qW7zOoQn-uBUXM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2655,
+          "end": 2749,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eFHTh6AUk0U5229dk1ROYiFEa6EE2bPq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 24.",
+          "digest": "eFHTh6AUk0U5229dk1ROYiFEa6EE2bPq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2749,
+          "end": 2852,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ttf6-0kBhjIQT0inHhDcrfs-F_Vmoi6e",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 25.",
+          "digest": "ttf6-0kBhjIQT0inHhDcrfs-F_Vmoi6e",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2852,
+          "end": 2947,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.8nCILmIWcsz-MQnD6X94hRH_EyqpjObM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 26.",
+          "digest": "8nCILmIWcsz-MQnD6X94hRH_EyqpjObM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 2947,
+          "end": 3076,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IVDakDQMG7uNonU5rnbC3Oqp2ba9OYby",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 27.",
+          "digest": "IVDakDQMG7uNonU5rnbC3Oqp2ba9OYby",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3076,
+          "end": 3241,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.L1DatSEPzT65s4Ztolu_xVlQqz-jzGLZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 28.",
+          "digest": "L1DatSEPzT65s4Ztolu_xVlQqz-jzGLZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3241,
+          "end": 3394,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NhxD7ndJzFnNWNVFH8fyJOJgSCe6527S",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 29.",
+          "digest": "NhxD7ndJzFnNWNVFH8fyJOJgSCe6527S",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3394,
+          "end": 3507,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5Qpi8r9JIf68fk1FBio28H4OorSYh1FU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 30.",
+          "digest": "5Qpi8r9JIf68fk1FBio28H4OorSYh1FU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3507,
+          "end": 3720,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Y6mlYbcvOgTQXe28LOOP56MdB47WOqy9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 31.",
+          "digest": "Y6mlYbcvOgTQXe28LOOP56MdB47WOqy9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3720,
+          "end": 3924,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dgRzI3i9Q9kk1uclQ-QuzYuNH87vGgfn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 32.",
+          "digest": "dgRzI3i9Q9kk1uclQ-QuzYuNH87vGgfn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3924,
+          "end": 3993,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ckX_ymfo9oEnhNBWSg233vLN9NZtAhx_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 33.",
+          "digest": "ckX_ymfo9oEnhNBWSg233vLN9NZtAhx_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 3993,
+          "end": 4115,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.rrv1tjxkiqQlnWkXYl1aiavpRZMHcdrf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 34.",
+          "digest": "rrv1tjxkiqQlnWkXYl1aiavpRZMHcdrf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 4115,
+          "end": 4603,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nJ4xYoq7uS-ddvaZZo_ael6f1VxKI5Pz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 35.",
+          "digest": "nJ4xYoq7uS-ddvaZZo_ael6f1VxKI5Pz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 4603,
+          "end": 4679,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nmqR6gau1iurBaiYKsPZmeuZoffm5HWd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 36.",
+          "digest": "nmqR6gau1iurBaiYKsPZmeuZoffm5HWd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 4679,
+          "end": 4772,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hqb5lvDywQa6mfyexgLhVkMfbcLSaXpJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 37.",
+          "digest": "hqb5lvDywQa6mfyexgLhVkMfbcLSaXpJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 4772,
+          "end": 4959,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.edJg8mEJ86A_0oXHrRjhtyM2FlUWbegq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 38.",
+          "digest": "edJg8mEJ86A_0oXHrRjhtyM2FlUWbegq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 4959,
+          "end": 5099,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.F-8lnVNngIfzCqPfrRGbbNtMjTN5Xpxd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 39.",
+          "digest": "F-8lnVNngIfzCqPfrRGbbNtMjTN5Xpxd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 5099,
+          "end": 5178,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Me9NfcCjCSjsTjPNPGEBY60g8XTG7BFC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 40.",
+          "digest": "Me9NfcCjCSjsTjPNPGEBY60g8XTG7BFC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 5178,
+          "end": 5270,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WKl9KYtv7pm-y8Xl-leoniMiOZsOvUtZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 41.",
+          "digest": "WKl9KYtv7pm-y8Xl-leoniMiOZsOvUtZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 5270,
+          "end": 5369,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.m7PeALg3Fh1FP8PxNjqMyNcuKG9ogJA7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000548.5, the MANE Select coding transcript for TSC2, corresponding to Exon 42.",
+          "digest": "m7PeALg3Fh1FP8PxNjqMyNcuKG9ogJA7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "type": "SequenceReference",
+            "name": "NM_000548.5",
+            "aliases": [
+              "ensembl:ENST00000219476.9",
+              "ga4gh:SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+              "refseq:NM_000548.5"
+            ],
+            "description": "The MANE Select coding transcript for TSC2, corresponding to the Refseq transcript accession NM_000548.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.6xxZzk6662gTxHiTvzctAzt6ulwbhad-",
+            "residueAlphabet": "na"
+          },
+          "start": 5369,
+          "end": 6415,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:12363",
-    "code": "HGNC:12363",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12363"
-    ]
-  }
+  ]
 }

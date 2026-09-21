@@ -9,15 +9,21 @@ from utils import read
 def input_paths():
     return {
         "agents": "referenced/agents.json",
+        "alleles": "referenced/alleles.json",
         "biomarkers": "referenced/biomarkers.json",
+        "biomarker_criteria": "referenced/biomarker_criteria.json",
         "codings": "referenced/codings.json",
         "contributions": "referenced/contributions.json",
+        "copy_change": "referenced/copy_changes.json",
         "diseases": "referenced/diseases.json",
         "documents": "referenced/documents.json",
+        "function_consequences": "referenced/function_consequences.json",
         "genes": "referenced/genes.json",
         "indications": "referenced/indications.json",
         "mappings": "referenced/mappings.json",
         "propositions": "referenced/propositions.json",
+        "sequence_locations": "referenced/sequence_locations.json",
+        "sequence_references": "referenced/sequence_references.json",
         "statements": "referenced/statements.json",
         "strengths": "referenced/strengths.json",
         "therapies": "referenced/therapies.json",
@@ -36,10 +42,23 @@ def dereferenced_paths():
     root = pathlib.Path("dereferenced")
     return {
         "agents": root / "agents",
+        "alleles": root / "alleles",
+        "biomarker_criteria": root / "biomarker_criteria",
+        "biomarkers": root / "biomarkers",
         "codings": root / "codings",
         "contributions": root / "contributions",
+        "diseases": root / "diseases",
         "documents": root / "documents",
+        "genes": root / "genes",
         "indications": root / "indications",
+        "mappings": root / "mappings",
+        "propositions": root / "propositions",
+        "sequence_locations": root / "sequence_locations",
+        "sequence_references": root / "sequence_references",
+        "statements": root / "statements",
+        "strengths": root / "strengths",
+        "therapies": root / "therapies",
+        "therapy_groups": root / "therapy_groups"
     }
 
 

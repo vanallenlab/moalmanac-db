@@ -99,93 +99,11 @@
   "proposition": {
     "id": "prop:vtxr:50",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:8",
-        "type": "CategoricalVariant",
-        "name": "v::ALK",
-        "genes": [
-          {
-            "id": "gene:hgnc:427",
-            "conceptType": "Gene",
-            "name": "ALK",
-            "mappings": [
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ensembl:ensg00000171094",
-                  "code": "ENSG00000171094",
-                  "system": "https://www.ensembl.org",
-                  "iris": [
-                    "https://www.ensembl.org/id/ENSG00000171094"
-                  ]
-                }
-              },
-              {
-                "relation": "exactMatch",
-                "coding": {
-                  "id": "coding:ncbi:238",
-                  "code": "238",
-                  "system": "https://www.ncbi.nlm.nih.gov/gene",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/gene/238"
-                  ]
-                }
-              },
-              {
-                "relation": "relatedMatch",
-                "coding": {
-                  "id": "coding:refseq:NM_004304.5",
-                  "code": "NM_004304.5",
-                  "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                  "iris": [
-                    "https://www.ncbi.nlm.nih.gov/nuccore/NM_004304.5"
-                  ]
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "name": "location",
-                "value": "2p23.2-p23.1"
-              },
-              {
-                "name": "location_sortable",
-                "value": "02p23.2-p23.1"
-              }
-            ],
-            "primaryCoding": {
-              "id": "coding:hgnc:427",
-              "code": "HGNC:427",
-              "system": "https://genenames.org",
-              "iris": [
-                "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Rearrangement"
-          },
-          {
-            "name": "rearrangement_type",
-            "value": "Fusion"
-          },
-          {
-            "name": "locus",
-            "value": null
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:NSCLC",
       "conceptType": "Disease",
@@ -211,7 +129,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C98831",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Brigatinib",
       "mappings": [
         {
@@ -291,10 +209,100 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C98831"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:8",
+            "present": true,
+            "subject": {
+              "id": "bmkr:8",
+              "type": "CategoricalVariant",
+              "name": "v::ALK",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": false,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:427",
+                      "conceptType": "Gene",
+                      "name": "ALK",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:427",
+                        "code": "HGNC:427",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000171094",
+                            "code": "ENSG00000171094",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000171094"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:238",
+                            "code": "238",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/238"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_004304.5",
+                            "code": "NM_004304.5",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004304.5"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "UnspecifiedElement"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Rearrangement"
+                },
+                {
+                  "name": "rearrangement_type",
+                  "value": "Fusion"
+                },
+                {
+                  "name": "locus",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

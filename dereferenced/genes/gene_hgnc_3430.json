@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3430",
   "conceptType": "Gene",
   "name": "ERBB2",
+  "primaryCoding": {
+    "id": "coding:hgnc:3430",
+    "code": "HGNC:3430",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1404 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 175
+    },
+    {
       "name": "location",
       "value": "17q12"
     },
     {
       "name": "location_sortable",
       "value": "17q12"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4).",
+        "digest": "tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+          "type": "SequenceReference",
+          "name": "NP_004439.2",
+          "aliases": [
+            "ensembl:ENSP00000269571.4",
+            "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "refseq:NP_004439.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1255,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.8qMuiHAOCM7mm2eubn1pz94rjsfkeQAn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "8qMuiHAOCM7mm2eubn1pz94rjsfkeQAn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 25,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.L4zOFbfZaAQkqLjxTG3pB-7kibLFIp5g",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "L4zOFbfZaAQkqLjxTG3pB-7kibLFIp5g",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 24,
+          "end": 75,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NRl7DhkPsUEbpT2X70dqHPJNSjYmWsNT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "NRl7DhkPsUEbpT2X70dqHPJNSjYmWsNT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 75,
+          "end": 147,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LDTLfse40Clo6sAYV2T4JKNdvrI4soBf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "LDTLfse40Clo6sAYV2T4JKNdvrI4soBf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 146,
+          "end": 192,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iE0ZUB-lRKj7PIIiA3rnURIWgzAV-YV_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "iE0ZUB-lRKj7PIIiA3rnURIWgzAV-YV_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 191,
+          "end": 215,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0AFNyHPyRnjIU2hSjd2ArqWsFYMhmvF6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "0AFNyHPyRnjIU2hSjd2ArqWsFYMhmvF6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 214,
+          "end": 253,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6Juos3mgE-vZZ4d24ux_-S0Sx3SZ3uGF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6Juos3mgE-vZZ4d24ux_-S0Sx3SZ3uGF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 253,
+          "end": 301,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5N4kVsNjKJ20OJnKHiOJlH77gLNvvEme",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 8. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "5N4kVsNjKJ20OJnKHiOJlH77gLNvvEme",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 300,
+          "end": 341,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Yo1UfeyVgaLre5vDisDRkMOKunPNNnRV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "Yo1UfeyVgaLre5vDisDRkMOKunPNNnRV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 340,
+          "end": 383,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2zqMs0w6W8RWUHtD36XQTwa_SG_slHhV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "2zqMs0w6W8RWUHtD36XQTwa_SG_slHhV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 382,
+          "end": 408,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zIbuVv7CQzlYM5pTIpOOfWHLSdNdQx2o",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "zIbuVv7CQzlYM5pTIpOOfWHLSdNdQx2o",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 407,
+          "end": 438,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4SwTbf_k3n8YH3l4Bp892KjkF3pUzNmW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 12. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4SwTbf_k3n8YH3l4Bp892KjkF3pUzNmW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 437,
+          "end": 505,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.rb1k28qGq868FUAx9CtaHbCtzwfOE-T5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "rb1k28qGq868FUAx9CtaHbCtzwfOE-T5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 504,
+          "end": 549,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.BFxp-2nYbcg3raRe7EYBYpzJposIiaoa",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 14. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "BFxp-2nYbcg3raRe7EYBYpzJposIiaoa",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 548,
+          "end": 579,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.t8JauSNENrhJi5ojUNEQFq7b_DlpbVxT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "t8JauSNENrhJi5ojUNEQFq7b_DlpbVxT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 579,
+          "end": 633,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kguBcspq5WqN-S2L3fMieMVD-y62MDut",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 16. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "kguBcspq5WqN-S2L3fMieMVD-y62MDut",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 632,
+          "end": 649,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ALM0aiJWy35J4Ri0IgnLdQavni9E44wj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 17. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "ALM0aiJWy35J4Ri0IgnLdQavni9E44wj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 648,
+          "end": 695,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ybfZyCqh-3hHtlFBSTweIZnVWfcHefYP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 18.",
+          "digest": "ybfZyCqh-3hHtlFBSTweIZnVWfcHefYP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 695,
+          "end": 736,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zZN5HenEmF5_nAQFr_29oiSgtlWG_GsB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 19.",
+          "digest": "zZN5HenEmF5_nAQFr_29oiSgtlWG_GsB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 736,
+          "end": 769,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9wYrQ0-WjH5r-XOtY2EUbZgKi7um_0ke",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 20.",
+          "digest": "9wYrQ0-WjH5r-XOtY2EUbZgKi7um_0ke",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 769,
+          "end": 831,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.H4LX1dQrkwP-arDQ8XPixOMDhI7_sdKO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 21.",
+          "digest": "H4LX1dQrkwP-arDQ8XPixOMDhI7_sdKO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 831,
+          "end": 883,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2aCn2bwWwWHjjjqFubIvVi0aGUA8J80i",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "2aCn2bwWwWHjjjqFubIvVi0aGUA8J80i",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 883,
+          "end": 909,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hox5s5IRjXvalg7j2epFHHItz9BMMTor",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 23. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "hox5s5IRjXvalg7j2epFHHItz9BMMTor",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 908,
+          "end": 958,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dsunbs5UrkOJoaKPgxCNy_sxKHf1CIEH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 24. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "dsunbs5UrkOJoaKPgxCNy_sxKHf1CIEH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 957,
+          "end": 990,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AbSKfIZYm_b-oWqVPI9afx3YU0FU71AF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 25.",
+          "digest": "AbSKfIZYm_b-oWqVPI9afx3YU0FU71AF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 990,
+          "end": 1053,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.RcVazOMBAN6rMlgGeGcdIHAdR075jmUJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 26. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "RcVazOMBAN6rMlgGeGcdIHAdR075jmUJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 1053,
+          "end": 1138,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.s85-A9z_4jR2jfYx_C4caLOGiHnQ9zIP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004439.2, the protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to Exon 27. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "s85-A9z_4jR2jfYx_C4caLOGiHnQ9zIP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "type": "SequenceReference",
+            "name": "NP_004439.2",
+            "aliases": [
+              "ensembl:ENSP00000269571.4",
+              "ga4gh:SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+              "refseq:NP_004439.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ERBB2 (refseq:NM_004448.4), corresponding to the Refseq protein accession NP_004439.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.AF1UFydIo02-bMplonKSfxlWY2q6ze3m",
+            "residueAlphabet": "aa"
+          },
+          "start": 1137,
+          "end": 1255,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.7Wf-m-axbtA92nOv_dVsWuWMD8FYaItO",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004448.4, the MANE Select coding transcript for ERBB2.",
+        "digest": "7Wf-m-axbtA92nOv_dVsWuWMD8FYaItO",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+          "type": "SequenceReference",
+          "name": "NM_004448.4",
+          "aliases": [
+            "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "refseq:NM_004448.4"
+          ],
+          "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 4557,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.mIdJxELHuEm-Q5lrFHonzwcFuQdgs2gL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 1.",
+          "digest": "mIdJxELHuEm-Q5lrFHonzwcFuQdgs2gL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 248,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5Rq-5cqcKbb6_gNzAGh1_uFeV3YYHB5r",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 2.",
+          "digest": "5Rq-5cqcKbb6_gNzAGh1_uFeV3YYHB5r",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 248,
+          "end": 400,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WUZERPvVyjwlpmPa4HYDSjIz6_6gmAYd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 3.",
+          "digest": "WUZERPvVyjwlpmPa4HYDSjIz6_6gmAYd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 400,
+          "end": 614,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vF7USKKb1GHcb2ZOAEoRgm2C5RtNN8e3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 4.",
+          "digest": "vF7USKKb1GHcb2ZOAEoRgm2C5RtNN8e3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 614,
+          "end": 749,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zQp9D5tCeJBbAzMU6Usps6HKG6cGZ_sB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 5.",
+          "digest": "zQp9D5tCeJBbAzMU6Usps6HKG6cGZ_sB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 749,
+          "end": 818,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ESgt8fT-6dnp8poXsBs7qshpJT93qyGo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 6.",
+          "digest": "ESgt8fT-6dnp8poXsBs7qshpJT93qyGo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 818,
+          "end": 934,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IucYo1ebcVKf2Q40gUxdM1A4HL4bWNfd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 7.",
+          "digest": "IucYo1ebcVKf2Q40gUxdM1A4HL4bWNfd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 934,
+          "end": 1076,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._sVNe7mtBgrxuOWdclLzKWRTueK0u1cr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 8.",
+          "digest": "_sVNe7mtBgrxuOWdclLzKWRTueK0u1cr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1076,
+          "end": 1196,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.h2mq7Hyr4rf27twqfY6A2hhBNRYHWd8_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 9.",
+          "digest": "h2mq7Hyr4rf27twqfY6A2hhBNRYHWd8_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1196,
+          "end": 1323,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NmaQV-fV7Qp09fSnQuMsio1T3nTcvQq1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 10.",
+          "digest": "NmaQV-fV7Qp09fSnQuMsio1T3nTcvQq1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1323,
+          "end": 1397,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.fQMgMljBWdzeOTvTdxOf3L2Jy7Pi-LvF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 11.",
+          "digest": "fQMgMljBWdzeOTvTdxOf3L2Jy7Pi-LvF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1397,
+          "end": 1488,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EQvocS3tDu_GkI59iq1Yp7ga7P9q6Kte",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 12.",
+          "digest": "EQvocS3tDu_GkI59iq1Yp7ga7P9q6Kte",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1488,
+          "end": 1688,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.H6spAGUQtWOTWtT_83XX5zurxk61ACYC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 13.",
+          "digest": "H6spAGUQtWOTWtT_83XX5zurxk61ACYC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1688,
+          "end": 1821,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NuwD2Zz0FLo5xtJXxr4nh9-GhjTsgcHq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 14.",
+          "digest": "NuwD2Zz0FLo5xtJXxr4nh9-GhjTsgcHq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1821,
+          "end": 1912,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0oCCXSjT3MOWbIpv9SeBEgbmaRGTdScY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 15.",
+          "digest": "0oCCXSjT3MOWbIpv9SeBEgbmaRGTdScY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 1912,
+          "end": 2073,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KKSyzVgHkFvmpDw1RUiFoi5KQ8wlkx0c",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 16.",
+          "digest": "KKSyzVgHkFvmpDw1RUiFoi5KQ8wlkx0c",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2073,
+          "end": 2121,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.i1-0DUO7STQmvN4Yy7XeMlUm8p2sG0vD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 17.",
+          "digest": "i1-0DUO7STQmvN4Yy7XeMlUm8p2sG0vD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2121,
+          "end": 2260,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.P259wMICVLNo1J9UCeMBokORya9ST_4q",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 18.",
+          "digest": "P259wMICVLNo1J9UCeMBokORya9ST_4q",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2260,
+          "end": 2383,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lH8PbYqaRFMeaAgGCePP1WMsCGog2VW1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 19.",
+          "digest": "lH8PbYqaRFMeaAgGCePP1WMsCGog2VW1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2383,
+          "end": 2482,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2hxPSvxXaW1m78AxDsC-na10xKL2Rbwo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 20.",
+          "digest": "2hxPSvxXaW1m78AxDsC-na10xKL2Rbwo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2482,
+          "end": 2668,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.R7hVJ5dlBgvprQtrpkK0lThzpxTlM4IU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 21.",
+          "digest": "R7hVJ5dlBgvprQtrpkK0lThzpxTlM4IU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2668,
+          "end": 2824,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1yxB-OtL4UhukjRYPuN9-gIHjF1ko6B6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 22.",
+          "digest": "1yxB-OtL4UhukjRYPuN9-gIHjF1ko6B6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2824,
+          "end": 2900,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AGIS5xNWWAYFtpBGykYC9Z80uhMjk4QX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 23.",
+          "digest": "AGIS5xNWWAYFtpBGykYC9Z80uhMjk4QX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 2900,
+          "end": 3047,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LBsoPVqxVDjgGRmBE_Y5SSP8TfukKvfA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 24.",
+          "digest": "LBsoPVqxVDjgGRmBE_Y5SSP8TfukKvfA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 3047,
+          "end": 3145,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UKrclsYZIWOH4XMJIXkJBjoetb_XdMmG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 25.",
+          "digest": "UKrclsYZIWOH4XMJIXkJBjoetb_XdMmG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 3145,
+          "end": 3334,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.78pWgCFaVLXy3Ds9dpBSnC7RQQvvdndv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 26.",
+          "digest": "78pWgCFaVLXy3Ds9dpBSnC7RQQvvdndv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 3334,
+          "end": 3587,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZdZ6qsJAlILMLgxBc0_soCrbXWpA5zbB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004448.4, the MANE Select coding transcript for ERBB2, corresponding to Exon 27.",
+          "digest": "ZdZ6qsJAlILMLgxBc0_soCrbXWpA5zbB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "type": "SequenceReference",
+            "name": "NM_004448.4",
+            "aliases": [
+              "ga4gh:SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+              "refseq:NM_004448.4"
+            ],
+            "description": "The MANE Select coding transcript for ERBB2, corresponding to the Refseq transcript accession NM_004448.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.y9b4LVMiCXpZxOg9Xt1NwRtssA03MwWM",
+            "residueAlphabet": "na"
+          },
+          "start": 3587,
+          "end": 4557,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3430",
-    "code": "HGNC:3430",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3430"
-    ]
-  }
+  ]
 }

@@ -2,6 +2,14 @@
   "id": "gene:hgnc:952",
   "conceptType": "Gene",
   "name": "BARD1",
+  "primaryCoding": {
+    "id": "coding:hgnc:952",
+    "code": "HGNC:952",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:952"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,632 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 114
+    },
+    {
       "name": "location",
       "value": "2q35"
     },
     {
       "name": "location_sortable",
       "value": "02q35"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4).",
+        "digest": "6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+          "type": "SequenceReference",
+          "name": "NP_000456.2",
+          "aliases": [
+            "ensembl:ENSP00000260947.4",
+            "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "refseq:NP_000456.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 777,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.blsYDimr6npxDY98UGDXLJHq-NWXY4hC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "blsYDimr6npxDY98UGDXLJHq-NWXY4hC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 53,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.WoigflP-sdisIOA0i0nZFgPCktKsn-x3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 2. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "WoigflP-sdisIOA0i0nZFgPCktKsn-x3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 52,
+          "end": 72,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TxzI1-dzIxZCs4w4dM-7nQMWsFG-RELd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "TxzI1-dzIxZCs4w4dM-7nQMWsFG-RELd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 71,
+          "end": 122,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.E6-X-GkfelWneBh-TJb3nP8mS_FwU29A",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "E6-X-GkfelWneBh-TJb3nP8mS_FwU29A",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 121,
+          "end": 438,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.b-PyGr2PScaBjwbsT_BOcDhh6tzu_oOr",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 5.",
+          "digest": "b-PyGr2PScaBjwbsT_BOcDhh6tzu_oOr",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 438,
+          "end": 465,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EjbDUYl5I1rkubvscWTovDJyPJlYLPN3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "EjbDUYl5I1rkubvscWTovDJyPJlYLPN3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 465,
+          "end": 523,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._4HPWBolWNiPYQoLtsA327EE0BViweeW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "_4HPWBolWNiPYQoLtsA327EE0BViweeW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 522,
+          "end": 559,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qS8nJsacDAEF7W3q05kIRkwrvEDkYuDR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "qS8nJsacDAEF7W3q05kIRkwrvEDkYuDR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 559,
+          "end": 604,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.8LTe1wO3SnOfcDwm8nFQvAgsFFSk5JgX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "8LTe1wO3SnOfcDwm8nFQvAgsFFSk5JgX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 603,
+          "end": 635,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.syBIBko-7-yGm-t7ici2IwCbnyJpOF5O",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "syBIBko-7-yGm-t7ici2IwCbnyJpOF5O",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 634,
+          "end": 667,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cT_3GwGr0ZbbQm-8Seeph8FVWQc8k56r",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000456.2, the protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to Exon 11.",
+          "digest": "cT_3GwGr0ZbbQm-8Seeph8FVWQc8k56r",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "type": "SequenceReference",
+            "name": "NP_000456.2",
+            "aliases": [
+              "ensembl:ENSP00000260947.4",
+              "ga4gh:SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+              "refseq:NP_000456.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BARD1 (refseq:NM_000465.4), corresponding to the Refseq protein accession NP_000456.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.FHplLz13mAowCHRpfupULtsf4wMG2F0v",
+            "residueAlphabet": "aa"
+          },
+          "start": 667,
+          "end": 777,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.9kUBX4kcKOoUa6QGvcZl2X3haEPk4Rb8",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000465.4, the MANE Select coding transcript for BARD1.",
+        "digest": "9kUBX4kcKOoUa6QGvcZl2X3haEPk4Rb8",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+          "type": "SequenceReference",
+          "name": "NM_000465.4",
+          "aliases": [
+            "ensembl:ENST00000260947.9",
+            "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "refseq:NM_000465.4"
+          ],
+          "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5478,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.RDX0891HhhXetmP9oAd1-9WSu-cDfA-d",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 1.",
+          "digest": "RDX0891HhhXetmP9oAd1-9WSu-cDfA-d",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 272,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.e7elVRTkxVoX6Z1nNY-qjKqHDgkywXLv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 2.",
+          "digest": "e7elVRTkxVoX6Z1nNY-qjKqHDgkywXLv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 272,
+          "end": 329,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.RPSwBCcn_iwAiLE_th7KIgQqG2QCGkGY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 3.",
+          "digest": "RPSwBCcn_iwAiLE_th7KIgQqG2QCGkGY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 329,
+          "end": 478,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LoG-mGEMuEzKJ_0iQdSbtAQJTlMMWKAq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 4.",
+          "digest": "LoG-mGEMuEzKJ_0iQdSbtAQJTlMMWKAq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 478,
+          "end": 1428,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KB5RRzr_LlPdxZ-46BODfNA3lr9p9qz-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 5.",
+          "digest": "KB5RRzr_LlPdxZ-46BODfNA3lr9p9qz-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 1428,
+          "end": 1509,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.c4E-7-HLSI1eQKxFFQpKG0wn8epfKDZE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 6.",
+          "digest": "c4E-7-HLSI1eQKxFFQpKG0wn8epfKDZE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 1509,
+          "end": 1682,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lq030brXHbe97YSm9ikxK3MYF7eB3VJW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 7.",
+          "digest": "lq030brXHbe97YSm9ikxK3MYF7eB3VJW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 1682,
+          "end": 1791,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HFqgS4YDT362VhkMlqOjwVg1mHVGKd1w",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 8.",
+          "digest": "HFqgS4YDT362VhkMlqOjwVg1mHVGKd1w",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 1791,
+          "end": 1924,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.oKiInXUl1Uft-A6pA9XFBulWcz4PBQfv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 9.",
+          "digest": "oKiInXUl1Uft-A6pA9XFBulWcz4PBQfv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 1924,
+          "end": 2017,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pX7bHEzudJ2qSNpGL4rROFU-8sX8ykaA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 10.",
+          "digest": "pX7bHEzudJ2qSNpGL4rROFU-8sX8ykaA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 2017,
+          "end": 2115,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Ppx_F_Jh7oAqh91VGYI6srwRMX5-0JCY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000465.4, the MANE Select coding transcript for BARD1, corresponding to Exon 11.",
+          "digest": "Ppx_F_Jh7oAqh91VGYI6srwRMX5-0JCY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "type": "SequenceReference",
+            "name": "NM_000465.4",
+            "aliases": [
+              "ensembl:ENST00000260947.9",
+              "ga4gh:SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+              "refseq:NM_000465.4"
+            ],
+            "description": "The MANE Select coding transcript for BARD1, corresponding to the Refseq transcript accession NM_000465.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.42ZSRo04o3r98NCBfmbCVxMbMIpuwmG1",
+            "residueAlphabet": "na"
+          },
+          "start": 2115,
+          "end": 5478,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:952",
-    "code": "HGNC:952",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:952"
-    ]
-  }
+  ]
 }

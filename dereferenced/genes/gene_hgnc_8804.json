@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8804",
   "conceptType": "Gene",
   "name": "PDGFRB",
+  "primaryCoding": {
+    "id": "coding:hgnc:8804",
+    "code": "HGNC:8804",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1207 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 455
+    },
+    {
       "name": "location",
       "value": "5q32"
     },
     {
       "name": "location_sortable",
       "value": "05q32"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.rvM1DBtzD1mkbu3QFeDwoYRXwd67iiwQ",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4).",
+        "digest": "rvM1DBtzD1mkbu3QFeDwoYRXwd67iiwQ",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+          "type": "SequenceReference",
+          "name": "NP_002600.1",
+          "aliases": [
+            "ensembl:ENSP00000261799.4",
+            "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "refseq:NP_002600.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1106,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.d7XWNzzdNzt3KewnEg-bCtg4NOguHN-T",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "d7XWNzzdNzt3KewnEg-bCtg4NOguHN-T",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 14,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.TK8o-XPR6YMoNknXIbR5SG6hgIQ0g-fp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "TK8o-XPR6YMoNknXIbR5SG6hgIQ0g-fp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 13,
+          "end": 122,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.t0x8xkNKlCGvy9JIxWha8Rfm7twv61US",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "t0x8xkNKlCGvy9JIxWha8Rfm7twv61US",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 121,
+          "end": 211,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gTVkj1cgSG9wY78y9UBdl-5ekMzH3Mmb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "gTVkj1cgSG9wY78y9UBdl-5ekMzH3Mmb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 210,
+          "end": 253,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IHVMd1Gpzsway_isF-0EVZR7KqHQDxC7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "IHVMd1Gpzsway_isF-0EVZR7KqHQDxC7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 253,
+          "end": 312,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.taj2lZdT2Q2_E56Rok9tQN8xLHV6vBh_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 7. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "taj2lZdT2Q2_E56Rok9tQN8xLHV6vBh_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 311,
+          "end": 376,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AoZAsX4hQL2YpU1LGzrk-NGbxXJdJbQl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 8. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "AoZAsX4hQL2YpU1LGzrk-NGbxXJdJbQl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 375,
+          "end": 415,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ilBC8wrDLZdqWUD_gttjPepCvdzX7cwx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "ilBC8wrDLZdqWUD_gttjPepCvdzX7cwx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 414,
+          "end": 456,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4RhOlixNJQViebhxrXj8L4Hx1UeV0eZ9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4RhOlixNJQViebhxrXj8L4Hx1UeV0eZ9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 455,
+          "end": 527,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.mwqAvU5wuKVZ8CTd-jS_ckqGUuNQ2iDq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 11. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "mwqAvU5wuKVZ8CTd-jS_ckqGUuNQ2iDq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 526,
+          "end": 558,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EnMIb4AeHk-EJMuxS5ChuNor7qeBHJtH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "EnMIb4AeHk-EJMuxS5ChuNor7qeBHJtH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 558,
+          "end": 603,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hyLTTm7XU-XR-Gn1iRlR5telwjfw4wuY",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "hyLTTm7XU-XR-Gn1iRlR5telwjfw4wuY",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 602,
+          "end": 638,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JHLVVTU1kpc58fTPNIN_3gvvsdL7NuYA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "JHLVVTU1kpc58fTPNIN_3gvvsdL7NuYA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 637,
+          "end": 675,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7mg48NNLfqLCu-5nOH4eFbTLDHXc2hHK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 15. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "7mg48NNLfqLCu-5nOH4eFbTLDHXc2hHK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 674,
+          "end": 728,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.r28UrNjIx5QMBB6RYn7LMUbct0hT_6N4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 16. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "r28UrNjIx5QMBB6RYn7LMUbct0hT_6N4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 727,
+          "end": 782,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.v8psh9pxkemDxz6gNyuZSPWvfuVUyFfm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 17. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "v8psh9pxkemDxz6gNyuZSPWvfuVUyFfm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 781,
+          "end": 821,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZMGXtOARRkKw6AcHMYXQPKwVyeM2GVvO",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 18.",
+          "digest": "ZMGXtOARRkKw6AcHMYXQPKwVyeM2GVvO",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 821,
+          "end": 862,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lal9s8ElG9EskUv0hjtmjNcR1NJHWJwB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 19. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "lal9s8ElG9EskUv0hjtmjNcR1NJHWJwB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 862,
+          "end": 900,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Wr_0zguSiqAiokMZYo8aO8fGLNrM7LwU",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 20. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "Wr_0zguSiqAiokMZYo8aO8fGLNrM7LwU",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 899,
+          "end": 933,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Tn6b04Dj3Q1-xJOBvLWsdKUrnE4Qnv0C",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 21. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Tn6b04Dj3Q1-xJOBvLWsdKUrnE4Qnv0C",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 932,
+          "end": 968,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qasFe8RgkNqtmv1mz844Q3-5I1CqqsHm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "qasFe8RgkNqtmv1mz844Q3-5I1CqqsHm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 968,
+          "end": 1046,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gnwBgMbwTSaL-NIdk9ISuwpDXjNYkWOP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_002600.1, the protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to Exon 23. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "gnwBgMbwTSaL-NIdk9ISuwpDXjNYkWOP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "type": "SequenceReference",
+            "name": "NP_002600.1",
+            "aliases": [
+              "ensembl:ENSP00000261799.4",
+              "ga4gh:SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+              "refseq:NP_002600.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for PDGFRB (refseq:NM_002609.4), corresponding to the Refseq protein accession NP_002600.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.T63lf4O7gfEco4e4BoaTIQvEsHtd145I",
+            "residueAlphabet": "aa"
+          },
+          "start": 1045,
+          "end": 1106,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.Wy9TDBjNNRg4A3r3z8N8kYXoehF5Dkb2",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB.",
+        "digest": "Wy9TDBjNNRg4A3r3z8N8kYXoehF5Dkb2",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+          "type": "SequenceReference",
+          "name": "NM_002609.4",
+          "aliases": [
+            "ensembl:ENST00000261799.9",
+            "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "refseq:NM_002609.4"
+          ],
+          "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 5700,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.sIbs-3AA-mE3U-96GuLGFkSxRN6puO8a",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 1.",
+          "digest": "sIbs-3AA-mE3U-96GuLGFkSxRN6puO8a",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 449,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.OZ36Wb7c6xjbh3FxXcd_WhiTu6cv9KPQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 2.",
+          "digest": "OZ36Wb7c6xjbh3FxXcd_WhiTu6cv9KPQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 449,
+          "end": 495,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5JfsWVdfKCLhU-wmPEtVuOkpKqNwEw9O",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 3.",
+          "digest": "5JfsWVdfKCLhU-wmPEtVuOkpKqNwEw9O",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 495,
+          "end": 819,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eEvd4ZSY6FnZa5xXGT3QuPhxqbgDTKdd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 4.",
+          "digest": "eEvd4ZSY6FnZa5xXGT3QuPhxqbgDTKdd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 819,
+          "end": 1086,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SQbCdclrRLsOQ-ipnzhZMfGhI2OepjTg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 5.",
+          "digest": "SQbCdclrRLsOQ-ipnzhZMfGhI2OepjTg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 1086,
+          "end": 1214,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.x6OZ5EIFhQ6tf9gv0I_5AIzevGO36ezX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 6.",
+          "digest": "x6OZ5EIFhQ6tf9gv0I_5AIzevGO36ezX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 1214,
+          "end": 1389,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4Cw98wQQG5Sqgv2huZOBkE0vfBRAFvZh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 7.",
+          "digest": "4Cw98wQQG5Sqgv2huZOBkE0vfBRAFvZh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 1389,
+          "end": 1582,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0C0h6jTT21uBsTSMDSFVigU9ocBaU1bB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 8.",
+          "digest": "0C0h6jTT21uBsTSMDSFVigU9ocBaU1bB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 1582,
+          "end": 1698,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wxC-TA2i_RBd2REiBrnOC0FxRjqP6Lgn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 9.",
+          "digest": "wxC-TA2i_RBd2REiBrnOC0FxRjqP6Lgn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 1698,
+          "end": 1822,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ESfnWFyoNYqi6ke_65W_PRzOW_KRAnT-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 10.",
+          "digest": "ESfnWFyoNYqi6ke_65W_PRzOW_KRAnT-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 1822,
+          "end": 2034,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ECTR5be8n9JOLwj55KwmfW6GfJRvMYD3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 11.",
+          "digest": "ECTR5be8n9JOLwj55KwmfW6GfJRvMYD3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2034,
+          "end": 2129,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.23yhGdbasJtFX7uyIiLzcK1ZCRnTJnNy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 12.",
+          "digest": "23yhGdbasJtFX7uyIiLzcK1ZCRnTJnNy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2129,
+          "end": 2262,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ZnB8YOZDB7ukDN0EQqsNaSQCVWtKLhHx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 13.",
+          "digest": "ZnB8YOZDB7ukDN0EQqsNaSQCVWtKLhHx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2262,
+          "end": 2367,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qtZl7NqWVQvcHSyc2_2Xp56z6uLmLVMq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 14.",
+          "digest": "qtZl7NqWVQvcHSyc2_2Xp56z6uLmLVMq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2367,
+          "end": 2478,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.uwVXIE7Nhn0adVCgq7pwj_XpLb6FEyyW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 15.",
+          "digest": "uwVXIE7Nhn0adVCgq7pwj_XpLb6FEyyW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2478,
+          "end": 2638,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.uCCI3lfeQfc8xzWSNFxwPwpxuX8F49WK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 16.",
+          "digest": "uCCI3lfeQfc8xzWSNFxwPwpxuX8F49WK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2638,
+          "end": 2799,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qaQVnq1nMjy8zIxT3SYjw1zJqT0RKXc6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 17.",
+          "digest": "qaQVnq1nMjy8zIxT3SYjw1zJqT0RKXc6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2799,
+          "end": 2918,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.P72ab10JiWeKMC83J7nisUIwAN7b5-mT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 18.",
+          "digest": "P72ab10JiWeKMC83J7nisUIwAN7b5-mT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 2918,
+          "end": 3041,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Hx2L9OyGq5fQmyMGznv2WWzREhkJgTcK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 19.",
+          "digest": "Hx2L9OyGq5fQmyMGznv2WWzREhkJgTcK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 3041,
+          "end": 3153,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4mA5qaedNfcX6kcV6dbPKdwVJMdO_OOA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 20.",
+          "digest": "4mA5qaedNfcX6kcV6dbPKdwVJMdO_OOA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 3153,
+          "end": 3253,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eJZDQSSzSX7FGgDh_K004rT1hS92kS6u",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 21.",
+          "digest": "eJZDQSSzSX7FGgDh_K004rT1hS92kS6u",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 3253,
+          "end": 3359,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LSPx94vO8n74dOaU4ZsS9_9iwvWg0Iyk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 22.",
+          "digest": "LSPx94vO8n74dOaU4ZsS9_9iwvWg0Iyk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 3359,
+          "end": 3592,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.B5wdJT_2huHmOX5k1pwxvdbKBaFn_bbn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_002609.4, the MANE Select coding transcript for PDGFRB, corresponding to Exon 23.",
+          "digest": "B5wdJT_2huHmOX5k1pwxvdbKBaFn_bbn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "type": "SequenceReference",
+            "name": "NM_002609.4",
+            "aliases": [
+              "ensembl:ENST00000261799.9",
+              "ga4gh:SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+              "refseq:NM_002609.4"
+            ],
+            "description": "The MANE Select coding transcript for PDGFRB, corresponding to the Refseq transcript accession NM_002609.4.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.OPU31SQ8_4s36zUBZ9KrzhgQ05PD7jH4",
+            "residueAlphabet": "na"
+          },
+          "start": 3592,
+          "end": 5700,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8804",
-    "code": "HGNC:8804",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8804"
-    ]
-  }
+  ]
 }

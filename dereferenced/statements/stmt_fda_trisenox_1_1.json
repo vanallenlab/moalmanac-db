@@ -112,34 +112,11 @@
   "proposition": {
     "id": "prop:vtxr:840",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:172",
-        "type": "CategoricalVariant",
-        "name": "t(15;17)",
-        "genes": [],
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Rearrangement"
-          },
-          {
-            "name": "rearrangement_type",
-            "value": "Translocation"
-          },
-          {
-            "name": "locus",
-            "value": null
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:APLPMLRARA",
       "conceptType": "Disease",
@@ -165,7 +142,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C1005",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Arsenic trioxide",
       "mappings": [
         {
@@ -245,10 +222,42 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1005"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:172",
+            "present": true,
+            "subject": {
+              "id": "bmkr:172",
+              "type": "CategoricalVariant",
+              "name": "t(15;17)",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Rearrangement"
+                },
+                {
+                  "name": "rearrangement_type",
+                  "value": "Translocation"
+                },
+                {
+                  "name": "locus",
+                  "value": null
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

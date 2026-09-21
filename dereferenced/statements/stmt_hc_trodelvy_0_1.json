@@ -86,72 +86,11 @@
   "proposition": {
     "id": "prop:vtxr:405",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:2",
-        "type": "CategoricalVariant",
-        "name": "HER2-negative",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Negative"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      },
-      {
-        "id": "bmkr:3",
-        "type": "CategoricalVariant",
-        "name": "PR positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Progesterone receptor (PR)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:BRCA",
       "conceptType": "Disease",
@@ -177,7 +116,7 @@
     },
     "objectTherapeutic": {
       "id": "tx:ncit:C102783",
-      "conceptType": "Drug",
+      "conceptType": "Therapy",
       "name": "Sacituzumab govitecan",
       "mappings": [
         {
@@ -257,10 +196,82 @@
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C102783"
         ]
       }
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:2",
+            "present": true,
+            "subject": {
+              "id": "bmkr:2",
+              "type": "CategoricalVariant",
+              "name": "HER2-negative",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Negative"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:3",
+            "present": true,
+            "subject": {
+              "id": "bmkr:3",
+              "type": "CategoricalVariant",
+              "name": "PR positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Progesterone receptor (PR)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

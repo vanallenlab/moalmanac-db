@@ -2,6 +2,14 @@
   "id": "gene:hgnc:3690",
   "conceptType": "Gene",
   "name": "FGFR3",
+  "primaryCoding": {
+    "id": "coding:hgnc:3690",
+    "code": "HGNC:3690",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3690"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,938 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 275
+    },
+    {
       "name": "location",
       "value": "4p16.3"
     },
     {
       "name": "location_sortable",
       "value": "04p16.3"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.YxsVr8LGoOUIVmXJMD2s7GyBOEZrwkg0",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5).",
+        "digest": "YxsVr8LGoOUIVmXJMD2s7GyBOEZrwkg0",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+          "type": "SequenceReference",
+          "name": "NP_000133.1",
+          "aliases": [
+            "ensembl:ENSP00000260795.2",
+            "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "refseq:NP_000133.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 806,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.9EDX7Llz_foGj3Iuasa4QZCu04Z57mGE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "9EDX7Llz_foGj3Iuasa4QZCu04Z57mGE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 37,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LoMIPpZjxfgE0z8bFDr4X3B0JyZQFHHf",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "LoMIPpZjxfgE0z8bFDr4X3B0JyZQFHHf",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 36,
+          "end": 127,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AqrKOiP205HHL85i-YaPwGQzFVrSw401",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "AqrKOiP205HHL85i-YaPwGQzFVrSw401",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 126,
+          "end": 149,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6uOmMb_iOXjkQzxxZ2NYUimdNy6uf9hX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6uOmMb_iOXjkQzxxZ2NYUimdNy6uf9hX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 148,
+          "end": 205,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iVINhGJHTPElgVZscoPPSO5mFsg8Mayg",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "iVINhGJHTPElgVZscoPPSO5mFsg8Mayg",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 205,
+          "end": 247,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.BgaB9ryCU00N4mAMRvLKCysO_iUysYGm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "BgaB9ryCU00N4mAMRvLKCysO_iUysYGm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 246,
+          "end": 310,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.N7dxTAs9I_-qOE7R-xfxLLvIIVrOheca",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "N7dxTAs9I_-qOE7R-xfxLLvIIVrOheca",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 310,
+          "end": 359,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lksEcEKg_ZpXiTxZMgXUuKxJ4glrHDzc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "lksEcEKg_ZpXiTxZMgXUuKxJ4glrHDzc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 358,
+          "end": 422,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.o_JLkemsx4gnlWVA1HtH8FX__xcbgePS",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "o_JLkemsx4gnlWVA1HtH8FX__xcbgePS",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 422,
+          "end": 471,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gVdxJguyTak4fwhYmiFmCMWYX-8f3qHZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "gVdxJguyTak4fwhYmiFmCMWYX-8f3qHZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 470,
+          "end": 512,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hfSHI3ULQpWUXJYXDI6UnYalXh_eojuu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 12. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "hfSHI3ULQpWUXJYXDI6UnYalXh_eojuu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 511,
+          "end": 549,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wyCdwXfH0p7wgo_6fy0PeXGTXIbNhUto",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 13. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "wyCdwXfH0p7wgo_6fy0PeXGTXIbNhUto",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 548,
+          "end": 612,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4DvHceNfzZc0ufC1BWo3Vlimy0PQwxWK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 14.",
+          "digest": "4DvHceNfzZc0ufC1BWo3Vlimy0PQwxWK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 612,
+          "end": 653,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FaJrl5jg8vCcRzsF1ScxTjUuiSaomkWK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "FaJrl5jg8vCcRzsF1ScxTjUuiSaomkWK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 653,
+          "end": 677,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._qD8TLevw-GpxDuZgTJF4btUo8984gjX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 16. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "_qD8TLevw-GpxDuZgTJF4btUo8984gjX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 676,
+          "end": 723,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4JKzTgTcBI6qUYoWARA_DqRceekhQZ5q",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 17. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "4JKzTgTcBI6qUYoWARA_DqRceekhQZ5q",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 722,
+          "end": 758,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7VwxpEH3kJm9qUCNCrJnLe254EgoTPt2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000133.1, the protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to Exon 18.",
+          "digest": "7VwxpEH3kJm9qUCNCrJnLe254EgoTPt2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "type": "SequenceReference",
+            "name": "NP_000133.1",
+            "aliases": [
+              "ensembl:ENSP00000260795.2",
+              "ga4gh:SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+              "refseq:NP_000133.1"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for FGFR3 (refseq:NM_000142.5), corresponding to the Refseq protein accession NP_000133.1.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.xO86teDIIalLkqprCQaXyuvdPqvBxBG3",
+            "residueAlphabet": "aa"
+          },
+          "start": 758,
+          "end": 806,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.FzASeg1ibGyrHRPa-DCqmcF5DzTbkbaR",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000142.5, the MANE Select coding transcript for FGFR3.",
+        "digest": "FzASeg1ibGyrHRPa-DCqmcF5DzTbkbaR",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+          "type": "SequenceReference",
+          "name": "NM_000142.5",
+          "aliases": [
+            "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "refseq:NM_000142.5"
+          ],
+          "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 4301,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.ejg0K4eLsibvIBZK_NGQn06VoVBCP8-n",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 1.",
+          "digest": "ejg0K4eLsibvIBZK_NGQn06VoVBCP8-n",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 173,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.KcTgsJFnK1AoxMW6hORQrSdCRRCSDt9u",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 2.",
+          "digest": "KcTgsJFnK1AoxMW6hORQrSdCRRCSDt9u",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 173,
+          "end": 384,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sEH_g6K5B30sFVma-FbcbXQfGwCo48P1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 3.",
+          "digest": "sEH_g6K5B30sFVma-FbcbXQfGwCo48P1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 384,
+          "end": 654,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.BSgNHrbgy_4xM2v_ThYDwUDVnxs95ReT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 4.",
+          "digest": "BSgNHrbgy_4xM2v_ThYDwUDVnxs95ReT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 654,
+          "end": 720,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yP7ItXfoGyLpoWLEsxweCC4Lqy_FxgkF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 5.",
+          "digest": "yP7ItXfoGyLpoWLEsxweCC4Lqy_FxgkF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 720,
+          "end": 890,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.GvbhQsVDKh8KWxyQOwrUEmCxNZnTwvfb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 6.",
+          "digest": "GvbhQsVDKh8KWxyQOwrUEmCxNZnTwvfb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 890,
+          "end": 1014,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NLByRjqaweRK2m-PAoDbijdXFo3aat2N",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 7.",
+          "digest": "NLByRjqaweRK2m-PAoDbijdXFo3aat2N",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1014,
+          "end": 1205,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Qo0Eel6Ni5jMAhW28Pv_FMQpAZphzUy3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 8.",
+          "digest": "Qo0Eel6Ni5jMAhW28Pv_FMQpAZphzUy3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1205,
+          "end": 1350,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SfB9C5n9kAPJ1qi8ckPuj0mv18hqo2Vs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 9.",
+          "digest": "SfB9C5n9kAPJ1qi8ckPuj0mv18hqo2Vs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1350,
+          "end": 1541,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._KTrx5c6KIQc-0A7jsxxMDI5Y1jgT8ev",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 10.",
+          "digest": "_KTrx5c6KIQc-0A7jsxxMDI5Y1jgT8ev",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1541,
+          "end": 1687,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wx-5e-3DjVD5C913dpz-Q6Rug5aUhJR0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 11.",
+          "digest": "wx-5e-3DjVD5C913dpz-Q6Rug5aUhJR0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1687,
+          "end": 1809,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Wo3nzXr1IavwSIO3HEDnsvVRBzvKSQk6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 12.",
+          "digest": "Wo3nzXr1IavwSIO3HEDnsvVRBzvKSQk6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1809,
+          "end": 1920,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5nmqCqFD-sKI5lFRHOfbFIg7Arrk3lW3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 13.",
+          "digest": "5nmqCqFD-sKI5lFRHOfbFIg7Arrk3lW3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 1920,
+          "end": 2111,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.N8ZUc861WL7AMl-uzFiDH8hYTQhWkRDs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 14.",
+          "digest": "N8ZUc861WL7AMl-uzFiDH8hYTQhWkRDs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 2111,
+          "end": 2234,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.de_473fWfiSNxW_04o7HcTTlCNDfuW2g",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 15.",
+          "digest": "de_473fWfiSNxW_04o7HcTTlCNDfuW2g",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 2234,
+          "end": 2305,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lMA-v1cm5xKPtyncPKmoq2Mz4aaGLgdF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 16.",
+          "digest": "lMA-v1cm5xKPtyncPKmoq2Mz4aaGLgdF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 2305,
+          "end": 2443,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.s69edX_zomFCqQ1okHp_PSSkK0IKxGwu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 17.",
+          "digest": "s69edX_zomFCqQ1okHp_PSSkK0IKxGwu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 2443,
+          "end": 2549,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.b3s0O_lR26VlnHnjisjSwdi5dwXiLkNh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000142.5, the MANE Select coding transcript for FGFR3, corresponding to Exon 18.",
+          "digest": "b3s0O_lR26VlnHnjisjSwdi5dwXiLkNh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "type": "SequenceReference",
+            "name": "NM_000142.5",
+            "aliases": [
+              "ga4gh:SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+              "refseq:NM_000142.5"
+            ],
+            "description": "The MANE Select coding transcript for FGFR3, corresponding to the Refseq transcript accession NM_000142.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.K_-bl-z6BuaqSy_vjZyjunOVEMoYG7VX",
+            "residueAlphabet": "na"
+          },
+          "start": 2549,
+          "end": 4301,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:3690",
-    "code": "HGNC:3690",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3690"
-    ]
-  }
+  ]
 }

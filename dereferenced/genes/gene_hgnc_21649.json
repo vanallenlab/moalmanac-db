@@ -2,6 +2,14 @@
   "id": "gene:hgnc:21649",
   "conceptType": "Gene",
   "name": "BAIAP2L1",
+  "primaryCoding": {
+    "id": "coding:hgnc:21649",
+    "code": "HGNC:21649",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:21649"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,782 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 238
+    },
+    {
       "name": "location",
       "value": "7q21.3-q22.1"
     },
     {
       "name": "location_sortable",
       "value": "07q21.3-q22.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.x7BDSGETMhyrG5schJcd51YuFylWUGTQ",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5).",
+        "digest": "x7BDSGETMhyrG5schJcd51YuFylWUGTQ",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+          "type": "SequenceReference",
+          "name": "NP_061330.2",
+          "aliases": [
+            "ensembl:ENSP00000005260.8",
+            "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "refseq:NP_061330.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 511,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.W7n6MWYr5X3SFFLpEbwK0f3OOvMHavIE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 1.",
+          "digest": "W7n6MWYr5X3SFFLpEbwK0f3OOvMHavIE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 17,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ji55Er69dQnu8mFyJykiqqoflrCga2m6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "ji55Er69dQnu8mFyJykiqqoflrCga2m6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 17,
+          "end": 43,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xE-7k0GsKaXMHM2YUq1QKP87-FxY0Kos",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "xE-7k0GsKaXMHM2YUq1QKP87-FxY0Kos",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 42,
+          "end": 72,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-0JZD4_BQikY3CxEjOp7VSUvrXFJsYwG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "-0JZD4_BQikY3CxEjOp7VSUvrXFJsYwG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 71,
+          "end": 92,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.aSethN312qvvfZ4bCRsQ0GY3wjOtQ8fp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 5.",
+          "digest": "aSethN312qvvfZ4bCRsQ0GY3wjOtQ8fp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 92,
+          "end": 116,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.aM0GPnLg4w3mNcLjCQPUalkTMJrYvvch",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 6.",
+          "digest": "aM0GPnLg4w3mNcLjCQPUalkTMJrYvvch",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 116,
+          "end": 162,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pNWWI9bZRSK1tOV57Sc93i0PlkkM1bFM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 7.",
+          "digest": "pNWWI9bZRSK1tOV57Sc93i0PlkkM1bFM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 162,
+          "end": 213,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0FLWGUTKCbgsc7AZiEgdbvJOe_x6ihpv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 8.",
+          "digest": "0FLWGUTKCbgsc7AZiEgdbvJOe_x6ihpv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 213,
+          "end": 269,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.iWGwgvIz_3LmJa2cF-uu3-ppX1YNZiyi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "iWGwgvIz_3LmJa2cF-uu3-ppX1YNZiyi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 269,
+          "end": 319,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Z66mNmi1_OfAZtcRgJQ2537y6dphSOkV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "Z66mNmi1_OfAZtcRgJQ2537y6dphSOkV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 318,
+          "end": 388,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.J8Bb4FpzUAL36zGWXa1sZQkVw7P4rJeN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "J8Bb4FpzUAL36zGWXa1sZQkVw7P4rJeN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 387,
+          "end": 414,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Vw07YxzIkZsLLHF9TypoWWwnil7TJqlx",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "Vw07YxzIkZsLLHF9TypoWWwnil7TJqlx",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 413,
+          "end": 474,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kok4Bxndw67Nn1wZnsEzQzXEAUALQk_X",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 13. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "kok4Bxndw67Nn1wZnsEzQzXEAUALQk_X",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 474,
+          "end": 487,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.R5oxaBIUDwoR2roDGZ9YYRW0axoPiuz2",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_061330.2, the protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to Exon 14. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "R5oxaBIUDwoR2roDGZ9YYRW0axoPiuz2",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "type": "SequenceReference",
+            "name": "NP_061330.2",
+            "aliases": [
+              "ensembl:ENSP00000005260.8",
+              "ga4gh:SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+              "refseq:NP_061330.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BAIAP2L1 (refseq:NM_018842.5), corresponding to the Refseq protein accession NP_061330.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.bcXSOLv4TaKocnaHlHdoyFiFIHNWYxt7",
+            "residueAlphabet": "aa"
+          },
+          "start": 486,
+          "end": 511,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.7n77rm5QCGHvZsqpTI2h4zx6OW-v8MWo",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1.",
+        "digest": "7n77rm5QCGHvZsqpTI2h4zx6OW-v8MWo",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+          "type": "SequenceReference",
+          "name": "NM_018842.5",
+          "aliases": [
+            "ensembl:ENST00000005260.9",
+            "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "refseq:NM_018842.5"
+          ],
+          "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 3645,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.KpNmxgmMZ9QmwQZZUEuDIg-OU58GCQ5N",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 1.",
+          "digest": "KpNmxgmMZ9QmwQZZUEuDIg-OU58GCQ5N",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 289,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.M3Lhn5UVvu21UDaYEjeacLbnylsVodh0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 2.",
+          "digest": "M3Lhn5UVvu21UDaYEjeacLbnylsVodh0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 289,
+          "end": 365,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hdPJO3kDCYgVAducVCgz0NwMjO5ygD3m",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 3.",
+          "digest": "hdPJO3kDCYgVAducVCgz0NwMjO5ygD3m",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 365,
+          "end": 452,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SpWiLwGu8tfaDiBDtOZxZlqbacu7oRID",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 4.",
+          "digest": "SpWiLwGu8tfaDiBDtOZxZlqbacu7oRID",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 452,
+          "end": 514,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.U9dthb3ucWIWP9ClrV_3-iuHPfz90fhe",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 5.",
+          "digest": "U9dthb3ucWIWP9ClrV_3-iuHPfz90fhe",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 514,
+          "end": 586,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gVUQwyuV9OMCwxiqUzGCgGQJrx7UDBnI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 6.",
+          "digest": "gVUQwyuV9OMCwxiqUzGCgGQJrx7UDBnI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 586,
+          "end": 724,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pYaODWC390eDmTGaeZJJCWQY6VqmEyg8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 7.",
+          "digest": "pYaODWC390eDmTGaeZJJCWQY6VqmEyg8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 724,
+          "end": 877,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.m6-2UmkYcvLjy5t_g5eYWbstLmkjLYyj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 8.",
+          "digest": "m6-2UmkYcvLjy5t_g5eYWbstLmkjLYyj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 877,
+          "end": 1045,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.rypp4AzzGEiEYCLVHcf3Y16kTOAQ06BG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 9.",
+          "digest": "rypp4AzzGEiEYCLVHcf3Y16kTOAQ06BG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 1045,
+          "end": 1193,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.75wl_IQWWJqigQwNKAbakD6TO6Dr6axz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 10.",
+          "digest": "75wl_IQWWJqigQwNKAbakD6TO6Dr6axz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 1193,
+          "end": 1401,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tQCErXWTANUKGWOmf2QCyZ_KXjecI-LH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 11.",
+          "digest": "tQCErXWTANUKGWOmf2QCyZ_KXjecI-LH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 1401,
+          "end": 1479,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9d0bWn9zo_Fq-pSIxk8i2FrJ8Q_Xk6Ig",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 12.",
+          "digest": "9d0bWn9zo_Fq-pSIxk8i2FrJ8Q_Xk6Ig",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 1479,
+          "end": 1660,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Gwnn_cH5mAmGb4RQddfJLtAmWLj-jL4U",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 13.",
+          "digest": "Gwnn_cH5mAmGb4RQddfJLtAmWLj-jL4U",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 1660,
+          "end": 1698,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.omPxCD-wMefvOYx4Bdbq0EeATIWgg6y-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_018842.5, the MANE Select coding transcript for BAIAP2L1, corresponding to Exon 14.",
+          "digest": "omPxCD-wMefvOYx4Bdbq0EeATIWgg6y-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "type": "SequenceReference",
+            "name": "NM_018842.5",
+            "aliases": [
+              "ensembl:ENST00000005260.9",
+              "ga4gh:SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+              "refseq:NM_018842.5"
+            ],
+            "description": "The MANE Select coding transcript for BAIAP2L1, corresponding to the Refseq transcript accession NM_018842.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.16WgtD45E2QB6E4pz2OuAn_XClAd9Eo8",
+            "residueAlphabet": "na"
+          },
+          "start": 1698,
+          "end": 3645,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:21649",
-    "code": "HGNC:21649",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:21649"
-    ]
-  }
+  ]
 }

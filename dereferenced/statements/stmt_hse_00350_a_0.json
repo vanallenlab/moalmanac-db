@@ -98,41 +98,11 @@
   "proposition": {
     "id": "prop:vtxr:352",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:20",
-        "type": "CategoricalVariant",
-        "name": "HER2-positive",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "Human epidermal growth factor receptor 2 (HER2)"
-          },
-          {
-            "name": "unit",
-            "value": "status"
-          },
-          {
-            "name": "equality",
-            "value": "="
-          },
-          {
-            "name": "value",
-            "value": "Positive"
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:BRCA",
       "conceptType": "Disease",
@@ -162,7 +132,7 @@
       "therapies": [
         {
           "id": "tx:ncit:C405",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Cyclophosphamide",
           "mappings": [
             {
@@ -245,7 +215,7 @@
         },
         {
           "id": "tx:ncit:C456",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Doxorubicin",
           "mappings": [
             {
@@ -328,7 +298,7 @@
         },
         {
           "id": "tx:ncit:C1411",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Paclitaxel",
           "mappings": [
             {
@@ -411,7 +381,7 @@
         },
         {
           "id": "tx:ncit:C38692",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Pertuzumab",
           "mappings": [
             {
@@ -494,7 +464,7 @@
         },
         {
           "id": "tx:ncit:C1647",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Trastuzumab",
           "mappings": [
             {
@@ -576,10 +546,50 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:20",
+            "present": true,
+            "subject": {
+              "id": "bmkr:20",
+              "type": "CategoricalVariant",
+              "name": "HER2-positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

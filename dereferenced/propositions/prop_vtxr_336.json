@@ -1,41 +1,11 @@
 {
   "id": "prop:vtxr:336",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:42",
-      "type": "CategoricalVariant",
-      "name": "PD-L1 (CPS) >= 1",
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Protein expression"
-        },
-        {
-          "name": "marker",
-          "value": "PD-L1"
-        },
-        {
-          "name": "unit",
-          "value": "Combined Positive Score (CPS)"
-        },
-        {
-          "name": "equality",
-          "value": ">="
-        },
-        {
-          "name": "value",
-          "value": 1
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:CESC",
     "conceptType": "Disease",
@@ -65,7 +35,7 @@
     "therapies": [
       {
         "id": "tx:ncit:C1282",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Carboplatin",
         "mappings": [
           {
@@ -148,7 +118,7 @@
       },
       {
         "id": "tx:ncit:C1411",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Paclitaxel",
         "mappings": [
           {
@@ -231,7 +201,7 @@
       },
       {
         "id": "tx:ncit:C106432",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Pembrolizumab",
         "mappings": [
           {
@@ -313,5 +283,45 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:42",
+          "present": true,
+          "subject": {
+            "id": "bmkr:42",
+            "type": "CategoricalVariant",
+            "name": "PD-L1 (CPS) >= 1",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "PD-L1"
+              },
+              {
+                "name": "unit",
+                "value": "Combined Positive Score (CPS)"
+              },
+              {
+                "name": "equality",
+                "value": ">="
+              },
+              {
+                "name": "value",
+                "value": 1
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

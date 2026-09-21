@@ -2,6 +2,14 @@
   "id": "gene:hgnc:427",
   "conceptType": "Gene",
   "name": "ALK",
+  "primaryCoding": {
+    "id": "coding:hgnc:427",
+    "code": "HGNC:427",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,1532 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 927
+    },
+    {
       "name": "location",
       "value": "2p23.2-p23.1"
     },
     {
       "name": "location_sortable",
       "value": "02p23.2-p23.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.o1BcQ-pi-2K5Ga8uf-VSu4ufGNbU6jaZ",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5).",
+        "digest": "o1BcQ-pi-2K5Ga8uf-VSu4ufGNbU6jaZ",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+          "type": "SequenceReference",
+          "name": "NP_004295.2",
+          "aliases": [
+            "ensembl:ENSP00000373700.3",
+            "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "refseq:NP_004295.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 1620,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.TK6HMDgp-XCDkKEjCbPv51nAxyIcKdZI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 1. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "TK6HMDgp-XCDkKEjCbPv51nAxyIcKdZI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 223,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CAQd0QgZf-Tjr6YN723zksZUV-CTul2o",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 2. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "CAQd0QgZf-Tjr6YN723zksZUV-CTul2o",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 222,
+          "end": 263,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HIQ_PK-_yIR11kOtC4cZF8sOWH4dHR2Y",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "HIQ_PK-_yIR11kOtC4cZF8sOWH4dHR2Y",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 262,
+          "end": 318,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4HLHJ-I8t10yNPDwokg5kEP-PbneygGw",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "4HLHJ-I8t10yNPDwokg5kEP-PbneygGw",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 317,
+          "end": 385,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vYUva9FyD3j_QV_ZmwsSVYDwBZRWrfs9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "vYUva9FyD3j_QV_ZmwsSVYDwBZRWrfs9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 384,
+          "end": 428,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vsnHKR3XoCalOF8NYV82mZiuyzCGYu6e",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 6. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "vsnHKR3XoCalOF8NYV82mZiuyzCGYu6e",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 427,
+          "end": 472,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.FC9RK-e2TsFjyhZojOo13F41GQWkcaTE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 7. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "FC9RK-e2TsFjyhZojOo13F41GQWkcaTE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 471,
+          "end": 516,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xO909kfrGJGwl5pYKP0SsJ5_KMI5fgdt",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "xO909kfrGJGwl5pYKP0SsJ5_KMI5fgdt",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 515,
+          "end": 549,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.HbqVg25mVt3UoI8pcPu-Cfstmr5P2pG3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "HbqVg25mVt3UoI8pcPu-Cfstmr5P2pG3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 549,
+          "end": 606,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.sSuqt7KIBqs1U4MMoY3gHBLyQrbxHoZI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "sSuqt7KIBqs1U4MMoY3gHBLyQrbxHoZI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 605,
+          "end": 638,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0HDxT3XmhJbcEK3m7fFcDmwWt0oanSka",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 11. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "0HDxT3XmhJbcEK3m7fFcDmwWt0oanSka",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 637,
+          "end": 681,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.S5LuImP22llUSt6RZsOMqWIjQpy5QYFG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 12. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "S5LuImP22llUSt6RZsOMqWIjQpy5QYFG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 680,
+          "end": 735,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.rRAadMcW4D_JXhx41cVq8BalizjM1rq6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 13. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "rRAadMcW4D_JXhx41cVq8BalizjM1rq6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 734,
+          "end": 785,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EqTCEAaPkb9rIZatNmtbtPeMw6CEM9t0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 14.",
+          "digest": "EqTCEAaPkb9rIZatNmtbtPeMw6CEM9t0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 785,
+          "end": 829,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wMfDfZ79tSRoYOVXLgve2dSr2QwkCdgz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "wMfDfZ79tSRoYOVXLgve2dSr2QwkCdgz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 829,
+          "end": 878,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eICxOpaxgdTWex6tgyFwBQFIcyy6hAyC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 16. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "eICxOpaxgdTWex6tgyFwBQFIcyy6hAyC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 877,
+          "end": 939,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CcZgjXVzmyfi1RpXHNgp8LmUOpw1EdHG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 17. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "CcZgjXVzmyfi1RpXHNgp8LmUOpw1EdHG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 938,
+          "end": 972,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zC64cPItObU-0bD84bJ2Yir0M3Z7GADq",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 18. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "zC64cPItObU-0bD84bJ2Yir0M3Z7GADq",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 971,
+          "end": 1023,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.lYnTOL6H8xAa1_ZWoLdA3pIqifAVSd1d",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 19. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "lYnTOL6H8xAa1_ZWoLdA3pIqifAVSd1d",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1022,
+          "end": 1058,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.SP8m9p6G_XeOM2yEYci_kJSoPP685lgk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 20. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "SP8m9p6G_XeOM2yEYci_kJSoPP685lgk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1057,
+          "end": 1120,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cI361tIuTkdHwFI5vO54jB9QnHT8Xkp3",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 21. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "cI361tIuTkdHwFI5vO54jB9QnHT8Xkp3",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1119,
+          "end": 1150,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IqeNF2wVGfNh817ddEnYxX2ksgTYewRB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 22. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "IqeNF2wVGfNh817ddEnYxX2ksgTYewRB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1150,
+          "end": 1172,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.s6i6My01WQvxPJfiTCSwvsb204wfCWah",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 23. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "s6i6My01WQvxPJfiTCSwvsb204wfCWah",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1171,
+          "end": 1215,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-zMdUCCBqQETrkY3IeeV817fXVS10pQh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 24. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "-zMdUCCBqQETrkY3IeeV817fXVS10pQh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1215,
+          "end": 1248,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7BBTKo0xEqdTozHWV6qLSP_JhP8unG_v",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 25. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "7BBTKo0xEqdTozHWV6qLSP_JhP8unG_v",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1247,
+          "end": 1279,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._RZ-MzlXqpkdr_RpSQaKIspA_lgxFOBp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 26. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "_RZ-MzlXqpkdr_RpSQaKIspA_lgxFOBp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1278,
+          "end": 1313,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.y_nOU48RCpoIjHldjjfsYdoYjJkHbGCc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 27. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "y_nOU48RCpoIjHldjjfsYdoYjJkHbGCc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1312,
+          "end": 1358,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.1zJI33KHzSBztNEyB6t-CZnVcAp4a59S",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 28. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "1zJI33KHzSBztNEyB6t-CZnVcAp4a59S",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1357,
+          "end": 1388,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.584exEVocWawYSPCiOdhdZe0ViMKRmDJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004295.2, the protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to Exon 29.",
+          "digest": "584exEVocWawYSPCiOdhdZe0ViMKRmDJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "type": "SequenceReference",
+            "name": "NP_004295.2",
+            "aliases": [
+              "ensembl:ENSP00000373700.3",
+              "ga4gh:SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+              "refseq:NP_004295.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for ALK (refseq:NM_004304.5), corresponding to the Refseq protein accession NP_004295.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.q9CnK-HKWh9eqhOi8FlzR7M0pCmUrWPs",
+            "residueAlphabet": "aa"
+          },
+          "start": 1388,
+          "end": 1620,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.EAuraxSfBfyKxW4PRReCzEgCSZDqSFav",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004304.5, the MANE Select coding transcript for ALK.",
+        "digest": "EAuraxSfBfyKxW4PRReCzEgCSZDqSFav",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+          "type": "SequenceReference",
+          "name": "NM_004304.5",
+          "aliases": [
+            "ensembl:ENST00000389048.8",
+            "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "refseq:NM_004304.5"
+          ],
+          "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6240,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.fJmArZUydf7Uww41sSkIxu1wKClypVbT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 1.",
+          "digest": "fJmArZUydf7Uww41sSkIxu1wKClypVbT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 1594,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.VnEdanf815aoTRLv1OA17WxXyVu5PFzW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 2.",
+          "digest": "VnEdanf815aoTRLv1OA17WxXyVu5PFzW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 1594,
+          "end": 1714,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._aLxJzdSZwaV8R2WlVe-R_jtyBYi1jNl",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 3.",
+          "digest": "_aLxJzdSZwaV8R2WlVe-R_jtyBYi1jNl",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 1714,
+          "end": 1879,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.g7j2R0GLMBF9gC9nVIkpMqn9f6D-G14L",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 4.",
+          "digest": "g7j2R0GLMBF9gC9nVIkpMqn9f6D-G14L",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 1879,
+          "end": 2081,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.w5JK-rKaw1gqMQMcC0DLOEtFl7GoFdin",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 5.",
+          "digest": "w5JK-rKaw1gqMQMcC0DLOEtFl7GoFdin",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2081,
+          "end": 2209,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7ko4OLatyV5yMB3rOuFccih1dLwsabMF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 6.",
+          "digest": "7ko4OLatyV5yMB3rOuFccih1dLwsabMF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2209,
+          "end": 2341,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IwpRlwb58gPCHMNuzEVjQPy9Wv1K3nZP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 7.",
+          "digest": "IwpRlwb58gPCHMNuzEVjQPy9Wv1K3nZP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2341,
+          "end": 2473,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.gi15sAz4ewgSFUM4AH9qqLSTd4kkzccG",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 8.",
+          "digest": "gi15sAz4ewgSFUM4AH9qqLSTd4kkzccG",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2473,
+          "end": 2574,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3aGLy8ww6RjRaw6z9p-5ujOvx_fQdDLw",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 9.",
+          "digest": "3aGLy8ww6RjRaw6z9p-5ujOvx_fQdDLw",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2574,
+          "end": 2744,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ycwoRQYylM4IR_ppSNWMY0n9MwX8BBb4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 10.",
+          "digest": "ycwoRQYylM4IR_ppSNWMY0n9MwX8BBb4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2744,
+          "end": 2839,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.xsCQDqu6qYKtiDc7HOKCoTQsy7W8QuvV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 11.",
+          "digest": "xsCQDqu6qYKtiDc7HOKCoTQsy7W8QuvV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2839,
+          "end": 2968,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AQ_nNRHOxqga9fbE7Hwn669Vh0MvZwOM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 12.",
+          "digest": "AQ_nNRHOxqga9fbE7Hwn669Vh0MvZwOM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 2968,
+          "end": 3131,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.JveT8GMzSjBph8oSmNY3IOI4v9NZW9p7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 13.",
+          "digest": "JveT8GMzSjBph8oSmNY3IOI4v9NZW9p7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3131,
+          "end": 3282,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CSVgY47-q0-H3cra9LsbhenPTQGxZByu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 14.",
+          "digest": "CSVgY47-q0-H3cra9LsbhenPTQGxZByu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3282,
+          "end": 3414,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.LbH8jO48loIVzUhKr5dW3_Zl1kzxlEvT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 15.",
+          "digest": "LbH8jO48loIVzUhKr5dW3_Zl1kzxlEvT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3414,
+          "end": 3559,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.D1xo8MtELEIifxuCIVYa2hKZLV4HM-sj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 16.",
+          "digest": "D1xo8MtELEIifxuCIVYa2hKZLV4HM-sj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3559,
+          "end": 3742,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Q9An3ADEPla0Jpa5A257A-O3JQHnSJY4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 17.",
+          "digest": "Q9An3ADEPla0Jpa5A257A-O3JQHnSJY4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3742,
+          "end": 3841,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.s9u0-sXIle4PTB1RBdCGLHLuFugIyZFm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 18.",
+          "digest": "s9u0-sXIle4PTB1RBdCGLHLuFugIyZFm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3841,
+          "end": 3994,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9mAIh_-U-ArGx4ptZeNpRLeiaA0D6WN8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 19.",
+          "digest": "9mAIh_-U-ArGx4ptZeNpRLeiaA0D6WN8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 3994,
+          "end": 4099,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.L77AVvsI-gMSjl9R1vhhsm9Yi4nCP6rm",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 20.",
+          "digest": "L77AVvsI-gMSjl9R1vhhsm9Yi4nCP6rm",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4099,
+          "end": 4286,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qq4kYbfolo-fgbTW7mgw78_qHk4T9pQu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 21.",
+          "digest": "qq4kYbfolo-fgbTW7mgw78_qHk4T9pQu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4286,
+          "end": 4377,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Ff8StZa7UQvkyaYn0Olc11MbbeoJHQeV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 22.",
+          "digest": "Ff8StZa7UQvkyaYn0Olc11MbbeoJHQeV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4377,
+          "end": 4442,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4G0bqin7VWUlI4pvQVsBePQBuK853H3O",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 23.",
+          "digest": "4G0bqin7VWUlI4pvQVsBePQBuK853H3O",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4442,
+          "end": 4572,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vClTnmp5oIQaJQryO-Ez8Yn3lJblw9ra",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 24.",
+          "digest": "vClTnmp5oIQaJQryO-Ez8Yn3lJblw9ra",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4572,
+          "end": 4670,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._J-lXWCoA5kKdKtAwH7ONfjglI_RDrvF",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 25.",
+          "digest": "_J-lXWCoA5kKdKtAwH7ONfjglI_RDrvF",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4670,
+          "end": 4763,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5WgfXquWIIu-zF7TE-RQxjqpj8BfA0qj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 26.",
+          "digest": "5WgfXquWIIu-zF7TE-RQxjqpj8BfA0qj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4763,
+          "end": 4865,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dyK5UvK81B7yEC4lijZMOjIL0hyxk1Iy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 27.",
+          "digest": "dyK5UvK81B7yEC4lijZMOjIL0hyxk1Iy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 4865,
+          "end": 5000,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.BMRCl15Hky15dmJeVicxd-ATEeYax6KZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 28.",
+          "digest": "BMRCl15Hky15dmJeVicxd-ATEeYax6KZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 5000,
+          "end": 5091,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.tyn1PJzLDoxtgh7d96aPDYSOrYm2noI4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004304.5, the MANE Select coding transcript for ALK, corresponding to Exon 29.",
+          "digest": "tyn1PJzLDoxtgh7d96aPDYSOrYm2noI4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "type": "SequenceReference",
+            "name": "NM_004304.5",
+            "aliases": [
+              "ensembl:ENST00000389048.8",
+              "ga4gh:SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+              "refseq:NM_004304.5"
+            ],
+            "description": "The MANE Select coding transcript for ALK, corresponding to the Refseq transcript accession NM_004304.5.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.8t3QzgbvJEDaeDmT7SXCh-GQmraHHWlN",
+            "residueAlphabet": "na"
+          },
+          "start": 5091,
+          "end": 6240,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:427",
-    "code": "HGNC:427",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
-    ]
-  }
+  ]
 }

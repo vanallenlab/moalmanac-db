@@ -2,62 +2,111 @@
   "id": "bmkr:145",
   "type": "CategoricalVariant",
   "name": "EZH2 p.Y646N",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:3527",
-      "conceptType": "Gene",
-      "name": "EZH2",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000106462",
-            "code": "ENSG00000106462",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000106462"
+      "type": "DefiningAlleleConstraint",
+      "allele": {
+        "id": "ga4gh:VA.F3wf8X4pXaRvx55F_jvVkK258q-JoDni",
+        "type": "Allele",
+        "name": "NP_004447.2:p.Tyr646Asn",
+        "aliases": [
+          "NP_004447.2:p.Y646N",
+          "EZH2 p.Y646N"
+        ],
+        "description": "VRS variation of NP_004447.2:p.Tyr646Asn",
+        "digest": "F3wf8X4pXaRvx55F_jvVkK258q-JoDni",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004447.2:p.Tyr646Asn",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.Y646N"
+              }
             ]
           }
+        ],
+        "location": {
+          "id": "ga4gh:SL.7PJtwRMwSyrWxfU3VBIOb5LbGlGxJs2n",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Amino acid position 646 of the Refseq protein NP_004447.2, which is the protein product of the MANE Select coding transcript for EZH2 (refseq:NM_004456.5).",
+          "digest": "7PJtwRMwSyrWxfU3VBIOb5LbGlGxJs2n",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.fZuyp1_QKM5vGWsn-O-CrPHPm5jR403J",
+            "type": "SequenceReference",
+            "name": "NP_004447.2",
+            "aliases": [
+              "ensembl:ENSP00000320147.2",
+              "ga4gh:SQ.fZuyp1_QKM5vGWsn-O-CrPHPm5jR403J",
+              "refseq:NP_004447.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for EZH2 (refseq:NM_004456.5), corresponding to the Refseq protein accession NP_004447.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.fZuyp1_QKM5vGWsn-O-CrPHPm5jR403J",
+            "residueAlphabet": "aa"
+          },
+          "start": 645,
+          "end": 646,
+          "sequence": "Y"
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:2146",
-            "code": "2146",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/2146"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_004456.5",
-            "code": "NM_004456.5",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004456.5"
-            ]
-          }
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "N"
         }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "7q36.1"
+      },
+      "relations": []
+    },
+    {
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:3527",
+        "conceptType": "Gene",
+        "name": "EZH2",
+        "primaryCoding": {
+          "id": "coding:hgnc:3527",
+          "code": "HGNC:3527",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
+          ]
         },
-        {
-          "name": "location_sortable",
-          "value": "07q36.1"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:3527",
-        "code": "HGNC:3527",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3527"
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000106462",
+              "code": "ENSG00000106462",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000106462"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:2146",
+              "code": "2146",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/2146"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_004456.5",
+              "code": "NM_004456.5",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_004456.5"
+              ]
+            }
+          }
         ]
       }
     }
@@ -114,10 +163,6 @@
     {
       "name": "hgvsc",
       "value": "ENST00000320356.2:c.1936T>A"
-    },
-    {
-      "name": "_present",
-      "value": true
     }
   ]
 }

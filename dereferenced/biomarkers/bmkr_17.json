@@ -2,62 +2,111 @@
   "id": "bmkr:17",
   "type": "CategoricalVariant",
   "name": "BRAF p.V600K",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:1097",
-      "conceptType": "Gene",
-      "name": "BRAF",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000157764",
-            "code": "ENSG00000157764",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000157764"
+      "type": "DefiningAlleleConstraint",
+      "allele": {
+        "id": "ga4gh:VA.pfWn9x9oFBRzGda1xXcOrE-BrX0R__N8",
+        "type": "Allele",
+        "name": "NP_004324.2:p.Val600Lys",
+        "aliases": [
+          "NP_004324.2:p.V600K",
+          "BRAF p.V600K"
+        ],
+        "description": "VRS variation of NP_004324.2:p.Val600Lys",
+        "digest": "pfWn9x9oFBRzGda1xXcOrE-BrX0R__N8",
+        "expressions": [
+          {
+            "syntax": "hgvs.p",
+            "value": "NP_004324.2:p.Val600Lys",
+            "extensions": [
+              {
+                "name": "hgvs.p_short",
+                "value": "p.V600K"
+              }
             ]
           }
+        ],
+        "location": {
+          "id": "ga4gh:SL.t-3DrWALhgLdXHsupI-e-M00aL3HgK3y",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Amino acid position 600 of the Refseq protein NP_004324.2, which is the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6).",
+          "digest": "t-3DrWALhgLdXHsupI-e-M00aL3HgK3y",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 599,
+          "end": 600,
+          "sequence": "V"
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:673",
-            "code": "673",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/673"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_004333.6",
-            "code": "NM_004333.6",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
-            ]
-          }
+        "state": {
+          "type": "LiteralSequenceExpression",
+          "sequence": "K"
         }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "7q34"
+      },
+      "relations": []
+    },
+    {
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:1097",
+        "conceptType": "Gene",
+        "name": "BRAF",
+        "primaryCoding": {
+          "id": "coding:hgnc:1097",
+          "code": "HGNC:1097",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+          ]
         },
-        {
-          "name": "location_sortable",
-          "value": "07q34"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:1097",
-        "code": "HGNC:1097",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000157764",
+              "code": "ENSG00000157764",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000157764"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:673",
+              "code": "673",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/673"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_004333.6",
+              "code": "NM_004333.6",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
+              ]
+            }
+          }
         ]
       }
     }
@@ -114,10 +163,6 @@
     {
       "name": "hgvsc",
       "value": "ENST00000288602.6:c.1798_1799delinsAA"
-    },
-    {
-      "name": "_present",
-      "value": true
     }
   ]
 }

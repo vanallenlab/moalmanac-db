@@ -1,137 +1,11 @@
 {
   "id": "prop:vtxr:450",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:133",
-      "type": "CategoricalVariant",
-      "name": "PALB2 oncogenic variants",
-      "genes": [
-        {
-          "id": "gene:hgnc:26144",
-          "conceptType": "Gene",
-          "name": "PALB2",
-          "mappings": [
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ensembl:ensg00000083093",
-                "code": "ENSG00000083093",
-                "system": "https://www.ensembl.org",
-                "iris": [
-                  "https://www.ensembl.org/id/ENSG00000083093"
-                ]
-              }
-            },
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ncbi:79728",
-                "code": "79728",
-                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/79728"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:refseq:NM_024675.4",
-                "code": "NM_024675.4",
-                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_024675.4"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "16p12.2"
-            },
-            {
-              "name": "location_sortable",
-              "value": "16p12.2"
-            }
-          ],
-          "primaryCoding": {
-            "id": "coding:hgnc:26144",
-            "code": "HGNC:26144",
-            "system": "https://genenames.org",
-            "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:26144"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Somatic Variant"
-        },
-        {
-          "name": "chromosome",
-          "value": "16"
-        },
-        {
-          "name": "start_position",
-          "value": null
-        },
-        {
-          "name": "end_position",
-          "value": null
-        },
-        {
-          "name": "reference_allele",
-          "value": null
-        },
-        {
-          "name": "alternate_allele",
-          "value": null
-        },
-        {
-          "name": "cdna_change",
-          "value": null
-        },
-        {
-          "name": "protein_change",
-          "value": null
-        },
-        {
-          "name": "variant_annotation",
-          "value": null
-        },
-        {
-          "name": "exon",
-          "value": null
-        },
-        {
-          "name": "rsid",
-          "value": null
-        },
-        {
-          "name": "hgvsg",
-          "value": null
-        },
-        {
-          "name": "hgvsc",
-          "value": null
-        },
-        {
-          "name": "requires_oncogenic",
-          "value": true
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:oncotree:PRAD",
     "conceptType": "Disease",
@@ -161,7 +35,7 @@
     "therapies": [
       {
         "id": "tx:ncit:C71744",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Enzalutamide",
         "mappings": [
           {
@@ -244,7 +118,7 @@
       },
       {
         "id": "tx:ncit:C95733",
-        "conceptType": "Drug",
+        "conceptType": "Therapy",
         "name": "Talazoparib",
         "mappings": [
           {
@@ -326,5 +200,168 @@
         }
       }
     ]
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:133",
+          "present": true,
+          "subject": {
+            "id": "bmkr:133",
+            "type": "CategoricalVariant",
+            "name": "PALB2 oncogenic variants",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_078951.2, the protein product of the MANE Select coding transcript for PALB2 (refseq:NM_024675.4).",
+                  "digest": "JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.85BXujWlzyC-ox2aXR65RGEyfTIZ-VGC",
+                    "type": "SequenceReference",
+                    "name": "NP_078951.2",
+                    "aliases": [
+                      "ensembl:ENSP00000261584.4",
+                      "ga4gh:SQ.85BXujWlzyC-ox2aXR65RGEyfTIZ-VGC",
+                      "refseq:NP_078951.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for PALB2 (refseq:NM_024675.4), corresponding to the Refseq protein accession NP_078951.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.85BXujWlzyC-ox2aXR65RGEyfTIZ-VGC",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 1186,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:26144",
+                  "conceptType": "Gene",
+                  "name": "PALB2",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:26144",
+                    "code": "HGNC:26144",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:26144"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000083093",
+                        "code": "ENSG00000083093",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000083093"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:79728",
+                        "code": "79728",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/79728"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_024675.4",
+                        "code": "NM_024675.4",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_024675.4"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "16"
+              },
+              {
+                "name": "start_position",
+                "value": null
+              },
+              {
+                "name": "end_position",
+                "value": null
+              },
+              {
+                "name": "reference_allele",
+                "value": null
+              },
+              {
+                "name": "alternate_allele",
+                "value": null
+              },
+              {
+                "name": "cdna_change",
+                "value": null
+              },
+              {
+                "name": "protein_change",
+                "value": null
+              },
+              {
+                "name": "variant_annotation",
+                "value": null
+              },
+              {
+                "name": "exon",
+                "value": null
+              },
+              {
+                "name": "rsid",
+                "value": null
+              },
+              {
+                "name": "hgvsg",
+                "value": null
+              },
+              {
+                "name": "hgvsc",
+                "value": null
+              },
+              {
+                "name": "requires_oncogenic",
+                "value": true
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

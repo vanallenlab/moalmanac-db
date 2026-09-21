@@ -2,6 +2,14 @@
   "id": "gene:hgnc:8032",
   "conceptType": "Gene",
   "name": "NTRK2",
+  "primaryCoding": {
+    "id": "coding:hgnc:8032",
+    "code": "HGNC:8032",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,987 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 532
+    },
+    {
       "name": "location",
       "value": "9q21.33"
     },
     {
       "name": "location_sortable",
       "value": "09q21.33"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.yX6HLP4YpBDiaM4XqlSWSHvgkNjWUojg",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6).",
+        "digest": "yX6HLP4YpBDiaM4XqlSWSHvgkNjWUojg",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+          "type": "SequenceReference",
+          "name": "NP_006171.2",
+          "aliases": [
+            "ensembl:ENSP00000277120.3",
+            "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "refseq:NP_006171.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 838,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.-u7tCNtyl9lR5c862Oyt-F5D6k17sS8z",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "-u7tCNtyl9lR5c862Oyt-F5D6k17sS8z",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 71,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cOunEkEgo1-Fuk0X-UmeTt1r7Nj9hDhp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 3. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "cOunEkEgo1-Fuk0X-UmeTt1r7Nj9hDhp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 70,
+          "end": 96,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.b-7x3lKK5WG3yXLvYNYFPxD7HVV3_jMj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 4. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "b-7x3lKK5WG3yXLvYNYFPxD7HVV3_jMj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 95,
+          "end": 120,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.dSbeRO8POXIR8cFsLRHGwLE4xGUkOo7I",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 5. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "dSbeRO8POXIR8cFsLRHGwLE4xGUkOo7I",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 119,
+          "end": 143,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YHN4K8DvbbXXS_LG7dZGG1SVKnjjIccj",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 6. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "YHN4K8DvbbXXS_LG7dZGG1SVKnjjIccj",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 142,
+          "end": 195,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ULonmWiWZA1YC_4he7k7FlZZQXtPltiy",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "ULonmWiWZA1YC_4he7k7FlZZQXtPltiy",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 194,
+          "end": 240,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.kq01Aou2t4Yc5Fouo4gNlLKNnO6uxUyu",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "kq01Aou2t4Yc5Fouo4gNlLKNnO6uxUyu",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 240,
+          "end": 285,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.IXOYTtEVKOe-Gylut5K4h7JdSkIqP1cR",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 9. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "IXOYTtEVKOe-Gylut5K4h7JdSkIqP1cR",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 284,
+          "end": 387,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._nKx7hT1Q7YmvAP79F71Dg2j-_aOA-2A",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 10. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "_nKx7hT1Q7YmvAP79F71Dg2j-_aOA-2A",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 386,
+          "end": 399,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5_hn8AmIPJLJYhQVbKsXzCTuBA9ZthJP",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 11. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "5_hn8AmIPJLJYhQVbKsXzCTuBA9ZthJP",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 398,
+          "end": 432,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.aCULpSXSTAAin2ZQCnBLqu71jYXHDoAB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 12. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "aCULpSXSTAAin2ZQCnBLqu71jYXHDoAB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 432,
+          "end": 466,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.excNv3BWTE546o5N3IuCCG-uSJJhKZmc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "excNv3BWTE546o5N3IuCCG-uSJJhKZmc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 465,
+          "end": 482,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ndsqK8cmd8nNox4sgJ48zXaOzY79My1O",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "ndsqK8cmd8nNox4sgJ48zXaOzY79My1O",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 481,
+          "end": 545,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6BWj82ZmdYJCQXK6VvyR-AC9MDrz3eFL",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6BWj82ZmdYJCQXK6VvyR-AC9MDrz3eFL",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 544,
+          "end": 588,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wmMNGVbzEkUGjBS4KkD7FJczO0-u3xX_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 16. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "wmMNGVbzEkUGjBS4KkD7FJczO0-u3xX_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 588,
+          "end": 646,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cr3ngH6rUaRxTUwLtnbAIhEaprBF-fMa",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 17. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "cr3ngH6rUaRxTUwLtnbAIhEaprBF-fMa",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 645,
+          "end": 724,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qcIcv054J-Hu2nvg1UXIcwyZBEXyO9QJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 18.",
+          "digest": "qcIcv054J-Hu2nvg1UXIcwyZBEXyO9QJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 724,
+          "end": 777,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Idvm698t2K5-GHleuFXwZw6LQejPAJ8U",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_006171.2, the protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to Exon 19.",
+          "digest": "Idvm698t2K5-GHleuFXwZw6LQejPAJ8U",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "type": "SequenceReference",
+            "name": "NP_006171.2",
+            "aliases": [
+              "ensembl:ENSP00000277120.3",
+              "ga4gh:SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+              "refseq:NP_006171.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for NTRK2 (refseq:NM_006180.6), corresponding to the Refseq protein accession NP_006171.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.t6yHZeFH3L5qzxQIYWLfcCbu1nG0qGtF",
+            "residueAlphabet": "aa"
+          },
+          "start": 777,
+          "end": 838,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.vE99sPeJ3dx0E-fg5q3umvEzO8-PlZxT",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_006180.6, the MANE Select coding transcript for NTRK2.",
+        "digest": "vE99sPeJ3dx0E-fg5q3umvEzO8-PlZxT",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+          "type": "SequenceReference",
+          "name": "NM_006180.6",
+          "aliases": [
+            "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "refseq:NM_006180.6"
+          ],
+          "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 8666,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.kRltVoU9-h0itbySVG0hA3mGWWN5SYiD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 1.",
+          "digest": "kRltVoU9-h0itbySVG0hA3mGWWN5SYiD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 160,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4J7UuQjTGVSMOShFvw42I6IftFxPwGtM",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 2.",
+          "digest": "4J7UuQjTGVSMOShFvw42I6IftFxPwGtM",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 160,
+          "end": 744,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.H1Utjs4KHx5D0XChUuTrVvzJe1rOIZA7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 3.",
+          "digest": "H1Utjs4KHx5D0XChUuTrVvzJe1rOIZA7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 744,
+          "end": 819,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Hu2oNfjG_XjyyHXIywX65DC1eXhXK7LZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 4.",
+          "digest": "Hu2oNfjG_XjyyHXIywX65DC1eXhXK7LZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 819,
+          "end": 891,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0baMJOPaGpyDQqdB2o5s1LFHc9CyWMYi",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 5.",
+          "digest": "0baMJOPaGpyDQqdB2o5s1LFHc9CyWMYi",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 891,
+          "end": 960,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.M0SsR6pRQl1y9tNdTMMzqsyieHin5NvH",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 6.",
+          "digest": "M0SsR6pRQl1y9tNdTMMzqsyieHin5NvH",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 960,
+          "end": 1115,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.Pms8OydJ1e2XfH3RwSR1qipRAIhPOHDb",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 7.",
+          "digest": "Pms8OydJ1e2XfH3RwSR1qipRAIhPOHDb",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1115,
+          "end": 1252,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.EgPihSP-2G7nv5_BtL2eh6Z-MZ2I6l-y",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 8.",
+          "digest": "EgPihSP-2G7nv5_BtL2eh6Z-MZ2I6l-y",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1252,
+          "end": 1385,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL._sH7MgwTkQ74J0PUA2COk628tZRCjUky",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 9.",
+          "digest": "_sH7MgwTkQ74J0PUA2COk628tZRCjUky",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1385,
+          "end": 1691,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.551JpSYRoq0TzJOcmyTVDawSjmRmkXh5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 10.",
+          "digest": "551JpSYRoq0TzJOcmyTVDawSjmRmkXh5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1691,
+          "end": 1727,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.YgortJlBbfJqFOGboYDL-NR3_T7ylUwT",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 11.",
+          "digest": "YgortJlBbfJqFOGboYDL-NR3_T7ylUwT",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1727,
+          "end": 1828,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vSx_bPaS1PDooc8p1SeKLh9pr3tPeD3D",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 12.",
+          "digest": "vSx_bPaS1PDooc8p1SeKLh9pr3tPeD3D",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1828,
+          "end": 1928,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.zG2orDh4_pNd6zZCkqq1vl8aDtGCJaib",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 13.",
+          "digest": "zG2orDh4_pNd6zZCkqq1vl8aDtGCJaib",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1928,
+          "end": 1976,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UyRIgh7-tUudEV7tYYUPuTWvxJp6nC1T",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 14.",
+          "digest": "UyRIgh7-tUudEV7tYYUPuTWvxJp6nC1T",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 1976,
+          "end": 2165,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.pwMi3MyVl6Lnm-082ii9W8D_bGNPVOXQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 15.",
+          "digest": "pwMi3MyVl6Lnm-082ii9W8D_bGNPVOXQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 2165,
+          "end": 2296,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UQ-56gs0zX1cpIkmRgmqCs8Evskrjc63",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 16.",
+          "digest": "UQ-56gs0zX1cpIkmRgmqCs8Evskrjc63",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 2296,
+          "end": 2469,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.z5L_arr-KqtSlxNkIWG24wOIeCo3G_dk",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 17.",
+          "digest": "z5L_arr-KqtSlxNkIWG24wOIeCo3G_dk",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 2469,
+          "end": 2704,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.wW6Hykn1BbSecESh34yxNAY2y3g-yAi_",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 18.",
+          "digest": "wW6Hykn1BbSecESh34yxNAY2y3g-yAi_",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 2704,
+          "end": 2863,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.W_XLA-G_raHnDnaIkTouv2cLqPq3XFU6",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_006180.6, the MANE Select coding transcript for NTRK2, corresponding to Exon 19.",
+          "digest": "W_XLA-G_raHnDnaIkTouv2cLqPq3XFU6",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "type": "SequenceReference",
+            "name": "NM_006180.6",
+            "aliases": [
+              "ga4gh:SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+              "refseq:NM_006180.6"
+            ],
+            "description": "The MANE Select coding transcript for NTRK2, corresponding to the Refseq transcript accession NM_006180.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.9AAVfrTplPWDD4D9076lsV2nFGRyjJiu",
+            "residueAlphabet": "na"
+          },
+          "start": 2863,
+          "end": 8666,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:8032",
-    "code": "HGNC:8032",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
-    ]
-  }
+  ]
 }

@@ -2,62 +2,90 @@
   "id": "bmkr:5",
   "type": "CategoricalVariant",
   "name": "BRIP1 oncogenic variants",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:20473",
-      "conceptType": "Gene",
-      "name": "BRIP1",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000136492",
-            "code": "ENSG00000136492",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000136492"
-            ]
-          }
+      "type": "DefiningLocationConstraint",
+      "location": {
+        "id": "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_114432.2, the protein product of the MANE Select coding transcript for BRIP1 (refseq:NM_032043.3).",
+        "digest": "r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.QbBbJgMg_WE9lzY1G5Fbmh_k5tOm_DMS",
+          "type": "SequenceReference",
+          "name": "NP_114432.2",
+          "aliases": [
+            "ensembl:ENSP00000259008.2",
+            "ga4gh:SQ.QbBbJgMg_WE9lzY1G5Fbmh_k5tOm_DMS",
+            "refseq:NP_114432.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BRIP1 (refseq:NM_032043.3), corresponding to the Refseq protein accession NP_114432.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.QbBbJgMg_WE9lzY1G5Fbmh_k5tOm_DMS",
+          "residueAlphabet": "aa"
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:83990",
-            "code": "83990",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/83990"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_032043.3",
-            "code": "NM_032043.3",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_032043.3"
-            ]
-          }
+        "start": 0,
+        "end": 1249,
+        "sequence": null
+      },
+      "relations": [],
+      "matchCharacteristic": {
+        "primaryCoding": {
+          "code": "is_within",
+          "system": "ga4gh-gks-term:location-match"
         }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "17q23.2"
+      }
+    },
+    {
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:20473",
+        "conceptType": "Gene",
+        "name": "BRIP1",
+        "primaryCoding": {
+          "id": "coding:hgnc:20473",
+          "code": "HGNC:20473",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:20473"
+          ]
         },
-        {
-          "name": "location_sortable",
-          "value": "17q23.2"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:20473",
-        "code": "HGNC:20473",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:20473"
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000136492",
+              "code": "ENSG00000136492",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000136492"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:83990",
+              "code": "83990",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/83990"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_032043.3",
+              "code": "NM_032043.3",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_032043.3"
+              ]
+            }
+          }
         ]
       }
     }
@@ -117,10 +145,6 @@
     },
     {
       "name": "requires_oncogenic",
-      "value": true
-    },
-    {
-      "name": "_present",
       "value": true
     }
   ]

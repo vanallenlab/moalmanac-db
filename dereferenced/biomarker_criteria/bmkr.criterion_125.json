@@ -1,0 +1,155 @@
+{
+  "id": "bmkr.criterion:125",
+  "present": true,
+  "subject": {
+    "id": "bmkr:125",
+    "type": "CategoricalVariant",
+    "name": "CDK12 oncogenic variants",
+    "constraints": [
+      {
+        "type": "DefiningLocationConstraint",
+        "location": {
+          "id": "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence spanning the length of refseq:NP_057591.2, the protein product of the MANE Select coding transcript for CDK12 (refseq:NM_016507.4).",
+          "digest": "v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.PAx2759Yy_waBKMXobh8lS9Z9Mbnr7l9",
+            "type": "SequenceReference",
+            "name": "NP_057591.2",
+            "aliases": [
+              "ensembl:ENSP00000398880.3",
+              "ga4gh:SQ.PAx2759Yy_waBKMXobh8lS9Z9Mbnr7l9",
+              "refseq:NP_057591.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for CDK12 (refseq:NM_016507.4), corresponding to the Refseq protein accession NP_057591.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.PAx2759Yy_waBKMXobh8lS9Z9Mbnr7l9",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 1490,
+          "sequence": null
+        },
+        "relations": [],
+        "matchCharacteristic": {
+          "primaryCoding": {
+            "code": "is_within",
+            "system": "ga4gh-gks-term:location-match"
+          }
+        }
+      },
+      {
+        "type": "FeatureContextConstraint",
+        "featureContext": {
+          "id": "gene:hgnc:24224",
+          "conceptType": "Gene",
+          "name": "CDK12",
+          "primaryCoding": {
+            "id": "coding:hgnc:24224",
+            "code": "HGNC:24224",
+            "system": "https://genenames.org",
+            "iris": [
+              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:24224"
+            ]
+          },
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:ensembl:ensg00000167258",
+                "code": "ENSG00000167258",
+                "system": "https://www.ensembl.org",
+                "iris": [
+                  "https://www.ensembl.org/id/ENSG00000167258"
+                ]
+              }
+            },
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:ncbi:51755",
+                "code": "51755",
+                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/gene/51755"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:refseq:NM_016507.4",
+                "code": "NM_016507.4",
+                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                "iris": [
+                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_016507.4"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Somatic Variant"
+      },
+      {
+        "name": "chromosome",
+        "value": "17"
+      },
+      {
+        "name": "start_position",
+        "value": null
+      },
+      {
+        "name": "end_position",
+        "value": null
+      },
+      {
+        "name": "reference_allele",
+        "value": null
+      },
+      {
+        "name": "alternate_allele",
+        "value": null
+      },
+      {
+        "name": "cdna_change",
+        "value": null
+      },
+      {
+        "name": "protein_change",
+        "value": null
+      },
+      {
+        "name": "variant_annotation",
+        "value": null
+      },
+      {
+        "name": "exon",
+        "value": null
+      },
+      {
+        "name": "rsid",
+        "value": null
+      },
+      {
+        "name": "hgvsg",
+        "value": null
+      },
+      {
+        "name": "hgvsc",
+        "value": null
+      },
+      {
+        "name": "requires_oncogenic",
+        "value": true
+      }
+    ]
+  }
+}

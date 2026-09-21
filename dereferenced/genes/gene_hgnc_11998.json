@@ -2,6 +2,14 @@
   "id": "gene:hgnc:11998",
   "conceptType": "Gene",
   "name": "TP53",
+  "primaryCoding": {
+    "id": "coding:hgnc:11998",
+    "code": "HGNC:11998",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+    ]
+  },
   "mappings": [
     {
       "relation": "exactMatch",
@@ -39,20 +47,595 @@
   ],
   "extensions": [
     {
+      "name": "cds_start",
+      "value": 142
+    },
+    {
       "name": "location",
       "value": "17p13.1"
     },
     {
       "name": "location_sortable",
       "value": "17p13.1"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6).",
+        "digest": "-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+          "type": "SequenceReference",
+          "name": "NP_000537.3",
+          "aliases": [
+            "ensembl:ENSP00000269305.4",
+            "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "refseq:NP_000537.3"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 393,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.nVWixLWlTFOz20-LrCqa4lPKXPwocdwV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 2. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "nVWixLWlTFOz20-LrCqa4lPKXPwocdwV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 25,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7DNU5oOrYHBIL_RLWe-xp4_6NBojXcon",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 3. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "7DNU5oOrYHBIL_RLWe-xp4_6NBojXcon",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 24,
+          "end": 32,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.P8Es8C-aBPHCXq547Kzcp-yDjy4DrUve",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 4.",
+          "digest": "P8Es8C-aBPHCXq547Kzcp-yDjy4DrUve",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 32,
+          "end": 125,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.su56jzMzNFtKooDJoXexKhzmA1P3daV4",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "su56jzMzNFtKooDJoXexKhzmA1P3daV4",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 125,
+          "end": 187,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.DsKxGVNa8Gb8eqR06QoWy69zlUHwy435",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "DsKxGVNa8Gb8eqR06QoWy69zlUHwy435",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 186,
+          "end": 224,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4y4uCY9LLUEVeILKr9qlkdrVq5H-Zixd",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 7. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "4y4uCY9LLUEVeILKr9qlkdrVq5H-Zixd",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 224,
+          "end": 261,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.8LHQsmnKq43gtmtRU8lGO6nNov0F5yVA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 8. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "8LHQsmnKq43gtmtRU8lGO6nNov0F5yVA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 260,
+          "end": 307,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UT8Ol7eP_FG0PvPwIM7c7U3iyde7KhQs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "UT8Ol7eP_FG0PvPwIM7c7U3iyde7KhQs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 306,
+          "end": 331,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.4ld2mUQt36BkrbdyUn07H_DzwIlloZIA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "4ld2mUQt36BkrbdyUn07H_DzwIlloZIA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 331,
+          "end": 367,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.cANot0LlhyIXhvTODsj1Q-9gacFC2pml",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_000537.3, the protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to Exon 11. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "cANot0LlhyIXhvTODsj1Q-9gacFC2pml",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "type": "SequenceReference",
+            "name": "NP_000537.3",
+            "aliases": [
+              "ensembl:ENSP00000269305.4",
+              "ga4gh:SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+              "refseq:NP_000537.3"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for TP53 (refseq:NM_000546.6), corresponding to the Refseq protein accession NP_000537.3.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.KAxM06sYzBF6zFftFaYq9E_18wsnn7al",
+            "residueAlphabet": "aa"
+          },
+          "start": 366,
+          "end": 393,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.XFer9mm0WwWJmmYFl-v-9f2e1hJCkPi5",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_000546.6, the MANE Select coding transcript for TP53.",
+        "digest": "XFer9mm0WwWJmmYFl-v-9f2e1hJCkPi5",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+          "type": "SequenceReference",
+          "name": "NM_000546.6",
+          "aliases": [
+            "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "refseq:NM_000546.6"
+          ],
+          "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 2512,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.PszT0vFf3WTj0Fq9KNlfeYUl_XbBRVFa",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 1.",
+          "digest": "PszT0vFf3WTj0Fq9KNlfeYUl_XbBRVFa",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 114,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3-Pua9fXwxEZQR5tOwOoQTS7OvzJleqQ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 2.",
+          "digest": "3-Pua9fXwxEZQR5tOwOoQTS7OvzJleqQ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 114,
+          "end": 216,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.r4atOwD1tC30aJ2e-9IrsLDfrzdrwEQ9",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 3.",
+          "digest": "r4atOwD1tC30aJ2e-9IrsLDfrzdrwEQ9",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 216,
+          "end": 238,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.y3mWVskPtgxp5Sc9gIWSNvNRLXv7l9XX",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 4.",
+          "digest": "y3mWVskPtgxp5Sc9gIWSNvNRLXv7l9XX",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 238,
+          "end": 517,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5TyBsfNGWaT90mfcCfBc3L65W6rdHkbp",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 5.",
+          "digest": "5TyBsfNGWaT90mfcCfBc3L65W6rdHkbp",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 517,
+          "end": 701,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.PKYjJGmjoGze6qgubzP7vJPOZMe-Pwki",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 6.",
+          "digest": "PKYjJGmjoGze6qgubzP7vJPOZMe-Pwki",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 701,
+          "end": 814,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.3zuvG91le76J-StF8DqJbLvd6D6diRTI",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 7.",
+          "digest": "3zuvG91le76J-StF8DqJbLvd6D6diRTI",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 814,
+          "end": 924,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.0jrFxzT7_N1HmBSnCQk44teps9p_qelK",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 8.",
+          "digest": "0jrFxzT7_N1HmBSnCQk44teps9p_qelK",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 924,
+          "end": 1061,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.ze5uIkG3AxmoiJI9Xzv6pBU_0aTTA26P",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 9.",
+          "digest": "ze5uIkG3AxmoiJI9Xzv6pBU_0aTTA26P",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 1061,
+          "end": 1135,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.R3NZjHLigQCJVlLa70TFf9Wha6lf3aXW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 10.",
+          "digest": "R3NZjHLigQCJVlLa70TFf9Wha6lf3aXW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 1135,
+          "end": 1242,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CyAYxj5avxve9Fop5i2Kl8I2qvNUUn0Y",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_000546.6, the MANE Select coding transcript for TP53, corresponding to Exon 11.",
+          "digest": "CyAYxj5avxve9Fop5i2Kl8I2qvNUUn0Y",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "type": "SequenceReference",
+            "name": "NM_000546.6",
+            "aliases": [
+              "ga4gh:SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+              "refseq:NM_000546.6"
+            ],
+            "description": "The MANE Select coding transcript for TP53, corresponding to the Refseq transcript accession NM_000546.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.5m24V-2-XTPEeib-dyHFmi6czbYEUkrR",
+            "residueAlphabet": "na"
+          },
+          "start": 1242,
+          "end": 2512,
+          "sequence": null
+        }
+      ]
     }
-  ],
-  "primaryCoding": {
-    "id": "coding:hgnc:11998",
-    "code": "HGNC:11998",
-    "system": "https://genenames.org",
-    "iris": [
-      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
-    ]
-  }
+  ]
 }

@@ -1,93 +1,11 @@
 {
   "id": "prop:vtxr:200",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:64",
-      "type": "CategoricalVariant",
-      "name": "v::NTRK2",
-      "genes": [
-        {
-          "id": "gene:hgnc:8032",
-          "conceptType": "Gene",
-          "name": "NTRK2",
-          "mappings": [
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ensembl:ensg00000148053",
-                "code": "ENSG00000148053",
-                "system": "https://www.ensembl.org",
-                "iris": [
-                  "https://www.ensembl.org/id/ENSG00000148053"
-                ]
-              }
-            },
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ncbi:4915",
-                "code": "4915",
-                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/4915"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:refseq:NM_006180.6",
-                "code": "NM_006180.6",
-                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_006180.6"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "9q21.33"
-            },
-            {
-              "name": "location_sortable",
-              "value": "09q21.33"
-            }
-          ],
-          "primaryCoding": {
-            "id": "coding:hgnc:8032",
-            "code": "HGNC:8032",
-            "system": "https://genenames.org",
-            "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Rearrangement"
-        },
-        {
-          "name": "rearrangement_type",
-          "value": "Fusion"
-        },
-        {
-          "name": "locus",
-          "value": null
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:ncit:C132146",
     "conceptType": "Disease",
@@ -113,7 +31,7 @@
   },
   "objectTherapeutic": {
     "id": "tx:ncit:C115977",
-    "conceptType": "Drug",
+    "conceptType": "Therapy",
     "name": "Larotrectinib",
     "mappings": [
       {
@@ -193,5 +111,95 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C115977"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:64",
+          "present": true,
+          "subject": {
+            "id": "bmkr:64",
+            "type": "CategoricalVariant",
+            "name": "v::NTRK2",
+            "constraints": [
+              {
+                "type": "AdjacencyConstraint",
+                "orderKnown": false,
+                "adjoinedElements": [
+                  {
+                    "id": "gene:hgnc:8032",
+                    "conceptType": "Gene",
+                    "name": "NTRK2",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:8032",
+                      "code": "HGNC:8032",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:8032"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000148053",
+                          "code": "ENSG00000148053",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000148053"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:4915",
+                          "code": "4915",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/4915"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_006180.6",
+                          "code": "NM_006180.6",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_006180.6"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "UnspecifiedElement"
+                  }
+                ]
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Rearrangement"
+              },
+              {
+                "name": "rearrangement_type",
+                "value": "Fusion"
+              },
+              {
+                "name": "locus",
+                "value": null
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

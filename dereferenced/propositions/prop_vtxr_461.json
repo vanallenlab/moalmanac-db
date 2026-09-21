@@ -1,137 +1,11 @@
 {
   "id": "prop:vtxr:461",
   "type": "VariantTherapeuticResponseProposition",
-  "predicate": "predictSensitivityTo",
-  "biomarkers": [
-    {
-      "id": "bmkr:159",
-      "type": "CategoricalVariant",
-      "name": "TSC2 oncogenic variants",
-      "genes": [
-        {
-          "id": "gene:hgnc:12363",
-          "conceptType": "Gene",
-          "name": "TSC2",
-          "mappings": [
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ensembl:ensg00000103197",
-                "code": "ENSG00000103197",
-                "system": "https://www.ensembl.org",
-                "iris": [
-                  "https://www.ensembl.org/id/ENSG00000103197"
-                ]
-              }
-            },
-            {
-              "relation": "exactMatch",
-              "coding": {
-                "id": "coding:ncbi:7249",
-                "code": "7249",
-                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/gene/7249"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:refseq:NM_000548.5",
-                "code": "NM_000548.5",
-                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                "iris": [
-                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_000548.5"
-                ]
-              }
-            }
-          ],
-          "extensions": [
-            {
-              "name": "location",
-              "value": "16p13.3"
-            },
-            {
-              "name": "location_sortable",
-              "value": "16p13.3"
-            }
-          ],
-          "primaryCoding": {
-            "id": "coding:hgnc:12363",
-            "code": "HGNC:12363",
-            "system": "https://genenames.org",
-            "iris": [
-              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12363"
-            ]
-          }
-        }
-      ],
-      "extensions": [
-        {
-          "name": "biomarker_type",
-          "value": "Somatic Variant"
-        },
-        {
-          "name": "chromosome",
-          "value": "16"
-        },
-        {
-          "name": "start_position",
-          "value": null
-        },
-        {
-          "name": "end_position",
-          "value": null
-        },
-        {
-          "name": "reference_allele",
-          "value": null
-        },
-        {
-          "name": "alternate_allele",
-          "value": null
-        },
-        {
-          "name": "cdna_change",
-          "value": null
-        },
-        {
-          "name": "protein_change",
-          "value": null
-        },
-        {
-          "name": "variant_annotation",
-          "value": null
-        },
-        {
-          "name": "exon",
-          "value": null
-        },
-        {
-          "name": "rsid",
-          "value": null
-        },
-        {
-          "name": "hgvsg",
-          "value": null
-        },
-        {
-          "name": "hgvsc",
-          "value": null
-        },
-        {
-          "name": "requires_oncogenic",
-          "value": true
-        },
-        {
-          "name": "_present",
-          "value": true
-        }
-      ]
-    }
-  ],
-  "subjectVariant": {},
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
   "conditionQualifier": {
     "id": "dis:ncit:C3696",
     "conceptType": "Disease",
@@ -171,7 +45,7 @@
   },
   "objectTherapeutic": {
     "id": "tx:ncit:C48387",
-    "conceptType": "Drug",
+    "conceptType": "Therapy",
     "name": "Everolimus",
     "mappings": [
       {
@@ -251,5 +125,168 @@
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C48387"
       ]
     }
-  }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:159",
+          "present": true,
+          "subject": {
+            "id": "bmkr:159",
+            "type": "CategoricalVariant",
+            "name": "TSC2 oncogenic variants",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence spanning the length of refseq:NP_000539.2, the protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5).",
+                  "digest": "s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+                    "type": "SequenceReference",
+                    "name": "NP_000539.2",
+                    "aliases": [
+                      "ensembl:ENSP00000219476.3",
+                      "ga4gh:SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+                      "refseq:NP_000539.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for TSC2 (refseq:NM_000548.5), corresponding to the Refseq protein accession NP_000539.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.OBQRUmiVewAVPYXV5ACyxczHF1Q4YGOm",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 0,
+                  "end": 1807,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:12363",
+                  "conceptType": "Gene",
+                  "name": "TSC2",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:12363",
+                    "code": "HGNC:12363",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:12363"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000103197",
+                        "code": "ENSG00000103197",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000103197"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:7249",
+                        "code": "7249",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/7249"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_000548.5",
+                        "code": "NM_000548.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000548.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic Variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "16"
+              },
+              {
+                "name": "start_position",
+                "value": null
+              },
+              {
+                "name": "end_position",
+                "value": null
+              },
+              {
+                "name": "reference_allele",
+                "value": null
+              },
+              {
+                "name": "alternate_allele",
+                "value": null
+              },
+              {
+                "name": "cdna_change",
+                "value": null
+              },
+              {
+                "name": "protein_change",
+                "value": null
+              },
+              {
+                "name": "variant_annotation",
+                "value": null
+              },
+              {
+                "name": "exon",
+                "value": null
+              },
+              {
+                "name": "rsid",
+                "value": null
+              },
+              {
+                "name": "hgvsg",
+                "value": null
+              },
+              {
+                "name": "hgvsc",
+                "value": null
+              },
+              {
+                "name": "requires_oncogenic",
+                "value": true
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
 }

@@ -86,41 +86,11 @@
   "proposition": {
     "id": "prop:vtxr:643",
     "type": "VariantTherapeuticResponseProposition",
-    "predicate": "predictSensitivityTo",
-    "biomarkers": [
-      {
-        "id": "bmkr:33",
-        "type": "CategoricalVariant",
-        "name": "PD-L1 >= 1%",
-        "extensions": [
-          {
-            "name": "biomarker_type",
-            "value": "Protein expression"
-          },
-          {
-            "name": "marker",
-            "value": "PD-L1"
-          },
-          {
-            "name": "unit",
-            "value": "Tumor Proportion Score (TPS)"
-          },
-          {
-            "name": "equality",
-            "value": ">="
-          },
-          {
-            "name": "value",
-            "value": 0.01
-          },
-          {
-            "name": "_present",
-            "value": true
-          }
-        ]
-      }
-    ],
-    "subjectVariant": {},
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
     "conditionQualifier": {
       "id": "dis:oncotree:ESCC",
       "conceptType": "Disease",
@@ -150,7 +120,7 @@
       "therapies": [
         {
           "id": "tx:ncit:C376",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Cisplatin",
           "mappings": [
             {
@@ -233,7 +203,7 @@
         },
         {
           "id": "tx:ncit:C68814",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Nivolumab",
           "mappings": [
             {
@@ -316,7 +286,7 @@
         },
         {
           "id": "tx:ncit:C505",
-          "conceptType": "Drug",
+          "conceptType": "Therapy",
           "name": "Fluorouracil",
           "mappings": [
             {
@@ -398,10 +368,50 @@
           }
         }
       ]
-    }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:33",
+            "present": true,
+            "subject": {
+              "id": "bmkr:33",
+              "type": "CategoricalVariant",
+              "name": "PD-L1 >= 1%",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "PD-L1"
+                },
+                {
+                  "name": "unit",
+                  "value": "Tumor Proportion Score (TPS)"
+                },
+                {
+                  "name": "equality",
+                  "value": ">="
+                },
+                {
+                  "name": "value",
+                  "value": 0.01
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
   },
   "strength": {
-    "id": 0,
+    "id": "str:ncit:C25425",
     "conceptType": "Evidence",
     "name": "Approval",
     "mappings": [],

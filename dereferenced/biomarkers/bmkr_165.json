@@ -2,62 +2,90 @@
   "id": "bmkr:165",
   "type": "CategoricalVariant",
   "name": "MLH1 pathogenic variants",
-  "genes": [
+  "constraints": [
     {
-      "id": "gene:hgnc:7127",
-      "conceptType": "Gene",
-      "name": "MLH1",
-      "mappings": [
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ensembl:ensg00000076242",
-            "code": "ENSG00000076242",
-            "system": "https://www.ensembl.org",
-            "iris": [
-              "https://www.ensembl.org/id/ENSG00000076242"
-            ]
-          }
+      "type": "DefiningLocationConstraint",
+      "location": {
+        "id": "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_000240.1, the protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4).",
+        "digest": "Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+          "type": "SequenceReference",
+          "name": "NP_000240.1",
+          "aliases": [
+            "ensembl:ENSP00000231790.2",
+            "ga4gh:SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+            "refseq:NP_000240.1"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for MLH1 (refseq:NM_000249.4), corresponding to the Refseq protein accession NP_000240.1.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.dMk8viPPat6aGU9YyKz-YaA24yxv7KPC",
+          "residueAlphabet": "aa"
         },
-        {
-          "relation": "exactMatch",
-          "coding": {
-            "id": "coding:ncbi:4292",
-            "code": "4292",
-            "system": "https://www.ncbi.nlm.nih.gov/gene",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/gene/4292"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:refseq:NM_000249.4",
-            "code": "NM_000249.4",
-            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-            "iris": [
-              "https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4"
-            ]
-          }
+        "start": 0,
+        "end": 756,
+        "sequence": null
+      },
+      "relations": [],
+      "matchCharacteristic": {
+        "primaryCoding": {
+          "code": "is_within",
+          "system": "ga4gh-gks-term:location-match"
         }
-      ],
-      "extensions": [
-        {
-          "name": "location",
-          "value": "3p22.2"
+      }
+    },
+    {
+      "type": "FeatureContextConstraint",
+      "featureContext": {
+        "id": "gene:hgnc:7127",
+        "conceptType": "Gene",
+        "name": "MLH1",
+        "primaryCoding": {
+          "id": "coding:hgnc:7127",
+          "code": "HGNC:7127",
+          "system": "https://genenames.org",
+          "iris": [
+            "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
+          ]
         },
-        {
-          "name": "location_sortable",
-          "value": "03p22.2"
-        }
-      ],
-      "primaryCoding": {
-        "id": "coding:hgnc:7127",
-        "code": "HGNC:7127",
-        "system": "https://genenames.org",
-        "iris": [
-          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7127"
+        "mappings": [
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ensembl:ensg00000076242",
+              "code": "ENSG00000076242",
+              "system": "https://www.ensembl.org",
+              "iris": [
+                "https://www.ensembl.org/id/ENSG00000076242"
+              ]
+            }
+          },
+          {
+            "relation": "exactMatch",
+            "coding": {
+              "id": "coding:ncbi:4292",
+              "code": "4292",
+              "system": "https://www.ncbi.nlm.nih.gov/gene",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/gene/4292"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:refseq:NM_000249.4",
+              "code": "NM_000249.4",
+              "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+              "iris": [
+                "https://www.ncbi.nlm.nih.gov/nuccore/NM_000249.4"
+              ]
+            }
+          }
         ]
       }
     }
@@ -117,10 +145,6 @@
     },
     {
       "name": "requires_pathogenic",
-      "value": true
-    },
-    {
-      "name": "_present",
       "value": true
     }
   ]
