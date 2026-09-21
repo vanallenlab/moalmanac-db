@@ -17,6 +17,7 @@ def input_paths():
         "copy_change": "referenced/copy_changes.json",
         "diseases": "referenced/diseases.json",
         "documents": "referenced/documents.json",
+        "function_consequences": "referenced/function_consequences.json",
         "genes": "referenced/genes.json",
         "indications": "referenced/indications.json",
         "mappings": "referenced/mappings.json",

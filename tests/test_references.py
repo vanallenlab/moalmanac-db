@@ -220,6 +220,42 @@ def test_biomarker_copy_change_ids_resolve(data):
         assert len(matched) == 1, error_message
 
 
+def test_biomarker_function_ids_resolve(data):
+    """
+    Ensures every non-null biomarker `function` resolves to a record in function_consequences.json
+    """
+    for biomarker in data["biomarkers"]:
+        function_id = biomarker["function"]
+        if function_id is None:
+            continue
+        matched = json_utils.get_records_by_key_value(
+            records=data["function_consequences"], key="id", value=function_id
+        )
+        error_message = (
+            f"Biomarker function id does not resolve to a function_consequences record.\n"
+            f"  - Biomarker ID: {biomarker['id']}\n"
+            f"  - Function ID: {function_id}"
+        )
+        assert len(matched) == 1, error_message
+
+
+def test_function_consequence_primary_coding_ids_resolve(data):
+    """
+    Ensures every function consequence `primary_coding_id` resolves to a record in codings.json
+    """
+    for function_consequence in data["function_consequences"]:
+        coding_id = function_consequence["primary_coding_id"]
+        matched = json_utils.get_records_by_key_value(
+            records=data["codings"], key="id", value=coding_id
+        )
+        error_message = (
+            f"Function consequence primary_coding_id does not resolve to a coding record.\n"
+            f"  - Function consequence ID: {function_consequence['id']}\n"
+            f"  - Coding ID: {coding_id}"
+        )
+        assert len(matched) == 1, error_message
+
+
 def test_biomarker_allele_ids_resolve(data):
     """
     Ensures every non-null biomarker `allele` resolves to a record in alleles.json
