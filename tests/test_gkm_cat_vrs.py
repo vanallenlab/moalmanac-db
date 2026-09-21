@@ -4,7 +4,10 @@ from ga4gh.cat_vrs.models import CategoricalVariant
 
 # Constraint types that are not yet modeled in cat-vrs-python (ga4gh.cat-vrs==0.7.2). These are removed
 # from biomarkers before validating, so the remaining constraints are still checked.
-UNSUPPORTED_CONSTRAINT_TYPES = {"AdjacencyConstraint", "FunctionConstraint"}
+UNSUPPORTED_CONSTRAINT_TYPES = {
+    "AdjacencyConstraint",
+    "FunctionConstraint",
+}
 
 
 def without_unsupported_constraints(biomarker):
