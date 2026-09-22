@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/propositions.schema.json",
+  "title": "Proposition",
+  "description": "A VariantTherapeuticResponseProposition: biomarker(s) predict a therapeutic response in a disease. Exactly one of `therapy_id` or `therapy_group_id` is set.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^prop:vtxr:\\d+$"
+    },
+    "type": {
+      "const": "VariantTherapeuticResponseProposition"
+    },
+    "predicate": {
+      "enum": [
+        "predictsSensitivityTo",
+        "predictsResistanceTo"
+      ]
+    },
+    "biomarker_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^bmkr\\.criterion:\\d+$",
+        "description": "Foreign key to `biomarker_criteria.id`."
+      },
+      "minItems": 1
+    },
+    "conditionQualifier_id": {
+      "type": "string",
+      "pattern": "^dis:(oncotree|ncit):.+$",
+      "description": "Foreign key to `diseases.id`."
+    },
+    "therapy_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^tx:ncit:C\\d+$",
+      "description": "Foreign key to `therapies.id`."
+    },
+    "therapy_group_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^txgrp:\\d+$",
+      "description": "Foreign key to `therapy_groups.id`."
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "predicate",
+    "biomarker_criteria",
+    "conditionQualifier_id",
+    "therapy_id",
+    "therapy_group_id"
+  ],
+  "additionalProperties": false,
+  "oneOf": [
+    {
+      "properties": {
+        "therapy_id": {
+          "type": "string"
+        },
+        "therapy_group_id": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "properties": {
+        "therapy_id": {
+          "type": "null"
+        },
+        "therapy_group_id": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

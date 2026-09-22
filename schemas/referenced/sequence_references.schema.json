@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/sequence_references.schema.json",
+  "title": "SequenceReference",
+  "description": "A VRS SequenceReference: a reference sequence (protein, transcript, or chromosome).",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ga4gh:SQ\\.[A-Za-z0-9_-]{32}$"
+    },
+    "type": {
+      "const": "SequenceReference"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "moleculeType": {
+      "enum": [
+        "protein",
+        "mRNA",
+        "genomic"
+      ]
+    },
+    "refgetAccession": {
+      "type": "string",
+      "pattern": "^SQ\\.[A-Za-z0-9_-]{32}$"
+    },
+    "residueAlphabet": {
+      "enum": [
+        "aa",
+        "na"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "aliases",
+    "description",
+    "moleculeType",
+    "refgetAccession",
+    "residueAlphabet"
+  ],
+  "additionalProperties": false
+}

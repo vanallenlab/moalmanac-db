@@ -1,0 +1,323 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/documents.schema.json",
+  "title": "Document",
+  "description": "A source document. Publisher, company, drug names, dates, and status are extensions; urls are plain strings.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$"
+    },
+    "type": {
+      "const": "Document"
+    },
+    "documentType": {
+      "enum": [
+        "Regulatory approval"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pmid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "agent"
+              },
+              "value": {
+                "$ref": "agents.schema.json",
+                "not": {
+                  "required": [
+                    "extensions"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "company"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "drug_name_brand"
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "drug_name_generic"
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "first_publication_date"
+              },
+              "value": {
+                "$ref": "#/$defs/iso_date_or_null"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "identification_number"
+              },
+              "value": {
+                "type": [
+                  "integer",
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "publication_date"
+              },
+              "value": {
+                "$ref": "#/$defs/iso_date_or_null"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "status"
+              },
+              "value": {
+                "enum": [
+                  "Active",
+                  "Deprecated"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "agent"
+              },
+              "value": {
+                "$ref": "agents.schema.json",
+                "not": {
+                  "required": [
+                    "extensions"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "company"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "drug_name_brand"
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "drug_name_generic"
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "first_publication_date"
+              },
+              "value": {
+                "$ref": "#/$defs/iso_date_or_null"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "identification_number"
+              },
+              "value": {
+                "type": [
+                  "integer",
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "publication_date"
+              },
+              "value": {
+                "$ref": "#/$defs/iso_date_or_null"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "status"
+              },
+              "value": {
+                "enum": [
+                  "Active",
+                  "Deprecated"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "documentType",
+    "name",
+    "title",
+    "aliases",
+    "description",
+    "urls",
+    "doi",
+    "pmid",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "iso_date_or_null": {
+      "description": "An ISO 8601 date (YYYY-MM-DD) or null.",
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "date"
+        }
+      ]
+    }
+  }
+}

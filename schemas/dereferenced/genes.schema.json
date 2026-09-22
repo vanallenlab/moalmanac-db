@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/genes.schema.json",
+  "title": "Gene",
+  "description": "A gene concept. Standalone genes carry the gene's sequence locations in `extensions`; genes embedded in a biomarker have `extensions` stripped (`$defs/Gene` without `extensions`).",
+  "$ref": "#/$defs/Gene",
+  "required": [
+    "extensions"
+  ],
+  "properties": {
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "cds_start"
+              },
+              "value": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "location"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "location_sortable"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "protein_product"
+              },
+              "value": {
+                "$ref": "sequence_locations.schema.json"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "protein_product_exons"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "$ref": "sequence_locations.schema.json"
+                }
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "transcript"
+              },
+              "value": {
+                "$ref": "sequence_locations.schema.json"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "transcript_exons"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "$ref": "sequence_locations.schema.json"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "cds_start"
+              },
+              "value": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "location"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "location_sortable"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "protein_product"
+              },
+              "value": {
+                "$ref": "sequence_locations.schema.json"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "protein_product_exons"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "$ref": "sequence_locations.schema.json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "transcript"
+              },
+              "value": {
+                "$ref": "sequence_locations.schema.json"
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "transcript_exons"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "$ref": "sequence_locations.schema.json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "Gene": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^gene:hgnc:\\d+$"
+        },
+        "conceptType": {
+          "const": "Gene"
+        },
+        "name": {
+          "type": "string"
+        },
+        "primaryCoding": {
+          "$ref": "codings.schema.json"
+        },
+        "mappings": {
+          "type": "array",
+          "items": {
+            "$ref": "mappings.schema.json#/$defs/ConceptMapping"
+          }
+        },
+        "extensions": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "conceptType",
+        "name",
+        "primaryCoding",
+        "mappings"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

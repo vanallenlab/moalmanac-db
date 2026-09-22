@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/urls.schema.json",
+  "title": "URL",
+  "description": "A url, referenced by documents.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^url:(fda|ema|hse|hc|hpra):.+$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "id",
+    "url"
+  ],
+  "additionalProperties": false
+}

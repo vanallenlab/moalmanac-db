@@ -1,0 +1,508 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/indications.schema.json",
+  "title": "Indication",
+  "description": "Regulatory approval text and its source, with contributions and documents embedded. Root type `Indication` with one subtype per organization, selected by the id prefix `ind:{org}:`. `status` is an extension; HSE indications additionally carry `reimbursement_scheme` and `reimbursement_comment` extensions.",
+  "$ref": "#/$defs/Indication",
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:fda:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/FDA Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:ema:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/EMA Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:hc:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/HC Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:hpra:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/HPRA Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:hse:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/HSE Indication"
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "Indication": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^ind:(fda|ema|hse|hc|hpra):.+$"
+        },
+        "type": {
+          "const": "Indication"
+        },
+        "description": {
+          "type": "string",
+          "description": "Regulatory approval text, verbatim."
+        },
+        "contributions": {
+          "type": "array",
+          "items": {
+            "$ref": "contributions.schema.json"
+          }
+        },
+        "reportedIn": {
+          "type": "array",
+          "items": {
+            "$ref": "documents.schema.json"
+          }
+        },
+        "extensions": {
+          "type": "array",
+          "items": {
+            "$ref": "extension.schema.json"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "$ref": "extension.schema.json",
+                "properties": {
+                  "name": {
+                    "const": "status"
+                  },
+                  "value": {
+                    "enum": [
+                      "Approved",
+                      "Accelerated",
+                      "Superseded",
+                      "Withdrawn"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "description",
+        "contributions",
+        "reportedIn",
+        "extensions"
+      ],
+      "description": "Root type shared by every organization. Organization-specific types below extend it; the top-level schema closes the record with unevaluatedProperties."
+    },
+    "FDA Indication": {
+      "description": "Indication from the organization `fda`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:fda:"
+            },
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "EMA Indication": {
+      "description": "Indication from the organization `ema`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:ema:"
+            },
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "HC Indication": {
+      "description": "Indication from the organization `hc`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:hc:"
+            },
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "HPRA Indication": {
+      "description": "Indication from the organization `hpra`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:hpra:"
+            },
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "HSE Indication": {
+      "description": "Indication from the Health Service Executive (HSE). Unlike other organizations, carries reimbursement information as extensions.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:hse:"
+            },
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "reimbursement_scheme"
+                      },
+                      "value": {
+                        "enum": [
+                          "CDS",
+                          "ODMS",
+                          "Incomplete Reimbursement",
+                          "Hospital",
+                          "N/A",
+                          "Hybrid"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "reimbursement_comment"
+                      },
+                      "value": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "status"
+                      },
+                      "value": {
+                        "enum": [
+                          "Approved",
+                          "Accelerated",
+                          "Superseded",
+                          "Withdrawn"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "reimbursement_scheme"
+                      },
+                      "value": {
+                        "enum": [
+                          "CDS",
+                          "ODMS",
+                          "Incomplete Reimbursement",
+                          "Hospital",
+                          "N/A",
+                          "Hybrid"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "reimbursement_comment"
+                      },
+                      "value": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/agents.schema.json",
+  "title": "Agent",
+  "description": "An organization or person that publishes documents or contributes to records.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^agent:(org|user):[a-z0-9]+$"
+    },
+    "type": {
+      "const": "Agent"
+    },
+    "agentType": {
+      "enum": [
+        "organization",
+        "contributor"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "last_updated"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "url"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "agentType",
+    "name",
+    "description"
+  ],
+  "additionalProperties": false
+}

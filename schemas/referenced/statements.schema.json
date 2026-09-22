@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/statements.schema.json",
+  "title": "Statement",
+  "description": "A knowledge claim: a proposition, the direction and strength of its support, and its source documents.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^stmt:(fda|ema|hse|hc|hpra):.+$"
+    },
+    "type": {
+      "const": "Statement"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contributions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ctrb:[a-z]+:\\d{4}-\\d{2}-\\d{2}:\\d+$",
+        "description": "Foreign key to `contributions.id`."
+      }
+    },
+    "reportedIn": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$",
+        "description": "Foreign key to `documents.id`."
+      }
+    },
+    "proposition_id": {
+      "type": "string",
+      "pattern": "^prop:vtxr:\\d+$",
+      "description": "Foreign key to `propositions.id`."
+    },
+    "direction": {
+      "enum": [
+        "supports",
+        "disputes",
+        "neutral"
+      ]
+    },
+    "strength_id": {
+      "type": "string",
+      "pattern": "^str:ncit:C\\d+$",
+      "description": "Foreign key to `strengths.id`."
+    },
+    "status": {
+      "enum": [
+        "Active",
+        "Superseded",
+        "Deprecated"
+      ]
+    },
+    "indication_id": {
+      "type": "string",
+      "pattern": "^ind:(fda|ema|hse|hc|hpra):.+$",
+      "description": "Foreign key to `indications.id`."
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "description",
+    "contributions",
+    "reportedIn",
+    "proposition_id",
+    "direction",
+    "strength_id",
+    "status",
+    "indication_id"
+  ],
+  "additionalProperties": false
+}
