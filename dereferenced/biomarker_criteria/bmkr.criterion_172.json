@@ -5,7 +5,77 @@
     "id": "bmkr:172",
     "type": "CategoricalVariant",
     "name": "t(15;17)",
-    "constraints": [],
+    "constraints": [
+      {
+        "type": "DefiningLocationConstraint",
+        "location": {
+          "id": "ga4gh:SL.EZBq61rtMPyE8oKI1VnxE0qxTfwvAIne",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "GRCh38 chromosome 15 (NC_000015.10), in its entirety.",
+          "digest": "EZBq61rtMPyE8oKI1VnxE0qxTfwvAIne",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.AsXvWL1-2i5U_buw6_niVIxD6zTbAuS6",
+            "type": "SequenceReference",
+            "name": "NC_000015.10",
+            "aliases": [
+              "ensembl:15",
+              "ga4gh:SQ.AsXvWL1-2i5U_buw6_niVIxD6zTbAuS6",
+              "refseq:NC_000015.10"
+            ],
+            "description": "GRCh38 chromosome 15 (RefSeq NC_000015.10).",
+            "moleculeType": "genomic",
+            "refgetAccession": "SQ.AsXvWL1-2i5U_buw6_niVIxD6zTbAuS6",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 101991189,
+          "sequence": null
+        },
+        "relations": [],
+        "matchCharacteristic": {
+          "primaryCoding": {
+            "code": "is_within",
+            "system": "ga4gh-gks-term:location-match"
+          }
+        }
+      },
+      {
+        "type": "DefiningLocationConstraint",
+        "location": {
+          "id": "ga4gh:SL.LlQ30oZsqDqzhy8f4ICLOTVftFbP1pUz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "GRCh38 chromosome 17 (NC_000017.11), in its entirety.",
+          "digest": "LlQ30oZsqDqzhy8f4ICLOTVftFbP1pUz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+            "type": "SequenceReference",
+            "name": "NC_000017.11",
+            "aliases": [
+              "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+              "refseq:NC_000017.11"
+            ],
+            "description": "GRCh38 chromosome 17 (RefSeq NC_000017.11).",
+            "moleculeType": "genomic",
+            "refgetAccession": "SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 83257441,
+          "sequence": null
+        },
+        "relations": [],
+        "matchCharacteristic": {
+          "primaryCoding": {
+            "code": "is_within",
+            "system": "ga4gh-gks-term:location-match"
+          }
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "biomarker_type",

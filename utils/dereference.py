@@ -510,9 +510,10 @@ class Biomarkers(BaseTable):
     - FunctionConsequences (initial key: `function`, resulting key: `function`)
     - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
 
-    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. The dereferenced
-    location, when present, is wrapped as a `DefiningLocationConstraint` (used for biomarkers defined
-    against a gene's whole protein product rather than a specific allele). For most records, each
+    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. Each dereferenced
+    location is wrapped as its own `DefiningLocationConstraint` (used for biomarkers defined against a
+    gene's whole protein product or a chromosome, rather than a specific allele; most records have zero
+    or one, but a translocation may have two, one per chromosome). For most records, each
     dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`biomarker_type`
     equal to "Gene fusion"), the resolved genes are instead collapsed into a single
     `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known; a
@@ -539,11 +540,10 @@ class Biomarkers(BaseTable):
                 "relations": [],
             },
         ),
-        FKSingle(
+        FKList(
             "location",
             "location",
             lambda db: db.sequence_locations,
-            nullable=True,
             post=lambda record: {
                 "type": "DefiningLocationConstraint",
                 "location": record,
@@ -589,8 +589,8 @@ class Biomarkers(BaseTable):
         Wraps each record's dereferenced allele, location, genes, function, and copy change into Cat-VRS
         constraint objects.
 
-        The allele, when present, becomes a `DefiningAlleleConstraint`. The location, when present,
-        becomes a `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
+        The allele, when present, becomes a `DefiningAlleleConstraint`. Each location becomes its own
+        `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
         per gene. Fusion records collapse their genes into a single `AdjacencyConstraint`, with
         `orderKnown` True only when both fusion partners are known (two genes); a single-gene fusion
         has an `UnspecifiedElement` appended to `adjoinedElements` for the unknown partner. The function
@@ -600,7 +600,7 @@ class Biomarkers(BaseTable):
         """
         for record in self.records:
             allele_constraint = record.pop("allele")
-            location_constraint = record.pop("location")
+            location_constraints = record.pop("location")
             genes = record.pop("genes")
             function_constraint = record.pop("function")
             copy_change = record.pop("copyChange")
@@ -621,7 +621,6 @@ class Biomarkers(BaseTable):
                     for gene in genes
                 ]
             allele_constraints = [allele_constraint] if allele_constraint else []
-            location_constraints = [location_constraint] if location_constraint else []
             function_constraints = [function_constraint] if function_constraint else []
             copy_changes = [copy_change] if copy_change else []
             record["constraints"] = (

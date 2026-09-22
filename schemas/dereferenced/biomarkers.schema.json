@@ -1677,7 +1677,7 @@
       ]
     },
     "NonFusionRearrangement": {
-      "description": "Structural shape shared by `Rearrangement` and `Translocation`: a gene fusion's genes collapse into a single AdjacencyConstraint, while these use one FeatureContextConstraint per gene instead.",
+      "description": "Structural shape shared by `Rearrangement` and `Translocation`: a gene fusion's genes collapse into a single AdjacencyConstraint, while these use one FeatureContextConstraint per gene instead. A `Translocation` may also carry a `DefiningLocationConstraint` per chromosome when it's named by cytogenetic band rather than gene (`Rearrangement`'s `location` is always empty, so it can never actually produce one).",
       "allOf": [
         {
           "$ref": "#/$defs/Biomarker"
@@ -1690,6 +1690,9 @@
                 "anyOf": [
                   {
                     "$ref": "#/$defs/FeatureContextConstraint"
+                  },
+                  {
+                    "$ref": "#/$defs/DefiningLocationConstraint"
                   }
                 ]
               }
@@ -1907,7 +1910,7 @@
       ]
     },
     "Translocation": {
-      "description": "Chromosomal translocation between one or two partner genes. Shares `NonFusionRearrangement`'s shape.",
+      "description": "Chromosomal translocation between one or two partner genes, or between one or two chromosomes. Shares `NonFusionRearrangement`'s shape, but also allows a `DefiningLocationConstraint` per chromosome when the translocation is named by cytogenetic band rather than gene.",
       "allOf": [
         {
           "$ref": "#/$defs/NonFusionRearrangement"

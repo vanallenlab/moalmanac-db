@@ -234,7 +234,78 @@
               "id": "bmkr:183",
               "type": "CategoricalVariant",
               "name": "t(11;14)",
-              "constraints": [],
+              "constraints": [
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.nD5PUHO8V4FDc7rR0P162xssNmIggOXG",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "GRCh38 chromosome 11 (NC_000011.10), in its entirety.",
+                    "digest": "nD5PUHO8V4FDc7rR0P162xssNmIggOXG",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.2NkFm8HK88MqeNkCgj78KidCAXgnsfV1",
+                      "type": "SequenceReference",
+                      "name": "NC_000011.10",
+                      "aliases": [
+                        "ensembl:11",
+                        "ga4gh:SQ.2NkFm8HK88MqeNkCgj78KidCAXgnsfV1",
+                        "refseq:NC_000011.10"
+                      ],
+                      "description": "GRCh38 chromosome 11 (RefSeq NC_000011.10).",
+                      "moleculeType": "genomic",
+                      "refgetAccession": "SQ.2NkFm8HK88MqeNkCgj78KidCAXgnsfV1",
+                      "residueAlphabet": "na"
+                    },
+                    "start": 0,
+                    "end": 135086622,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                },
+                {
+                  "type": "DefiningLocationConstraint",
+                  "location": {
+                    "id": "ga4gh:SL.Qtjsk-OhOGoPODsXUNw-Ap2h5qp-YRB7",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "GRCh38 chromosome 14 (NC_000014.9), in its entirety.",
+                    "digest": "Qtjsk-OhOGoPODsXUNw-Ap2h5qp-YRB7",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.eK4D2MosgK_ivBkgi6FVPg5UXs1bYESm",
+                      "type": "SequenceReference",
+                      "name": "NC_000014.9",
+                      "aliases": [
+                        "ensembl:14",
+                        "ga4gh:SQ.eK4D2MosgK_ivBkgi6FVPg5UXs1bYESm",
+                        "refseq:NC_000014.9"
+                      ],
+                      "description": "GRCh38 chromosome 14 (RefSeq NC_000014.9).",
+                      "moleculeType": "genomic",
+                      "refgetAccession": "SQ.eK4D2MosgK_ivBkgi6FVPg5UXs1bYESm",
+                      "residueAlphabet": "na"
+                    },
+                    "start": 0,
+                    "end": 107043718,
+                    "sequence": null
+                  },
+                  "relations": [],
+                  "matchCharacteristic": {
+                    "primaryCoding": {
+                      "code": "is_within",
+                      "system": "ga4gh-gks-term:location-match"
+                    }
+                  }
+                }
+              ],
               "extensions": [
                 {
                   "name": "biomarker_type",
