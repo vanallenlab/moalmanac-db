@@ -13,10 +13,6 @@ REFERENCED_ROOT = pathlib.Path("referenced")
 DEREFERENCED_ROOT = pathlib.Path("dereferenced")
 
 
-def extension_value(record, name):
-    return next(e["value"] for e in record["extensions"] if e["name"] == name)
-
-
 def failures(validator_, records):
     """Returns `id: message` for each record that fails validation."""
     out = []
@@ -232,10 +228,7 @@ def test_gene_fusion_requires_partner_gene(data, registry):
     fusion = first_record(
         data,
         "biomarkers",
-        lambda r: (
-            r["biomarker_type"] == "Rearrangement"
-            and extension_value(r, "rearrangement_type") == "Fusion"
-        ),
+        lambda r: r["biomarker_type"] == "Gene fusion",
     )
     fusion["genes"] = []
     assert failures(check, [fusion])
@@ -243,11 +236,7 @@ def test_gene_fusion_requires_partner_gene(data, registry):
     other = first_record(
         data,
         "biomarkers",
-        lambda r: (
-            r["biomarker_type"] == "Rearrangement"
-            and extension_value(r, "rearrangement_type") != "Fusion"
-            and not r["genes"]
-        ),
+        lambda r: r["biomarker_type"] == "Translocation" and not r["genes"],
     )
     assert not failures(check, [other])
 

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/dereferenced/biomarkers.schema.json",
   "title": "Biomarker",
-  "description": "A Cat-VRS CategoricalVariant whose allele, location, genes, function, and copy change are shaped into `constraints`. Root type `Biomarker` with one subtype per `biomarker_type` extension value; `GeneFusion` further specializes `Rearrangement`.",
+  "description": "A Cat-VRS CategoricalVariant whose allele, location, genes, function, and copy change are shaped into `constraints`. Root type `Biomarker` with one subtype per `biomarker_type` extension value.",
   "$ref": "#/$defs/Biomarker",
   "allOf": [
     {
@@ -71,10 +71,10 @@
             "contains": {
               "properties": {
                 "name": {
-                  "const": "rearrangement_type"
+                  "const": "biomarker_type"
                 },
                 "value": {
-                  "const": "Fusion"
+                  "const": "Gene fusion"
                 }
               },
               "required": [
@@ -86,7 +86,7 @@
         }
       },
       "then": {
-        "$ref": "#/$defs/Gene Fusion"
+        "$ref": "#/$defs/Gene fusion"
       }
     },
     {
@@ -231,63 +231,6 @@
     },
     {
       "if": {
-        "allOf": [
-          {
-            "required": [
-              "extensions"
-            ],
-            "properties": {
-              "extensions": {
-                "contains": {
-                  "properties": {
-                    "name": {
-                      "const": "biomarker_type"
-                    },
-                    "value": {
-                      "const": "Rearrangement"
-                    }
-                  },
-                  "required": [
-                    "name",
-                    "value"
-                  ]
-                }
-              }
-            }
-          },
-          {
-            "not": {
-              "required": [
-                "extensions"
-              ],
-              "properties": {
-                "extensions": {
-                  "contains": {
-                    "properties": {
-                      "name": {
-                        "const": "rearrangement_type"
-                      },
-                      "value": {
-                        "const": "Fusion"
-                      }
-                    },
-                    "required": [
-                      "name",
-                      "value"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        ]
-      },
-      "then": {
-        "$ref": "#/$defs/NonFusionRearrangement"
-      }
-    },
-    {
-      "if": {
         "required": [
           "extensions"
         ],
@@ -340,6 +283,34 @@
       },
       "then": {
         "$ref": "#/$defs/Rearrangement"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "extensions"
+        ],
+        "properties": {
+          "extensions": {
+            "contains": {
+              "properties": {
+                "name": {
+                  "const": "biomarker_type"
+                },
+                "value": {
+                  "const": "Translocation"
+                }
+              },
+              "required": [
+                "name",
+                "value"
+              ]
+            }
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/Translocation"
       }
     },
     {
@@ -492,6 +463,7 @@
                     "enum": [
                       "Copy number",
                       "Copy number (arm level)",
+                      "Gene fusion",
                       "Germline variant",
                       "Haplotype genotype",
                       "Homologous recombination",
@@ -500,6 +472,7 @@
                       "Protein expression",
                       "Rearrangement",
                       "Somatic variant",
+                      "Translocation",
                       "Tumor mutational burden",
                       "Wild type"
                     ]
@@ -914,14 +887,47 @@
         }
       ]
     },
-    "Gene Fusion": {
-      "description": "Gene fusion: a Rearrangement with `rearrangement_type` = Fusion, represented by a single AdjacencyConstraint. A fusion with one known partner has an UnspecifiedElement for the other. When the biomarker type is renamed to \"Gene fusion\", change the discriminator in this file's top-level `allOf` and add `Gene fusion` to the `biomarker_type` values.",
+    "Gene fusion": {
+      "description": "Gene fusion, represented by a single AdjacencyConstraint. A fusion with one known partner has an UnspecifiedElement for the other.",
       "allOf": [
         {
-          "$ref": "#/$defs/Rearrangement"
+          "$ref": "#/$defs/Biomarker"
         },
         {
           "properties": {
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "biomarker_type"
+                      },
+                      "value": {
+                        "const": "Gene fusion"
+                      }
+                    }
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "$ref": "extension.schema.json",
+                    "properties": {
+                      "name": {
+                        "const": "biomarker_type"
+                      },
+                      "value": {
+                        "const": "Gene fusion"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
             "constraints": {
               "type": "array",
               "minItems": 1,
@@ -1671,10 +1677,10 @@
       ]
     },
     "NonFusionRearrangement": {
-      "description": "A rearrangement that is not a gene fusion (a translocation or unspecified).",
+      "description": "Structural shape shared by `Rearrangement` and `Translocation`: a gene fusion's genes collapse into a single AdjacencyConstraint, while these use one FeatureContextConstraint per gene instead.",
       "allOf": [
         {
-          "$ref": "#/$defs/Rearrangement"
+          "$ref": "#/$defs/Biomarker"
         },
         {
           "properties": {
@@ -1856,10 +1862,10 @@
       ]
     },
     "Rearrangement": {
-      "description": "Chromosomal rearrangement. `GeneFusion` further specializes it when `rearrangement_type` is Fusion; any other rearrangement is a `NonFusionRearrangement`.",
+      "description": "Chromosomal rearrangement that is neither a gene fusion nor a translocation (see `Gene fusion`, `Translocation`). Shares `NonFusionRearrangement`'s shape.",
       "allOf": [
         {
-          "$ref": "#/$defs/Biomarker"
+          "$ref": "#/$defs/NonFusionRearrangement"
         },
         {
           "properties": {
@@ -1875,35 +1881,6 @@
                       },
                       "value": {
                         "const": "Rearrangement"
-                      }
-                    }
-                  },
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "rearrangement_type"
-                      },
-                      "value": {
-                        "enum": [
-                          "Fusion",
-                          "Translocation",
-                          null
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "locus"
-                      },
-                      "value": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
                       }
                     }
                   }
@@ -1922,36 +1899,48 @@
                       }
                     }
                   }
-                },
-                {
-                  "contains": {
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Translocation": {
+      "description": "Chromosomal translocation between one or two partner genes. Shares `NonFusionRearrangement`'s shape.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/NonFusionRearrangement"
+        },
+        {
+          "properties": {
+            "extensions": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
                     "$ref": "extension.schema.json",
                     "properties": {
                       "name": {
-                        "const": "rearrangement_type"
+                        "const": "biomarker_type"
                       },
                       "value": {
-                        "enum": [
-                          "Fusion",
-                          "Translocation",
-                          null
-                        ]
+                        "const": "Translocation"
                       }
                     }
                   }
-                },
+                ]
+              },
+              "allOf": [
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
                     "properties": {
                       "name": {
-                        "const": "locus"
+                        "const": "biomarker_type"
                       },
                       "value": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
+                        "const": "Translocation"
                       }
                     }
                   }

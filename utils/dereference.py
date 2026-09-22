@@ -488,18 +488,15 @@ class Alleles(BaseTable):
 
 def is_fusion(record: dict) -> bool:
     """
-    Checks whether a biomarker record's extensions mark it as a gene fusion.
+    Checks whether a biomarker record is a gene fusion.
 
     Args:
-        record (dict): A biomarker record with an `extensions` list.
+        record (dict): A biomarker record with a `biomarker_type` key.
 
     Returns:
-        bool: True if the record has a `rearrangement_type` extension valued "Fusion".
+        bool: True if the record's `biomarker_type` is "Gene fusion".
     """
-    return any(
-        extension["name"] == "rearrangement_type" and extension["value"] == "Fusion"
-        for extension in record["extensions"]
-    )
+    return record["biomarker_type"] == "Gene fusion"
 
 
 class Biomarkers(BaseTable):
@@ -516,8 +513,8 @@ class Biomarkers(BaseTable):
     The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. The dereferenced
     location, when present, is wrapped as a `DefiningLocationConstraint` (used for biomarkers defined
     against a gene's whole protein product rather than a specific allele). For most records, each
-    dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`rearrangement_type`
-    extension equal to "Fusion"), the resolved genes are instead collapsed into a single
+    dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`biomarker_type`
+    equal to "Gene fusion"), the resolved genes are instead collapsed into a single
     `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known; a
     fusion with only one known partner gets a trailing `UnspecifiedElement` for the other. Each
     gene has its `extensions` stripped before embedding (`Genes.build_extensions` output is only meant
@@ -649,9 +646,11 @@ class Biomarkers(BaseTable):
         """
         Dereferences all referenced keys within the Biomarkers table, then wraps genes into constraints.
 
-        Resolves foreign keys declared in `foreign_keys` via the base class, folds
-        `biomarker_type` into `extensions` via `fold_biomarker_type`, then applies
-        `wrap_constraints`. Each table is resolved at most once; subsequent calls are no-ops.
+        Resolves foreign keys declared in `foreign_keys` via the base class, applies
+        `wrap_constraints` (which relies on the still-present top-level `biomarker_type`
+        key to detect gene fusions), then folds `biomarker_type` into `extensions` via
+        `fold_biomarker_type`. Each table is resolved at most once; subsequent calls are
+        no-ops.
 
         Args:
             db (Database): An instance of the Database class containing all tables.
@@ -659,8 +658,8 @@ class Biomarkers(BaseTable):
         if self._resolved:
             return
         super().dereference(db)
-        self.fold_biomarker_type()
         self.wrap_constraints()
+        self.fold_biomarker_type()
         for record in self.records:
             self.reorder_keys(
                 record, ["id", "type", "name", "constraints", "extensions"]

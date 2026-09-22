@@ -31,6 +31,7 @@
 
 - `Copy number`
 - `Copy number (arm level)`
+- `Gene fusion`
 - `Germline variant`
 - `Haplotype genotype`
 - `Homologous recombination`
@@ -39,12 +40,13 @@
 - `Protein expression`
 - `Rearrangement`
 - `Somatic variant`
+- `Translocation`
 - `Tumor mutational burden`
 - `Wild type`
 
 Only HSE indications carry reimbursement fields (a `reimbursement_scheme` and `reimbursement_comment` key when referenced, extensions when dereferenced).
 
-`GeneFusion` extends `Rearrangement` and is selected by `rearrangement_type` = `Fusion`.
+`Gene fusion` and `Translocation` share `Rearrangement`'s shape (no allele, location, copy change, or function consequence, and no extensions besides `biomarker_type`) but are each selected directly by their own `biomarker_type` value, not by an extension.
 
 ## Validation
 
