@@ -46,8 +46,6 @@
 
 Only HSE indications carry reimbursement fields (a `reimbursement_scheme` and `reimbursement_comment` key when referenced, extensions when dereferenced).
 
-`Gene fusion` and `Translocation` share `Rearrangement`'s shape (no allele, location, copy change, or function consequence, and no extensions besides `biomarker_type`) but are each selected directly by their own `biomarker_type` value, not by an extension.
-
 ## Validation
 
 [tests/test_schemas.py](../tests/test_schemas.py) validates every record in `referenced/` and every file in `dereferenced/` against these schemas.
