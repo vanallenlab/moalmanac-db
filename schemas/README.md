@@ -29,22 +29,22 @@
 
 `biomarkers` — discriminator: `biomarker_type` extension
 
-- `Copy Number`
-- `Copy Number (arm level)`
-- `Germline Variant`
+- `Copy number`
+- `Copy number (arm level)`
+- `Gene fusion`
+- `Germline variant`
 - `Haplotype genotype`
-- `Homologous Recombination`
-- `Microsatellite Stability`
-- `Mismatch Repair`
+- `Homologous recombination`
+- `Microsatellite stability`
+- `Mismatch repair`
 - `Protein expression`
 - `Rearrangement`
-- `Somatic Variant`
+- `Somatic variant`
+- `Translocation`
 - `Tumor mutational burden`
 - `Wild type`
 
 Only HSE indications carry reimbursement fields (a `reimbursement_scheme` and `reimbursement_comment` key when referenced, extensions when dereferenced).
-
-`GeneFusion` extends `Rearrangement` and is selected by `rearrangement_type` = `Fusion`.
 
 ## Validation
 

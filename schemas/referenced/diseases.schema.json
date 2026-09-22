@@ -28,38 +28,8 @@
         "description": "Foreign key to `mappings.id`."
       }
     },
-    "extensions": {
-      "type": "array",
-      "items": {
-        "anyOf": [
-          {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "solid_tumor"
-              },
-              "value": {
-                "type": "boolean"
-              }
-            }
-          }
-        ]
-      },
-      "allOf": [
-        {
-          "contains": {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "solid_tumor"
-              },
-              "value": {
-                "type": "boolean"
-              }
-            }
-          }
-        }
-      ]
+    "solid_tumor": {
+      "type": "boolean"
     }
   },
   "required": [
@@ -68,7 +38,7 @@
     "name",
     "primary_coding_id",
     "mappings",
-    "extensions"
+    "solid_tumor"
   ],
   "additionalProperties": false
 }

@@ -296,6 +296,38 @@ class Agents(BaseTable):
         records (list[dict]): A list of dictionaries representing the agent records.
     """
 
+    def build_extensions(self) -> None:
+        """
+        Folds `last_updated` and `url` into an `extensions` list, in place. A record with
+        neither field gets no `extensions` key, matching prior behavior.
+        """
+        for record in self.records:
+            last_updated = record.pop("last_updated", None)
+            url = record.pop("url", None)
+            extensions = []
+            if last_updated is not None:
+                extensions.append(
+                    {"name": "last_updated", "value": last_updated, "description": ""}
+                )
+            if url is not None:
+                extensions.append({"name": "url", "value": url, "description": ""})
+            if extensions:
+                record["extensions"] = extensions
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table, then folds `last_updated` and `url` into
+        an `extensions` list via `build_extensions`. Each table is resolved at most once;
+        subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+
 
 class SequenceReferences(BaseTable):
     """
@@ -456,18 +488,15 @@ class Alleles(BaseTable):
 
 def is_fusion(record: dict) -> bool:
     """
-    Checks whether a biomarker record's extensions mark it as a gene fusion.
+    Checks whether a biomarker record is a gene fusion.
 
     Args:
-        record (dict): A biomarker record with an `extensions` list.
+        record (dict): A biomarker record with a `biomarker_type` key.
 
     Returns:
-        bool: True if the record has a `rearrangement_type` extension valued "Fusion".
+        bool: True if the record's `biomarker_type` is "Gene fusion".
     """
-    return any(
-        extension["name"] == "rearrangement_type" and extension["value"] == "Fusion"
-        for extension in record["extensions"]
-    )
+    return record["biomarker_type"] == "Gene fusion"
 
 
 class Biomarkers(BaseTable):
@@ -481,11 +510,12 @@ class Biomarkers(BaseTable):
     - FunctionConsequences (initial key: `function`, resulting key: `function`)
     - CopyChanges (initial key: `copyChange`, resulting key: `copyChange`)
 
-    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. The dereferenced
-    location, when present, is wrapped as a `DefiningLocationConstraint` (used for biomarkers defined
-    against a gene's whole protein product rather than a specific allele). For most records, each
-    dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`rearrangement_type`
-    extension equal to "Fusion"), the resolved genes are instead collapsed into a single
+    The dereferenced allele, when present, is wrapped as a `DefiningAlleleConstraint`. Each dereferenced
+    location is wrapped as its own `DefiningLocationConstraint` (used for biomarkers defined against a
+    gene's whole protein product or a chromosome, rather than a specific allele; most records have zero
+    or one, but a translocation may have two, one per chromosome). For most records, each
+    dereferenced gene is wrapped as a `FeatureContextConstraint`. For gene fusions (`biomarker_type`
+    equal to "Gene fusion"), the resolved genes are instead collapsed into a single
     `AdjacencyConstraint`, with `orderKnown` set based on whether both fusion partners are known; a
     fusion with only one known partner gets a trailing `UnspecifiedElement` for the other. Each
     gene has its `extensions` stripped before embedding (`Genes.build_extensions` output is only meant
@@ -510,11 +540,10 @@ class Biomarkers(BaseTable):
                 "relations": [],
             },
         ),
-        FKSingle(
+        FKList(
             "location",
             "location",
             lambda db: db.sequence_locations,
-            nullable=True,
             post=lambda record: {
                 "type": "DefiningLocationConstraint",
                 "location": record,
@@ -560,8 +589,8 @@ class Biomarkers(BaseTable):
         Wraps each record's dereferenced allele, location, genes, function, and copy change into Cat-VRS
         constraint objects.
 
-        The allele, when present, becomes a `DefiningAlleleConstraint`. The location, when present,
-        becomes a `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
+        The allele, when present, becomes a `DefiningAlleleConstraint`. Each location becomes its own
+        `DefiningLocationConstraint`. Non-fusion records get one `FeatureContextConstraint`
         per gene. Fusion records collapse their genes into a single `AdjacencyConstraint`, with
         `orderKnown` True only when both fusion partners are known (two genes); a single-gene fusion
         has an `UnspecifiedElement` appended to `adjoinedElements` for the unknown partner. The function
@@ -571,7 +600,7 @@ class Biomarkers(BaseTable):
         """
         for record in self.records:
             allele_constraint = record.pop("allele")
-            location_constraint = record.pop("location")
+            location_constraints = record.pop("location")
             genes = record.pop("genes")
             function_constraint = record.pop("function")
             copy_change = record.pop("copyChange")
@@ -592,7 +621,6 @@ class Biomarkers(BaseTable):
                     for gene in genes
                 ]
             allele_constraints = [allele_constraint] if allele_constraint else []
-            location_constraints = [location_constraint] if location_constraint else []
             function_constraints = [function_constraint] if function_constraint else []
             copy_changes = [copy_change] if copy_change else []
             record["constraints"] = (
@@ -603,12 +631,25 @@ class Biomarkers(BaseTable):
                 + copy_changes
             )
 
+    def fold_biomarker_type(self) -> None:
+        """
+        Folds `biomarker_type` back into `extensions` as its first element, in place.
+        """
+        for record in self.records:
+            biomarker_type = record.pop("biomarker_type")
+            record["extensions"].insert(
+                0, {"name": "biomarker_type", "value": biomarker_type}
+            )
+
     def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Biomarkers table, then wraps genes into constraints.
 
-        Resolves foreign keys declared in `foreign_keys` via the base class, then applies
-        `wrap_constraints`. Each table is resolved at most once; subsequent calls are no-ops.
+        Resolves foreign keys declared in `foreign_keys` via the base class, applies
+        `wrap_constraints` (which relies on the still-present top-level `biomarker_type`
+        key to detect gene fusions), then folds `biomarker_type` into `extensions` via
+        `fold_biomarker_type`. Each table is resolved at most once; subsequent calls are
+        no-ops.
 
         Args:
             db (Database): An instance of the Database class containing all tables.
@@ -617,6 +658,7 @@ class Biomarkers(BaseTable):
             return
         super().dereference(db)
         self.wrap_constraints()
+        self.fold_biomarker_type()
         for record in self.records:
             self.reorder_keys(
                 record, ["id", "type", "name", "constraints", "extensions"]
@@ -701,6 +743,50 @@ class Diseases(BaseTable):
             post=strip_keys("id", "primary_coding_id"),
         ),
     ]
+
+    def build_extensions(self) -> None:
+        """
+        Folds `solid_tumor` into an `extensions` list, in place.
+        """
+        for record in self.records:
+            solid_tumor = record.pop("solid_tumor")
+            record["extensions"] = [
+                {
+                    "name": "solid_tumor",
+                    "value": solid_tumor,
+                    "description": (
+                        "Boolean value for if this tumor type is categorized as a "
+                        "solid tumor."
+                    ),
+                },
+            ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table, then folds `solid_tumor` into an
+        `extensions` list via `build_extensions`, then reorders keys to `id`,
+        `conceptType`, `name`, `mappings`, `extensions`, `primaryCoding`. Each table
+        is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "conceptType",
+                    "name",
+                    "mappings",
+                    "extensions",
+                    "primaryCoding",
+                ],
+            )
 
 
 class Documents(BaseTable):
@@ -1265,6 +1351,59 @@ class Therapies(BaseTable):
             post=strip_keys("id", "primary_coding_id"),
         ),
     ]
+
+    def build_extensions(self) -> None:
+        """
+        Folds `therapy_strategy` and `therapy_type` into an `extensions` list, in place.
+        """
+        for record in self.records:
+            therapy_strategy = record.pop("therapy_strategy")
+            therapy_type = record.pop("therapy_type")
+            record["extensions"] = [
+                {
+                    "name": "therapy_strategy",
+                    "value": therapy_strategy,
+                    "description": (
+                        "Associated therapeutic strategy or mechanism of action of "
+                        "the therapy."
+                    ),
+                },
+                {
+                    "name": "therapy_type",
+                    "value": therapy_type,
+                    "description": (
+                        "Type of cancer treatment from cancer.gov: "
+                        "https://www.cancer.gov/about-cancer/treatment/types"
+                    ),
+                },
+            ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table, then folds `therapy_strategy` and
+        `therapy_type` into an `extensions` list via `build_extensions`, then reorders
+        keys to `id`, `conceptType`, `name`, `mappings`, `extensions`, `primaryCoding`.
+        Each table is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "conceptType",
+                    "name",
+                    "mappings",
+                    "extensions",
+                    "primaryCoding",
+                ],
+            )
 
 
 class TherapyGroups(BaseTable):
