@@ -1,4 +1,4 @@
-Schemas for the per-concept files in [dereferenced/](../../dereferenced/), [referenced](../../referenced/) records with foreign keys resolved to embedded objects by [utils/dereference.py](../../utils/dereference.py). One schema per entity, matching the directory names there — note `copy_change.schema.json` and `therapy_groups.schema.json`, not `copy_changes`/`therapy_group`.
+Schemas for the per-concept files in [dereferenced/](../../dereferenced/), [referenced](../../referenced/) records with foreign keys resolved to embedded objects by [utils/dereference.py](../../utils/dereference.py). One schema per entity, matching the directory names there — note `therapy_groups.schema.json`, not `therapy_group`.
 
 Foreign keys are `$ref`s to the embedded entity's schema instead of ids. Several entities also change shape on dereference and are worth knowing before editing:
 

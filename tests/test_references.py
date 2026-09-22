@@ -210,7 +210,7 @@ def test_biomarker_copy_change_ids_resolve(data):
         if copy_change_id is None:
             continue
         matched = json_utils.get_records_by_key_value(
-            records=data["copy_change"], key="id", value=copy_change_id
+            records=data["copy_changes"], key="id", value=copy_change_id
         )
         error_message = (
             f"Biomarker copyChange id does not resolve to a copy_change record.\n"

@@ -12,14 +12,6 @@ SCHEMA_ROOT = pathlib.Path("schemas")
 REFERENCED_ROOT = pathlib.Path("referenced")
 DEREFERENCED_ROOT = pathlib.Path("dereferenced")
 
-# Keys of the `data` fixture whose referenced schema is named differently.
-REFERENCED_SCHEMA_NAMES = {"copy_change": "copy_changes"}
-
-# Dereferenced entities that embed many other entities. Everything they embed is validated
-# in full by that entity's own test, so only every Nth record is checked here to keep the
-# suite fast (validating all statements takes about two minutes).
-DEREFERENCED_SAMPLE_STRIDE = {"propositions": 10, "statements": 25}
-
 
 def extension_value(record, name):
     return next(e["value"] for e in record["extensions"] if e["name"] == name)
@@ -141,7 +133,6 @@ def test_dereferenced_records_match_schema(name, registry):
     """
     files = sorted((DEREFERENCED_ROOT / name).glob("*.json"))
     assert files, f"No dereferenced files found for {name}"
-    files = files[:: DEREFERENCED_SAMPLE_STRIDE.get(name, 1)]
     records = [json.loads(path.read_text()) for path in files]
     bad = failures(validator("dereferenced", name, registry), records)
     assert not bad, f"{len(bad)} invalid {name} records, e.g. {bad[:3]}"
@@ -178,9 +169,7 @@ def test_every_entity_has_a_schema(input_paths):
     dereferenced = {
         p.stem.removesuffix(".schema") for p in schema_paths("dereferenced")
     }
-    expected_referenced = {
-        REFERENCED_SCHEMA_NAMES.get(key, key) for key in input_paths
-    } | {"about", "extension"}
+    expected_referenced = set(input_paths) | {"about", "extension"}
     expected_dereferenced = {
         p.name for p in DEREFERENCED_ROOT.iterdir() if p.is_dir()
     } | {"extension"}
@@ -248,7 +237,7 @@ def test_referenced_about_matches_schema(registry):
         "biomarkers",
         "codings",
         "contributions",
-        "copy_change",
+        "copy_changes",
         "diseases",
         "documents",
         "function_consequences",
@@ -269,8 +258,7 @@ def test_referenced_records_match_schema(key, data, registry):
     """
     Ensures every record in a referenced file validates against its schema.
     """
-    name = REFERENCED_SCHEMA_NAMES.get(key, key)
-    bad = failures(validator("referenced", name, registry), data[key])
+    bad = failures(validator("referenced", key, registry), data[key])
     assert not bad, f"{len(bad)} invalid {key} records, e.g. {bad[:3]}"
 
 
