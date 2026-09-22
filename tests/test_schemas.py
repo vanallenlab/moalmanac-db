@@ -57,6 +57,24 @@ def schema_paths(tree):
     return sorted((SCHEMA_ROOT / tree).glob("*.schema.json"))
 
 
+def assert_required_shape(schema, record):
+    """
+    Asserts a record has every required top-level key and every expected extension name,
+    without validating the contents of `$ref`-based fields or extension values.
+    """
+    missing_keys = set(schema["required"]) - record.keys()
+    assert not missing_keys, f"{record.get('id')} missing keys: {missing_keys}"
+    expected_extensions = {
+        branch["properties"]["name"]["const"]
+        for branch in schema["properties"]["extensions"]["items"]["anyOf"]
+    }
+    extension_names = {e["name"] for e in record["extensions"]}
+    missing_extensions = expected_extensions - extension_names
+    assert not missing_extensions, (
+        f"{record.get('id')} missing extensions: {missing_extensions}"
+    )
+
+
 def test_allele_length_fields_follow_state_type(data, registry):
     """
     Ensures referenced allele length fields are set only for a ReferenceLengthExpression.
@@ -119,12 +137,27 @@ def test_dereferenced_allele_state_matches_its_type(registry):
     assert failures(check, [repeat])
 
 
+def test_dereferenced_propositions():
+    """
+    Ensures dereferenced propositions have their required keys and a `biomarkers`
+    extension, without revalidating nested biomarkers/diseases/therapies — those are
+    covered by their own dereferenced schemas and by test_references.py's foreign-key
+    checks.
+    """
+    schema = load_schema(SCHEMA_ROOT / "dereferenced" / "propositions.schema.json")
+    files = sorted((DEREFERENCED_ROOT / "propositions").glob("*.json"))
+    assert files, "No dereferenced files found for propositions"
+    for path in files:
+        assert_required_shape(schema, json.loads(path.read_text()))
+
+
 @pytest.mark.parametrize(
     "name",
     sorted(
         p.stem.removesuffix(".schema")
         for p in schema_paths("dereferenced")
-        if p.stem != "extension.schema"
+        if p.stem
+        not in ("extension.schema", "propositions.schema", "statements.schema")
     ),
 )
 def test_dereferenced_records_match_schema(name, registry):
@@ -136,6 +169,20 @@ def test_dereferenced_records_match_schema(name, registry):
     records = [json.loads(path.read_text()) for path in files]
     bad = failures(validator("dereferenced", name, registry), records)
     assert not bad, f"{len(bad)} invalid {name} records, e.g. {bad[:3]}"
+
+
+def test_dereferenced_statements():
+    """
+    Ensures dereferenced statements have their required keys and `status`/`indication`
+    extensions, without revalidating nested contributions/documents/proposition/strength
+    or the indication's contents — those are covered by their own dereferenced schemas
+    and by test_references.py's foreign-key checks.
+    """
+    schema = load_schema(SCHEMA_ROOT / "dereferenced" / "statements.schema.json")
+    files = sorted((DEREFERENCED_ROOT / "statements").glob("*.json"))
+    assert files, "No dereferenced files found for statements"
+    for path in files:
+        assert_required_shape(schema, json.loads(path.read_text()))
 
 
 def test_document_dates_must_be_iso_dates_or_null(data, registry):
