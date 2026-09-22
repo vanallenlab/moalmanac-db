@@ -635,11 +635,22 @@ class Biomarkers(BaseTable):
                 + copy_changes
             )
 
+    def fold_biomarker_type(self) -> None:
+        """
+        Folds `biomarker_type` back into `extensions` as its first element, in place.
+        """
+        for record in self.records:
+            biomarker_type = record.pop("biomarker_type")
+            record["extensions"].insert(
+                0, {"name": "biomarker_type", "value": biomarker_type}
+            )
+
     def dereference(self, db: Database) -> None:
         """
         Dereferences all referenced keys within the Biomarkers table, then wraps genes into constraints.
 
-        Resolves foreign keys declared in `foreign_keys` via the base class, then applies
+        Resolves foreign keys declared in `foreign_keys` via the base class, folds
+        `biomarker_type` into `extensions` via `fold_biomarker_type`, then applies
         `wrap_constraints`. Each table is resolved at most once; subsequent calls are no-ops.
 
         Args:
@@ -648,6 +659,7 @@ class Biomarkers(BaseTable):
         if self._resolved:
             return
         super().dereference(db)
+        self.fold_biomarker_type()
         self.wrap_constraints()
         for record in self.records:
             self.reorder_keys(

@@ -103,7 +103,7 @@ def test_biomarker_extensions_must_match_type(data, registry):
     somatic = first_record(
         data,
         "biomarkers",
-        lambda r: extension_value(r, "biomarker_type") == "Somatic Variant",
+        lambda r: r["biomarker_type"] == "Somatic Variant",
     )
     missing = copy.deepcopy(somatic)
     missing["extensions"] = [e for e in missing["extensions"] if e["name"] != "exon"]
@@ -233,7 +233,7 @@ def test_gene_fusion_requires_partner_gene(data, registry):
         data,
         "biomarkers",
         lambda r: (
-            extension_value(r, "biomarker_type") == "Rearrangement"
+            r["biomarker_type"] == "Rearrangement"
             and extension_value(r, "rearrangement_type") == "Fusion"
         ),
     )
@@ -244,7 +244,7 @@ def test_gene_fusion_requires_partner_gene(data, registry):
         data,
         "biomarkers",
         lambda r: (
-            extension_value(r, "biomarker_type") == "Rearrangement"
+            r["biomarker_type"] == "Rearrangement"
             and extension_value(r, "rearrangement_type") != "Fusion"
             and not r["genes"]
         ),

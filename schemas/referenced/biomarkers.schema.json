@@ -2,30 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/referenced/biomarkers.schema.json",
   "title": "Biomarker",
-  "description": "A Cat-VRS CategoricalVariant. Root type `Biomarker` with one subtype per `biomarker_type` extension value; `GeneFusion` further specializes `Rearrangement`.",
+  "description": "A Cat-VRS CategoricalVariant. Root type `Biomarker` with one subtype per `biomarker_type` value; `GeneFusion` further specializes `Rearrangement`.",
   "$ref": "#/$defs/Biomarker",
   "allOf": [
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Copy Number"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Copy Number"
           }
         }
       },
@@ -36,24 +23,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Copy Number (arm level)"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Copy Number (arm level)"
           }
         }
       },
@@ -92,24 +66,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Germline Variant"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Germline Variant"
           }
         }
       },
@@ -120,24 +81,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Haplotype genotype"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Haplotype genotype"
           }
         }
       },
@@ -148,24 +96,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Homologous Recombination"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Homologous Recombination"
           }
         }
       },
@@ -176,24 +111,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Microsatellite Stability"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Microsatellite Stability"
           }
         }
       },
@@ -204,24 +126,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Mismatch Repair"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Mismatch Repair"
           }
         }
       },
@@ -232,24 +141,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Protein expression"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Protein expression"
           }
         }
       },
@@ -260,24 +156,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Rearrangement"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Rearrangement"
           }
         }
       },
@@ -288,24 +171,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Somatic Variant"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Somatic Variant"
           }
         }
       },
@@ -316,24 +186,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Tumor mutational burden"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Tumor mutational burden"
           }
         }
       },
@@ -344,24 +201,11 @@
     {
       "if": {
         "required": [
-          "extensions"
+          "biomarker_type"
         ],
         "properties": {
-          "extensions": {
-            "contains": {
-              "properties": {
-                "name": {
-                  "const": "biomarker_type"
-                },
-                "value": {
-                  "const": "Wild type"
-                }
-              },
-              "required": [
-                "name",
-                "value"
-              ]
-            }
+          "biomarker_type": {
+            "const": "Wild type"
           }
         }
       },
@@ -373,7 +217,7 @@
   "unevaluatedProperties": false,
   "$defs": {
     "Biomarker": {
-      "description": "Root type shared by every biomarker. Subtypes below are selected by the `biomarker_type` extension; the top-level schema closes the record.",
+      "description": "Root type shared by every biomarker. Subtypes below are selected by the `biomarker_type` field; the top-level schema closes the record.",
       "type": "object",
       "required": [
         "id",
@@ -384,6 +228,7 @@
         "function",
         "genes",
         "location",
+        "biomarker_type",
         "extensions"
       ],
       "properties": {
@@ -437,39 +282,27 @@
           "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$",
           "description": "Foreign key to `sequence_locations.id`."
         },
+        "biomarker_type": {
+          "enum": [
+            "Copy Number",
+            "Copy Number (arm level)",
+            "Germline Variant",
+            "Haplotype genotype",
+            "Homologous Recombination",
+            "Microsatellite Stability",
+            "Mismatch Repair",
+            "Protein expression",
+            "Rearrangement",
+            "Somatic Variant",
+            "Tumor mutational burden",
+            "Wild type"
+          ]
+        },
         "extensions": {
           "type": "array",
           "items": {
             "$ref": "extension.schema.json"
-          },
-          "allOf": [
-            {
-              "contains": {
-                "$ref": "extension.schema.json",
-                "properties": {
-                  "name": {
-                    "const": "biomarker_type"
-                  },
-                  "value": {
-                    "enum": [
-                      "Copy Number",
-                      "Copy Number (arm level)",
-                      "Germline Variant",
-                      "Haplotype genotype",
-                      "Homologous Recombination",
-                      "Microsatellite Stability",
-                      "Mismatch Repair",
-                      "Protein expression",
-                      "Rearrangement",
-                      "Somatic Variant",
-                      "Tumor mutational burden",
-                      "Wild type"
-                    ]
-                  }
-                }
-              }
-            }
-          ]
+          }
         }
       }
     },
@@ -481,21 +314,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Copy Number"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Copy Number"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -513,19 +338,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Copy Number"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -573,21 +385,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Copy Number (arm level)"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Copy Number (arm level)"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -616,19 +420,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Copy Number (arm level)"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -705,21 +496,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Germline Variant"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Germline Variant"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -900,19 +683,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Germline Variant"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -1147,38 +917,8 @@
         },
         {
           "properties": {
-            "extensions": {
-              "type": "array",
-              "items": {
-                "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Haplotype genotype"
-                      }
-                    }
-                  }
-                ]
-              },
-              "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Haplotype genotype"
-                      }
-                    }
-                  }
-                }
-              ]
+            "biomarker_type": {
+              "const": "Haplotype genotype"
             },
             "genes": {
               "type": "array",
@@ -1208,21 +948,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Homologous Recombination"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Homologous Recombination"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -1237,19 +969,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Homologous Recombination"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -1293,21 +1012,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Microsatellite Stability"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Microsatellite Stability"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -1326,19 +1037,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Microsatellite Stability"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -1386,21 +1084,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Mismatch Repair"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Mismatch Repair"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -1418,19 +1108,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Mismatch Repair"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -1477,21 +1154,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Protein expression"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Protein expression"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -1548,19 +1217,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Protein expression"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -1652,21 +1308,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Rearrangement"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Rearrangement"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -1699,19 +1347,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Rearrangement"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -1775,21 +1410,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Somatic Variant"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Somatic Variant"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -1970,19 +1597,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Somatic Variant"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -2179,21 +1793,13 @@
         },
         {
           "properties": {
+            "biomarker_type": {
+              "const": "Tumor mutational burden"
+            },
             "extensions": {
               "type": "array",
               "items": {
                 "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Tumor mutational burden"
-                      }
-                    }
-                  },
                   {
                     "$ref": "extension.schema.json",
                     "properties": {
@@ -2236,19 +1842,6 @@
                 ]
               },
               "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Tumor mutational burden"
-                      }
-                    }
-                  }
-                },
                 {
                   "contains": {
                     "$ref": "extension.schema.json",
@@ -2324,38 +1917,8 @@
         },
         {
           "properties": {
-            "extensions": {
-              "type": "array",
-              "items": {
-                "anyOf": [
-                  {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Wild type"
-                      }
-                    }
-                  }
-                ]
-              },
-              "allOf": [
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "biomarker_type"
-                      },
-                      "value": {
-                        "const": "Wild type"
-                      }
-                    }
-                  }
-                }
-              ]
+            "biomarker_type": {
+              "const": "Wild type"
             },
             "genes": {
               "type": "array",
