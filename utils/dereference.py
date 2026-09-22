@@ -296,6 +296,38 @@ class Agents(BaseTable):
         records (list[dict]): A list of dictionaries representing the agent records.
     """
 
+    def build_extensions(self) -> None:
+        """
+        Folds `last_updated` and `url` into an `extensions` list, in place. A record with
+        neither field gets no `extensions` key, matching prior behavior.
+        """
+        for record in self.records:
+            last_updated = record.pop("last_updated", None)
+            url = record.pop("url", None)
+            extensions = []
+            if last_updated is not None:
+                extensions.append(
+                    {"name": "last_updated", "value": last_updated, "description": ""}
+                )
+            if url is not None:
+                extensions.append({"name": "url", "value": url, "description": ""})
+            if extensions:
+                record["extensions"] = extensions
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table, then folds `last_updated` and `url` into
+        an `extensions` list via `build_extensions`. Each table is resolved at most once;
+        subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+
 
 class SequenceReferences(BaseTable):
     """
@@ -701,6 +733,50 @@ class Diseases(BaseTable):
             post=strip_keys("id", "primary_coding_id"),
         ),
     ]
+
+    def build_extensions(self) -> None:
+        """
+        Folds `solid_tumor` into an `extensions` list, in place.
+        """
+        for record in self.records:
+            solid_tumor = record.pop("solid_tumor")
+            record["extensions"] = [
+                {
+                    "name": "solid_tumor",
+                    "value": solid_tumor,
+                    "description": (
+                        "Boolean value for if this tumor type is categorized as a "
+                        "solid tumor."
+                    ),
+                },
+            ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table, then folds `solid_tumor` into an
+        `extensions` list via `build_extensions`, then reorders keys to `id`,
+        `conceptType`, `name`, `mappings`, `extensions`, `primaryCoding`. Each table
+        is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "conceptType",
+                    "name",
+                    "mappings",
+                    "extensions",
+                    "primaryCoding",
+                ],
+            )
 
 
 class Documents(BaseTable):
@@ -1265,6 +1341,59 @@ class Therapies(BaseTable):
             post=strip_keys("id", "primary_coding_id"),
         ),
     ]
+
+    def build_extensions(self) -> None:
+        """
+        Folds `therapy_strategy` and `therapy_type` into an `extensions` list, in place.
+        """
+        for record in self.records:
+            therapy_strategy = record.pop("therapy_strategy")
+            therapy_type = record.pop("therapy_type")
+            record["extensions"] = [
+                {
+                    "name": "therapy_strategy",
+                    "value": therapy_strategy,
+                    "description": (
+                        "Associated therapeutic strategy or mechanism of action of "
+                        "the therapy."
+                    ),
+                },
+                {
+                    "name": "therapy_type",
+                    "value": therapy_type,
+                    "description": (
+                        "Type of cancer treatment from cancer.gov: "
+                        "https://www.cancer.gov/about-cancer/treatment/types"
+                    ),
+                },
+            ]
+
+    def dereference(self, db: Database) -> None:
+        """
+        Dereferences all records in this table, then folds `therapy_strategy` and
+        `therapy_type` into an `extensions` list via `build_extensions`, then reorders
+        keys to `id`, `conceptType`, `name`, `mappings`, `extensions`, `primaryCoding`.
+        Each table is resolved at most once; subsequent calls are no-ops.
+
+        Args:
+            db (Database): An instance of the Database class containing all tables.
+        """
+        if self._resolved:
+            return
+        super().dereference(db)
+        self.build_extensions()
+        for record in self.records:
+            self.reorder_keys(
+                record,
+                [
+                    "id",
+                    "conceptType",
+                    "name",
+                    "mappings",
+                    "extensions",
+                    "primaryCoding",
+                ],
+            )
 
 
 class TherapyGroups(BaseTable):
