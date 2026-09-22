@@ -29,16 +29,16 @@
 
 `biomarkers` — discriminator: `biomarker_type` extension
 
-- `Copy Number`
-- `Copy Number (arm level)`
-- `Germline Variant`
+- `Copy number`
+- `Copy number (arm level)`
+- `Germline variant`
 - `Haplotype genotype`
-- `Homologous Recombination`
-- `Microsatellite Stability`
-- `Mismatch Repair`
+- `Homologous recombination`
+- `Microsatellite stability`
+- `Mismatch repair`
 - `Protein expression`
 - `Rearrangement`
-- `Somatic Variant`
+- `Somatic variant`
 - `Tumor mutational burden`
 - `Wild type`
 

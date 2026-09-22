@@ -103,7 +103,7 @@ def test_biomarker_extensions_must_match_type(data, registry):
     somatic = first_record(
         data,
         "biomarkers",
-        lambda r: r["biomarker_type"] == "Somatic Variant",
+        lambda r: r["biomarker_type"] == "Somatic variant",
     )
     missing = copy.deepcopy(somatic)
     missing["extensions"] = [e for e in missing["extensions"] if e["name"] != "exon"]
