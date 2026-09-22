@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/documents.schema.json",
+  "title": "Document",
+  "description": "A source document. At present every document is a regulatory approval.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$"
+    },
+    "type": {
+      "const": "Document"
+    },
+    "documentType": {
+      "enum": [
+        "Regulatory approval"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^url:(fda|ema|hse|hc|hpra):.+$",
+        "description": "Foreign key to `urls.id`."
+      }
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pmid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^agent:(org|user):[a-z0-9]+$",
+      "description": "Foreign key to `agents.id`."
+    },
+    "company": {
+      "type": "string"
+    },
+    "drug_name_brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "drug_name_generic": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "first_publication_date": {
+      "$ref": "#/$defs/iso_date_or_null"
+    },
+    "identification_number": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "publication_date": {
+      "$ref": "#/$defs/iso_date_or_null"
+    },
+    "status": {
+      "enum": [
+        "Active",
+        "Deprecated"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "documentType",
+    "name",
+    "title",
+    "aliases",
+    "description",
+    "urls",
+    "doi",
+    "pmid",
+    "agent_id",
+    "company",
+    "drug_name_brand",
+    "drug_name_generic",
+    "first_publication_date",
+    "identification_number",
+    "publication_date",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "iso_date_or_null": {
+      "description": "An ISO 8601 date (YYYY-MM-DD) or null.",
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "date"
+        }
+      ]
+    }
+  }
+}

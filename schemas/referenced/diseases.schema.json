@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/diseases.schema.json",
+  "title": "Disease",
+  "description": "A cancer type concept.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dis:(oncotree|ncit):.+$"
+    },
+    "conceptType": {
+      "const": "Disease"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primary_coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^map:.+::.+$",
+        "description": "Foreign key to `mappings.id`."
+      }
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "solid_tumor"
+              },
+              "value": {
+                "type": "boolean"
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "solid_tumor"
+              },
+              "value": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "conceptType",
+    "name",
+    "primary_coding_id",
+    "mappings",
+    "extensions"
+  ],
+  "additionalProperties": false
+}

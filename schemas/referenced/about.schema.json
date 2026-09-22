@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/about.schema.json",
+  "title": "About",
+  "description": "Database metadata from about.json. Unlike every other referenced file, this is a single object, and it becomes the root `about` key of the dereferenced database.",
+  "type": "object",
+  "properties": {
+    "github": {
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "last_updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "github",
+    "name",
+    "license",
+    "release",
+    "url",
+    "last_updated"
+  ],
+  "additionalProperties": false
+}

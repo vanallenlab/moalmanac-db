@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/therapies.schema.json",
+  "title": "Therapy",
+  "description": "A therapeutic agent concept.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^tx:ncit:C\\d+$"
+    },
+    "conceptType": {
+      "const": "Therapy"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primary_coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^map:.+::.+$",
+        "description": "Foreign key to `mappings.id`."
+      }
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_strategy"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_type"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_strategy"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_type"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "conceptType",
+    "name",
+    "primary_coding_id",
+    "mappings",
+    "extensions"
+  ],
+  "additionalProperties": false
+}

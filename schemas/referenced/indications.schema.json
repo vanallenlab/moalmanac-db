@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/indications.schema.json",
+  "title": "Indication",
+  "description": "Regulatory approval text and its source. Root type `Indication` with one subtype per organization, selected by the id prefix `ind:{org}:`. Only HSE indications carry `reimbursement_scheme` and `reimbursement_comment`.",
+  "$ref": "#/$defs/Indication",
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:fda:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/FDA Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:ema:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/EMA Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:hc:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/HC Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:hpra:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/HPRA Indication"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^ind:hse:"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/HSE Indication"
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "Indication": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^ind:(fda|ema|hse|hc|hpra):.+$"
+        },
+        "type": {
+          "const": "Indication"
+        },
+        "description": {
+          "type": "string",
+          "description": "Regulatory approval text, verbatim."
+        },
+        "contributions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ctrb:[a-z]+:\\d{4}-\\d{2}-\\d{2}:\\d+$",
+            "description": "Foreign key to `contributions.id`."
+          }
+        },
+        "reportedIn": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$",
+            "description": "Foreign key to `documents.id`."
+          }
+        },
+        "status": {
+          "enum": [
+            "Approved",
+            "Accelerated",
+            "Superseded",
+            "Withdrawn"
+          ]
+        },
+        "statement_description": {
+          "type": "string"
+        },
+        "raw_biomarkers": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_cancer_types": {
+          "type": "string"
+        },
+        "raw_therapeutics": {
+          "type": "string"
+        },
+        "superseded_by": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ind:(fda|ema|hse|hc|hpra):.+$",
+            "description": "Foreign key to `indications.id`."
+          }
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "description",
+        "contributions",
+        "reportedIn",
+        "status",
+        "statement_description",
+        "raw_biomarkers",
+        "raw_cancer_types",
+        "raw_therapeutics",
+        "superseded_by"
+      ],
+      "description": "Root type shared by every organization. Organization-specific types below extend it; the top-level schema closes the record with unevaluatedProperties."
+    },
+    "FDA Indication": {
+      "description": "Indication from the organization `fda`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:fda:"
+            }
+          }
+        }
+      ]
+    },
+    "EMA Indication": {
+      "description": "Indication from the organization `ema`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:ema:"
+            }
+          }
+        }
+      ]
+    },
+    "HC Indication": {
+      "description": "Indication from the organization `hc`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:hc:"
+            }
+          }
+        }
+      ]
+    },
+    "HPRA Indication": {
+      "description": "Indication from the organization `hpra`.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:hpra:"
+            }
+          }
+        }
+      ]
+    },
+    "HSE Indication": {
+      "description": "Indication from the Health Service Executive (HSE). Unlike other organizations, carries reimbursement information.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Indication"
+        },
+        {
+          "properties": {
+            "id": {
+              "pattern": "^ind:hse:"
+            },
+            "reimbursement_scheme": {
+              "enum": [
+                "CDS",
+                "ODMS",
+                "Incomplete Reimbursement",
+                "Hospital",
+                "N/A",
+                "Hybrid"
+              ]
+            },
+            "reimbursement_comment": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "reimbursement_scheme",
+            "reimbursement_comment"
+          ]
+        }
+      ]
+    }
+  }
+}

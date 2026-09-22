@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/alleles.schema.json",
+  "title": "Allele",
+  "description": "A VRS Allele with its SequenceLocation embedded. The referenced `hgvs.*` keys become `expressions` and the `state_*` keys become `state`.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ga4gh:VA\\.[A-Za-z0-9_-]{32}$"
+    },
+    "type": {
+      "const": "Allele"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "digest": {
+      "type": "string"
+    },
+    "expressions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "syntax": {
+            "enum": [
+              "hgvs.g",
+              "hgvs.c",
+              "hgvs.p"
+            ]
+          },
+          "value": {
+            "type": "string"
+          },
+          "extensions": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "extension.schema.json",
+                  "properties": {
+                    "name": {
+                      "const": "hgvs.c_short"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "$ref": "extension.schema.json",
+                  "properties": {
+                    "name": {
+                      "const": "hgvs.p_short"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "syntax",
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "location": {
+      "$ref": "sequence_locations.schema.json"
+    },
+    "state": {
+      "description": "The allele's state, one of the VRS state types defined in `$defs`, selected by `type`.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/LiteralSequenceExpression"
+        },
+        {
+          "$ref": "#/$defs/ReferenceLengthExpression"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "aliases",
+    "description",
+    "digest",
+    "expressions",
+    "location",
+    "state"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "LiteralSequenceExpression": {
+      "description": "A state given as a literal sequence.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "LiteralSequenceExpression"
+        },
+        "sequence": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "sequence"
+      ],
+      "additionalProperties": false
+    },
+    "ReferenceLengthExpression": {
+      "description": "A state given as a length relative to the reference, e.g. a repeat expansion or deletion.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "ReferenceLengthExpression"
+        },
+        "sequence": {
+          "type": "string"
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "repeatSubunitLength": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "type",
+        "sequence",
+        "length",
+        "repeatSubunitLength"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

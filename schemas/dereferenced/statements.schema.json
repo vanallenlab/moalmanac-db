@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/statements.schema.json",
+  "title": "Statement",
+  "description": "A knowledge claim, with contributions, documents, proposition, and strength embedded. `status` and the underlying `indication` are extensions.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^stmt:(fda|ema|hse|hc|hpra):.+$"
+    },
+    "type": {
+      "const": "Statement"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contributions": {
+      "type": "array",
+      "items": {
+        "$ref": "contributions.schema.json"
+      }
+    },
+    "reportedIn": {
+      "type": "array",
+      "items": {
+        "$ref": "documents.schema.json"
+      }
+    },
+    "direction": {
+      "enum": [
+        "supports",
+        "disputes",
+        "neutral"
+      ]
+    },
+    "proposition": {
+      "$ref": "propositions.schema.json"
+    },
+    "strength": {
+      "$ref": "strengths.schema.json"
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "status"
+              },
+              "value": {
+                "enum": [
+                  "Active",
+                  "Superseded",
+                  "Deprecated"
+                ]
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "indication"
+              },
+              "value": {
+                "$ref": "indications.schema.json"
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "status"
+              },
+              "value": {
+                "enum": [
+                  "Active",
+                  "Superseded",
+                  "Deprecated"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "indication"
+              },
+              "value": {
+                "$ref": "indications.schema.json"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "description",
+    "contributions",
+    "reportedIn",
+    "direction",
+    "proposition",
+    "strength",
+    "extensions"
+  ],
+  "additionalProperties": false
+}

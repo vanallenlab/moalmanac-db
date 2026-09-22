@@ -546,7 +546,7 @@ class Biomarkers(BaseTable):
         FKSingle(
             "copyChange",
             "copyChange",
-            lambda db: db.copy_change,
+            lambda db: db.copy_changes,
             nullable=True,
             post=lambda record: {
                 "type": "CopyChangeConstraint",
@@ -1304,7 +1304,7 @@ class Database:
         biomarker_criteria (BiomarkerCriteria): An instance of the BiomarkerCriteria class.
         codings (Codings): An instance of the Codings class.
         contributions (Contributions): An instance of the Contributions class.
-        copy_change (CopyChanges): An instance of the CopyChanges class.
+        copy_changes (CopyChanges): An instance of the CopyChanges class.
         diseases (Diseases): An instance of the Diseases class.
         documents (Documents): An instance of the Documents class.
         function_consequences (FunctionConsequences): An instance of the FunctionConsequences class.
@@ -1327,7 +1327,7 @@ class Database:
     biomarker_criteria: BiomarkerCriteria
     codings: Codings
     contributions: Contributions
-    copy_change: CopyChanges
+    copy_changes: CopyChanges
     diseases: Diseases
     documents: Documents
     function_consequences: FunctionConsequences
@@ -1438,7 +1438,7 @@ _CONCEPT_DIRS = [
     ("biomarker_criteria", os.path.join("dereferenced", "biomarker_criteria")),
     ("codings", os.path.join("dereferenced", "codings")),
     ("contributions", os.path.join("dereferenced", "contributions")),
-    ("copy_change", os.path.join("dereferenced", "copy_change")),
+    ("copy_changes", os.path.join("dereferenced", "copy_changes")),
     ("diseases", os.path.join("dereferenced", "diseases")),
     ("documents", os.path.join("dereferenced", "documents")),
     ("function_consequences", os.path.join("dereferenced", "function_consequences")),
@@ -1495,8 +1495,8 @@ def write_all_concepts(
         contributions=Contributions(
             records=read.json_records(file=input_paths["contributions"])
         ),
-        copy_change=CopyChanges(
-            records=read.json_records(file=input_paths["copy_change"]),
+        copy_changes=CopyChanges(
+            records=read.json_records(file=input_paths["copy_changes"]),
         ),
         diseases=Diseases(
             records=read.json_records(file=input_paths["diseases"]),
@@ -1570,7 +1570,7 @@ def main(input_paths):
     biomarker_criteria = read.json_records(file=input_paths["biomarker_criteria"])
     codings = read.json_records(file=input_paths["codings"])
     contributions = read.json_records(file=input_paths["contributions"])
-    copy_change = read.json_records(file=input_paths["copy_change"])
+    copy_changes = read.json_records(file=input_paths["copy_changes"])
     diseases = read.json_records(file=input_paths["diseases"])
     documents = read.json_records(file=input_paths["documents"])
     function_consequences = read.json_records(file=input_paths["function_consequences"])
@@ -1602,7 +1602,7 @@ def main(input_paths):
     biomarker_criteria = BiomarkerCriteria(records=biomarker_criteria)
     codings = Codings(records=codings)
     contributions = Contributions(records=contributions)
-    copy_change = CopyChanges(records=copy_change)
+    copy_changes = CopyChanges(records=copy_changes)
     diseases = Diseases(records=diseases)
     documents = Documents(records=documents)
     function_consequences = FunctionConsequences(records=function_consequences)
@@ -1626,7 +1626,7 @@ def main(input_paths):
         biomarker_criteria=biomarker_criteria,
         codings=codings,
         contributions=contributions,
-        copy_change=copy_change,
+        copy_changes=copy_changes,
         diseases=diseases,
         documents=documents,
         function_consequences=function_consequences,
@@ -1690,7 +1690,7 @@ if __name__ == "__main__":
         default=os.path.join("referenced", "contributions.json"),
     )
     arg_parser.add_argument(
-        "--copy-change",
+        "--copy-changes",
         help="json detailing db copy changes",
         default=os.path.join("referenced", "copy_changes.json"),
     )
@@ -1795,7 +1795,7 @@ if __name__ == "__main__":
         "biomarker_criteria": args.biomarker_criteria,
         "codings": args.codings,
         "contributions": args.contributions,
-        "copy_change": args.copy_change,
+        "copy_changes": args.copy_changes,
         "diseases": args.diseases,
         "documents": args.documents,
         "function_consequences": args.function_consequences,

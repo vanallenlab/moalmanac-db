@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/alleles.schema.json",
+  "title": "Allele",
+  "description": "A VRS Allele. The `hgvs.*` and `state_*` keys are flat here and are folded into `expressions` and `state` upon dereference.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ga4gh:VA\\.[A-Za-z0-9_-]{32}$"
+    },
+    "type": {
+      "const": "Allele"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "digest": {
+      "type": "string"
+    },
+    "hgvs.g": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hgvs.c": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hgvs.c_short": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hgvs.p": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hgvs.p_short": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": "string",
+      "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$",
+      "description": "Foreign key to `sequence_locations.id`."
+    },
+    "state_type": {
+      "enum": [
+        "LiteralSequenceExpression",
+        "ReferenceLengthExpression"
+      ]
+    },
+    "state_sequence": {
+      "type": "string"
+    },
+    "state_length": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Only populated for a ReferenceLengthExpression."
+    },
+    "state_repeat_subunit_length": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Only populated for a ReferenceLengthExpression."
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "aliases",
+    "description",
+    "digest",
+    "hgvs.g",
+    "hgvs.c",
+    "hgvs.c_short",
+    "hgvs.p",
+    "hgvs.p_short",
+    "location",
+    "state_type",
+    "state_sequence",
+    "state_length",
+    "state_repeat_subunit_length"
+  ],
+  "additionalProperties": false,
+  "if": {
+    "properties": {
+      "state_type": {
+        "const": "ReferenceLengthExpression"
+      }
+    },
+    "required": [
+      "state_type"
+    ]
+  },
+  "then": {
+    "properties": {
+      "state_length": {
+        "type": "integer"
+      },
+      "state_repeat_subunit_length": {
+        "type": "integer"
+      }
+    }
+  },
+  "else": {
+    "properties": {
+      "state_length": {
+        "type": "null"
+      },
+      "state_repeat_subunit_length": {
+        "type": "null"
+      }
+    }
+  }
+}
