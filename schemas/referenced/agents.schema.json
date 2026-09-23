@@ -24,34 +24,11 @@
     "description": {
       "type": "string"
     },
-    "extensions": {
-      "type": "array",
-      "items": {
-        "anyOf": [
-          {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "last_updated"
-              },
-              "value": {
-                "type": "string"
-              }
-            }
-          },
-          {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "url"
-              },
-              "value": {
-                "type": "string"
-              }
-            }
-          }
-        ]
-      }
+    "last_updated": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
     }
   },
   "required": [

@@ -7,12 +7,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD30"
@@ -39,12 +36,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Estrogen receptor (ER)"
@@ -71,12 +65,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -103,12 +94,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Progesterone receptor (PR)"
@@ -137,12 +125,11 @@
     "genes": [
       "gene:hgnc:952"
     ],
-    "location": "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm",
+    "location": [
+      "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -207,12 +194,11 @@
     "genes": [
       "gene:hgnc:20473"
     ],
-    "location": "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx",
+    "location": [
+      "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -277,12 +263,11 @@
     "genes": [
       "gene:hgnc:20473"
     ],
-    "location": "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx",
+    "location": [
+      "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -347,12 +332,11 @@
     "genes": [
       "gene:hgnc:24224"
     ],
-    "location": "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo",
+    "location": [
+      "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -417,21 +401,9 @@
     "genes": [
       "gene:hgnc:427"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:9",
@@ -443,12 +415,9 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -509,12 +478,11 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": "ga4gh:SL.d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+    "location": [
+      "ga4gh:SL.d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -579,12 +547,9 @@
     "genes": [
       "gene:hgnc:8803"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -646,21 +611,9 @@
       "gene:hgnc:1014",
       "gene:hgnc:76"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:13",
@@ -670,12 +623,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD22"
@@ -702,12 +652,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD19"
@@ -736,12 +683,9 @@
     "genes": [
       "gene:hgnc:1097"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -802,12 +746,9 @@
     "genes": [
       "gene:hgnc:1097"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -868,21 +809,9 @@
     "genes": [
       "gene:hgnc:9967"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:19",
@@ -894,12 +823,11 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt",
+    "location": [
+      "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -962,12 +890,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -996,12 +921,9 @@
     "genes": [
       "gene:hgnc:3430"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
       {
         "name": "cytoband",
         "value": null
@@ -1016,12 +938,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -1050,12 +969,11 @@
     "genes": [
       "gene:hgnc:3430"
     ],
-    "location": "ga4gh:SL.tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq",
+    "location": [
+      "ga4gh:SL.tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -1118,12 +1036,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "EGFR"
@@ -1152,13 +1067,11 @@
     "genes": [
       "gene:hgnc:6407"
     ],
-    "location": "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:26",
@@ -1170,13 +1083,11 @@
     "genes": [
       "gene:hgnc:5173"
     ],
-    "location": "ga4gh:SL.1lZN5vxblOtHZhe78B1baJzaaFEU5CuH",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.1lZN5vxblOtHZhe78B1baJzaaFEU5CuH"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:27",
@@ -1188,13 +1099,11 @@
     "genes": [
       "gene:hgnc:7989"
     ],
-    "location": "ga4gh:SL.PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:28",
@@ -1206,21 +1115,9 @@
     "genes": [
       "gene:hgnc:8803"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
     "id": "bmkr:29",
@@ -1232,21 +1129,9 @@
     "genes": [
       "gene:hgnc:8804"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
     "id": "bmkr:30",
@@ -1259,21 +1144,9 @@
       "gene:hgnc:19124",
       "gene:hgnc:8803"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:31",
@@ -1283,12 +1156,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD117"
@@ -1317,12 +1187,9 @@
     "genes": [
       "gene:hgnc:76"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "9"
@@ -1381,12 +1248,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1415,13 +1279,11 @@
     "genes": [
       "gene:hgnc:427"
     ],
-    "location": "ga4gh:SL.o1BcQ-pi-2K5Ga8uf-VSu4ufGNbU6jaZ",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.o1BcQ-pi-2K5Ga8uf-VSu4ufGNbU6jaZ"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:35",
@@ -1433,13 +1295,11 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:36",
@@ -1449,12 +1309,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Mismatch repair",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Mismatch Repair"
-      },
       {
         "name": "status",
         "value": "Deficient"
@@ -1469,12 +1326,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Mismatch repair",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Mismatch Repair"
-      },
       {
         "name": "status",
         "value": "Proficient"
@@ -1489,12 +1343,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Microsatellite stability",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Microsatellite Stability"
-      },
       {
         "name": "status",
         "value": "Microsatellite instability-high (MSI-H)"
@@ -1509,12 +1360,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1543,12 +1391,9 @@
     "genes": [
       "gene:hgnc:17635"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
       {
         "name": "cytoband",
         "value": null
@@ -1563,12 +1408,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1595,12 +1437,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1627,12 +1466,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Estrogen receptor (ER)"
@@ -1659,12 +1495,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Progesterone receptor (PR)"
@@ -1693,12 +1526,9 @@
     "genes": [
       "gene:hgnc:6407"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -1759,13 +1589,11 @@
     "genes": [
       "gene:hgnc:10261"
     ],
-    "location": "ga4gh:SL.hC1t5wa3TfUMtSYa_g0a5hP5qipSxyku",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.hC1t5wa3TfUMtSYa_g0a5hP5qipSxyku"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:47",
@@ -1777,12 +1605,11 @@
     "genes": [
       "gene:hgnc:1100"
     ],
-    "location": "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb",
+    "location": [
+      "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -1847,12 +1674,11 @@
     "genes": [
       "gene:hgnc:1100"
     ],
-    "location": "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb",
+    "location": [
+      "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -1917,12 +1743,11 @@
     "genes": [
       "gene:hgnc:1101"
     ],
-    "location": "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji",
+    "location": [
+      "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -1987,12 +1812,11 @@
     "genes": [
       "gene:hgnc:1101"
     ],
-    "location": "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji",
+    "location": [
+      "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -2055,12 +1879,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Homologous recombination",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Homologous Recombination"
-      },
       {
         "name": "status",
         "value": "Deficient"
@@ -2077,21 +1898,9 @@
     "genes": [
       "gene:hgnc:3689"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:53",
@@ -2103,21 +1912,9 @@
     "genes": [
       "gene:hgnc:3689"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
     "id": "bmkr:54",
@@ -2127,12 +1924,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD20"
@@ -2159,12 +1953,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD33"
@@ -2191,12 +1982,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -2223,12 +2011,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -2257,12 +2042,11 @@
     "genes": [
       "gene:hgnc:3467"
     ],
-    "location": "ga4gh:SL.thGX8CTtcNkncOw3rgSDk0uL1txXvlWk",
+    "location": [
+      "ga4gh:SL.thGX8CTtcNkncOw3rgSDk0uL1txXvlWk"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "6"
@@ -2320,19 +2104,18 @@
   {
     "id": "bmkr:59",
     "type": "CategoricalVariant",
-    "name": "PIK3CA somatic variants",
+    "name": "PIK3CA Somatic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
     "genes": [
       "gene:hgnc:8975"
     ],
-    "location": "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5",
+    "location": [
+      "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2397,12 +2180,9 @@
     "genes": [
       "gene:hgnc:9967"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -2461,12 +2241,11 @@
     "copyChange": "copy_change:efo:0030067",
     "function": null,
     "genes": [],
-    "location": "ga4gh:SL.KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js",
+    "location": [
+      "ga4gh:SL.KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js"
+    ],
+    "biomarker_type": "Copy number (arm level)",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number (arm level)"
-      },
       {
         "name": "chromosome",
         "value": "5"
@@ -2487,21 +2266,9 @@
     "genes": [
       "gene:hgnc:10261"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:63",
@@ -2513,21 +2280,9 @@
     "genes": [
       "gene:hgnc:8031"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:64",
@@ -2539,21 +2294,9 @@
     "genes": [
       "gene:hgnc:8032"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:65",
@@ -2565,21 +2308,9 @@
     "genes": [
       "gene:hgnc:8033"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:66",
@@ -2591,12 +2322,11 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": "ga4gh:SL.53HN2VFdgurjdPcQYBRwyfNMHcwRzdID",
+    "location": [
+      "ga4gh:SL.53HN2VFdgurjdPcQYBRwyfNMHcwRzdID"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -2661,12 +2391,11 @@
     "genes": [
       "gene:hgnc:7029"
     ],
-    "location": "ga4gh:SL.dNLhs0UIN4aBJCxfRymlkjqL5S-ZRTKK",
+    "location": [
+      "ga4gh:SL.dNLhs0UIN4aBJCxfRymlkjqL5S-ZRTKK"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2731,12 +2460,11 @@
     "genes": [
       "gene:hgnc:7029"
     ],
-    "location": "ga4gh:SL.dNLhs0UIN4aBJCxfRymlkjqL5S-ZRTKK",
+    "location": [
+      "ga4gh:SL.dNLhs0UIN4aBJCxfRymlkjqL5S-ZRTKK"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2801,21 +2529,9 @@
     "genes": [
       "gene:hgnc:3688"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
     "id": "bmkr:70",
@@ -2827,12 +2543,9 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2891,12 +2604,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -2918,19 +2628,18 @@
   {
     "id": "bmkr:72",
     "type": "CategoricalVariant",
-    "name": "EGFR somatic variants",
+    "name": "EGFR Somatic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt",
+    "location": [
+      "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2993,12 +2702,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -3027,12 +2733,9 @@
     "genes": [
       "gene:hgnc:5382"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3093,12 +2796,9 @@
     "genes": [
       "gene:hgnc:5382"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3159,12 +2859,9 @@
     "genes": [
       "gene:hgnc:5382"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3225,12 +2922,9 @@
     "genes": [
       "gene:hgnc:5382"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3291,12 +2985,9 @@
     "genes": [
       "gene:hgnc:5382"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3358,38 +3049,25 @@
       "gene:hgnc:9113",
       "gene:hgnc:9864"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:80",
     "type": "CategoricalVariant",
-    "name": "TP53 somatic variants",
+    "name": "TP53 Somatic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
     "genes": [
       "gene:hgnc:11998"
     ],
-    "location": "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi",
+    "location": [
+      "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -3454,12 +3132,9 @@
     "genes": [
       "gene:hgnc:11998"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
       {
         "name": "cytoband",
         "value": null
@@ -3474,12 +3149,11 @@
     "copyChange": "copy_change:efo:0030067",
     "function": null,
     "genes": [],
-    "location": "ga4gh:SL.qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV",
+    "location": [
+      "ga4gh:SL.qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV"
+    ],
+    "biomarker_type": "Copy number (arm level)",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number (arm level)"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -3500,13 +3174,11 @@
     "genes": [
       "gene:hgnc:11998"
     ],
-    "location": "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      }
-    ]
+    "location": [
+      "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
     "id": "bmkr:85",
@@ -3518,12 +3190,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -3584,12 +3253,11 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": "ga4gh:SL.wk0fEATa_DkPqxGhMRCFFPOXY9PMWpc1",
+    "location": [
+      "ga4gh:SL.wk0fEATa_DkPqxGhMRCFFPOXY9PMWpc1"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -3639,19 +3307,18 @@
   {
     "id": "bmkr:87",
     "type": "CategoricalVariant",
-    "name": "PIK3CA somatic variants",
+    "name": "PIK3CA Somatic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
     "genes": [
       "gene:hgnc:8975"
     ],
-    "location": "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5",
+    "location": [
+      "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -3716,12 +3383,9 @@
     "genes": [
       "gene:hgnc:8975"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
       {
         "name": "cytoband",
         "value": null
@@ -3738,12 +3402,9 @@
     "genes": [
       "gene:hgnc:391"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
       {
         "name": "cytoband",
         "value": null
@@ -3753,19 +3414,18 @@
   {
     "id": "bmkr:90",
     "type": "CategoricalVariant",
-    "name": "AKT1 somatic variants",
+    "name": "AKT1 Somatic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
     "genes": [
       "gene:hgnc:391"
     ],
-    "location": "ga4gh:SL.hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu",
+    "location": [
+      "ga4gh:SL.hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "14"
@@ -3830,12 +3490,11 @@
     "genes": [
       "gene:hgnc:9588"
     ],
-    "location": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+    "location": [
+      "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -3900,12 +3559,11 @@
     "genes": [
       "gene:hgnc:9588"
     ],
-    "location": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+    "location": [
+      "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -3970,12 +3628,11 @@
     "genes": [
       "gene:hgnc:9588"
     ],
-    "location": "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s",
+    "location": [
+      "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -4040,12 +3697,9 @@
     "genes": [
       "gene:hgnc:9588"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
       {
         "name": "cytoband",
         "value": null
@@ -4063,21 +3717,9 @@
       "gene:hgnc:3689",
       "gene:hgnc:19351"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:96",
@@ -4090,21 +3732,9 @@
       "gene:hgnc:3689",
       "gene:hgnc:1508"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:97",
@@ -4117,21 +3747,9 @@
       "gene:hgnc:3690",
       "gene:hgnc:11524"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:98",
@@ -4144,21 +3762,9 @@
       "gene:hgnc:3690",
       "gene:hgnc:21649"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:99",
@@ -4170,12 +3776,9 @@
     "genes": [
       "gene:hgnc:3690"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4236,12 +3839,9 @@
     "genes": [
       "gene:hgnc:3690"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4302,12 +3902,9 @@
     "genes": [
       "gene:hgnc:3690"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4368,12 +3965,9 @@
     "genes": [
       "gene:hgnc:3690"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4432,12 +4026,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CLDN18.2"
@@ -4466,12 +4057,11 @@
     "genes": [
       "gene:hgnc:795"
     ],
-    "location": "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R",
+    "location": [
+      "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -4536,12 +4126,11 @@
     "genes": [
       "gene:hgnc:795"
     ],
-    "location": "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R",
+    "location": [
+      "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -4606,12 +4195,11 @@
     "genes": [
       "gene:hgnc:952"
     ],
-    "location": "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm",
+    "location": [
+      "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -4676,12 +4264,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4742,12 +4327,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4808,12 +4390,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4874,12 +4453,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4940,12 +4516,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5006,12 +4579,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5072,12 +4642,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5138,12 +4705,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5204,12 +4768,9 @@
     "genes": [
       "gene:hgnc:5383"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5270,12 +4831,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5336,12 +4894,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5402,12 +4957,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5468,12 +5020,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5534,12 +5083,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5600,12 +5146,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5666,12 +5209,9 @@
     "genes": [
       "gene:hgnc:6342"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -5732,12 +5272,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5798,12 +5335,9 @@
     "genes": [
       "gene:hgnc:3765"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5864,12 +5398,11 @@
     "genes": [
       "gene:hgnc:24224"
     ],
-    "location": "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo",
+    "location": [
+      "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -5934,12 +5467,11 @@
     "genes": [
       "gene:hgnc:1925"
     ],
-    "location": "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK",
+    "location": [
+      "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -6004,12 +5536,11 @@
     "genes": [
       "gene:hgnc:1925"
     ],
-    "location": "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK",
+    "location": [
+      "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -6074,12 +5605,11 @@
     "genes": [
       "gene:hgnc:16627"
     ],
-    "location": "ga4gh:SL.eCBKWuJdQ9sa9e23NuyG-2McuGF8QHAN",
+    "location": [
+      "ga4gh:SL.eCBKWuJdQ9sa9e23NuyG-2McuGF8QHAN"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "22"
@@ -6144,12 +5674,11 @@
     "genes": [
       "gene:hgnc:16627"
     ],
-    "location": "ga4gh:SL.eCBKWuJdQ9sa9e23NuyG-2McuGF8QHAN",
+    "location": [
+      "ga4gh:SL.eCBKWuJdQ9sa9e23NuyG-2McuGF8QHAN"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "22"
@@ -6214,12 +5743,11 @@
     "genes": [
       "gene:hgnc:20748"
     ],
-    "location": "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp",
+    "location": [
+      "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -6284,12 +5812,11 @@
     "genes": [
       "gene:hgnc:20748"
     ],
-    "location": "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp",
+    "location": [
+      "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -6354,12 +5881,11 @@
     "genes": [
       "gene:hgnc:26144"
     ],
-    "location": "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk",
+    "location": [
+      "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -6424,12 +5950,11 @@
     "genes": [
       "gene:hgnc:26144"
     ],
-    "location": "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk",
+    "location": [
+      "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -6494,12 +6019,11 @@
     "genes": [
       "gene:hgnc:9822"
     ],
-    "location": "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq",
+    "location": [
+      "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -6564,12 +6088,11 @@
     "genes": [
       "gene:hgnc:9822"
     ],
-    "location": "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq",
+    "location": [
+      "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -6634,12 +6157,11 @@
     "genes": [
       "gene:hgnc:9820"
     ],
-    "location": "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v",
+    "location": [
+      "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6704,12 +6226,11 @@
     "genes": [
       "gene:hgnc:9820"
     ],
-    "location": "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v",
+    "location": [
+      "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6774,12 +6295,11 @@
     "genes": [
       "gene:hgnc:9823"
     ],
-    "location": "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1",
+    "location": [
+      "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6844,12 +6364,11 @@
     "genes": [
       "gene:hgnc:9823"
     ],
-    "location": "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1",
+    "location": [
+      "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6914,12 +6433,11 @@
     "genes": [
       "gene:hgnc:9826"
     ],
-    "location": "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5",
+    "location": [
+      "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "1"
@@ -6984,12 +6502,11 @@
     "genes": [
       "gene:hgnc:9826"
     ],
-    "location": "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5",
+    "location": [
+      "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "1"
@@ -7052,12 +6569,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Microsatellite stability",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Microsatellite Stability"
-      },
       {
         "name": "status",
         "value": "Microsatellite instability-low (MSI-L)"
@@ -7072,12 +6586,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Microsatellite stability",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Microsatellite Stability"
-      },
       {
         "name": "status",
         "value": "Microsatellite stable (MSS)"
@@ -7092,12 +6603,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Tumor mutational burden",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Tumor mutational burden"
-      },
       {
         "name": "classification",
         "value": "High"
@@ -7122,12 +6630,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7188,12 +6693,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7254,12 +6756,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7320,12 +6819,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7386,12 +6882,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7452,12 +6945,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7518,12 +7008,9 @@
     "genes": [
       "gene:hgnc:3527"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7584,12 +7071,11 @@
     "genes": [
       "gene:hgnc:9967"
     ],
-    "location": "ga4gh:SL.8tMatnGHpju4GOKF3BvEBkQkhD68tww2",
+    "location": [
+      "ga4gh:SL.8tMatnGHpju4GOKF3BvEBkQkhD68tww2"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -7652,12 +7138,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "FOLR1"
@@ -7686,21 +7169,9 @@
     "genes": [
       "gene:hgnc:1097"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:155",
@@ -7712,21 +7183,9 @@
     "genes": [
       "gene:hgnc:1097"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
     "id": "bmkr:156",
@@ -7738,21 +7197,9 @@
     "genes": [
       "gene:hgnc:7997"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
     "id": "bmkr:157",
@@ -7764,21 +7211,9 @@
     "genes": [
       "gene:hgnc:7131"
     ],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Translocation"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Translocation",
+    "extensions": []
   },
   {
     "id": "bmkr:158",
@@ -7790,12 +7225,11 @@
     "genes": [
       "gene:hgnc:12362"
     ],
-    "location": "ga4gh:SL.o0qRqlKBKx4X0_JQslgG31SX69ml6liV",
+    "location": [
+      "ga4gh:SL.o0qRqlKBKx4X0_JQslgG31SX69ml6liV"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "9"
@@ -7860,12 +7294,11 @@
     "genes": [
       "gene:hgnc:12363"
     ],
-    "location": "ga4gh:SL.s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S",
+    "location": [
+      "ga4gh:SL.s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -7930,12 +7363,11 @@
     "genes": [
       "gene:hgnc:882"
     ],
-    "location": "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL",
+    "location": [
+      "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8000,12 +7432,11 @@
     "genes": [
       "gene:hgnc:882"
     ],
-    "location": "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL",
+    "location": [
+      "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8070,12 +7501,11 @@
     "genes": [
       "gene:hgnc:3582"
     ],
-    "location": "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My",
+    "location": [
+      "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -8140,12 +7570,11 @@
     "genes": [
       "gene:hgnc:3582"
     ],
-    "location": "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My",
+    "location": [
+      "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -8210,12 +7639,11 @@
     "genes": [
       "gene:hgnc:7127"
     ],
-    "location": "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+    "location": [
+      "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8280,12 +7708,11 @@
     "genes": [
       "gene:hgnc:7127"
     ],
-    "location": "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1",
+    "location": [
+      "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8350,12 +7777,11 @@
     "genes": [
       "gene:hgnc:7230"
     ],
-    "location": "ga4gh:SL.vhVbFtMSTcP67F5L_w7taSByAqV3LNSP",
+    "location": [
+      "ga4gh:SL.vhVbFtMSTcP67F5L_w7taSByAqV3LNSP"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -8420,12 +7846,11 @@
     "genes": [
       "gene:hgnc:7230"
     ],
-    "location": "ga4gh:SL.vhVbFtMSTcP67F5L_w7taSByAqV3LNSP",
+    "location": [
+      "ga4gh:SL.vhVbFtMSTcP67F5L_w7taSByAqV3LNSP"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -8490,12 +7915,11 @@
     "genes": [
       "gene:hgnc:7652"
     ],
-    "location": "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq",
+    "location": [
+      "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "8"
@@ -8560,12 +7984,11 @@
     "genes": [
       "gene:hgnc:7652"
     ],
-    "location": "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq",
+    "location": [
+      "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "8"
@@ -8628,12 +8051,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "c-Met"
@@ -8662,12 +8082,9 @@
     "genes": [
       "gene:hgnc:6407"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -8726,21 +8143,12 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Translocation"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [
+      "ga4gh:SL.EZBq61rtMPyE8oKI1VnxE0qxTfwvAIne",
+      "ga4gh:SL.LlQ30oZsqDqzhy8f4ICLOTVftFbP1pUz"
+    ],
+    "biomarker_type": "Translocation",
+    "extensions": []
   },
   {
     "id": "bmkr:173",
@@ -8752,12 +8160,11 @@
     "genes": [
       "gene:hgnc:3430"
     ],
-    "location": "ga4gh:SL.gpkyq48rchUXfr_dVmt7BXbjBYofmUvG",
+    "location": [
+      "ga4gh:SL.gpkyq48rchUXfr_dVmt7BXbjBYofmUvG"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -8820,12 +8227,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -8852,12 +8256,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -8886,12 +8287,9 @@
     "genes": [
       "gene:hgnc:4764"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "1"
@@ -8952,12 +8350,9 @@
     "genes": [
       "gene:hgnc:7910"
     ],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "5"
@@ -9016,12 +8411,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -9050,12 +8442,11 @@
     "genes": [
       "gene:hgnc:3236"
     ],
-    "location": "ga4gh:SL.b3meBbaTpxQkRJWz_R-9NBInpqg-Hmhg",
+    "location": [
+      "ga4gh:SL.b3meBbaTpxQkRJWz_R-9NBInpqg-Hmhg"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -9120,12 +8511,11 @@
     "genes": [
       "gene:hgnc:12687"
     ],
-    "location": "ga4gh:SL.4ZL9FBDsZlXDnOHo7yDCm6OamB2fFdbe",
+    "location": [
+      "ga4gh:SL.4ZL9FBDsZlXDnOHo7yDCm6OamB2fFdbe"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -9188,12 +8578,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -9220,13 +8607,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Haplotype genotype"
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Haplotype genotype",
+    "extensions": []
   },
   {
     "id": "bmkr:183",
@@ -9236,21 +8619,12 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Translocation"
-      },
-      {
-        "name": "locus",
-        "value": null
-      }
-    ]
+    "location": [
+      "ga4gh:SL.nD5PUHO8V4FDc7rR0P162xssNmIggOXG",
+      "ga4gh:SL.Qtjsk-OhOGoPODsXUNw-Ap2h5qp-YRB7"
+    ],
+    "biomarker_type": "Translocation",
+    "extensions": []
   },
   {
     "id": "bmkr:184",
@@ -9260,12 +8634,9 @@
     "copyChange": null,
     "function": null,
     "genes": [],
-    "location": null,
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CCND1"

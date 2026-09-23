@@ -28,68 +28,14 @@
         "description": "Foreign key to `mappings.id`."
       }
     },
-    "extensions": {
+    "therapy_strategy": {
       "type": "array",
       "items": {
-        "anyOf": [
-          {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "therapy_strategy"
-              },
-              "value": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "therapy_type"
-              },
-              "value": {
-                "type": "string"
-              }
-            }
-          }
-        ]
-      },
-      "allOf": [
-        {
-          "contains": {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "therapy_strategy"
-              },
-              "value": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        {
-          "contains": {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "therapy_type"
-              },
-              "value": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      ]
+        "type": "string"
+      }
+    },
+    "therapy_type": {
+      "type": "string"
     }
   },
   "required": [
@@ -98,7 +44,8 @@
     "name",
     "primary_coding_id",
     "mappings",
-    "extensions"
+    "therapy_strategy",
+    "therapy_type"
   ],
   "additionalProperties": false
 }

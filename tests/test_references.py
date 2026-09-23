@@ -277,21 +277,19 @@ def test_biomarker_allele_ids_resolve(data):
 
 def test_biomarker_location_ids_resolve(data):
     """
-    Ensures every non-null biomarker `location` resolves to a record in sequence_locations.json
+    Ensures every biomarker `location` id resolves to a record in sequence_locations.json
     """
     for biomarker in data["biomarkers"]:
-        location_id = biomarker["location"]
-        if location_id is None:
-            continue
-        matched = json_utils.get_records_by_key_value(
-            records=data["sequence_locations"], key="id", value=location_id
-        )
-        error_message = (
-            f"Biomarker location id does not resolve to a sequence_location record.\n"
-            f"  - Biomarker ID: {biomarker['id']}\n"
-            f"  - Location ID: {location_id}"
-        )
-        assert len(matched) == 1, error_message
+        for location_id in biomarker["location"]:
+            matched = json_utils.get_records_by_key_value(
+                records=data["sequence_locations"], key="id", value=location_id
+            )
+            error_message = (
+                f"Biomarker location id does not resolve to a sequence_location record.\n"
+                f"  - Biomarker ID: {biomarker['id']}\n"
+                f"  - Location ID: {location_id}"
+            )
+            assert len(matched) == 1, error_message
 
 
 def test_allele_location_ids_resolve(data):

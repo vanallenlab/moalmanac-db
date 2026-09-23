@@ -13,10 +13,6 @@ REFERENCED_ROOT = pathlib.Path("referenced")
 DEREFERENCED_ROOT = pathlib.Path("dereferenced")
 
 
-def extension_value(record, name):
-    return next(e["value"] for e in record["extensions"] if e["name"] == name)
-
-
 def failures(validator_, records):
     """Returns `id: message` for each record that fails validation."""
     out = []
@@ -103,7 +99,7 @@ def test_biomarker_extensions_must_match_type(data, registry):
     somatic = first_record(
         data,
         "biomarkers",
-        lambda r: extension_value(r, "biomarker_type") == "Somatic Variant",
+        lambda r: r["biomarker_type"] == "Somatic variant",
     )
     missing = copy.deepcopy(somatic)
     missing["extensions"] = [e for e in missing["extensions"] if e["name"] != "exon"]
@@ -232,10 +228,7 @@ def test_gene_fusion_requires_partner_gene(data, registry):
     fusion = first_record(
         data,
         "biomarkers",
-        lambda r: (
-            extension_value(r, "biomarker_type") == "Rearrangement"
-            and extension_value(r, "rearrangement_type") == "Fusion"
-        ),
+        lambda r: r["biomarker_type"] == "Gene fusion",
     )
     fusion["genes"] = []
     assert failures(check, [fusion])
@@ -243,11 +236,7 @@ def test_gene_fusion_requires_partner_gene(data, registry):
     other = first_record(
         data,
         "biomarkers",
-        lambda r: (
-            extension_value(r, "biomarker_type") == "Rearrangement"
-            and extension_value(r, "rearrangement_type") != "Fusion"
-            and not r["genes"]
-        ),
+        lambda r: r["biomarker_type"] == "Translocation" and not r["genes"],
     )
     assert not failures(check, [other])
 
