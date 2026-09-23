@@ -1,7 +1,14 @@
+"""Download a versioned snapshot of OncoTree tumor type data.
+
+Fetches data for the given OncoTree version from the public OncoTree API's
+flat or tree endpoint and writes it to datasources/{version}_{mode}.json.
+
+Usage: python datasources/scripts/download_oncotree.py --mode flat --version oncotree_2025_10_03
+"""
+
 import argparse
 import json
 import pathlib
-import sys
 
 import requests
 
@@ -30,7 +37,7 @@ def download_oncotree(mode: str, version: str) -> dict:
     elif mode == "tree":
         request = ONCOTREE_TREE_URL
     else:
-        sys.exit(f"{mode} is not either 'flat' or 'tree'")
+        raise ValueError(f"mode must be 'flat' or 'tree', got {mode!r}")
 
     response = requests.get(
         request,
@@ -40,11 +47,12 @@ def download_oncotree(mode: str, version: str) -> dict:
     return response.json()
 
 
-def main(mode:str, version: str):
+def main(mode: str, version: str):
     """
     Downloads an OncoTree version and writes it to datasources/{version}_{mode}.json.
 
     Args:
+        mode (str): OncoTree endpoint to use; "flat" or "tree".
         version (str): OncoTree version to download, e.g. "oncotree_2025_10_03".
     """
     data = download_oncotree(
@@ -70,10 +78,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-m",
         "--mode",
-        choices=[
-            "flat",
-            "tree"
-        ],
+        choices=["flat", "tree"],
         help="OncoTree endpoint to use. Choices: flat or tree",
         required=True,
     )
@@ -84,7 +89,4 @@ if __name__ == "__main__":
         help="OncoTree version to download, e.g. oncotree_2025_10_03",
     )
     args = parser.parse_args()
-    main(
-        mode=args.mode,
-        version=args.version
-    )
+    main(mode=args.mode, version=args.version)

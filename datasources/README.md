@@ -1,4 +1,4 @@
-Datasources used for codings.
+Datasources used for codings. Documentation in this README are written as if the scripts are being run from the repository's root directory.
 
 ## NCI Thesaurus
 
@@ -6,10 +6,7 @@ Datasources used for codings.
 
 ## OncoTree
 
-[OncoTree](https://oncotree.mskcc.org) is used for secondary codings of cancer types. We use the [/api/tumorTypes](https://oncotree.mskcc.org/swagger/index.html#/TumorTypes/get_api_tumorTypes) endpoint.
-
-Fetches the JSON tree for the given OncoTree version from the public OncoTree
-API and writes it to datasources/{version}_tree.json.
+[OncoTree](https://oncotree.mskcc.org) is used for secondary codings of cancer types. Specifically, the [/api/tumorTypes](https://oncotree.mskcc.org/swagger/index.html#/TumorTypes/get_api_tumorTypes) (flat) endpoint or the [/api/tumorTypes/tree](https://oncotree.mskcc.org/swagger/index.html#/TumorTypes/get_api_tumorTypes_tree) (tree) endpoint are used for the given OncoTree version from the public OncoTree API. The response is written to datasources/{version}_{mode}.json.
 
 ### Usage
 
@@ -23,5 +20,5 @@ Required arguments:
 Example:
 
 ```bash
-python download_oncotree.py --mode flat --version oncotree_2025_10_03
+python datasources/scripts/download_oncotree.py --mode flat --version oncotree_2025_10_03
 ```
