@@ -2,7 +2,21 @@ Datasources used for codings. Documentation in this README are written as if the
 
 ## NCI Thesaurus
 
+The [NCI Thesaurus](https://ncithesaurus.nci.nih.gov) is used for codings of diseases, drugs, and other concepts. The flat file archive for the given NCI Thesaurus version is downloaded from the [NCI EVS FTP archive](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/archive/), extracted, and written to datasources/{version}_Thesaurus.txt.
 
+### Usage
+
+Required arguments:
+
+```bash
+--version, -v <string>  NCI Thesaurus version to download; e.g., "26.08e"
+```
+
+Example:
+
+```bash
+python datasources/scripts/download_nci_thesaurus.py --version 26.08e
+```
 
 ## OncoTree
 
