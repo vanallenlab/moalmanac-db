@@ -105,10 +105,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:COADREAD",
+      "id": "dis:ncit:C5105",
       "conceptType": "Disease",
       "name": "Colorectal Adenocarcinoma",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:COADREAD",
+            "code": "COADREAD",
+            "name": "Colorectal Adenocarcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Colorectal+Adenocarcinoma+%28COADREAD%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -117,13 +131,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:COADREAD",
-        "code": "COADREAD",
+        "id": "coding:ncit:C5105",
+        "code": "C5105",
         "name": "Colorectal Adenocarcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=COADREAD"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C5105"
         ]
       }
     },
@@ -208,7 +222,7 @@
             "code": "C1647",
             "name": "Trastuzumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
             ]
@@ -291,7 +305,7 @@
             "code": "C77896",
             "name": "Tucatinib",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C77896"
             ]
@@ -556,7 +570,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

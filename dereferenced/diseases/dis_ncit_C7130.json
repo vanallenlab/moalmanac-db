@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C7130",
+  "conceptType": "Disease",
+  "name": "Intracholecystic Papillary Neoplasm",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:ICPN",
+        "code": "ICPN",
+        "name": "Intracholecystic Papillary Neoplasm",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Intracholecystic+Papillary+Neoplasm+%28ICPN%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C7130",
+    "code": "C7130",
+    "name": "Intracholecystic Papillary Neoplasm",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7130"
+    ]
+  }
+}

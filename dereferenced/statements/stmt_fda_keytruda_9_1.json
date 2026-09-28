@@ -92,10 +92,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:CESC",
+      "id": "dis:ncit:C4028",
       "conceptType": "Disease",
       "name": "Cervical Squamous Cell Carcinoma",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:CESC",
+            "code": "CESC",
+            "name": "Cervical Squamous Cell Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Cervical+Squamous+Cell+Carcinoma+%28CESC%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -104,13 +118,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:CESC",
-        "code": "CESC",
+        "id": "coding:ncit:C4028",
+        "code": "C4028",
         "name": "Cervical Squamous Cell Carcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CESC"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4028"
         ]
       }
     },
@@ -195,7 +209,7 @@
             "code": "C376",
             "name": "Cisplatin",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C376"
             ]
@@ -278,7 +292,7 @@
             "code": "C1411",
             "name": "Paclitaxel",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
             ]
@@ -361,7 +375,7 @@
             "code": "C106432",
             "name": "Pembrolizumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
             ]
@@ -420,7 +434,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

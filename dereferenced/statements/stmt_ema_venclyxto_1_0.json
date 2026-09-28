@@ -110,15 +110,28 @@
       "name": "Chronic Lymphocytic Leukemia",
       "mappings": [
         {
+          "relation": "closeMatch",
+          "coding": {
+            "id": "coding:ncit:C7540",
+            "code": "C7540",
+            "name": "Small Lymphocytic Lymphoma",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7540"
+            ]
+          }
+        },
+        {
           "relation": "broadMatch",
           "coding": {
             "id": "coding:oncotree:CLLSLL",
             "code": "CLLSLL",
             "name": "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
             "system": "https://oncotree.mskcc.org",
-            "systemVersion": "oncotree_2021_11_02",
+            "systemVersion": "oncotree_2025_10_03",
             "iris": [
-              "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CLLSLL"
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Lymphocytic+Leukemia%2FSmall+Lymphocytic+Lymphoma+%28CLLSLL%29"
             ]
           }
         }
@@ -135,7 +148,7 @@
         "code": "C3163",
         "name": "Chronic Lymphocytic Leukemia",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3163"
         ]
@@ -218,7 +231,7 @@
         "code": "C103147",
         "name": "Venetoclax",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C103147"
         ]
@@ -346,7 +359,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

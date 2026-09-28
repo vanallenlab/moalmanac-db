@@ -4,6 +4,19 @@
   "description": "The European Medicines Agency (EMA) has authorized bosutinib as for the treatment of adult and pediatric patients aged 6 years and older with chronic phase Philadelphia chromosome-positive chronic myelogenous leukemia (Ph+ CML) previously treated with one or more tyrosine kinase inhibitors and for whom imatinib, nilotinib, and dasatinib are not considered appropriate treatment options.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-09-28:0",
+      "type": "Contribution",
+      "description": "Deprecated statements when consolidating CML and CML Ph+ disease codings.",
+      "date": "2026-09-28",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2025-08-29:2",
       "type": "Contribution",
       "description": "On 2025-08-26, the EMA published an EPAR - Assessment report - Variation that revised indications for Bosulif (bosutinib) to support pediatric patients with chronic phase Ph+ CML.",
@@ -97,7 +110,7 @@
   ],
   "direction": "supports",
   "proposition": {
-    "id": "prop:vtxr:545",
+    "id": "prop:vtxr:47",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictsSensitivityTo",
     "subjectVariant": {
@@ -105,10 +118,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:CMLBCRABL1",
+      "id": "dis:ncit:C3174",
       "conceptType": "Disease",
       "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:CMLBCRABL1",
+            "code": "CMLBCRABL1",
+            "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Myeloid+Leukemia%2C+BCR-ABL1%2B+%28CMLBCRABL1%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -117,13 +144,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:CMLBCRABL1",
-        "code": "CMLBCRABL1",
-        "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C3174",
+        "code": "C3174",
+        "name": "Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CMLBCRABL1"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3174"
         ]
       }
     },
@@ -204,7 +231,7 @@
         "code": "C60809",
         "name": "Bosutinib",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C60809"
         ]
@@ -348,7 +375,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
@@ -357,7 +384,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Active",
+      "value": "Deprecated",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {

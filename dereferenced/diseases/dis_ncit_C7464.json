@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C7464",
+  "conceptType": "Disease",
+  "name": "Acute Leukemias of Ambiguous Lineage",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:ALAL",
+        "code": "ALAL",
+        "name": "Acute Leukemias of Ambiguous Lineage",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Acute+Leukemias+of+Ambiguous+Lineage+%28ALAL%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C7464",
+    "code": "C7464",
+    "name": "Acute Leukemia of Ambiguous Lineage",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7464"
+    ]
+  }
+}

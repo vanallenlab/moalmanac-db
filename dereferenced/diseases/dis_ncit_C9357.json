@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C9357",
+  "conceptType": "Disease",
+  "name": "Hodgkin Lymphoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:HL",
+        "code": "HL",
+        "name": "Hodgkin Lymphoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Hodgkin+Lymphoma+%28HL%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C9357",
+    "code": "C9357",
+    "name": "Hodgkin Lymphoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9357"
+    ]
+  }
+}

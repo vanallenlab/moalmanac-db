@@ -105,10 +105,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:UCEC",
+      "id": "dis:ncit:C7558",
       "conceptType": "Disease",
       "name": "Endometrial Carcinoma",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:UCEC",
+            "code": "UCEC",
+            "name": "Endometrial Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Endometrial+Carcinoma+%28UCEC%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -117,13 +131,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:UCEC",
-        "code": "UCEC",
+        "id": "coding:ncit:C7558",
+        "code": "C7558",
         "name": "Endometrial Carcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UCEC"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7558"
         ]
       }
     },
@@ -208,7 +222,7 @@
             "code": "C103194",
             "name": "Durvalumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C103194"
             ]
@@ -291,7 +305,7 @@
             "code": "C71721",
             "name": "Olaparib",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71721"
             ]
@@ -338,7 +352,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

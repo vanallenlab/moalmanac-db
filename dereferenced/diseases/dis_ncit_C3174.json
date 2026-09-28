@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3174",
+  "conceptType": "Disease",
+  "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:CMLBCRABL1",
+        "code": "CMLBCRABL1",
+        "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Myeloid+Leukemia%2C+BCR-ABL1%2B+%28CMLBCRABL1%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3174",
+    "code": "C3174",
+    "name": "Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3174"
+    ]
+  }
+}

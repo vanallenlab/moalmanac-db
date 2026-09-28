@@ -4,6 +4,19 @@
   "description": "The Republic of Ireland's Health Service Executive (HSE) has approved bosutinib for reimbursement as a treatment option for the treatment of adult patients with chronic phase (CP), accelerated phase (AP), and blast phase (BP) Philadelphia chromosome positive chronic myelogenous leukemia (Ph+ CML) previously treated with one or more tyrosine kinase inhibitor(s) and for whom imatinib, nilotonib, and dasatinib are not considered appropriate treatment options.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-09-28:0",
+      "type": "Contribution",
+      "description": "Deprecated statements when consolidating CML and CML Ph+ disease codings.",
+      "date": "2026-09-28",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2026-08-02:0",
       "type": "Contribution",
       "description": "Initial curation of into moalmanac-db",
@@ -109,7 +122,7 @@
   ],
   "direction": "supports",
   "proposition": {
-    "id": "prop:vtxr:545",
+    "id": "prop:vtxr:47",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictsSensitivityTo",
     "subjectVariant": {
@@ -117,10 +130,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:CMLBCRABL1",
+      "id": "dis:ncit:C3174",
       "conceptType": "Disease",
       "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:CMLBCRABL1",
+            "code": "CMLBCRABL1",
+            "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Myeloid+Leukemia%2C+BCR-ABL1%2B+%28CMLBCRABL1%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -129,13 +156,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:CMLBCRABL1",
-        "code": "CMLBCRABL1",
-        "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C3174",
+        "code": "C3174",
+        "name": "Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CMLBCRABL1"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3174"
         ]
       }
     },
@@ -216,7 +243,7 @@
         "code": "C60809",
         "name": "Bosutinib",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C60809"
         ]
@@ -360,7 +387,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
@@ -369,7 +396,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Active",
+      "value": "Deprecated",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {

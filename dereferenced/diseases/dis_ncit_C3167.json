@@ -1,0 +1,50 @@
+{
+  "id": "dis:ncit:C3167",
+  "conceptType": "Disease",
+  "name": "Acute Lymphoblastic Leukemia",
+  "mappings": [
+    {
+      "relation": "narrowMatch",
+      "coding": {
+        "id": "coding:oncotree:BLL",
+        "code": "BLL",
+        "name": "B-Lymphoblastic Leukemia/Lymphoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=B-Lymphoblastic+Leukemia%2FLymphoma+%28BLL%29"
+        ]
+      }
+    },
+    {
+      "relation": "narrowMatch",
+      "coding": {
+        "id": "coding:oncotree:TLL",
+        "code": "TLL",
+        "name": "T-Lymphoblastic Leukemia/Lymphoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=T-Lymphoblastic+Leukemia%2FLymphoma+%28TLL%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3167",
+    "code": "C3167",
+    "name": "Acute Lymphoblastic Leukemia",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3167"
+    ]
+  }
+}

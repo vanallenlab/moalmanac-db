@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C132067",
+  "conceptType": "Disease",
+  "name": "Low-Grade Glioma, NOS",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:LGGNOS",
+        "code": "LGGNOS",
+        "name": "Low-Grade Glioma, NOS",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Low-Grade+Glioma%2C+NOS+%28LGGNOS%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C132067",
+    "code": "C132067",
+    "name": "Low Grade Glioma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C132067"
+    ]
+  }
+}

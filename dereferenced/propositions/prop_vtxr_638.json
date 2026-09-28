@@ -7,10 +7,24 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:oncotree:NSCLC",
+    "id": "dis:ncit:C2926",
     "conceptType": "Disease",
     "name": "Non-Small Cell Lung Cancer",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:NSCLC",
+          "code": "NSCLC",
+          "name": "Non-Small Cell Lung Cancer",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Small+Cell+Lung+Cancer+%28NSCLC%29"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "solid_tumor",
@@ -19,13 +33,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:oncotree:NSCLC",
-      "code": "NSCLC",
-      "name": "Non-Small Cell Lung Cancer",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "id": "coding:ncit:C2926",
+      "code": "C2926",
+      "name": "Lung Non-Small Cell Carcinoma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NSCLC"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2926"
       ]
     }
   },
@@ -110,7 +124,7 @@
           "code": "C1282",
           "name": "Carboplatin",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
           ]
@@ -193,7 +207,7 @@
           "code": "C68814",
           "name": "Nivolumab",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68814"
           ]
@@ -276,7 +290,7 @@
           "code": "C1411",
           "name": "Paclitaxel",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
           ]

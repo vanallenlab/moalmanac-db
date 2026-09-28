@@ -4,6 +4,19 @@
   "description": "Health Canada approved nilotinib for The treatment of chronic phase (CP) and accelerated phase (AP) Philadelphia chromosome positive chronic myeloid leukemia (Ph+CML) in adult patients resistant to or intolerant of at least one prior therapy including imatinib",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-09-28:0",
+      "type": "Contribution",
+      "description": "Deprecated statements when consolidating CML and CML Ph+ disease codings.",
+      "date": "2026-09-28",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-10-30:0",
       "type": "Contribution",
       "description": "Initial access of FDA approvals",
@@ -84,7 +97,7 @@
   ],
   "direction": "supports",
   "proposition": {
-    "id": "prop:vtxr:222",
+    "id": "prop:vtxr:221",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictsSensitivityTo",
     "subjectVariant": {
@@ -92,10 +105,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:CMLBCRABL1",
+      "id": "dis:ncit:C3174",
       "conceptType": "Disease",
       "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:CMLBCRABL1",
+            "code": "CMLBCRABL1",
+            "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Myeloid+Leukemia%2C+BCR-ABL1%2B+%28CMLBCRABL1%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -104,13 +131,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:CMLBCRABL1",
-        "code": "CMLBCRABL1",
-        "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C3174",
+        "code": "C3174",
+        "name": "Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CMLBCRABL1"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3174"
         ]
       }
     },
@@ -191,7 +218,7 @@
         "code": "C48375",
         "name": "Nilotinib",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C48375"
         ]
@@ -335,7 +362,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]
@@ -344,7 +371,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Active",
+      "value": "Deprecated",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {

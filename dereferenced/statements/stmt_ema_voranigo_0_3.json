@@ -105,10 +105,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:ASTR",
+      "id": "dis:ncit:C60781",
       "conceptType": "Disease",
       "name": "Astrocytoma",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:ASTR",
+            "code": "ASTR",
+            "name": "Astrocytoma, IDH-Mutant",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Astrocytoma%2C+IDH-Mutant+%28ASTR%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -117,13 +131,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:ASTR",
-        "code": "ASTR",
+        "id": "coding:ncit:C60781",
+        "code": "C60781",
         "name": "Astrocytoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ASTR"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C60781"
         ]
       }
     },
@@ -178,7 +192,7 @@
         "code": "C152914",
         "name": "Vorasidenib",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C152914"
         ]
@@ -375,7 +389,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

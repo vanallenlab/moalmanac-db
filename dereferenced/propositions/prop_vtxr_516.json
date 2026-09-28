@@ -7,10 +7,24 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:oncotree:ICPN",
+    "id": "dis:ncit:C7130",
     "conceptType": "Disease",
     "name": "Intracholecystic Papillary Neoplasm",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:ICPN",
+          "code": "ICPN",
+          "name": "Intracholecystic Papillary Neoplasm",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Intracholecystic+Papillary+Neoplasm+%28ICPN%29"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "solid_tumor",
@@ -19,13 +33,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:oncotree:ICPN",
-      "code": "ICPN",
+      "id": "coding:ncit:C7130",
+      "code": "C7130",
       "name": "Intracholecystic Papillary Neoplasm",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ICPN"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7130"
       ]
     }
   },
@@ -80,7 +94,7 @@
       "code": "C130010",
       "name": "Zanidatamab",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C130010"
       ]

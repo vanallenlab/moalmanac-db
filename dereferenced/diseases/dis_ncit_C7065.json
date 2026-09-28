@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C7065",
+  "conceptType": "Disease",
+  "name": "Lymphocytic Neoplasm",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:LNM",
+        "code": "LNM",
+        "name": "Lymphoid Neoplasm",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Lymphoid+Neoplasm+%28LNM%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C7065",
+    "code": "C7065",
+    "name": "Lymphocytic Neoplasm",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7065"
+    ]
+  }
+}
