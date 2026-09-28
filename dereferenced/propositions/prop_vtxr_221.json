@@ -7,10 +7,24 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:oncotree:CML",
+    "id": "dis:ncit:C3174",
     "conceptType": "Disease",
-    "name": "Chronic Myelogenous Leukemia",
-    "mappings": [],
+    "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:CMLBCRABL1",
+          "code": "CMLBCRABL1",
+          "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Myeloid+Leukemia%2C+BCR-ABL1%2B+%28CMLBCRABL1%29"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "solid_tumor",
@@ -19,13 +33,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:oncotree:CML",
-      "code": "CML",
-      "name": "Chronic Myelogenous Leukemia",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "id": "coding:ncit:C3174",
+      "code": "C3174",
+      "name": "Chronic Myeloid Leukemia, BCR-ABL1 Positive",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=CML"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3174"
       ]
     }
   },
@@ -106,7 +120,7 @@
       "code": "C48375",
       "name": "Nilotinib",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C48375"
       ]

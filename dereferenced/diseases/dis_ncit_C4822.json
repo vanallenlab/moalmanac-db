@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C4822",
+  "conceptType": "Disease",
+  "name": "High-Grade Glioma, NOS",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:HGGNOS",
+        "code": "HGGNOS",
+        "name": "High-Grade Glioma, NOS",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=High-Grade+Glioma%2C+NOS+%28HGGNOS%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C4822",
+    "code": "C4822",
+    "name": "Malignant Glioma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4822"
+    ]
+  }
+}

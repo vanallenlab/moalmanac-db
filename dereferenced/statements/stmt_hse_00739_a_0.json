@@ -104,10 +104,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:ESCA",
+      "id": "dis:ncit:C4025",
       "conceptType": "Disease",
       "name": "Esophageal Adenocarcinoma",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:ESCA",
+            "code": "ESCA",
+            "name": "Esophageal Adenocarcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Esophageal+Adenocarcinoma+%28ESCA%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -116,13 +130,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:ESCA",
-        "code": "ESCA",
+        "id": "coding:ncit:C4025",
+        "code": "C4025",
         "name": "Esophageal Adenocarcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ESCA"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4025"
         ]
       }
     },
@@ -207,7 +221,7 @@
             "code": "C376",
             "name": "Cisplatin",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C376"
             ]
@@ -290,7 +304,7 @@
             "code": "C106432",
             "name": "Pembrolizumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
             ]
@@ -373,7 +387,7 @@
             "code": "C505",
             "name": "Fluorouracil",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
             ]
@@ -432,7 +446,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

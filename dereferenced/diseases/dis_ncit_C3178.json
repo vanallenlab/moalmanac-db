@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3178",
+  "conceptType": "Disease",
+  "name": "Chronic Myelomonocytic Leukemia",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:CMML",
+        "code": "CMML",
+        "name": "Chronic Myelomonocytic Leukemia",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Chronic+Myelomonocytic+Leukemia+%28CMML%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3178",
+    "code": "C3178",
+    "name": "Chronic Myelomonocytic Leukemia",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3178"
+    ]
+  }
+}

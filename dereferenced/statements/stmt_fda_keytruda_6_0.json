@@ -118,10 +118,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:GEJ",
+      "id": "dis:ncit:C9296",
       "conceptType": "Disease",
       "name": "Adenocarcinoma of the Gastroesophageal Junction",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:GEJ",
+            "code": "GEJ",
+            "name": "Adenocarcinoma of the Gastroesophageal Junction",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Adenocarcinoma+of+the+Gastroesophageal+Junction+%28GEJ%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -130,13 +144,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:GEJ",
-        "code": "GEJ",
-        "name": "Adenocarcinoma of the Gastroesophageal Junction",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C9296",
+        "code": "C9296",
+        "name": "Gastroesophageal Junction Adenocarcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=GEJ"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9296"
         ]
       }
     },
@@ -221,7 +235,7 @@
             "code": "C376",
             "name": "Cisplatin",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C376"
             ]
@@ -304,7 +318,7 @@
             "code": "C106432",
             "name": "Pembrolizumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
             ]
@@ -387,7 +401,7 @@
             "code": "C1647",
             "name": "Trastuzumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
             ]
@@ -470,7 +484,7 @@
             "code": "C505",
             "name": "Fluorouracil",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
             ]
@@ -561,7 +575,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

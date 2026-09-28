@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C133187",
+  "conceptType": "Disease",
+  "name": "Head and Neck Mucosal Melanoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:HNMUCM",
+        "code": "HNMUCM",
+        "name": "Head and Neck Mucosal Melanoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Head+and+Neck+Mucosal+Melanoma+%28HNMUCM%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C133187",
+    "code": "C133187",
+    "name": "Head and Neck Mucosal Melanoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C133187"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3242",
+  "conceptType": "Disease",
+  "name": "Multiple Myeloma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:PCM",
+        "code": "PCM",
+        "name": "Plasma Cell Myeloma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Plasma+Cell+Myeloma+%28PCM%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3242",
+    "code": "C3242",
+    "name": "Multiple Myeloma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3242"
+    ]
+  }
+}

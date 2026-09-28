@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3107",
+  "conceptType": "Disease",
+  "name": "Langerhans Cell Histiocytosis",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:LCH",
+        "code": "LCH",
+        "name": "Langerhans Cell Histiocytosis",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Langerhans+Cell+Histiocytosis+%28LCH%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3107",
+    "code": "C3107",
+    "name": "Langerhans Cell Histiocytosis",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3107"
+    ]
+  }
+}

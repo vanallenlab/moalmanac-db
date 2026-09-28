@@ -7,10 +7,24 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:oncotree:NHL",
+    "id": "dis:ncit:C3211",
     "conceptType": "Disease",
     "name": "Non-Hodgkin Lymphoma",
-    "mappings": [],
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:NHL",
+          "code": "NHL",
+          "name": "Non-Hodgkin Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Hodgkin+Lymphoma+%28NHL%29"
+          ]
+        }
+      }
+    ],
     "extensions": [
       {
         "name": "solid_tumor",
@@ -19,13 +33,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:oncotree:NHL",
-      "code": "NHL",
+      "id": "coding:ncit:C3211",
+      "code": "C3211",
       "name": "Non-Hodgkin Lymphoma",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=NHL"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3211"
       ]
     }
   },
@@ -110,7 +124,7 @@
           "code": "C1282",
           "name": "Carboplatin",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1282"
           ]
@@ -193,7 +207,7 @@
           "code": "C491",
           "name": "Etoposide",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C491"
           ]
@@ -276,7 +290,7 @@
           "code": "C564",
           "name": "Ifosfamide",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C564"
           ]
@@ -359,7 +373,7 @@
           "code": "C1702",
           "name": "Rituximab",
           "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "systemVersion": "26.08e",
           "iris": [
             "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1702"
           ]

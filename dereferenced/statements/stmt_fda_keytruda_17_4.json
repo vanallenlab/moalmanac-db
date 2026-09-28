@@ -92,10 +92,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:PSEC",
+      "id": "dis:ncit:C40023",
       "conceptType": "Disease",
       "name": "Peritoneal Serous Carcinoma",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "closeMatch",
+          "coding": {
+            "id": "coding:oncotree:PSEC",
+            "code": "PSEC",
+            "name": "Peritoneal Serous Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Peritoneal+Serous+Carcinoma+%28PSEC%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -104,13 +118,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:PSEC",
-        "code": "PSEC",
-        "name": "Peritoneal Serous Carcinoma",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C40023",
+        "code": "C40023",
+        "name": "Primary Peritoneal Serous Adenocarcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=PSEC"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C40023"
         ]
       }
     },
@@ -195,7 +209,7 @@
             "code": "C1411",
             "name": "Paclitaxel",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
             ]
@@ -278,7 +292,7 @@
             "code": "C106432",
             "name": "Pembrolizumab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
             ]
@@ -337,7 +351,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

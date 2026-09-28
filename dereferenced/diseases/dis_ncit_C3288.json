@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3288",
+  "conceptType": "Disease",
+  "name": "Oligodendroglioma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:ODG",
+        "code": "ODG",
+        "name": "Oligodendroglioma, IDH-mutant, and 1p/19q-Codeleted",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Oligodendroglioma%2C+IDH-mutant%2C+and+1p%2F19q-Codeleted+%28ODG%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3288",
+    "code": "C3288",
+    "name": "Oligodendroglioma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3288"
+    ]
+  }
+}

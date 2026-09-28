@@ -105,10 +105,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:ALAL",
+      "id": "dis:ncit:C7464",
       "conceptType": "Disease",
       "name": "Acute Leukemias of Ambiguous Lineage",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:ALAL",
+            "code": "ALAL",
+            "name": "Acute Leukemias of Ambiguous Lineage",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Acute+Leukemias+of+Ambiguous+Lineage+%28ALAL%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -117,13 +131,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:ALAL",
-        "code": "ALAL",
-        "name": "Acute Leukemias of Ambiguous Lineage",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C7464",
+        "code": "C7464",
+        "name": "Acute Leukemia of Ambiguous Lineage",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALAL"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7464"
         ]
       }
     },
@@ -178,7 +192,7 @@
         "code": "C165776",
         "name": "Revumenib",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C165776"
         ]
@@ -271,7 +285,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

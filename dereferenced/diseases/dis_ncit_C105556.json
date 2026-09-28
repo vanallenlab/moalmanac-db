@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C105556",
+  "conceptType": "Disease",
+  "name": "Low-Grade Serous Ovarian Cancer",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:LGSOC",
+        "code": "LGSOC",
+        "name": "Low-Grade Serous Ovarian Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Low-Grade+Serous+Ovarian+Cancer+%28LGSOC%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C105556",
+    "code": "C105556",
+    "name": "Ovarian Low Grade Serous Adenocarcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C105556"
+    ]
+  }
+}

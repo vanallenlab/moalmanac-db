@@ -7,20 +7,20 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:oncotree:UM",
+    "id": "dis:ncit:C7712",
     "conceptType": "Disease",
     "name": "Uveal Melanoma",
     "mappings": [
       {
         "relation": "relatedMatch",
         "coding": {
-          "id": "coding:ncit:C7712",
-          "code": "C7712",
+          "id": "coding:oncotree:UM",
+          "code": "UM",
           "name": "Uveal Melanoma",
-          "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "25.01d",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7712"
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Uveal+Melanoma+%28UM%29"
           ]
         }
       }
@@ -33,13 +33,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:oncotree:UM",
-      "code": "UM",
+      "id": "coding:ncit:C7712",
+      "code": "C7712",
       "name": "Uveal Melanoma",
-      "system": "https://oncotree.mskcc.org",
-      "systemVersion": "oncotree_2021_11_02",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
       "iris": [
-        "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=UM"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7712"
       ]
     }
   },
@@ -120,7 +120,7 @@
       "code": "C94208",
       "name": "Tebentafusp",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C94208"
       ]

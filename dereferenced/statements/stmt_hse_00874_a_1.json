@@ -104,10 +104,37 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:ALL",
+      "id": "dis:ncit:C3167",
       "conceptType": "Disease",
-      "name": "Acute Lymphoid Leukemia",
-      "mappings": [],
+      "name": "Acute Lymphoblastic Leukemia",
+      "mappings": [
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:BLL",
+            "code": "BLL",
+            "name": "B-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=B-Lymphoblastic+Leukemia%2FLymphoma+%28BLL%29"
+            ]
+          }
+        },
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:TLL",
+            "code": "TLL",
+            "name": "T-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=T-Lymphoblastic+Leukemia%2FLymphoma+%28TLL%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -116,13 +143,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:ALL",
-        "code": "ALL",
-        "name": "Acute Lymphoid Leukemia",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "id": "coding:ncit:C3167",
+        "code": "C3167",
+        "name": "Acute Lymphoblastic Leukemia",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=ALL"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3167"
         ]
       }
     },
@@ -207,7 +234,7 @@
             "code": "C62091",
             "name": "Daunorubicin",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62091"
             ]
@@ -290,7 +317,7 @@
             "code": "C422",
             "name": "Dexamethasone",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C422"
             ]
@@ -375,7 +402,7 @@
             "code": "C62035",
             "name": "Imatinib",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
             ]
@@ -458,7 +485,7 @@
             "code": "C642",
             "name": "Methotrexate",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C642"
             ]
@@ -541,7 +568,7 @@
             "code": "C1702",
             "name": "Rituximab",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1702"
             ]
@@ -624,7 +651,7 @@
             "code": "C933",
             "name": "Vincristine",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C933"
             ]
@@ -802,7 +829,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

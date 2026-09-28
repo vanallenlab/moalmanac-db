@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C96156",
+  "conceptType": "Disease",
+  "name": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:HGNEC",
+        "code": "HGNEC",
+        "name": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=High-Grade+Neuroendocrine+Carcinoma+of+the+Colon+and+Rectum+%28HGNEC%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C96156",
+    "code": "C96156",
+    "name": "Colorectal Neuroendocrine Carcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96156"
+    ]
+  }
+}

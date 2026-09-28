@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C6881",
+  "conceptType": "Disease",
+  "name": "Intraductal Papillary Neoplasm of the Bile Duct",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:IPN",
+        "code": "IPN",
+        "name": "Intraductal Papillary Neoplasm of the Bile Duct",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Intraductal+Papillary+Neoplasm+of+the+Bile+Duct+%28IPN%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C6881",
+    "code": "C6881",
+    "name": "Bile Duct Intraductal Papillary Neoplasm",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C6881"
+    ]
+  }
+}

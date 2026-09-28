@@ -92,10 +92,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:PTCL",
+      "id": "dis:ncit:C4340",
       "conceptType": "Disease",
       "name": "Peripheral T-Cell lymphoma, NOS",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:PTCL",
+            "code": "PTCL",
+            "name": "Peripheral T-Cell lymphoma, NOS",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Peripheral+T-Cell+lymphoma%2C+NOS+%28PTCL%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -104,13 +118,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:PTCL",
-        "code": "PTCL",
-        "name": "Peripheral T-Cell lymphoma, NOS",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2025_04_08",
+        "id": "coding:ncit:C4340",
+        "code": "C4340",
+        "name": "Peripheral T-Cell Lymphoma, Not Otherwise Specified",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2025_04_08&field=NAME&search=Peripheral+T-Cell+lymphoma%2C+NOS+%28PTCL%29"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4340"
         ]
       }
     },
@@ -195,7 +209,7 @@
             "code": "C66944",
             "name": "Brentuximab Vedotin",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C66944"
             ]
@@ -278,7 +292,7 @@
             "code": "C405",
             "name": "Cyclophosphamide",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C405"
             ]
@@ -361,7 +375,7 @@
             "code": "C456",
             "name": "Doxorubicin",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C456"
             ]
@@ -444,7 +458,7 @@
             "code": "C770",
             "name": "Prednisone",
             "system": "https://evsexplore.semantics.cancer.gov",
-            "systemVersion": "25.01d",
+            "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C770"
             ]
@@ -503,7 +517,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

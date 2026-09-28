@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3246",
+  "conceptType": "Disease",
+  "name": "Mycosis Fungoides",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:MYCF",
+        "code": "MYCF",
+        "name": "Mycosis Fungoides",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Mycosis+Fungoides+%28MYCF%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3246",
+    "code": "C3246",
+    "name": "Mycosis Fungoides",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3246"
+    ]
+  }
+}

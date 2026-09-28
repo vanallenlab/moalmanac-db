@@ -105,10 +105,24 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:oncotree:GIST",
+      "id": "dis:ncit:C3868",
       "conceptType": "Disease",
       "name": "Gastrointestinal Stromal Tumor",
-      "mappings": [],
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:GIST",
+            "code": "GIST",
+            "name": "Gastrointestinal Stromal Tumor",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Gastrointestinal+Stromal+Tumor+%28GIST%29"
+            ]
+          }
+        }
+      ],
       "extensions": [
         {
           "name": "solid_tumor",
@@ -117,13 +131,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:oncotree:GIST",
-        "code": "GIST",
+        "id": "coding:ncit:C3868",
+        "code": "C3868",
         "name": "Gastrointestinal Stromal Tumor",
-        "system": "https://oncotree.mskcc.org",
-        "systemVersion": "oncotree_2021_11_02",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
         "iris": [
-          "https://oncotree.mskcc.org/?version=oncotree_2021_11_02&field=CODE&search=GIST"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3868"
         ]
       }
     },
@@ -206,7 +220,7 @@
         "code": "C62035",
         "name": "Imatinib",
         "system": "https://evsexplore.semantics.cancer.gov",
-        "systemVersion": "25.01d",
+        "systemVersion": "26.08e",
         "iris": [
           "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
         ]
@@ -350,7 +364,7 @@
       "code": "C25425",
       "name": "Approval",
       "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "25.01d",
+      "systemVersion": "26.08e",
       "iris": [
         "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
       ]

@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C6166",
+  "conceptType": "Disease",
+  "name": "Urethral Urothelial Carcinoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:UCU",
+        "code": "UCU",
+        "name": "Urethral Urothelial Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Urethral+Urothelial+Carcinoma+%28UCU%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C6166",
+    "code": "C6166",
+    "name": "Urethral Urothelial Carcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C6166"
+    ]
+  }
+}
