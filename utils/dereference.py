@@ -14,6 +14,14 @@ from utils import json_utils
 from utils import read
 from utils import write
 
+# Maps an indication's regulatory status to the status of its derived statements
+INDICATION_TO_STATEMENT_STATUS = {
+    "Approved": "Active",
+    "Accelerated": "Active",
+    "Superseded": "Superseded",
+    "Withdrawn": "Deprecated",
+}
+
 
 @dataclasses.dataclass
 class FKSingle:
@@ -1492,6 +1500,10 @@ def populate_statements_from_indications(
     statements associated with it, so that an indication and its statements carry identical
     values. The statement `description` is taken from the indication's `statement_description`.
 
+    Statements deprecated by a curator while their indication remains active are skipped,
+    so that curated fields (e.g. a contribution recording the deprecation) are preserved.
+    Statements deprecated because their indication was withdrawn continue to be synced.
+
     Args:
         indications (list[dict]): List of dictionaries of database indications.
         statements (list[dict]): List of dictionaries of database statements.
@@ -1506,10 +1518,20 @@ def populate_statements_from_indications(
             indication_record = json_utils.get_record_by_key_value(
                 records=indications, key="id", value=indication_id
             )
-            if indication_record:
-                statement["description"] = indication_record["statement_description"]
-                statement["reportedIn"] = list(indication_record["reportedIn"])
-                statement["contributions"] = list(indication_record["contributions"])
+            if not indication_record:
+                continue
+            indication_status = INDICATION_TO_STATEMENT_STATUS.get(
+                indication_record["status"]
+            )
+            curator_deprecated = (
+                statement.get("status") == "Deprecated"
+                and indication_status != "Deprecated"
+            )
+            if curator_deprecated:
+                continue
+            statement["description"] = indication_record["statement_description"]
+            statement["reportedIn"] = list(indication_record["reportedIn"])
+            statement["contributions"] = list(indication_record["contributions"])
     write.records(
         data=statements,
         file=os.path.join("referenced", "statements.json"),
@@ -1524,6 +1546,10 @@ def populate_statement_status(
     """
     Populates the status field for statements from the status field from the associated indication.
 
+    Statements already marked Deprecated keep that status, so a statement can be
+    deprecated while its indication remains active (e.g. after a disease recoding
+    makes it redundant). A statement is never made more active than its indication.
+
     Args:
         indications (list[dict]): List of dictionaries of database indications.
         statements (list[dict]): List of dictionaries of database statements.
@@ -1531,21 +1557,17 @@ def populate_statement_status(
     Returns:
         list[dict]: List of dictionaries of database statements, with status value copied from indications for statements associated with an indication.
     """
-    status_map = {
-        "Approved": "Active",
-        "Accelerated": "Active",
-        "Superseded": "Superseded",
-        "Withdrawn": "Deprecated",
-    }
-
     for statement in statements:
         indication_id = statement.get("indication_id", None)
         if indication_id:
             indication_record = json_utils.get_record_by_key_value(
                 records=indications, key="id", value=indication_id
             )
-            if indication_record:
-                statement["status"] = status_map.get(indication_record["status"])
+            # A curated Deprecated status takes precedence over the indication's
+            if indication_record and statement.get("status") != "Deprecated":
+                statement["status"] = INDICATION_TO_STATEMENT_STATUS.get(
+                    indication_record["status"]
+                )
         if "indication_id" in statement:
             statement["indication_id"] = statement.pop("indication_id")
     write.records(
