@@ -425,11 +425,23 @@
     "solid_tumor": false
   },
   {
-    "id": "dis:oncotree:MLN",
+    "id": "dis:ncit:C9290",
     "conceptType": "Disease",
-    "name": "Myeloid/Lymphoid Neoplasms",
-    "primary_coding_id": "coding:oncotree:MLN",
-    "mappings": [],
+    "name": "Myeloid Neoplasm",
+    "primary_coding_id": "coding:ncit:C9290",
+    "mappings": [
+      "map:ncit:C9290::oncotree:MNM"
+    ],
+    "solid_tumor": false
+  },
+  {
+    "id": "dis:ncit:C7065",
+    "conceptType": "Disease",
+    "name": "Lymphocytic Neoplasm",
+    "primary_coding_id": "coding:oncotree:C7065",
+    "mappings": [
+      "map:ncit:C7065::oncotree:LNM"
+    ],
     "solid_tumor": false
   },
   {
