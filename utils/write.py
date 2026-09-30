@@ -46,13 +46,14 @@ def dictionary(
         raise IOError(f"Failed to write to file {file}: {e}")
 
 
-def records(data: list[dict], file: str) -> None:
+def records(data: list[dict], file: str, quiet: bool = False) -> None:
     """
     Writes JSON from the input object of list[dict]
 
     Args:
         data (list[dict]): A object of type list with elements as dictionaries.
         file (str): The output file path.
+        quiet (bool): Suppress print statement if True
 
     Raises:
         TypeError: If the input is not a list of dictionaries.
@@ -74,6 +75,7 @@ def records(data: list[dict], file: str) -> None:
         # Write JSON string to the specified file
         with open(file, "w") as outfile:
             outfile.write(json_object)
-        print(f"JSON successfully written to {file}")
+        if not quiet:
+            print(f"JSON successfully written to {file}")
     except IOError as e:
         raise IOError(f"Failed to write to file {file}: {e}")

@@ -8,6 +8,7 @@ This directory contains a collection of utility scripts designed to facilitate t
 - [json_utils.py](#json_utilspy)
 - [read.py](#readpy)
 - [write.py](#writepy)
+- [vrs/](#vrs)
 
 ## dereference.py
 
@@ -84,5 +85,11 @@ python -m utils.dereference \
 [Back to table of contents](#table-of-contents)
 
 ## write.py
+
+[Back to table of contents](#table-of-contents)
+
+## vrs/
+
+Scripts that generate GA4GH VRS records (SequenceReference, SequenceLocation, Allele, per-exon and chromosome-arm locations) for new `referenced/` records. See [vrs/README.md](vrs/README.md).
 
 [Back to table of contents](#table-of-contents)
