@@ -8,12 +8,12 @@ indent-style = "space"
 fixable = ["ALL"]
 ignore = []
 select = [
-  "B",   # flake8-bugbear
+  "B",   # flake8-bugbear, flags likely bugs or design problems
   "COM", # use trailing commas
   "E",   # pycodestyle errors
   "F",   # pyflakes
   "I",   # isort
-  "SIM", # flake8-simplify
+  "SIM", # flake8-simplify, suggests simpler code structures
   "RUF", # ruff-native rules
   "UP",  # pyupgrade
   "W",   # pycodestyle warnings
@@ -22,3 +22,4 @@ select = [
 [tool.ruff.lint.isort]
 force-single-line = true
 split-on-trailing-comma = true
+
