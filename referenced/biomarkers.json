@@ -8654,5 +8654,34 @@
         "value": "Positive"
       }
     ]
+  },
+  {
+    "id": "bmkr:185",
+    "type": "CategoricalVariant",
+    "name": "PD-L1 < 1% IC",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
+    "extensions": [
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Immune cell staining (IC)"
+      },
+      {
+        "name": "equality",
+        "value": "<"
+      },
+      {
+        "name": "value",
+        "value": 0.01
+      }
+    ]
   }
 ]
