@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/function_consequences.schema.json",
+  "title": "FunctionConsequence",
+  "description": "The functional consequence of a variant, e.g. gain-of-function.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^func:so:\\d+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primary_coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "primary_coding_id"
+  ],
+  "additionalProperties": false
+}

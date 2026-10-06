@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/therapies.schema.json",
+  "title": "Therapy",
+  "description": "A therapeutic agent concept with its primary coding and mappings embedded.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^tx:ncit:C\\d+$"
+    },
+    "conceptType": {
+      "const": "Therapy"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primaryCoding": {
+      "$ref": "codings.schema.json"
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "$ref": "mappings.schema.json#/$defs/ConceptMapping"
+      }
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_strategy"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_type"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_strategy"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "therapy_type"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "conceptType",
+    "name",
+    "primaryCoding",
+    "mappings",
+    "extensions"
+  ],
+  "additionalProperties": false
+}

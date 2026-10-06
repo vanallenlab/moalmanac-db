@@ -1,0 +1,283 @@
+{
+  "id": "prop:vtxr:491",
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
+  "conditionQualifier": {
+    "id": "dis:ncit:C3288",
+    "conceptType": "Disease",
+    "name": "Oligodendroglioma",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:ODG",
+          "code": "ODG",
+          "name": "Oligodendroglioma, IDH-mutant, and 1p/19q-Codeleted",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Oligodendroglioma%2C+IDH-mutant%2C+and+1p%2F19q-Codeleted+%28ODG%29"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C3288",
+      "code": "C3288",
+      "name": "Oligodendroglioma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3288"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": "tx:ncit:C152914",
+    "conceptType": "Therapy",
+    "name": "Vorasidenib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:rxcui:2690647",
+          "code": "2690647",
+          "name": "vorasidenib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2690647"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:1735000",
+          "code": "1735000",
+          "name": "vorasidenib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1735000"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "IDH1/2 inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C152914",
+      "code": "C152914",
+      "name": "Vorasidenib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C152914"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:76",
+          "present": true,
+          "subject": {
+            "id": "bmkr:76",
+            "type": "CategoricalVariant",
+            "name": "IDH1 p.R132H",
+            "constraints": [
+              {
+                "type": "DefiningAlleleConstraint",
+                "allele": {
+                  "id": "ga4gh:VA.2VAvTmPON2L7JffxjE68jAmmmwxyzDpB",
+                  "type": "Allele",
+                  "name": "NP_005887.2:p.Arg132His",
+                  "aliases": [
+                    "NP_005887.2:p.R132H",
+                    "IDH1 p.R132H"
+                  ],
+                  "description": "VRS variation of NP_005887.2:p.Arg132His",
+                  "digest": "2VAvTmPON2L7JffxjE68jAmmmwxyzDpB",
+                  "expressions": [
+                    {
+                      "syntax": "hgvs.p",
+                      "value": "NP_005887.2:p.Arg132His",
+                      "extensions": [
+                        {
+                          "name": "hgvs.p_short",
+                          "value": "p.R132H"
+                        }
+                      ]
+                    }
+                  ],
+                  "location": {
+                    "id": "ga4gh:SL.c1wumiCWSPL2vagoeYClRf5Z1SuyrIdx",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Amino acid position 132 of the Refseq protein NP_005887.2, which is the protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4).",
+                    "digest": "c1wumiCWSPL2vagoeYClRf5Z1SuyrIdx",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+                      "type": "SequenceReference",
+                      "name": "NP_005887.2",
+                      "aliases": [
+                        "ensembl:ENSP00000260985.2",
+                        "ga4gh:SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+                        "refseq:NP_005887.2"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for IDH1 (refseq:NM_005896.4), corresponding to the Refseq protein accession NP_005887.2.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.VZMxTY2iB2G_EuwlpVZ0AnX6R-am08GZ",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 131,
+                    "end": 132,
+                    "sequence": "R"
+                  },
+                  "state": {
+                    "type": "LiteralSequenceExpression",
+                    "sequence": "H"
+                  }
+                },
+                "relations": []
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:5382",
+                  "conceptType": "Gene",
+                  "name": "IDH1",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:5382",
+                    "code": "HGNC:5382",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:5382"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000138413",
+                        "code": "ENSG00000138413",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000138413"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:3417",
+                        "code": "3417",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/3417"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_005896.4",
+                        "code": "NM_005896.4",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_005896.4"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "2"
+              },
+              {
+                "name": "start_position",
+                "value": 209113112
+              },
+              {
+                "name": "end_position",
+                "value": 209113112
+              },
+              {
+                "name": "reference_allele",
+                "value": "C"
+              },
+              {
+                "name": "alternate_allele",
+                "value": "T"
+              },
+              {
+                "name": "cdna_change",
+                "value": "c.395G>A"
+              },
+              {
+                "name": "protein_change",
+                "value": "p.R132H"
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Missense"
+              },
+              {
+                "name": "exon",
+                "value": 4
+              },
+              {
+                "name": "rsid",
+                "value": "rs121913500"
+              },
+              {
+                "name": "hgvsg",
+                "value": "2:g.209113112C>T"
+              },
+              {
+                "name": "hgvsc",
+                "value": "ENST00000345146.2:c.395G>A"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
+}

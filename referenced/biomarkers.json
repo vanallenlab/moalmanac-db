@@ -1,13 +1,15 @@
 [
   {
-    "id": 0,
+    "id": "bmkr:0",
     "type": "CategoricalVariant",
     "name": "CD30 +",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD30"
@@ -23,22 +25,20 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 1,
+    "id": "bmkr:1",
     "type": "CategoricalVariant",
     "name": "ER positive",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Estrogen receptor (ER)"
@@ -54,22 +54,20 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 2,
+    "id": "bmkr:2",
     "type": "CategoricalVariant",
     "name": "HER2-negative",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -85,22 +83,20 @@
       {
         "name": "value",
         "value": "Negative"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 3,
+    "id": "bmkr:3",
     "type": "CategoricalVariant",
     "name": "PR positive",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Progesterone receptor (PR)"
@@ -116,25 +112,24 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 4,
+    "id": "bmkr:4",
     "type": "CategoricalVariant",
     "name": "BARD1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      5
+      "gene:hgnc:952"
     ],
+    "location": [
+      "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -186,25 +181,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 5,
+    "id": "bmkr:5",
     "type": "CategoricalVariant",
     "name": "BRIP1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      11
+      "gene:hgnc:20473"
     ],
+    "location": [
+      "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -256,25 +250,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 6,
+    "id": "bmkr:6",
     "type": "CategoricalVariant",
     "name": "BRIP1 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      11
+      "gene:hgnc:20473"
     ],
+    "location": [
+      "ga4gh:SL.r_OMuLhYJhXxBV4pY5DlxjCGQiiTP7hx"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -326,25 +319,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 7,
+    "id": "bmkr:7",
     "type": "CategoricalVariant",
     "name": "CDK12 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      14
+      "gene:hgnc:24224"
     ],
+    "location": [
+      "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -396,51 +388,36 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 8,
+    "id": "bmkr:8",
     "type": "CategoricalVariant",
     "name": "v::ALK",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      2
+      "gene:hgnc:427"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 9,
+    "id": "bmkr:9",
     "type": "CategoricalVariant",
     "name": "EGFR p.L858R",
+    "allele": "ga4gh:VA.S41CcMJT2bcd8R4-qXZWH1PoHWNtG2PZ",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -488,25 +465,24 @@
       {
         "name": "hgvsc",
         "value": "ENST00000275493.2:c.2573T>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 10,
+    "id": "bmkr:10",
     "type": "CategoricalVariant",
     "name": "EGFR Exon 19 (Deletion)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [
+      "ga4gh:SL.d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -558,25 +534,22 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 11,
+    "id": "bmkr:11",
     "type": "CategoricalVariant",
     "name": "PDGFRA p.D842V",
+    "allele": "ga4gh:VA.Dy7soaZQU1vH9Eb93xG_pJyhu7xTDDC9",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      39
+      "gene:hgnc:8803"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -624,49 +597,35 @@
       {
         "name": "hgvsc",
         "value": "ENST00000257290.5:c.2525A>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 12,
+    "id": "bmkr:12",
     "type": "CategoricalVariant",
     "name": "BCR::ABL1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      6,
-      0
+      "gene:hgnc:1014",
+      "gene:hgnc:76"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 13,
+    "id": "bmkr:13",
     "type": "CategoricalVariant",
     "name": "CD22 +",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD22"
@@ -682,22 +641,20 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 14,
+    "id": "bmkr:14",
     "type": "CategoricalVariant",
     "name": "CD19 +",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD19"
@@ -713,52 +670,22 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 15,
-    "type": "CategoricalVariant",
-    "name": "BCR::ABL1",
-    "genes": [
-      6,
-      0
-    ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": false
-      }
-    ]
-  },
-  {
-    "id": 16,
+    "id": "bmkr:16",
     "type": "CategoricalVariant",
     "name": "BRAF p.V600E",
+    "allele": "ga4gh:VA.j4XnsLZcdzDIYa5pvvXM7t1wn9OITr0L",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      8
+      "gene:hgnc:1097"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -806,25 +733,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000288602.6:c.1799T>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 17,
+    "id": "bmkr:17",
     "type": "CategoricalVariant",
     "name": "BRAF p.V600K",
+    "allele": "ga4gh:VA.pfWn9x9oFBRzGda1xXcOrE-BrX0R__N8",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      8
+      "gene:hgnc:1097"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -872,51 +796,38 @@
       {
         "name": "hgvsc",
         "value": "ENST00000288602.6:c.1798_1799delinsAA"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 18,
+    "id": "bmkr:18",
     "type": "CategoricalVariant",
     "name": "v::RET",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      49
+      "gene:hgnc:9967"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 19,
+    "id": "bmkr:19",
     "type": "CategoricalVariant",
     "name": "EGFR activating variants",
+    "allele": null,
+    "copyChange": null,
+    "function": "func:so:0002053",
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [
+      "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -968,22 +879,20 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 20,
+    "id": "bmkr:20",
     "type": "CategoricalVariant",
     "name": "HER2-positive",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -999,48 +908,39 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 21,
+    "id": "bmkr:21",
     "type": "CategoricalVariant",
     "name": "ERBB2 amplification",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030070",
+    "function": null,
     "genes": [
-      18
+      "gene:hgnc:3430"
     ],
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
-      {
-        "name": "direction",
-        "value": "Amplification"
-      },
       {
         "name": "cytoband",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 22,
+    "id": "bmkr:22",
     "type": "CategoricalVariant",
     "name": "HER2-low",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -1056,25 +956,24 @@
       {
         "name": "value",
         "value": "Low"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 23,
+    "id": "bmkr:23",
     "type": "CategoricalVariant",
     "name": "ERBB2 activating variants",
+    "allele": null,
+    "copyChange": null,
+    "function": "func:so:0002053",
     "genes": [
-      18
+      "gene:hgnc:3430"
     ],
+    "location": [
+      "ga4gh:SL.tZDv33gDtUO9Ow5G83xXdvKSwKVkBPkq"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -1126,22 +1025,20 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 24,
+    "id": "bmkr:24",
     "type": "CategoricalVariant",
     "name": "EGFR positive",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "EGFR"
@@ -1157,155 +1054,111 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 25,
+    "id": "bmkr:25",
     "type": "CategoricalVariant",
     "name": "Wild type KRAS",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      31
+      "gene:hgnc:6407"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.fHPHbS6fyaj8MlrRusLFIqH1yXxUPvso"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 26,
+    "id": "bmkr:26",
     "type": "CategoricalVariant",
     "name": "Wild type HRAS",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      27
+      "gene:hgnc:5173"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.1lZN5vxblOtHZhe78B1baJzaaFEU5CuH"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 27,
+    "id": "bmkr:27",
     "type": "CategoricalVariant",
     "name": "Wild type NRAS",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      33
+      "gene:hgnc:7989"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.PIDoTr_OYRkt1CZjDo1wtFyVCxYx-VHd"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 28,
+    "id": "bmkr:28",
     "type": "CategoricalVariant",
     "name": "PDGFRA rearrangements",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      39
+      "gene:hgnc:8803"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
-    "id": 29,
+    "id": "bmkr:29",
     "type": "CategoricalVariant",
     "name": "PDGFRB rearrangements",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      40
+      "gene:hgnc:8804"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
-    "id": 30,
+    "id": "bmkr:30",
     "type": "CategoricalVariant",
     "name": "FIP1L1::PDGFRA",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      25,
-      39
+      "gene:hgnc:19124",
+      "gene:hgnc:8803"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 31,
+    "id": "bmkr:31",
     "type": "CategoricalVariant",
     "name": "CD117 +",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD117"
@@ -1321,25 +1174,22 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 32,
+    "id": "bmkr:32",
     "type": "CategoricalVariant",
     "name": "ABL1 p.T315I",
+    "allele": "ga4gh:VA.D6NzpWXKqBnbcZZrXNSXj4tMUwROKbsQ",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      0
+      "gene:hgnc:76"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "9"
@@ -1387,22 +1237,20 @@
       {
         "name": "hgvsc",
         "value": "ENST00000318560.5:c.944C>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 33,
+    "id": "bmkr:33",
     "type": "CategoricalVariant",
     "name": "PD-L1 >= 1%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1418,115 +1266,103 @@
       {
         "name": "value",
         "value": 0.01
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 34,
+    "id": "bmkr:34",
     "type": "CategoricalVariant",
     "name": "Wild type ALK",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      2
+      "gene:hgnc:427"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.o1BcQ-pi-2K5Ga8uf-VSu4ufGNbU6jaZ"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 35,
+    "id": "bmkr:35",
     "type": "CategoricalVariant",
     "name": "Wild type EGFR",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 36,
+    "id": "bmkr:36",
     "type": "CategoricalVariant",
     "name": "dMMR",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Mismatch repair",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Mismatch Repair"
-      },
       {
         "name": "status",
         "value": "Deficient"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 37,
+    "id": "bmkr:37",
     "type": "CategoricalVariant",
     "name": "pMMR",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Mismatch repair",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Mismatch Repair"
-      },
       {
         "name": "status",
         "value": "Proficient"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 38,
+    "id": "bmkr:38",
     "type": "CategoricalVariant",
     "name": "MSI-H",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Microsatellite stability",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Microsatellite Stability"
-      },
       {
         "name": "status",
         "value": "Microsatellite instability-high (MSI-H)"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 39,
+    "id": "bmkr:39",
     "type": "CategoricalVariant",
     "name": "PD-L1 >= 50%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1542,48 +1378,39 @@
       {
         "name": "value",
         "value": 0.5
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 40,
+    "id": "bmkr:40",
     "type": "CategoricalVariant",
     "name": "CD274 amplification",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030070",
+    "function": null,
     "genes": [
-      13
+      "gene:hgnc:17635"
     ],
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
-      {
-        "name": "direction",
-        "value": "Amplification"
-      },
       {
         "name": "cytoband",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 41,
+    "id": "bmkr:41",
     "type": "CategoricalVariant",
     "name": "PD-L1 (CPS) >= 10",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1599,22 +1426,20 @@
       {
         "name": "value",
         "value": 10
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 42,
+    "id": "bmkr:42",
     "type": "CategoricalVariant",
     "name": "PD-L1 (CPS) >= 1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -1630,22 +1455,20 @@
       {
         "name": "value",
         "value": 1
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 43,
+    "id": "bmkr:43",
     "type": "CategoricalVariant",
     "name": "ER negative",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Estrogen receptor (ER)"
@@ -1661,22 +1484,20 @@
       {
         "name": "value",
         "value": "Negative"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 44,
+    "id": "bmkr:44",
     "type": "CategoricalVariant",
     "name": "PR negative",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Progesterone receptor (PR)"
@@ -1692,25 +1513,22 @@
       {
         "name": "value",
         "value": "Negative"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 45,
+    "id": "bmkr:45",
     "type": "CategoricalVariant",
     "name": "KRAS p.G12C",
+    "allele": "ga4gh:VA.udBCHwlrf8xNiRy_19bLi-h5LhnZLgCt",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      31
+      "gene:hgnc:6407"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -1758,43 +1576,40 @@
       {
         "name": "hgvsc",
         "value": "ENST00000256078.4:c.34G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 46,
+    "id": "bmkr:46",
     "type": "CategoricalVariant",
     "name": "Wild type ROS1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      50
+      "gene:hgnc:10261"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.hC1t5wa3TfUMtSYa_g0a5hP5qipSxyku"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 47,
+    "id": "bmkr:47",
     "type": "CategoricalVariant",
     "name": "BRCA1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      9
+      "gene:hgnc:1100"
     ],
+    "location": [
+      "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -1846,25 +1661,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 48,
+    "id": "bmkr:48",
     "type": "CategoricalVariant",
     "name": "BRCA1 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      9
+      "gene:hgnc:1100"
     ],
+    "location": [
+      "ga4gh:SL.weCy_6qoSvyzu7QVSpaJMaGWcDUKmqXb"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -1916,25 +1730,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 49,
+    "id": "bmkr:49",
     "type": "CategoricalVariant",
     "name": "BRCA2 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      10
+      "gene:hgnc:1101"
     ],
+    "location": [
+      "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -1986,25 +1799,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 50,
+    "id": "bmkr:50",
     "type": "CategoricalVariant",
     "name": "BRCA2 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      10
+      "gene:hgnc:1101"
     ],
+    "location": [
+      "ga4gh:SL.7RukGUDX8Q-lC8U7OIIL3hRCBfXr7tji"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -2056,93 +1868,65 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 51,
+    "id": "bmkr:51",
     "type": "CategoricalVariant",
     "name": "HRD",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Homologous recombination",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Homologous Recombination"
-      },
       {
         "name": "status",
         "value": "Deficient"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 52,
+    "id": "bmkr:52",
     "type": "CategoricalVariant",
     "name": "FGFR2::v",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      23
+      "gene:hgnc:3689"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 53,
+    "id": "bmkr:53",
     "type": "CategoricalVariant",
     "name": "FGFR2 rearrangements",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      23
+      "gene:hgnc:3689"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
-    "id": 54,
+    "id": "bmkr:54",
     "type": "CategoricalVariant",
     "name": "CD20 +",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD20"
@@ -2158,22 +1942,20 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 55,
+    "id": "bmkr:55",
     "type": "CategoricalVariant",
     "name": "CD33 +",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CD33"
@@ -2189,22 +1971,20 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 56,
+    "id": "bmkr:56",
     "type": "CategoricalVariant",
     "name": "PD-L1 (CPS) >= 5",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -2220,22 +2000,20 @@
       {
         "name": "value",
         "value": 5
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 57,
+    "id": "bmkr:57",
     "type": "CategoricalVariant",
     "name": "PD-L1 < 1%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -2251,25 +2029,24 @@
       {
         "name": "value",
         "value": 0.01
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 58,
+    "id": "bmkr:58",
     "type": "CategoricalVariant",
     "name": "ESR1 activating variants",
+    "allele": null,
+    "copyChange": null,
+    "function": "func:so:0002053",
     "genes": [
-      19
+      "gene:hgnc:3467"
     ],
+    "location": [
+      "ga4gh:SL.thGX8CTtcNkncOw3rgSDk0uL1txXvlWk"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "6"
@@ -2321,95 +2098,22 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 59,
-    "type": "CategoricalVariant",
-    "name": "PIK3CA somatic variants",
-    "genes": [
-      41
-    ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
-      {
-        "name": "chromosome",
-        "value": "7"
-      },
-      {
-        "name": "start_position",
-        "value": null
-      },
-      {
-        "name": "end_position",
-        "value": null
-      },
-      {
-        "name": "reference_allele",
-        "value": null
-      },
-      {
-        "name": "alternate_allele",
-        "value": null
-      },
-      {
-        "name": "cdna_change",
-        "value": null
-      },
-      {
-        "name": "protein_change",
-        "value": null
-      },
-      {
-        "name": "variant_annotation",
-        "value": null
-      },
-      {
-        "name": "exon",
-        "value": null
-      },
-      {
-        "name": "rsid",
-        "value": null
-      },
-      {
-        "name": "hgvsg",
-        "value": null
-      },
-      {
-        "name": "hgvsc",
-        "value": null
-      },
-      {
-        "name": "requires_oncogenic",
-        "value": false
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
-  },
-  {
-    "id": 60,
+    "id": "bmkr:60",
     "type": "CategoricalVariant",
     "name": "RET p.M918T",
+    "allele": "ga4gh:VA.hEybNB_CeKflfFhT5AKOU5i1lgZPP-aS",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      49
+      "gene:hgnc:9967"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -2457,22 +2161,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000355710.3:c.2753T>C"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 61,
+    "id": "bmkr:61",
     "type": "CategoricalVariant",
     "name": "5q deletion",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030067",
+    "function": null,
+    "genes": [],
+    "location": [
+      "ga4gh:SL.KteBPIw-ySQLUSuG8gVPuVJnZW7kF7Js"
+    ],
+    "biomarker_type": "Copy number (arm level)",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number (arm level)"
-      },
       {
         "name": "chromosome",
         "value": "5"
@@ -2480,133 +2184,80 @@
       {
         "name": "arm",
         "value": "q"
-      },
-      {
-        "name": "direction",
-        "value": "Deletion"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 62,
+    "id": "bmkr:62",
     "type": "CategoricalVariant",
     "name": "v::ROS1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      50
+      "gene:hgnc:10261"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 63,
+    "id": "bmkr:63",
     "type": "CategoricalVariant",
     "name": "v::NTRK1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      35
+      "gene:hgnc:8031"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 64,
+    "id": "bmkr:64",
     "type": "CategoricalVariant",
     "name": "v::NTRK2",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      36
+      "gene:hgnc:8032"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 65,
+    "id": "bmkr:65",
     "type": "CategoricalVariant",
     "name": "v::NTRK3",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      37
+      "gene:hgnc:8033"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 66,
+    "id": "bmkr:66",
     "type": "CategoricalVariant",
     "name": "FLT3-ITD",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [
+      "ga4gh:SL.53HN2VFdgurjdPcQYBRwyfNMHcwRzdID"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -2658,25 +2309,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 67,
+    "id": "bmkr:67",
     "type": "CategoricalVariant",
     "name": "MET Exon 14 (Splice Site)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      32
+      "gene:hgnc:7029"
     ],
+    "location": [
+      "ga4gh:SL.dNLhs0UIN4aBJCxfRymlkjqL5S-ZRTKK"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2728,25 +2378,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 68,
+    "id": "bmkr:68",
     "type": "CategoricalVariant",
     "name": "MET Exon 14 (Deletion)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      32
+      "gene:hgnc:7029"
     ],
+    "location": [
+      "ga4gh:SL.dNLhs0UIN4aBJCxfRymlkjqL5S-ZRTKK"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2798,51 +2447,36 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 69,
+    "id": "bmkr:69",
     "type": "CategoricalVariant",
     "name": "FGFR1 rearrangements",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      22
+      "gene:hgnc:3688"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
-    "id": 70,
+    "id": "bmkr:70",
     "type": "CategoricalVariant",
     "name": "EGFR p.T790M",
+    "allele": "ga4gh:VA.sMA9h8fzDi0RvweMlxtD0_Oi8B-JZ1V-",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2890,22 +2524,20 @@
       {
         "name": "hgvsc",
         "value": "ENST00000275493.2:c.2369C>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 71,
+    "id": "bmkr:71",
     "type": "CategoricalVariant",
     "name": "PD-L1 >= 5%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -2921,25 +2553,24 @@
       {
         "name": "value",
         "value": 0.05
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 72,
+    "id": "bmkr:72",
     "type": "CategoricalVariant",
-    "name": "EGFR somatic variants",
+    "name": "EGFR Somatic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [
+      "ga4gh:SL.gJxxJcS0aX-ByerAPT5_YeQKDVk7IZFt"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -2991,22 +2622,20 @@
       {
         "name": "requires_oncogenic",
         "value": false
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 73,
+    "id": "bmkr:73",
     "type": "CategoricalVariant",
     "name": "PD-L1 >= 10% TIIC",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -3022,25 +2651,22 @@
       {
         "name": "value",
         "value": 0.1
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 74,
+    "id": "bmkr:74",
     "type": "CategoricalVariant",
     "name": "IDH1 p.R132C",
+    "allele": "ga4gh:VA.lAST62ntkEaXy6RDDOF1V4C3jd-jaAJ5",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      28
+      "gene:hgnc:5382"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3088,25 +2714,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000345146.2:c.394C>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 75,
+    "id": "bmkr:75",
     "type": "CategoricalVariant",
     "name": "IDH1 p.R132G",
+    "allele": "ga4gh:VA.aAXNeFGBgeJUGbun-bKvgoW204tC1xdp",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      28
+      "gene:hgnc:5382"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3154,25 +2777,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000345146.2:c.394C>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 76,
+    "id": "bmkr:76",
     "type": "CategoricalVariant",
     "name": "IDH1 p.R132H",
+    "allele": "ga4gh:VA.2VAvTmPON2L7JffxjE68jAmmmwxyzDpB",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      28
+      "gene:hgnc:5382"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3220,25 +2840,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000345146.2:c.395G>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 77,
+    "id": "bmkr:77",
     "type": "CategoricalVariant",
     "name": "IDH1 p.R132L",
+    "allele": "ga4gh:VA.2zh_S3hn7AWJd00rhirLhhDW8VcVBo9N",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      28
+      "gene:hgnc:5382"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3286,25 +2903,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000345146.2:c.395G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 78,
+    "id": "bmkr:78",
     "type": "CategoricalVariant",
     "name": "IDH1 p.R132S",
+    "allele": "ga4gh:VA.y-ioX4e_ySwP_LlplLNp0cz04a8BBr9H",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      28
+      "gene:hgnc:5382"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -3352,52 +2966,39 @@
       {
         "name": "hgvsc",
         "value": "ENST00000345146.2:c.394C>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 79,
+    "id": "bmkr:79",
     "type": "CategoricalVariant",
     "name": "PML::RARA",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      42,
-      48
+      "gene:hgnc:9113",
+      "gene:hgnc:9864"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 80,
+    "id": "bmkr:80",
     "type": "CategoricalVariant",
-    "name": "TP53 somatic variants",
+    "name": "TP53 Somatic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      52
+      "gene:hgnc:11998"
     ],
+    "location": [
+      "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -3449,48 +3050,41 @@
       {
         "name": "requires_oncogenic",
         "value": false
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 81,
+    "id": "bmkr:81",
     "type": "CategoricalVariant",
     "name": "TP53 deletion",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030067",
+    "function": null,
     "genes": [
-      52
+      "gene:hgnc:11998"
     ],
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
-      {
-        "name": "direction",
-        "value": "Deletion"
-      },
       {
         "name": "cytoband",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 82,
+    "id": "bmkr:82",
     "type": "CategoricalVariant",
     "name": "17p deletion",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030067",
+    "function": null,
+    "genes": [],
+    "location": [
+      "ga4gh:SL.qfCTfkL3D4_EYfMm-vNUV3gPBn6POGaV"
+    ],
+    "biomarker_type": "Copy number (arm level)",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number (arm level)"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -3498,74 +3092,38 @@
       {
         "name": "arm",
         "value": "p"
-      },
-      {
-        "name": "direction",
-        "value": "Deletion"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 83,
+    "id": "bmkr:83",
     "type": "CategoricalVariant",
     "name": "Wild type TP53",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      52
+      "gene:hgnc:11998"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Wild type"
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.-oJnRI__rvXIYjpwdDBxIjQ0O8Qm-Imi"
+    ],
+    "biomarker_type": "Wild type",
+    "extensions": []
   },
   {
-    "id": 84,
-    "type": "CategoricalVariant",
-    "name": "17p deletion",
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number (arm level)"
-      },
-      {
-        "name": "chromosome",
-        "value": "17"
-      },
-      {
-        "name": "arm",
-        "value": "p"
-      },
-      {
-        "name": "direction",
-        "value": "Deletion"
-      },
-      {
-        "name": "_present",
-        "value": false
-      }
-    ]
-  },
-  {
-    "id": 85,
+    "id": "bmkr:85",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835Y",
+    "allele": "ga4gh:VA.5IlCMFNnlu-2_HkwIZZSXGH2e6okHl2W",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -3613,25 +3171,24 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2503G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 86,
+    "id": "bmkr:86",
     "type": "CategoricalVariant",
     "name": "EGFR Exon 20 (Insertion)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [
+      "ga4gh:SL.wk0fEATa_DkPqxGhMRCFFPOXY9PMWpc1"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -3675,25 +3232,24 @@
       {
         "name": "hgvsc",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 87,
+    "id": "bmkr:87",
     "type": "CategoricalVariant",
-    "name": "PIK3CA somatic variants",
+    "name": "PIK3CA oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      41
+      "gene:hgnc:8975"
     ],
+    "location": [
+      "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -3745,77 +3301,62 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 88,
+    "id": "bmkr:88",
     "type": "CategoricalVariant",
     "name": "PIK3CA amplification",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030070",
+    "function": null,
     "genes": [
-      41
+      "gene:hgnc:8975"
     ],
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
-      {
-        "name": "direction",
-        "value": "Amplification"
-      },
       {
         "name": "cytoband",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 89,
+    "id": "bmkr:89",
     "type": "CategoricalVariant",
     "name": "AKT1 amplification",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030070",
+    "function": null,
     "genes": [
-      1
+      "gene:hgnc:391"
     ],
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
-      {
-        "name": "direction",
-        "value": "Amplification"
-      },
       {
         "name": "cytoband",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 90,
+    "id": "bmkr:90",
     "type": "CategoricalVariant",
-    "name": "AKT1 somatic variants",
+    "name": "AKT1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      1
+      "gene:hgnc:391"
     ],
+    "location": [
+      "ga4gh:SL.hLCi0ZPwR6YUb62J6HgjZMjEVAyULOnu"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "14"
@@ -3867,25 +3408,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 91,
+    "id": "bmkr:91",
     "type": "CategoricalVariant",
     "name": "PTEN nonsense variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      43
+      "gene:hgnc:9588"
     ],
+    "location": [
+      "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -3937,25 +3477,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 92,
+    "id": "bmkr:92",
     "type": "CategoricalVariant",
     "name": "PTEN frameshift variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      43
+      "gene:hgnc:9588"
     ],
+    "location": [
+      "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -4007,25 +3546,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 93,
+    "id": "bmkr:93",
     "type": "CategoricalVariant",
     "name": "PTEN splice site variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      43
+      "gene:hgnc:9588"
     ],
+    "location": [
+      "ga4gh:SL.5kExsmdkOdE1VWYizZa6XvHzdRa8f67s"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -4077,159 +3615,101 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 94,
+    "id": "bmkr:94",
     "type": "CategoricalVariant",
     "name": "PTEN deletion",
+    "allele": null,
+    "copyChange": "copy_change:efo:0030067",
+    "function": null,
     "genes": [
-      43
+      "gene:hgnc:9588"
     ],
+    "location": [],
+    "biomarker_type": "Copy number",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Copy Number"
-      },
-      {
-        "name": "direction",
-        "value": "Deletion"
-      },
       {
         "name": "cytoband",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 95,
+    "id": "bmkr:95",
     "type": "CategoricalVariant",
     "name": "FGFR2::BICC1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      23,
-      7
+      "gene:hgnc:3689",
+      "gene:hgnc:19351"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 96,
+    "id": "bmkr:96",
     "type": "CategoricalVariant",
     "name": "FGFR2::CASP7",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      23,
-      12
+      "gene:hgnc:3689",
+      "gene:hgnc:1508"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 97,
+    "id": "bmkr:97",
     "type": "CategoricalVariant",
     "name": "FGFR3::TACC3",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      24,
-      51
+      "gene:hgnc:3690",
+      "gene:hgnc:11524"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 98,
+    "id": "bmkr:98",
     "type": "CategoricalVariant",
     "name": "FGFR3::BAIAP2L1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      24,
-      4
+      "gene:hgnc:3690",
+      "gene:hgnc:21649"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 99,
+    "id": "bmkr:99",
     "type": "CategoricalVariant",
     "name": "FGFR3 p.R248C",
+    "allele": "ga4gh:VA.6fDQOuVnlKrDjTq3rkMY-1UHbT41h332",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      24
+      "gene:hgnc:3690"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4277,25 +3757,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000260795.2:c.742C>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 100,
+    "id": "bmkr:100",
     "type": "CategoricalVariant",
     "name": "FGFR3 p.S249C",
+    "allele": "ga4gh:VA.lCQZ8ie3k9M8N7wpd4BxHSpFYLKd0fVI",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      24
+      "gene:hgnc:3690"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4343,25 +3820,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000260795.2:c.746C>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 101,
+    "id": "bmkr:101",
     "type": "CategoricalVariant",
     "name": "FGFR3 p.G370C",
+    "allele": "ga4gh:VA.jN7GBCtzW-TeO8Oj6sXOTBkb5RpqsnhE",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      24
+      "gene:hgnc:3690"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4409,25 +3883,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000260795.2:c.1108G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 102,
+    "id": "bmkr:102",
     "type": "CategoricalVariant",
     "name": "FGFR3 p.Y373C",
+    "allele": "ga4gh:VA.UHA6S3oE8Ts_WI51w5noSpXhSlvNEjHu",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      24
+      "gene:hgnc:3690"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -4475,22 +3946,20 @@
       {
         "name": "hgvsc",
         "value": "ENST00000260795.2:c.1118A>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 103,
+    "id": "bmkr:103",
     "type": "CategoricalVariant",
     "name": "CLDN18.2 >= 75%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "CLDN18.2"
@@ -4506,25 +3975,24 @@
       {
         "name": "value",
         "value": 0.75
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 104,
+    "id": "bmkr:104",
     "type": "CategoricalVariant",
     "name": "ATM pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      3
+      "gene:hgnc:795"
     ],
+    "location": [
+      "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -4576,25 +4044,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 105,
+    "id": "bmkr:105",
     "type": "CategoricalVariant",
     "name": "ATM oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      3
+      "gene:hgnc:795"
     ],
+    "location": [
+      "ga4gh:SL.nTKI61Ceq66FC_3x6O4gLclwI3blof6R"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -4646,25 +4113,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 106,
+    "id": "bmkr:106",
     "type": "CategoricalVariant",
     "name": "BARD1 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      5
+      "gene:hgnc:952"
     ],
+    "location": [
+      "ga4gh:SL.6lHJIqF7bMWXgKxIoyJKzyljdnMHmFAm"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -4716,25 +4182,22 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 107,
+    "id": "bmkr:107",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R140Q",
+    "allele": "ga4gh:VA.HK1caYli9110rSKDTqSXAgzjzajRFBBv",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4782,25 +4245,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.419G>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 108,
+    "id": "bmkr:108",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R140L",
+    "allele": "ga4gh:VA.flWcJvVC8fOaM5xpEvQrKxU7vTQ_cLUH",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4848,25 +4308,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.419G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 109,
+    "id": "bmkr:109",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R140G",
+    "allele": "ga4gh:VA.is6SYatskt4mPKK2x64W2P5pD1-DW0yq",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4914,25 +4371,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.418C>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 110,
+    "id": "bmkr:110",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R140W",
+    "allele": "ga4gh:VA.JyMv3tRNdwUWip-ovGGsxKZz5oa0Chv4",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -4980,25 +4434,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.418C>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 111,
+    "id": "bmkr:111",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R172K",
+    "allele": "ga4gh:VA.YqiDFzE2K6fcXhXkCGYHIQ75RgutPq_7",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5046,25 +4497,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.515G>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 112,
+    "id": "bmkr:112",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R172M",
+    "allele": "ga4gh:VA.9BOlPSowhYbGI4EQavf1Slsj922_xMqJ",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5112,25 +4560,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.515G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 113,
+    "id": "bmkr:113",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R172G",
+    "allele": "ga4gh:VA.txHJtzV2lyBzSL2ojpjSYksGmi6310O7",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5178,25 +4623,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.514A>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 114,
+    "id": "bmkr:114",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R172S",
+    "allele": "ga4gh:VA.GcEWQeOqTVsh88PUGeuMNT2jNcjCzshC",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5244,25 +4686,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.516G>C"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 115,
+    "id": "bmkr:115",
     "type": "CategoricalVariant",
     "name": "IDH2 p.R172W",
+    "allele": "ga4gh:VA.yoh4PZ0RvxllKuUUhI-kHp7KqeykbEFP",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      29
+      "gene:hgnc:5383"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "15"
@@ -5310,25 +4749,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000330062.3:c.514A>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 116,
+    "id": "bmkr:116",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835A",
+    "allele": "ga4gh:VA.3LKVcwmmyezzaaWmtcmAI63SZC5jSzMg",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5376,25 +4812,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2504A>C"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 117,
+    "id": "bmkr:117",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835E",
+    "allele": "ga4gh:VA.Nv1XTacktYzkx3bUln7SzYVpMCmHnl34",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5442,25 +4875,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2505T>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 118,
+    "id": "bmkr:118",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835H",
+    "allele": "ga4gh:VA.O7RZ2CIwnmP_Qva5ar5MjmbHGbn5SFdr",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5508,25 +4938,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2503G>C"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 119,
+    "id": "bmkr:119",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835N",
+    "allele": "ga4gh:VA.mSwj38b0KeHcoBAkKnA1oe1NvNS94mw3",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5574,25 +5001,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2503G>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 120,
+    "id": "bmkr:120",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835S",
+    "allele": "ga4gh:VA.ZROSm2CuIvLvrmVilsdedygs1VfoDtdX",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5640,25 +5064,22 @@
       {
         "name": "hgvsc",
         "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 121,
+    "id": "bmkr:121",
     "type": "CategoricalVariant",
     "name": "FLT3 p.D835V",
+    "allele": "ga4gh:VA.hl8sXt8vGcWF3EST2vU5SoHuWQ1AO_eO",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5706,25 +5127,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2504A>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 122,
+    "id": "bmkr:122",
     "type": "CategoricalVariant",
     "name": "KIT p.D816V",
+    "allele": "ga4gh:VA.nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      30
+      "gene:hgnc:6342"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "4"
@@ -5772,25 +5190,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000288135.5:c.2447A>T"
-      },
-      {
-        "name": "_present",
-        "value": false
       }
     ]
   },
   {
-    "id": 123,
+    "id": "bmkr:123",
     "type": "CategoricalVariant",
     "name": "FLT3 p.I836del",
+    "allele": "ga4gh:VA.kAxvBo041Uk8NB2ofSx_oSlei1LUdrAG",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5838,25 +5253,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2508_2510del"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 124,
+    "id": "bmkr:124",
     "type": "CategoricalVariant",
     "name": "FLT3 p.I836N",
+    "allele": "ga4gh:VA.uAt9RLe5vhtcqDHUNglU4H_0mbs5KhBz",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      26
+      "gene:hgnc:3765"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "13"
@@ -5904,25 +5316,24 @@
       {
         "name": "hgvsc",
         "value": "ENST00000241453.7:c.2507T>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 125,
+    "id": "bmkr:125",
     "type": "CategoricalVariant",
     "name": "CDK12 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      14
+      "gene:hgnc:24224"
     ],
+    "location": [
+      "ga4gh:SL.v6dDopUoppRYaxKGZdqVJHBVgbRVIWIo"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -5974,25 +5385,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 126,
+    "id": "bmkr:126",
     "type": "CategoricalVariant",
     "name": "CHEK1 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      15
+      "gene:hgnc:1925"
     ],
+    "location": [
+      "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -6044,25 +5454,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 127,
+    "id": "bmkr:127",
     "type": "CategoricalVariant",
     "name": "CHEK1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      15
+      "gene:hgnc:1925"
     ],
+    "location": [
+      "ga4gh:SL.5dNKPfg6jae-YLpxGvcKICpigmrDOxxK"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -6114,25 +5523,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 128,
+    "id": "bmkr:128",
     "type": "CategoricalVariant",
     "name": "CHEK2 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      16
+      "gene:hgnc:16627"
     ],
+    "location": [
+      "ga4gh:SL.eCBKWuJdQ9sa9e23NuyG-2McuGF8QHAN"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "22"
@@ -6184,25 +5592,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 129,
+    "id": "bmkr:129",
     "type": "CategoricalVariant",
     "name": "CHEK2 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      16
+      "gene:hgnc:16627"
     ],
+    "location": [
+      "ga4gh:SL.eCBKWuJdQ9sa9e23NuyG-2McuGF8QHAN"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "22"
@@ -6254,25 +5661,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 130,
+    "id": "bmkr:130",
     "type": "CategoricalVariant",
     "name": "FANCL pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      21
+      "gene:hgnc:20748"
     ],
+    "location": [
+      "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -6324,25 +5730,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 131,
+    "id": "bmkr:131",
     "type": "CategoricalVariant",
     "name": "FANCL oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      21
+      "gene:hgnc:20748"
     ],
+    "location": [
+      "ga4gh:SL.AHYzOkeshXtsTVaTN2AbpV5JNJusLJIp"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "2"
@@ -6394,25 +5799,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 132,
+    "id": "bmkr:132",
     "type": "CategoricalVariant",
     "name": "PALB2 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      38
+      "gene:hgnc:26144"
     ],
+    "location": [
+      "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -6464,25 +5868,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 133,
+    "id": "bmkr:133",
     "type": "CategoricalVariant",
     "name": "PALB2 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      38
+      "gene:hgnc:26144"
     ],
+    "location": [
+      "ga4gh:SL.JkvJ4q6JDCLoW0H8tP6sk2HCThd_YECk"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -6534,25 +5937,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 134,
+    "id": "bmkr:134",
     "type": "CategoricalVariant",
     "name": "RAD51B pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      44
+      "gene:hgnc:9822"
     ],
+    "location": [
+      "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -6604,25 +6006,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 135,
+    "id": "bmkr:135",
     "type": "CategoricalVariant",
     "name": "RAD51B oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      44
+      "gene:hgnc:9822"
     ],
+    "location": [
+      "ga4gh:SL.VaqHDHuhQT7IyTqmnh4pMGEB8kb4ipqq"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -6674,25 +6075,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 136,
+    "id": "bmkr:136",
     "type": "CategoricalVariant",
     "name": "RAD51C pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      45
+      "gene:hgnc:9820"
     ],
+    "location": [
+      "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6744,25 +6144,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 137,
+    "id": "bmkr:137",
     "type": "CategoricalVariant",
     "name": "RAD51C oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      45
+      "gene:hgnc:9820"
     ],
+    "location": [
+      "ga4gh:SL.5F4blx7BrNnPvjfmHtTVjFA9n5w9cw7v"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6814,25 +6213,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 138,
+    "id": "bmkr:138",
     "type": "CategoricalVariant",
     "name": "RAD51D pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      46
+      "gene:hgnc:9823"
     ],
+    "location": [
+      "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6884,25 +6282,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 139,
+    "id": "bmkr:139",
     "type": "CategoricalVariant",
     "name": "RAD51D oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      46
+      "gene:hgnc:9823"
     ],
+    "location": [
+      "ga4gh:SL.IkXXRIfF7miGDktL6yDbsxBSu3OOpel1"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -6954,25 +6351,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 140,
+    "id": "bmkr:140",
     "type": "CategoricalVariant",
     "name": "RAD54L pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      47
+      "gene:hgnc:9826"
     ],
+    "location": [
+      "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "1"
@@ -7024,25 +6420,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 141,
+    "id": "bmkr:141",
     "type": "CategoricalVariant",
     "name": "RAD54L oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      47
+      "gene:hgnc:9826"
     ],
+    "location": [
+      "ga4gh:SL.eS2UQ_jARfWlNfWXc0mIcD-vb67GhzB5"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "1"
@@ -7094,60 +6489,54 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 142,
+    "id": "bmkr:142",
     "type": "CategoricalVariant",
     "name": "MSI-L",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Microsatellite stability",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Microsatellite Stability"
-      },
       {
         "name": "status",
         "value": "Microsatellite instability-low (MSI-L)"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 143,
+    "id": "bmkr:143",
     "type": "CategoricalVariant",
     "name": "MSS",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Microsatellite stability",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Microsatellite Stability"
-      },
       {
         "name": "status",
         "value": "Microsatellite stable (MSS)"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 144,
+    "id": "bmkr:144",
     "type": "CategoricalVariant",
     "name": "TMB-H (>= 10 mutations / Mb)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Tumor mutational burden",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Tumor mutational burden"
-      },
       {
         "name": "classification",
         "value": "High"
@@ -7159,25 +6548,22 @@
       {
         "name": "minimum_mutations_per_megabase",
         "value": 10
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 145,
+    "id": "bmkr:145",
     "type": "CategoricalVariant",
     "name": "EZH2 p.Y646N",
+    "allele": "ga4gh:VA.F3wf8X4pXaRvx55F_jvVkK258q-JoDni",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7225,25 +6611,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.1936T>A"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 146,
+    "id": "bmkr:146",
     "type": "CategoricalVariant",
     "name": "EZH2 p.Y646F",
+    "allele": "ga4gh:VA.oYK6HfZD2veVeRV_OCMXdMY8mM2k8riu",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7291,25 +6674,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.1937A>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 147,
+    "id": "bmkr:147",
     "type": "CategoricalVariant",
     "name": "EZH2 p.Y646H",
+    "allele": "ga4gh:VA.FP9BUYvNxZc5rdMQbcpb6PqbK90U9W_u",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7357,25 +6737,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.1936T>C"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 148,
+    "id": "bmkr:148",
     "type": "CategoricalVariant",
     "name": "EZH2 p.Y646S",
+    "allele": "ga4gh:VA.DQqLTUMpwlXsTmBYuKdu55Ep5DeVKUfw",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7423,25 +6800,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.1937A>C"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 149,
+    "id": "bmkr:149",
     "type": "CategoricalVariant",
     "name": "EZH2 p.Y646C",
+    "allele": "ga4gh:VA.ICrml19qCObxp6SeMNIiqaH3IhnyNGNh",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7489,25 +6863,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.1937A>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 150,
+    "id": "bmkr:150",
     "type": "CategoricalVariant",
-    "name": "EZH2 p.A862G",
+    "name": "EZH2 p.A682G",
+    "allele": "ga4gh:VA.0XRkkEA2HWTplj8pneW7IzKzkJh_VTdi",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7555,25 +6926,22 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.2045C>G"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 151,
+    "id": "bmkr:151",
     "type": "CategoricalVariant",
     "name": "EZH2 p.A692V",
+    "allele": "ga4gh:VA.Asy9WpmrMOSunO4H7D3OU7t4MvIbBWK9",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      20
+      "gene:hgnc:3527"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -7621,25 +6989,24 @@
       {
         "name": "hgvsc",
         "value": "ENST00000320356.2:c.2075C>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 152,
+    "id": "bmkr:152",
     "type": "CategoricalVariant",
     "name": "RET oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      49
+      "gene:hgnc:9967"
     ],
+    "location": [
+      "ga4gh:SL.8tMatnGHpju4GOKF3BvEBkQkhD68tww2"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "10"
@@ -7691,22 +7058,20 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 153,
+    "id": "bmkr:153",
     "type": "CategoricalVariant",
     "name": "FOLR1 positive",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "FOLR1"
@@ -7722,129 +7087,80 @@
       {
         "name": "value",
         "value": "Positive"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 154,
+    "id": "bmkr:154",
     "type": "CategoricalVariant",
     "name": "v::BRAF",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      8
+      "gene:hgnc:1097"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 155,
+    "id": "bmkr:155",
     "type": "CategoricalVariant",
     "name": "BRAF rearrangements",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      8
+      "gene:hgnc:1097"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": null
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Rearrangement",
+    "extensions": []
   },
   {
-    "id": 156,
+    "id": "bmkr:156",
     "type": "CategoricalVariant",
     "name": "v::NRG1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      34
+      "gene:hgnc:7997"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Fusion"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Gene fusion",
+    "extensions": []
   },
   {
-    "id": 157,
+    "id": "bmkr:157",
     "type": "CategoricalVariant",
     "name": "t(KMT2A;v)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      53
+      "gene:hgnc:7131"
     ],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Translocation"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [],
+    "biomarker_type": "Translocation",
+    "extensions": []
   },
   {
-    "id": 158,
+    "id": "bmkr:158",
     "type": "CategoricalVariant",
     "name": "TSC1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      54
+      "gene:hgnc:12362"
     ],
+    "location": [
+      "ga4gh:SL.o0qRqlKBKx4X0_JQslgG31SX69ml6liV"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "9"
@@ -7896,25 +7212,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 159,
+    "id": "bmkr:159",
     "type": "CategoricalVariant",
     "name": "TSC2 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      55
+      "gene:hgnc:12363"
     ],
+    "location": [
+      "ga4gh:SL.s7vO8-3vGOCLvGBe_ew5CW-pCuKGx-_S"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -7966,25 +7281,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 160,
+    "id": "bmkr:160",
     "type": "CategoricalVariant",
     "name": "ATR oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      56
+      "gene:hgnc:882"
     ],
+    "location": [
+      "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8036,25 +7350,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 161,
+    "id": "bmkr:161",
     "type": "CategoricalVariant",
     "name": "ATR pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      56
+      "gene:hgnc:882"
     ],
+    "location": [
+      "ga4gh:SL.F_qtQbfMiOKc-wr1QCtUimxtab32QOKL"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8106,25 +7419,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 162,
+    "id": "bmkr:162",
     "type": "CategoricalVariant",
     "name": "FANCA oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      57
+      "gene:hgnc:3582"
     ],
+    "location": [
+      "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -8176,25 +7488,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 163,
+    "id": "bmkr:163",
     "type": "CategoricalVariant",
     "name": "FANCA pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      57
+      "gene:hgnc:3582"
     ],
+    "location": [
+      "ga4gh:SL.pw1l5Zl3DzQyjZ1sDHRuwgZXNfFh2-My"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "16"
@@ -8246,25 +7557,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 164,
+    "id": "bmkr:164",
     "type": "CategoricalVariant",
     "name": "MLH1 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      58
+      "gene:hgnc:7127"
     ],
+    "location": [
+      "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8316,25 +7626,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 165,
+    "id": "bmkr:165",
     "type": "CategoricalVariant",
     "name": "MLH1 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      58
+      "gene:hgnc:7127"
     ],
+    "location": [
+      "ga4gh:SL.Cc7lWY7OBxg3PFj0puICcMLxjBH1uOK1"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -8386,25 +7695,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 166,
+    "id": "bmkr:166",
     "type": "CategoricalVariant",
     "name": "MRE11 oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      59
+      "gene:hgnc:7230"
     ],
+    "location": [
+      "ga4gh:SL.vhVbFtMSTcP67F5L_w7taSByAqV3LNSP"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -8456,25 +7764,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 167,
+    "id": "bmkr:167",
     "type": "CategoricalVariant",
     "name": "MRE11 pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      59
+      "gene:hgnc:7230"
     ],
+    "location": [
+      "ga4gh:SL.vhVbFtMSTcP67F5L_w7taSByAqV3LNSP"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "11"
@@ -8526,25 +7833,24 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 168,
+    "id": "bmkr:168",
     "type": "CategoricalVariant",
     "name": "NBN oncogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      60
+      "gene:hgnc:7652"
     ],
+    "location": [
+      "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "8"
@@ -8596,25 +7902,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 169,
+    "id": "bmkr:169",
     "type": "CategoricalVariant",
     "name": "NBN pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      60
+      "gene:hgnc:7652"
     ],
+    "location": [
+      "ga4gh:SL.O7-X6xcCeQb6YE9tkKGpVNVF8UualOiq"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "8"
@@ -8666,22 +7971,20 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 170,
+    "id": "bmkr:170",
     "type": "CategoricalVariant",
     "name": "c-Met >= 50%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "c-Met"
@@ -8697,25 +8000,22 @@
       {
         "name": "value",
         "value": "0.50"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 171,
+    "id": "bmkr:171",
     "type": "CategoricalVariant",
     "name": "KRAS p.G12V",
+    "allele": "ga4gh:VA.AhXGahW4SCTEgBSXlABoqX7N4mWXL-MD",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      31
+      "gene:hgnc:6407"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "12"
@@ -8763,49 +8063,39 @@
       {
         "name": "hgvsc",
         "value": "ENST00000311936.3:c.35G>T"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 172,
+    "id": "bmkr:172",
     "type": "CategoricalVariant",
     "name": "t(15;17)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [],
-    "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Rearrangement"
-      },
-      {
-        "name": "rearrangement_type",
-        "value": "Translocation"
-      },
-      {
-        "name": "locus",
-        "value": null
-      },
-      {
-        "name": "_present",
-        "value": true
-      }
-    ]
+    "location": [
+      "ga4gh:SL.EZBq61rtMPyE8oKI1VnxE0qxTfwvAIne",
+      "ga4gh:SL.LlQ30oZsqDqzhy8f4ICLOTVftFbP1pUz"
+    ],
+    "biomarker_type": "Translocation",
+    "extensions": []
   },
   {
-    "id": 173,
+    "id": "bmkr:173",
     "type": "CategoricalVariant",
     "name": "ERBB2 TKD activating variants",
+    "allele": null,
+    "copyChange": null,
+    "function": "func:so:0002053",
     "genes": [
-      18
+      "gene:hgnc:3430"
     ],
+    "location": [
+      "ga4gh:SL.gpkyq48rchUXfr_dVmt7BXbjBYofmUvG"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "17"
@@ -8857,22 +8147,20 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 174,
+    "id": "bmkr:174",
     "type": "CategoricalVariant",
     "name": "HER2-ultralow",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "Human epidermal growth factor receptor 2 (HER2)"
@@ -8888,22 +8176,20 @@
       {
         "name": "value",
         "value": "Ultralow"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 175,
+    "id": "bmkr:175",
     "type": "CategoricalVariant",
     "name": "PD-L1 (TAP) >= 5%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -8919,25 +8205,22 @@
       {
         "name": "value",
         "value": 0.05
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 176,
-    "type": "Categorical Variant",
-    "name": "H3-3A p.K27M",
+    "id": "bmkr:176",
+    "type": "CategoricalVariant",
+    "name": "H3-3A p.K28M",
+    "allele": "ga4gh:VA.OfwVrrqBRkySvtnpfO30-a5S3_NUw3P6",
+    "copyChange": null,
+    "function": null,
     "genes": [
-      61
+      "gene:hgnc:4764"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "1"
@@ -8984,26 +8267,23 @@
       },
       {
         "name": "hgvsc",
-        "value": "NM_002107.4:c.83A>T"
-      },
-      {
-        "name": "_present",
-        "value": true
+        "value": "NM_002107.7:c.83A>T"
       }
     ]
   },
   {
-    "id": 177,
-    "type": "Categorical Variant",
+    "id": "bmkr:177",
+    "type": "CategoricalVariant",
     "name": "NPM1 p.W288Cfs*12",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      62
+      "gene:hgnc:7910"
     ],
+    "location": [],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "5"
@@ -9051,22 +8331,20 @@
       {
         "name": "hgvsc",
         "value": "NM_002520.7:c.860_863dup"
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 178,
+    "id": "bmkr:178",
     "type": "CategoricalVariant",
     "name": "PD-L1 (TAP) >= 1%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -9082,25 +8360,24 @@
       {
         "name": "value",
         "value": 0.01
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 179,
+    "id": "bmkr:179",
     "type": "CategoricalVariant",
     "name": "EGFR TKD activating variants",
+    "allele": null,
+    "copyChange": null,
+    "function": "func:so:0002053",
     "genes": [
-      17
+      "gene:hgnc:3236"
     ],
+    "location": [
+      "ga4gh:SL.b3meBbaTpxQkRJWz_R-9NBInpqg-Hmhg"
+    ],
+    "biomarker_type": "Somatic variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Somatic Variant"
-      },
       {
         "name": "chromosome",
         "value": "7"
@@ -9152,25 +8429,24 @@
       {
         "name": "requires_oncogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 180,
+    "id": "bmkr:180",
     "type": "CategoricalVariant",
     "name": "VHL pathogenic variants",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
     "genes": [
-      63
+      "gene:hgnc:12687"
     ],
+    "location": [
+      "ga4gh:SL.4ZL9FBDsZlXDnOHo7yDCm6OamB2fFdbe"
+    ],
+    "biomarker_type": "Germline variant",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Germline Variant"
-      },
       {
         "name": "chromosome",
         "value": "3"
@@ -9222,22 +8498,20 @@
       {
         "name": "requires_pathogenic",
         "value": true
-      },
-      {
-        "name": "_present",
-        "value": true
       }
     ]
   },
   {
-    "id": 181,
+    "id": "bmkr:181",
     "type": "CategoricalVariant",
     "name": "PD-L1 > 0%",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
-      {
-        "name": "biomarker_type",
-        "value": "Protein expression"
-      },
       {
         "name": "marker",
         "value": "PD-L1"
@@ -9252,26 +8526,92 @@
       },
       {
         "name": "value",
-        "value": 0.00
-      },
-      {
-        "name": "_present",
-        "value": true
+        "value": 0.0
       }
     ]
   },
   {
-    "id": 182,
+    "id": "bmkr:182",
     "type": "CategoricalVariant",
     "name": "HLA-A*02:01",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Haplotype genotype",
+    "extensions": []
+  },
+  {
+    "id": "bmkr:183",
+    "type": "CategoricalVariant",
+    "name": "t(11;14)",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [
+      "ga4gh:SL.nD5PUHO8V4FDc7rR0P162xssNmIggOXG",
+      "ga4gh:SL.Qtjsk-OhOGoPODsXUNw-Ap2h5qp-YRB7"
+    ],
+    "biomarker_type": "Translocation",
+    "extensions": []
+  },
+  {
+    "id": "bmkr:184",
+    "type": "CategoricalVariant",
+    "name": "CCND1",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
     "extensions": [
       {
-        "name": "biomarker_type",
-        "value": "Haplotype genotype"
+        "name": "marker",
+        "value": "CCND1"
       },
       {
-        "name": "_present",
-        "value": true
+        "name": "unit",
+        "value": "status"
+      },
+      {
+        "name": "equality",
+        "value": "="
+      },
+      {
+        "name": "value",
+        "value": "Positive"
+      }
+    ]
+  },
+  {
+    "id": "bmkr:185",
+    "type": "CategoricalVariant",
+    "name": "PD-L1 < 1% IC",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
+    "extensions": [
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Immune cell staining (IC)"
+      },
+      {
+        "name": "equality",
+        "value": "<"
+      },
+      {
+        "name": "value",
+        "value": 0.01
       }
     ]
   }

@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C4029",
+  "conceptType": "Disease",
+  "name": "Cervical Adenocarcinoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:CEAD",
+        "code": "CEAD",
+        "name": "Cervical Adenocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Cervical+Adenocarcinoma+%28CEAD%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C4029",
+    "code": "C4029",
+    "name": "Cervical Adenocarcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4029"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/mappings.schema.json",
+  "title": "Mapping",
+  "description": "A concept mapping as stored in a mappings file: a coding plus a SKOS relation, with the join record's `id`. Embedded in concepts as `ConceptMapping` (no `id`).",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^map:.+::.+$"
+    },
+    "relation": {
+      "enum": [
+        "broadMatch",
+        "closeMatch",
+        "exactMatch",
+        "narrowMatch",
+        "relatedMatch"
+      ]
+    },
+    "coding": {
+      "$ref": "codings.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "relation",
+    "coding"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "ConceptMapping": {
+      "type": "object",
+      "properties": {
+        "relation": {
+          "enum": [
+            "broadMatch",
+            "closeMatch",
+            "exactMatch",
+            "narrowMatch",
+            "relatedMatch"
+          ]
+        },
+        "coding": {
+          "$ref": "codings.schema.json"
+        }
+      },
+      "required": [
+        "relation",
+        "coding"
+      ],
+      "additionalProperties": false,
+      "description": "Mapping as embedded within a concept's `mappings` list."
+    }
+  }
+}

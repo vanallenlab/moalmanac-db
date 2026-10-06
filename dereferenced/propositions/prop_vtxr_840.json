@@ -1,0 +1,223 @@
+{
+  "id": "prop:vtxr:840",
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
+  "conditionQualifier": {
+    "id": "dis:ncit:C3182",
+    "conceptType": "Disease",
+    "name": "Acute Promyelocytic Leukemia with PML::RARA",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:APLPMLRARA",
+          "code": "APLPMLRARA",
+          "name": "APL with PML-RARA",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=APL+with+PML-RARA+%28APLPMLRARA%29"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C3182",
+      "code": "C3182",
+      "name": "Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3182"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": "tx:ncit:C1005",
+    "conceptType": "Therapy",
+    "name": "Arsenic trioxide",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:rxcui:18330",
+          "code": "18330",
+          "name": "arsenic trioxide",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=18330"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:1333379",
+          "code": "1333379",
+          "name": "arsenic trioxide",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1333379"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:sctid:72251000",
+          "code": "72251000",
+          "name": "Arsenic trioxide",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=72251000&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:4218959",
+          "code": "4218959",
+          "name": "Arsenic trioxide",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/4218959"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "PML::RARA inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C1005",
+      "code": "C1005",
+      "name": "Arsenic Trioxide",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1005"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:172",
+          "present": true,
+          "subject": {
+            "id": "bmkr:172",
+            "type": "CategoricalVariant",
+            "name": "t(15;17)",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.EZBq61rtMPyE8oKI1VnxE0qxTfwvAIne",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "GRCh38 chromosome 15 (NC_000015.10), in its entirety.",
+                  "digest": "EZBq61rtMPyE8oKI1VnxE0qxTfwvAIne",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.AsXvWL1-2i5U_buw6_niVIxD6zTbAuS6",
+                    "type": "SequenceReference",
+                    "name": "NC_000015.10",
+                    "aliases": [
+                      "ensembl:15",
+                      "ga4gh:SQ.AsXvWL1-2i5U_buw6_niVIxD6zTbAuS6",
+                      "refseq:NC_000015.10"
+                    ],
+                    "description": "GRCh38 chromosome 15 (RefSeq NC_000015.10).",
+                    "moleculeType": "genomic",
+                    "refgetAccession": "SQ.AsXvWL1-2i5U_buw6_niVIxD6zTbAuS6",
+                    "residueAlphabet": "na"
+                  },
+                  "start": 0,
+                  "end": 101991189,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.LlQ30oZsqDqzhy8f4ICLOTVftFbP1pUz",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "GRCh38 chromosome 17 (NC_000017.11), in its entirety.",
+                  "digest": "LlQ30oZsqDqzhy8f4ICLOTVftFbP1pUz",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                    "type": "SequenceReference",
+                    "name": "NC_000017.11",
+                    "aliases": [
+                      "ga4gh:SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                      "refseq:NC_000017.11"
+                    ],
+                    "description": "GRCh38 chromosome 17 (RefSeq NC_000017.11).",
+                    "moleculeType": "genomic",
+                    "refgetAccession": "SQ.dLZ15tNO1Ur0IcGjwc3Sdi_0A6Yf4zm7",
+                    "residueAlphabet": "na"
+                  },
+                  "start": 0,
+                  "end": 83257441,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Translocation"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
+}

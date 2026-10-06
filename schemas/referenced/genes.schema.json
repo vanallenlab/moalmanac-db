@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/genes.schema.json",
+  "title": "Gene",
+  "description": "A gene concept, with the sequence locations of its MANE Select transcript and protein product.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^gene:hgnc:\\d+$"
+    },
+    "conceptType": {
+      "const": "Gene"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primary_coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^map:.+::.+$",
+        "description": "Foreign key to `mappings.id`."
+      }
+    },
+    "cds_start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "location": {
+      "type": "string"
+    },
+    "location_sortable": {
+      "type": "string"
+    },
+    "protein_product": {
+      "type": "string",
+      "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$",
+      "description": "Foreign key to `sequence_locations.id`."
+    },
+    "protein_product_exons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$",
+        "description": "Foreign key to `sequence_locations.id`."
+      }
+    },
+    "transcript": {
+      "type": "string",
+      "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$",
+      "description": "Foreign key to `sequence_locations.id`."
+    },
+    "transcript_exons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$",
+        "description": "Foreign key to `sequence_locations.id`."
+      }
+    }
+  },
+  "required": [
+    "id",
+    "conceptType",
+    "name",
+    "primary_coding_id",
+    "mappings",
+    "cds_start",
+    "location",
+    "location_sortable",
+    "protein_product",
+    "protein_product_exons",
+    "transcript",
+    "transcript_exons"
+  ],
+  "additionalProperties": false
+}

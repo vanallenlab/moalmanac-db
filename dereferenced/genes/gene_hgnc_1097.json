@@ -1,0 +1,1009 @@
+{
+  "id": "gene:hgnc:1097",
+  "conceptType": "Gene",
+  "name": "BRAF",
+  "primaryCoding": {
+    "id": "coding:hgnc:1097",
+    "code": "HGNC:1097",
+    "system": "https://genenames.org",
+    "iris": [
+      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1097"
+    ]
+  },
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:ensembl:ensg00000157764",
+        "code": "ENSG00000157764",
+        "system": "https://www.ensembl.org",
+        "iris": [
+          "https://www.ensembl.org/id/ENSG00000157764"
+        ]
+      }
+    },
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:ncbi:673",
+        "code": "673",
+        "system": "https://www.ncbi.nlm.nih.gov/gene",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/gene/673"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "coding:refseq:NM_004333.6",
+        "code": "NM_004333.6",
+        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+        "iris": [
+          "https://www.ncbi.nlm.nih.gov/nuccore/NM_004333.6"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "cds_start",
+      "value": 226
+    },
+    {
+      "name": "location",
+      "value": "7q34"
+    },
+    {
+      "name": "location_sortable",
+      "value": "07q34"
+    },
+    {
+      "name": "protein_product",
+      "value": {
+        "id": "ga4gh:SL.GyZjLKMYAGTYzPBu6QnOWQ7yPzCmiDHX",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6).",
+        "digest": "GyZjLKMYAGTYzPBu6QnOWQ7yPzCmiDHX",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+          "type": "SequenceReference",
+          "name": "NP_004324.2",
+          "aliases": [
+            "ensembl:ENSP00000288602.6",
+            "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "refseq:NP_004324.2"
+          ],
+          "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+          "moleculeType": "protein",
+          "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+          "residueAlphabet": "aa"
+        },
+        "start": 0,
+        "end": 766,
+        "sequence": null
+      }
+    },
+    {
+      "name": "protein_product_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.hOL8WaahYSFFYZueqxoOoxbJ7pIuQvTn",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 1.",
+          "digest": "hOL8WaahYSFFYZueqxoOoxbJ7pIuQvTn",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 0,
+          "end": 46,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.7_goR_Oultxkg0mXCkwlXmINl-XQDhHE",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 2.",
+          "digest": "7_goR_Oultxkg0mXCkwlXmINl-XQDhHE",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 46,
+          "end": 80,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.CS1pe7zSaG1e50vpe4vWc7AKIk1fxr87",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 3.",
+          "digest": "CS1pe7zSaG1e50vpe4vWc7AKIk1fxr87",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 80,
+          "end": 168,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5yUJi9Qo1iL2QHp6uZNCFwOhBUtRQ40e",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 4. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "5yUJi9Qo1iL2QHp6uZNCFwOhBUtRQ40e",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 168,
+          "end": 203,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.O6UpevcZQs-ROXsfAljQ9qPlYxtxSqeh",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 5. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "O6UpevcZQs-ROXsfAljQ9qPlYxtxSqeh",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 202,
+          "end": 237,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UOm9kpL4EqQfjENxbvQFISS0N6xQLJD7",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 6. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "UOm9kpL4EqQfjENxbvQFISS0N6xQLJD7",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 237,
+          "end": 287,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.O5aoKYgGQeQxty8mMZ2v0FDapGZdKc-D",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 7. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "O5aoKYgGQeQxty8mMZ2v0FDapGZdKc-D",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 286,
+          "end": 327,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.fFssoKwZLVckbEC8fUrPMNCtBPnNMXgJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 8. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "fFssoKwZLVckbEC8fUrPMNCtBPnNMXgJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 326,
+          "end": 380,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.U__fUwoAIJcsdY5hmAmavUUuO4CC8pk0",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 9. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "U__fUwoAIJcsdY5hmAmavUUuO4CC8pk0",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 380,
+          "end": 393,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.-K392L7HXLsNWM4ufXNfgoG7GIfQVarD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 10. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "-K392L7HXLsNWM4ufXNfgoG7GIfQVarD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 392,
+          "end": 438,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.eCxrSQh4fL3MKPnUBLUv9KNfO98RKuMV",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 11. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "eCxrSQh4fL3MKPnUBLUv9KNfO98RKuMV",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 438,
+          "end": 478,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.w3Z4K3BnaFT6T91kNNpUh7RCoSoMahn1",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 12. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "w3Z4K3BnaFT6T91kNNpUh7RCoSoMahn1",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 477,
+          "end": 506,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.2qOEw44VleMXnVH-BgtC2CQ7qyw3Xsae",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 13. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "2qOEw44VleMXnVH-BgtC2CQ7qyw3Xsae",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 505,
+          "end": 565,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.bdvKTqoNhYd6NS8rYw73wKhrJQly7I1Y",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 14. This exon's protein location shares a codon boundary with the adjacent exons on both sides.",
+          "digest": "bdvKTqoNhYd6NS8rYw73wKhrJQly7I1Y",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 564,
+          "end": 581,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6XQV2D1tqwsE1vZHUy9aYIs6hI5nH94s",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 15. This exon's protein location may share a codon boundary with the adjacent exon's protein location.",
+          "digest": "6XQV2D1tqwsE1vZHUy9aYIs6hI5nH94s",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 580,
+          "end": 620,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UPsLeAWsaAKh-Fp0flSsgG8179uub4hZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 16.",
+          "digest": "UPsLeAWsaAKh-Fp0flSsgG8179uub4hZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 620,
+          "end": 664,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.nc355SUTUMrJVgug-WSzOJctq4MoNNYB",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 17.",
+          "digest": "nc355SUTUMrJVgug-WSzOJctq4MoNNYB",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 664,
+          "end": 709,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.AIk_69IB5TFjrSrtgzSg6lMfyxYRLmGJ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NP_004324.2, the protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to Exon 18.",
+          "digest": "AIk_69IB5TFjrSrtgzSg6lMfyxYRLmGJ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "type": "SequenceReference",
+            "name": "NP_004324.2",
+            "aliases": [
+              "ensembl:ENSP00000288602.6",
+              "ga4gh:SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+              "refseq:NP_004324.2"
+            ],
+            "description": "The protein product of the MANE Select coding transcript for BRAF (refseq:NM_004333.6), corresponding to the Refseq protein accession NP_004324.2.",
+            "moleculeType": "protein",
+            "refgetAccession": "SQ.cQvw4UsHHRRlogxbWCB8W-mKD4AraM9y",
+            "residueAlphabet": "aa"
+          },
+          "start": 709,
+          "end": 766,
+          "sequence": null
+        }
+      ]
+    },
+    {
+      "name": "transcript",
+      "value": {
+        "id": "ga4gh:SL.5DaQm7UICclYaDk1ZwJXVyZgRCqIjWOC",
+        "type": "SequenceLocation",
+        "name": null,
+        "aliases": [],
+        "description": "Sequence spanning the length of refseq:NM_004333.6, the MANE Select coding transcript for BRAF.",
+        "digest": "5DaQm7UICclYaDk1ZwJXVyZgRCqIjWOC",
+        "sequenceReference": {
+          "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+          "type": "SequenceReference",
+          "name": "NM_004333.6",
+          "aliases": [
+            "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "refseq:NM_004333.6"
+          ],
+          "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+          "moleculeType": "mRNA",
+          "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+          "residueAlphabet": "na"
+        },
+        "start": 0,
+        "end": 6459,
+        "sequence": null
+      }
+    },
+    {
+      "name": "transcript_exons",
+      "value": [
+        {
+          "id": "ga4gh:SL.NkKLnr1SEzKfAAiRnemhTlozP0rfW3Gs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 1.",
+          "digest": "NkKLnr1SEzKfAAiRnemhTlozP0rfW3Gs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 0,
+          "end": 364,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vD8ErVLM_zSuQvjszFVy62_a0bw1S4er",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 2.",
+          "digest": "vD8ErVLM_zSuQvjszFVy62_a0bw1S4er",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 364,
+          "end": 466,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.5KxB3y0QHdBzi3tzRNkfvT8uLRTt9ts5",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 3.",
+          "digest": "5KxB3y0QHdBzi3tzRNkfvT8uLRTt9ts5",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 466,
+          "end": 730,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.p4Y8oVln7WJ0UYUe5pxvoQWVSHWpJDf8",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 4.",
+          "digest": "p4Y8oVln7WJ0UYUe5pxvoQWVSHWpJDf8",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 730,
+          "end": 834,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vpskSU0K3SFOs3EZIieH-fWURMwKZhQz",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 5.",
+          "digest": "vpskSU0K3SFOs3EZIieH-fWURMwKZhQz",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 834,
+          "end": 937,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9sCT0A0ANw9rx2A08OtiVwMNH1NRN9sW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 6.",
+          "digest": "9sCT0A0ANw9rx2A08OtiVwMNH1NRN9sW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 937,
+          "end": 1086,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.yAvyZYBfIIMMqyeEIIaUgglnGKgcLeJZ",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 7.",
+          "digest": "yAvyZYBfIIMMqyeEIIaUgglnGKgcLeJZ",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1086,
+          "end": 1206,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.NYhcSsAWc-JY-Vn53DWm8Tu48WXXq-hW",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 8.",
+          "digest": "NYhcSsAWc-JY-Vn53DWm8Tu48WXXq-hW",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1206,
+          "end": 1366,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.6EBIS7HvFmpxVgkTRoLdMjvVF8EWUAGC",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 9.",
+          "digest": "6EBIS7HvFmpxVgkTRoLdMjvVF8EWUAGC",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1366,
+          "end": 1403,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.UTwkUqGHMu0dYAIgLM7F5pdC-sY6aUQA",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 10.",
+          "digest": "UTwkUqGHMu0dYAIgLM7F5pdC-sY6aUQA",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1403,
+          "end": 1540,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.jLKvZLq-ngqr4x7brIW6vLXDS_3fd5Ob",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 11.",
+          "digest": "jLKvZLq-ngqr4x7brIW6vLXDS_3fd5Ob",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1540,
+          "end": 1658,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.u46iGdWJkKaGiKk7hOYPjitzfrMaqF0-",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 12.",
+          "digest": "u46iGdWJkKaGiKk7hOYPjitzfrMaqF0-",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1658,
+          "end": 1743,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.9dXtdcHkRExYIMZyxIAseZiCw5hLlpEs",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 13.",
+          "digest": "9dXtdcHkRExYIMZyxIAseZiCw5hLlpEs",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1743,
+          "end": 1920,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.R20uLka3zT6NvHaHQwfzrHZydZh6yGYc",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 14.",
+          "digest": "R20uLka3zT6NvHaHQwfzrHZydZh6yGYc",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1920,
+          "end": 1967,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.X2boAR9YrGSdN5P63-H1RozJVZ-dVXYN",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 15.",
+          "digest": "X2boAR9YrGSdN5P63-H1RozJVZ-dVXYN",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 1967,
+          "end": 2086,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.qSUaujsu7DQyZWQpQaDpOEZI54aXGj3x",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 16.",
+          "digest": "qSUaujsu7DQyZWQpQaDpOEZI54aXGj3x",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 2086,
+          "end": 2218,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.vHos-yjEx-SGyjV4IXbx10u3e4udZEXD",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 17.",
+          "digest": "vHos-yjEx-SGyjV4IXbx10u3e4udZEXD",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 2218,
+          "end": 2353,
+          "sequence": null
+        },
+        {
+          "id": "ga4gh:SL.hLqg47i3Eb9SJSGmzv-iimV0l_Wwbukv",
+          "type": "SequenceLocation",
+          "name": null,
+          "aliases": [],
+          "description": "Sequence within refseq:NM_004333.6, the MANE Select coding transcript for BRAF, corresponding to Exon 18.",
+          "digest": "hLqg47i3Eb9SJSGmzv-iimV0l_Wwbukv",
+          "sequenceReference": {
+            "id": "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "type": "SequenceReference",
+            "name": "NM_004333.6",
+            "aliases": [
+              "ga4gh:SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+              "refseq:NM_004333.6"
+            ],
+            "description": "The MANE Select coding transcript for BRAF, corresponding to the Refseq transcript accession NM_004333.6.",
+            "moleculeType": "mRNA",
+            "refgetAccession": "SQ.aKMPEJgmlZXt_F6gRY5cUG3THH2n-GUa",
+            "residueAlphabet": "na"
+          },
+          "start": 2353,
+          "end": 6459,
+          "sequence": null
+        }
+      ]
+    }
+  ]
+}

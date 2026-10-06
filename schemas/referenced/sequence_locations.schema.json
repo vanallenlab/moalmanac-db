@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/sequence_locations.schema.json",
+  "title": "SequenceLocation",
+  "description": "A VRS SequenceLocation: an interval (interbase, 0-based) on a SequenceReference.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$"
+    },
+    "type": {
+      "const": "SequenceLocation"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "digest": {
+      "type": "string"
+    },
+    "sequenceReference": {
+      "type": "string",
+      "pattern": "^ga4gh:SQ\\.[A-Za-z0-9_-]{32}$",
+      "description": "Foreign key to `sequence_references.id`."
+    },
+    "start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sequence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "aliases",
+    "description",
+    "digest",
+    "sequenceReference",
+    "start",
+    "end",
+    "sequence"
+  ],
+  "additionalProperties": false
+}

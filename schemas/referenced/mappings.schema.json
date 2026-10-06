@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/mappings.schema.json",
+  "title": "Mapping",
+  "description": "A join record linking a concept's primary coding to an alternate coding in another system, with a SKOS relation.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^map:.+::.+$"
+    },
+    "primary_coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    },
+    "coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    },
+    "relation": {
+      "enum": [
+        "broadMatch",
+        "closeMatch",
+        "exactMatch",
+        "narrowMatch",
+        "relatedMatch"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "primary_coding_id",
+    "coding_id",
+    "relation"
+  ],
+  "additionalProperties": false
+}

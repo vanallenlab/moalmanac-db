@@ -1,0 +1,442 @@
+{
+  "id": "stmt:fda:tecentriq:4:1",
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to atezolizumab for the treatment of adult patients with metastatic non-small cell lung cancer (NSCLC) who have disease progression during or following platinum-containing chemotherapy. Patients with EGFR or ALK genomic tumor aberrations should have disease progression on FDA-approved therapy for NSCLC harboring these aberrations prior to receiving atezolizumab.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-10-30:0",
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:fda:2017-04-17:0",
+      "type": "Contribution",
+      "description": "Indication received traditional approval.",
+      "date": "2017-04-17",
+      "contributor": {
+        "id": "agent:org:fda",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Food and Drug Administration",
+        "description": "Regulatory agency that approves drugs for use in the United States."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda:tecentriq",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Tecentriq (atezolizumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Genentech, Inc. Tecentriq (atezolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761034s053lbl.pdf. Revised April 2024. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761034s053lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761034"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Genentech, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Tecentriq",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "atezolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 761034,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-04-22",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:37",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C2926",
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:NSCLC",
+            "code": "NSCLC",
+            "name": "Non-Small Cell Lung Cancer",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Small+Cell+Lung+Cancer+%28NSCLC%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C2926",
+        "code": "C2926",
+        "name": "Lung Non-Small Cell Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2926"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C106250",
+      "conceptType": "Therapy",
+      "name": "Atezolizumab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1792776",
+            "code": "1792776",
+            "name": "atezolizumab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1792776"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:42629079",
+            "code": "42629079",
+            "name": "atezolizumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/42629079"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:719371003",
+            "code": "719371003",
+            "name": "Atezolizumab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=719371003&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:36714233",
+            "code": "36714233",
+            "name": "Atezolizumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/36714233"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C106250",
+        "code": "C106250",
+        "name": "Atezolizumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106250"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:8",
+            "present": true,
+            "subject": {
+              "id": "bmkr:8",
+              "type": "CategoricalVariant",
+              "name": "v::ALK",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": false,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:427",
+                      "conceptType": "Gene",
+                      "name": "ALK",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:427",
+                        "code": "HGNC:427",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:427"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000171094",
+                            "code": "ENSG00000171094",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000171094"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:238",
+                            "code": "238",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/238"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_004304.5",
+                            "code": "NM_004304.5",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004304.5"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "UnspecifiedElement"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Gene fusion"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:tecentriq:4",
+        "type": "Indication",
+        "description": "TECENTRIQ is a programmed death-ligand 1 (PD-L1) blocking antibody indicated for the treatment of adult patients with metastatic NSCLC who have disease progression during or following platinum-containing chemotherapy. Patients with EGFR or ALK genomic tumor aberrations should have disease progression on FDA-approved therapy for NSCLC harboring these aberrations prior to receiving TECENTRIQ.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-30:0",
+            "type": "Contribution",
+            "description": "Initial access of FDA approvals",
+            "date": "2024-10-30",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2017-04-17:0",
+            "type": "Contribution",
+            "description": "Indication received traditional approval.",
+            "date": "2017-04-17",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:tecentriq",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Tecentriq (atezolizumab) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Genentech, Inc. Tecentriq (atezolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761034s053lbl.pdf. Revised April 2024. Accessed October 30, 2024.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761034s053lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761034"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Genentech, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Tecentriq",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "atezolizumab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 761034,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-04-22",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

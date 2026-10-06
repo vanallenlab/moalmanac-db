@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3194",
+  "conceptType": "Disease",
+  "name": "Liposarcoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:LIPO",
+        "code": "LIPO",
+        "name": "Liposarcoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Liposarcoma+%28LIPO%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3194",
+    "code": "C3194",
+    "name": "Liposarcoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3194"
+    ]
+  }
+}

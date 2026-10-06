@@ -1,0 +1,311 @@
+{
+  "id": "prop:vtxr:163",
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
+  "conditionQualifier": {
+    "id": "dis:ncit:C9285",
+    "conceptType": "Disease",
+    "name": "Aggressive Systemic Mastocytosis",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:ASM",
+          "code": "ASM",
+          "name": "Aggressive Systemic Mastocytosis",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Aggressive+Systemic+Mastocytosis+%28ASM%29"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": false,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C9285",
+      "code": "C9285",
+      "name": "Aggressive Systemic Mastocytosis",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9285"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": "tx:ncit:C62035",
+    "conceptType": "Therapy",
+    "name": "Imatinib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:rxcui:282388",
+          "code": "282388",
+          "name": "imatinib",
+          "system": "RxNorm",
+          "systemVersion": "20250602",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=282388"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:4185917",
+          "code": "4185917",
+          "name": "Imatinib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/4185917"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:sctid:414460008",
+          "code": "414460008",
+          "name": "Imatinib",
+          "system": "SNOMED",
+          "systemVersion": "2026-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=414460008&edition=MAIN/2026-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:1304107",
+          "code": "1304107",
+          "name": "imatinib",
+          "system": "OMOP",
+          "systemVersion": "v20250827",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/1304107"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "Bcr-Abl inhibition",
+          "c-Kit inhibition",
+          "PDGF-R inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C62035",
+      "code": "C62035",
+      "name": "Imatinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:122",
+          "present": false,
+          "subject": {
+            "id": "bmkr:122",
+            "type": "CategoricalVariant",
+            "name": "KIT p.D816V",
+            "constraints": [
+              {
+                "type": "DefiningAlleleConstraint",
+                "allele": {
+                  "id": "ga4gh:VA.nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
+                  "type": "Allele",
+                  "name": "NP_000213.1:p.Asp816Val",
+                  "aliases": [
+                    "NP_000213.1:p.D816V",
+                    "KIT p.D816V"
+                  ],
+                  "description": "VRS variation of NP_000213.1:p.Asp816Val",
+                  "digest": "nhiDwIq1klrGm3wtWO4a4BiS0jdW79Wd",
+                  "expressions": [
+                    {
+                      "syntax": "hgvs.p",
+                      "value": "NP_000213.1:p.Asp816Val",
+                      "extensions": [
+                        {
+                          "name": "hgvs.p_short",
+                          "value": "p.D816V"
+                        }
+                      ]
+                    }
+                  ],
+                  "location": {
+                    "id": "ga4gh:SL.FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
+                    "type": "SequenceLocation",
+                    "name": null,
+                    "aliases": [],
+                    "description": "Amino acid position 816 of the Refseq protein NP_000213.1, which is the protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3).",
+                    "digest": "FDPpCHrDqH_pR10oxpHZ17tyGhZXVnsj",
+                    "sequenceReference": {
+                      "id": "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+                      "type": "SequenceReference",
+                      "name": "NP_000213.1",
+                      "aliases": [
+                        "ensembl:ENSP00000288135.5",
+                        "ga4gh:SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+                        "refseq:NP_000213.1"
+                      ],
+                      "description": "The protein product of the MANE Select coding transcript for KIT (refseq:NM_000222.3), corresponding to the Refseq protein accession NP_000213.1.",
+                      "moleculeType": "protein",
+                      "refgetAccession": "SQ.TcMVFj5kDODDWpiy1d_1-3_gOf4BYaAB",
+                      "residueAlphabet": "aa"
+                    },
+                    "start": 815,
+                    "end": 816,
+                    "sequence": "D"
+                  },
+                  "state": {
+                    "type": "LiteralSequenceExpression",
+                    "sequence": "V"
+                  }
+                },
+                "relations": []
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:6342",
+                  "conceptType": "Gene",
+                  "name": "KIT",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:6342",
+                    "code": "HGNC:6342",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:6342"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000157404",
+                        "code": "ENSG00000157404",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000157404"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:3815",
+                        "code": "3815",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/3815"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_000222.3",
+                        "code": "NM_000222.3",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_000222.3"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "4"
+              },
+              {
+                "name": "start_position",
+                "value": 55599321
+              },
+              {
+                "name": "end_position",
+                "value": 55599321
+              },
+              {
+                "name": "reference_allele",
+                "value": "A"
+              },
+              {
+                "name": "alternate_allele",
+                "value": "T"
+              },
+              {
+                "name": "cdna_change",
+                "value": "c.2447A>T"
+              },
+              {
+                "name": "protein_change",
+                "value": "p.D816V"
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Missense"
+              },
+              {
+                "name": "exon",
+                "value": 17
+              },
+              {
+                "name": "rsid",
+                "value": "rs121913507"
+              },
+              {
+                "name": "hgvsg",
+                "value": "4:g.55599321A>T"
+              },
+              {
+                "name": "hgvsc",
+                "value": "ENST00000288135.5:c.2447A>T"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
+}

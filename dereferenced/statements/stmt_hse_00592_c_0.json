@@ -1,0 +1,408 @@
+{
+  "id": "stmt:hse:00592:c:0",
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved atezolizumab 840 mg as a monotherapy for reimbursement as a treatment option for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma (UC) who are considered cisplatin ineligible and whose tumors have PD-L1 expression >= 5%.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-01-16:0",
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2021-07-01:0",
+      "type": "Contribution",
+      "description": "Indication approved for reimbursement.",
+      "date": "2021-07-01",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00592",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Atezolizumab 840mg Monotherapy - 14 Day. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Atezolizumab 840mg Monotherapy - 14 Day, 2025, version number 3, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6398/592_v3_Atezolizumab_840mg_Monotherapy_14_Day.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6398/592_v3_Atezolizumab_840mg_Monotherapy_14_Day.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-02-19",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:671",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C39851",
+      "conceptType": "Disease",
+      "name": "Bladder Urothelial Carcinoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:BLCA",
+            "code": "BLCA",
+            "name": "Bladder Urothelial Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Bladder+Urothelial+Carcinoma+%28BLCA%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C39851",
+        "code": "C39851",
+        "name": "Bladder Urothelial Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C39851"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C106250",
+      "conceptType": "Therapy",
+      "name": "Atezolizumab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1792776",
+            "code": "1792776",
+            "name": "atezolizumab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1792776"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:42629079",
+            "code": "42629079",
+            "name": "atezolizumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/42629079"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:719371003",
+            "code": "719371003",
+            "name": "Atezolizumab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=719371003&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:36714233",
+            "code": "36714233",
+            "name": "Atezolizumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/36714233"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C106250",
+        "code": "C106250",
+        "name": "Atezolizumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106250"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:71",
+            "present": true,
+            "subject": {
+              "id": "bmkr:71",
+              "type": "CategoricalVariant",
+              "name": "PD-L1 >= 5%",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "PD-L1"
+                },
+                {
+                  "name": "unit",
+                  "value": "Tumor Proportion Score (TPS)"
+                },
+                {
+                  "name": "equality",
+                  "value": ">="
+                },
+                {
+                  "name": "value",
+                  "value": 0.05
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00592:c",
+        "type": "Indication",
+        "description": "Treatment of adult patients with locally advanced or metastatic urothelial carcinoma (UC) who are considered cisplatin ineligible and whose tumours have a PD-L1 expression >= 5%.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-01-16:0",
+            "type": "Contribution",
+            "description": "Adding HSE approvals for reimbursement to database",
+            "date": "2024-01-16",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2021-07-01:0",
+            "type": "Contribution",
+            "description": "Indication approved for reimbursement.",
+            "date": "2021-07-01",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00592",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Atezolizumab 840mg Monotherapy - 14 Day. NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Atezolizumab 840mg Monotherapy - 14 Day, 2025, version number 3, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6398/592_v3_Atezolizumab_840mg_Monotherapy_14_Day.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6398/592_v3_Atezolizumab_840mg_Monotherapy_14_Day.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-02-19",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "ODMS",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": null,
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

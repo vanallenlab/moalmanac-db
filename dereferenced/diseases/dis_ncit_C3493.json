@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3493",
+  "conceptType": "Disease",
+  "name": "Lung Squamous Cell Carcinoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:LUSC",
+        "code": "LUSC",
+        "name": "Lung Squamous Cell Carcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Lung+Squamous+Cell+Carcinoma+%28LUSC%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3493",
+    "code": "C3493",
+    "name": "Lung Squamous Cell Carcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3493"
+    ]
+  }
+}

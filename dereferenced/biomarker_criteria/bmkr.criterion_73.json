@@ -1,0 +1,32 @@
+{
+  "id": "bmkr.criterion:73",
+  "present": true,
+  "subject": {
+    "id": "bmkr:73",
+    "type": "CategoricalVariant",
+    "name": "PD-L1 >= 10% TIIC",
+    "constraints": [],
+    "extensions": [
+      {
+        "name": "biomarker_type",
+        "value": "Protein expression"
+      },
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Tumor-infiltrating immune cells (TIIC)"
+      },
+      {
+        "name": "equality",
+        "value": ">="
+      },
+      {
+        "name": "value",
+        "value": 0.1
+      }
+    ]
+  }
+}

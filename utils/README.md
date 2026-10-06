@@ -1,25 +1,27 @@
-# Utility scripts for the Molecular Oncology Almanac database
 This directory contains a collection of utility scripts designed to facilitate the management and processing of the Molecular Oncology Almanac (moalmanac) database.
 
 **Note: The default arguments for scripts within this directory assume execution from the root directory of this repository.**
 
-# Table of contents
+## Table of contents
+
 - [dereference.py](#dereferencepy)
-- [populate_statement_description_from_indication.py](#populate_statement_description_from_indicationpy)
 - [json_utils.py](#json_utilspy)
 - [read.py](#readpy)
 - [write.py](#writepy)
 
-# Scripts
 ## dereference.py
+
 `dereference.py` creates a single JSON file for the moalmanac database by dereferencing referenced JSON files. By default, these are located in the `referenced/` folder of this repository.
 
 ### Usage
+
 Optional arguments:
+
 ```bash
     --about           <string>    referenced JSON for database metadata. Default: referenced/about.json
     --agents          <string>    referenced JSON for agents that either contribute to the database or publish documents cited within the database. Default: referenced/agents.json
     --biomarkers      <string>    referenced JSON for biomarkers. Default: referenced/biomarkers.json
+    --biomarker-criteria <string> referenced JSON for biomarker criteria (biomarker-to-proposition links carrying the `present` flag). Default: referenced/biomarker_criteria.json
     --codings         <string>    referenced JSON for codings. Default: referenced/codings.json
     --contributions   <string>    referenced JSON for contributions to database. Default: referenced/contributions.json
     --diseases        <string>    referenced JSON for cancer types. Default: referenced/diseases.json
@@ -39,17 +41,21 @@ Optional arguments:
 ```
 
 ### Example
+
 To run with default parameters:
+
 ```bash
 python -m utils.dereference
 ```
 
 Alternatively, all arguments can be specified explicitly:
+
 ```bash
 python -m utils.dereference \
   --about referenced/about.json \
   --agents referenced/agents.json \
   --biomarkers referenced/biomarkers.json \
+  --biomarker-criteria referenced/biomarker_criteria.json \
   --codings referenced/codings.json \
   --contributions referenced/contributions.json \
   --diseases referenced/diseases.json \

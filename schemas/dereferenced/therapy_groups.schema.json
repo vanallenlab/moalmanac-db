@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/therapy_groups.schema.json",
+  "title": "TherapyGroup",
+  "description": "A set of therapies administered together, with each therapy embedded.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^txgrp:\\d+$"
+    },
+    "membershipOperator": {
+      "enum": [
+        "AND",
+        "OR"
+      ]
+    },
+    "therapies": {
+      "type": "array",
+      "items": {
+        "$ref": "therapies.schema.json"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "id",
+    "membershipOperator",
+    "therapies"
+  ],
+  "additionalProperties": false
+}

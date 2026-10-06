@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/contributions.schema.json",
+  "title": "Contribution",
+  "description": "A dated contribution by an agent, with the agent embedded as `contributor`.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ctrb:[a-z]+:\\d{4}-\\d{2}-\\d{2}:\\d+$"
+    },
+    "type": {
+      "const": "Contribution"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "contributor": {
+      "$ref": "agents.schema.json",
+      "not": {
+        "required": [
+          "extensions"
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "description",
+    "date",
+    "contributor"
+  ],
+  "additionalProperties": false
+}

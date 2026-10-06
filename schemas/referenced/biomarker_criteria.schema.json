@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/biomarker_criteria.schema.json",
+  "title": "BiomarkerCriterion",
+  "description": "Interim link between a proposition and a biomarker (a draft Cat-VRS categorical variant criterion): `present` says whether the biomarker is asserted present or absent.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^bmkr\\.criterion:\\d+$"
+    },
+    "subject": {
+      "type": "string",
+      "pattern": "^bmkr:\\d+$",
+      "description": "Foreign key to `biomarkers.id`."
+    },
+    "present": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "subject",
+    "present"
+  ],
+  "additionalProperties": false
+}

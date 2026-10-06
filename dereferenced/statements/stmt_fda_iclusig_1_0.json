@@ -1,0 +1,672 @@
+{
+  "id": "stmt:fda:iclusig:1:0",
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to ponatinib for the treatment of adult patients with philadelphia chromosome-positive acute lymphoblastic leukemia (Ph+ ALL) for whom no other kinase inhibitors are indicated or T315I-positive Ph+ ALL.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-10-30:0",
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:fda:2024-03-19:0",
+      "type": "Contribution",
+      "description": "Indication received traditional approval.",
+      "date": "2024-03-19",
+      "contributor": {
+        "id": "agent:org:fda",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Food and Drug Administration",
+        "description": "Regulatory agency that approves drugs for use in the United States."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda:iclusig",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Iclusig (ponatinib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Takeda Pharmaceuticals America, Inc. Iclusig (ponatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/203469s037lbl.pdf. Revised March 2024. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/203469s037lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203469"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Takeda Pharmaceuticals America, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Iclusig",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "ponatinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2012-12-14",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 203469,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-03-19",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:362",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C3167",
+      "conceptType": "Disease",
+      "name": "Acute Lymphoblastic Leukemia",
+      "mappings": [
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:BLL",
+            "code": "BLL",
+            "name": "B-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=B-Lymphoblastic+Leukemia%2FLymphoma+%28BLL%29"
+            ]
+          }
+        },
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:TLL",
+            "code": "TLL",
+            "name": "T-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=T-Lymphoblastic+Leukemia%2FLymphoma+%28TLL%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C3167",
+        "code": "C3167",
+        "name": "Acute Lymphoblastic Leukemia",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3167"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C95777",
+      "conceptType": "Therapy",
+      "name": "Ponatinib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1364347",
+            "code": "1364347",
+            "name": "ponatinib",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1364347"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:45771379",
+            "code": "45771379",
+            "name": "Ponatinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45771379"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:703796003",
+            "code": "703796003",
+            "name": "Ponatinib",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=703796003&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:43013182",
+            "code": "43013182",
+            "name": "ponatinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/43013182"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "BCR-ABL inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C95777",
+        "code": "C95777",
+        "name": "Ponatinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C95777"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:32",
+            "present": true,
+            "subject": {
+              "id": "bmkr:32",
+              "type": "CategoricalVariant",
+              "name": "ABL1 p.T315I",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.D6NzpWXKqBnbcZZrXNSXj4tMUwROKbsQ",
+                    "type": "Allele",
+                    "name": "NP_005148.2:p.Thr315Ile",
+                    "aliases": [
+                      "NP_005148.2:p.T315I",
+                      "ABL1 p.T315I"
+                    ],
+                    "description": "VRS variation of NP_005148.2:p.Thr315Ile",
+                    "digest": "D6NzpWXKqBnbcZZrXNSXj4tMUwROKbsQ",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005148.2:p.Thr315Ile",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.T315I"
+                          }
+                        ]
+                      }
+                    ],
+                    "location": {
+                      "id": "ga4gh:SL.jGElwyBPYNWI-BkFFHKfgLJynt9zuNPs",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 315 of the Refseq protein NP_005148.2, which is the protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6).",
+                      "digest": "jGElwyBPYNWI-BkFFHKfgLJynt9zuNPs",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+                        "type": "SequenceReference",
+                        "name": "NP_005148.2",
+                        "aliases": [
+                          "ensembl:ENSP00000323315.5",
+                          "ga4gh:SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+                          "refseq:NP_005148.2"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for ABL1 (refseq:NM_005157.6), corresponding to the Refseq protein accession NP_005148.2.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.dmFigTG-0fY6I54swb7PoDuxCeT6O3Wg",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 314,
+                      "end": 315,
+                      "sequence": "T"
+                    },
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "I"
+                    }
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:76",
+                    "conceptType": "Gene",
+                    "name": "ABL1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:76",
+                      "code": "HGNC:76",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000097007",
+                          "code": "ENSG00000097007",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000097007"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:25",
+                          "code": "25",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/25"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_005157.6",
+                          "code": "NM_005157.6",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "9"
+                },
+                {
+                  "name": "start_position",
+                  "value": 133748283
+                },
+                {
+                  "name": "end_position",
+                  "value": 133748283
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "C"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "T"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.944C>T"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.T315I"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 5
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121913459"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "9:g.133748283C>T"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000318560.5:c.944C>T"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:12",
+            "present": true,
+            "subject": {
+              "id": "bmkr:12",
+              "type": "CategoricalVariant",
+              "name": "BCR::ABL1",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": true,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:1014",
+                      "conceptType": "Gene",
+                      "name": "BCR",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:1014",
+                        "code": "HGNC:1014",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000186716",
+                            "code": "ENSG00000186716",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000186716"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:613",
+                            "code": "613",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/613"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_004327.4",
+                            "code": "NM_004327.4",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gene:hgnc:76",
+                      "conceptType": "Gene",
+                      "name": "ABL1",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:76",
+                        "code": "HGNC:76",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000097007",
+                            "code": "ENSG00000097007",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000097007"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:25",
+                            "code": "25",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/25"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_005157.6",
+                            "code": "NM_005157.6",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Gene fusion"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:iclusig:1",
+        "type": "Indication",
+        "description": "ICLUSIG is a kinase inhibitor indicated for the treatment of adult patients with as monotherapy in Ph+ ALL for whom no other kinase inhibitors are indicated or T315I-positive Ph+ ALL.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-30:0",
+            "type": "Contribution",
+            "description": "Initial access of FDA approvals",
+            "date": "2024-10-30",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2024-03-19:0",
+            "type": "Contribution",
+            "description": "Indication received traditional approval.",
+            "date": "2024-03-19",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:iclusig",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Iclusig (ponatinib) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Takeda Pharmaceuticals America, Inc. Iclusig (ponatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/203469s037lbl.pdf. Revised March 2024. Accessed October 30, 2024.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/203469s037lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203469"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Takeda Pharmaceuticals America, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Iclusig",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "ponatinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2012-12-14",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 203469,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-03-19",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

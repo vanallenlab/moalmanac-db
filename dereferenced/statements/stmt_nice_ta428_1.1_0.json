@@ -1,0 +1,400 @@
+{
+  "id": "stmt:nice:ta428:1.1:0",
+  "type": "Statement",
+  "description": "The U.K. National Institute for Health and Care Excellence (NICE) has recommended Pembrolizumab as an option for treating locally advanced or metastatic PD-L1-positive non-small-cell lung cancer in adults who have had at least one chemotherapy (and targeted treatment if they have an epidermal growth factor receptor [EGFR]- or anaplastic lymphoma kinase [ALK]-positive tumour), only if: \u2022 pembrolizumab is stopped at 2 years of uninterrupted treatment and no documented disease progression, and \u2022 the company provides pembrolizumab in line with the commercial access agreement with NHS England.",
+  "contributions": [
+    {
+      "id": "ctrb:qub:2026-06-17:0",
+      "type": "Contribution",
+      "description": "Initial curation of NICE approvals",
+      "date": "2026-06-17",
+      "contributor": {
+        "id": "agent:user:qub",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Queen's University Belfast",
+        "description": "Queen's University Belfast"
+      }
+    },
+    {
+      "id": "ctrb:nice:2017-01-11:0",
+      "type": "Contribution",
+      "description": "Indication recommended by NICE technology appraisal.",
+      "date": "2017-01-11",
+      "contributor": {
+        "id": "agent:org:nice",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "National Institute for Health and Care Excellence",
+        "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:nice:ta428",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Keytruda (Pembrolizumab) [technology appraisal guidance]. NICE.",
+      "title": null,
+      "aliases": [],
+      "description": "Pembrolizumab for treating PD-L1-positive non-small-cell lung cancer after chemotherapy, 2017, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta428/resources/pembrolizumab-for-treating-pdl1positive-nonsmallcell-lung-cancer-after-chemotherapy-pdf-82604670410437. Revised January 2017. Accessed October 20, 2025.",
+      "urls": [
+        "https://www.nice.org.uk/guidance/ta428/resources/pembrolizumab-for-treating-pdl1positive-nonsmallcell-lung-cancer-after-chemotherapy-pdf-82604670410437",
+        "https://www.nice.org.uk/guidance/ta428"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:nice",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "National Institute for Health and Care Excellence",
+            "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "MSD (Merck)",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Keytruda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "Pembrolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 428,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2017-01-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:319",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C2926",
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:NSCLC",
+            "code": "NSCLC",
+            "name": "Non-Small Cell Lung Cancer",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Small+Cell+Lung+Cancer+%28NSCLC%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C2926",
+        "code": "C2926",
+        "name": "Lung Non-Small Cell Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2926"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C106432",
+      "conceptType": "Therapy",
+      "name": "Pembrolizumab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1547545",
+            "code": "1547545",
+            "name": "pembrolizumab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:45775965",
+            "code": "45775965",
+            "name": "pembrolizumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45775965"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:716125002",
+            "code": "716125002",
+            "name": "Pembrolizumab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716125002&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:37396350",
+            "code": "37396350",
+            "name": "Pembrolizumab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37396350"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C106432",
+        "code": "C106432",
+        "name": "Pembrolizumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:33",
+            "present": true,
+            "subject": {
+              "id": "bmkr:33",
+              "type": "CategoricalVariant",
+              "name": "PD-L1 >= 1%",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "PD-L1"
+                },
+                {
+                  "name": "unit",
+                  "value": "Tumor Proportion Score (TPS)"
+                },
+                {
+                  "name": "equality",
+                  "value": ">="
+                },
+                {
+                  "name": "value",
+                  "value": 0.01
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:nice:ta428:1.1",
+        "type": "Indication",
+        "description": "Pembrolizumab is recommended as an option for treating locally advanced or metastatic PD-L1-positive non-small-cell lung cancer in adults who have had at least one chemotherapy (and targeted treatment if they have an epidermal growth factor receptor [EGFR]- or anaplastic lymphoma kinase [ALK]-positive tumour), only if: \u2022 pembrolizumab is stopped at 2 years of uninterrupted treatment and no documented disease progression, and \u2022 the company provides pembrolizumab in line with the commercial access agreement with NHS England.",
+        "contributions": [
+          {
+            "id": "ctrb:qub:2026-06-17:0",
+            "type": "Contribution",
+            "description": "Initial curation of NICE approvals",
+            "date": "2026-06-17",
+            "contributor": {
+              "id": "agent:user:qub",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Queen's University Belfast",
+              "description": "Queen's University Belfast"
+            }
+          },
+          {
+            "id": "ctrb:nice:2017-01-11:0",
+            "type": "Contribution",
+            "description": "Indication recommended by NICE technology appraisal.",
+            "date": "2017-01-11",
+            "contributor": {
+              "id": "agent:org:nice",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "National Institute for Health and Care Excellence",
+              "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:nice:ta428",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Keytruda (Pembrolizumab) [technology appraisal guidance]. NICE.",
+            "title": null,
+            "aliases": [],
+            "description": "Pembrolizumab for treating PD-L1-positive non-small-cell lung cancer after chemotherapy, 2017, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta428/resources/pembrolizumab-for-treating-pdl1positive-nonsmallcell-lung-cancer-after-chemotherapy-pdf-82604670410437. Revised January 2017. Accessed October 20, 2025.",
+            "urls": [
+              "https://www.nice.org.uk/guidance/ta428/resources/pembrolizumab-for-treating-pdl1positive-nonsmallcell-lung-cancer-after-chemotherapy-pdf-82604670410437",
+              "https://www.nice.org.uk/guidance/ta428"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:nice",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "National Institute for Health and Care Excellence",
+                  "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "MSD (Merck)",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Keytruda",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "Pembrolizumab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 428,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2017-01-11",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

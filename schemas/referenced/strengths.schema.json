@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/referenced/strengths.schema.json",
+  "title": "Strength",
+  "description": "The category of evidence supporting a statement, mapped to an NCI Thesaurus code.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^str:ncit:C\\d+$"
+    },
+    "conceptType": {
+      "const": "Evidence"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primary_coding_id": {
+      "type": "string",
+      "pattern": "^coding:[a-z]+:.+$",
+      "description": "Foreign key to `codings.id`."
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^map:.+::.+$",
+        "description": "Foreign key to `mappings.id`."
+      }
+    }
+  },
+  "required": [
+    "id",
+    "conceptType",
+    "name",
+    "primary_coding_id",
+    "mappings"
+  ],
+  "additionalProperties": false
+}

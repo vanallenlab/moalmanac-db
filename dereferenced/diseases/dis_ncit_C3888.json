@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3888",
+  "conceptType": "Disease",
+  "name": "Renal Angiomyolipoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:RAML",
+        "code": "RAML",
+        "name": "Renal Angiomyolipoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Renal+Angiomyolipoma+%28RAML%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3888",
+    "code": "C3888",
+    "name": "Kidney Angiomyolipoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3888"
+    ]
+  }
+}

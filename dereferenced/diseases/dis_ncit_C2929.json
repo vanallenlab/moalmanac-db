@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C2929",
+  "conceptType": "Disease",
+  "name": "Squamous Cell Carcinoma, NOS",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:SCCNOS",
+        "code": "SCCNOS",
+        "name": "Squamous Cell Carcinoma, NOS",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Squamous+Cell+Carcinoma%2C+NOS+%28SCCNOS%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C2929",
+    "code": "C2929",
+    "name": "Squamous Cell Carcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2929"
+    ]
+  }
+}

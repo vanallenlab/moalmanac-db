@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3169",
+  "conceptType": "Disease",
+  "name": "Mast Cell Leukemia",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:SMMCL",
+        "code": "SMMCL",
+        "name": "Mast Cell Leukemia",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Mast+Cell+Leukemia+%28SMMCL%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": false,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3169",
+    "code": "C3169",
+    "name": "Mast Cell Leukemia",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3169"
+    ]
+  }
+}

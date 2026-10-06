@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/extension.schema.json",
+  "title": "Extension",
+  "description": "A GKS Core extension: a name/value pair for information the underlying specification does not directly support. `value` may be any JSON type.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "value": {},
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "value"
+  ],
+  "additionalProperties": false
+}

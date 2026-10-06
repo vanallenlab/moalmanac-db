@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/sequence_locations.schema.json",
+  "title": "SequenceLocation",
+  "description": "A VRS SequenceLocation with its SequenceReference embedded.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ga4gh:SL\\.[A-Za-z0-9_-]{32}$"
+    },
+    "type": {
+      "const": "SequenceLocation"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "digest": {
+      "type": "string"
+    },
+    "sequenceReference": {
+      "$ref": "sequence_references.schema.json"
+    },
+    "start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sequence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "name",
+    "aliases",
+    "description",
+    "digest",
+    "sequenceReference",
+    "start",
+    "end",
+    "sequence"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C6481",
+  "conceptType": "Disease",
+  "name": "Inflammatory Myofibroblastic Tumor",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:IMT",
+        "code": "IMT",
+        "name": "Inflammatory Myofibroblastic Tumor",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Inflammatory+Myofibroblastic+Tumor+%28IMT%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C6481",
+    "code": "C6481",
+    "name": "Inflammatory Myofibroblastic Tumor",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C6481"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/propositions.schema.json",
+  "title": "Proposition",
+  "description": "A VariantTherapeuticResponseProposition. Because Cat-VRS does not yet support sets of categorical variants, `subjectVariant` is a placeholder and the biomarker criteria are held in the `biomarkers` extension.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^prop:vtxr:\\d+$"
+    },
+    "type": {
+      "const": "VariantTherapeuticResponseProposition"
+    },
+    "predicate": {
+      "enum": [
+        "predictsSensitivityTo",
+        "predictsResistanceTo"
+      ]
+    },
+    "subjectVariant": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "CategoricalVariant"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "conditionQualifier": {
+      "$ref": "diseases.schema.json"
+    },
+    "objectTherapeutic": {
+      "oneOf": [
+        {
+          "$ref": "therapies.schema.json"
+        },
+        {
+          "$ref": "therapy_groups.schema.json"
+        }
+      ]
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "biomarkers"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "$ref": "biomarker_criteria.schema.json"
+                },
+                "minItems": 1
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "$ref": "extension.schema.json",
+            "properties": {
+              "name": {
+                "const": "biomarkers"
+              },
+              "value": {
+                "type": "array",
+                "items": {
+                  "$ref": "biomarker_criteria.schema.json"
+                },
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "predicate",
+    "subjectVariant",
+    "conditionQualifier",
+    "objectTherapeutic",
+    "extensions"
+  ],
+  "additionalProperties": false
+}

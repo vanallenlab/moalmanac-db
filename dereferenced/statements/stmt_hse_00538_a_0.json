@@ -1,0 +1,508 @@
+{
+  "id": "stmt:hse:00538:a:0",
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved blinatumomab for reimbursement as a monotherapy treatment option for the treatment of adult patients with relapsed or refractory B cell precusor (BCP) Philadelphia chromosome negative acute lymphoblastic leukemia (ALL) who have received no prior salvage treatment for relapsed / refractory (R/R) disease and are considered eligible for transplant (e.g., as a bridge-to-transplant).",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-01-16:0",
+      "type": "Contribution",
+      "description": "Adding HSE approvals for reimbursement to database",
+      "date": "2024-01-16",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2019-05-01:0",
+      "type": "Contribution",
+      "description": "Indication approved for reimbursement.",
+      "date": "2019-05-01",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00538",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Blinatumomab Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Blinatumomab Therapy, 2025, version number 2a, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6982/538_v2a_Blinatumomab_Therapy.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6982/538_v2a_Blinatumomab_Therapy.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-10-04",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:763",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C3167",
+      "conceptType": "Disease",
+      "name": "Acute Lymphoblastic Leukemia",
+      "mappings": [
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:BLL",
+            "code": "BLL",
+            "name": "B-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=B-Lymphoblastic+Leukemia%2FLymphoma+%28BLL%29"
+            ]
+          }
+        },
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:TLL",
+            "code": "TLL",
+            "name": "T-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=T-Lymphoblastic+Leukemia%2FLymphoma+%28TLL%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C3167",
+        "code": "C3167",
+        "name": "Acute Lymphoblastic Leukemia",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3167"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C62528",
+      "conceptType": "Therapy",
+      "name": "Blinatumomab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1597258",
+            "code": "1597258",
+            "name": "blinatumomab",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1597258"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:37396348",
+            "code": "37396348",
+            "name": "Blinatumomab",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37396348"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:716122004",
+            "code": "716122004",
+            "name": "Blinatumomab",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716122004&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:45892531",
+            "code": "45892531",
+            "name": "blinatumomab",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45892531"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "CD19 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C62528",
+        "code": "C62528",
+        "name": "Blinatumomab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62528"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:15",
+            "present": false,
+            "subject": {
+              "id": "bmkr:12",
+              "type": "CategoricalVariant",
+              "name": "BCR::ABL1",
+              "constraints": [
+                {
+                  "type": "AdjacencyConstraint",
+                  "orderKnown": true,
+                  "adjoinedElements": [
+                    {
+                      "id": "gene:hgnc:1014",
+                      "conceptType": "Gene",
+                      "name": "BCR",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:1014",
+                        "code": "HGNC:1014",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000186716",
+                            "code": "ENSG00000186716",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000186716"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:613",
+                            "code": "613",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/613"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_004327.4",
+                            "code": "NM_004327.4",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gene:hgnc:76",
+                      "conceptType": "Gene",
+                      "name": "ABL1",
+                      "primaryCoding": {
+                        "id": "coding:hgnc:76",
+                        "code": "HGNC:76",
+                        "system": "https://genenames.org",
+                        "iris": [
+                          "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+                        ]
+                      },
+                      "mappings": [
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ensembl:ensg00000097007",
+                            "code": "ENSG00000097007",
+                            "system": "https://www.ensembl.org",
+                            "iris": [
+                              "https://www.ensembl.org/id/ENSG00000097007"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "exactMatch",
+                          "coding": {
+                            "id": "coding:ncbi:25",
+                            "code": "25",
+                            "system": "https://www.ncbi.nlm.nih.gov/gene",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/gene/25"
+                            ]
+                          }
+                        },
+                        {
+                          "relation": "relatedMatch",
+                          "coding": {
+                            "id": "coding:refseq:NM_005157.6",
+                            "code": "NM_005157.6",
+                            "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                            "iris": [
+                              "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Gene fusion"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00538:a",
+        "type": "Indication",
+        "description": "Treatment of adult patients with relapsed or refractory B cell precursor (BCP) Philadelphia chromosome negative acute lymphoblastic leukaemia (ALL) who have received no prior salvage treatment for relapsed/refractory (R/R) disease and are considered eligible for transplant (i.e. as a bridge-to-transplant).",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-01-16:0",
+            "type": "Contribution",
+            "description": "Adding HSE approvals for reimbursement to database",
+            "date": "2024-01-16",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2019-05-01:0",
+            "type": "Contribution",
+            "description": "Indication approved for reimbursement.",
+            "date": "2019-05-01",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00538",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Blinatumomab Therapy. NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Blinatumomab Therapy, 2025, version number 2a, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6982/538_v2a_Blinatumomab_Therapy.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6982/538_v2a_Blinatumomab_Therapy.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2022-10-04",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "ODMS",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": null,
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "id": "stmt:nice:ta779:1.1:0",
+  "type": "Statement",
+  "description": "The U.K. National Institute for Health and Care Excellence (NICE) has recommended Dostarlimab for use within the Cancer Drugs Fund as an option for treating advanced or recurrent endometrial cancer with high microsatellite instability or mismatch repair deficiency in adults who have had platinum-based chemotherapy. It is recommended only if the conditions in the managed access agreement are followed.",
+  "contributions": [
+    {
+      "id": "ctrb:qub:2026-06-17:0",
+      "type": "Contribution",
+      "description": "Initial curation of NICE approvals",
+      "date": "2026-06-17",
+      "contributor": {
+        "id": "agent:user:qub",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Queen's University Belfast",
+        "description": "Queen's University Belfast"
+      }
+    },
+    {
+      "id": "ctrb:nice:2022-03-16:0",
+      "type": "Contribution",
+      "description": "Indication recommended by NICE technology appraisal.",
+      "date": "2022-03-16",
+      "contributor": {
+        "id": "agent:org:nice",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "National Institute for Health and Care Excellence",
+        "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:nice:ta779",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Jemperli (Dostarlimab) [technology appraisal guidance]. NICE.",
+      "title": null,
+      "aliases": [],
+      "description": "Dostarlimab for previously treated advanced or recurrent endometrial cancer with high microsatellite instability or mismatch repair deficiency, 2022, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta779/resources/dostarlimab-for-previously-treated-advanced-or-recurrent-endometrial-cancer-with-high-microsatellite-instability-or-mismatch-repair-deficiency-pdf-82611504767941. Revised March 2022. Accessed October 20, 2025.",
+      "urls": [
+        "https://www.nice.org.uk/guidance/ta779/resources/dostarlimab-for-previously-treated-advanced-or-recurrent-endometrial-cancer-with-high-microsatellite-instability-or-mismatch-repair-deficiency-pdf-82611504767941",
+        "https://www.nice.org.uk/guidance/ta779"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:nice",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "National Institute for Health and Care Excellence",
+            "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "GSK",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Jemperli",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "Dostarlimab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 779,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-03-16",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:587",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C7558",
+      "conceptType": "Disease",
+      "name": "Endometrial Carcinoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:UCEC",
+            "code": "UCEC",
+            "name": "Endometrial Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Endometrial+Carcinoma+%28UCEC%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C7558",
+        "code": "C7558",
+        "name": "Endometrial Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7558"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C126799",
+      "conceptType": "Therapy",
+      "name": "Dostarlimab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:2539967",
+            "code": "2539967",
+            "name": "dostarlimab",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2539967"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1536789",
+            "code": "1536789",
+            "name": "dostarlimab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1536789"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:1156877005",
+            "code": "1156877005",
+            "name": "Dostarlimab",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1156877005&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:608113",
+            "code": "608113",
+            "name": "Dostarlimab",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/608113"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "PD-1/PD-L1 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Immunotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C126799",
+        "code": "C126799",
+        "name": "Dostarlimab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C126799"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:38",
+            "present": true,
+            "subject": {
+              "id": "bmkr:38",
+              "type": "CategoricalVariant",
+              "name": "MSI-H",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Microsatellite stability"
+                },
+                {
+                  "name": "status",
+                  "value": "Microsatellite instability-high (MSI-H)"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:nice:ta779:1.1",
+        "type": "Indication",
+        "description": "Dostarlimab is recommended for use within the Cancer Drugs Fund as an option for treating advanced or recurrent endometrial cancer with high microsatellite instability or mismatch repair deficiency in adults who have had platinum-based chemotherapy. It is recommended only if the conditions in the managed access agreement are followed.",
+        "contributions": [
+          {
+            "id": "ctrb:qub:2026-06-17:0",
+            "type": "Contribution",
+            "description": "Initial curation of NICE approvals",
+            "date": "2026-06-17",
+            "contributor": {
+              "id": "agent:user:qub",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Queen's University Belfast",
+              "description": "Queen's University Belfast"
+            }
+          },
+          {
+            "id": "ctrb:nice:2022-03-16:0",
+            "type": "Contribution",
+            "description": "Indication recommended by NICE technology appraisal.",
+            "date": "2022-03-16",
+            "contributor": {
+              "id": "agent:org:nice",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "National Institute for Health and Care Excellence",
+              "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:nice:ta779",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Jemperli (Dostarlimab) [technology appraisal guidance]. NICE.",
+            "title": null,
+            "aliases": [],
+            "description": "Dostarlimab for previously treated advanced or recurrent endometrial cancer with high microsatellite instability or mismatch repair deficiency, 2022, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta779/resources/dostarlimab-for-previously-treated-advanced-or-recurrent-endometrial-cancer-with-high-microsatellite-instability-or-mismatch-repair-deficiency-pdf-82611504767941. Revised March 2022. Accessed October 20, 2025.",
+            "urls": [
+              "https://www.nice.org.uk/guidance/ta779/resources/dostarlimab-for-previously-treated-advanced-or-recurrent-endometrial-cancer-with-high-microsatellite-instability-or-mismatch-repair-deficiency-pdf-82611504767941",
+              "https://www.nice.org.uk/guidance/ta779"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:nice",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "National Institute for Health and Care Excellence",
+                  "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "GSK",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Jemperli",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "Dostarlimab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 779,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2022-03-16",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

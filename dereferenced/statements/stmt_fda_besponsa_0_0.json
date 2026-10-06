@@ -1,0 +1,413 @@
+{
+  "id": "stmt:fda:besponsa:0:0",
+  "type": "Statement",
+  "description": "The U.S. Food and Drug Administration granted approval to inotuzumab ozogamicin for the treatment of adult and pediatric patients 1 year and older with relapsed or refractory CD22-positive B-cell precursor acute lymphoblastic leukemia (ALL).",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-10-30:0",
+      "type": "Contribution",
+      "description": "Initial access of FDA approvals",
+      "date": "2024-10-30",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:fda:2024-03-06:0",
+      "type": "Contribution",
+      "description": "Indication received traditional approval.",
+      "date": "2024-03-06",
+      "contributor": {
+        "id": "agent:org:fda",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Food and Drug Administration",
+        "description": "Regulatory agency that approves drugs for use in the United States."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:fda:besponsa",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Besponsa (inotuzumab ozogamicin) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Wyeth Pharmaceuticals LLC. Besponsa (inotuzumab ozogamicin) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761040s003lbl.pdf. Revised March 2024. Accessed October 30, 2024.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761040s003lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761040"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Wyeth Pharmaceuticals LLC.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Besponsa",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "inotuzumab ozogamicin",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2017-08-17",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 761040,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-03-06",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:168",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C3167",
+      "conceptType": "Disease",
+      "name": "Acute Lymphoblastic Leukemia",
+      "mappings": [
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:BLL",
+            "code": "BLL",
+            "name": "B-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=B-Lymphoblastic+Leukemia%2FLymphoma+%28BLL%29"
+            ]
+          }
+        },
+        {
+          "relation": "narrowMatch",
+          "coding": {
+            "id": "coding:oncotree:TLL",
+            "code": "TLL",
+            "name": "T-Lymphoblastic Leukemia/Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=T-Lymphoblastic+Leukemia%2FLymphoma+%28TLL%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C3167",
+        "code": "C3167",
+        "name": "Acute Lymphoblastic Leukemia",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3167"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C71542",
+      "conceptType": "Therapy",
+      "name": "Inotuzumab ozogamicin",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1942950",
+            "code": "1942950",
+            "name": "inotuzumab ozogamicin",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1942950"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:42537249",
+            "code": "42537249",
+            "name": "Inotuzumab ozogamicin",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/42537249"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:736495009",
+            "code": "736495009",
+            "name": "Inotuzumab ozogamicin",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=736495009&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:794068",
+            "code": "794068",
+            "name": "inotuzumab ozogamicin",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/794068"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "BCR-ABL inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C71542",
+        "code": "C71542",
+        "name": "Inotuzumab Ozogamicin",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C71542"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:13",
+            "present": true,
+            "subject": {
+              "id": "bmkr:13",
+              "type": "CategoricalVariant",
+              "name": "CD22 +",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "CD22"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:fda:besponsa:0",
+        "type": "Indication",
+        "description": "BESPONSA is a CD22-directed antibody and cytotoxic drug conjugate indicated for the treatment of relapsed or refractory CD22-positive B-cell precursor acute lymphoblastic leukemia (ALL) in adult and pediatric patients 1 year and older.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-30:0",
+            "type": "Contribution",
+            "description": "Initial access of FDA approvals",
+            "date": "2024-10-30",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:fda:2024-03-06:0",
+            "type": "Contribution",
+            "description": "Indication received traditional approval.",
+            "date": "2024-03-06",
+            "contributor": {
+              "id": "agent:org:fda",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Food and Drug Administration",
+              "description": "Regulatory agency that approves drugs for use in the United States."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:fda:besponsa",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Besponsa (inotuzumab ozogamicin) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Wyeth Pharmaceuticals LLC. Besponsa (inotuzumab ozogamicin) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761040s003lbl.pdf. Revised March 2024. Accessed October 30, 2024.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761040s003lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761040"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Wyeth Pharmaceuticals LLC.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Besponsa",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "inotuzumab ozogamicin",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2017-08-17",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 761040,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-03-06",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

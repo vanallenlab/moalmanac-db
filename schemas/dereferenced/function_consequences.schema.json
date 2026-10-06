@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/function_consequences.schema.json",
+  "title": "FunctionConsequence",
+  "description": "The functional consequence of a variant, with its primary coding embedded.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^func:so:\\d+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primaryCoding": {
+      "$ref": "codings.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "primaryCoding"
+  ],
+  "additionalProperties": false
+}

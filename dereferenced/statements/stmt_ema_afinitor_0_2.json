@@ -1,0 +1,553 @@
+{
+  "id": "stmt:ema:afinitor:0:2",
+  "type": "Statement",
+  "description": "The European Medicines Agency (EMA) has authorized everolimus in combination with exemestane for the treatment of adult patients with hormone receptor-positive, HER2/neu negative advanced breast cancer in postmenopausal women without symptomatic visceral disease after recurrence or progression following a non-steroidal aromatase inhibitor.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2024-10-20:0",
+      "type": "Contribution",
+      "description": "Adding EMA approvals for use to database",
+      "date": "2024-10-20",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:ema:2012-07-23:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2012-07-23",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema:afinitor",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Afinitor (everolimus) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Novartis Europharm Limited. Afinitor (everolimus) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/afinitor-epar-product-information_en.pdf. Revised June 2022. Accessed March 11, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/afinitor-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/afinitor"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Novartis Europharm Limited.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Afinitor",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "everolimus",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2009-09-02",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": null,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-06-27",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:133",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C9245",
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:BRCA",
+            "code": "BRCA",
+            "name": "Invasive Breast Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C9245",
+        "code": "C9245",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "txgrp:26",
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": "tx:ncit:C48387",
+          "conceptType": "Therapy",
+          "name": "Everolimus",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:141704",
+                "code": "141704",
+                "name": "everolimus",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=141704"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:4324761",
+                "code": "4324761",
+                "name": "Everolimus",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4324761"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:sctid:428698007",
+                "code": "428698007",
+                "name": "Everolimus",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=428698007&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:19011440",
+                "code": "19011440",
+                "name": "everolimus",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/19011440"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PI3K/AKT/mTOR inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C48387",
+            "code": "C48387",
+            "name": "Everolimus",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C48387"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C1097",
+          "conceptType": "Therapy",
+          "name": "Exemestane",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:258494",
+                "code": "258494",
+                "name": "exemestane",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=258494"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:4304164",
+                "code": "4304164",
+                "name": "Exemestane",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/4304164"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:sctid:387017005",
+                "code": "387017005",
+                "name": "Exemestane",
+                "system": "SNOMED",
+                "systemVersion": "2026-03-01",
+                "iris": [
+                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387017005&edition=MAIN/2026-03-01&release=&languages=en"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1398399",
+                "code": "1398399",
+                "name": "exemestane",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1398399"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Aromatase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Hormone therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C1097",
+            "code": "C1097",
+            "name": "Exemestane",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1097"
+            ]
+          }
+        }
+      ]
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:1",
+            "present": true,
+            "subject": {
+              "id": "bmkr:1",
+              "type": "CategoricalVariant",
+              "name": "ER positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Estrogen receptor (ER)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:2",
+            "present": true,
+            "subject": {
+              "id": "bmkr:2",
+              "type": "CategoricalVariant",
+              "name": "HER2-negative",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Negative"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:3",
+            "present": true,
+            "subject": {
+              "id": "bmkr:3",
+              "type": "CategoricalVariant",
+              "name": "PR positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Progesterone receptor (PR)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:ema:afinitor:0",
+        "type": "Indication",
+        "description": "Afinitor is indicated for the treatment of hormone receptor-positive, HER2/neu negative advanced breast cancer, in combination with exemestane, in postmenopausal women without symptomatic visceral disease after recurrence or progression following a non-steroidal aromatase inhibitor.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2024-10-20:0",
+            "type": "Contribution",
+            "description": "Adding EMA approvals for use to database",
+            "date": "2024-10-20",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:ema:2012-07-23:0",
+            "type": "Contribution",
+            "description": "Indication received approval from the European Commission.",
+            "date": "2012-07-23",
+            "contributor": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:ema:afinitor",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Afinitor (everolimus) [product information]. EMA.",
+            "title": null,
+            "aliases": [],
+            "description": "Novartis Europharm Limited. Afinitor (everolimus) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/afinitor-epar-product-information_en.pdf. Revised June 2022. Accessed March 11, 2024.",
+            "urls": [
+              "https://www.ema.europa.eu/en/documents/product-information/afinitor-epar-product-information_en.pdf",
+              "https://www.ema.europa.eu/en/medicines/human/EPAR/afinitor"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:ema",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "European Medicines Agency",
+                  "description": "Regulatory agency that approves medicines for use in the European Union."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Novartis Europharm Limited.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Afinitor",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "everolimus",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2009-09-02",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": null,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2022-06-27",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

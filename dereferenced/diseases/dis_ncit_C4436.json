@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C4436",
+  "conceptType": "Disease",
+  "name": "Cholangiocarcinoma",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:CHOL",
+        "code": "CHOL",
+        "name": "Cholangiocarcinoma",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Cholangiocarcinoma+%28CHOL%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C4436",
+    "code": "C4436",
+    "name": "Cholangiocarcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4436"
+    ]
+  }
+}

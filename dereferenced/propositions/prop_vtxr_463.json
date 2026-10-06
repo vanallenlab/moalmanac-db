@@ -1,0 +1,355 @@
+{
+  "id": "prop:vtxr:463",
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
+  "conditionQualifier": {
+    "id": "dis:ncit:C2926",
+    "conceptType": "Disease",
+    "name": "Non-Small Cell Lung Cancer",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:NSCLC",
+          "code": "NSCLC",
+          "name": "Non-Small Cell Lung Cancer",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Small+Cell+Lung+Cancer+%28NSCLC%29"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C2926",
+      "code": "C2926",
+      "name": "Lung Non-Small Cell Carcinoma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2926"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": "txgrp:85",
+    "membershipOperator": "AND",
+    "therapies": [
+      {
+        "id": "tx:ncit:C148147",
+        "conceptType": "Therapy",
+        "name": "Lazertinib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:rxcui:2691150",
+              "code": "2691150",
+              "name": "lazertinib",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2691150"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:1735080",
+              "code": "1735080",
+              "name": "lazertinib",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1735080"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "EGFR inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "coding:ncit:C148147",
+          "code": "C148147",
+          "name": "Lazertinib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C148147"
+          ]
+        }
+      },
+      {
+        "id": "tx:ncit:C124993",
+        "conceptType": "Therapy",
+        "name": "Amivantamab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:rxcui:2549199",
+              "code": "2549199",
+              "name": "amivantamab",
+              "system": "RxNorm",
+              "systemVersion": "02-Mar-2026",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2549199"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:1536935",
+              "code": "1536935",
+              "name": "amivantamab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1536935"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:sctid:1162751008",
+              "code": "1162751008",
+              "name": "Amivantamab",
+              "system": "SNOMED",
+              "systemVersion": "2025-03-01",
+              "iris": [
+                "https://browser.ihtsdotools.org/?perspective=full&conceptId1=1162751008&edition=MAIN/2025-03-01&release=&languages=en"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:37160574",
+              "code": "37160574",
+              "name": "Amivantamab",
+              "system": "OMOP",
+              "systemVersion": "v20260227",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/37160574"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "EGFR inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "coding:ncit:C124993",
+          "code": "C124993",
+          "name": "Amivantamab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C124993"
+          ]
+        }
+      }
+    ]
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:10",
+          "present": true,
+          "subject": {
+            "id": "bmkr:10",
+            "type": "CategoricalVariant",
+            "name": "EGFR Exon 19 (Deletion)",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "Sequence within refseq:NP_005219.2, the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to Exon 19.",
+                  "digest": "d2mE9fs239Iqh2Rx3pBVNl0txu4dXxDT",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                    "type": "SequenceReference",
+                    "name": "NP_005219.2",
+                    "aliases": [
+                      "ensembl:ENSP00000275493.2",
+                      "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                      "refseq:NP_005219.2"
+                    ],
+                    "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+                    "moleculeType": "protein",
+                    "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                    "residueAlphabet": "aa"
+                  },
+                  "start": 728,
+                  "end": 761,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "FeatureContextConstraint",
+                "featureContext": {
+                  "id": "gene:hgnc:3236",
+                  "conceptType": "Gene",
+                  "name": "EGFR",
+                  "primaryCoding": {
+                    "id": "coding:hgnc:3236",
+                    "code": "HGNC:3236",
+                    "system": "https://genenames.org",
+                    "iris": [
+                      "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+                    ]
+                  },
+                  "mappings": [
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ensembl:ensg00000146648",
+                        "code": "ENSG00000146648",
+                        "system": "https://www.ensembl.org",
+                        "iris": [
+                          "https://www.ensembl.org/id/ENSG00000146648"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "exactMatch",
+                      "coding": {
+                        "id": "coding:ncbi:1956",
+                        "code": "1956",
+                        "system": "https://www.ncbi.nlm.nih.gov/gene",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/gene/1956"
+                        ]
+                      }
+                    },
+                    {
+                      "relation": "relatedMatch",
+                      "coding": {
+                        "id": "coding:refseq:NM_005228.5",
+                        "code": "NM_005228.5",
+                        "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                        "iris": [
+                          "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Somatic variant"
+              },
+              {
+                "name": "chromosome",
+                "value": "7"
+              },
+              {
+                "name": "start_position",
+                "value": null
+              },
+              {
+                "name": "end_position",
+                "value": null
+              },
+              {
+                "name": "reference_allele",
+                "value": null
+              },
+              {
+                "name": "alternate_allele",
+                "value": null
+              },
+              {
+                "name": "cdna_change",
+                "value": null
+              },
+              {
+                "name": "protein_change",
+                "value": null
+              },
+              {
+                "name": "variant_annotation",
+                "value": "Deletion"
+              },
+              {
+                "name": "exon",
+                "value": 19
+              },
+              {
+                "name": "rsid",
+                "value": null
+              },
+              {
+                "name": "hgvsg",
+                "value": null
+              },
+              {
+                "name": "hgvsc",
+                "value": null
+              },
+              {
+                "name": "requires_oncogenic",
+                "value": true
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/biomarker_criteria.schema.json",
+  "title": "BiomarkerCriterion",
+  "description": "Interim link between a proposition and a biomarker (a draft Cat-VRS categorical variant criterion), with the biomarker embedded as `subject`.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^bmkr\\.criterion:\\d+$"
+    },
+    "present": {
+      "type": "boolean"
+    },
+    "subject": {
+      "$ref": "biomarkers.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "present",
+    "subject"
+  ],
+  "additionalProperties": false
+}

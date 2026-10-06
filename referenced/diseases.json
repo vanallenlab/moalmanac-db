@@ -1,1418 +1,981 @@
 [
   {
-    "id": 0,
+    "id": "dis:ncit:C3167",
     "conceptType": "Disease",
-    "name": "Acute Lymphoid Leukemia",
-    "primary_coding_id": "oncotree:ALL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "Acute Lymphoblastic Leukemia",
+    "primary_coding_id": "coding:ncit:C3167",
+    "mappings": [
+      "map:ncit:C3167::oncotree:BLL",
+      "map:ncit:C3167::oncotree:TLL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 1,
+    "id": "dis:ncit:C3171",
     "conceptType": "Disease",
     "name": "Acute Myeloid Leukemia",
-    "primary_coding_id": "oncotree:AML",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3171",
+    "mappings": [
+      "map:ncit:C3171::oncotree:AML"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 2,
+    "id": "dis:ncit:C9296",
     "conceptType": "Disease",
     "name": "Adenocarcinoma of the Gastroesophageal Junction",
-    "primary_coding_id": "oncotree:GEJ",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C9296",
+    "mappings": [
+      "map:ncit:C9296::oncotree:GEJ"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 3,
+    "id": "dis:ncit:C3720",
     "conceptType": "Disease",
     "name": "Anaplastic Large Cell Lymphoma",
-    "primary_coding_id": "oncotree:ALCL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3720",
+    "mappings": [
+      "map:ncit:C3720::oncotree:ALCL"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 4,
+    "id": "dis:ncit:C3878",
     "conceptType": "Disease",
     "name": "Anaplastic Thyroid Cancer",
-    "primary_coding_id": "oncotree:THAP",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3878",
+    "mappings": [
+      "map:ncit:C3878::oncotree:THAP"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 5,
+    "id": "dis:ncit:C132146",
     "conceptType": "Disease",
     "name": "Any solid tumor",
-    "primary_coding_id": "ncit:C132146",
+    "primary_coding_id": "coding:ncit:C132146",
     "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 6,
+    "id": "dis:ncit:C60781",
     "conceptType": "Disease",
     "name": "Astrocytoma",
-    "primary_coding_id": "oncotree:ASTR",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C60781",
+    "mappings": [
+      "map:ncit:C60781::oncotree:ASTR"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 7,
+    "id": "dis:ncit:C8644",
     "conceptType": "Disease",
     "name": "B-Cell Acute Lymphoid Leukemia",
-    "primary_coding_id": "oncotree:BALL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C8644",
+    "mappings": [
+      "map:ncit:C8644::oncotree:BLL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 8,
+    "id": "dis:ncit:C39851",
     "conceptType": "Disease",
     "name": "Bladder Urothelial Carcinoma",
-    "primary_coding_id": "oncotree:BLCA",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C39851",
+    "mappings": [
+      "map:ncit:C39851::oncotree:BLCA"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 9,
+    "id": "dis:ncit:C9245",
     "conceptType": "Disease",
     "name": "Invasive Breast Carcinoma",
-    "primary_coding_id": "oncotree:BRCA",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C9245",
+    "mappings": [
+      "map:ncit:C9245::oncotree:BRCA"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 10,
+    "id": "dis:ncit:C3182",
     "conceptType": "Disease",
-    "name": "APL with PML-RARA",
-    "primary_coding_id": "oncotree:APLPMLRARA",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "Acute Promyelocytic Leukemia with PML::RARA",
+    "primary_coding_id": "coding:ncit:C3182",
+    "mappings": [
+      "map:ncit:C3182::oncotree:APLPMLRARA"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 11,
+    "id": "dis:ncit:C4436",
     "conceptType": "Disease",
     "name": "Cholangiocarcinoma",
-    "primary_coding_id": "oncotree:CHOL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4436",
+    "mappings": [
+      "map:ncit:C4436::oncotree:CHOL"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 12,
+    "id": "dis:ncit:C4563",
     "conceptType": "Disease",
     "name": "Chronic Eosinophilic Leukemia, NOS",
-    "primary_coding_id": "oncotree:CELNOS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4563",
+    "mappings": [
+      "map:ncit:C4563::oncotree:CELNOS"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 13,
-    "conceptType": "Disease",
-    "name": "Chronic Myelogenous Leukemia",
-    "primary_coding_id": "oncotree:CML",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
-  },
-  {
-    "id": 14,
+    "id": "dis:ncit:C3178",
     "conceptType": "Disease",
     "name": "Chronic Myelomonocytic Leukemia",
-    "primary_coding_id": "oncotree:CMML",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3178",
+    "mappings": [
+      "map:ncit:C3178::oncotree:CMML"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 15,
+    "id": "dis:ncit:C5105",
     "conceptType": "Disease",
     "name": "Colorectal Adenocarcinoma",
-    "primary_coding_id": "oncotree:COADREAD",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C5105",
+    "mappings": [
+      "map:ncit:C5105::oncotree:COADREAD"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 16,
+    "id": "dis:ncit:C3704",
     "conceptType": "Disease",
-    "name": "Dedifferentiated Lipsarcoma",
-    "primary_coding_id": "oncotree:DDLS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "Dedifferentiated Liposarcoma",
+    "primary_coding_id": "coding:ncit:C3704",
+    "mappings": [
+      "map:ncit:C3704::oncotree:DDLS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 17,
+    "id": "dis:ncit:C4683",
     "conceptType": "Disease",
     "name": "Dermatofibrosarcoma Protuberans",
-    "primary_coding_id": "oncotree:DFSP",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4683",
+    "mappings": [
+      "map:ncit:C4683::oncotree:DFSP"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 18,
+    "id": "dis:ncit:C7558",
     "conceptType": "Disease",
     "name": "Endometrial Carcinoma",
-    "primary_coding_id": "oncotree:UCEC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7558",
+    "mappings": [
+      "map:ncit:C7558::oncotree:UCEC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 19,
+    "id": "dis:ncit:C4817",
     "conceptType": "Disease",
     "name": "Ewing Sarcoma",
-    "primary_coding_id": "oncotree:ES",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4817",
+    "mappings": [
+      "map:ncit:C4817::oncotree:ES"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 20,
+    "id": "dis:ncit:C3209",
     "conceptType": "Disease",
     "name": "Follicular Lymphoma",
-    "primary_coding_id": "oncotree:FL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3209",
+    "mappings": [
+      "map:ncit:C3209::oncotree:FL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 21,
-    "conceptType": "Disease",
-    "name": "Gastric Remnant Adenocarcinoma",
-    "primary_coding_id": "oncotree:GRC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
-  },
-  {
-    "id": 22,
+    "id": "dis:ncit:C3868",
     "conceptType": "Disease",
     "name": "Gastrointestinal Stromal Tumor",
-    "primary_coding_id": "oncotree:GIST",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3868",
+    "mappings": [
+      "map:ncit:C3868::oncotree:GIST"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 23,
+    "id": "dis:ncit:C3059",
     "conceptType": "Disease",
     "name": "Glioma",
-    "primary_coding_id": "oncotree:GNOS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3059",
+    "mappings": [
+      "map:ncit:C3059::oncotree:GNOS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 24,
+    "id": "dis:ncit:C133187",
     "conceptType": "Disease",
     "name": "Head and Neck Mucosal Melanoma",
-    "primary_coding_id": "oncotree:HNMUCM",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C133187",
+    "mappings": [
+      "map:ncit:C133187::oncotree:HNMUCM"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 25,
+    "id": "dis:ncit:C34447",
     "conceptType": "Disease",
     "name": "Head and Neck Squamous Cell Carcinoma",
-    "primary_coding_id": "oncotree:HNSC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C34447",
+    "mappings": [
+      "map:ncit:C34447::oncotree:HNSC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 26,
+    "id": "dis:ncit:C96156",
     "conceptType": "Disease",
     "name": "High-Grade Neuroendocrine Carcinoma of the Colon and Rectum",
-    "primary_coding_id": "oncotree:HGNEC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C96156",
+    "mappings": [
+      "map:ncit:C96156::oncotree:HGNEC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 27,
+    "id": "dis:ncit:C126456",
     "conceptType": "Disease",
     "name": "High-Grade Serous Fallopian Tube Cancer",
-    "primary_coding_id": "oncotree:HGSFT",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C126456",
+    "mappings": [
+      "map:ncit:C126456::oncotree:HGSFT"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 28,
+    "id": "dis:ncit:C6481",
     "conceptType": "Disease",
     "name": "Inflammatory Myofibroblastic Tumor",
-    "primary_coding_id": "oncotree:IMT",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C6481",
+    "mappings": [
+      "map:ncit:C6481::oncotree:IMT"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 29,
+    "id": "dis:ncit:C35417",
     "conceptType": "Disease",
     "name": "Intrahepatic Cholangiocarcinoma",
-    "primary_coding_id": "oncotree:IHCH",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C35417",
+    "mappings": [
+      "map:ncit:C35417::oncotree:IHCH"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 30,
+    "id": "dis:ncit:C3467",
     "conceptType": "Disease",
     "name": "Cutaneous T-cell Lymphoma",
-    "primary_coding_id": "ncit:C3467",
+    "primary_coding_id": "coding:ncit:C3467",
     "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": false
   },
   {
-    "id": 31,
+    "id": "dis:ncit:C3107",
     "conceptType": "Disease",
     "name": "Langerhans Cell Histiocytosis",
-    "primary_coding_id": "oncotree:LCH",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3107",
+    "mappings": [
+      "map:ncit:C3107::oncotree:LCH"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 32,
+    "id": "dis:ncit:C3158",
     "conceptType": "Disease",
     "name": "Leiomyosarcoma",
-    "primary_coding_id": "oncotree:LMS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3158",
+    "mappings": [
+      "map:ncit:C3158::oncotree:LMS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 33,
-    "conceptType": "Disease",
-    "name": "Leukemia",
-    "primary_coding_id": "oncotree:LEUK",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
-  },
-  {
-    "id": 34,
+    "id": "dis:ncit:C3194",
     "conceptType": "Disease",
     "name": "Liposarcoma",
-    "primary_coding_id": "oncotree:LIPO",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3194",
+    "mappings": [
+      "map:ncit:C3194::oncotree:LIPO"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 35,
+    "id": "dis:ncit:C132067",
     "conceptType": "Disease",
-    "name": "Low-Grade Glioma, NOS",
-    "primary_coding_id": "oncotree:LGGNOS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "Low-Grade Glioma",
+    "primary_coding_id": "coding:ncit:C132067",
+    "mappings": [
+      "map:ncit:C132067::oncotree:LGGNOS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 36,
+    "id": "dis:ncit:C3493",
     "conceptType": "Disease",
     "name": "Lung Squamous Cell Carcinoma",
-    "primary_coding_id": "oncotree:LUSC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3493",
+    "mappings": [
+      "map:ncit:C3493::oncotree:LUSC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 37,
+    "id": "dis:ncit:C3169",
     "conceptType": "Disease",
     "name": "Mast Cell Leukemia",
-    "primary_coding_id": "oncotree:SMMCL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3169",
+    "mappings": [
+      "map:ncit:C3169::oncotree:SMMCL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 38,
+    "id": "dis:ncit:C3879",
     "conceptType": "Disease",
     "name": "Medullary Thyroid Cancer",
-    "primary_coding_id": "oncotree:THME",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3879",
+    "mappings": [
+      "map:ncit:C3879::oncotree:THME"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 39,
+    "id": "dis:ncit:C3222",
     "conceptType": "Disease",
     "name": "Medulloblastoma",
-    "primary_coding_id": "oncotree:MBL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3222",
+    "mappings": [
+      "map:ncit:C3222::oncotree:MBL"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 40,
+    "id": "dis:ncit:C3224",
     "conceptType": "Disease",
     "name": "Melanoma",
-    "primary_coding_id": "oncotree:MEL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3224",
+    "mappings": [
+      "map:ncit:C3224::oncotree:MEL"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 41,
+    "id": "dis:ncit:C3242",
     "conceptType": "Disease",
     "name": "Multiple Myeloma",
-    "primary_coding_id": "oncotree:MM",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3242",
+    "mappings": [
+      "map:ncit:C3242::oncotree:PCM"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 42,
+    "id": "dis:ncit:C9285",
     "conceptType": "Disease",
     "name": "Aggressive Systemic Mastocytosis",
-    "primary_coding_id": "oncotree:ASM",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C9285",
+    "mappings": [
+      "map:ncit:C9285::oncotree:ASM"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 43,
+    "id": "dis:ncit:C3247",
     "conceptType": "Disease",
     "name": "Myelodysplastic Syndromes",
-    "primary_coding_id": "oncotree:MDS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3247",
+    "mappings": [
+      "map:ncit:C3247::oncotree:MDS"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 44,
+    "id": "dis:ncit:C9290",
     "conceptType": "Disease",
-    "name": "Myeloid/Lymphoid Neoplasms",
-    "primary_coding_id": "oncotree:MLN",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "Myeloid Neoplasm",
+    "primary_coding_id": "coding:ncit:C9290",
+    "mappings": [
+      "map:ncit:C9290::oncotree:MNM"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 45,
+    "id": "dis:ncit:C7065",
+    "conceptType": "Disease",
+    "name": "Lymphocytic Neoplasm",
+    "primary_coding_id": "coding:ncit:C7065",
+    "mappings": [
+      "map:ncit:C7065::oncotree:LNM"
+    ],
+    "solid_tumor": false
+  },
+  {
+    "id": "dis:ncit:C4345",
     "conceptType": "Disease",
     "name": "Myeloproliferative Neoplasm",
-    "primary_coding_id": "oncotree:MPN",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4345",
+    "mappings": [
+      "map:ncit:C4345::oncotree:MPN"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 46,
+    "id": "dis:ncit:C53972",
     "conceptType": "Disease",
-    "name": "Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease",
-    "primary_coding_id": "oncotree:ECD",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "Erdheim-Chester Disease",
+    "primary_coding_id": "coding:ncit:C53972",
+    "mappings": [
+      "map:ncit:C53972::oncotree:ECD"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 47,
+    "id": "dis:ncit:C2926",
     "conceptType": "Disease",
     "name": "Non-Small Cell Lung Cancer",
-    "primary_coding_id": "oncotree:NSCLC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C2926",
+    "mappings": [
+      "map:ncit:C2926::oncotree:NSCLC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 48,
+    "id": "dis:ncit:C3288",
     "conceptType": "Disease",
     "name": "Oligodendroglioma",
-    "primary_coding_id": "oncotree:ODG",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3288",
+    "mappings": [
+      "map:ncit:C3288::oncotree:ODG"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 49,
+    "id": "dis:ncit:C9145",
     "conceptType": "Disease",
     "name": "Osteosarcoma",
-    "primary_coding_id": "oncotree:OS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C9145",
+    "mappings": [
+      "map:ncit:C9145::oncotree:OS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 50,
-    "conceptType": "Disease",
-    "name": "Ovarian Cancer, Other",
-    "primary_coding_id": "oncotree:OOVC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
-  },
-  {
-    "id": 51,
+    "id": "dis:ncit:C4381",
     "conceptType": "Disease",
     "name": "Ovarian Epithelial Tumor",
-    "primary_coding_id": "oncotree:OVT",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4381",
+    "mappings": [
+      "map:ncit:C4381::oncotree:OVT"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 52,
+    "id": "dis:ncit:C8294",
     "conceptType": "Disease",
     "name": "Pancreatic Adenocarcinoma",
-    "primary_coding_id": "oncotree:PAAD",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C8294",
+    "mappings": [
+      "map:ncit:C8294::oncotree:PAAD"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 53,
+    "id": "dis:ncit:C7633",
     "conceptType": "Disease",
     "name": "Peritoneal Mesothelioma",
-    "primary_coding_id": "oncotree:PEMESO",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7633",
+    "mappings": [
+      "map:ncit:C7633::oncotree:PEMESO"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 54,
+    "id": "dis:ncit:C40023",
     "conceptType": "Disease",
     "name": "Peritoneal Serous Carcinoma",
-    "primary_coding_id": "oncotree:PSEC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C40023",
+    "mappings": [
+      "map:ncit:C40023::oncotree:PSEC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 55,
+    "id": "dis:ncit:C2919",
     "conceptType": "Disease",
     "name": "Prostate Adenocarcinoma",
-    "primary_coding_id": "oncotree:PRAD",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C2919",
+    "mappings": [
+      "map:ncit:C2919::oncotree:PRAD"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 56,
+    "id": "dis:ncit:C5545",
     "conceptType": "Disease",
     "name": "Prostate Neuroendocrine Cancer",
-    "primary_coding_id": "oncotree:PRNE",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C5545",
+    "mappings": [
+      "map:ncit:C5545::oncotree:PRNE"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 57,
+    "id": "dis:ncit:C9383",
     "conceptType": "Disease",
     "name": "Rectal Adenocarcinoma",
-    "primary_coding_id": "oncotree:READ",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C9383",
+    "mappings": [
+      "map:ncit:C9383::oncotree:READ"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 58,
-    "conceptType": "Disease",
-    "name": "Renal Cell Carcinoma",
-    "primary_coding_id": "oncotree:RCC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
-  },
-  {
-    "id": 59,
+    "id": "dis:ncit:C4033",
     "conceptType": "Disease",
     "name": "Renal Clear Cell Carcinoma",
-    "primary_coding_id": "oncotree:CCRCC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4033",
+    "mappings": [
+      "map:ncit:C4033::oncotree:CCRCC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 60,
+    "id": "dis:ncit:C7550",
     "conceptType": "Disease",
     "name": "Serous Ovarian Cancer",
-    "primary_coding_id": "oncotree:SOC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7550",
+    "mappings": [
+      "map:ncit:C7550::oncotree:SOC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 61,
+    "id": "dis:ncit:C4917",
     "conceptType": "Disease",
     "name": "Small Cell Lung Cancer",
-    "primary_coding_id": "oncotree:SCLC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4917",
+    "mappings": [
+      "map:ncit:C4917::oncotree:SCLC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 62,
+    "id": "dis:ncit:C2929",
     "conceptType": "Disease",
     "name": "Squamous Cell Carcinoma, NOS",
-    "primary_coding_id": "oncotree:SCCNOS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C2929",
+    "mappings": [
+      "map:ncit:C2929::oncotree:SCCNOS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 63,
+    "id": "dis:ncit:C4004",
     "conceptType": "Disease",
     "name": "Stomach Adenocarcinoma",
-    "primary_coding_id": "oncotree:STAD",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4004",
+    "mappings": [
+      "map:ncit:C4004::oncotree:STAD"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 64,
+    "id": "dis:ncit:C3183",
     "conceptType": "Disease",
     "name": "T-Cell Acute Lymphoid Leukemia",
-    "primary_coding_id": "oncotree:TALL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3183",
+    "mappings": [
+      "map:ncit:C3183::oncotree:TLL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 65,
+    "id": "dis:ncit:C8591",
     "conceptType": "Disease",
     "name": "Testicular Germ Cell Tumors",
-    "primary_coding_id": "oncotree:TGCT",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C8591",
+    "mappings": [
+      "map:ncit:C8591::oncotree:NSGCT",
+      "map:ncit:C8591::oncotree:SEM"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 66,
+    "id": "dis:ncit:C7569",
     "conceptType": "Disease",
     "name": "Thymic Carcinoma",
-    "primary_coding_id": "oncotree:THYC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7569",
+    "mappings": [
+      "map:ncit:C7569::oncotree:THYC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 67,
+    "id": "dis:ncit:C6166",
     "conceptType": "Disease",
     "name": "Urethral Urothelial Carcinoma",
-    "primary_coding_id": "oncotree:UCU",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C6166",
+    "mappings": [
+      "map:ncit:C6166::oncotree:UCU"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 68,
+    "id": "dis:ncit:C3434",
     "conceptType": "Disease",
     "name": "Uterine Leiomyoma",
-    "primary_coding_id": "oncotree:ULM",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3434",
+    "mappings": [
+      "map:ncit:C3434::oncotree:ULM"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 69,
+    "id": "dis:ncit:C6340",
     "conceptType": "Disease",
     "name": "Uterine Leiomyosarcoma",
-    "primary_coding_id": "oncotree:ULMS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C6340",
+    "mappings": [
+      "map:ncit:C6340::oncotree:ULMS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 70,
+    "id": "dis:ncit:C4250",
     "conceptType": "Disease",
     "name": "Well-Differentiated Liposarcoma",
-    "primary_coding_id": "oncotree:WDLS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4250",
+    "mappings": [
+      "map:ncit:C4250::oncotree:WDLS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 71,
+    "id": "dis:ncit:C3174",
     "conceptType": "Disease",
     "name": "Chronic Myeloid Leukemia, BCR-ABL1+",
-    "primary_coding_id": "oncotree:CMLBCRABL1",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3174",
+    "mappings": [
+      "map:ncit:C3174::oncotree:CMLBCRABL1"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 72,
+    "id": "dis:ncit:C4029",
     "conceptType": "Disease",
     "name": "Cervical Adenocarcinoma",
-    "primary_coding_id": "oncotree:CEAD",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4029",
+    "mappings": [
+      "map:ncit:C4029::oncotree:CEAD"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 73,
+    "id": "dis:ncit:C4028",
     "conceptType": "Disease",
     "name": "Cervical Squamous Cell Carcinoma",
-    "primary_coding_id": "oncotree:CESC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4028",
+    "mappings": [
+      "map:ncit:C4028::oncotree:CESC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 74,
+    "id": "dis:ncit:C4025",
     "conceptType": "Disease",
     "name": "Esophageal Adenocarcinoma",
-    "primary_coding_id": "oncotree:ESCA",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4025",
+    "mappings": [
+      "map:ncit:C4025::oncotree:ESCA"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 75,
+    "id": "dis:ncit:C4035",
     "conceptType": "Disease",
     "name": "Papillary Thyroid Cancer",
-    "primary_coding_id": "oncotree:THPA",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4035",
+    "mappings": [
+      "map:ncit:C4035::oncotree:THPA"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 76,
+    "id": "dis:ncit:C3211",
     "conceptType": "Disease",
     "name": "Non-Hodgkin Lymphoma",
-    "primary_coding_id": "oncotree:NHL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3211",
+    "mappings": [
+      "map:ncit:C3211::oncotree:NHL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 77,
+    "id": "dis:ncit:C8851",
     "conceptType": "Disease",
     "name": "Diffuse Large B-Cell Lymphoma",
-    "primary_coding_id": "oncotree:DLBCLNOS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C8851",
+    "mappings": [
+      "map:ncit:C8851::oncotree:DLBCLNOS"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 78,
+    "id": "dis:ncit:C2912",
     "conceptType": "Disease",
     "name": "Burkitt Lymphoma",
-    "primary_coding_id": "oncotree:BL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C2912",
+    "mappings": [
+      "map:ncit:C2912::oncotree:BL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 79,
+    "id": "dis:ncit:C27910",
     "conceptType": "Disease",
     "name": "Mature B-Cell Neoplasms",
-    "primary_coding_id": "oncotree:MBN",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C27910",
+    "mappings": [
+      "map:ncit:C27910::oncotree:MBN"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 80,
+    "id": "dis:ncit:C9357",
     "conceptType": "Disease",
     "name": "Hodgkin Lymphoma",
-    "primary_coding_id": "oncotree:HL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C9357",
+    "mappings": [
+      "map:ncit:C9357::oncotree:HL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 81,
+    "id": "dis:ncit:C203675",
     "conceptType": "Disease",
     "name": "Esophagogastric Adenocarcinoma",
-    "primary_coding_id": "oncotree:EGC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C203675",
+    "mappings": [
+      "map:ncit:C203675::oncotree:EGC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 82,
+    "id": "dis:ncit:C4024",
     "conceptType": "Disease",
     "name": "Esophageal Squamous Cell Carcinoma",
-    "primary_coding_id": "oncotree:ESCC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4024",
+    "mappings": [
+      "map:ncit:C4024::oncotree:ESCC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 83,
+    "id": "dis:ncit:C4822",
     "conceptType": "Disease",
-    "name": "High-Grade Glioma, NOS",
-    "primary_coding_id": "oncotree:HGGNOS",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "name": "High-Grade Glioma",
+    "primary_coding_id": "coding:ncit:C4822",
+    "mappings": [
+      "map:ncit:C4822::oncotree:HGGNOS"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 84,
+    "id": "dis:ncit:C3163",
     "conceptType": "Disease",
     "name": "Chronic Lymphocytic Leukemia",
-    "primary_coding_id": "ncit:C3163",
+    "primary_coding_id": "coding:ncit:C3163",
     "mappings": [
-      175
+      "map:ncit:C3163::ncit:C7540",
+      "map:ncit:C3163::oncotree:CLLSLL"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": false
   },
   {
-    "id": 85,
+    "id": "dis:ncit:C6881",
     "conceptType": "Disease",
     "name": "Intraductal Papillary Neoplasm of the Bile Duct",
-    "primary_coding_id": "oncotree:IPN",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C6881",
+    "mappings": [
+      "map:ncit:C6881::oncotree:IPN"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 86,
+    "id": "dis:ncit:C7130",
     "conceptType": "Disease",
     "name": "Intracholecystic Papillary Neoplasm",
-    "primary_coding_id": "oncotree:ICPN",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7130",
+    "mappings": [
+      "map:ncit:C7130::oncotree:ICPN"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 87,
+    "id": "dis:ncit:C7464",
     "conceptType": "Disease",
     "name": "Acute Leukemias of Ambiguous Lineage",
-    "primary_coding_id": "oncotree:ALAL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": false,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7464",
+    "mappings": [
+      "map:ncit:C7464::oncotree:ALAL"
+    ],
+    "solid_tumor": false
   },
   {
-    "id": 88,
+    "id": "dis:ncit:C3888",
     "conceptType": "Disease",
     "name": "Renal Angiomyolipoma",
-    "primary_coding_id": "oncotree:RAML",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3888",
+    "mappings": [
+      "map:ncit:C3888::oncotree:RAML"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 89,
+    "id": "dis:ncit:C135017",
     "conceptType": "Disease",
     "name": "Lung Non-Squamous Non-Small Cell Carcinoma",
-    "primary_coding_id": "ncit:C135017",
+    "primary_coding_id": "coding:ncit:C135017",
     "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 90,
+    "id": "dis:ncit:C105556",
     "conceptType": "Disease",
     "name": "Low-Grade Serous Ovarian Cancer",
-    "primary_coding_id": "oncotree:LGSOC",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C105556",
+    "mappings": [
+      "map:ncit:C105556::oncotree:LGSOC"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 91,
+    "id": "dis:ncit:C3246",
     "conceptType": "Disease",
     "name": "Mycosis Fungoides",
-    "primary_coding_id": "oncotree:MYCF",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C3246",
+    "mappings": [
+      "map:ncit:C3246::oncotree:MYCF"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 92,
+    "id": "dis:ncit:C7528",
     "conceptType": "Disease",
     "name": "Angioimmunoblastic T-Cell Lymphoma",
-    "primary_coding_id": "oncotree:AITL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C7528",
+    "mappings": [
+      "map:ncit:C7528::oncotree:AITL"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 93,
+    "id": "dis:ncit:C4340",
     "conceptType": "Disease",
     "name": "Peripheral T-Cell lymphoma, NOS",
-    "primary_coding_id": "oncotree:PTCL",
-    "mappings": [],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "primary_coding_id": "coding:ncit:C4340",
+    "mappings": [
+      "map:ncit:C4340::oncotree:PTCL"
+    ],
+    "solid_tumor": true
   },
   {
-    "id": 94,
+    "id": "dis:ncit:C182151",
     "conceptType": "Disease",
     "name": "Diffuse Midline Glioma",
-    "primary_coding_id": "ncit:C182151",
+    "primary_coding_id": "coding:ncit:C182151",
     "mappings": [
-      176
+      "map:ncit:C182151::oncotree:DIFG"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 95,
+    "id": "dis:ncit:C3696",
     "conceptType": "Disease",
     "name": "Subependymal Giant Cell Astrocytoma",
-    "primary_coding_id": "ncit:C3696",
+    "primary_coding_id": "coding:ncit:C3696",
     "mappings": [
-      749
+      "map:ncit:C3696::oncotree:ENCG"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 96,
+    "id": "dis:ncit:C9385",
     "conceptType": "Disease",
     "name": "Renal Cell Carcinoma",
-    "primary_coding_id": "ncit:C9385",
+    "primary_coding_id": "coding:ncit:C9385",
     "mappings": [
-      755
+      "map:ncit:C9385::oncotree:RCC"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 97,
+    "id": "dis:ncit:C7007",
     "conceptType": "Disease",
     "name": "Central Nervous System Hemangioblastoma",
-    "primary_coding_id": "ncit:C7007",
+    "primary_coding_id": "coding:ncit:C7007",
     "mappings": [
-      756
+      "map:ncit:C7007::oncotree:HMBL"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 98,
+    "id": "dis:ncit:C27031",
     "conceptType": "Disease",
     "name": "Pancreatic Neuroendocrine Tumor",
-    "primary_coding_id": "ncit:C27031",
+    "primary_coding_id": "coding:ncit:C27031",
     "mappings": [
-      757,
-      758,
-      759
+      "map:ncit:C27031::oncotree:PANET",
+      "map:ncit:C27031::ncit:C3770",
+      "map:ncit:C27031::oncotree:PANEC"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
   },
   {
-    "id": 99,
+    "id": "dis:ncit:C7712",
     "conceptType": "Disease",
     "name": "Uveal Melanoma",
-    "primary_coding_id": "oncotree:UM",
+    "primary_coding_id": "coding:ncit:C7712",
     "mappings": [
-      766
+      "map:ncit:C7712::oncotree:UM"
     ],
-    "extensions": [
-      {
-        "name": "solid_tumor",
-        "value": true,
-        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
-      }
-    ]
+    "solid_tumor": true
+  },
+  {
+    "id": "dis:ncit:C7153",
+    "conceptType": "Disease",
+    "name": "Differentiated Thyroid Gland Carcinoma",
+    "primary_coding_id": "coding:ncit:C7153",
+    "mappings": [
+      "map:ncit:C7153::oncotree:WDTC"
+    ],
+    "solid_tumor": true
+  },
+  {
+    "id": "dis:ncit:C4337",
+    "conceptType": "Disease",
+    "name": "Mantle Cell Lymphoma",
+    "primary_coding_id": "coding:ncit:C4337",
+    "mappings": [
+      "map:ncit:C4337::oncotree:MCL"
+    ],
+    "solid_tumor": true
   }
 ]

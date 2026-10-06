@@ -1,0 +1,37 @@
+{
+  "id": "dis:ncit:C3878",
+  "conceptType": "Disease",
+  "name": "Anaplastic Thyroid Cancer",
+  "mappings": [
+    {
+      "relation": "exactMatch",
+      "coding": {
+        "id": "coding:oncotree:THAP",
+        "code": "THAP",
+        "name": "Anaplastic Thyroid Cancer",
+        "system": "https://oncotree.mskcc.org",
+        "systemVersion": "oncotree_2025_10_03",
+        "iris": [
+          "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Anaplastic+Thyroid+Cancer+%28THAP%29"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "solid_tumor",
+      "value": true,
+      "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C3878",
+    "code": "C3878",
+    "name": "Thyroid Gland Anaplastic Carcinoma",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3878"
+    ]
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "id": "stmt:nice:ta862:1.1:0",
+  "type": "Statement",
+  "description": "The U.K. National Institute for Health and Care Excellence (NICE) has recommended trastuzumab deruxtecan for use within the Cancer Drugs Fund as a treatment option for treating HER2-positive unresectable or metastatic breast cancer in adults after 1 or more anti-HER2-based regimens. It is recommended only if the conditions in the managed access agreement are followed.",
+  "contributions": [
+    {
+      "id": "ctrb:qub:2026-06-17:0",
+      "type": "Contribution",
+      "description": "Initial curation of NICE approvals",
+      "date": "2026-06-17",
+      "contributor": {
+        "id": "agent:user:qub",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Queen's University Belfast",
+        "description": "Queen's University Belfast"
+      }
+    },
+    {
+      "id": "ctrb:nice:2023-02-01:0",
+      "type": "Contribution",
+      "description": "Indication recommended by NICE technology appraisal.",
+      "date": "2023-02-01",
+      "contributor": {
+        "id": "agent:org:nice",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "National Institute for Health and Care Excellence",
+        "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:nice:ta862",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Enhertu (Trastuzumab deruxtecan) [technology appraisal guidance]. NICE.",
+      "title": null,
+      "aliases": [],
+      "description": "Trastuzumab deruxtecan for treating HER2-positive unresectable or metastatic breast cancer after 1 or more anti-HER2 treatments, 2023, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta862/resources/trastuzumab-deruxtecan-for-treating-her2positive-unresectable-or-metastatic-breast-cancer-after-1-or-more-antiher2-treatments-pdf-82613609326789. Revised February 2023. Accessed October 20, 2025.",
+      "urls": [
+        "https://www.nice.org.uk/guidance/ta862/resources/trastuzumab-deruxtecan-for-treating-her2positive-unresectable-or-metastatic-breast-cancer-after-1-or-more-antiher2-treatments-pdf-82613609326789",
+        "https://www.nice.org.uk/guidance/ta862"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:nice",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "National Institute for Health and Care Excellence",
+            "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca / Daiichi Sankyo",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Enhertu",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "Trastuzumab deruxtecan",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 862,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2023-02-01",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:420",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C9245",
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:BRCA",
+            "code": "BRCA",
+            "name": "Invasive Breast Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C9245",
+        "code": "C9245",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C128799",
+      "conceptType": "Therapy",
+      "name": "Trastuzumab deruxtecan",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:2267582",
+            "code": "2267582",
+            "name": "trastuzumab deruxtecan",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2267582"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:3666979",
+            "code": "3666979",
+            "name": "Trastuzumab deruxtecan",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/3666979"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:838469001",
+            "code": "838469001",
+            "name": "Trastuzumab deruxtecan",
+            "system": "SNOMED",
+            "systemVersion": "2026-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=838469001&edition=MAIN/2026-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:37498192",
+            "code": "37498192",
+            "name": "trastuzumab deruxtecan",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37498192"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "HER2 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C128799",
+        "code": "C128799",
+        "name": "Trastuzumab Deruxtecan",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C128799"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:20",
+            "present": true,
+            "subject": {
+              "id": "bmkr:20",
+              "type": "CategoricalVariant",
+              "name": "HER2-positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:nice:ta862:1.1",
+        "type": "Indication",
+        "description": "Trastuzumab deruxtecan is recommended for use within the Cancer Drugs Fund as an option for treating HER2-positive unresectable or metastatic breast cancer in adults after 1 or more anti-HER2-based regimens. It is recommended only if the conditions in the managed access agreement are followed.",
+        "contributions": [
+          {
+            "id": "ctrb:qub:2026-06-17:0",
+            "type": "Contribution",
+            "description": "Initial curation of NICE approvals",
+            "date": "2026-06-17",
+            "contributor": {
+              "id": "agent:user:qub",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Queen's University Belfast",
+              "description": "Queen's University Belfast"
+            }
+          },
+          {
+            "id": "ctrb:nice:2023-02-01:0",
+            "type": "Contribution",
+            "description": "Indication recommended by NICE technology appraisal.",
+            "date": "2023-02-01",
+            "contributor": {
+              "id": "agent:org:nice",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "National Institute for Health and Care Excellence",
+              "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:nice:ta862",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Enhertu (Trastuzumab deruxtecan) [technology appraisal guidance]. NICE.",
+            "title": null,
+            "aliases": [],
+            "description": "Trastuzumab deruxtecan for treating HER2-positive unresectable or metastatic breast cancer after 1 or more anti-HER2 treatments, 2023, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta862/resources/trastuzumab-deruxtecan-for-treating-her2positive-unresectable-or-metastatic-breast-cancer-after-1-or-more-antiher2-treatments-pdf-82613609326789. Revised February 2023. Accessed October 20, 2025.",
+            "urls": [
+              "https://www.nice.org.uk/guidance/ta862/resources/trastuzumab-deruxtecan-for-treating-her2positive-unresectable-or-metastatic-breast-cancer-after-1-or-more-antiher2-treatments-pdf-82613609326789",
+              "https://www.nice.org.uk/guidance/ta862"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:nice",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "National Institute for Health and Care Excellence",
+                  "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "AstraZeneca / Daiichi Sankyo",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Enhertu",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "Trastuzumab deruxtecan",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 862,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2023-02-01",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

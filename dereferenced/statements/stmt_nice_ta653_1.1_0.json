@@ -1,0 +1,540 @@
+{
+  "id": "stmt:nice:ta653:1.1:0",
+  "type": "Statement",
+  "description": "The U.K. National Institute for Health and Care Excellence (NICE) has recommended Osimertinib as an option for treating epidermal growth factor receptor (EGFR) T790M mutation-positive locally advanced or metastatic non-small-cell lung cancer (NSCLC) in adults, only if: \u2022 their disease has progressed after first-line treatment with an EGFR tyrosine kinase inhibitor and \u2022 the company provides osimertinib according to the commercial arrangement.",
+  "contributions": [
+    {
+      "id": "ctrb:qub:2026-06-17:0",
+      "type": "Contribution",
+      "description": "Initial curation of NICE approvals",
+      "date": "2026-06-17",
+      "contributor": {
+        "id": "agent:user:qub",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Queen's University Belfast",
+        "description": "Queen's University Belfast"
+      }
+    },
+    {
+      "id": "ctrb:nice:2020-10-14:0",
+      "type": "Contribution",
+      "description": "Indication recommended by NICE technology appraisal.",
+      "date": "2020-10-14",
+      "contributor": {
+        "id": "agent:org:nice",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "National Institute for Health and Care Excellence",
+        "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:nice:ta653",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Tagrisso (Osimertinib) [technology appraisal guidance]. NICE.",
+      "title": null,
+      "aliases": [],
+      "description": "Osimertinib for treating EGFR T790M mutation-positive advanced non-small-cell lung cancer, 2020, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta653/resources/osimertinib-for-treating-egfr-t790m-mutationpositive-advanced-nonsmallcell-lung-cancer-pdf-82609196975557. Revised October 2020. Accessed October 20, 2025.",
+      "urls": [
+        "https://www.nice.org.uk/guidance/ta653/resources/osimertinib-for-treating-egfr-t790m-mutationpositive-advanced-nonsmallcell-lung-cancer-pdf-82609196975557",
+        "https://www.nice.org.uk/guidance/ta653"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:nice",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "National Institute for Health and Care Excellence",
+            "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "AstraZeneca",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Tagrisso",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "Osimertinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 653,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2020-10-14",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:310",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C2926",
+      "conceptType": "Disease",
+      "name": "Non-Small Cell Lung Cancer",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:NSCLC",
+            "code": "NSCLC",
+            "name": "Non-Small Cell Lung Cancer",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Small+Cell+Lung+Cancer+%28NSCLC%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C2926",
+        "code": "C2926",
+        "name": "Lung Non-Small Cell Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2926"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C116377",
+      "conceptType": "Therapy",
+      "name": "Osimertinib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1721560",
+            "code": "1721560",
+            "name": "osimertinib",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1721560"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:35605522",
+            "code": "35605522",
+            "name": "osimertinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/35605522"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:sctid:716032009",
+            "code": "716032009",
+            "name": "Osimertinib",
+            "system": "SNOMED",
+            "systemVersion": "2025-03-01",
+            "iris": [
+              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716032009&edition=MAIN/2025-03-01&release=&languages=en"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:37396277",
+            "code": "37396277",
+            "name": "Osimertinib",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/37396277"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "EGFR inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C116377",
+        "code": "C116377",
+        "name": "Osimertinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C116377"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:70",
+            "present": true,
+            "subject": {
+              "id": "bmkr:70",
+              "type": "CategoricalVariant",
+              "name": "EGFR p.T790M",
+              "constraints": [
+                {
+                  "type": "DefiningAlleleConstraint",
+                  "allele": {
+                    "id": "ga4gh:VA.sMA9h8fzDi0RvweMlxtD0_Oi8B-JZ1V-",
+                    "type": "Allele",
+                    "name": "NP_005219.2:p.Thr790Met",
+                    "aliases": [
+                      "NP_005219.2:p.T790M",
+                      "EGFR p.T790M"
+                    ],
+                    "description": "VRS variation of NP_005219.2:p.Thr790Met",
+                    "digest": "sMA9h8fzDi0RvweMlxtD0_Oi8B-JZ1V-",
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005219.2:p.Thr790Met",
+                        "extensions": [
+                          {
+                            "name": "hgvs.p_short",
+                            "value": "p.T790M"
+                          }
+                        ]
+                      }
+                    ],
+                    "location": {
+                      "id": "ga4gh:SL.UOSDv-_5QNbKqgbCf--isFjvNZ5ZST09",
+                      "type": "SequenceLocation",
+                      "name": null,
+                      "aliases": [],
+                      "description": "Amino acid position 790 of the Refseq protein NP_005219.2, which is the protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5).",
+                      "digest": "UOSDv-_5QNbKqgbCf--isFjvNZ5ZST09",
+                      "sequenceReference": {
+                        "id": "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                        "type": "SequenceReference",
+                        "name": "NP_005219.2",
+                        "aliases": [
+                          "ensembl:ENSP00000275493.2",
+                          "ga4gh:SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                          "refseq:NP_005219.2"
+                        ],
+                        "description": "The protein product of the MANE Select coding transcript for EGFR (refseq:NM_005228.5), corresponding to the Refseq protein accession NP_005219.2.",
+                        "moleculeType": "protein",
+                        "refgetAccession": "SQ.vyo55F6mA6n2LgN4cagcdRzOuh38V4mE",
+                        "residueAlphabet": "aa"
+                      },
+                      "start": 789,
+                      "end": 790,
+                      "sequence": "T"
+                    },
+                    "state": {
+                      "type": "LiteralSequenceExpression",
+                      "sequence": "M"
+                    }
+                  },
+                  "relations": []
+                },
+                {
+                  "type": "FeatureContextConstraint",
+                  "featureContext": {
+                    "id": "gene:hgnc:3236",
+                    "conceptType": "Gene",
+                    "name": "EGFR",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:3236",
+                      "code": "HGNC:3236",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3236"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000146648",
+                          "code": "ENSG00000146648",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000146648"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:1956",
+                          "code": "1956",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/1956"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_005228.5",
+                          "code": "NM_005228.5",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_005228.5"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Somatic variant"
+                },
+                {
+                  "name": "chromosome",
+                  "value": "7"
+                },
+                {
+                  "name": "start_position",
+                  "value": 55249071
+                },
+                {
+                  "name": "end_position",
+                  "value": 55249071
+                },
+                {
+                  "name": "reference_allele",
+                  "value": "C"
+                },
+                {
+                  "name": "alternate_allele",
+                  "value": "T"
+                },
+                {
+                  "name": "cdna_change",
+                  "value": "c.2369C>T"
+                },
+                {
+                  "name": "protein_change",
+                  "value": "p.T790M"
+                },
+                {
+                  "name": "variant_annotation",
+                  "value": "Missense"
+                },
+                {
+                  "name": "exon",
+                  "value": 20
+                },
+                {
+                  "name": "rsid",
+                  "value": "rs121434569"
+                },
+                {
+                  "name": "hgvsg",
+                  "value": "7:g.55249071C>T"
+                },
+                {
+                  "name": "hgvsc",
+                  "value": "ENST00000275493.2:c.2369C>T"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:nice:ta653:1.1",
+        "type": "Indication",
+        "description": "Osimertinib is recommended as an option for treating epidermal growth factor receptor (EGFR) T790M mutation-positive locally advanced or metastatic non-small-cell lung cancer (NSCLC) in adults, only if: \u2022 their disease has progressed after first-line treatment with an EGFR tyrosine kinase inhibitor and \u2022 the company provides osimertinib according to the commercial arrangement.",
+        "contributions": [
+          {
+            "id": "ctrb:qub:2026-06-17:0",
+            "type": "Contribution",
+            "description": "Initial curation of NICE approvals",
+            "date": "2026-06-17",
+            "contributor": {
+              "id": "agent:user:qub",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Queen's University Belfast",
+              "description": "Queen's University Belfast"
+            }
+          },
+          {
+            "id": "ctrb:nice:2020-10-14:0",
+            "type": "Contribution",
+            "description": "Indication recommended by NICE technology appraisal.",
+            "date": "2020-10-14",
+            "contributor": {
+              "id": "agent:org:nice",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "National Institute for Health and Care Excellence",
+              "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:nice:ta653",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Tagrisso (Osimertinib) [technology appraisal guidance]. NICE.",
+            "title": null,
+            "aliases": [],
+            "description": "Osimertinib for treating EGFR T790M mutation-positive advanced non-small-cell lung cancer, 2020, National Institute for Health and Care Excellence website. https://www.nice.org.uk/guidance/ta653/resources/osimertinib-for-treating-egfr-t790m-mutationpositive-advanced-nonsmallcell-lung-cancer-pdf-82609196975557. Revised October 2020. Accessed October 20, 2025.",
+            "urls": [
+              "https://www.nice.org.uk/guidance/ta653/resources/osimertinib-for-treating-egfr-t790m-mutationpositive-advanced-nonsmallcell-lung-cancer-pdf-82609196975557",
+              "https://www.nice.org.uk/guidance/ta653"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:nice",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "National Institute for Health and Care Excellence",
+                  "description": "Regulatory and guidance body that issues Technology Appraisals recommending medicines for use in England and Wales, endorsed by Health and Social Care Northern Ireland (HSC NI) for use in Northern Ireland."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "AstraZeneca",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Tagrisso",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "Osimertinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 653,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2020-10-14",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

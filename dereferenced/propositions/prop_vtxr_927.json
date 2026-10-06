@@ -1,0 +1,224 @@
+{
+  "id": "prop:vtxr:927",
+  "type": "VariantTherapeuticResponseProposition",
+  "predicate": "predictsSensitivityTo",
+  "subjectVariant": {
+    "type": "CategoricalVariant",
+    "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+  },
+  "conditionQualifier": {
+    "id": "dis:ncit:C4337",
+    "conceptType": "Disease",
+    "name": "Mantle Cell Lymphoma",
+    "mappings": [
+      {
+        "relation": "exactMatch",
+        "coding": {
+          "id": "coding:oncotree:MCL",
+          "code": "MCL",
+          "name": "Mantle Cell Lymphoma",
+          "system": "https://oncotree.mskcc.org",
+          "systemVersion": "oncotree_2025_10_03",
+          "iris": [
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Mantle+Cell+Lymphoma+%28MCL%29"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "solid_tumor",
+        "value": true,
+        "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C4337",
+      "code": "C4337",
+      "name": "Mantle Cell Lymphoma",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4337"
+      ]
+    }
+  },
+  "objectTherapeutic": {
+    "id": "tx:ncit:C81934",
+    "conceptType": "Therapy",
+    "name": "Ibrutinib",
+    "mappings": [
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:rxcui:1442981",
+          "code": "1442981",
+          "name": "ibrutinib",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
+          "iris": [
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1442981"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:44507848",
+          "code": "44507848",
+          "name": "ibrutinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/44507848"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:sctid:710228002",
+          "code": "710228002",
+          "name": "Ibrutinib",
+          "system": "SNOMED",
+          "systemVersion": "2025-03-01",
+          "iris": [
+            "https://browser.ihtsdotools.org/?perspective=full&conceptId1=710228002&edition=MAIN/2025-03-01&release=&languages=en"
+          ]
+        }
+      },
+      {
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:46271948",
+          "code": "46271948",
+          "name": "Ibrutinib",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
+          "iris": [
+            "https://athena.ohdsi.org/search-terms/terms/46271948"
+          ]
+        }
+      }
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "BTK inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C81934",
+      "code": "C81934",
+      "name": "Ibrutinib",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C81934"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "biomarkers",
+      "value": [
+        {
+          "id": "bmkr.criterion:183",
+          "present": true,
+          "subject": {
+            "id": "bmkr:183",
+            "type": "CategoricalVariant",
+            "name": "t(11;14)",
+            "constraints": [
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.nD5PUHO8V4FDc7rR0P162xssNmIggOXG",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "GRCh38 chromosome 11 (NC_000011.10), in its entirety.",
+                  "digest": "nD5PUHO8V4FDc7rR0P162xssNmIggOXG",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.2NkFm8HK88MqeNkCgj78KidCAXgnsfV1",
+                    "type": "SequenceReference",
+                    "name": "NC_000011.10",
+                    "aliases": [
+                      "ensembl:11",
+                      "ga4gh:SQ.2NkFm8HK88MqeNkCgj78KidCAXgnsfV1",
+                      "refseq:NC_000011.10"
+                    ],
+                    "description": "GRCh38 chromosome 11 (RefSeq NC_000011.10).",
+                    "moleculeType": "genomic",
+                    "refgetAccession": "SQ.2NkFm8HK88MqeNkCgj78KidCAXgnsfV1",
+                    "residueAlphabet": "na"
+                  },
+                  "start": 0,
+                  "end": 135086622,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              },
+              {
+                "type": "DefiningLocationConstraint",
+                "location": {
+                  "id": "ga4gh:SL.Qtjsk-OhOGoPODsXUNw-Ap2h5qp-YRB7",
+                  "type": "SequenceLocation",
+                  "name": null,
+                  "aliases": [],
+                  "description": "GRCh38 chromosome 14 (NC_000014.9), in its entirety.",
+                  "digest": "Qtjsk-OhOGoPODsXUNw-Ap2h5qp-YRB7",
+                  "sequenceReference": {
+                    "id": "ga4gh:SQ.eK4D2MosgK_ivBkgi6FVPg5UXs1bYESm",
+                    "type": "SequenceReference",
+                    "name": "NC_000014.9",
+                    "aliases": [
+                      "ensembl:14",
+                      "ga4gh:SQ.eK4D2MosgK_ivBkgi6FVPg5UXs1bYESm",
+                      "refseq:NC_000014.9"
+                    ],
+                    "description": "GRCh38 chromosome 14 (RefSeq NC_000014.9).",
+                    "moleculeType": "genomic",
+                    "refgetAccession": "SQ.eK4D2MosgK_ivBkgi6FVPg5UXs1bYESm",
+                    "residueAlphabet": "na"
+                  },
+                  "start": 0,
+                  "end": 107043718,
+                  "sequence": null
+                },
+                "relations": [],
+                "matchCharacteristic": {
+                  "primaryCoding": {
+                    "code": "is_within",
+                    "system": "ga4gh-gks-term:location-match"
+                  }
+                }
+              }
+            ],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Translocation"
+              }
+            ]
+          }
+        }
+      ],
+      "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+    }
+  ]
+}

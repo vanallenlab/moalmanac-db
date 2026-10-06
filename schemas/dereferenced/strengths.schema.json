@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://moalmanac.org/schemas/dereferenced/strengths.schema.json",
+  "title": "Strength",
+  "description": "The category of evidence supporting a statement, with its primary coding embedded.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^str:ncit:C\\d+$"
+    },
+    "conceptType": {
+      "const": "Evidence"
+    },
+    "name": {
+      "type": "string"
+    },
+    "primaryCoding": {
+      "$ref": "codings.schema.json"
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "$ref": "mappings.schema.json#/$defs/ConceptMapping"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "conceptType",
+    "name",
+    "primaryCoding",
+    "mappings"
+  ],
+  "additionalProperties": false
+}
