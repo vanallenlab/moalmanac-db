@@ -2,6 +2,7 @@ import warnings
 
 import pytest
 
+from tests import helpers
 from utils import json_utils
 
 
@@ -68,9 +69,14 @@ def test_status_active_document_has_approved_or_accelerated_indication(data):
 def test_status_deprecated_document_has_only_withdrawn_or_superseded_indications(data):
     """
     Ensures that every indication associated with a Deprecated document is Withdrawn or Superseded
+
+    Dated FDA documents (`doc:fda:{drug}:{YYYY-MM-DD}`) are exempt: they are static provenance
+    records for an indication's initial approval and are Deprecated by design.
     """
     for document in data["documents"]:
         if document["status"] != "Deprecated":
+            continue
+        if helpers.is_dated_fda_document(document["id"]):
             continue
         indications = [
             indication
@@ -90,11 +96,15 @@ def test_status_deprecated_document_has_only_withdrawn_or_superseded_indications
 def test_status_deprecated_document_has_only_deprecated_statements(data):
     """
     Ensures that every statement reporting a Deprecated document is Deprecated
+
+    Dated FDA documents (`doc:fda:{drug}:{YYYY-MM-DD}`) are exempt: they are static provenance
+    records for an indication's initial approval and are Deprecated by design.
     """
     deprecated_document_ids = {
         document["id"]
         for document in data["documents"]
         if document["status"] == "Deprecated"
+        and not helpers.is_dated_fda_document(document["id"])
     }
     for statement in data["statements"]:
         reported_deprecated_documents = deprecated_document_ids.intersection(

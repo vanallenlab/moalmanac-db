@@ -1,3 +1,20 @@
+import re
+
+DATED_FDA_DOCUMENT_ID = re.compile(r"^doc:fda:[^:]+:\d{4}-\d{2}-\d{2}$")
+
+
+def is_dated_fda_document(document_id: str) -> bool:
+    """
+    Checks if a document id refers to a dated FDA label (e.g. `doc:fda:adcetris:2011-08-19`).
+
+    Args:
+        document_id (str): The document id to check.
+
+    Returns:
+        bool: True if the id is a dated FDA document id, False otherwise.
+    """
+    return bool(DATED_FDA_DOCUMENT_ID.match(document_id))
+
 def find_trailing_spaces(records, key):
     """
     Identifies if any value associated with `key` contains trailing spaces for each record in `records`.

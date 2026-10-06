@@ -147,7 +147,7 @@
       "description": "Root type shared by every organization. Organization-specific types below extend it; the top-level schema closes the record with unevaluatedProperties."
     },
     "FDA Indication": {
-      "description": "Indication from the organization `fda`.",
+      "description": "Indication from the organization `fda`. `reportedIn` lists the evergreen FDA document (`doc:fda:{drug}`) first, followed by the dated, Deprecated FDA document (`doc:fda:{drug}:{YYYY-MM-DD}`) for the label in which the indication was initially approved. A single evergreen document is permitted while the initial approval is uncurated.",
       "allOf": [
         {
           "$ref": "#/$defs/Indication"
@@ -199,6 +199,47 @@
                   }
                 }
               ]
+            },
+            "reportedIn": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "prefixItems": [
+                {
+                  "$ref": "documents.schema.json",
+                  "properties": {
+                    "id": {
+                      "pattern": "^doc:fda:[^:]+$"
+                    }
+                  }
+                },
+                {
+                  "$ref": "documents.schema.json",
+                  "properties": {
+                    "id": {
+                      "pattern": "^doc:fda:[^:]+:\\d{4}-\\d{2}-\\d{2}$"
+                    },
+                    "extensions": {
+                      "contains": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "const": "status"
+                          },
+                          "value": {
+                            "const": "Deprecated"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "value"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "The evergreen document, then the dated document for the initial approval."
             }
           }
         }
