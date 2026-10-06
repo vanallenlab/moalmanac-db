@@ -93,6 +93,69 @@
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
+    },
+    {
+      "id": "doc:fda:pemazyre:2022-08-26",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Pemazyre (pemigatinib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Incyte Corporation. Pemazyre (pemigatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213736s002lbl.pdf. Revised August 2022. Accessed October 6, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213736s002lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213736"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Incyte Corporation.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Pemazyre",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pemigatinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 213736,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-08-26",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
     }
   ],
   "direction": "supports",
@@ -169,32 +232,6 @@
             "systemVersion": "v20260227",
             "iris": [
               "https://athena.ohdsi.org/search-terms/terms/37499576"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:sctid:871699001",
-            "code": "871699001",
-            "name": "Pemigatinib",
-            "system": "SNOMED",
-            "systemVersion": "2025-03-01",
-            "iris": [
-              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=871699001&edition=MAIN/2025-03-01&release=&languages=en"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:omop:3667002",
-            "code": "3667002",
-            "name": "Pemigatinib",
-            "system": "OMOP",
-            "systemVersion": "v20260227",
-            "iris": [
-              "https://athena.ohdsi.org/search-terms/terms/3667002"
             ]
           }
         }
@@ -417,6 +454,69 @@
               {
                 "name": "status",
                 "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          },
+          {
+            "id": "doc:fda:pemazyre:2022-08-26",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Pemazyre (pemigatinib) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Incyte Corporation. Pemazyre (pemigatinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213736s002lbl.pdf. Revised August 2022. Accessed October 6, 2026.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213736s002lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213736"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Incyte Corporation.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Pemazyre",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "pemigatinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 213736,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2022-08-26",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]

@@ -93,6 +93,69 @@
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
+    },
+    {
+      "id": "doc:fda:cotellic:2015-11-10",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Cotellic (cobimetinib) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Genentech USA, Inc. Cotellic (cobimetinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/206192s000lbl.pdf. Revised November 2015. Accessed October 6, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/206192s000lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206192"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Genentech USA, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Cotellic",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "cobimetinib",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 206192,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2015-11-10",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
     }
   ],
   "direction": "supports",
@@ -166,32 +229,6 @@
             {
               "relation": "relatedMatch",
               "coding": {
-                "id": "coding:omop:37395721",
-                "code": "37395721",
-                "name": "Cobimetinib",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/37395721"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:715257001",
-                "code": "715257001",
-                "name": "Cobimetinib",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=715257001&edition=MAIN/2026-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
                 "id": "coding:omop:35605804",
                 "code": "35605804",
                 "name": "cobimetinib",
@@ -243,32 +280,6 @@
                 "systemVersion": "20250602",
                 "iris": [
                   "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1147220"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:45765787",
-                "code": "45765787",
-                "name": "Vemurafenib",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/45765787"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:702805007",
-                "code": "702805007",
-                "name": "Vemurafenib",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702805007&edition=MAIN/2026-03-01&release=&languages=en"
                 ]
               }
             },
@@ -610,6 +621,69 @@
               {
                 "name": "status",
                 "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          },
+          {
+            "id": "doc:fda:cotellic:2015-11-10",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Cotellic (cobimetinib) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Genentech USA, Inc. Cotellic (cobimetinib) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/206192s000lbl.pdf. Revised November 2015. Accessed October 6, 2026.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/206192s000lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206192"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Genentech USA, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Cotellic",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "cobimetinib",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 206192,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2015-11-10",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]

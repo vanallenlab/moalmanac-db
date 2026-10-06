@@ -93,6 +93,69 @@
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
+    },
+    {
+      "id": "doc:fda:opdivo:2024-10-03",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Opdivo (nivolumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Bristol-Myers Squibb Company. Opdivo (nivolumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/125554s127lbl.pdf. Revised October 2024. Accessed October 6, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/125554s127lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125554"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Bristol-Myers Squibb Company.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Opdivo",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "nivolumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2014-12-22",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125554,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-10-03",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
     }
   ],
   "direction": "supports",
@@ -166,32 +229,6 @@
             {
               "relation": "relatedMatch",
               "coding": {
-                "id": "coding:omop:4299846",
-                "code": "4299846",
-                "name": "Carboplatin",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4299846"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:386905002",
-                "code": "386905002",
-                "name": "Carboplatin",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386905002&edition=MAIN/2026-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
                 "id": "coding:omop:1344905",
                 "code": "1344905",
                 "name": "carboplatin",
@@ -258,32 +295,6 @@
                   "https://athena.ohdsi.org/search-terms/terms/45892628"
                 ]
               }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:704191007",
-                "code": "704191007",
-                "name": "Nivolumab",
-                "system": "SNOMED",
-                "systemVersion": "2025-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=704191007&edition=MAIN/2025-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:45766924",
-                "code": "45766924",
-                "name": "Nivolumab",
-                "system": "OMOP",
-                "systemVersion": "v20260227",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/45766924"
-                ]
-              }
             }
           ],
           "extensions": [
@@ -326,32 +337,6 @@
                 "systemVersion": "20250602",
                 "iris": [
                   "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:4306859",
-                "code": "4306859",
-                "name": "Paclitaxel",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4306859"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:387374002",
-                "code": "387374002",
-                "name": "Paclitaxel",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387374002&edition=MAIN/2026-03-01&release=&languages=en"
                 ]
               }
             },
@@ -727,6 +712,69 @@
               {
                 "name": "status",
                 "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          },
+          {
+            "id": "doc:fda:opdivo:2024-10-03",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Opdivo (nivolumab) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Bristol-Myers Squibb Company. Opdivo (nivolumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/125554s127lbl.pdf. Revised October 2024. Accessed October 6, 2026.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/125554s127lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125554"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Bristol-Myers Squibb Company.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Opdivo",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "nivolumab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2014-12-22",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 125554,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2024-10-03",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]

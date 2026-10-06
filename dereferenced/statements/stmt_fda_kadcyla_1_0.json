@@ -93,6 +93,69 @@
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
+    },
+    {
+      "id": "doc:fda:kadcyla:2019-05-03",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Kadcyla (ado-trastuzumab emtansine) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Genentech, Inc. Kadcyla (ado-trastuzumab emtansine) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/125427s105lbl.pdf. Revised May 2019. Accessed October 6, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/125427s105lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125427"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Genentech, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Kadcyla",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "ado-trastuzumab emtansine",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 125427,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2019-05-03",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
     }
   ],
   "direction": "supports",
@@ -149,26 +212,26 @@
         {
           "relation": "relatedMatch",
           "coding": {
-            "id": "coding:sctid:702836004",
-            "code": "702836004",
-            "name": "Trastuzumab emtansine",
-            "system": "SNOMED",
-            "systemVersion": "2025-03-01",
+            "id": "coding:rxcui:1371041",
+            "code": "1371041",
+            "name": "ado-trastuzumab emtansine",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
             "iris": [
-              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=702836004&edition=MAIN/2025-03-01&release=&languages=en"
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1371041"
             ]
           }
         },
         {
           "relation": "relatedMatch",
           "coding": {
-            "id": "coding:omop:45765811",
-            "code": "45765811",
-            "name": "Trastuzumab emtansine",
+            "id": "coding:omop:43525787",
+            "code": "43525787",
+            "name": "ado-trastuzumab emtansine",
             "system": "OMOP",
             "systemVersion": "v20260227",
             "iris": [
-              "https://athena.ohdsi.org/search-terms/terms/45765811"
+              "https://athena.ohdsi.org/search-terms/terms/43525787"
             ]
           }
         }
@@ -355,6 +418,69 @@
               {
                 "name": "status",
                 "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          },
+          {
+            "id": "doc:fda:kadcyla:2019-05-03",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Kadcyla (ado-trastuzumab emtansine) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Genentech, Inc. Kadcyla (ado-trastuzumab emtansine) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/125427s105lbl.pdf. Revised May 2019. Accessed October 6, 2026.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/125427s105lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125427"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Genentech, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Kadcyla",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "ado-trastuzumab emtansine",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 125427,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2019-05-03",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]

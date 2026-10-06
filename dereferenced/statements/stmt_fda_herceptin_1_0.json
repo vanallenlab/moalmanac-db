@@ -93,6 +93,69 @@
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
+    },
+    {
+      "id": "doc:fda:herceptin:2010-10-20",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Herceptin (trastuzumab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Genentech, Inc. Herceptin (trastuzumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/103792s5250lbl.pdf. Revised October 2010. Accessed October 6, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/103792s5250lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103792"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Genentech, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Herceptin",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "trastuzumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 103792,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2010-10-20",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
     }
   ],
   "direction": "supports",
@@ -105,20 +168,20 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:ncit:C3868",
+      "id": "dis:ncit:C9296",
       "conceptType": "Disease",
-      "name": "Gastrointestinal Stromal Tumor",
+      "name": "Adenocarcinoma of the Gastroesophageal Junction",
       "mappings": [
         {
           "relation": "exactMatch",
           "coding": {
-            "id": "coding:oncotree:GIST",
-            "code": "GIST",
-            "name": "Gastrointestinal Stromal Tumor",
+            "id": "coding:oncotree:GEJ",
+            "code": "GEJ",
+            "name": "Adenocarcinoma of the Gastroesophageal Junction",
             "system": "https://oncotree.mskcc.org",
             "systemVersion": "oncotree_2025_10_03",
             "iris": [
-              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Gastrointestinal+Stromal+Tumor+%28GIST%29"
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Adenocarcinoma+of+the+Gastroesophageal+Junction+%28GEJ%29"
             ]
           }
         }
@@ -131,13 +194,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:ncit:C3868",
-        "code": "C3868",
-        "name": "Gastrointestinal Stromal Tumor",
+        "id": "coding:ncit:C9296",
+        "code": "C9296",
+        "name": "Gastroesophageal Junction Adenocarcinoma",
         "system": "https://evsexplore.semantics.cancer.gov",
         "systemVersion": "26.08e",
         "iris": [
-          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3868"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9296"
         ]
       }
     },
@@ -156,32 +219,6 @@
             "systemVersion": "20250602",
             "iris": [
               "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:omop:4304158",
-            "code": "4304158",
-            "name": "Trastuzumab",
-            "system": "OMOP",
-            "systemVersion": "v20250827",
-            "iris": [
-              "https://athena.ohdsi.org/search-terms/terms/4304158"
-            ]
-          }
-        },
-        {
-          "relation": "relatedMatch",
-          "coding": {
-            "id": "coding:sctid:387003001",
-            "code": "387003001",
-            "name": "Trastuzumab",
-            "system": "SNOMED",
-            "systemVersion": "2026-03-01",
-            "iris": [
-              "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387003001&edition=MAIN/2026-03-01&release=&languages=en"
             ]
           }
         },
@@ -381,6 +418,69 @@
               {
                 "name": "status",
                 "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          },
+          {
+            "id": "doc:fda:herceptin:2010-10-20",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Herceptin (trastuzumab) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Genentech, Inc. Herceptin (trastuzumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/103792s5250lbl.pdf. Revised October 2010. Accessed October 6, 2026.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/103792s5250lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103792"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Genentech, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Herceptin",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "trastuzumab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 103792,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2010-10-20",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]

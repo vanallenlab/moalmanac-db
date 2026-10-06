@@ -93,6 +93,69 @@
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
+    },
+    {
+      "id": "doc:fda:libtayo:2022-11-08",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Libtayo (cemiplimab) [package insert]. FDA.",
+      "title": null,
+      "aliases": [],
+      "description": "Regeneron Pharmaceuticals, Inc. Libtayo (cemiplimab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/761097s014lbl.pdf. Revised November 2022. Accessed October 6, 2026.",
+      "urls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/761097s014lbl.pdf",
+        "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761097"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:fda",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Food and Drug Administration",
+            "description": "Regulatory agency that approves drugs for use in the United States."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Regeneron Pharmaceuticals, Inc.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Libtayo",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "cemiplimab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "identification_number",
+          "value": 761097,
+          "description": "Identification number used by the publishing organization."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-11-08",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
     }
   ],
   "direction": "supports",
@@ -166,32 +229,6 @@
             {
               "relation": "relatedMatch",
               "coding": {
-                "id": "coding:omop:4299846",
-                "code": "4299846",
-                "name": "Carboplatin",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4299846"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:386905002",
-                "code": "386905002",
-                "name": "Carboplatin",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386905002&edition=MAIN/2026-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
                 "id": "coding:omop:1344905",
                 "code": "1344905",
                 "name": "carboplatin",
@@ -258,32 +295,6 @@
                   "https://athena.ohdsi.org/search-terms/terms/35200783"
                 ]
               }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:781555007",
-                "code": "781555007",
-                "name": "Cemiplimab",
-                "system": "SNOMED",
-                "systemVersion": "2025-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=781555007&edition=MAIN/2025-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:36683609",
-                "code": "36683609",
-                "name": "Cemiplimab",
-                "system": "OMOP",
-                "systemVersion": "v20260227",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/36683609"
-                ]
-              }
             }
           ],
           "extensions": [
@@ -339,32 +350,6 @@
                 "systemVersion": "v20260227",
                 "iris": [
                   "https://athena.ohdsi.org/search-terms/terms/1304919"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:409159000",
-                "code": "409159000",
-                "name": "Pemetrexed",
-                "system": "SNOMED",
-                "systemVersion": "2025-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=409159000&edition=MAIN/2025-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:4247743",
-                "code": "4247743",
-                "name": "Pemetrexed",
-                "system": "OMOP",
-                "systemVersion": "v20260227",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4247743"
                 ]
               }
             }
@@ -830,6 +815,69 @@
               {
                 "name": "status",
                 "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          },
+          {
+            "id": "doc:fda:libtayo:2022-11-08",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Libtayo (cemiplimab) [package insert]. FDA.",
+            "title": null,
+            "aliases": [],
+            "description": "Regeneron Pharmaceuticals, Inc. Libtayo (cemiplimab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/761097s014lbl.pdf. Revised November 2022. Accessed October 6, 2026.",
+            "urls": [
+              "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/761097s014lbl.pdf",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761097"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:fda",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Food and Drug Administration",
+                  "description": "Regulatory agency that approves drugs for use in the United States."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": "Regeneron Pharmaceuticals, Inc.",
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": "Libtayo",
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": "cemiplimab",
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "identification_number",
+                "value": 761097,
+                "description": "Identification number used by the publishing organization."
+              },
+              {
+                "name": "publication_date",
+                "value": "2022-11-08",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "status",
+                "value": "Deprecated",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]

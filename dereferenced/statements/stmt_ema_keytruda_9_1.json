@@ -4,6 +4,19 @@
   "description": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with platinum and fluoropyrimidine-based chemotherapy as a first-line treatment for adult patients with locally advanced unresectable or metastatic esophageal carcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 10.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-10-05:0",
+      "type": "Contribution",
+      "description": "Updated statement description to cite the underlying trial, KEYNOTE-590. Statement associating the use of carboplatin was deprecated as KEYNOTE-590 was evaluated using only cisplatin.",
+      "date": "2026-10-05",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
       "description": "Adding EMA approvals for use to database",
@@ -166,32 +179,6 @@
             {
               "relation": "relatedMatch",
               "coding": {
-                "id": "coding:omop:4299846",
-                "code": "4299846",
-                "name": "Carboplatin",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4299846"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:386905002",
-                "code": "386905002",
-                "name": "Carboplatin",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=386905002&edition=MAIN/2026-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
                 "id": "coding:omop:1344905",
                 "code": "1344905",
                 "name": "carboplatin",
@@ -258,32 +245,6 @@
                   "https://athena.ohdsi.org/search-terms/terms/45775965"
                 ]
               }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:716125002",
-                "code": "716125002",
-                "name": "Pembrolizumab",
-                "system": "SNOMED",
-                "systemVersion": "2025-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=716125002&edition=MAIN/2025-03-01&release=&languages=en"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:37396350",
-                "code": "37396350",
-                "name": "Pembrolizumab",
-                "system": "OMOP",
-                "systemVersion": "v20260227",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/37396350"
-                ]
-              }
             }
           ],
           "extensions": [
@@ -326,32 +287,6 @@
                 "systemVersion": "20250602",
                 "iris": [
                   "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4492"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:omop:4300009",
-                "code": "4300009",
-                "name": "Fluorouracil",
-                "system": "OMOP",
-                "systemVersion": "v20250827",
-                "iris": [
-                  "https://athena.ohdsi.org/search-terms/terms/4300009"
-                ]
-              }
-            },
-            {
-              "relation": "relatedMatch",
-              "coding": {
-                "id": "coding:sctid:387172005",
-                "code": "387172005",
-                "name": "Fluorouracil",
-                "system": "SNOMED",
-                "systemVersion": "2026-03-01",
-                "iris": [
-                  "https://browser.ihtsdotools.org/?perspective=full&conceptId1=387172005&edition=MAIN/2026-03-01&release=&languages=en"
                 ]
               }
             },
@@ -456,7 +391,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Active",
+      "value": "Deprecated",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {
@@ -464,7 +399,7 @@
       "value": {
         "id": "ind:ema:keytruda:9",
         "type": "Indication",
-        "description": "KEYTRUDA, in combination with platinum and fluoropyrimidine -based chemotherapy, is indicated for the first-line treatment of locally advanced unresectable or metastatic carcinoma of the oesophagus in adults whose tumours express PD-L1 with a CPS >= 10.",
+        "description": "KEYTRUDA, in combination with platinum and fluoropyrimidine-based chemotherapy, is indicated for the first-line treatment of locally advanced unresectable or metastatic carcinoma of the oesophagus in adults whose tumours express PD-L1 with a CPS >= 10.",
         "contributions": [
           {
             "id": "ctrb:vanallenlab:2024-10-20:0",
