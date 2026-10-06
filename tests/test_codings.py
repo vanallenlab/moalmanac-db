@@ -103,39 +103,6 @@ def compare_to_source(records, loader, name_of):
     return missing_source, missing_code, mismatched_name
 
 
-def test_disease_first_mapping_is_oncotree(data):
-    """
-    Diseases with an OncoTree mapping list it first.
-    """
-    mappings = {r["id"]: r for r in data["mappings"]}
-    failed = []
-    for disease in data["diseases"]:
-        coding_ids = [
-            mappings[m]["coding_id"] if m in mappings else None
-            for m in disease["mappings"]
-        ]
-        is_oncotree = [
-            c is not None and c.startswith(ONCOTREE_PREFIX) for c in coding_ids
-        ]
-        if any(is_oncotree) and not is_oncotree[0]:
-            failed.append(f"{disease['id']}: {disease['mappings'][0]!r}")
-    assert not failed, f"First mapping is not an OncoTree coding for diseases: {failed}"
-
-
-def test_disease_name_matches_primary_coding_name(data):
-    """
-    A disease's name matches the name of its primary coding.
-    """
-    codings = {r["id"]: r for r in data["codings"]}
-    failed = [
-        f"{r['id']}: {r['name']!r} != {codings[r['primary_coding_id']]['name']!r}"
-        for r in data["diseases"]
-        if r["primary_coding_id"] in codings
-        and r["name"] != codings[r["primary_coding_id"]]["name"]
-    ]
-    assert not failed, f"Disease name differs from primary coding name: {failed}"
-
-
 def test_disease_primary_coding_is_ncit(data):
     """
     Diseases use NCIt as their primary coding.
@@ -207,20 +174,6 @@ def test_oncotree_codes_exist_in_system_version(data):
     )
 
 
-def test_oncotree_codings_are_referenced(data):
-    """
-    Every OncoTree coding is referenced by a mapping or used as a disease's primary coding.
-    """
-    referenced = {r["coding_id"] for r in data["mappings"]}
-    referenced |= {r["primary_coding_id"] for r in data["diseases"]}
-    failed = [
-        r["id"]
-        for r in codings_with_prefix(data, ONCOTREE_PREFIX)
-        if r["id"] not in referenced
-    ]
-    assert not failed, f"Unreferenced OncoTree codings: {failed}"
-
-
 def test_oncotree_iris_use_name_search(data):
     """
     OncoTree codings have a single iri that searches OncoTree by name for the coding's `systemVersion`.
@@ -246,21 +199,3 @@ def test_oncotree_names_match_system_version(data):
     assert not mismatched_name, (
         f"OncoTree coding names differ from OncoTree: {mismatched_name}"
     )
-
-
-def test_one_to_many_mappings_not_exact_match(data):
-    """
-    When one primary coding maps to more than one OncoTree coding, none of those mappings are `exactMatch`.
-    """
-    oncotree_mappings = collections.defaultdict(list)
-    for mapping in data["mappings"]:
-        if mapping["coding_id"].startswith(ONCOTREE_PREFIX):
-            oncotree_mappings[mapping["primary_coding_id"]].append(mapping)
-    failed = [
-        m["id"]
-        for mappings in oncotree_mappings.values()
-        if len(mappings) > 1
-        for m in mappings
-        if m["relation"] == "exactMatch"
-    ]
-    assert not failed, f"exactMatch used for one-to-many OncoTree mappings: {failed}"

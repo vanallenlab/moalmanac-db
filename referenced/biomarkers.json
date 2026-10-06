@@ -2102,75 +2102,6 @@
     ]
   },
   {
-    "id": "bmkr:59",
-    "type": "CategoricalVariant",
-    "name": "PIK3CA Somatic variants",
-    "allele": null,
-    "copyChange": null,
-    "function": null,
-    "genes": [
-      "gene:hgnc:8975"
-    ],
-    "location": [
-      "ga4gh:SL.LEkzFRUTltP1kQuWVY4p2i5A_aK1SJI5"
-    ],
-    "biomarker_type": "Somatic variant",
-    "extensions": [
-      {
-        "name": "chromosome",
-        "value": "7"
-      },
-      {
-        "name": "start_position",
-        "value": null
-      },
-      {
-        "name": "end_position",
-        "value": null
-      },
-      {
-        "name": "reference_allele",
-        "value": null
-      },
-      {
-        "name": "alternate_allele",
-        "value": null
-      },
-      {
-        "name": "cdna_change",
-        "value": null
-      },
-      {
-        "name": "protein_change",
-        "value": null
-      },
-      {
-        "name": "variant_annotation",
-        "value": null
-      },
-      {
-        "name": "exon",
-        "value": null
-      },
-      {
-        "name": "rsid",
-        "value": null
-      },
-      {
-        "name": "hgvsg",
-        "value": null
-      },
-      {
-        "name": "hgvsc",
-        "value": null
-      },
-      {
-        "name": "requires_oncogenic",
-        "value": false
-      }
-    ]
-  },
-  {
     "id": "bmkr:60",
     "type": "CategoricalVariant",
     "name": "RET p.M918T",
@@ -3307,7 +3238,7 @@
   {
     "id": "bmkr:87",
     "type": "CategoricalVariant",
-    "name": "PIK3CA Somatic variants",
+    "name": "PIK3CA oncogenic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
@@ -3414,7 +3345,7 @@
   {
     "id": "bmkr:90",
     "type": "CategoricalVariant",
-    "name": "AKT1 Somatic variants",
+    "name": "AKT1 oncogenic variants",
     "allele": null,
     "copyChange": null,
     "function": null,
@@ -8652,6 +8583,35 @@
       {
         "name": "value",
         "value": "Positive"
+      }
+    ]
+  },
+  {
+    "id": "bmkr:185",
+    "type": "CategoricalVariant",
+    "name": "PD-L1 < 1% IC",
+    "allele": null,
+    "copyChange": null,
+    "function": null,
+    "genes": [],
+    "location": [],
+    "biomarker_type": "Protein expression",
+    "extensions": [
+      {
+        "name": "marker",
+        "value": "PD-L1"
+      },
+      {
+        "name": "unit",
+        "value": "Immune cell staining (IC)"
+      },
+      {
+        "name": "equality",
+        "value": "<"
+      },
+      {
+        "name": "value",
+        "value": 0.01
       }
     ]
   }
