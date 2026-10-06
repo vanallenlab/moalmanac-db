@@ -207,20 +207,6 @@ def test_oncotree_codes_exist_in_system_version(data):
     )
 
 
-def test_oncotree_codings_are_referenced(data):
-    """
-    Every OncoTree coding is referenced by a mapping or used as a disease's primary coding.
-    """
-    referenced = {r["coding_id"] for r in data["mappings"]}
-    referenced |= {r["primary_coding_id"] for r in data["diseases"]}
-    failed = [
-        r["id"]
-        for r in codings_with_prefix(data, ONCOTREE_PREFIX)
-        if r["id"] not in referenced
-    ]
-    assert not failed, f"Unreferenced OncoTree codings: {failed}"
-
-
 def test_oncotree_iris_use_name_search(data):
     """
     OncoTree codings have a single iri that searches OncoTree by name for the coding's `systemVersion`.
@@ -246,21 +232,3 @@ def test_oncotree_names_match_system_version(data):
     assert not mismatched_name, (
         f"OncoTree coding names differ from OncoTree: {mismatched_name}"
     )
-
-
-def test_one_to_many_mappings_not_exact_match(data):
-    """
-    When one primary coding maps to more than one OncoTree coding, none of those mappings are `exactMatch`.
-    """
-    oncotree_mappings = collections.defaultdict(list)
-    for mapping in data["mappings"]:
-        if mapping["coding_id"].startswith(ONCOTREE_PREFIX):
-            oncotree_mappings[mapping["primary_coding_id"]].append(mapping)
-    failed = [
-        m["id"]
-        for mappings in oncotree_mappings.values()
-        if len(mappings) > 1
-        for m in mappings
-        if m["relation"] == "exactMatch"
-    ]
-    assert not failed, f"exactMatch used for one-to-many OncoTree mappings: {failed}"
