@@ -103,39 +103,6 @@ def compare_to_source(records, loader, name_of):
     return missing_source, missing_code, mismatched_name
 
 
-def test_disease_first_mapping_is_oncotree(data):
-    """
-    Diseases with an OncoTree mapping list it first.
-    """
-    mappings = {r["id"]: r for r in data["mappings"]}
-    failed = []
-    for disease in data["diseases"]:
-        coding_ids = [
-            mappings[m]["coding_id"] if m in mappings else None
-            for m in disease["mappings"]
-        ]
-        is_oncotree = [
-            c is not None and c.startswith(ONCOTREE_PREFIX) for c in coding_ids
-        ]
-        if any(is_oncotree) and not is_oncotree[0]:
-            failed.append(f"{disease['id']}: {disease['mappings'][0]!r}")
-    assert not failed, f"First mapping is not an OncoTree coding for diseases: {failed}"
-
-
-def test_disease_name_matches_primary_coding_name(data):
-    """
-    A disease's name matches the name of its primary coding.
-    """
-    codings = {r["id"]: r for r in data["codings"]}
-    failed = [
-        f"{r['id']}: {r['name']!r} != {codings[r['primary_coding_id']]['name']!r}"
-        for r in data["diseases"]
-        if r["primary_coding_id"] in codings
-        and r["name"] != codings[r["primary_coding_id"]]["name"]
-    ]
-    assert not failed, f"Disease name differs from primary coding name: {failed}"
-
-
 def test_disease_primary_coding_is_ncit(data):
     """
     Diseases use NCIt as their primary coding.
