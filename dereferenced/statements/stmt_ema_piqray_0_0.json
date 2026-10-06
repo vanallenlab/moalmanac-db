@@ -97,7 +97,7 @@
   ],
   "direction": "supports",
   "proposition": {
-    "id": "prop:vtxr:653",
+    "id": "prop:vtxr:23",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictsSensitivityTo",
     "subjectVariant": {
@@ -318,38 +318,6 @@
         "name": "biomarkers",
         "value": [
           {
-            "id": "bmkr.criterion:2",
-            "present": true,
-            "subject": {
-              "id": "bmkr:2",
-              "type": "CategoricalVariant",
-              "name": "HER2-negative",
-              "constraints": [],
-              "extensions": [
-                {
-                  "name": "biomarker_type",
-                  "value": "Protein expression"
-                },
-                {
-                  "name": "marker",
-                  "value": "Human epidermal growth factor receptor 2 (HER2)"
-                },
-                {
-                  "name": "unit",
-                  "value": "status"
-                },
-                {
-                  "name": "equality",
-                  "value": "="
-                },
-                {
-                  "name": "value",
-                  "value": "Negative"
-                }
-              ]
-            }
-          },
-          {
             "id": "bmkr.criterion:1",
             "present": true,
             "subject": {
@@ -382,12 +350,44 @@
             }
           },
           {
+            "id": "bmkr.criterion:2",
+            "present": true,
+            "subject": {
+              "id": "bmkr:2",
+              "type": "CategoricalVariant",
+              "name": "HER2-negative",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Negative"
+                }
+              ]
+            }
+          },
+          {
             "id": "bmkr.criterion:87",
             "present": true,
             "subject": {
               "id": "bmkr:87",
               "type": "CategoricalVariant",
-              "name": "PIK3CA Somatic variants",
+              "name": "PIK3CA oncogenic variants",
               "constraints": [
                 {
                   "type": "DefiningLocationConstraint",
