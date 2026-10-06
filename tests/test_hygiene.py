@@ -54,8 +54,13 @@ def test_unique_ids_per_file(data):
 def test_unique_records_per_file(data):
     """
     Ensures that all records per file are unique.
+
+    The `urls` table is exempt: dated document urls (e.g. `url:fda:adcetris:label:2023-06-14`) are
+    static provenance records and intentionally repeat the `url` of the evergreen `...:label` record.
     """
     for file, records in data.items():
+        if file == "urls":
+            continue
         seen = {}
         duplicates = []
         for record in records:
