@@ -3,33 +3,33 @@
   "membershipOperator": "AND",
   "therapies": [
     {
-      "id": "tx:ncit:C102783",
+      "id": "tx:ncit:C1607",
       "conceptType": "Therapy",
-      "name": "Sacituzumab govitecan",
+      "name": "Anastrozole",
       "mappings": [
         {
           "relation": "relatedMatch",
           "coding": {
-            "id": "coding:rxcui:2360232",
-            "code": "2360232",
-            "name": "sacituzumab govitecan",
+            "id": "coding:rxcui:84857",
+            "code": "84857",
+            "name": "anastrozole",
             "system": "RxNorm",
-            "systemVersion": "02-Mar-2026",
+            "systemVersion": "20250602",
             "iris": [
-              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2360232"
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=84857"
             ]
           }
         },
         {
           "relation": "relatedMatch",
           "coding": {
-            "id": "coding:omop:1145485",
-            "code": "1145485",
-            "name": "sacituzumab govitecan",
+            "id": "coding:omop:1348265",
+            "code": "1348265",
+            "name": "anastrozole",
             "system": "OMOP",
-            "systemVersion": "v20260227",
+            "systemVersion": "v20250827",
             "iris": [
-              "https://athena.ohdsi.org/search-terms/terms/1145485"
+              "https://athena.ohdsi.org/search-terms/terms/1348265"
             ]
           }
         }
@@ -38,7 +38,64 @@
         {
           "name": "therapy_strategy",
           "value": [
-            "Topoisomerase inhibition"
+            "Aromatase inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Hormone therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C1607",
+        "code": "C1607",
+        "name": "Anastrozole",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1607"
+        ]
+      }
+    },
+    {
+      "id": "tx:ncit:C49176",
+      "conceptType": "Therapy",
+      "name": "Palbociclib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:1601374",
+            "code": "1601374",
+            "name": "palbociclib",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1601374"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:45892075",
+            "code": "45892075",
+            "name": "palbociclib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/45892075"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "CDK4/6 inhibition"
           ],
           "description": "Associated therapeutic strategy or mechanism of action of the therapy."
         },
@@ -49,44 +106,44 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:ncit:C102783",
-        "code": "C102783",
-        "name": "Sacituzumab Govitecan",
+        "id": "coding:ncit:C49176",
+        "code": "C49176",
+        "name": "Palbociclib",
         "system": "https://evsexplore.semantics.cancer.gov",
         "systemVersion": "26.08e",
         "iris": [
-          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C102783"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C49176"
         ]
       }
     },
     {
-      "id": "tx:ncit:C106432",
+      "id": "tx:ncit:C1647",
       "conceptType": "Therapy",
-      "name": "Pembrolizumab",
+      "name": "Trastuzumab",
       "mappings": [
         {
           "relation": "relatedMatch",
           "coding": {
-            "id": "coding:rxcui:1547545",
-            "code": "1547545",
-            "name": "pembrolizumab",
+            "id": "coding:rxcui:224905",
+            "code": "224905",
+            "name": "trastuzumab",
             "system": "RxNorm",
-            "systemVersion": "02-Mar-2026",
+            "systemVersion": "20250602",
             "iris": [
-              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
             ]
           }
         },
         {
           "relation": "relatedMatch",
           "coding": {
-            "id": "coding:omop:45775965",
-            "code": "45775965",
-            "name": "pembrolizumab",
+            "id": "coding:omop:1387104",
+            "code": "1387104",
+            "name": "trastuzumab",
             "system": "OMOP",
-            "systemVersion": "v20260227",
+            "systemVersion": "v20250827",
             "iris": [
-              "https://athena.ohdsi.org/search-terms/terms/45775965"
+              "https://athena.ohdsi.org/search-terms/terms/1387104"
             ]
           }
         }
@@ -95,24 +152,24 @@
         {
           "name": "therapy_strategy",
           "value": [
-            "PD-1/PD-L1 inhibition"
+            "HER2 inhibition"
           ],
           "description": "Associated therapeutic strategy or mechanism of action of the therapy."
         },
         {
           "name": "therapy_type",
-          "value": "Immunotherapy",
+          "value": "Targeted therapy",
           "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
         }
       ],
       "primaryCoding": {
-        "id": "coding:ncit:C106432",
-        "code": "C106432",
-        "name": "Pembrolizumab",
+        "id": "coding:ncit:C1647",
+        "code": "C1647",
+        "name": "Trastuzumab",
         "system": "https://evsexplore.semantics.cancer.gov",
         "systemVersion": "26.08e",
         "iris": [
-          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
         ]
       }
     }
