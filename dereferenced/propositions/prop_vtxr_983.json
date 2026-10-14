@@ -7,20 +7,20 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:ncit:C9245",
+    "id": "dis:ncit:C4436",
     "conceptType": "Disease",
-    "name": "Invasive Breast Carcinoma",
+    "name": "Cholangiocarcinoma",
     "mappings": [
       {
         "relation": "exactMatch",
         "coding": {
-          "id": "coding:oncotree:BRCA",
-          "code": "BRCA",
-          "name": "Invasive Breast Carcinoma",
+          "id": "coding:oncotree:CHOL",
+          "code": "CHOL",
+          "name": "Cholangiocarcinoma",
           "system": "https://oncotree.mskcc.org",
           "systemVersion": "oncotree_2025_10_03",
           "iris": [
-            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Cholangiocarcinoma+%28CHOL%29"
           ]
         }
       }
@@ -33,264 +33,147 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:ncit:C9245",
-      "code": "C9245",
-      "name": "Invasive Breast Carcinoma",
+      "id": "coding:ncit:C4436",
+      "code": "C4436",
+      "name": "Cholangiocarcinoma",
       "system": "https://evsexplore.semantics.cancer.gov",
       "systemVersion": "26.08e",
       "iris": [
-        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4436"
       ]
     }
   },
   "objectTherapeutic": {
-    "id": "txgrp:223",
-    "membershipOperator": "AND",
-    "therapies": [
+    "id": "tx:ncit:C152948",
+    "conceptType": "Therapy",
+    "name": "Zenocutuzumab",
+    "mappings": [
       {
-        "id": "tx:ncit:C102783",
-        "conceptType": "Therapy",
-        "name": "Sacituzumab govitecan",
-        "mappings": [
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:rxcui:2360232",
-              "code": "2360232",
-              "name": "sacituzumab govitecan",
-              "system": "RxNorm",
-              "systemVersion": "02-Mar-2026",
-              "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2360232"
-              ]
-            }
-          },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:omop:1145485",
-              "code": "1145485",
-              "name": "sacituzumab govitecan",
-              "system": "OMOP",
-              "systemVersion": "v20260227",
-              "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/1145485"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "therapy_strategy",
-            "value": [
-              "Topoisomerase inhibition"
-            ],
-            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-          },
-          {
-            "name": "therapy_type",
-            "value": "Targeted therapy",
-            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-          }
-        ],
-        "primaryCoding": {
-          "id": "coding:ncit:C102783",
-          "code": "C102783",
-          "name": "Sacituzumab Govitecan",
-          "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "26.08e",
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:rxcui:2699588",
+          "code": "2699588",
+          "name": "zenocutuzumab",
+          "system": "RxNorm",
+          "systemVersion": "02-Mar-2026",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C102783"
+            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2699588"
           ]
         }
       },
       {
-        "id": "tx:ncit:C106432",
-        "conceptType": "Therapy",
-        "name": "Pembrolizumab",
-        "mappings": [
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:rxcui:1547545",
-              "code": "1547545",
-              "name": "pembrolizumab",
-              "system": "RxNorm",
-              "systemVersion": "02-Mar-2026",
-              "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
-              ]
-            }
-          },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:omop:45775965",
-              "code": "45775965",
-              "name": "pembrolizumab",
-              "system": "OMOP",
-              "systemVersion": "v20260227",
-              "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/45775965"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "therapy_strategy",
-            "value": [
-              "PD-1/PD-L1 inhibition"
-            ],
-            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-          },
-          {
-            "name": "therapy_type",
-            "value": "Immunotherapy",
-            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-          }
-        ],
-        "primaryCoding": {
-          "id": "coding:ncit:C106432",
-          "code": "C106432",
-          "name": "Pembrolizumab",
-          "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "26.08e",
+        "relation": "relatedMatch",
+        "coding": {
+          "id": "coding:omop:1464913",
+          "code": "1464913",
+          "name": "zenocutuzumab",
+          "system": "OMOP",
+          "systemVersion": "v20260227",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+            "https://athena.ohdsi.org/search-terms/terms/1464913"
           ]
         }
       }
-    ]
+    ],
+    "extensions": [
+      {
+        "name": "therapy_strategy",
+        "value": [
+          "NRG1 inhibition"
+        ],
+        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+      },
+      {
+        "name": "therapy_type",
+        "value": "Targeted therapy",
+        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+      }
+    ],
+    "primaryCoding": {
+      "id": "coding:ncit:C152948",
+      "code": "C152948",
+      "name": "Zenocutuzumab",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C152948"
+      ]
+    }
   },
   "extensions": [
     {
       "name": "biomarkers",
       "value": [
         {
-          "id": "bmkr.criterion:41",
+          "id": "bmkr.criterion:156",
           "present": true,
           "subject": {
-            "id": "bmkr:41",
+            "id": "bmkr:156",
             "type": "CategoricalVariant",
-            "name": "PD-L1 (CPS) >= 10",
-            "constraints": [],
-            "extensions": [
+            "name": "v::NRG1",
+            "constraints": [
               {
-                "name": "biomarker_type",
-                "value": "Protein expression"
-              },
-              {
-                "name": "marker",
-                "value": "PD-L1"
-              },
-              {
-                "name": "unit",
-                "value": "Combined Positive Score (CPS)"
-              },
-              {
-                "name": "equality",
-                "value": ">="
-              },
-              {
-                "name": "value",
-                "value": 10
+                "type": "AdjacencyConstraint",
+                "orderKnown": false,
+                "adjoinedElements": [
+                  {
+                    "id": "gene:hgnc:7997",
+                    "conceptType": "Gene",
+                    "name": "NRG1",
+                    "primaryCoding": {
+                      "id": "coding:hgnc:7997",
+                      "code": "HGNC:7997",
+                      "system": "https://genenames.org",
+                      "iris": [
+                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7997"
+                      ]
+                    },
+                    "mappings": [
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ensembl:ensg00000157168",
+                          "code": "ENSG00000157168",
+                          "system": "https://www.ensembl.org",
+                          "iris": [
+                            "https://www.ensembl.org/id/ENSG00000157168"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "exactMatch",
+                        "coding": {
+                          "id": "coding:ncbi:3084",
+                          "code": "3084",
+                          "system": "https://www.ncbi.nlm.nih.gov/gene",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/gene/3084"
+                          ]
+                        }
+                      },
+                      {
+                        "relation": "relatedMatch",
+                        "coding": {
+                          "id": "coding:refseq:NM_013964.5",
+                          "code": "NM_013964.5",
+                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                          "iris": [
+                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_013964.5"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "UnspecifiedElement"
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "id": "bmkr.criterion:43",
-          "present": true,
-          "subject": {
-            "id": "bmkr:43",
-            "type": "CategoricalVariant",
-            "name": "ER negative",
-            "constraints": [],
+            ],
             "extensions": [
               {
                 "name": "biomarker_type",
-                "value": "Protein expression"
-              },
-              {
-                "name": "marker",
-                "value": "Estrogen receptor (ER)"
-              },
-              {
-                "name": "unit",
-                "value": "status"
-              },
-              {
-                "name": "equality",
-                "value": "="
-              },
-              {
-                "name": "value",
-                "value": "Negative"
-              }
-            ]
-          }
-        },
-        {
-          "id": "bmkr.criterion:2",
-          "present": true,
-          "subject": {
-            "id": "bmkr:2",
-            "type": "CategoricalVariant",
-            "name": "HER2-negative",
-            "constraints": [],
-            "extensions": [
-              {
-                "name": "biomarker_type",
-                "value": "Protein expression"
-              },
-              {
-                "name": "marker",
-                "value": "Human epidermal growth factor receptor 2 (HER2)"
-              },
-              {
-                "name": "unit",
-                "value": "status"
-              },
-              {
-                "name": "equality",
-                "value": "="
-              },
-              {
-                "name": "value",
-                "value": "Negative"
-              }
-            ]
-          }
-        },
-        {
-          "id": "bmkr.criterion:44",
-          "present": true,
-          "subject": {
-            "id": "bmkr:44",
-            "type": "CategoricalVariant",
-            "name": "PR negative",
-            "constraints": [],
-            "extensions": [
-              {
-                "name": "biomarker_type",
-                "value": "Protein expression"
-              },
-              {
-                "name": "marker",
-                "value": "Progesterone receptor (PR)"
-              },
-              {
-                "name": "unit",
-                "value": "status"
-              },
-              {
-                "name": "equality",
-                "value": "="
-              },
-              {
-                "name": "value",
-                "value": "Negative"
+                "value": "Gene fusion"
               }
             ]
           }
