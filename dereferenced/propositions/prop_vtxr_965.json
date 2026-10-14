@@ -7,20 +7,20 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:ncit:C2919",
+    "id": "dis:ncit:C9245",
     "conceptType": "Disease",
-    "name": "Prostate Adenocarcinoma",
+    "name": "Invasive Breast Carcinoma",
     "mappings": [
       {
         "relation": "exactMatch",
         "coding": {
-          "id": "coding:oncotree:PRAD",
-          "code": "PRAD",
-          "name": "Prostate Adenocarcinoma",
+          "id": "coding:oncotree:BRCA",
+          "code": "BRCA",
+          "name": "Invasive Breast Carcinoma",
           "system": "https://oncotree.mskcc.org",
           "systemVersion": "oncotree_2025_10_03",
           "iris": [
-            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Prostate+Adenocarcinoma+%28PRAD%29"
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
           ]
         }
       }
@@ -33,13 +33,13 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:ncit:C2919",
-      "code": "C2919",
-      "name": "Prostate Adenocarcinoma",
+      "id": "coding:ncit:C9245",
+      "code": "C9245",
+      "name": "Invasive Breast Carcinoma",
       "system": "https://evsexplore.semantics.cancer.gov",
       "systemVersion": "26.08e",
       "iris": [
-        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C2919"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
       ]
     }
   },
@@ -48,90 +48,33 @@
     "membershipOperator": "AND",
     "therapies": [
       {
-        "id": "tx:ncit:C102564",
+        "id": "tx:ncit:C1607",
         "conceptType": "Therapy",
-        "name": "Capivasertib",
+        "name": "Anastrozole",
         "mappings": [
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "coding:rxcui:2669967",
-              "code": "2669967",
-              "name": "capivasertib",
-              "system": "RxNorm",
-              "systemVersion": "02-Mar-2026",
-              "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2669967"
-              ]
-            }
-          },
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:omop:747200",
-              "code": "747200",
-              "name": "capivasertib",
-              "system": "OMOP",
-              "systemVersion": "v20260227",
-              "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/747200"
-              ]
-            }
-          }
-        ],
-        "extensions": [
-          {
-            "name": "therapy_strategy",
-            "value": [
-              "PI3K/AKT/mTOR inhibition"
-            ],
-            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
-          },
-          {
-            "name": "therapy_type",
-            "value": "Targeted therapy",
-            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
-          }
-        ],
-        "primaryCoding": {
-          "id": "coding:ncit:C102564",
-          "code": "C102564",
-          "name": "Capivasertib",
-          "system": "https://evsexplore.semantics.cancer.gov",
-          "systemVersion": "26.08e",
-          "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C102564"
-          ]
-        }
-      },
-      {
-        "id": "tx:ncit:C68845",
-        "conceptType": "Therapy",
-        "name": "Abiraterone acetate",
-        "mappings": [
-          {
-            "relation": "relatedMatch",
-            "coding": {
-              "id": "coding:rxcui:1100071",
-              "code": "1100071",
-              "name": "abiraterone acetate",
+              "id": "coding:rxcui:84857",
+              "code": "84857",
+              "name": "anastrozole",
               "system": "RxNorm",
               "systemVersion": "20250602",
               "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1100071"
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=84857"
               ]
             }
           },
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "coding:omop:46274231",
-              "code": "46274231",
-              "name": "abiraterone acetate",
+              "id": "coding:omop:1348265",
+              "code": "1348265",
+              "name": "anastrozole",
               "system": "OMOP",
               "systemVersion": "v20250827",
               "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/46274231"
+                "https://athena.ohdsi.org/search-terms/terms/1348265"
               ]
             }
           }
@@ -140,7 +83,7 @@
           {
             "name": "therapy_strategy",
             "value": [
-              "Antiandrogen"
+              "Aromatase inhibition"
             ],
             "description": "Associated therapeutic strategy or mechanism of action of the therapy."
           },
@@ -151,44 +94,44 @@
           }
         ],
         "primaryCoding": {
-          "id": "coding:ncit:C68845",
-          "code": "C68845",
-          "name": "Abiraterone Acetate",
+          "id": "coding:ncit:C1607",
+          "code": "C1607",
+          "name": "Anastrozole",
           "system": "https://evsexplore.semantics.cancer.gov",
           "systemVersion": "26.08e",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C68845"
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1607"
           ]
         }
       },
       {
-        "id": "tx:ncit:C770",
+        "id": "tx:ncit:C49176",
         "conceptType": "Therapy",
-        "name": "Prednisone",
+        "name": "Palbociclib",
         "mappings": [
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "coding:rxcui:8640",
-              "code": "8640",
-              "name": "prednisone",
+              "id": "coding:rxcui:1601374",
+              "code": "1601374",
+              "name": "palbociclib",
               "system": "RxNorm",
-              "systemVersion": "02-Mar-2026",
+              "systemVersion": "20250602",
               "iris": [
-                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=8640"
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1601374"
               ]
             }
           },
           {
             "relation": "relatedMatch",
             "coding": {
-              "id": "coding:omop:1551099",
-              "code": "1551099",
-              "name": "prednisone",
+              "id": "coding:omop:45892075",
+              "code": "45892075",
+              "name": "palbociclib",
               "system": "OMOP",
-              "systemVersion": "v20260227",
+              "systemVersion": "v20250827",
               "iris": [
-                "https://athena.ohdsi.org/search-terms/terms/1551099"
+                "https://athena.ohdsi.org/search-terms/terms/45892075"
               ]
             }
           }
@@ -197,24 +140,81 @@
           {
             "name": "therapy_strategy",
             "value": [
-              "Corticosteroid"
+              "CDK4/6 inhibition"
             ],
             "description": "Associated therapeutic strategy or mechanism of action of the therapy."
           },
           {
             "name": "therapy_type",
-            "value": "Chemotherapy",
+            "value": "Targeted therapy",
             "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
           }
         ],
         "primaryCoding": {
-          "id": "coding:ncit:C770",
-          "code": "C770",
-          "name": "Prednisone",
+          "id": "coding:ncit:C49176",
+          "code": "C49176",
+          "name": "Palbociclib",
           "system": "https://evsexplore.semantics.cancer.gov",
           "systemVersion": "26.08e",
           "iris": [
-            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C770"
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C49176"
+          ]
+        }
+      },
+      {
+        "id": "tx:ncit:C1647",
+        "conceptType": "Therapy",
+        "name": "Trastuzumab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:rxcui:224905",
+              "code": "224905",
+              "name": "trastuzumab",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:1387104",
+              "code": "1387104",
+              "name": "trastuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1387104"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "HER2 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "coding:ncit:C1647",
+          "code": "C1647",
+          "name": "Trastuzumab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
           ]
         }
       }
@@ -225,12 +225,12 @@
       "name": "biomarkers",
       "value": [
         {
-          "id": "bmkr.criterion:191",
+          "id": "bmkr.criterion:1",
           "present": true,
           "subject": {
-            "id": "bmkr:186",
+            "id": "bmkr:1",
             "type": "CategoricalVariant",
-            "name": "PTEN-deficient",
+            "name": "ER positive",
             "constraints": [],
             "extensions": [
               {
@@ -239,7 +239,7 @@
               },
               {
                 "name": "marker",
-                "value": "PTEN"
+                "value": "Estrogen receptor (ER)"
               },
               {
                 "name": "unit",
@@ -251,7 +251,39 @@
               },
               {
                 "name": "value",
-                "value": "Deficient"
+                "value": "Positive"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:20",
+          "present": true,
+          "subject": {
+            "id": "bmkr:20",
+            "type": "CategoricalVariant",
+            "name": "HER2-positive",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Human epidermal growth factor receptor 2 (HER2)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
               }
             ]
           }
