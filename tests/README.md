@@ -16,7 +16,6 @@ Tests are organized by type data being tested. The files are:
 - [`test_ordering.py`](test_ordering.py) - checks that list values are ordered as expected.
 - [`test_reference.py`](test_references.py) - checks that foreign keys or cross-file references are valid.
 - [`test_schemas.py`](test_schemas.py) - checks that database records are following database schemas. Both referenced/ and dereferenced/ records are separately tested.
-- [`test_validation.py`](test_validation.py) - checks that schemas are followed.
 
 Pytest settings can be configured from [pytest.ini](../pytest.ini).
 
