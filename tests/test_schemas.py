@@ -204,6 +204,38 @@ def test_document_dates_must_be_iso_dates_or_null(data, registry):
     assert failures(check, [document])
 
 
+def test_document_regulatory_identifier_format(data, registry):
+    """
+    Ensures FDA document regulatory identifiers are an NDA or BLA prefix followed by a
+    six-digit application number, and that no document uses an integer identifier, in
+    both referenced and dereferenced form.
+    """
+    check = validator("referenced", "documents", registry)
+    fda = first_record(data, "documents", lambda r: r["id"].startswith("doc:fda:"))
+    for value in ("NDA208716", "BLA125427"):
+        fda["regulatory_identifier"] = value
+        assert not failures(check, [fda])
+    for value in (208716, "208716", "NDA 208716", "NDA21588", "ANDA208716", None):
+        fda["regulatory_identifier"] = value
+        assert failures(check, [fda])
+
+    ema = first_record(data, "documents", lambda r: r["id"].startswith("doc:ema:"))
+    for value in ("EMEA/H/C/006184", None):
+        ema["regulatory_identifier"] = value
+        assert not failures(check, [ema])
+    ema["regulatory_identifier"] = 6184
+    assert failures(check, [ema])
+
+    check = validator("dereferenced", "documents", registry)
+    path = next((DEREFERENCED_ROOT / "documents").glob("doc_fda_*.json"))
+    document = json.loads(path.read_text())
+    assert not failures(check, [document])
+    for extension in document["extensions"]:
+        if extension["name"] == "regulatory_identifier":
+            extension["value"] = int(extension["value"][3:])
+    assert failures(check, [document])
+
+
 def test_every_entity_has_a_schema(input_paths):
     """
     Ensures every referenced file and every dereferenced directory has a schema.

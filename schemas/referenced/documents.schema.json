@@ -78,15 +78,15 @@
     "first_publication_date": {
       "$ref": "#/$defs/iso_date_or_null"
     },
-    "identification_number": {
-      "type": [
-        "integer",
-        "string",
-        "null"
-      ]
-    },
     "publication_date": {
       "$ref": "#/$defs/iso_date_or_null"
+    },
+    "regulatory_identifier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Identifier assigned by the regulatory agency. FDA documents use the application type and six-digit application number (e.g. NDA208716, BLA125427); EMA documents use the product number (e.g. EMEA/H/C/006184)."
     },
     "status": {
       "enum": [
@@ -111,11 +111,33 @@
     "drug_name_brand",
     "drug_name_generic",
     "first_publication_date",
-    "identification_number",
     "publication_date",
+    "regulatory_identifier",
     "status"
   ],
   "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^doc:fda:"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "regulatory_identifier": {
+            "type": "string",
+            "pattern": "^(BLA|NDA)[0-9]{6}$"
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
     "iso_date_or_null": {
       "description": "An ISO 8601 date (YYYY-MM-DD) or null.",
