@@ -833,8 +833,8 @@ class Documents(BaseTable):
             "drug_name_brand",
             "drug_name_generic",
             "first_publication_date",
-            "identification_number",
             "publication_date",
+            "regulatory_identifier",
             "status",
         ]
         for record in self.records:
@@ -865,14 +865,14 @@ class Documents(BaseTable):
                     "description": "The publication date for the initial version of this document.",
                 },
                 {
-                    "name": "identification_number",
-                    "value": record["identification_number"],
-                    "description": "Identification number used by the publishing organization.",
-                },
-                {
                     "name": "publication_date",
                     "value": record["publication_date"],
                     "description": "The publication date for the document.",
+                },
+                {
+                    "name": "regulatory_identifier",
+                    "value": record["regulatory_identifier"],
+                    "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184).",
                 },
                 {
                     "name": "status",
