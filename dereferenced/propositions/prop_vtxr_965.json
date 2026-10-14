@@ -7,20 +7,20 @@
     "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
   },
   "conditionQualifier": {
-    "id": "dis:ncit:C4436",
+    "id": "dis:ncit:C9245",
     "conceptType": "Disease",
-    "name": "Cholangiocarcinoma",
+    "name": "Invasive Breast Carcinoma",
     "mappings": [
       {
         "relation": "exactMatch",
         "coding": {
-          "id": "coding:oncotree:CHOL",
-          "code": "CHOL",
-          "name": "Cholangiocarcinoma",
+          "id": "coding:oncotree:BRCA",
+          "code": "BRCA",
+          "name": "Invasive Breast Carcinoma",
           "system": "https://oncotree.mskcc.org",
           "systemVersion": "oncotree_2025_10_03",
           "iris": [
-            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Cholangiocarcinoma+%28CHOL%29"
+            "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
           ]
         }
       }
@@ -33,147 +33,257 @@
       }
     ],
     "primaryCoding": {
-      "id": "coding:ncit:C4436",
-      "code": "C4436",
-      "name": "Cholangiocarcinoma",
+      "id": "coding:ncit:C9245",
+      "code": "C9245",
+      "name": "Invasive Breast Carcinoma",
       "system": "https://evsexplore.semantics.cancer.gov",
       "systemVersion": "26.08e",
       "iris": [
-        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4436"
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
       ]
     }
   },
   "objectTherapeutic": {
-    "id": "tx:ncit:C152948",
-    "conceptType": "Therapy",
-    "name": "Zenocutuzumab",
-    "mappings": [
+    "id": "txgrp:214",
+    "membershipOperator": "AND",
+    "therapies": [
       {
-        "relation": "relatedMatch",
-        "coding": {
-          "id": "coding:rxcui:2699588",
-          "code": "2699588",
-          "name": "zenocutuzumab",
-          "system": "RxNorm",
-          "systemVersion": "02-Mar-2026",
-          "iris": [
-            "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2699588"
-          ]
-        }
-      },
-      {
-        "relation": "relatedMatch",
-        "coding": {
-          "id": "coding:omop:1464913",
-          "code": "1464913",
-          "name": "zenocutuzumab",
-          "system": "OMOP",
-          "systemVersion": "v20260227",
-          "iris": [
-            "https://athena.ohdsi.org/search-terms/terms/1464913"
-          ]
-        }
-      }
-    ],
-    "extensions": [
-      {
-        "name": "therapy_strategy",
-        "value": [
-          "NRG1 inhibition"
+        "id": "tx:ncit:C1607",
+        "conceptType": "Therapy",
+        "name": "Anastrozole",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:rxcui:84857",
+              "code": "84857",
+              "name": "anastrozole",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=84857"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:1348265",
+              "code": "1348265",
+              "name": "anastrozole",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1348265"
+              ]
+            }
+          }
         ],
-        "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "Aromatase inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Hormone therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "coding:ncit:C1607",
+          "code": "C1607",
+          "name": "Anastrozole",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1607"
+          ]
+        }
       },
       {
-        "name": "therapy_type",
-        "value": "Targeted therapy",
-        "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        "id": "tx:ncit:C49176",
+        "conceptType": "Therapy",
+        "name": "Palbociclib",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:rxcui:1601374",
+              "code": "1601374",
+              "name": "palbociclib",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1601374"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:45892075",
+              "code": "45892075",
+              "name": "palbociclib",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/45892075"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "CDK4/6 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "coding:ncit:C49176",
+          "code": "C49176",
+          "name": "Palbociclib",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C49176"
+          ]
+        }
+      },
+      {
+        "id": "tx:ncit:C1647",
+        "conceptType": "Therapy",
+        "name": "Trastuzumab",
+        "mappings": [
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:rxcui:224905",
+              "code": "224905",
+              "name": "trastuzumab",
+              "system": "RxNorm",
+              "systemVersion": "20250602",
+              "iris": [
+                "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+              ]
+            }
+          },
+          {
+            "relation": "relatedMatch",
+            "coding": {
+              "id": "coding:omop:1387104",
+              "code": "1387104",
+              "name": "trastuzumab",
+              "system": "OMOP",
+              "systemVersion": "v20250827",
+              "iris": [
+                "https://athena.ohdsi.org/search-terms/terms/1387104"
+              ]
+            }
+          }
+        ],
+        "extensions": [
+          {
+            "name": "therapy_strategy",
+            "value": [
+              "HER2 inhibition"
+            ],
+            "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+          },
+          {
+            "name": "therapy_type",
+            "value": "Targeted therapy",
+            "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+          }
+        ],
+        "primaryCoding": {
+          "id": "coding:ncit:C1647",
+          "code": "C1647",
+          "name": "Trastuzumab",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+          ]
+        }
       }
-    ],
-    "primaryCoding": {
-      "id": "coding:ncit:C152948",
-      "code": "C152948",
-      "name": "Zenocutuzumab",
-      "system": "https://evsexplore.semantics.cancer.gov",
-      "systemVersion": "26.08e",
-      "iris": [
-        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C152948"
-      ]
-    }
+    ]
   },
   "extensions": [
     {
       "name": "biomarkers",
       "value": [
         {
-          "id": "bmkr.criterion:156",
+          "id": "bmkr.criterion:1",
           "present": true,
           "subject": {
-            "id": "bmkr:156",
+            "id": "bmkr:1",
             "type": "CategoricalVariant",
-            "name": "v::NRG1",
-            "constraints": [
-              {
-                "type": "AdjacencyConstraint",
-                "orderKnown": false,
-                "adjoinedElements": [
-                  {
-                    "id": "gene:hgnc:7997",
-                    "conceptType": "Gene",
-                    "name": "NRG1",
-                    "primaryCoding": {
-                      "id": "coding:hgnc:7997",
-                      "code": "HGNC:7997",
-                      "system": "https://genenames.org",
-                      "iris": [
-                        "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7997"
-                      ]
-                    },
-                    "mappings": [
-                      {
-                        "relation": "exactMatch",
-                        "coding": {
-                          "id": "coding:ensembl:ensg00000157168",
-                          "code": "ENSG00000157168",
-                          "system": "https://www.ensembl.org",
-                          "iris": [
-                            "https://www.ensembl.org/id/ENSG00000157168"
-                          ]
-                        }
-                      },
-                      {
-                        "relation": "exactMatch",
-                        "coding": {
-                          "id": "coding:ncbi:3084",
-                          "code": "3084",
-                          "system": "https://www.ncbi.nlm.nih.gov/gene",
-                          "iris": [
-                            "https://www.ncbi.nlm.nih.gov/gene/3084"
-                          ]
-                        }
-                      },
-                      {
-                        "relation": "relatedMatch",
-                        "coding": {
-                          "id": "coding:refseq:NM_013964.5",
-                          "code": "NM_013964.5",
-                          "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                          "iris": [
-                            "https://www.ncbi.nlm.nih.gov/nuccore/NM_013964.5"
-                          ]
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "UnspecifiedElement"
-                  }
-                ]
-              }
-            ],
+            "name": "ER positive",
+            "constraints": [],
             "extensions": [
               {
                 "name": "biomarker_type",
-                "value": "Gene fusion"
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Estrogen receptor (ER)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmkr.criterion:20",
+          "present": true,
+          "subject": {
+            "id": "bmkr:20",
+            "type": "CategoricalVariant",
+            "name": "HER2-positive",
+            "constraints": [],
+            "extensions": [
+              {
+                "name": "biomarker_type",
+                "value": "Protein expression"
+              },
+              {
+                "name": "marker",
+                "value": "Human epidermal growth factor receptor 2 (HER2)"
+              },
+              {
+                "name": "unit",
+                "value": "status"
+              },
+              {
+                "name": "equality",
+                "value": "="
+              },
+              {
+                "name": "value",
+                "value": "Positive"
               }
             ]
           }
