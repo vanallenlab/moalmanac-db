@@ -9,10 +9,9 @@ import os
 import pathlib
 import typing
 
-# Local imports
-from utils import json_utils
-from utils import read
-from utils import write
+from . import json_utils
+from . import read
+from . import write
 
 # Maps an indication's regulatory status to the status of its derived statements
 INDICATION_TO_STATEMENT_STATUS = {
