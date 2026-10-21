@@ -181,6 +181,20 @@ def test_dereferenced_statements():
         assert_required_shape(schema, json.loads(path.read_text()))
 
 
+def test_dereferenced_statements_omit_indication_statement_description():
+    """
+    Ensures the `statement description` extension appears only on standalone dereferenced
+    indications, not on the indication embedded in a dereferenced statement.
+    """
+    files = sorted((DEREFERENCED_ROOT / "statements").glob("*.json"))
+    assert files, "No dereferenced files found for statements"
+    for path in files:
+        record = json.loads(path.read_text())
+        indication = next(e for e in record["extensions"] if e["name"] == "indication")
+        names = {e["name"] for e in indication["value"]["extensions"]}
+        assert "statement description" not in names, record["id"]
+
+
 def test_document_dates_must_be_iso_dates_or_null(data, registry):
     """
     Ensures document dates are ISO 8601 dates or null, in both referenced and dereferenced form.

@@ -1081,8 +1081,7 @@ class Indications(BaseTable):
                     "name": "statement description",
                     "value": record["statement_description"],
                     "description": (
-                        "The description text for all Statements derived from this "
-                        "Indication."
+                        "The description text for all Statements derived from this Indication."
                     ),
                 },
             ]
