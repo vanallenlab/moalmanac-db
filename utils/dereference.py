@@ -85,6 +85,26 @@ def strip_keys(*keys: str) -> typing.Callable[[dict], dict]:
     return lambda record: {k: v for k, v in record.items() if k not in keys}
 
 
+def strip_extensions(*names: str) -> typing.Callable[[dict], dict]:
+    """
+    Returns a function that removes extensions with the specified names from a record dict.
+
+    Args:
+        *names (str): Extension names to exclude from the record.
+
+    Returns:
+        typing.Callable[[dict], dict]: A function that accepts a record and returns a copy with the specified extensions removed.
+    """
+    return lambda record: {
+        **record,
+        "extensions": [
+            extension
+            for extension in record.get("extensions", [])
+            if extension["name"] not in names
+        ],
+    }
+
+
 def extract_url_value(url: dict) -> str:
     """
     Extracts the URL string from a resolved URL record.
@@ -1044,6 +1064,7 @@ class Indications(BaseTable):
 
         extension_fields = [
             "status",
+            "statement_description",
             "superseded_by",
             "reimbursement_scheme",
             "reimbursement_comment",
@@ -1055,6 +1076,14 @@ class Indications(BaseTable):
                     "name": "status",
                     "value": record["status"],
                     "description": "Current approval status.",
+                },
+                {
+                    "name": "statement description",
+                    "value": record["statement_description"],
+                    "description": (
+                        "The description text for all Statements derived from this "
+                        "Indication."
+                    ),
                 },
             ]
             if str(record["id"]).startswith("ind:hse:"):
@@ -1095,7 +1124,6 @@ class Indications(BaseTable):
 
     def remove_keys(self) -> None:
         fields_to_remove = [
-            "statement_description",
             "raw_biomarkers",
             "raw_cancer_types",
             "raw_therapeutics",
@@ -1278,7 +1306,12 @@ class Statements(BaseTable):
     foreign_keys = [
         FKList("contributions", "contributions", lambda db: db.contributions),
         FKList("reportedIn", "reportedIn", lambda db: db.documents),
-        FKSingle("indication_id", "indication", lambda db: db.indications),
+        FKSingle(
+            "indication_id",
+            "indication",
+            lambda db: db.indications,
+            post=strip_extensions("statement description"),
+        ),
         FKSingle("proposition_id", "proposition", lambda db: db.propositions),
         FKSingle("strength_id", "strength", lambda db: db.strengths),
     ]
