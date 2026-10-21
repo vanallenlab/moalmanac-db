@@ -66,7 +66,24 @@
                 "const": "indication"
               },
               "value": {
-                "$ref": "indications.schema.json"
+                "$ref": "indications.schema.json",
+                "properties": {
+                  "extensions": {
+                    "not": {
+                      "contains": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "const": "statement description"
+                          }
+                        },
+                        "required": [
+                          "name"
+                        ]
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -98,7 +115,24 @@
                 "const": "indication"
               },
               "value": {
-                "$ref": "indications.schema.json"
+                "$ref": "indications.schema.json",
+                "properties": {
+                  "extensions": {
+                    "not": {
+                      "contains": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "const": "statement description"
+                          }
+                        },
+                        "required": [
+                          "name"
+                        ]
+                      }
+                    }
+                  }
+                }
               }
             }
           }

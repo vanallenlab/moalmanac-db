@@ -181,6 +181,19 @@ def test_dereferenced_statements():
         assert_required_shape(schema, json.loads(path.read_text()))
 
 
+def test_dereferenced_indications_include_statement_description():
+    """
+    Ensures every standalone dereferenced indication carries the `statement description`
+    extension.
+    """
+    files = sorted((DEREFERENCED_ROOT / "indications").glob("*.json"))
+    assert files, "No dereferenced files found for indications"
+    for path in files:
+        record = json.loads(path.read_text())
+        names = {e["name"] for e in record["extensions"]}
+        assert "statement description" in names, record["id"]
+
+
 def test_dereferenced_statements_omit_indication_statement_description():
     """
     Ensures the `statement description` extension appears only on standalone dereferenced

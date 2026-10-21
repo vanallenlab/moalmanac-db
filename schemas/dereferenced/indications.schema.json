@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/dereferenced/indications.schema.json",
   "title": "Indication",
-  "description": "Regulatory approval text and its source, with contributions and documents embedded. Root type `Indication` with one subtype per organization, selected by the id prefix `ind:{org}:`. `status` and `statement description` are extensions; HSE indications additionally carry `reimbursement_scheme` and `reimbursement_comment` extensions.",
+  "description": "Regulatory approval text and its source, with contributions and documents embedded. Root type `Indication` with one subtype per organization, selected by the id prefix `ind:{org}:`. `status` is an extension, and `statement description` is an optional extension present only on standalone indications (absent when embedded in a statement); HSE indications additionally carry `reimbursement_scheme` and `reimbursement_comment` extensions.",
   "$ref": "#/$defs/Indication",
   "allOf": [
     {
@@ -132,19 +132,6 @@
                   }
                 }
               }
-            },
-            {
-              "contains": {
-                "$ref": "extension.schema.json",
-                "properties": {
-                  "name": {
-                    "const": "statement description"
-                  },
-                  "value": {
-                    "type": "string"
-                  }
-                }
-              }
             }
           ]
         }
@@ -218,19 +205,6 @@
                           "Superseded",
                           "Withdrawn"
                         ]
-                      }
-                    }
-                  }
-                },
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "statement description"
-                      },
-                      "value": {
-                        "type": "string"
                       }
                     }
                   }
@@ -344,19 +318,6 @@
                       }
                     }
                   }
-                },
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "statement description"
-                      },
-                      "value": {
-                        "type": "string"
-                      }
-                    }
-                  }
                 }
               ]
             }
@@ -426,19 +387,6 @@
                       }
                     }
                   }
-                },
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "statement description"
-                      },
-                      "value": {
-                        "type": "string"
-                      }
-                    }
-                  }
                 }
               ]
             }
@@ -505,19 +453,6 @@
                           "Superseded",
                           "Withdrawn"
                         ]
-                      }
-                    }
-                  }
-                },
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "statement description"
-                      },
-                      "value": {
-                        "type": "string"
                       }
                     }
                   }
@@ -619,19 +554,6 @@
                           "Superseded",
                           "Withdrawn"
                         ]
-                      }
-                    }
-                  }
-                },
-                {
-                  "contains": {
-                    "$ref": "extension.schema.json",
-                    "properties": {
-                      "name": {
-                        "const": "statement description"
-                      },
-                      "value": {
-                        "type": "string"
                       }
                     }
                   }
