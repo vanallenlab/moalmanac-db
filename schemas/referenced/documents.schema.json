@@ -61,7 +61,10 @@
       "description": "Foreign key to `agents.id`."
     },
     "company": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "drug_name_brand": {
       "type": [

@@ -92,20 +92,20 @@
       "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
     },
     "conditionQualifier": {
-      "id": "dis:ncit:C9296",
+      "id": "dis:ncit:C203675",
       "conceptType": "Disease",
-      "name": "Adenocarcinoma of the Gastroesophageal Junction",
+      "name": "Esophagogastric Adenocarcinoma",
       "mappings": [
         {
-          "relation": "exactMatch",
+          "relation": "broadMatch",
           "coding": {
-            "id": "coding:oncotree:GEJ",
-            "code": "GEJ",
-            "name": "Adenocarcinoma of the Gastroesophageal Junction",
+            "id": "coding:oncotree:EGC",
+            "code": "EGC",
+            "name": "Esophagogastric Adenocarcinoma",
             "system": "https://oncotree.mskcc.org",
             "systemVersion": "oncotree_2025_10_03",
             "iris": [
-              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Adenocarcinoma+of+the+Gastroesophageal+Junction+%28GEJ%29"
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Esophagogastric+Adenocarcinoma+%28EGC%29"
             ]
           }
         }
@@ -118,13 +118,13 @@
         }
       ],
       "primaryCoding": {
-        "id": "coding:ncit:C9296",
-        "code": "C9296",
-        "name": "Gastroesophageal Junction Adenocarcinoma",
+        "id": "coding:ncit:C203675",
+        "code": "C203675",
+        "name": "Gastroesophageal Junction Carcinoma",
         "system": "https://evsexplore.semantics.cancer.gov",
         "systemVersion": "26.08e",
         "iris": [
-          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9296"
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C203675"
         ]
       }
     },
