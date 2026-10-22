@@ -244538,6 +244538,19 @@
       "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amenable to surgical resection or definitive chemoradiation as a single agent after one or more prior lines of systemic therapy for patients with tumors of squamous cell histology that express PD-L1 (CPS >=10), as determined by an FDA-approved test.",
       "contributions": [
         {
+          "id": "ctrb:vanallenlab:2026-10-22:0",
+          "type": "Contribution",
+          "description": "Deprecated statements associating pembrolizumab monotherapy with esophageal adenocarcinoma and adenocarcinoma of the gastroesophageal junction in favor of a statement for Esophageal Squamous Cell Carcinoma (stmt:fda:keytruda:8:2), as this indication is limited to tumors of squamous cell histology.",
+          "date": "2026-10-22",
+          "contributor": {
+            "id": "agent:user:vanallenlab",
+            "type": "Agent",
+            "agentType": "contributor",
+            "name": "Van Allen lab",
+            "description": "Van Allen lab, Dana-Farber Cancer Institute"
+          }
+        },
+        {
           "id": "ctrb:vanallenlab:2024-10-30:0",
           "type": "Contribution",
           "description": "Initial access of FDA approvals",
@@ -244842,7 +244855,7 @@
       "extensions": [
         {
           "name": "status",
-          "value": "Active",
+          "value": "Deprecated",
           "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
         },
         {
@@ -245011,6 +245024,19 @@
       "type": "Statement",
       "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amenable to surgical resection or definitive chemoradiation as a single agent after one or more prior lines of systemic therapy for patients with tumors of squamous cell histology that express PD-L1 (CPS >=10), as determined by an FDA-approved test.",
       "contributions": [
+        {
+          "id": "ctrb:vanallenlab:2026-10-22:0",
+          "type": "Contribution",
+          "description": "Deprecated statements associating pembrolizumab monotherapy with esophageal adenocarcinoma and adenocarcinoma of the gastroesophageal junction in favor of a statement for Esophageal Squamous Cell Carcinoma (stmt:fda:keytruda:8:2), as this indication is limited to tumors of squamous cell histology.",
+          "date": "2026-10-22",
+          "contributor": {
+            "id": "agent:user:vanallenlab",
+            "type": "Agent",
+            "agentType": "contributor",
+            "name": "Van Allen lab",
+            "description": "Van Allen lab, Dana-Farber Cancer Institute"
+          }
+        },
         {
           "id": "ctrb:vanallenlab:2024-10-30:0",
           "type": "Contribution",
@@ -245196,6 +245222,480 @@
             "systemVersion": "26.08e",
             "iris": [
               "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4025"
+            ]
+          }
+        },
+        "objectTherapeutic": {
+          "id": "tx:ncit:C106432",
+          "conceptType": "Therapy",
+          "name": "Pembrolizumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:1547545",
+                "code": "1547545",
+                "name": "pembrolizumab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:45775965",
+                "code": "45775965",
+                "name": "pembrolizumab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/45775965"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "PD-1/PD-L1 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C106432",
+            "code": "C106432",
+            "name": "Pembrolizumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+            ]
+          }
+        },
+        "extensions": [
+          {
+            "name": "biomarkers",
+            "value": [
+              {
+                "id": "bmkr.criterion:41",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:41",
+                  "type": "CategoricalVariant",
+                  "name": "PD-L1 (CPS) >= 10",
+                  "constraints": [],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Protein expression"
+                    },
+                    {
+                      "name": "marker",
+                      "value": "PD-L1"
+                    },
+                    {
+                      "name": "unit",
+                      "value": "Combined Positive Score (CPS)"
+                    },
+                    {
+                      "name": "equality",
+                      "value": ">="
+                    },
+                    {
+                      "name": "value",
+                      "value": 10
+                    }
+                  ]
+                }
+              }
+            ],
+            "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+          }
+        ]
+      },
+      "strength": {
+        "id": "str:ncit:C25425",
+        "conceptType": "Evidence",
+        "name": "Approval",
+        "mappings": [],
+        "primaryCoding": {
+          "id": "coding:ncit:C25425",
+          "code": "C25425",
+          "name": "Approval",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+          ]
+        }
+      },
+      "extensions": [
+        {
+          "name": "status",
+          "value": "Deprecated",
+          "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+        },
+        {
+          "name": "indication",
+          "value": {
+            "id": "ind:fda:keytruda:8",
+            "type": "Indication",
+            "description": "KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amenable to surgical resection or definitive chemoradiation as a single agent after one or more prior lines of systemic therapy for patients with tumors of squamous cell histology that express PD-L1 (CPS >=10) as determined by an FDA-approved test.",
+            "contributions": [
+              {
+                "id": "ctrb:vanallenlab:2024-10-30:0",
+                "type": "Contribution",
+                "description": "Initial access of FDA approvals",
+                "date": "2024-10-30",
+                "contributor": {
+                  "id": "agent:user:vanallenlab",
+                  "type": "Agent",
+                  "agentType": "contributor",
+                  "name": "Van Allen lab",
+                  "description": "Van Allen lab, Dana-Farber Cancer Institute"
+                }
+              }
+            ],
+            "reportedIn": [
+              {
+                "id": "doc:fda:keytruda",
+                "type": "Document",
+                "documentType": "Regulatory approval",
+                "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+                "title": null,
+                "aliases": [],
+                "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf. Revised February 2026. Accessed March 2, 2026.",
+                "urls": [
+                  "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
+                  "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+                ],
+                "doi": null,
+                "pmid": null,
+                "extensions": [
+                  {
+                    "name": "agent",
+                    "value": {
+                      "id": "agent:org:fda",
+                      "type": "Agent",
+                      "agentType": "organization",
+                      "name": "Food and Drug Administration",
+                      "description": "Regulatory agency that approves drugs for use in the United States."
+                    },
+                    "description": "The organization that published this document."
+                  },
+                  {
+                    "name": "company",
+                    "value": "Merck Sharp & Dohme Corp.",
+                    "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_brand",
+                    "value": "Keytruda",
+                    "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_generic",
+                    "value": "pembrolizumab",
+                    "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "first_publication_date",
+                    "value": "2014-09-04",
+                    "description": "The publication date for the initial version of this document."
+                  },
+                  {
+                    "name": "publication_date",
+                    "value": "2026-02-10",
+                    "description": "The publication date for the document."
+                  },
+                  {
+                    "name": "regulatory_identifier",
+                    "value": "BLA125514",
+                    "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+                  },
+                  {
+                    "name": "status",
+                    "value": "Active",
+                    "description": "Whether this document is Active or Deprecated within moalmanac-db."
+                  }
+                ]
+              },
+              {
+                "id": "doc:fda:keytruda:2021-03-22",
+                "type": "Document",
+                "documentType": "Regulatory approval",
+                "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+                "title": null,
+                "aliases": [],
+                "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf. Revised March 2021. Accessed October 6, 2026.",
+                "urls": [
+                  "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf",
+                  "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+                ],
+                "doi": null,
+                "pmid": null,
+                "extensions": [
+                  {
+                    "name": "agent",
+                    "value": {
+                      "id": "agent:org:fda",
+                      "type": "Agent",
+                      "agentType": "organization",
+                      "name": "Food and Drug Administration",
+                      "description": "Regulatory agency that approves drugs for use in the United States."
+                    },
+                    "description": "The organization that published this document."
+                  },
+                  {
+                    "name": "company",
+                    "value": "Merck Sharp & Dohme Corp.",
+                    "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_brand",
+                    "value": "Keytruda",
+                    "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_generic",
+                    "value": "pembrolizumab",
+                    "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "first_publication_date",
+                    "value": "2014-09-04",
+                    "description": "The publication date for the initial version of this document."
+                  },
+                  {
+                    "name": "publication_date",
+                    "value": "2021-03-22",
+                    "description": "The publication date for the document."
+                  },
+                  {
+                    "name": "regulatory_identifier",
+                    "value": "BLA125514",
+                    "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+                  },
+                  {
+                    "name": "status",
+                    "value": "Deprecated",
+                    "description": "Whether this document is Active or Deprecated within moalmanac-db."
+                  }
+                ]
+              }
+            ],
+            "extensions": [
+              {
+                "name": "status",
+                "value": "Approved",
+                "description": "Current approval status."
+              }
+            ]
+          },
+          "description": "The underlying Indication supporting this Statement."
+        }
+      ]
+    },
+    {
+      "id": "stmt:fda:keytruda:8:2",
+      "type": "Statement",
+      "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amenable to surgical resection or definitive chemoradiation as a single agent after one or more prior lines of systemic therapy for patients with tumors of squamous cell histology that express PD-L1 (CPS >=10), as determined by an FDA-approved test.",
+      "contributions": [
+        {
+          "id": "ctrb:vanallenlab:2024-10-30:0",
+          "type": "Contribution",
+          "description": "Initial access of FDA approvals",
+          "date": "2024-10-30",
+          "contributor": {
+            "id": "agent:user:vanallenlab",
+            "type": "Agent",
+            "agentType": "contributor",
+            "name": "Van Allen lab",
+            "description": "Van Allen lab, Dana-Farber Cancer Institute"
+          }
+        }
+      ],
+      "reportedIn": [
+        {
+          "id": "doc:fda:keytruda",
+          "type": "Document",
+          "documentType": "Regulatory approval",
+          "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+          "title": null,
+          "aliases": [],
+          "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf. Revised February 2026. Accessed March 2, 2026.",
+          "urls": [
+            "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+          ],
+          "doi": null,
+          "pmid": null,
+          "extensions": [
+            {
+              "name": "agent",
+              "value": {
+                "id": "agent:org:fda",
+                "type": "Agent",
+                "agentType": "organization",
+                "name": "Food and Drug Administration",
+                "description": "Regulatory agency that approves drugs for use in the United States."
+              },
+              "description": "The organization that published this document."
+            },
+            {
+              "name": "company",
+              "value": "Merck Sharp & Dohme Corp.",
+              "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_brand",
+              "value": "Keytruda",
+              "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_generic",
+              "value": "pembrolizumab",
+              "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "first_publication_date",
+              "value": "2014-09-04",
+              "description": "The publication date for the initial version of this document."
+            },
+            {
+              "name": "publication_date",
+              "value": "2026-02-10",
+              "description": "The publication date for the document."
+            },
+            {
+              "name": "regulatory_identifier",
+              "value": "BLA125514",
+              "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+            },
+            {
+              "name": "status",
+              "value": "Active",
+              "description": "Whether this document is Active or Deprecated within moalmanac-db."
+            }
+          ]
+        },
+        {
+          "id": "doc:fda:keytruda:2021-03-22",
+          "type": "Document",
+          "documentType": "Regulatory approval",
+          "name": "Keytruda (pembrolizumab) [package insert]. FDA.",
+          "title": null,
+          "aliases": [],
+          "description": "Merck Sharp & Dohme Corp. Keytruda (pembrolizumab) [package insert]. U.S. Food and Drug Administration website. https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf. Revised March 2021. Accessed October 6, 2026.",
+          "urls": [
+            "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
+          ],
+          "doi": null,
+          "pmid": null,
+          "extensions": [
+            {
+              "name": "agent",
+              "value": {
+                "id": "agent:org:fda",
+                "type": "Agent",
+                "agentType": "organization",
+                "name": "Food and Drug Administration",
+                "description": "Regulatory agency that approves drugs for use in the United States."
+              },
+              "description": "The organization that published this document."
+            },
+            {
+              "name": "company",
+              "value": "Merck Sharp & Dohme Corp.",
+              "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_brand",
+              "value": "Keytruda",
+              "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_generic",
+              "value": "pembrolizumab",
+              "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "first_publication_date",
+              "value": "2014-09-04",
+              "description": "The publication date for the initial version of this document."
+            },
+            {
+              "name": "publication_date",
+              "value": "2021-03-22",
+              "description": "The publication date for the document."
+            },
+            {
+              "name": "regulatory_identifier",
+              "value": "BLA125514",
+              "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+            },
+            {
+              "name": "status",
+              "value": "Deprecated",
+              "description": "Whether this document is Active or Deprecated within moalmanac-db."
+            }
+          ]
+        }
+      ],
+      "direction": "supports",
+      "proposition": {
+        "id": "prop:vtxr:992",
+        "type": "VariantTherapeuticResponseProposition",
+        "predicate": "predictsSensitivityTo",
+        "subjectVariant": {
+          "type": "CategoricalVariant",
+          "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+        },
+        "conditionQualifier": {
+          "id": "dis:ncit:C4024",
+          "conceptType": "Disease",
+          "name": "Esophageal Squamous Cell Carcinoma",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:oncotree:ESCC",
+                "code": "ESCC",
+                "name": "Esophageal Squamous Cell Carcinoma",
+                "system": "https://oncotree.mskcc.org",
+                "systemVersion": "oncotree_2025_10_03",
+                "iris": [
+                  "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Esophageal+Squamous+Cell+Carcinoma+%28ESCC%29"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "solid_tumor",
+              "value": true,
+              "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C4024",
+            "code": "C4024",
+            "name": "Esophageal Squamous Cell Carcinoma",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4024"
             ]
           }
         },
@@ -425942,7 +426442,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:543",
+        "id": "prop:vtxr:988",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -426061,8 +426561,40 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:13",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:13",
+                  "type": "CategoricalVariant",
+                  "name": "CD22 +",
+                  "constraints": [],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Protein expression"
+                    },
+                    {
+                      "name": "marker",
+                      "value": "CD22"
+                    },
+                    {
+                      "name": "unit",
+                      "value": "status"
+                    },
+                    {
+                      "name": "equality",
+                      "value": "="
+                    },
+                    {
+                      "name": "value",
+                      "value": "Positive"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -426175,38 +426707,6 @@
                     {
                       "name": "biomarker_type",
                       "value": "Gene fusion"
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "bmkr.criterion:13",
-                "present": true,
-                "subject": {
-                  "id": "bmkr:13",
-                  "type": "CategoricalVariant",
-                  "name": "CD22 +",
-                  "constraints": [],
-                  "extensions": [
-                    {
-                      "name": "biomarker_type",
-                      "value": "Protein expression"
-                    },
-                    {
-                      "name": "marker",
-                      "value": "CD22"
-                    },
-                    {
-                      "name": "unit",
-                      "value": "status"
-                    },
-                    {
-                      "name": "equality",
-                      "value": "="
-                    },
-                    {
-                      "name": "value",
-                      "value": "Positive"
                     }
                   ]
                 }
@@ -427222,7 +427722,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:46",
+        "id": "prop:vtxr:987",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -427373,8 +427873,8 @@
                 }
               },
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -457838,7 +458338,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:579",
+        "id": "prop:vtxr:160",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -457959,8 +458459,8 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -458314,7 +458814,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:579",
+        "id": "prop:vtxr:160",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -458435,8 +458935,8 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -462286,7 +462786,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:582",
+        "id": "prop:vtxr:986",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -462405,8 +462905,8 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -462760,7 +463260,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:583",
+        "id": "prop:vtxr:362",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -462878,125 +463378,6 @@
           {
             "name": "biomarkers",
             "value": [
-              {
-                "id": "bmkr.criterion:15",
-                "present": false,
-                "subject": {
-                  "id": "bmkr:12",
-                  "type": "CategoricalVariant",
-                  "name": "BCR::ABL1",
-                  "constraints": [
-                    {
-                      "type": "AdjacencyConstraint",
-                      "orderKnown": true,
-                      "adjoinedElements": [
-                        {
-                          "id": "gene:hgnc:1014",
-                          "conceptType": "Gene",
-                          "name": "BCR",
-                          "primaryCoding": {
-                            "id": "coding:hgnc:1014",
-                            "code": "HGNC:1014",
-                            "system": "https://genenames.org",
-                            "iris": [
-                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
-                            ]
-                          },
-                          "mappings": [
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ensembl:ensg00000186716",
-                                "code": "ENSG00000186716",
-                                "system": "https://www.ensembl.org",
-                                "iris": [
-                                  "https://www.ensembl.org/id/ENSG00000186716"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ncbi:613",
-                                "code": "613",
-                                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/gene/613"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "relatedMatch",
-                              "coding": {
-                                "id": "coding:refseq:NM_004327.4",
-                                "code": "NM_004327.4",
-                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
-                                ]
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "id": "gene:hgnc:76",
-                          "conceptType": "Gene",
-                          "name": "ABL1",
-                          "primaryCoding": {
-                            "id": "coding:hgnc:76",
-                            "code": "HGNC:76",
-                            "system": "https://genenames.org",
-                            "iris": [
-                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
-                            ]
-                          },
-                          "mappings": [
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ensembl:ensg00000097007",
-                                "code": "ENSG00000097007",
-                                "system": "https://www.ensembl.org",
-                                "iris": [
-                                  "https://www.ensembl.org/id/ENSG00000097007"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ncbi:25",
-                                "code": "25",
-                                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/gene/25"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "relatedMatch",
-                              "coding": {
-                                "id": "coding:refseq:NM_005157.6",
-                                "code": "NM_005157.6",
-                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "extensions": [
-                    {
-                      "name": "biomarker_type",
-                      "value": "Gene fusion"
-                    }
-                  ]
-                }
-              },
               {
                 "id": "bmkr.criterion:32",
                 "present": true,
@@ -463165,6 +463546,125 @@
                     {
                       "name": "hgvsc",
                       "value": "ENST00000318560.5:c.944C>T"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "bmkr.criterion:12",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:12",
+                  "type": "CategoricalVariant",
+                  "name": "BCR::ABL1",
+                  "constraints": [
+                    {
+                      "type": "AdjacencyConstraint",
+                      "orderKnown": true,
+                      "adjoinedElements": [
+                        {
+                          "id": "gene:hgnc:1014",
+                          "conceptType": "Gene",
+                          "name": "BCR",
+                          "primaryCoding": {
+                            "id": "coding:hgnc:1014",
+                            "code": "HGNC:1014",
+                            "system": "https://genenames.org",
+                            "iris": [
+                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+                            ]
+                          },
+                          "mappings": [
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ensembl:ensg00000186716",
+                                "code": "ENSG00000186716",
+                                "system": "https://www.ensembl.org",
+                                "iris": [
+                                  "https://www.ensembl.org/id/ENSG00000186716"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ncbi:613",
+                                "code": "613",
+                                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/gene/613"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "relatedMatch",
+                              "coding": {
+                                "id": "coding:refseq:NM_004327.4",
+                                "code": "NM_004327.4",
+                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gene:hgnc:76",
+                          "conceptType": "Gene",
+                          "name": "ABL1",
+                          "primaryCoding": {
+                            "id": "coding:hgnc:76",
+                            "code": "HGNC:76",
+                            "system": "https://genenames.org",
+                            "iris": [
+                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+                            ]
+                          },
+                          "mappings": [
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ensembl:ensg00000097007",
+                                "code": "ENSG00000097007",
+                                "system": "https://www.ensembl.org",
+                                "iris": [
+                                  "https://www.ensembl.org/id/ENSG00000097007"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ncbi:25",
+                                "code": "25",
+                                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/gene/25"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "relatedMatch",
+                              "coding": {
+                                "id": "coding:refseq:NM_005157.6",
+                                "code": "NM_005157.6",
+                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Gene fusion"
                     }
                   ]
                 }
@@ -479262,6 +479762,500 @@
         {
           "name": "status",
           "value": "Deprecated",
+          "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+        },
+        {
+          "name": "indication",
+          "value": {
+            "id": "ind:ema:keytruda:9",
+            "type": "Indication",
+            "description": "KEYTRUDA, in combination with platinum and fluoropyrimidine-based chemotherapy, is indicated for the first-line treatment of locally advanced unresectable or metastatic carcinoma of the oesophagus in adults whose tumours express PD-L1 with a CPS >= 10.",
+            "contributions": [
+              {
+                "id": "ctrb:vanallenlab:2024-10-20:0",
+                "type": "Contribution",
+                "description": "Adding EMA approvals for use to database",
+                "date": "2024-10-20",
+                "contributor": {
+                  "id": "agent:user:vanallenlab",
+                  "type": "Agent",
+                  "agentType": "contributor",
+                  "name": "Van Allen lab",
+                  "description": "Van Allen lab, Dana-Farber Cancer Institute"
+                }
+              },
+              {
+                "id": "ctrb:ema:2021-06-24:0",
+                "type": "Contribution",
+                "description": "Indication received approval from the European Commission.",
+                "date": "2021-06-24",
+                "contributor": {
+                  "id": "agent:org:ema",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "European Medicines Agency",
+                  "description": "Regulatory agency that approves medicines for use in the European Union."
+                }
+              }
+            ],
+            "reportedIn": [
+              {
+                "id": "doc:ema:keytruda",
+                "type": "Document",
+                "documentType": "Regulatory approval",
+                "name": "Keytruda (pembrolizumab) [product information]. EMA.",
+                "title": null,
+                "aliases": [],
+                "description": "Merck Sharp & Dohme B.V. Keytruda (pembrolizumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf. Revised January 2024. Accessed March 10, 2024.",
+                "urls": [
+                  "https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf",
+                  "https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda"
+                ],
+                "doi": null,
+                "pmid": null,
+                "extensions": [
+                  {
+                    "name": "agent",
+                    "value": {
+                      "id": "agent:org:ema",
+                      "type": "Agent",
+                      "agentType": "organization",
+                      "name": "European Medicines Agency",
+                      "description": "Regulatory agency that approves medicines for use in the European Union."
+                    },
+                    "description": "The organization that published this document."
+                  },
+                  {
+                    "name": "company",
+                    "value": "Merck Sharp & Dohme B.V.",
+                    "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_brand",
+                    "value": "Keytruda",
+                    "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_generic",
+                    "value": "pembrolizumab",
+                    "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "first_publication_date",
+                    "value": "2015-07-30",
+                    "description": "The publication date for the initial version of this document."
+                  },
+                  {
+                    "name": "publication_date",
+                    "value": "2024-01-11",
+                    "description": "The publication date for the document."
+                  },
+                  {
+                    "name": "regulatory_identifier",
+                    "value": null,
+                    "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+                  },
+                  {
+                    "name": "status",
+                    "value": "Active",
+                    "description": "Whether this document is Active or Deprecated within moalmanac-db."
+                  }
+                ]
+              }
+            ],
+            "extensions": [
+              {
+                "name": "status",
+                "value": "Approved",
+                "description": "Current approval status."
+              }
+            ]
+          },
+          "description": "The underlying Indication supporting this Statement."
+        }
+      ]
+    },
+    {
+      "id": "stmt:ema:keytruda:9:2",
+      "type": "Statement",
+      "description": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with platinum and fluoropyrimidine-based chemotherapy as a first-line treatment for adult patients with locally advanced unresectable or metastatic esophageal carcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 10. This indication is based on KEYNOTE-590, randomised, double-blind, placebo-controlled trial of 749 patients in which cisplatin and fluorouracil was evaluated with and without pembrolizumab.",
+      "contributions": [
+        {
+          "id": "ctrb:vanallenlab:2024-10-20:0",
+          "type": "Contribution",
+          "description": "Adding EMA approvals for use to database",
+          "date": "2024-10-20",
+          "contributor": {
+            "id": "agent:user:vanallenlab",
+            "type": "Agent",
+            "agentType": "contributor",
+            "name": "Van Allen lab",
+            "description": "Van Allen lab, Dana-Farber Cancer Institute"
+          }
+        },
+        {
+          "id": "ctrb:ema:2021-06-24:0",
+          "type": "Contribution",
+          "description": "Indication received approval from the European Commission.",
+          "date": "2021-06-24",
+          "contributor": {
+            "id": "agent:org:ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          }
+        }
+      ],
+      "reportedIn": [
+        {
+          "id": "doc:ema:keytruda",
+          "type": "Document",
+          "documentType": "Regulatory approval",
+          "name": "Keytruda (pembrolizumab) [product information]. EMA.",
+          "title": null,
+          "aliases": [],
+          "description": "Merck Sharp & Dohme B.V. Keytruda (pembrolizumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf. Revised January 2024. Accessed March 10, 2024.",
+          "urls": [
+            "https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf",
+            "https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda"
+          ],
+          "doi": null,
+          "pmid": null,
+          "extensions": [
+            {
+              "name": "agent",
+              "value": {
+                "id": "agent:org:ema",
+                "type": "Agent",
+                "agentType": "organization",
+                "name": "European Medicines Agency",
+                "description": "Regulatory agency that approves medicines for use in the European Union."
+              },
+              "description": "The organization that published this document."
+            },
+            {
+              "name": "company",
+              "value": "Merck Sharp & Dohme B.V.",
+              "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_brand",
+              "value": "Keytruda",
+              "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_generic",
+              "value": "pembrolizumab",
+              "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "first_publication_date",
+              "value": "2015-07-30",
+              "description": "The publication date for the initial version of this document."
+            },
+            {
+              "name": "publication_date",
+              "value": "2024-01-11",
+              "description": "The publication date for the document."
+            },
+            {
+              "name": "regulatory_identifier",
+              "value": null,
+              "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+            },
+            {
+              "name": "status",
+              "value": "Active",
+              "description": "Whether this document is Active or Deprecated within moalmanac-db."
+            }
+          ]
+        }
+      ],
+      "direction": "supports",
+      "proposition": {
+        "id": "prop:vtxr:991",
+        "type": "VariantTherapeuticResponseProposition",
+        "predicate": "predictsSensitivityTo",
+        "subjectVariant": {
+          "type": "CategoricalVariant",
+          "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+        },
+        "conditionQualifier": {
+          "id": "dis:ncit:C4024",
+          "conceptType": "Disease",
+          "name": "Esophageal Squamous Cell Carcinoma",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:oncotree:ESCC",
+                "code": "ESCC",
+                "name": "Esophageal Squamous Cell Carcinoma",
+                "system": "https://oncotree.mskcc.org",
+                "systemVersion": "oncotree_2025_10_03",
+                "iris": [
+                  "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Esophageal+Squamous+Cell+Carcinoma+%28ESCC%29"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "solid_tumor",
+              "value": true,
+              "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C4024",
+            "code": "C4024",
+            "name": "Esophageal Squamous Cell Carcinoma",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4024"
+            ]
+          }
+        },
+        "objectTherapeutic": {
+          "id": "txgrp:55",
+          "membershipOperator": "AND",
+          "therapies": [
+            {
+              "id": "tx:ncit:C376",
+              "conceptType": "Therapy",
+              "name": "Cisplatin",
+              "mappings": [
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:rxcui:2555",
+                    "code": "2555",
+                    "name": "cisplatin",
+                    "system": "RxNorm",
+                    "systemVersion": "20250602",
+                    "iris": [
+                      "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2555"
+                    ]
+                  }
+                },
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:omop:1397599",
+                    "code": "1397599",
+                    "name": "cisplatin",
+                    "system": "OMOP",
+                    "systemVersion": "v20250827",
+                    "iris": [
+                      "https://athena.ohdsi.org/search-terms/terms/1397599"
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "therapy_strategy",
+                  "value": [
+                    "Platinum-based chemotherapy"
+                  ],
+                  "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+                },
+                {
+                  "name": "therapy_type",
+                  "value": "Chemotherapy",
+                  "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+                }
+              ],
+              "primaryCoding": {
+                "id": "coding:ncit:C376",
+                "code": "C376",
+                "name": "Cisplatin",
+                "system": "https://evsexplore.semantics.cancer.gov",
+                "systemVersion": "26.08e",
+                "iris": [
+                  "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C376"
+                ]
+              }
+            },
+            {
+              "id": "tx:ncit:C106432",
+              "conceptType": "Therapy",
+              "name": "Pembrolizumab",
+              "mappings": [
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:rxcui:1547545",
+                    "code": "1547545",
+                    "name": "pembrolizumab",
+                    "system": "RxNorm",
+                    "systemVersion": "02-Mar-2026",
+                    "iris": [
+                      "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
+                    ]
+                  }
+                },
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:omop:45775965",
+                    "code": "45775965",
+                    "name": "pembrolizumab",
+                    "system": "OMOP",
+                    "systemVersion": "v20260227",
+                    "iris": [
+                      "https://athena.ohdsi.org/search-terms/terms/45775965"
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "therapy_strategy",
+                  "value": [
+                    "PD-1/PD-L1 inhibition"
+                  ],
+                  "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+                },
+                {
+                  "name": "therapy_type",
+                  "value": "Immunotherapy",
+                  "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+                }
+              ],
+              "primaryCoding": {
+                "id": "coding:ncit:C106432",
+                "code": "C106432",
+                "name": "Pembrolizumab",
+                "system": "https://evsexplore.semantics.cancer.gov",
+                "systemVersion": "26.08e",
+                "iris": [
+                  "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+                ]
+              }
+            },
+            {
+              "id": "tx:ncit:C505",
+              "conceptType": "Therapy",
+              "name": "Fluorouracil",
+              "mappings": [
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:rxcui:4492",
+                    "code": "4492",
+                    "name": "fluorouracil",
+                    "system": "RxNorm",
+                    "systemVersion": "20250602",
+                    "iris": [
+                      "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4492"
+                    ]
+                  }
+                },
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:omop:955632",
+                    "code": "955632",
+                    "name": "fluorouracil",
+                    "system": "OMOP",
+                    "systemVersion": "v20250827",
+                    "iris": [
+                      "https://athena.ohdsi.org/search-terms/terms/955632"
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "therapy_strategy",
+                  "value": [
+                    "Thymidylate synthase inhibition"
+                  ],
+                  "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+                },
+                {
+                  "name": "therapy_type",
+                  "value": "Chemotherapy",
+                  "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+                }
+              ],
+              "primaryCoding": {
+                "id": "coding:ncit:C505",
+                "code": "C505",
+                "name": "Fluorouracil",
+                "system": "https://evsexplore.semantics.cancer.gov",
+                "systemVersion": "26.08e",
+                "iris": [
+                  "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+                ]
+              }
+            }
+          ]
+        },
+        "extensions": [
+          {
+            "name": "biomarkers",
+            "value": [
+              {
+                "id": "bmkr.criterion:41",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:41",
+                  "type": "CategoricalVariant",
+                  "name": "PD-L1 (CPS) >= 10",
+                  "constraints": [],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Protein expression"
+                    },
+                    {
+                      "name": "marker",
+                      "value": "PD-L1"
+                    },
+                    {
+                      "name": "unit",
+                      "value": "Combined Positive Score (CPS)"
+                    },
+                    {
+                      "name": "equality",
+                      "value": ">="
+                    },
+                    {
+                      "name": "value",
+                      "value": 10
+                    }
+                  ]
+                }
+              }
+            ],
+            "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+          }
+        ]
+      },
+      "strength": {
+        "id": "str:ncit:C25425",
+        "conceptType": "Evidence",
+        "name": "Approval",
+        "mappings": [],
+        "primaryCoding": {
+          "id": "coding:ncit:C25425",
+          "code": "C25425",
+          "name": "Approval",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+          ]
+        }
+      },
+      "extensions": [
+        {
+          "name": "status",
+          "value": "Active",
           "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
         },
         {
@@ -554460,7 +555454,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:662",
+        "id": "prop:vtxr:99",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -554579,8 +555573,8 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -555856,7 +556850,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:662",
+        "id": "prop:vtxr:99",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -555975,8 +556969,8 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -716564,7 +717558,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:582",
+        "id": "prop:vtxr:986",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -716683,8 +717677,8 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -717046,7 +718040,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:583",
+        "id": "prop:vtxr:362",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -717164,125 +718158,6 @@
           {
             "name": "biomarkers",
             "value": [
-              {
-                "id": "bmkr.criterion:15",
-                "present": false,
-                "subject": {
-                  "id": "bmkr:12",
-                  "type": "CategoricalVariant",
-                  "name": "BCR::ABL1",
-                  "constraints": [
-                    {
-                      "type": "AdjacencyConstraint",
-                      "orderKnown": true,
-                      "adjoinedElements": [
-                        {
-                          "id": "gene:hgnc:1014",
-                          "conceptType": "Gene",
-                          "name": "BCR",
-                          "primaryCoding": {
-                            "id": "coding:hgnc:1014",
-                            "code": "HGNC:1014",
-                            "system": "https://genenames.org",
-                            "iris": [
-                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
-                            ]
-                          },
-                          "mappings": [
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ensembl:ensg00000186716",
-                                "code": "ENSG00000186716",
-                                "system": "https://www.ensembl.org",
-                                "iris": [
-                                  "https://www.ensembl.org/id/ENSG00000186716"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ncbi:613",
-                                "code": "613",
-                                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/gene/613"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "relatedMatch",
-                              "coding": {
-                                "id": "coding:refseq:NM_004327.4",
-                                "code": "NM_004327.4",
-                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
-                                ]
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "id": "gene:hgnc:76",
-                          "conceptType": "Gene",
-                          "name": "ABL1",
-                          "primaryCoding": {
-                            "id": "coding:hgnc:76",
-                            "code": "HGNC:76",
-                            "system": "https://genenames.org",
-                            "iris": [
-                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
-                            ]
-                          },
-                          "mappings": [
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ensembl:ensg00000097007",
-                                "code": "ENSG00000097007",
-                                "system": "https://www.ensembl.org",
-                                "iris": [
-                                  "https://www.ensembl.org/id/ENSG00000097007"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "exactMatch",
-                              "coding": {
-                                "id": "coding:ncbi:25",
-                                "code": "25",
-                                "system": "https://www.ncbi.nlm.nih.gov/gene",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/gene/25"
-                                ]
-                              }
-                            },
-                            {
-                              "relation": "relatedMatch",
-                              "coding": {
-                                "id": "coding:refseq:NM_005157.6",
-                                "code": "NM_005157.6",
-                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
-                                "iris": [
-                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "extensions": [
-                    {
-                      "name": "biomarker_type",
-                      "value": "Gene fusion"
-                    }
-                  ]
-                }
-              },
               {
                 "id": "bmkr.criterion:32",
                 "present": true,
@@ -717451,6 +718326,125 @@
                     {
                       "name": "hgvsc",
                       "value": "ENST00000318560.5:c.944C>T"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "bmkr.criterion:12",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:12",
+                  "type": "CategoricalVariant",
+                  "name": "BCR::ABL1",
+                  "constraints": [
+                    {
+                      "type": "AdjacencyConstraint",
+                      "orderKnown": true,
+                      "adjoinedElements": [
+                        {
+                          "id": "gene:hgnc:1014",
+                          "conceptType": "Gene",
+                          "name": "BCR",
+                          "primaryCoding": {
+                            "id": "coding:hgnc:1014",
+                            "code": "HGNC:1014",
+                            "system": "https://genenames.org",
+                            "iris": [
+                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1014"
+                            ]
+                          },
+                          "mappings": [
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ensembl:ensg00000186716",
+                                "code": "ENSG00000186716",
+                                "system": "https://www.ensembl.org",
+                                "iris": [
+                                  "https://www.ensembl.org/id/ENSG00000186716"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ncbi:613",
+                                "code": "613",
+                                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/gene/613"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "relatedMatch",
+                              "coding": {
+                                "id": "coding:refseq:NM_004327.4",
+                                "code": "NM_004327.4",
+                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_004327.4"
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gene:hgnc:76",
+                          "conceptType": "Gene",
+                          "name": "ABL1",
+                          "primaryCoding": {
+                            "id": "coding:hgnc:76",
+                            "code": "HGNC:76",
+                            "system": "https://genenames.org",
+                            "iris": [
+                              "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:76"
+                            ]
+                          },
+                          "mappings": [
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ensembl:ensg00000097007",
+                                "code": "ENSG00000097007",
+                                "system": "https://www.ensembl.org",
+                                "iris": [
+                                  "https://www.ensembl.org/id/ENSG00000097007"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "exactMatch",
+                              "coding": {
+                                "id": "coding:ncbi:25",
+                                "code": "25",
+                                "system": "https://www.ncbi.nlm.nih.gov/gene",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/gene/25"
+                                ]
+                              }
+                            },
+                            {
+                              "relation": "relatedMatch",
+                              "coding": {
+                                "id": "coding:refseq:NM_005157.6",
+                                "code": "NM_005157.6",
+                                "system": "https://www.ncbi.nlm.nih.gov/nuccore",
+                                "iris": [
+                                  "https://www.ncbi.nlm.nih.gov/nuccore/NM_005157.6"
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Gene fusion"
                     }
                   ]
                 }
@@ -743748,7 +744742,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:543",
+        "id": "prop:vtxr:988",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -743867,8 +744861,40 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:13",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:13",
+                  "type": "CategoricalVariant",
+                  "name": "CD22 +",
+                  "constraints": [],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Protein expression"
+                    },
+                    {
+                      "name": "marker",
+                      "value": "CD22"
+                    },
+                    {
+                      "name": "unit",
+                      "value": "status"
+                    },
+                    {
+                      "name": "equality",
+                      "value": "="
+                    },
+                    {
+                      "name": "value",
+                      "value": "Positive"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -743981,38 +745007,6 @@
                     {
                       "name": "biomarker_type",
                       "value": "Gene fusion"
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "bmkr.criterion:13",
-                "present": true,
-                "subject": {
-                  "id": "bmkr:13",
-                  "type": "CategoricalVariant",
-                  "name": "CD22 +",
-                  "constraints": [],
-                  "extensions": [
-                    {
-                      "name": "biomarker_type",
-                      "value": "Protein expression"
-                    },
-                    {
-                      "name": "marker",
-                      "value": "CD22"
-                    },
-                    {
-                      "name": "unit",
-                      "value": "status"
-                    },
-                    {
-                      "name": "equality",
-                      "value": "="
-                    },
-                    {
-                      "name": "value",
-                      "value": "Positive"
                     }
                   ]
                 }
@@ -759408,6 +760402,508 @@
                     {
                       "name": "value",
                       "value": "Negative"
+                    }
+                  ]
+                }
+              }
+            ],
+            "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+          }
+        ]
+      },
+      "strength": {
+        "id": "str:ncit:C25425",
+        "conceptType": "Evidence",
+        "name": "Approval",
+        "mappings": [],
+        "primaryCoding": {
+          "id": "coding:ncit:C25425",
+          "code": "C25425",
+          "name": "Approval",
+          "system": "https://evsexplore.semantics.cancer.gov",
+          "systemVersion": "26.08e",
+          "iris": [
+            "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+          ]
+        }
+      },
+      "extensions": [
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+        },
+        {
+          "name": "indication",
+          "value": {
+            "id": "ind:hse:00739:a",
+            "type": "Indication",
+            "description": "Pembrolizumab in combination with platinum and fluoropyrimidine-based chemotherapy, for the first line treatment of patients with locally advanced unresectable or metastatic carcinoma of the oesophagus or HER-2 negative gastro-oesophageal junction adenocarcinoma in adults whose tumours express PD-L1 with CPS >= 10.",
+            "contributions": [
+              {
+                "id": "ctrb:vanallenlab:2024-01-16:0",
+                "type": "Contribution",
+                "description": "Adding HSE approvals for reimbursement to database",
+                "date": "2024-01-16",
+                "contributor": {
+                  "id": "agent:user:vanallenlab",
+                  "type": "Agent",
+                  "agentType": "contributor",
+                  "name": "Van Allen lab",
+                  "description": "Van Allen lab, Dana-Farber Cancer Institute"
+                }
+              },
+              {
+                "id": "ctrb:hse:2023-06-01:0",
+                "type": "Contribution",
+                "description": "Indication approved for reimbursement.",
+                "date": "2023-06-01",
+                "contributor": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+                }
+              }
+            ],
+            "reportedIn": [
+              {
+                "id": "doc:hse:00739",
+                "type": "Document",
+                "documentType": "Regulatory approval",
+                "name": "Pembrolizumab 200mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy. NCCP National SACT Regimen. HSE.",
+                "title": null,
+                "aliases": [],
+                "description": "Pembrolizumab 200mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy, 2025, version number 2a, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6622/739_v2a_Pembrolizumab200_CISplatin_5-FU.pdf",
+                "urls": [
+                  "https://healthservice.hse.ie/documents/6622/739_v2a_Pembrolizumab200_CISplatin_5-FU.pdf"
+                ],
+                "doi": null,
+                "pmid": null,
+                "extensions": [
+                  {
+                    "name": "agent",
+                    "value": {
+                      "id": "agent:org:hse",
+                      "type": "Agent",
+                      "agentType": "organization",
+                      "name": "Health Service Executive",
+                      "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+                    },
+                    "description": "The organization that published this document."
+                  },
+                  {
+                    "name": "company",
+                    "value": "",
+                    "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_brand",
+                    "value": null,
+                    "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "drug_name_generic",
+                    "value": null,
+                    "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+                  },
+                  {
+                    "name": "first_publication_date",
+                    "value": null,
+                    "description": "The publication date for the initial version of this document."
+                  },
+                  {
+                    "name": "publication_date",
+                    "value": "2024-01-26",
+                    "description": "The publication date for the document."
+                  },
+                  {
+                    "name": "regulatory_identifier",
+                    "value": null,
+                    "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+                  },
+                  {
+                    "name": "status",
+                    "value": "Active",
+                    "description": "Whether this document is Active or Deprecated within moalmanac-db."
+                  }
+                ]
+              }
+            ],
+            "extensions": [
+              {
+                "name": "status",
+                "value": "Approved",
+                "description": "Current approval status."
+              },
+              {
+                "name": "reimbursement_scheme",
+                "value": "Incomplete Reimbursement",
+                "description": "Current scheme used to reimburse indication."
+              },
+              {
+                "name": "reimbursement_comment",
+                "value": "Pembrolizumab - ODMS; Cisplatin, 5-Fluorouracil - N/A",
+                "description": "More details about the current reimbursement scheme(s)."
+              }
+            ]
+          },
+          "description": "The underlying Indication supporting this Statement."
+        }
+      ]
+    },
+    {
+      "id": "stmt:hse:00739:a:2",
+      "type": "Statement",
+      "description": "The Republic of Ireland's Health Service Executive (HSE) has approved pembrolizumab (200mg) in combination with platinum and flouropyrimidine-based chemotherapy for reimbursement as a treatment option for the first-line treatment of adult patients with locally advanced unresectable or metastatic carcinoma of the oesophagus or HER-2 negative gastro-oesophageal junction adenocarcinoma whose tumors express PD-L1 with CPS >= 10.",
+      "contributions": [
+        {
+          "id": "ctrb:vanallenlab:2024-01-16:0",
+          "type": "Contribution",
+          "description": "Adding HSE approvals for reimbursement to database",
+          "date": "2024-01-16",
+          "contributor": {
+            "id": "agent:user:vanallenlab",
+            "type": "Agent",
+            "agentType": "contributor",
+            "name": "Van Allen lab",
+            "description": "Van Allen lab, Dana-Farber Cancer Institute"
+          }
+        },
+        {
+          "id": "ctrb:hse:2023-06-01:0",
+          "type": "Contribution",
+          "description": "Indication approved for reimbursement.",
+          "date": "2023-06-01",
+          "contributor": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+          }
+        }
+      ],
+      "reportedIn": [
+        {
+          "id": "doc:hse:00739",
+          "type": "Document",
+          "documentType": "Regulatory approval",
+          "name": "Pembrolizumab 200mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy. NCCP National SACT Regimen. HSE.",
+          "title": null,
+          "aliases": [],
+          "description": "Pembrolizumab 200mg, CISplatin 80mg/m2 and 5-Fluorouracil Infusional Therapy, 2025, version number 2a, NCCP National SACT Regimen, NCCP, viewed 26/03/2026, https://healthservice.hse.ie/documents/6622/739_v2a_Pembrolizumab200_CISplatin_5-FU.pdf",
+          "urls": [
+            "https://healthservice.hse.ie/documents/6622/739_v2a_Pembrolizumab200_CISplatin_5-FU.pdf"
+          ],
+          "doi": null,
+          "pmid": null,
+          "extensions": [
+            {
+              "name": "agent",
+              "value": {
+                "id": "agent:org:hse",
+                "type": "Agent",
+                "agentType": "organization",
+                "name": "Health Service Executive",
+                "description": "Regulatory agency that approves medicines for reimbursement by the public health system in the Republic of Ireland."
+              },
+              "description": "The organization that published this document."
+            },
+            {
+              "name": "company",
+              "value": "",
+              "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_brand",
+              "value": null,
+              "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "drug_name_generic",
+              "value": null,
+              "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+            },
+            {
+              "name": "first_publication_date",
+              "value": null,
+              "description": "The publication date for the initial version of this document."
+            },
+            {
+              "name": "publication_date",
+              "value": "2024-01-26",
+              "description": "The publication date for the document."
+            },
+            {
+              "name": "regulatory_identifier",
+              "value": null,
+              "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+            },
+            {
+              "name": "status",
+              "value": "Active",
+              "description": "Whether this document is Active or Deprecated within moalmanac-db."
+            }
+          ]
+        }
+      ],
+      "direction": "supports",
+      "proposition": {
+        "id": "prop:vtxr:991",
+        "type": "VariantTherapeuticResponseProposition",
+        "predicate": "predictsSensitivityTo",
+        "subjectVariant": {
+          "type": "CategoricalVariant",
+          "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+        },
+        "conditionQualifier": {
+          "id": "dis:ncit:C4024",
+          "conceptType": "Disease",
+          "name": "Esophageal Squamous Cell Carcinoma",
+          "mappings": [
+            {
+              "relation": "exactMatch",
+              "coding": {
+                "id": "coding:oncotree:ESCC",
+                "code": "ESCC",
+                "name": "Esophageal Squamous Cell Carcinoma",
+                "system": "https://oncotree.mskcc.org",
+                "systemVersion": "oncotree_2025_10_03",
+                "iris": [
+                  "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Esophageal+Squamous+Cell+Carcinoma+%28ESCC%29"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "solid_tumor",
+              "value": true,
+              "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C4024",
+            "code": "C4024",
+            "name": "Esophageal Squamous Cell Carcinoma",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C4024"
+            ]
+          }
+        },
+        "objectTherapeutic": {
+          "id": "txgrp:55",
+          "membershipOperator": "AND",
+          "therapies": [
+            {
+              "id": "tx:ncit:C376",
+              "conceptType": "Therapy",
+              "name": "Cisplatin",
+              "mappings": [
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:rxcui:2555",
+                    "code": "2555",
+                    "name": "cisplatin",
+                    "system": "RxNorm",
+                    "systemVersion": "20250602",
+                    "iris": [
+                      "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2555"
+                    ]
+                  }
+                },
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:omop:1397599",
+                    "code": "1397599",
+                    "name": "cisplatin",
+                    "system": "OMOP",
+                    "systemVersion": "v20250827",
+                    "iris": [
+                      "https://athena.ohdsi.org/search-terms/terms/1397599"
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "therapy_strategy",
+                  "value": [
+                    "Platinum-based chemotherapy"
+                  ],
+                  "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+                },
+                {
+                  "name": "therapy_type",
+                  "value": "Chemotherapy",
+                  "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+                }
+              ],
+              "primaryCoding": {
+                "id": "coding:ncit:C376",
+                "code": "C376",
+                "name": "Cisplatin",
+                "system": "https://evsexplore.semantics.cancer.gov",
+                "systemVersion": "26.08e",
+                "iris": [
+                  "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C376"
+                ]
+              }
+            },
+            {
+              "id": "tx:ncit:C106432",
+              "conceptType": "Therapy",
+              "name": "Pembrolizumab",
+              "mappings": [
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:rxcui:1547545",
+                    "code": "1547545",
+                    "name": "pembrolizumab",
+                    "system": "RxNorm",
+                    "systemVersion": "02-Mar-2026",
+                    "iris": [
+                      "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=1547545"
+                    ]
+                  }
+                },
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:omop:45775965",
+                    "code": "45775965",
+                    "name": "pembrolizumab",
+                    "system": "OMOP",
+                    "systemVersion": "v20260227",
+                    "iris": [
+                      "https://athena.ohdsi.org/search-terms/terms/45775965"
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "therapy_strategy",
+                  "value": [
+                    "PD-1/PD-L1 inhibition"
+                  ],
+                  "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+                },
+                {
+                  "name": "therapy_type",
+                  "value": "Immunotherapy",
+                  "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+                }
+              ],
+              "primaryCoding": {
+                "id": "coding:ncit:C106432",
+                "code": "C106432",
+                "name": "Pembrolizumab",
+                "system": "https://evsexplore.semantics.cancer.gov",
+                "systemVersion": "26.08e",
+                "iris": [
+                  "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C106432"
+                ]
+              }
+            },
+            {
+              "id": "tx:ncit:C505",
+              "conceptType": "Therapy",
+              "name": "Fluorouracil",
+              "mappings": [
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:rxcui:4492",
+                    "code": "4492",
+                    "name": "fluorouracil",
+                    "system": "RxNorm",
+                    "systemVersion": "20250602",
+                    "iris": [
+                      "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4492"
+                    ]
+                  }
+                },
+                {
+                  "relation": "relatedMatch",
+                  "coding": {
+                    "id": "coding:omop:955632",
+                    "code": "955632",
+                    "name": "fluorouracil",
+                    "system": "OMOP",
+                    "systemVersion": "v20250827",
+                    "iris": [
+                      "https://athena.ohdsi.org/search-terms/terms/955632"
+                    ]
+                  }
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "therapy_strategy",
+                  "value": [
+                    "Thymidylate synthase inhibition"
+                  ],
+                  "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+                },
+                {
+                  "name": "therapy_type",
+                  "value": "Chemotherapy",
+                  "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+                }
+              ],
+              "primaryCoding": {
+                "id": "coding:ncit:C505",
+                "code": "C505",
+                "name": "Fluorouracil",
+                "system": "https://evsexplore.semantics.cancer.gov",
+                "systemVersion": "26.08e",
+                "iris": [
+                  "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+                ]
+              }
+            }
+          ]
+        },
+        "extensions": [
+          {
+            "name": "biomarkers",
+            "value": [
+              {
+                "id": "bmkr.criterion:41",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:41",
+                  "type": "CategoricalVariant",
+                  "name": "PD-L1 (CPS) >= 10",
+                  "constraints": [],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Protein expression"
+                    },
+                    {
+                      "name": "marker",
+                      "value": "PD-L1"
+                    },
+                    {
+                      "name": "unit",
+                      "value": "Combined Positive Score (CPS)"
+                    },
+                    {
+                      "name": "equality",
+                      "value": ">="
+                    },
+                    {
+                      "name": "value",
+                      "value": 10
                     }
                   ]
                 }
@@ -892264,7 +893760,7 @@
       ],
       "direction": "supports",
       "proposition": {
-        "id": "prop:vtxr:543",
+        "id": "prop:vtxr:988",
         "type": "VariantTherapeuticResponseProposition",
         "predicate": "predictsSensitivityTo",
         "subjectVariant": {
@@ -892383,8 +893879,40 @@
             "name": "biomarkers",
             "value": [
               {
-                "id": "bmkr.criterion:15",
-                "present": false,
+                "id": "bmkr.criterion:13",
+                "present": true,
+                "subject": {
+                  "id": "bmkr:13",
+                  "type": "CategoricalVariant",
+                  "name": "CD22 +",
+                  "constraints": [],
+                  "extensions": [
+                    {
+                      "name": "biomarker_type",
+                      "value": "Protein expression"
+                    },
+                    {
+                      "name": "marker",
+                      "value": "CD22"
+                    },
+                    {
+                      "name": "unit",
+                      "value": "status"
+                    },
+                    {
+                      "name": "equality",
+                      "value": "="
+                    },
+                    {
+                      "name": "value",
+                      "value": "Positive"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "bmkr.criterion:12",
+                "present": true,
                 "subject": {
                   "id": "bmkr:12",
                   "type": "CategoricalVariant",
@@ -892497,38 +894025,6 @@
                     {
                       "name": "biomarker_type",
                       "value": "Gene fusion"
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "bmkr.criterion:13",
-                "present": true,
-                "subject": {
-                  "id": "bmkr:13",
-                  "type": "CategoricalVariant",
-                  "name": "CD22 +",
-                  "constraints": [],
-                  "extensions": [
-                    {
-                      "name": "biomarker_type",
-                      "value": "Protein expression"
-                    },
-                    {
-                      "name": "marker",
-                      "value": "CD22"
-                    },
-                    {
-                      "name": "unit",
-                      "value": "status"
-                    },
-                    {
-                      "name": "equality",
-                      "value": "="
-                    },
-                    {
-                      "name": "value",
-                      "value": "Positive"
                     }
                   ]
                 }

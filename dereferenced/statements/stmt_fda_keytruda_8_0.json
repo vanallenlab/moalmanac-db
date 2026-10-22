@@ -4,6 +4,19 @@
   "description": "The U.S. Food and Drug Administration granted approval to pembrolizumab for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amenable to surgical resection or definitive chemoradiation as a single agent after one or more prior lines of systemic therapy for patients with tumors of squamous cell histology that express PD-L1 (CPS >=10), as determined by an FDA-approved test.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-10-22:0",
+      "type": "Contribution",
+      "description": "Deprecated statements associating pembrolizumab monotherapy with esophageal adenocarcinoma and adenocarcinoma of the gastroesophageal junction in favor of a statement for Esophageal Squamous Cell Carcinoma (stmt:fda:keytruda:8:2), as this indication is limited to tumors of squamous cell histology.",
+      "date": "2026-10-22",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-10-30:0",
       "type": "Contribution",
       "description": "Initial access of FDA approvals",
@@ -308,7 +321,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Active",
+      "value": "Deprecated",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {
