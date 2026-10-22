@@ -96,7 +96,7 @@
   ],
   "direction": "supports",
   "proposition": {
-    "id": "prop:vtxr:543",
+    "id": "prop:vtxr:988",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictsSensitivityTo",
     "subjectVariant": {
@@ -215,8 +215,40 @@
         "name": "biomarkers",
         "value": [
           {
-            "id": "bmkr.criterion:15",
-            "present": false,
+            "id": "bmkr.criterion:13",
+            "present": true,
+            "subject": {
+              "id": "bmkr:13",
+              "type": "CategoricalVariant",
+              "name": "CD22 +",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "CD22"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bmkr.criterion:12",
+            "present": true,
             "subject": {
               "id": "bmkr:12",
               "type": "CategoricalVariant",
@@ -329,38 +361,6 @@
                 {
                   "name": "biomarker_type",
                   "value": "Gene fusion"
-                }
-              ]
-            }
-          },
-          {
-            "id": "bmkr.criterion:13",
-            "present": true,
-            "subject": {
-              "id": "bmkr:13",
-              "type": "CategoricalVariant",
-              "name": "CD22 +",
-              "constraints": [],
-              "extensions": [
-                {
-                  "name": "biomarker_type",
-                  "value": "Protein expression"
-                },
-                {
-                  "name": "marker",
-                  "value": "CD22"
-                },
-                {
-                  "name": "unit",
-                  "value": "status"
-                },
-                {
-                  "name": "equality",
-                  "value": "="
-                },
-                {
-                  "name": "value",
-                  "value": "Positive"
                 }
               ]
             }
