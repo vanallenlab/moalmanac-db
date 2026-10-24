@@ -1,9 +1,8 @@
 # Molecular Oncology Almanac - Database
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17089309.svg)](https://doi.org/10.5281/zenodo.17089309)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-informational)](./LICENSE)
-
-**[We are in the process of updating to a new database schema](/docs/referenced-schema-draft-about.md)**!
+[![License: CC BY 4.0](https://img.shields.io/badge/Database-CC%20BY%204.0-informational)](./LICENSE)
+[![License: GPL v2](https://img.shields.io/badge/Code-GPL%20v2-informational)](./LICENSE-code.md)
 
 Molecular Oncology Almanac (MOAlmanac) is a clinical interpretation algorithm paired with an underlying knowledge base for precision oncology. The primary objective of MOAlmanac is to identify and associate molecular alterations with therapeutic sensitivity and resistance as well as disease prognosis. This is done for “first-order” genomic alterations -- individual events such as somatic variants, copy number alterations, fusions, and germline -- as well as “second-order” events -- those that are not associated with one single mutation, and may be descriptive of global processes in the tumor such as tumor mutational burden, microsatellite instability, mutational signatures, and whole-genome doubling.
 
