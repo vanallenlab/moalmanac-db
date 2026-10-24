@@ -1,5 +1,9 @@
 Datasources used for codings. Documentation in this README are written as if the scripts are being run from the repository's root directory.
 
+## Licensing
+
+The files described here are third-party data. They are not covered by the CC BY 4.0 license that applies to the Molecular Oncology Almanac database, and remain subject to the terms of their original sources. Most are excluded from version control by .gitignore and are downloaded locally; anyone obtaining or redistributing them is responsible for reviewing and complying with those terms.
+
 ## NCI Thesaurus
 
 The [NCI Thesaurus](https://ncithesaurus.nci.nih.gov) is used for codings of diseases, drugs, and other concepts. The flat file archive for the given NCI Thesaurus version is downloaded from the [NCI EVS FTP archive](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/archive/), extracted, and written to datasources/{version}_Thesaurus.txt.

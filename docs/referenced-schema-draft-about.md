@@ -73,7 +73,7 @@ We also want to give a special thank you to Daniel Puthawala and Kori Kuzama fro
 [about.json](../referenced/about.json) contains metadata for moalmanac db and will be a root key within the [dereferenced](../moalmanac-draft.dereferenced.json) json. Unlike every other referenced data type, it is a single dictionary containing:
 - `github` (str): a url for the moalmanac-db github repository
 - `name` (str): the service name, "Molecular Oncology Almanac"
-- `license` (str): the license that moalmanac-db is distributed under, GPL-2.0
+- `license` (str): the license that moalmanac-db is distributed under, as an [SPDX license identifier](https://spdx.org/licenses/), "CC-BY-4.0"
 - `release` (str): the release that the dereferenced version of the database is under. This will eventually be the date of the corresponding content release.
 - `url` (str): url for the moalmanac.org, "https://moalmanac.org"
 - `last_updated` (str): date of when the database was last updated, in [ISO 8601, Y-m-d, format](https://en.wikipedia.org/wiki/ISO_8601). 
@@ -82,7 +82,7 @@ We also want to give a special thank you to Daniel Puthawala and Kori Kuzama fro
 {  
     "github": "https://github.com/vanallenlab/moalmanac-db",  
     "name": "Molecular Oncology Almanac",  
-    "license": "GPL-2.0",  
+    "license": "CC-BY-4.0",  
     "release": "draft",  
     "url": "https://moalmanac.org",  
     "last_updated": "2025-02-27"  
