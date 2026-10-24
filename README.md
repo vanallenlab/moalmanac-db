@@ -1,10 +1,10 @@
-# Molecular Oncology Almanac - Database
+Molecular Oncology Almanac - Database
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17089309.svg)](https://doi.org/10.5281/zenodo.17089309)
 [![License: CC BY 4.0](https://img.shields.io/badge/Database-CC%20BY%204.0-informational)](./LICENSE)
 [![License: GPL v2](https://img.shields.io/badge/Code-GPL%20v2-informational)](./LICENSE-code.md)
 
-Molecular Oncology Almanac (MOAlmanac) is a clinical interpretation algorithm paired with an underlying knowledge base for precision oncology. The primary objective of MOAlmanac is to identify and associate molecular alterations with therapeutic sensitivity and resistance as well as disease prognosis. This is done for “first-order” genomic alterations -- individual events such as somatic variants, copy number alterations, fusions, and germline -- as well as “second-order” events -- those that are not associated with one single mutation, and may be descriptive of global processes in the tumor such as tumor mutational burden, microsatellite instability, mutational signatures, and whole-genome doubling.
+Molecular Oncology Almanac (moalmanac) is a clinical interpretation algorithm paired with an underlying knowledge base for precision oncology. The primary objective of moalmanac is to identify and associate molecular alterations with therapeutic sensitivity and resistance as well as disease prognosis. This is done for “first-order” genomic alterations -- individual events such as somatic variants, copy number alterations, fusions, and germline -- as well as “second-order” events -- those that are not associated with one single mutation, and may be descriptive of global processes in the tumor such as tumor mutational burden, microsatellite instability, mutational signatures, and whole-genome doubling.
 
 The underlying database of this method is dependent on expert curation of the current body of knowledge on how molecular alterations affect clinical actionability. As the field of precision oncology grows, the quantity of research on how specific alterations affect therapeutic response and patient prognosis expands at an increasing rate. Curating the latest literature and presenting it in an accessible manner increases the abilities of clinicians and researchers alike to rapidly assess the importance of a molecular feature.
 
