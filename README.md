@@ -1,8 +1,8 @@
-Molecular Oncology Almanac - Database
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17089309.svg)](https://doi.org/10.5281/zenodo.17089309)
 [![License: CC BY 4.0](https://img.shields.io/badge/Database-CC%20BY%204.0-informational)](./LICENSE)
 [![License: GPL v2](https://img.shields.io/badge/Code-GPL%20v2-informational)](./LICENSE-code.md)
+
+Molecular Oncology Almanac's underlying knowledge base.
 
 Molecular Oncology Almanac (moalmanac) is a clinical interpretation algorithm paired with an underlying knowledge base for precision oncology. The primary objective of moalmanac is to identify and associate molecular alterations with therapeutic sensitivity and resistance as well as disease prognosis. This is done for “first-order” genomic alterations -- individual events such as somatic variants, copy number alterations, fusions, and germline -- as well as “second-order” events -- those that are not associated with one single mutation, and may be descriptive of global processes in the tumor such as tumor mutational burden, microsatellite instability, mutational signatures, and whole-genome doubling.
 
@@ -71,7 +71,7 @@ Where relevant, please also cite the version of the database used with its Zenod
 ## License
 
 - Database content: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), see [LICENSE](./LICENSE).
-- Scripts in `utils/` and `tests/`: [GNU General Public License, Version 2 (GPL v2)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), see [LICENSE-code.md](./LICENSE-code.md).
+- Code: [GNU General Public License, Version 2 (GPL v2)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), see [LICENSE-code.md](./LICENSE-code.md).
 - Third-party files in [datasources/](./datasources) are not covered by the CC BY license; see [datasources/README.md](./datasources/README.md#licensing).
 
 ## Disclaimer
