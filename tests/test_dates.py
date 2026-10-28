@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.mark.skip(reason="Not implemented yet")
 def test_last_updated_after_publication_date(data):
     """

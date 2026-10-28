@@ -58,7 +58,7 @@ def dereferenced_paths():
         "statements": root / "statements",
         "strengths": root / "strengths",
         "therapies": root / "therapies",
-        "therapy_groups": root / "therapy_groups"
+        "therapy_groups": root / "therapy_groups",
     }
 
 

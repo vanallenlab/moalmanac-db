@@ -4,6 +4,7 @@ import unittest
 from utils import json_utils
 from utils import read
 
+
 class Base(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -11,17 +12,17 @@ class Base(unittest.TestCase):
         Import JSON files from referenced/ and make them available to inherited test classes
         """
         cls.input_paths = {
-            'agents': 'referenced/agents.json',
-            'biomarkers': 'referenced/biomarkers.json',
-            'contributions': 'referenced/contributions.json',
-            'diseases': 'referenced/diseases.json',
-            'documents': 'referenced/documents.json',
-            'genes': 'referenced/genes.json',
-            'indications': 'referenced/indications.json',
-            'organizations': 'referenced/organizations.json',
-            'propositions': 'referenced/propositions.json',
-            'statements': 'referenced/statements.json',
-            'therapies': 'referenced/therapies.json'
+            "agents": "referenced/agents.json",
+            "biomarkers": "referenced/biomarkers.json",
+            "contributions": "referenced/contributions.json",
+            "diseases": "referenced/diseases.json",
+            "documents": "referenced/documents.json",
+            "genes": "referenced/genes.json",
+            "indications": "referenced/indications.json",
+            "organizations": "referenced/organizations.json",
+            "propositions": "referenced/propositions.json",
+            "statements": "referenced/statements.json",
+            "therapies": "referenced/therapies.json",
         }
 
         # Load all JSON data once for use in tests
@@ -42,14 +43,22 @@ class TestDataIntegrity(Base):
         following values:
             - Regulatory approval
         """
-        relevant_subtypes = [
-            'Regulatory approval'
+        relevant_subtypes = ["Regulatory approval"]
+        relevant_records = [
+            record
+            for record in self.data["documents"]
+            if record["subtype"] in relevant_subtypes
         ]
-        relevant_records = [record for record in self.data['documents'] if record['subtype'] in relevant_subtypes]
         with self.subTest():
-            failed_records = [record for record in relevant_records if record['url'] not in record['citation']]
+            failed_records = [
+                record
+                for record in relevant_records
+                if record["url"] not in record["citation"]
+            ]
             if failed_records:
-                failed_record_ids = ", ".join(str(record['id']) for record in failed_records)
+                failed_record_ids = ", ".join(
+                    str(record["id"]) for record in failed_records
+                )
                 self.fail(
                     f"URL mismatch between url key value and url contained within citation detected.\n"
                     f"  - Affected ID(s): {failed_record_ids}\n"
@@ -61,23 +70,23 @@ class TestDataIntegrity(Base):
         Assess if document associated with indications and associated statements differ
         """
         with self.subTest():
-            for statement in self.data['statements']:
-                statement_documents = statement['reportedIn']
+            for statement in self.data["statements"]:
+                statement_documents = statement["reportedIn"]
                 proposition = json_utils.fetch_records_by_key_value(
-                    records=self.data['propositions'],
-                    key='id',
-                    value=statement['proposition_id']
+                    records=self.data["propositions"],
+                    key="id",
+                    value=statement["proposition_id"],
                 )
                 proposition = proposition[0]
 
                 indication = json_utils.fetch_records_by_key_value(
-                    records=self.data['indications'],
-                    key='id',
-                    value=proposition['indication_id']
+                    records=self.data["indications"],
+                    key="id",
+                    value=proposition["indication_id"],
                 )
                 indication = indication[0]
 
-                if indication['document_id'] not in statement_documents:
+                if indication["document_id"] not in statement_documents:
                     self.fail(
                         f"Document ID mismatch between indication and statement detected.\n"
                         f"  - Affected ID(s): statement {statement['id']} and indication {indication['id']}"
@@ -89,14 +98,13 @@ class TestDataIntegrity(Base):
         """
         for record_type, records in self.data.items():
             with self.subTest(record_type=record_type):
-                idx_values = [record['id'] for record in records]
+                idx_values = [record["id"] for record in records]
                 idx_range = list(range(0, len(records)))
                 if not idx_values == idx_range:
                     missing_ids = [idx for idx in idx_range if idx not in idx_values]
                     missing_ids_str = ", ".join(str(idx) for idx in missing_ids)
                     self.fail(
                         f"Missing id values detected.\n"
-                        
                         f"  - Affected ID(s): {missing_ids_str}\n"
                         f"  - Total affected: {len(missing_ids)}"
                     )
@@ -106,14 +114,21 @@ class TestDateConsistency(Base):
     """
     Assess that various keys containing values for dates align as they should
     """
+
     def test_document_accessed_date_vs_publication_date(self):
         """
         Assess that the accessed date is more recent than the publication date for each document
         """
         with self.subTest():
-            failed_records = [document for document in self.data['documents'] if not (document['access_date'] >= document['publication_date'])]
+            failed_records = [
+                document
+                for document in self.data["documents"]
+                if not (document["access_date"] >= document["publication_date"])
+            ]
             if failed_records:
-                failed_record_ids = ", ".join(str(record['id']) for record in failed_records)
+                failed_record_ids = ", ".join(
+                    str(record["id"]) for record in failed_records
+                )
                 self.fail(
                     f"Access date before publication date detected.\n"
                     f"  - File: documents\n"
@@ -140,20 +155,19 @@ class TestFormatting(Base):
         Ensure that all indications and descriptions end with periods
         """
         # tuples of file (records; list[dict]) and key for each record in records
-        tests = [
-            ('indications', 'description'),
-            ('indications', 'indication')
-        ]
+        tests = [("indications", "description"), ("indications", "indication")]
 
         for record_type, key in tests:
             with self.subTest(record_type=record_type, key=key):
                 failed_records = []
                 for record in self.data[record_type]:
-                    if record[key][-1] != '.':
-                        failed_records.append(record['id'])
+                    if record[key][-1] != ".":
+                        failed_records.append(record["id"])
 
                 if failed_records:
-                    failed_record_ids = ", ".join(str(record_id) for record_id in failed_records)
+                    failed_record_ids = ", ".join(
+                        str(record_id) for record_id in failed_records
+                    )
                     self.fail(
                         f"Descriptions and indications that do not end with a period detected.\n"
                         f"  - File: {record_type}\n"
@@ -173,39 +187,39 @@ class TestFormatting(Base):
         tests = [
             # tuples of file names (records; list[dict]) and key for each record in records
             # the key should be present in each record
-            ('agents', 'label'),
-            ('biomarkers', 'label'),
-            ('contributions', 'description'),
-            ('diseases', 'label'),
-            ('documents', 'access_date'),
-            ('documents', 'citation'),
-            ('documents', 'company'),
-            ('documents', 'drug_name_brand'),
-            ('documents', 'drug_name_generic'),
-            ('documents', 'drug_name_generic'),
-            ('documents', 'first_published'),
-            ('documents', 'label'),
-            ('documents', 'publication_date'),
-            ('documents', 'url'),
-            ('documents', 'url_drug'),
-            ('genes', 'label'),
-            ('indications', 'description'),
-            ('indications', 'indication'),
-            ('indications', 'initial_approval_date'),
-            ('indications', 'initial_approval_url'),
-            ('indications', 'raw_biomarkers'),
-            ('indications', 'raw_cancer_type'),
-            ('indications', 'raw_therapeutics'),
-            ('organizations', 'label'),
-            ('organizations', 'last_updated'),
-            ('organizations', 'description'),
-            ('organizations', 'url'),
-            ('propositions', 'description'),
-            ('statements', 'direction'),
-            ('statements', 'evidence'),
-            ('therapies', 'therapy_name'),
-            ('therapies', 'therapy_strategy'),
-            ('therapies', 'therapy_type')
+            ("agents", "label"),
+            ("biomarkers", "label"),
+            ("contributions", "description"),
+            ("diseases", "label"),
+            ("documents", "access_date"),
+            ("documents", "citation"),
+            ("documents", "company"),
+            ("documents", "drug_name_brand"),
+            ("documents", "drug_name_generic"),
+            ("documents", "drug_name_generic"),
+            ("documents", "first_published"),
+            ("documents", "label"),
+            ("documents", "publication_date"),
+            ("documents", "url"),
+            ("documents", "url_drug"),
+            ("genes", "label"),
+            ("indications", "description"),
+            ("indications", "indication"),
+            ("indications", "initial_approval_date"),
+            ("indications", "initial_approval_url"),
+            ("indications", "raw_biomarkers"),
+            ("indications", "raw_cancer_type"),
+            ("indications", "raw_therapeutics"),
+            ("organizations", "label"),
+            ("organizations", "last_updated"),
+            ("organizations", "description"),
+            ("organizations", "url"),
+            ("propositions", "description"),
+            ("statements", "direction"),
+            ("statements", "evidence"),
+            ("therapies", "therapy_name"),
+            ("therapies", "therapy_strategy"),
+            ("therapies", "therapy_type"),
         ]
 
         for record_type, key in tests:
@@ -213,10 +227,12 @@ class TestFormatting(Base):
                 failed_records = []
                 for record in self.data[record_type]:
                     if record[key] != record[key].rstrip():
-                        failed_records.append(record['id'])
+                        failed_records.append(record["id"])
 
                 if failed_records:
-                    failed_record_ids = ", ".join(str(failed_record) for failed_record in failed_records)
+                    failed_record_ids = ", ".join(
+                        str(failed_record) for failed_record in failed_records
+                    )
                     self.fail(
                         f"Trailing spaces detected.\n"
                         f"  - File: {record_type}\n"
@@ -236,5 +252,5 @@ class TestReferenceOrdering(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
