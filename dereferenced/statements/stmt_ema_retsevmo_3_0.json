@@ -1,8 +1,34 @@
 {
   "id": "stmt:ema:retsevmo:3:0",
   "type": "Statement",
-  "description": "The European Medicines Agency (EMA) has conditionally authorized selpercatinib for the treatment of adult patients with advanced RET fusion-positive solid tumours, when treatment options not targeting RET provide limited clinical benefit, or have been exhausted.",
+  "description": "The European Medicines Agency (EMA) has authorized selpercatinib for the treatment of adult and paediatric (2 years and older) patients with advanced RET fusion-positive solid tumours, when treatment options not targeting RET provide limited clinical benefit, or have been exhausted.",
   "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-10-27:1",
+      "type": "Contribution",
+      "description": "Updated to the European Commission decision of 2026-06-04 (EMA/VR/0000282012), which extended these indications to paediatric patients 2 years of age and older and converted Retsevmo's conditional marketing authorisation to a full marketing authorisation.",
+      "date": "2026-10-27",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:ema:2026-06-04:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2026-06-04",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    },
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
@@ -14,19 +40,6 @@
         "agentType": "contributor",
         "name": "Van Allen lab",
         "description": "Van Allen lab, Dana-Farber Cancer Institute"
-      }
-    },
-    {
-      "id": "ctrb:ema:2024-04-29:0",
-      "type": "Contribution",
-      "description": "Indication received approval from the European Commission.",
-      "date": "2024-04-29",
-      "contributor": {
-        "id": "agent:org:ema",
-        "type": "Agent",
-        "agentType": "organization",
-        "name": "European Medicines Agency",
-        "description": "Regulatory agency that approves medicines for use in the European Union."
       }
     }
   ],
@@ -294,8 +307,34 @@
       "value": {
         "id": "ind:ema:retsevmo:3",
         "type": "Indication",
-        "description": "Retsevmo as monotherapy is indicated for the treatment of adults with advanced RET fusion-positive solid tumours, when treatment options not targeting RET provide limited clinical benefit, or have been exhausted.",
+        "description": "Retsevmo as monotherapy is indicated for the treatment of adults and paediatric patients 2 years of age and older with advanced RET fusion-positive solid tumours, when treatment options not targeting RET provide limited clinical benefit, or have been exhausted.",
         "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-10-27:1",
+            "type": "Contribution",
+            "description": "Updated to the European Commission decision of 2026-06-04 (EMA/VR/0000282012), which extended these indications to paediatric patients 2 years of age and older and converted Retsevmo's conditional marketing authorisation to a full marketing authorisation.",
+            "date": "2026-10-27",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:ema:2026-06-04:0",
+            "type": "Contribution",
+            "description": "Indication received approval from the European Commission.",
+            "date": "2026-06-04",
+            "contributor": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            }
+          },
           {
             "id": "ctrb:vanallenlab:2024-10-20:0",
             "type": "Contribution",
@@ -307,19 +346,6 @@
               "agentType": "contributor",
               "name": "Van Allen lab",
               "description": "Van Allen lab, Dana-Farber Cancer Institute"
-            }
-          },
-          {
-            "id": "ctrb:ema:2024-04-29:0",
-            "type": "Contribution",
-            "description": "Indication received approval from the European Commission.",
-            "date": "2024-04-29",
-            "contributor": {
-              "id": "agent:org:ema",
-              "type": "Agent",
-              "agentType": "organization",
-              "name": "European Medicines Agency",
-              "description": "Regulatory agency that approves medicines for use in the European Union."
             }
           }
         ],
