@@ -4,6 +4,19 @@
   "description": "The European Medicines Agency (EMA) has authorized trametinib as a monotherapy or in combination with dabrafenib for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 variant. Trametinib's product information further states that trametinib as a monotherapy has not demonstrated clinical activity in patients who have progressed on prior BRAF inhibitor therapy.",
   "contributions": [
     {
+      "id": "ctrb:ema:2026-04-30:1",
+      "type": "Contribution",
+      "description": "Indication has been superseded by another approval from the European Commission.",
+      "date": "2026-04-30",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
       "description": "Adding EMA approvals for use to database",
@@ -461,7 +474,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Active",
+      "value": "Superseded",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {
@@ -471,6 +484,19 @@
         "type": "Indication",
         "description": "Trametinib as monotherapy or in combination with dabrafenib is indicated for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
         "contributions": [
+          {
+            "id": "ctrb:ema:2026-04-30:1",
+            "type": "Contribution",
+            "description": "Indication has been superseded by another approval from the European Commission.",
+            "date": "2026-04-30",
+            "contributor": {
+              "id": "agent:org:ema",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "European Medicines Agency",
+              "description": "Regulatory agency that approves medicines for use in the European Union."
+            }
+          },
           {
             "id": "ctrb:vanallenlab:2024-10-20:0",
             "type": "Contribution",
@@ -566,7 +592,7 @@
         "extensions": [
           {
             "name": "status",
-            "value": "Approved",
+            "value": "Superseded",
             "description": "Current approval status."
           }
         ]
