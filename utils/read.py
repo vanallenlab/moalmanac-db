@@ -1,5 +1,6 @@
 import json
 
+
 def json_records(file: str) -> list[dict]:
     """
     Loads and parses a JSON file.

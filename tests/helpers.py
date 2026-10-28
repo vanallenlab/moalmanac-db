@@ -15,6 +15,7 @@ def is_dated_fda_document(document_id: str) -> bool:
     """
     return bool(DATED_FDA_DOCUMENT_ID.match(document_id))
 
+
 def find_trailing_spaces(records, key):
     """
     Identifies if any value associated with `key` contains trailing spaces for each record in `records`.
@@ -29,8 +30,9 @@ def find_trailing_spaces(records, key):
     failed_records = []
     for record in records:
         if has_trailing_spaces(record[key]):
-            failed_records.append(record['id'])
+            failed_records.append(record["id"])
     return failed_records
+
 
 def has_trailing_spaces(string: str) -> bool:
     """
@@ -43,6 +45,7 @@ def has_trailing_spaces(string: str) -> bool:
         bool: True if the string has trailing spaces, False otherwise.
     """
     return string != string.rstrip()
+
 
 def sort_data_structure_elements(obj):
     """
