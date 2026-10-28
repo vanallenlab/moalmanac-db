@@ -10,11 +10,14 @@ The underlying database of this method is dependent on expert curation of the cu
 
 ## Using this repository
 
-Browse the contents of the Molecular Oncology Almanac through this repository, our [browser (https://moalmanac.org)](https://moalmanac.org), or our [API](https://api.moalmanac.org). Previous releases, with release notes, can be found under [releases](https://github.com/vanallenlab/moalmanac-db/releases) and a history of all changes can be read in the [content changelog](https://news.moalmanac.org/category/database).
+Browse the contents of the Molecular Oncology Almanac through this repository, our [browser (https://moalmanac.org)](https://moalmanac.org), or our [API](https://api.moalmanac.org). Previous releases, with release notes, can be found in [Releases](https://github.com/vanallenlab/moalmanac-db/releases) and a history of all changes can be read in the [content changelog](https://docs.moalmanac.org/news/category/database/).
 
-If you wish to suggest an assertion for cataloging in this database, you can do so by:
+If you wish to suggest an assertion for cataloging in this database, or to correct an existing one, you can do so by:
 
-- Following our [standard operating procedure](/docs/sop.md) and opening a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+- Opening an [Issue](https://github.com/vanallenlab/moalmanac-db/issues/new/choose) describing the change, or
+- Following the [contributing guide](./CONTRIBUTING.md) and opening a [Pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+
+To work on this repository locally, see [Installation](#installation) and [Development](#development).
 
 ## Installation
 
@@ -50,12 +53,34 @@ pip install .
 
 If using VS Code, open the repository folder and select the interpreter via **Command Palette → Python: Select Interpreter**, then choose `moalmanac-db` from the list.
 
-## Testing
+## Development
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full process, including conventions for content, code, and pull requests. In short, a typical workflow is to fork the repository, edit files in `referenced/`, regenerate the dereferenced outputs, run our [tests](#testing), and open a Pull Request:
+
+```bash
+python -m utils.dereference --clear
+ruff check .
+ruff format --check .
+pytest tests/
+```
+
+### Testing
 
 We are currently using [pytest](https://docs.pytest.org/en/stable/) for testing in this repository. From the root directory, run:
 
 ```bash
 pytest tests/
+```
+
+Tests are described in [tests/README.md](./tests/README.md).
+
+### Linting and formatting
+
+Code is linted and formatted with [ruff](https://docs.astral.sh/ruff/), configured in [pyproject.toml](./pyproject.toml):
+
+```bash
+ruff check .
+ruff format .
 ```
 
 ## Citation
