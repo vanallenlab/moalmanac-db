@@ -86,6 +86,7 @@ ruff format .
 ## Citation
 
 The Molecular Oncology Almanac database is available under CC BY 4.0, which requires appropriate credit. If you use the database, or find this tool or any code herein useful, please cite:
+
 > [Reardon, B., Moore, N.D., Moore, N.S., *et al*. Integrating molecular profiles into clinical frameworks through the Molecular Oncology Almanac to prospectively guide precision oncology. *Nat Cancer* (2021). https://doi.org/10.1038/s43018-021-00243-3](https://www.nature.com/articles/s43018-021-00243-3)
 
 Where relevant, please also cite the version of the database used with its Zenodo DOI.
@@ -96,7 +97,7 @@ Where relevant, please also cite the version of the database used with its Zenod
 ## License
 
 - Database content: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), see [LICENSE](./LICENSE).
-- Code: [GNU General Public License, Version 2 (GPL v2)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), see [LICENSE-code.md](./LICENSE-code).
+- Code: [GNU General Public License, Version 2 (GPL v2)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), see [LICENSE-code](./LICENSE-code).
 - Third-party files in [datasources/](./datasources) are not covered by the CC BY license; see [datasources/README.md](./datasources/README.md#licensing).
 
 ## Disclaimer
