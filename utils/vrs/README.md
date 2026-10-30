@@ -3,9 +3,10 @@
 Generators for [GA4GH VRS](https://github.com/ga4gh/vrs) objects, shaped as `referenced/`
 records, for adding **new** records to the database. Each script takes explicit inputs
 (an accession, coordinates, a protein change), prints the generated record(s) as JSON, and
-optionally upserts them (by `id`, overwriting in place) into a `referenced/` table. They
+optionally upserts them (by `id`, overwriting in place) into `referenced/` tables. They
 never walk the database or edit genes/biomarkers — linking a new record from a gene or
-biomarker is left to the caller (see the `generate-vrs-*` skills in `.claude/skills/`).
+biomarker is left to the caller (see the `generate-vrs-gene`, `generate-vrs-allele`, and
+`generate-vrs-chromosome-arm` skills in `.claude/skills/`).
 
 Run from the repository root with the `moalmanac-db` environment.
 
@@ -19,7 +20,20 @@ Run from the repository root with the `moalmanac-db` environment.
 
 ## Scripts
 
-Every script supports `--output FILE` (instead of stdout) and `--help`.
+Every script supports `--help` (usage examples and exit codes), `--output FILE` (instead
+of stdout), and `--upsert-dir DIR`, which upserts the generated record(s) into the
+matching table(s) in `DIR` (normally `referenced`) and reports `created`, `updated`, or
+`unchanged` per id on stderr. Without `--upsert-dir`, a script only prints, so review the
+output first and then re-run with it.
+
+Expected failures print a one-line `error:` message on stderr instead of a traceback:
+
+| Exit code | Meaning |
+|---|---|
+| 0 | Success |
+| 1 | The input could not be resolved (e.g. an unknown accession or protein change, or a GenBank record with no exon features) |
+| 2 | Invalid arguments |
+| 3 | A service could not be reached or returned an error (start it, or point `VARIATION_NORMALIZER_URL` / `SEQREPO_URL` at it) |
 
 ### sequence_reference
 
@@ -29,7 +43,7 @@ Every script supports `--output FILE` (instead of stdout) and `--help`.
 python -m utils.vrs.sequence_reference NM_005228.5 --gene EGFR
 python -m utils.vrs.sequence_reference NP_005219.2 --gene EGFR --transcript NM_005228.5
 python -m utils.vrs.sequence_reference NC_000005.10 --build GRCh38 --chromosome 5 \
-    --upsert referenced/sequence_references.json
+    --upsert-dir referenced
 ```
 
 ### sequence_location
@@ -39,7 +53,7 @@ python -m utils.vrs.sequence_reference NC_000005.10 --build GRCh38 --chromosome 
 ```bash
 python -m utils.vrs.sequence_location NM_005228.5 --full-length --gene EGFR
 python -m utils.vrs.sequence_location NP_005219.2 --full-length --gene EGFR \
-    --transcript NM_005228.5 --upsert referenced/sequence_locations.json
+    --transcript NM_005228.5 --upsert-dir referenced
 python -m utils.vrs.sequence_location NP_005219.2 --start 857 --end 858 --description "..."
 ```
 
@@ -49,6 +63,8 @@ python -m utils.vrs.sequence_location NP_005219.2 --start 857 --end 858 --descri
 
 ```bash
 python -m utils.vrs.chromosome_arm --chromosome 5 --arm q --build GRCh38
+python -m utils.vrs.chromosome_arm --chromosome 5 --arm q --build GRCh38 \
+    --upsert-dir referenced
 ```
 
 ### exons
@@ -84,4 +100,4 @@ record = sequence_location.build(accession="NP_005219.2", start=857, end=858)
 ```
 
 Offline tests in `tests/test_vrs_utils.py` check the generators reproduce the committed
-`referenced/` records.
+`referenced/` records, and cover the `--upsert-dir` table routing and exit codes.
