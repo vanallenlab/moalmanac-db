@@ -1,10 +1,41 @@
 [
   {
-    "id": "agent:user:vanallenlab",
+    "id": "agent:org:vanallenlab",
     "type": "Agent",
-    "agentType": "contributor",
+    "agentType": "organization",
     "name": "Van Allen lab",
-    "description": "Van Allen lab, Dana-Farber Cancer Institute"
+    "description": "Van Allen lab, Dana-Farber Cancer Institute",
+    "organizationType": "research group",
+    "affiliation": [
+      "agent:org:dfci"
+    ]
+  },
+  {
+    "id": "agent:org:culhanelab",
+    "type": "Agent",
+    "agentType": "organization",
+    "name": "Culhane lab",
+    "description": "Culhane lab, University of Limerick",
+    "organizationType": "research group",
+    "affiliation": [
+      "agent:org:ul"
+    ]
+  },
+  {
+    "id": "agent:org:dfci",
+    "type": "Agent",
+    "agentType": "organization",
+    "name": "Dana-Farber Cancer Institute",
+    "description": "Cancer research and treatment center in Boston, Massachusetts, USA.",
+    "organizationType": "institution"
+  },
+  {
+    "id": "agent:org:ul",
+    "type": "Agent",
+    "agentType": "organization",
+    "name": "University of Limerick",
+    "description": "University in Limerick, Ireland.",
+    "organizationType": "institution"
   },
   {
     "id": "agent:org:ema",
@@ -12,6 +43,7 @@
     "agentType": "organization",
     "name": "European Medicines Agency",
     "description": "Regulatory agency that approves medicines for use in the European Union.",
+    "organizationType": "regulatory agency",
     "last_updated": "2026-08-02",
     "url": "https://www.ema.europa.eu/en/medicines"
   },
@@ -21,6 +53,7 @@
     "agentType": "organization",
     "name": "Food and Drug Administration",
     "description": "Regulatory agency that approves drugs for use in the United States.",
+    "organizationType": "regulatory agency",
     "last_updated": "2026-06-24",
     "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm"
   },
@@ -30,6 +63,7 @@
     "agentType": "organization",
     "name": "Health Service Executive",
     "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system.",
+    "organizationType": "regulatory agency",
     "last_updated": "2026-08-02",
     "url": "https://healthservice.hse.ie/staff/information-healthcare-workers/nccp/national-sact-regimens/"
   },
@@ -39,6 +73,7 @@
     "agentType": "organization",
     "name": "Health Products Regulatory Authority",
     "description": "Regulatory agency that authorises medicines for marketing in Ireland and maintains the national register of authorised medicines.",
+    "organizationType": "regulatory agency",
     "last_updated": "2025-10-01",
     "url": "http://www.hpra.ie/homepage/medicines/medicines-information/find-a-medicine"
   },
@@ -48,7 +83,19 @@
     "agentType": "organization",
     "name": "Health Canada",
     "description": "Regulatory agency that approves drugs for sale and use in Canada.",
+    "organizationType": "regulatory agency",
     "last_updated": "2026-05-22",
     "url": "https://health-products.canada.ca/dpd-bdpp/"
-  }
+  },
+  {
+    "id": "agent:user:breardon",
+    "type": "Agent",
+    "agentType": "person",
+    "name": "Brendan Reardon",
+    "description": "Contributor to the Molecular Oncology Almanac",
+    "affiliation": [
+      "agent:org:vanallenlab",
+      "agent:org:culhanelab"
+    ]
+  },
 ]

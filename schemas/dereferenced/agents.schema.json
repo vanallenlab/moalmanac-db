@@ -2,64 +2,163 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/dereferenced/agents.schema.json",
   "title": "Agent",
-  "description": "An organization or person that publishes documents or contributes to records.",
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^agent:(org|user):[a-z0-9]+$"
+  "description": "An organization or person that publishes documents or contributes to records. Subtypes are selected by the `agentType` field.",
+  "$ref": "#/$defs/Agent",
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "agentType"
+        ],
+        "properties": {
+          "agentType": {
+            "const": "organization"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/Organization"
+      }
     },
-    "type": {
-      "const": "Agent"
-    },
-    "agentType": {
-      "enum": [
-        "organization",
-        "contributor"
-      ]
-    },
-    "name": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "extensions": {
-      "type": "array",
-      "items": {
-        "anyOf": [
-          {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "last_updated"
+    {
+      "if": {
+        "required": [
+          "agentType"
+        ],
+        "properties": {
+          "agentType": {
+            "const": "person"
+          }
+        }
+      },
+      "then": {
+        "$ref": "#/$defs/Person"
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "Agent": {
+      "description": "Root type shared by every agent. Subtypes below are selected by the `agentType` field; the top-level schema closes the record.",
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "agentType",
+        "name",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^agent:(org|user):[a-z0-9]+$"
+        },
+        "type": {
+          "const": "Agent"
+        },
+        "agentType": {
+          "enum": [
+            "organization",
+            "person"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "extensions": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "extension.schema.json",
+                "properties": {
+                  "name": {
+                    "const": "affiliation"
+                  },
+                  "value": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "pattern": "^agent:org:[a-z0-9]+$"
+                    }
+                  }
+                }
               },
-              "value": {
-                "type": "string"
+              {
+                "$ref": "extension.schema.json",
+                "properties": {
+                  "name": {
+                    "const": "last_updated"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              {
+                "$ref": "extension.schema.json",
+                "properties": {
+                  "name": {
+                    "const": "organizationType"
+                  },
+                  "value": {
+                    "enum": [
+                      "institution",
+                      "regulatory agency",
+                      "research group"
+                    ]
+                  }
+                }
+              },
+              {
+                "$ref": "extension.schema.json",
+                "properties": {
+                  "name": {
+                    "const": "url"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                }
               }
-            }
-          },
-          {
-            "$ref": "extension.schema.json",
+            ]
+          }
+        }
+      }
+    },
+    "Organization": {
+      "description": "A regulatory agency, research group, or institution.",
+      "properties": {
+        "id": {
+          "pattern": "^agent:org:[a-z0-9]+$"
+        }
+      }
+    },
+    "Person": {
+      "description": "An individual who contributes to records. Organization-only extensions are not allowed.",
+      "properties": {
+        "id": {
+          "pattern": "^agent:user:[a-z0-9]+$"
+        },
+        "extensions": {
+          "items": {
             "properties": {
               "name": {
-                "const": "url"
-              },
-              "value": {
-                "type": "string"
+                "not": {
+                  "enum": [
+                    "last_updated",
+                    "organizationType"
+                  ]
+                }
               }
             }
           }
-        ]
+        }
       }
     }
-  },
-  "required": [
-    "id",
-    "type",
-    "agentType",
-    "name",
-    "description"
-  ],
-  "additionalProperties": false
+  }
 }

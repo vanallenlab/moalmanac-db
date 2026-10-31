@@ -368,3 +368,76 @@ def test_gene_protein_product_exon_ids_resolve(data):
                 f"  - SequenceLocation ID: {exon_id}"
             )
             assert len(matched) == 1, error_message
+
+
+def test_agent_affiliation_ids_resolve_to_organizations(data):
+    """
+    Ensures every id in an agent's `affiliation` resolves to an organization in agents.json
+    """
+    organizations = {
+        agent["id"] for agent in data["agents"] if agent["agentType"] == "organization"
+    }
+    for agent in data["agents"]:
+        for affiliation_id in agent.get("affiliation", []):
+            error_message = (
+                f"Agent affiliation id does not resolve to an organization.\n"
+                f"  - Agent ID: {agent['id']}\n"
+                f"  - Affiliation ID: {affiliation_id}"
+            )
+            assert affiliation_id in organizations, error_message
+
+
+def test_agent_affiliations_are_acyclic(data):
+    """
+    Ensures no agent is, directly or through other organizations, affiliated with itself
+    """
+    affiliations = {
+        agent["id"]: agent.get("affiliation", []) for agent in data["agents"]
+    }
+    for agent_id, affiliation_ids in affiliations.items():
+        seen = set()
+        pending = list(affiliation_ids)
+        while pending:
+            current = pending.pop()
+            error_message = (
+                f"Agent affiliations form a cycle.\n"
+                f"  - Agent ID: {agent_id}\n"
+                f"  - Reached via: {current}"
+            )
+            assert current != agent_id, error_message
+            if current in seen:
+                continue
+            seen.add(current)
+            pending.extend(affiliations.get(current, []))
+
+
+def test_contribution_agent_ids_resolve(data):
+    """
+    Ensures every contribution's `agent_id` resolves to a record in agents.json
+    """
+    agent_ids = {agent["id"] for agent in data["agents"]}
+    for contribution in data["contributions"]:
+        error_message = (
+            f"Contribution agent id does not resolve to an agent record.\n"
+            f"  - Contribution ID: {contribution['id']}\n"
+            f"  - Agent ID: {contribution['agent_id']}"
+        )
+        assert contribution["agent_id"] in agent_ids, error_message
+
+
+def test_document_agent_ids_resolve_to_regulatory_agencies(data):
+    """
+    Ensures every document's `agent_id` resolves to a regulatory agency in agents.json
+    """
+    agencies = {
+        agent["id"]
+        for agent in data["agents"]
+        if agent.get("organizationType") == "regulatory agency"
+    }
+    for document in data["documents"]:
+        error_message = (
+            f"Document agent id does not resolve to a regulatory agency.\n"
+            f"  - Document ID: {document['id']}\n"
+            f"  - Agent ID: {document['agent_id']}"
+        )
+        assert document["agent_id"] in agencies, error_message
