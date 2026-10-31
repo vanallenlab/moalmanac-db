@@ -457795,10 +457795,10 @@
           }
         },
         {
-          "id": "ctrb:ema:2001-11-07:0",
+          "id": "ctrb:ema:2002-12-19:0",
           "type": "Contribution",
           "description": "Indication received approval from the European Commission.",
-          "date": "2001-11-07",
+          "date": "2002-12-19",
           "contributor": {
             "id": "agent:org:ema",
             "type": "Agent",
@@ -458149,10 +458149,10 @@
                 }
               },
               {
-                "id": "ctrb:ema:2001-11-07:0",
+                "id": "ctrb:ema:2002-12-19:0",
                 "type": "Contribution",
                 "description": "Indication received approval from the European Commission.",
-                "date": "2001-11-07",
+                "date": "2002-12-19",
                 "contributor": {
                   "id": "agent:org:ema",
                   "type": "Agent",
@@ -636481,15 +636481,15 @@
       ]
     },
     {
-      "id": "stmt:ema:glivec:1:1",
+      "id": "stmt:ema:glivec:8:0",
       "type": "Statement",
-      "description": "The European Medicines Agency (EMA) has authorized imatinib for the treatment of adult and pediatric patients with Philadelphia chromosome (bcr-abl) positive (Ph+) chronic myeloid leukemia (CML) in chronic phase after failure of interferon-alpha therapy, or in accelerated phase or blast crisis.",
+      "description": "The European Medicines Agency (EMA) has authorized imatinib for the treatment of adult patients with Philadelphia chromosome positive chronic myeloid leukemia (CML) in chronic phase after failure of interferon-alpha therapy, or in accelerated phase or blast crisis.",
       "contributions": [
         {
-          "id": "ctrb:vanallenlab:2026-09-28:0",
+          "id": "ctrb:vanallenlab:2026-10-31:0",
           "type": "Contribution",
-          "description": "Deprecated statements when consolidating CML and CML Ph+ disease codings.",
-          "date": "2026-09-28",
+          "description": "Initial curation of into moalmanac-db",
+          "date": "2026-10-31",
           "contributor": {
             "id": "agent:user:vanallenlab",
             "type": "Agent",
@@ -636499,16 +636499,16 @@
           }
         },
         {
-          "id": "ctrb:vanallenlab:2024-10-20:0",
+          "id": "ctrb:ema:2002-12-19:1",
           "type": "Contribution",
-          "description": "Adding EMA approvals for use to database",
-          "date": "2024-10-20",
+          "description": "Indication has been superseded by another approval from the European Commission.",
+          "date": "2002-12-19",
           "contributor": {
-            "id": "agent:user:vanallenlab",
+            "id": "agent:org:ema",
             "type": "Agent",
-            "agentType": "contributor",
-            "name": "Van Allen lab",
-            "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
           }
         },
         {
@@ -636842,27 +636842,40 @@
       "extensions": [
         {
           "name": "status",
-          "value": "Deprecated",
+          "value": "Superseded",
           "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
         },
         {
           "name": "indication",
           "value": {
-            "id": "ind:ema:glivec:1",
+            "id": "ind:ema:glivec:8",
             "type": "Indication",
-            "description": "Glivec is indicated for the treatment of adult and paediatric patients with Ph+ CML in chronic phase after failure of interferon-alpha therapy, or in accelerated phase or blast crisis.",
+            "description": "Glivec is indicated for the treatment of adult patients with Philadelphia chromosome positive chronic myeloid leukaemia (CML) in chronic phase after failure of interferon-alpha therapy, or accelerated phase, or blast crisis.",
             "contributions": [
               {
-                "id": "ctrb:vanallenlab:2024-10-20:0",
+                "id": "ctrb:vanallenlab:2026-10-31:0",
                 "type": "Contribution",
-                "description": "Adding EMA approvals for use to database",
-                "date": "2024-10-20",
+                "description": "Initial curation of into moalmanac-db",
+                "date": "2026-10-31",
                 "contributor": {
                   "id": "agent:user:vanallenlab",
                   "type": "Agent",
                   "agentType": "contributor",
                   "name": "Van Allen lab",
                   "description": "Van Allen lab, Dana-Farber Cancer Institute"
+                }
+              },
+              {
+                "id": "ctrb:ema:2002-12-19:1",
+                "type": "Contribution",
+                "description": "Indication has been superseded by another approval from the European Commission.",
+                "date": "2002-12-19",
+                "contributor": {
+                  "id": "agent:org:ema",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "European Medicines Agency",
+                  "description": "Regulatory agency that approves medicines for use in the European Union."
                 }
               },
               {
@@ -636947,7 +636960,7 @@
             "extensions": [
               {
                 "name": "status",
-                "value": "Approved",
+                "value": "Superseded",
                 "description": "Current approval status."
               }
             ]

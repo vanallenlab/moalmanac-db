@@ -5821,14 +5821,14 @@
     "description": "Glivec is indicated for the treatment of adult and paediatric patients with Ph+ CML in chronic phase after failure of interferon-alpha therapy, or in accelerated phase or blast crisis.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2001-11-07:0"
+      "ctrb:ema:2002-12-19:0"
     ],
     "reportedIn": [
       "doc:ema:glivec"
     ],
     "status": "Approved",
     "statement_description": "The European Medicines Agency (EMA) has authorized imatinib for the treatment of adult and pediatric patients with Philadelphia chromosome (bcr-abl) positive (Ph+) chronic myeloid leukemia (CML) in chronic phase after failure of interferon-alpha therapy, or in accelerated phase or blast crisis.",
-    "raw_biomarkers": null,
+    "raw_biomarkers": "BCR::ABL1",
     "raw_cancer_types": "Chronic Myeloid Leukemia",
     "raw_therapeutics": "Imatinib",
     "superseded_by": []
@@ -5940,6 +5940,27 @@
     "raw_cancer_types": "Gastrointestinal Stromal Tumor (GIST)",
     "raw_therapeutics": "Imatinib",
     "superseded_by": []
+  },
+  {
+    "id": "ind:ema:glivec:8",
+    "type": "Indication",
+    "description": "Glivec is indicated for the treatment of adult patients with Philadelphia chromosome positive chronic myeloid leukaemia (CML) in chronic phase after failure of interferon-alpha therapy, or accelerated phase, or blast crisis.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-10-31:0",
+      "ctrb:ema:2002-12-19:1",
+      "ctrb:ema:2001-11-07:0"
+    ],
+    "reportedIn": [
+      "doc:ema:glivec"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized imatinib for the treatment of adult patients with Philadelphia chromosome positive chronic myeloid leukemia (CML) in chronic phase after failure of interferon-alpha therapy, or in accelerated phase or blast crisis.",
+    "raw_biomarkers": "BCR::ABL1",
+    "raw_cancer_types": "Chronic Myeloid Leukemia",
+    "raw_therapeutics": "Imatinib",
+    "superseded_by": [
+      "ind:ema:glivec:1"
+    ]
   },
   {
     "id": "ind:ema:iclusig:0",
