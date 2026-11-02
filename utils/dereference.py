@@ -1126,6 +1126,7 @@ class Indications(BaseTable):
             "raw_biomarkers",
             "raw_cancer_types",
             "raw_therapeutics",
+            "requires_biomarker",
         ]
         for record in self.records:
             for field in fields_to_remove:
