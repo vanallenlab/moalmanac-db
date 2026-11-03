@@ -6838,8 +6838,9 @@
     "type": "Indication",
     "description": "KEYTRUDA, in combination with platinum and fluoropyrimidine-based chemotherapy, is indicated for the first-line treatment of locally advanced unresectable or metastatic carcinoma of the oesophagus in adults whose tumours express PD-L1 with a CPS >= 10.",
     "contributions": [
+      "ctrb:vanallenlab:2026-11-02:0",
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2021-06-24:0"
+      "ctrb:ema:2023-11-23:0"
     ],
     "reportedIn": [
       "doc:ema:keytruda"
@@ -6965,6 +6966,29 @@
     "raw_therapeutics": "keytruda in combination with paclitaxel, with or without bevacizumab",
     "requires_biomarker": true,
     "superseded_by": []
+  },
+  {
+    "id": "ind:ema:keytruda:16",
+    "type": "Indication",
+    "description": "KEYTRUDA, in combination with platinum and fluoropyrimidine based chemotherapy, is indicated for the first-line treatment of patients with locally advanced unresectable or metastatic carcinoma of the oesophagus or HER-2 negative gastroesophageal junction adenocarcinoma in adults whose tumours express PD-L1 with a CPS >= 10.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-02:1",
+      "ctrb:ema:2023-11-23:1",
+      "ctrb:ema:2021-06-24:0"
+    ],
+    "reportedIn": [
+      "doc:ema:keytruda"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with platinum and fluoropyrimidine-based chemotherapy as a first-line treatment for adult patients with locally advanced unresectable or metastatic esophageal carcinoma or HER2-negative gastroesophageal junction adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 10.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Oesophageal carcinoma, gastroesophageal junction adenocarcinoma",
+    "raw_therapeutics": "Keytruda (pembrolizumab) in combination with platinum and fluoropyrimidine-based chemotherapy",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:keytruda:9",
+      "ind:ema:keytruda:14"
+    ]
   },
   {
     "id": "ind:ema:kadcyla:0",
