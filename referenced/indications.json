@@ -9177,8 +9177,9 @@
     "type": "Indication",
     "description": "Vectibix is indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC) in second-line in combination with FOLFIRI for patients who have received first-line fluoropyrimidine-based chemotherapy (excluding irinotecan).",
     "contributions": [
+      "ctrb:vanallenlab:2026-11-03:0",
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2011-11-10:0"
+      "ctrb:ema:2013-07-25:0"
     ],
     "reportedIn": [
       "doc:ema:vectibix"
@@ -9230,6 +9231,72 @@
     "requires_biomarker": true,
     "superseded_by": [
       "ind:ema:vectibix:2"
+    ]
+  },
+  {
+    "id": "ind:ema:vectibix:4",
+    "type": "Indication",
+    "description": "Vectibix is indicated for the treatment of patients with wild-type KRAS metastatic colorectal cancer (mCRC) in first-line in combination with FOLFOX.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-03:1",
+      "ctrb:ema:2013-07-25:1",
+      "ctrb:ema:2011-11-10:0"
+    ],
+    "reportedIn": [
+      "doc:ema:vectibix"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized panitumumab in combination with FOLFOX for the first-line treatment of patients with wild-type KRAS metastatic colorectal cancer (mCRC). Panitumumab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with panitumumab and that KRAS mutational status should be determined using a validated test method by an experienced laboratory.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Vectibix (panitumumab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:vectibix:5"
+    ]
+  },
+  {
+    "id": "ind:ema:vectibix:5",
+    "type": "Indication",
+    "description": "Vectibix is indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC) in first-line in combination with FOLFOX.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-03:1",
+      "ctrb:ema:2015-03-31:1",
+      "ctrb:ema:2013-07-25:0"
+    ],
+    "reportedIn": [
+      "doc:ema:vectibix"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized panitumumab in combination with FOLFOX for the first-line treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC). Panitumumab's product information further states that evidence of wild-type RAS (KRAS and NRAS) status is required before initiating treatment with panitumumab and that mutational status should be determined using a validated test method by an experienced laboratory.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Vectibix (panitumumab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:vectibix:0"
+    ]
+  },
+  {
+    "id": "ind:ema:vectibix:6",
+    "type": "Indication",
+    "description": "Vectibix is indicated for the treatment of patients with wild-type KRAS metastatic colorectal cancer (mCRC) in second-line in combination with FOLFIRI for patients who have received first-line fluoropyrimidine-based chemotherapy (excluding irinotecan).",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-03:1",
+      "ctrb:ema:2013-07-25:1",
+      "ctrb:ema:2011-11-10:0"
+    ],
+    "reportedIn": [
+      "doc:ema:vectibix"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized panitumumab in combination with FOLFIRI for the second-line treatment of patients with wild-type KRAS metastatic colorectal cancer (mCRC) who have received first-line fluoropyrimidine-based chemotherapy (excluding irinotecan). Panitumumab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with panitumumab and that KRAS mutational status should be determined using a validated test method by an experienced laboratory.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Vectibix (panitumumab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:vectibix:1"
     ]
   },
   {
