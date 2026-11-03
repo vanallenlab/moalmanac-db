@@ -1,0 +1,123 @@
+{
+  "id": "ind:ema:keytruda:16",
+  "type": "Indication",
+  "description": "KEYTRUDA, in combination with platinum and fluoropyrimidine based chemotherapy, is indicated for the first-line treatment of patients with locally advanced unresectable or metastatic carcinoma of the oesophagus or HER-2 negative gastroesophageal junction adenocarcinoma in adults whose tumours express PD-L1 with a CPS >= 10.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-02:1",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db.",
+      "date": "2026-11-02",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:ema:2023-11-23:1",
+      "type": "Contribution",
+      "description": "Indication has been superseded by another approval from the European Commission.",
+      "date": "2023-11-23",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    },
+    {
+      "id": "ctrb:ema:2021-06-24:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2021-06-24",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema:keytruda",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Keytruda (pembrolizumab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Merck Sharp & Dohme B.V. Keytruda (pembrolizumab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf. Revised January 2024. Accessed March 10, 2024.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/keytruda-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Merck Sharp & Dohme B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Keytruda",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "pembrolizumab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2015-07-30",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2024-01-11",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Superseded",
+      "description": "Current approval status."
+    },
+    {
+      "name": "statement description",
+      "value": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with platinum and fluoropyrimidine-based chemotherapy as a first-line treatment for adult patients with locally advanced unresectable or metastatic esophageal carcinoma or HER2-negative gastroesophageal junction adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 10.",
+      "description": "The description text for all Statements derived from this Indication."
+    }
+  ]
+}
