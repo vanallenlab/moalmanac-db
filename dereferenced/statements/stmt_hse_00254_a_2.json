@@ -4,6 +4,19 @@
   "description": "The Republic of Ireland's Health Service Executive (HSE) has approved anastrozole for reimbursement as a treatment option for the treatment of hormone receptor positive locally advanced or metastatic breast cancer in post-menopausal women.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-04:0",
+      "type": "Contribution",
+      "description": "HSE approval date taken from version 1 of the NCCP regimen's version history.",
+      "date": "2026-11-04",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2026-11-03:3",
       "type": "Contribution",
       "description": "Status changed from Withdrawn to Approved. The NCCP regimen lists the reimbursement status as N/A; availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
@@ -109,7 +122,7 @@
   ],
   "direction": "supports",
   "proposition": {
-    "id": "prop:vtxr:775",
+    "id": "prop:vtxr:825",
     "type": "VariantTherapeuticResponseProposition",
     "predicate": "predictsSensitivityTo",
     "subjectVariant": {
@@ -215,38 +228,6 @@
         "name": "biomarkers",
         "value": [
           {
-            "id": "bmkr.criterion:20",
-            "present": true,
-            "subject": {
-              "id": "bmkr:20",
-              "type": "CategoricalVariant",
-              "name": "HER2-positive",
-              "constraints": [],
-              "extensions": [
-                {
-                  "name": "biomarker_type",
-                  "value": "Protein expression"
-                },
-                {
-                  "name": "marker",
-                  "value": "Human epidermal growth factor receptor 2 (HER2)"
-                },
-                {
-                  "name": "unit",
-                  "value": "status"
-                },
-                {
-                  "name": "equality",
-                  "value": "="
-                },
-                {
-                  "name": "value",
-                  "value": "Positive"
-                }
-              ]
-            }
-          },
-          {
             "id": "bmkr.criterion:3",
             "present": true,
             "subject": {
@@ -312,6 +293,19 @@
         "type": "Indication",
         "description": "Treatment of hormone receptor positive locally advanced or metastatic breast cancer in post-menopausal women.",
         "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-11-04:0",
+            "type": "Contribution",
+            "description": "HSE approval date taken from version 1 of the NCCP regimen's version history.",
+            "date": "2026-11-04",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
           {
             "id": "ctrb:vanallenlab:2026-11-03:3",
             "type": "Contribution",
