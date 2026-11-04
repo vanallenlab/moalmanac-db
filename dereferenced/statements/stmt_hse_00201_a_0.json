@@ -1,0 +1,382 @@
+{
+  "id": "stmt:hse:00201:a:0",
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved trastuzumab (IV - 7 days) for reimbursement as a monotherapy treatment option for the treatment of patients with HER2 positive metastatic breast cancer (MBC). The European Medicines Agency product information for trastuzumab notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db. Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2014-02-10:0",
+      "type": "Contribution",
+      "description": "Indication approved for reimbursement.",
+      "date": "2014-02-10",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00201",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Trastuzumab Monotherapy-7 days. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Trastuzumab Monotherapy-7 days, 2025, version number 6, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6540/201_v6_Trastuzumab_IV_7_days.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6540/201_v6_Trastuzumab_IV_7_days.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": null,
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-10",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:418",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C9245",
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:BRCA",
+            "code": "BRCA",
+            "name": "Invasive Breast Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C9245",
+        "code": "C9245",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "tx:ncit:C1647",
+      "conceptType": "Therapy",
+      "name": "Trastuzumab",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:224905",
+            "code": "224905",
+            "name": "trastuzumab",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1387104",
+            "code": "1387104",
+            "name": "trastuzumab",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1387104"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "HER2 inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C1647",
+        "code": "C1647",
+        "name": "Trastuzumab",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+        ]
+      }
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:20",
+            "present": true,
+            "subject": {
+              "id": "bmkr:20",
+              "type": "CategoricalVariant",
+              "name": "HER2-positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00201:a",
+        "type": "Indication",
+        "description": "Treatment of patients with HER2 positive metastatic breast cancer (MBC).",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:2",
+            "type": "Contribution",
+            "description": "Initial curation of this indication into moalmanac-db. Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2014-02-10:0",
+            "type": "Contribution",
+            "description": "Indication approved for reimbursement.",
+            "date": "2014-02-10",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00201",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Trastuzumab Monotherapy-7 days. NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Trastuzumab Monotherapy-7 days, 2025, version number 6, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6540/201_v6_Trastuzumab_IV_7_days.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6540/201_v6_Trastuzumab_IV_7_days.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": null,
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-04-10",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "regulatory_identifier",
+                "value": null,
+                "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "N/A",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

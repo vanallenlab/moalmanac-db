@@ -1,0 +1,559 @@
+{
+  "id": "stmt:hse:00433:b:0",
+  "type": "Statement",
+  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved dose dense doxorubicin and cyclophosphamide (AC 60/600, 14 days) followed by weekly paclitaxel and weekly trastuzumab (DD AC-TH) for reimbursement as a treatment option for the neoadjuvant treatment of patients with HER2 positive, high risk node negative or node positive breast cancer. The European Medicines Agency product information for trastuzumab notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db. Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2017-10-23:0",
+      "type": "Contribution",
+      "description": "Indication approved for reimbursement.",
+      "date": "2017-10-23",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00433",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Dose Dense DOXOrubicin, cycloPHOSphamide (AC 60/600) 14 day followed by weekly PACLitaxel (80) and weekly Trastuzumab Therapy (DD AC-TH). NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Dose Dense DOXOrubicin, cycloPHOSphamide (AC 60/600) 14 day followed by weekly PACLitaxel (80) and weekly Trastuzumab Therapy (DD AC-TH), 2025, version number 6, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6471/433_v6_Dose_Dense_AC-TH_Weekly.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6471/433_v6_Dose_Dense_AC-TH_Weekly.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": null,
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-06-13",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:791",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C9245",
+      "conceptType": "Disease",
+      "name": "Invasive Breast Carcinoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:BRCA",
+            "code": "BRCA",
+            "name": "Invasive Breast Carcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Invasive+Breast+Carcinoma+%28BRCA%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C9245",
+        "code": "C9245",
+        "name": "Invasive Breast Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C9245"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "txgrp:164",
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": "tx:ncit:C405",
+          "conceptType": "Therapy",
+          "name": "Cyclophosphamide",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:3002",
+                "code": "3002",
+                "name": "cyclophosphamide",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3002"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1310317",
+                "code": "1310317",
+                "name": "cyclophosphamide",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1310317"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Alkylating chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C405",
+            "code": "C405",
+            "name": "Cyclophosphamide",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C405"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C456",
+          "conceptType": "Therapy",
+          "name": "Doxorubicin",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:3639",
+                "code": "3639",
+                "name": "doxorubicin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3639"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1338512",
+                "code": "1338512",
+                "name": "doxorubicin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1338512"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Topoisomerase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C456",
+            "code": "C456",
+            "name": "Doxorubicin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C456"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C1411",
+          "conceptType": "Therapy",
+          "name": "Paclitaxel",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:56946",
+                "code": "56946",
+                "name": "paclitaxel",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=56946"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1378382",
+                "code": "1378382",
+                "name": "paclitaxel",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1378382"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Taxane-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C1411",
+            "code": "C1411",
+            "name": "Paclitaxel",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1411"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C1647",
+          "conceptType": "Therapy",
+          "name": "Trastuzumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:224905",
+                "code": "224905",
+                "name": "trastuzumab",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1387104",
+                "code": "1387104",
+                "name": "trastuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1387104"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "HER2 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C1647",
+            "code": "C1647",
+            "name": "Trastuzumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+            ]
+          }
+        }
+      ]
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:20",
+            "present": true,
+            "subject": {
+              "id": "bmkr:20",
+              "type": "CategoricalVariant",
+              "name": "HER2-positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00433:b",
+        "type": "Indication",
+        "description": "Neoadjuvant Treatment of HER2 positive, High Risk Node Negative or Node Positive Breast Cancer.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:2",
+            "type": "Contribution",
+            "description": "Initial curation of this indication into moalmanac-db. Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2017-10-23:0",
+            "type": "Contribution",
+            "description": "Indication approved for reimbursement.",
+            "date": "2017-10-23",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00433",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Dose Dense DOXOrubicin, cycloPHOSphamide (AC 60/600) 14 day followed by weekly PACLitaxel (80) and weekly Trastuzumab Therapy (DD AC-TH). NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Dose Dense DOXOrubicin, cycloPHOSphamide (AC 60/600) 14 day followed by weekly PACLitaxel (80) and weekly Trastuzumab Therapy (DD AC-TH), 2025, version number 6, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6471/433_v6_Dose_Dense_AC-TH_Weekly.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6471/433_v6_Dose_Dense_AC-TH_Weekly.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": null,
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": null,
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-06-13",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "regulatory_identifier",
+                "value": null,
+                "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "N/A",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}
