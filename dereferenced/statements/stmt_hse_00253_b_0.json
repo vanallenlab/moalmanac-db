@@ -4,6 +4,19 @@
   "description": "The Republic of Ireland's Health Service Executive (HSE) has approved tamoxifen for reimbursement as a treatment option for estrogen receptor positive advanced breast cancer in pre- or post-menopausal women.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-03:3",
+      "type": "Contribution",
+      "description": "Status changed from Withdrawn to Approved. The NCCP regimen lists the reimbursement status as N/A; availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
       "description": "Adding HSE approvals for reimbursement to database",
@@ -88,7 +101,7 @@
         },
         {
           "name": "status",
-          "value": "Deprecated",
+          "value": "Active",
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
@@ -257,7 +270,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Deprecated",
+      "value": "Active",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {
@@ -267,6 +280,19 @@
         "type": "Indication",
         "description": "Treatment of oestrogen receptor positive advanced breast cancer in pre- or post-menopausal women.",
         "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:3",
+            "type": "Contribution",
+            "description": "Status changed from Withdrawn to Approved. The NCCP regimen lists the reimbursement status as N/A; availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
           {
             "id": "ctrb:vanallenlab:2024-01-16:0",
             "type": "Contribution",
@@ -352,7 +378,7 @@
               },
               {
                 "name": "status",
-                "value": "Deprecated",
+                "value": "Active",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]
@@ -361,7 +387,7 @@
         "extensions": [
           {
             "name": "status",
-            "value": "Withdrawn",
+            "value": "Approved",
             "description": "Current approval status."
           },
           {
@@ -371,7 +397,7 @@
           },
           {
             "name": "reimbursement_comment",
-            "value": null,
+            "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
             "description": "More details about the current reimbursement scheme(s)."
           }
         ]
