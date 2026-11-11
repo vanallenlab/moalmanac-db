@@ -127,6 +127,8 @@ def test_status_approved_or_accelerated_indication_has_active_statement(data):
     least one Active statement. Indications with no linked statements at all (e.g. a
     regulatory approval that has not yet been curated into a knowledge claim) are outside
     the scope of this check; those are surfaced as a warning instead of a failure.
+    Indications with `requires_biomarker` false are expected to have no statements, so
+    they are left out of the warning.
     """
     unlinked_indication_ids = []
     for indication in data["indications"]:
@@ -136,7 +138,8 @@ def test_status_approved_or_accelerated_indication_has_active_statement(data):
             records=data["statements"], key="indication_id", value=indication["id"]
         )
         if not statements:
-            unlinked_indication_ids.append(indication["id"])
+            if indication["requires_biomarker"]:
+                unlinked_indication_ids.append(indication["id"])
             continue
         if not any(s.get("status") == "Active" for s in statements):
             error_message = (
