@@ -1,0 +1,123 @@
+{
+  "id": "ind:ema:blincyto:7",
+  "type": "Indication",
+  "description": "BLINCYTO is indicated for the treatment of adults with Philadelphia chromosome negative relapsed or refractory B-precursor acute lymphoblastic leukaemia (ALL).",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-12:0",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db.",
+      "date": "2026-11-12",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:ema:2020-12-22:1",
+      "type": "Contribution",
+      "description": "Indication has been superseded by another approval from the European Commission.",
+      "date": "2020-12-22",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    },
+    {
+      "id": "ctrb:ema:2015-11-23:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2015-11-23",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:ema:blincyto",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Blincyto (blinatumomab) [product information]. EMA.",
+      "title": null,
+      "aliases": [],
+      "description": "Amgen Europe B.V. Blincyto (blinatumomab) [product information]. European Medicines Agency website. https://www.ema.europa.eu/en/documents/product-information/blincyto-epar-product-information_en.pdf. Revised July 2025. Accessed August 29, 2025.",
+      "urls": [
+        "https://www.ema.europa.eu/en/documents/product-information/blincyto-epar-product-information_en.pdf",
+        "https://www.ema.europa.eu/en/medicines/human/EPAR/blincyto"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:ema",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "European Medicines Agency",
+            "description": "Regulatory agency that approves medicines for use in the European Union."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Amgen Europe B.V.",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Blincyto",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "blinatumomab",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2015-12-07",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-07-23",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Superseded",
+      "description": "Current approval status."
+    },
+    {
+      "name": "statement description",
+      "value": "The European Medicines Agency (EMA) has authorized blinatumomab for the treatment of adult patients with Philadelphia chromosome negative relapsed or refractory B-precursor acute lymphoblastic leukemia (ALL).",
+      "description": "The description text for all Statements derived from this Indication."
+    }
+  ]
+}
