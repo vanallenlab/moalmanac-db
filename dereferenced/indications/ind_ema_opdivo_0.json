@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized nivolumab in combination with ipilimumab and 2 cycles of platinum-based chemotherapy for the first-line treatment of adult patients with metastatic non-small cell lung cancer whose tumors have no sensitizing EGFR mutations or ALK translocations. This indication is based on CA2099LA, a phase 3, randomized, and open-label study in which the platinum-based chemotherapy was either carboplatin and pemetrexed or cisplatin and pemetrexed for non-squamous NSCLC, or carboplatin and paclitaxel for squamous NSCLC.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

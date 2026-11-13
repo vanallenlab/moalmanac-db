@@ -1,0 +1,611 @@
+{
+  "id": "stmt:hse:00395:a:0",
+  "type": "Statement",
+  "description": "Ireland's Health Service Executive (HSE) has approved dexamethasone, cytarabine, and cisplatin (DHAP) as available to patients within the public health system as a treatment option for the treatment of patients with relapsed non-Hodgkin lymphoma. The treatment regimen notes that rituximab is to be included for CD20 positive patients.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-04:0",
+      "type": "Contribution",
+      "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+      "date": "2026-11-04",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:1",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2017-06-27:0",
+      "type": "Contribution",
+      "description": "Indication approved for use within the public health system.",
+      "date": "2017-06-27",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00395",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "(R*)-DHAP Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "(R*)-DHAP Therapy, 2025, version number 3b, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6370/395_v3b_R-DHAP.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6370/395_v3b_R-DHAP.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": null,
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2017-06-27",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-09-03",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:998",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C3211",
+      "conceptType": "Disease",
+      "name": "Non-Hodgkin Lymphoma",
+      "mappings": [
+        {
+          "relation": "exactMatch",
+          "coding": {
+            "id": "coding:oncotree:NHL",
+            "code": "NHL",
+            "name": "Non-Hodgkin Lymphoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Non-Hodgkin+Lymphoma+%28NHL%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": false,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C3211",
+        "code": "C3211",
+        "name": "Non-Hodgkin Lymphoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C3211"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "txgrp:226",
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": "tx:ncit:C1702",
+          "conceptType": "Therapy",
+          "name": "Rituximab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:121191",
+                "code": "121191",
+                "name": "rituximab",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=121191"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1314273",
+                "code": "1314273",
+                "name": "rituximab",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1314273"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "CD20 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Immunotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C1702",
+            "code": "C1702",
+            "name": "Rituximab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1702"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C376",
+          "conceptType": "Therapy",
+          "name": "Cisplatin",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:2555",
+                "code": "2555",
+                "name": "cisplatin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=2555"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1397599",
+                "code": "1397599",
+                "name": "cisplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1397599"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Platinum-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C376",
+            "code": "C376",
+            "name": "Cisplatin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C376"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C408",
+          "conceptType": "Therapy",
+          "name": "Cytarabine",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:3041",
+                "code": "3041",
+                "name": "cytarabine",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3041"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1311078",
+                "code": "1311078",
+                "name": "cytarabine",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1311078"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "DNA Polymerase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C408",
+            "code": "C408",
+            "name": "Cytarabine",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C408"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C422",
+          "conceptType": "Therapy",
+          "name": "Dexamethasone",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:3264",
+                "code": "3264",
+                "name": "dexamethasone",
+                "system": "RxNorm",
+                "systemVersion": "02-Mar-2026",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=3264"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1518254",
+                "code": "1518254",
+                "name": "dexamethasone",
+                "system": "OMOP",
+                "systemVersion": "v20260227",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1518254"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Corticosteroid"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C422",
+            "code": "C422",
+            "name": "Dexamethasone",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C422"
+            ]
+          }
+        }
+      ]
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:54",
+            "present": true,
+            "subject": {
+              "id": "bmkr:54",
+              "type": "CategoricalVariant",
+              "name": "CD20 +",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "CD20"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00395:a",
+        "type": "Indication",
+        "description": "Treatment of relapsed Non Hodgkin Lymphoma. Rituximab to be included in CD20 positive patients.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-11-04:0",
+            "type": "Contribution",
+            "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+            "date": "2026-11-04",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:2",
+            "type": "Contribution",
+            "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:1",
+            "type": "Contribution",
+            "description": "Initial curation of this indication into moalmanac-db.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2017-06-27:0",
+            "type": "Contribution",
+            "description": "Indication approved for use within the public health system.",
+            "date": "2017-06-27",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00395",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "(R*)-DHAP Therapy. NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "(R*)-DHAP Therapy, 2025, version number 3b, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6370/395_v3b_R-DHAP.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6370/395_v3b_R-DHAP.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": null,
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2017-06-27",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-09-03",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "regulatory_identifier",
+                "value": null,
+                "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "N/A",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

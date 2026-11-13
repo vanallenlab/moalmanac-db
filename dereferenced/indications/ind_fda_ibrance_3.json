@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to palbociclib in combination with trastuzumab, with or without pertuzumab, and endocrine therapy for the maintenance treatment of adult patients with hormone receptor-positive, human epidermal growth factor receptor 2-positive locally advanced or metastatic breast cancer following induction treatment. This indication is based on PATINA (NCT02947685), a randomized, open-label trial in which endocrine therapy consisted of either fulvestrant or aromatase inhibitors (anastrozole, letrozole, or exemestane).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

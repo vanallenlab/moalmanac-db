@@ -4,9 +4,48 @@
   "description": "HER2 positive early breast cancer (EBC).",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-08:0",
+      "type": "Contribution",
+      "description": "HSE approval date set to the version 1 date (2014-02-10): the indication is present on 2015-04-21 (https://web.archive.org/web/20150421034855/http://www.hse.ie/eng/services/list/5/cancer/profinfo/chemoprotocols/breast/), before version 2 of this treatment regimen was published, which means that 00200:b was published alongside 00200:a in version 1 of this treatment regimen.",
+      "date": "2026-11-08",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:3",
+      "type": "Contribution",
+      "description": "Status changed from Withdrawn to Approved. The NCCP regimen lists the reimbursement status as N/A.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -14,6 +53,19 @@
         "agentType": "contributor",
         "name": "Van Allen lab",
         "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2014-02-10:0",
+      "type": "Contribution",
+      "description": "Indication approved for use within the public health system.",
+      "date": "2014-02-10",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
       }
     }
   ],
@@ -60,7 +112,7 @@
         },
         {
           "name": "first_publication_date",
-          "value": null,
+          "value": "2014-02-10",
           "description": "The publication date for the initial version of this document."
         },
         {
@@ -75,7 +127,7 @@
         },
         {
           "name": "status",
-          "value": "Deprecated",
+          "value": "Active",
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
@@ -84,13 +136,18 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Withdrawn",
+      "value": "Approved",
       "description": "Current approval status."
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved trastuzumab (IV) for reimbursement as a monotherapy treatment option for the treatment of patients with HER2 positive early breast cancer.",
+      "value": "Ireland's Health Service Executive (HSE) has approved trastuzumab (IV) as available to patients within the public health system as a monotherapy treatment option for the treatment of patients with HER2 positive early breast cancer.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     },
     {
       "name": "reimbursement_scheme",
@@ -99,7 +156,7 @@
     },
     {
       "name": "reimbursement_comment",
-      "value": null,
+      "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
       "description": "More details about the current reimbursement scheme(s)."
     }
   ]

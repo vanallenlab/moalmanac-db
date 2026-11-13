@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2026-08-02:0",
       "type": "Contribution",
-      "description": "Initial curation of into moalmanac-db",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2026-08-02",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +19,7 @@
     {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -32,7 +32,7 @@
     {
       "id": "ctrb:hse:2014-01-01:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2014-01-01",
       "contributor": {
         "id": "agent:org:hse",
@@ -115,8 +115,13 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved bosutinib for reimbursement as a treatment option for the treatment of adult patients with chronic phase (CP), accelerated phase (AP), and blast phase (BP) Philadelphia chromosome positive chronic myelogenous leukemia (Ph+ CML) previously treated with one or more tyrosine kinase inhibitor(s) and for whom imatinib, nilotonib, and dasatinib are not considered appropriate treatment options.",
+      "value": "Ireland's Health Service Executive (HSE) has approved bosutinib as available to patients within the public health system as a treatment option for the treatment of adult patients with chronic phase (CP), accelerated phase (AP), and blast phase (BP) Philadelphia chromosome positive chronic myelogenous leukemia (Ph+ CML) previously treated with one or more tyrosine kinase inhibitor(s) and for whom imatinib, nilotonib, and dasatinib are not considered appropriate treatment options.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     },
     {
       "name": "reimbursement_scheme",

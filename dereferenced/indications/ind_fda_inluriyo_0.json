@@ -4,9 +4,9 @@
   "description": "INLURIYO is an estrogen receptor antagonist indicated for treatment of adults with ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer with disease progression following at least one line of endocrine therapy.",
   "contributions": [
     {
-      "id": "ctrb:vanallenlab:2025-10-02:1",
+      "id": "ctrb:vanallenlab:2025-10-02:0",
       "type": "Contribution",
-      "description": "On 2025-09-25, the US FDA granted approval to Inluriyo (imlunestrant) for the treatment of adult patients with ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer with disease progression following at least one line of endocrine therapy.",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2025-10-02",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration (FDA) granted approval to imlunestrant for the treatment of adult patients with ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer with disease progression following at least one line of endocrine therapy.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

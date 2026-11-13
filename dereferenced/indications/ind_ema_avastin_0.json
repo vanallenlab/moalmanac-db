@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized bevacizumab in combination with erlotinib for the first-line treatment of adult patients with unresectable advanced, metastatic, or recurrent non-squamous non-small cell lung cancer with Epidermal Growth Factor Receptor (EGFR) activating variants. This indication is based on JO25567, a randomized, open-label, multi-centre phase 2 study that defined EGFR activating variants as either exon 19 deletions or exon 21 p.L858R.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

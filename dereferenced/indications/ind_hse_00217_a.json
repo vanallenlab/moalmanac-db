@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2026-08-02:0",
       "type": "Contribution",
-      "description": "Initial curation of into moalmanac-db",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2026-08-02",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +19,7 @@
     {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -32,7 +32,7 @@
     {
       "id": "ctrb:hse:2015-01-10:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2015-01-10",
       "contributor": {
         "id": "agent:org:hse",
@@ -115,8 +115,13 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved lapatinib in combination with capecitabine for reimbursement as a treatment option for the treatment of adult patients with advanced or metastatic breast cancer whose tumors overexpress HER2 with disease progression following prior therapy, which should have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting. The European Medicine Agency product information sheet for lapatinib defines HER2 (ErbB2) overexpressing tumors as IHC3+, or IHC2+ with gene amplification or gene amplification alone.",
+      "value": "Ireland's Health Service Executive (HSE) has approved lapatinib in combination with capecitabine as available to patients within the public health system as a treatment option for the treatment of adult patients with advanced or metastatic breast cancer whose tumors overexpress HER2 with disease progression following prior therapy, which should have included anthracyclines and taxanes and therapy with trastuzumab in the metastatic setting. The European Medicine Agency product information sheet for lapatinib defines HER2 (ErbB2) overexpressing tumors as IHC3+, or IHC2+ with gene amplification or gene amplification alone.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     },
     {
       "name": "reimbursement_scheme",

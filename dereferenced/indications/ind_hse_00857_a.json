@@ -6,7 +6,7 @@
     {
       "id": "ctrb:hse:2024-06-01:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2024-06-01",
       "contributor": {
         "id": "agent:org:hse",
@@ -19,7 +19,7 @@
     {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -102,8 +102,13 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved pembrolizumab 200mg in combination with carboplatin (AUC 5) and weekly paclitaxel 80mg/m^2 followed by doxorubicin and cyclophosphamide (AC 60/600) for reimbursement as a treatment option for the neoadjuvant treatment, and then pembrolizumab as a monotherapy treatment as an adjuvant treatment after surgery, of locally advanced or early stage triple negative breast cancer at high risk of recurrence in adult patients.",
+      "value": "Ireland's Health Service Executive (HSE) has approved pembrolizumab 200mg in combination with carboplatin (AUC 5) and weekly paclitaxel 80mg/m^2 followed by doxorubicin and cyclophosphamide (AC 60/600) as available to patients within the public health system as a treatment option for the neoadjuvant treatment, and then pembrolizumab as a monotherapy treatment as an adjuvant treatment after surgery, of locally advanced or early stage triple negative breast cancer at high risk of recurrence in adult patients.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     },
     {
       "name": "reimbursement_scheme",

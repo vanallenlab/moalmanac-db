@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized tislelizumab in combination with pemetrexed and platinum-containing chemotherapy for the first-line treatment of adult patients with non-squamous non-small cell lung cancer (NSCLC) whose tumors have PD-L1 expression >= 50% of tumor cells with no EGFR or ALK positive mutations and who have either (i) locally advanced NSCLC and are not candidates for surgical resection or platinum-based chemoradiation, or (ii) metastatic NSCLC. This indication is based on BGB-A317-304, a randomized, open-label, and multicenter phase 3 study where patients were randomized (2:1) to receive tislelizumab in combination with pemetrexed and carboplatin or cisplatin (n=223) or pemetrexed and carboplatin or cisplatin (n=111), where the choice of platinum (cisplatin or carboplatin) was the investigator's choice. Tislelizumab's product information further states that the study excluded patients with active brain or leptomeningeal metastases, known EGFR mutations or ALK translocations sensitive to available targeted inhibitor therapy, active autoimmune disease, or any condition requiring systemic treatment with either corticosteroids or other immunosuppressants.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

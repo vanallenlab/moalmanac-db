@@ -35,7 +35,6 @@ If you are unsure whether a change is wanted, open an Issue first so it can be d
 | `utils/` | Scripts for dereferencing, reading, and writing the database, and for generating VRS records. See [utils/README.md](./utils/README.md). |
 | `datasources/` | Third-party reference files (for example, OncoTree and NCI Thesaurus) used to build and check records. See [datasources/README.md](./datasources/README.md). |
 | `docs/` | Documentation, including the curation [standard operating procedure](./docs/sop.md). |
-| `moalmanac-draft.dereferenced.json` | Single dereferenced database file generated from `referenced/`. Do not edit by hand. |
 
 The database is being migrated from the legacy schema to a relational schema aligned with [GA4GH VA-Spec](https://github.com/ga4gh/va-spec) and [Cat-VRS](https://github.com/ga4gh/cat-vrs). New work should target the relational schema in `referenced/`.
 

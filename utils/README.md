@@ -35,7 +35,6 @@ Optional arguments:
     --therapies       <string>    referenced JSON for therapies. Default: referenced/therapies.json
     --therapy-groups  <string>    referenced JSON for therapy groups. Default: referenced/therapy_groups.json
     --urls            <string>    referenced JSON for urls. Default: referenced/urls.json
-    --output          <string>    file path for dereferenced JSON output by this script. Default: moalmanac-draft.dereferenced.json
     --clear           <boolean>   remove currently dereferenced entity files in dereferenced/ folder. Default: False.
     --quiet           <boolean>   suppress print statements when writing dereferenced entity files to dereferenced/ folder. Default: False.
 ```
@@ -69,7 +68,6 @@ python -m utils.dereference \
   --therapies referenced/therapies.json \
   --therapy-groups referenced/therapy-groups.json \
   --urls referenced/urls.json \
-  --output  moalmanac-draft.dereferenced.json \
   --clear
 ```
 

@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-30:0",
       "type": "Contribution",
-      "description": "Initial access of FDA approvals",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-30",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved trastuzumab in combination with docetaxel and carboplatin for the treatment of early stage breast cancer patients with ECOG 0-1 status, whose tumors overexpress HER2.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

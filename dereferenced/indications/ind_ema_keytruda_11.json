@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with chemotherapy for the treatment of adult patients with locally recurrent unresectable or metastatic triple-negative breast cancer whose tumors express PD-L1 with a combined positive score (CPS) >= 10 and who have not received prior chemotherapy for metastatic disease. This indication is based on KEYNOTE-355, a phase 3, randomizewd, double-blind, multi-center, placebo-controlled study where the efficacy of pembrolizumab in combination with: (i) paclitaxel, (ii) nab-paclitaxel, or (iii) gemcitabine and carboplatin were investigated for the treatment of patients with TNBC who were previously untreated for metastatic disease.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

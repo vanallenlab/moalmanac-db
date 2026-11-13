@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2025-06-12:0",
       "type": "Contribution",
-      "description": "The FDA provided regular approval to taletrectinib for the treatment of patients with ROS1 positive non-small cell lung cancer, accelerated approval to telisotuzumab vedotin-tllv for the treatment of patients with non-squamous non-small cell lung cancer with high c-Met expression, and avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer.",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2025-06-12",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration (FDA) granted accelerated approval to avutometinib in combination with defactinib (Avmapki Fakzynja co-pack) for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. The package insert notes that this indication is approved under accelerated approval based on tumor response rate and duration of response. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial. This approval is based on RAMP-201 (NCT04625270), an open-label, multicenter study that included 57 adult patients with measurable KRAS-mutated recurrent LGSOC. The KRAS mutations identified by local testing were G12V (53%), G12D (35%), Q61H (3.5%), G12C (1.8%), G12R (1.8%), A146V (1.8%), and mutations not otherwise specified at G12x (1.8%) and on codon 12/13 (1.8%). 44% of patients responded (3.5% with complete response, 40% with partial response), and the package insert notes that the tumor KRAS mutations observed in the 25 responders were A146V, G12D, G12R, G12V, and Q61H.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

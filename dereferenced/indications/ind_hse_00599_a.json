@@ -4,9 +4,22 @@
   "description": "Maintenance therapy for the treatment of relapsed/refractory follicular CD20 positive, B-cell Non Hodgkin Lymphoma (NHL) in patients who have responded to induction therapy.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-04:0",
+      "type": "Contribution",
+      "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+      "date": "2026-11-04",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +32,7 @@
     {
       "id": "ctrb:hse:2021-03-09:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2021-03-09",
       "contributor": {
         "id": "agent:org:hse",
@@ -102,8 +115,13 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved rituximab (S/C 1400 mg) (84 day) for reimbursement as a treatment option for the maintenance treatment of relapsed / refractory follicular CD20 positive, B-cell Non Hodgkin Lymphoma patients who have responded to induction therapy.",
+      "value": "Ireland's Health Service Executive (HSE) has approved rituximab (S/C 1400 mg) (84 day) as available to patients within the public health system as a treatment option for the maintenance treatment of relapsed / refractory follicular CD20 positive, B-cell Non Hodgkin Lymphoma patients who have responded to induction therapy.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     },
     {
       "name": "reimbursement_scheme",

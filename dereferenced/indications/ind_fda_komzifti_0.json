@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2025-12-23:1",
       "type": "Contribution",
-      "description": "On 2025-11-13, the US FDA granted regular approval to ziftomenib for the treatment of patients with relapsed or refractory acute myeloid leukemia (AML) with susceptible NPM1 mutation who have no satisfactory alternative treatment options.",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2025-12-23",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration (FDA) granted approval to ziftomenib for the treatment of adult patients with relapsed or refractory acute myeloid leukemia (AML) with a susceptible nucleophosmin 1 (NPM1) mutation who have no satisfactory alternative treatment options. This approval is based on NCT04067336, an open-label, single-arm, multicenter clinical trial of 112 patients where eligibility criteria included NPM1 mutations, including Type A (c.860_863dupTCTG), B (c.863_864insCATG), and D (c.863_864insCCTG) mutations and other NPM1 mutations likely to result in cytoplasmic localization of the NPM1 protein.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

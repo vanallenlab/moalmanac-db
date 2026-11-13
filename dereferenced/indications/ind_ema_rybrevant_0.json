@@ -4,22 +4,9 @@
   "description": "Rybrevant is indicated in combination with carboplatin and pemetrexed for the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC) with activating EGFR Exon 20 insertion mutations.",
   "contributions": [
     {
-      "id": "ctrb:ema:2025-04-04:0",
-      "type": "Contribution",
-      "description": "Indication received approval from the European Commission.",
-      "date": "2025-04-04",
-      "contributor": {
-        "id": "agent:org:ema",
-        "type": "Agent",
-        "agentType": "organization",
-        "name": "European Medicines Agency",
-        "description": "Regulatory agency that approves medicines for use in the European Union."
-      }
-    },
-    {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -27,6 +14,19 @@
         "agentType": "contributor",
         "name": "Van Allen lab",
         "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:ema:2024-06-27:0",
+      "type": "Contribution",
+      "description": "Indication received approval from the European Commission.",
+      "date": "2024-06-27",
+      "contributor": {
+        "id": "agent:org:ema",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "European Medicines Agency",
+        "description": "Regulatory agency that approves medicines for use in the European Union."
       }
     }
   ],
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized amivantamab in combination with carboplatin and pemetrexed for the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC) with activating EGFR Exon 20 insertion mutations.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

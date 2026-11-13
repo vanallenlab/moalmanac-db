@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-30:0",
       "type": "Contribution",
-      "description": "Initial access of FDA approvals",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-30",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to rituximab for the treatment of adult patients with previously untreated follicular, CD20-positive, B-cell Non-Hodgkin's Lymphoma (NHL) in combination with first line chemotherapy and, in patients achieving a complete or partial response to a rituximab product in combination with chemotherapy, as single-agent maintenance therapy. This indication is based on 3 randomized, controlled trials that enrolled 1,662 patients where patients received either CVP (cyclophosphamide, vincristine, and prednisolone), CHOP (cyclophosphamide, doxorubicin, vincristine, and prednisolone), or FCM (cyclophosphamide, fludarabine, mitoxantrone).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

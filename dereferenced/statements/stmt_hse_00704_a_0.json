@@ -1,0 +1,554 @@
+{
+  "id": "stmt:hse:00704:a:0",
+  "type": "Statement",
+  "description": "Ireland's Health Service Executive (HSE) has approved trastuzumab in combination with modified FOLFOX-6 (14 days) as available to patients within the public health system as a treatment option for the treatment of adult patients with HER2 positive metastatic gastric or gastroesophageal junction cancer. The European Medicines Agency product information for trastuzumab notes that trastuzumab should only be used in patients with metastatic gastric cancer whose tumors have HER2 overexpression as defined by IHC2+ and a confirmatory SISH or FISH result, or by an IHC3+ result.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-04:0",
+      "type": "Contribution",
+      "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+      "date": "2026-11-04",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:1",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2022-03-23:0",
+      "type": "Contribution",
+      "description": "Indication approved for use within the public health system.",
+      "date": "2022-03-23",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00704",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Trastuzumab and FOLFOX-6 Modified Therapy (14 day). NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "Trastuzumab and FOLFOX-6 Modified Therapy (14 day), 2025, version number 3a, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6534/704_v3a_Trastuzumab_FOLFOX6_Modified.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6534/704_v3a_Trastuzumab_FOLFOX6_Modified.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": null,
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2022-03-23",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-03-13",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "direction": "supports",
+  "proposition": {
+    "id": "prop:vtxr:1001",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsSensitivityTo",
+    "subjectVariant": {
+      "type": "CategoricalVariant",
+      "description": "Placeholder. Cat-VRS does not yet support sets of categorical variants. See the 'biomarkers' extension for biomarkers associated with this Proposition."
+    },
+    "conditionQualifier": {
+      "id": "dis:ncit:C203675",
+      "conceptType": "Disease",
+      "name": "Esophagogastric Adenocarcinoma",
+      "mappings": [
+        {
+          "relation": "broadMatch",
+          "coding": {
+            "id": "coding:oncotree:EGC",
+            "code": "EGC",
+            "name": "Esophagogastric Adenocarcinoma",
+            "system": "https://oncotree.mskcc.org",
+            "systemVersion": "oncotree_2025_10_03",
+            "iris": [
+              "https://oncotree.mskcc.org/?version=oncotree_2025_10_03&field=NAME&search=Esophagogastric+Adenocarcinoma+%28EGC%29"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "solid_tumor",
+          "value": true,
+          "description": "Boolean value for if this tumor type is categorized as a solid tumor."
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C203675",
+        "code": "C203675",
+        "name": "Gastroesophageal Junction Carcinoma",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C203675"
+        ]
+      }
+    },
+    "objectTherapeutic": {
+      "id": "txgrp:228",
+      "membershipOperator": "AND",
+      "therapies": [
+        {
+          "id": "tx:ncit:C1181",
+          "conceptType": "Therapy",
+          "name": "Oxaliplatin",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:32592",
+                "code": "32592",
+                "name": "oxaliplatin",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=32592"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1318011",
+                "code": "1318011",
+                "name": "oxaliplatin",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1318011"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Platinum-based chemotherapy"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C1181",
+            "code": "C1181",
+            "name": "Oxaliplatin",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1181"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C1647",
+          "conceptType": "Therapy",
+          "name": "Trastuzumab",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:224905",
+                "code": "224905",
+                "name": "trastuzumab",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=224905"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:1387104",
+                "code": "1387104",
+                "name": "trastuzumab",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/1387104"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "HER2 inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Targeted therapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C1647",
+            "code": "C1647",
+            "name": "Trastuzumab",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C1647"
+            ]
+          }
+        },
+        {
+          "id": "tx:ncit:C505",
+          "conceptType": "Therapy",
+          "name": "Fluorouracil",
+          "mappings": [
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:rxcui:4492",
+                "code": "4492",
+                "name": "fluorouracil",
+                "system": "RxNorm",
+                "systemVersion": "20250602",
+                "iris": [
+                  "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=4492"
+                ]
+              }
+            },
+            {
+              "relation": "relatedMatch",
+              "coding": {
+                "id": "coding:omop:955632",
+                "code": "955632",
+                "name": "fluorouracil",
+                "system": "OMOP",
+                "systemVersion": "v20250827",
+                "iris": [
+                  "https://athena.ohdsi.org/search-terms/terms/955632"
+                ]
+              }
+            }
+          ],
+          "extensions": [
+            {
+              "name": "therapy_strategy",
+              "value": [
+                "Thymidylate synthase inhibition"
+              ],
+              "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+            },
+            {
+              "name": "therapy_type",
+              "value": "Chemotherapy",
+              "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+            }
+          ],
+          "primaryCoding": {
+            "id": "coding:ncit:C505",
+            "code": "C505",
+            "name": "Fluorouracil",
+            "system": "https://evsexplore.semantics.cancer.gov",
+            "systemVersion": "26.08e",
+            "iris": [
+              "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C505"
+            ]
+          }
+        }
+      ]
+    },
+    "extensions": [
+      {
+        "name": "biomarkers",
+        "value": [
+          {
+            "id": "bmkr.criterion:20",
+            "present": true,
+            "subject": {
+              "id": "bmkr:20",
+              "type": "CategoricalVariant",
+              "name": "HER2-positive",
+              "constraints": [],
+              "extensions": [
+                {
+                  "name": "biomarker_type",
+                  "value": "Protein expression"
+                },
+                {
+                  "name": "marker",
+                  "value": "Human epidermal growth factor receptor 2 (HER2)"
+                },
+                {
+                  "name": "unit",
+                  "value": "status"
+                },
+                {
+                  "name": "equality",
+                  "value": "="
+                },
+                {
+                  "name": "value",
+                  "value": "Positive"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "The biomarkers associated with this Proposition, each with a `present` flag indicating if the biomarker is present (true) or absent (false). Multiple biomarkers are combined with implied AND logic."
+      }
+    ]
+  },
+  "strength": {
+    "id": "str:ncit:C25425",
+    "conceptType": "Evidence",
+    "name": "Approval",
+    "mappings": [],
+    "primaryCoding": {
+      "id": "coding:ncit:C25425",
+      "code": "C25425",
+      "name": "Approval",
+      "system": "https://evsexplore.semantics.cancer.gov",
+      "systemVersion": "26.08e",
+      "iris": [
+        "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C25425"
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Active",
+      "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
+    },
+    {
+      "name": "indication",
+      "value": {
+        "id": "ind:hse:00704:a",
+        "type": "Indication",
+        "description": "Treatment of adult patients with HER2 positive metastatic gastric or gastroesophageal junction cancer.",
+        "contributions": [
+          {
+            "id": "ctrb:vanallenlab:2026-11-04:0",
+            "type": "Contribution",
+            "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+            "date": "2026-11-04",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:2",
+            "type": "Contribution",
+            "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:1",
+            "type": "Contribution",
+            "description": "Initial curation of this indication into moalmanac-db.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:hse:2022-03-23:0",
+            "type": "Contribution",
+            "description": "Indication approved for use within the public health system.",
+            "date": "2022-03-23",
+            "contributor": {
+              "id": "agent:org:hse",
+              "type": "Agent",
+              "agentType": "organization",
+              "name": "Health Service Executive",
+              "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+            }
+          }
+        ],
+        "reportedIn": [
+          {
+            "id": "doc:hse:00704",
+            "type": "Document",
+            "documentType": "Regulatory approval",
+            "name": "Trastuzumab and FOLFOX-6 Modified Therapy (14 day). NCCP National SACT Regimen. HSE.",
+            "title": null,
+            "aliases": [],
+            "description": "Trastuzumab and FOLFOX-6 Modified Therapy (14 day), 2025, version number 3a, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6534/704_v3a_Trastuzumab_FOLFOX6_Modified.pdf",
+            "urls": [
+              "https://healthservice.hse.ie/documents/6534/704_v3a_Trastuzumab_FOLFOX6_Modified.pdf"
+            ],
+            "doi": null,
+            "pmid": null,
+            "extensions": [
+              {
+                "name": "agent",
+                "value": {
+                  "id": "agent:org:hse",
+                  "type": "Agent",
+                  "agentType": "organization",
+                  "name": "Health Service Executive",
+                  "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+                },
+                "description": "The organization that published this document."
+              },
+              {
+                "name": "company",
+                "value": null,
+                "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_brand",
+                "value": null,
+                "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "drug_name_generic",
+                "value": null,
+                "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+              },
+              {
+                "name": "first_publication_date",
+                "value": "2022-03-23",
+                "description": "The publication date for the initial version of this document."
+              },
+              {
+                "name": "publication_date",
+                "value": "2025-03-13",
+                "description": "The publication date for the document."
+              },
+              {
+                "name": "regulatory_identifier",
+                "value": null,
+                "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+              },
+              {
+                "name": "status",
+                "value": "Active",
+                "description": "Whether this document is Active or Deprecated within moalmanac-db."
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "name": "status",
+            "value": "Approved",
+            "description": "Current approval status."
+          },
+          {
+            "name": "reimbursement_scheme",
+            "value": "N/A",
+            "description": "Current scheme used to reimburse indication."
+          },
+          {
+            "name": "reimbursement_comment",
+            "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
+            "description": "More details about the current reimbursement scheme(s)."
+          }
+        ]
+      },
+      "description": "The underlying Indication supporting this Statement."
+    }
+  ]
+}

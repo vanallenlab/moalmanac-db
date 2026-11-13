@@ -1,0 +1,293 @@
+{
+  "id": "txgrp:241",
+  "membershipOperator": "AND",
+  "therapies": [
+    {
+      "id": "tx:ncit:C195",
+      "conceptType": "Therapy",
+      "name": "Mercaptopurine",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:103",
+            "code": "103",
+            "name": "mercaptopurine",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=103"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1436650",
+            "code": "1436650",
+            "name": "mercaptopurine",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1436650"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Antimetabolite"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C195",
+        "code": "C195",
+        "name": "Mercaptopurine",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C195"
+        ]
+      }
+    },
+    {
+      "id": "tx:ncit:C62035",
+      "conceptType": "Therapy",
+      "name": "Imatinib",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:282388",
+            "code": "282388",
+            "name": "imatinib",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=282388"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1304107",
+            "code": "1304107",
+            "name": "imatinib",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1304107"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Bcr-Abl inhibition",
+            "c-Kit inhibition",
+            "PDGF-R inhibition"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Targeted therapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C62035",
+        "code": "C62035",
+        "name": "Imatinib",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C62035"
+        ]
+      }
+    },
+    {
+      "id": "tx:ncit:C642",
+      "conceptType": "Therapy",
+      "name": "Methotrexate",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:6851",
+            "code": "6851",
+            "name": "methotrexate",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=6851"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1305058",
+            "code": "1305058",
+            "name": "methotrexate",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1305058"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Antifolate"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C642",
+        "code": "C642",
+        "name": "Methotrexate",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C642"
+        ]
+      }
+    },
+    {
+      "id": "tx:ncit:C769",
+      "conceptType": "Therapy",
+      "name": "Prednisolone",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:8638",
+            "code": "8638",
+            "name": "prednisolone",
+            "system": "RxNorm",
+            "systemVersion": "20250602",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=8638"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1550557",
+            "code": "1550557",
+            "name": "prednisolone",
+            "system": "OMOP",
+            "systemVersion": "v20250827",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1550557"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Corticosteroid"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C769",
+        "code": "C769",
+        "name": "Prednisolone",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C769"
+        ]
+      }
+    },
+    {
+      "id": "tx:ncit:C933",
+      "conceptType": "Therapy",
+      "name": "Vincristine",
+      "mappings": [
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:rxcui:11202",
+            "code": "11202",
+            "name": "vincristine",
+            "system": "RxNorm",
+            "systemVersion": "02-Mar-2026",
+            "iris": [
+              "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=11202"
+            ]
+          }
+        },
+        {
+          "relation": "relatedMatch",
+          "coding": {
+            "id": "coding:omop:1308290",
+            "code": "1308290",
+            "name": "vincristine",
+            "system": "OMOP",
+            "systemVersion": "v20260227",
+            "iris": [
+              "https://athena.ohdsi.org/search-terms/terms/1308290"
+            ]
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "therapy_strategy",
+          "value": [
+            "Vinca alkaloid chemotherapy"
+          ],
+          "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+        },
+        {
+          "name": "therapy_type",
+          "value": "Chemotherapy",
+          "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+        }
+      ],
+      "primaryCoding": {
+        "id": "coding:ncit:C933",
+        "code": "C933",
+        "name": "Vincristine",
+        "system": "https://evsexplore.semantics.cancer.gov",
+        "systemVersion": "26.08e",
+        "iris": [
+          "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C933"
+        ]
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2025-01-10:0",
       "type": "Contribution",
-      "description": "Additional FDA approvals for initial version",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2025-01-10",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration (FDA) granted accelerated approval to zenocutuzumab for the treatment of adult patients with advanced, unresectable or metastatic non-small cell lung cancer (NSCLC) harboring a neuregulin 1 (NRG1) gene fusion with disease progression on or after prior systemic therapy. The package insert notes that this indication is approved under accelerated approval based on overall response rate and duration of response and that continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial(s).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

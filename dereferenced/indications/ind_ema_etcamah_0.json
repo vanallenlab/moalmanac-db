@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2026-08-02:0",
       "type": "Contribution",
-      "description": "Initial curation of into moalmanac-db",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2026-08-02",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized camizestrant in combination with a CDK4/6 inhibitor (palbociclib, ribociclib, or abemaciclib) for the treatment of adult patients with ER-positive, HER2-negative, locally advanced or metastatic breast cancer upon detection of ESR1-mutation and without disease progression during first-line endocrine therapy in combination with a CDK4/6 inhibitor. The Product information further states that in pre- or perimenopausal women and in men, camizestrant plus a CDK4/6 inhibitor should be combined with a luteinizing hormone releasing hormone (LHRH) agonist or antagonist.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

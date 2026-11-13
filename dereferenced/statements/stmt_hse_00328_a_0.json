@@ -1,12 +1,51 @@
 {
   "id": "stmt:hse:00328:a:0",
   "type": "Statement",
-  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved cetuximab (7 days) in combination with FOLFIRI (14 days) for reimbursement as a treatment option for the treatment of adult patients with RAS wild type metastatic colorectal cancer. The European Medicine Agency's product information for Erbitux (cetuximab) defines RAS wild type as considering mutational status of KRAS and NRAS exons 2, 3, and 4, and that mutational status should be determined by an experienced laboratory using validated test methods.",
+  "description": "Ireland's Health Service Executive (HSE) has approved cetuximab (7 days) in combination with FOLFIRI (14 days) as available to patients within the public health system as a treatment option for the treatment of adult patients with RAS wild type metastatic colorectal cancer. The European Medicine Agency's product information for Erbitux (cetuximab) defines RAS wild type as considering mutational status of KRAS and NRAS exons 2, 3, and 4, and that mutational status should be determined by an experienced laboratory using validated test methods.",
   "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-04:0",
+      "type": "Contribution",
+      "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+      "date": "2026-11-04",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:3",
+      "type": "Contribution",
+      "description": "Status changed from Withdrawn to Approved. The NCCP regimen lists the reimbursement status as N/A.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
     {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +58,7 @@
     {
       "id": "ctrb:hse:2016-06-03:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2016-06-03",
       "contributor": {
         "id": "agent:org:hse",
@@ -38,9 +77,9 @@
       "name": "Cetuximab (7 days) and FOLFIRI (14 days) Therapy. NCCP National SACT Regimen. HSE.",
       "title": null,
       "aliases": [],
-      "description": "Cetuximab (7 days) and FOLFIRI (14 days) Therapy, 2026, version number 7, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/6773/328_v6b_Cetuximab_7_days_FOLFIRI_14_Days.pdf",
+      "description": "Cetuximab (7 days) and FOLFIRI (14 days) Therapy, 2026, version number 7, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/6773/328_Cetuximab_7_days_plus_FOLFIRI_14_Days.pdf",
       "urls": [
-        "https://healthservice.hse.ie/documents/6773/328_v6b_Cetuximab_7_days_FOLFIRI_14_Days.pdf"
+        "https://healthservice.hse.ie/documents/6773/328_Cetuximab_7_days_plus_FOLFIRI_14_Days.pdf"
       ],
       "doi": null,
       "pmid": null,
@@ -73,7 +112,7 @@
         },
         {
           "name": "first_publication_date",
-          "value": null,
+          "value": "2016-06-03",
           "description": "The publication date for the initial version of this document."
         },
         {
@@ -88,7 +127,7 @@
         },
         {
           "name": "status",
-          "value": "Deprecated",
+          "value": "Active",
           "description": "Whether this document is Active or Deprecated within moalmanac-db."
         }
       ]
@@ -551,7 +590,7 @@
   "extensions": [
     {
       "name": "status",
-      "value": "Deprecated",
+      "value": "Active",
       "description": "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
     },
     {
@@ -562,9 +601,48 @@
         "description": "Treatment of patients with RAS wild type metastatic colorectal cancer.",
         "contributions": [
           {
+            "id": "ctrb:vanallenlab:2026-11-04:0",
+            "type": "Contribution",
+            "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+            "date": "2026-11-04",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:3",
+            "type": "Contribution",
+            "description": "Status changed from Withdrawn to Approved. The NCCP regimen lists the reimbursement status as N/A.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:2",
+            "type": "Contribution",
+            "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
             "id": "ctrb:vanallenlab:2024-01-16:0",
             "type": "Contribution",
-            "description": "Adding HSE approvals for reimbursement to database",
+            "description": "Initial curation of this indication into moalmanac-db.",
             "date": "2024-01-16",
             "contributor": {
               "id": "agent:user:vanallenlab",
@@ -577,7 +655,7 @@
           {
             "id": "ctrb:hse:2016-06-03:0",
             "type": "Contribution",
-            "description": "Indication approved for reimbursement.",
+            "description": "Indication approved for use within the public health system.",
             "date": "2016-06-03",
             "contributor": {
               "id": "agent:org:hse",
@@ -596,9 +674,9 @@
             "name": "Cetuximab (7 days) and FOLFIRI (14 days) Therapy. NCCP National SACT Regimen. HSE.",
             "title": null,
             "aliases": [],
-            "description": "Cetuximab (7 days) and FOLFIRI (14 days) Therapy, 2026, version number 7, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/6773/328_v6b_Cetuximab_7_days_FOLFIRI_14_Days.pdf",
+            "description": "Cetuximab (7 days) and FOLFIRI (14 days) Therapy, 2026, version number 7, NCCP National SACT Regimen, NCCP, viewed 02/08/2026, https://healthservice.hse.ie/documents/6773/328_Cetuximab_7_days_plus_FOLFIRI_14_Days.pdf",
             "urls": [
-              "https://healthservice.hse.ie/documents/6773/328_v6b_Cetuximab_7_days_FOLFIRI_14_Days.pdf"
+              "https://healthservice.hse.ie/documents/6773/328_Cetuximab_7_days_plus_FOLFIRI_14_Days.pdf"
             ],
             "doi": null,
             "pmid": null,
@@ -631,7 +709,7 @@
               },
               {
                 "name": "first_publication_date",
-                "value": null,
+                "value": "2016-06-03",
                 "description": "The publication date for the initial version of this document."
               },
               {
@@ -646,7 +724,7 @@
               },
               {
                 "name": "status",
-                "value": "Deprecated",
+                "value": "Active",
                 "description": "Whether this document is Active or Deprecated within moalmanac-db."
               }
             ]
@@ -655,7 +733,7 @@
         "extensions": [
           {
             "name": "status",
-            "value": "Withdrawn",
+            "value": "Approved",
             "description": "Current approval status."
           },
           {
@@ -665,7 +743,7 @@
           },
           {
             "name": "reimbursement_comment",
-            "value": null,
+            "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
             "description": "More details about the current reimbursement scheme(s)."
           }
         ]

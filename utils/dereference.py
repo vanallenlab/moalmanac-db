@@ -1065,6 +1065,7 @@ class Indications(BaseTable):
         extension_fields = [
             "status",
             "statement_description",
+            "requires_biomarker",
             "superseded_by",
             "reimbursement_scheme",
             "reimbursement_comment",
@@ -1082,6 +1083,15 @@ class Indications(BaseTable):
                     "value": record["statement_description"],
                     "description": (
                         "The description text for all Statements derived from this Indication."
+                    ),
+                },
+                {
+                    "name": "requires biomarker",
+                    "value": record["requires_biomarker"],
+                    "description": (
+                        "Whether the indication's population is defined by a biomarker. "
+                        "False for non-precision indications curated as analogs for "
+                        "reimbursement, which have no statements."
                     ),
                 },
             ]
@@ -1309,7 +1319,7 @@ class Statements(BaseTable):
             "indication_id",
             "indication",
             lambda db: db.indications,
-            post=strip_extensions("statement description"),
+            post=strip_extensions("statement description", "requires biomarker"),
         ),
         FKSingle("proposition_id", "proposition", lambda db: db.propositions),
         FKSingle("strength_id", "strength", lambda db: db.strengths),
@@ -1742,8 +1752,13 @@ def write_all_concepts(
 
 def main(input_paths):
     """
-    Creates a single JSON file for the Molecular Oncology Almanac (moalmanac) database by dereferencing
-    referenced JSON files. By default, these are located in the referenced/ folder of this repository.
+    Syncs statements with their indications and dereferences the Molecular Oncology Almanac
+    (moalmanac) database from referenced JSON files. By default, these are located in the
+    referenced/ folder of this repository.
+
+    `description`, `reportedIn`, `contributions`, and `status` are copied from each indication
+    onto its statements and written back to referenced/statements.json. Dereferencing the
+    statements validates every foreign key; no combined output file is written.
 
     Args:
         input_paths (dict): Dictionary of paths to referenced JSON files.
@@ -1836,9 +1851,7 @@ def main(input_paths):
     )
     statements.dereference(db)
 
-    data = {"about": about, "content": statements.records}
-    write.dictionary(data=data, keys_list=["content"], file=args.output)
-    return data
+    return {"about": about, "content": statements.records}
 
 
 if __name__ == "__main__":
@@ -1957,11 +1970,6 @@ if __name__ == "__main__":
         default=os.path.join("referenced", "urls.json"),
     )
     arg_parser.add_argument(
-        "--output",
-        help="Output json file",
-        default="moalmanac-draft.dereferenced.json",
-    )
-    arg_parser.add_argument(
         "--write-concepts",
         action=argparse.BooleanOptionalAction,
         default=True,
@@ -2004,7 +2012,7 @@ if __name__ == "__main__":
         "urls": args.urls,
     }
 
-    dereferenced = main(input_paths=input_data)
+    main(input_paths=input_data)
 
     if args.write_concepts:
         write_all_concepts(

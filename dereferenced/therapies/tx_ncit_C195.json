@@ -1,0 +1,57 @@
+{
+  "id": "tx:ncit:C195",
+  "conceptType": "Therapy",
+  "name": "Mercaptopurine",
+  "mappings": [
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "coding:rxcui:103",
+        "code": "103",
+        "name": "mercaptopurine",
+        "system": "RxNorm",
+        "systemVersion": "02-Mar-2026",
+        "iris": [
+          "https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=103"
+        ]
+      }
+    },
+    {
+      "relation": "relatedMatch",
+      "coding": {
+        "id": "coding:omop:1436650",
+        "code": "1436650",
+        "name": "mercaptopurine",
+        "system": "OMOP",
+        "systemVersion": "v20260227",
+        "iris": [
+          "https://athena.ohdsi.org/search-terms/terms/1436650"
+        ]
+      }
+    }
+  ],
+  "extensions": [
+    {
+      "name": "therapy_strategy",
+      "value": [
+        "Antimetabolite"
+      ],
+      "description": "Associated therapeutic strategy or mechanism of action of the therapy."
+    },
+    {
+      "name": "therapy_type",
+      "value": "Chemotherapy",
+      "description": "Type of cancer treatment from cancer.gov: https://www.cancer.gov/about-cancer/treatment/types"
+    }
+  ],
+  "primaryCoding": {
+    "id": "coding:ncit:C195",
+    "code": "C195",
+    "name": "Mercaptopurine",
+    "system": "https://evsexplore.semantics.cancer.gov",
+    "systemVersion": "26.08e",
+    "iris": [
+      "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C195"
+    ]
+  }
+}

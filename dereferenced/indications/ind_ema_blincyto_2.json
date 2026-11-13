@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2025-08-29:0",
       "type": "Contribution",
-      "description": "On 2025-02-10, the EMA published an EPAR - Assessment report - Variation that recommended revising this approval's from being indicated for pediatric patients aged 1 year or older to 1 month or older.",
+      "description": "Updated to the European Commission decision of 2025-01-23, which extended this indication from paediatric patients aged 1 year or older to paediatric patients aged 1 month or older.",
       "date": "2025-08-29",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -32,7 +32,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -118,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized Blincyto (blinatumomab) as a monotherapy for the treatment of pediatric patients aged 1 month or older with Philidelphia chromosome negative CD19 positive B-cell precursor acute lymphoblastic leukemia (ALL) which is refractory or in relapse after receiving at least two prior therapies or in relapse after receiving prior allogeneic hematopoietic stem cell transplants.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

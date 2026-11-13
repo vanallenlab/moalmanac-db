@@ -136,6 +136,10 @@
         "raw_therapeutics": {
           "type": "string"
         },
+        "requires_biomarker": {
+          "type": "boolean",
+          "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursements, which have no statements. Carried into dereferenced standalone indications as the `requires biomarker` extension."
+        },
         "superseded_by": {
           "type": "array",
           "items": {
@@ -156,6 +160,7 @@
         "raw_biomarkers",
         "raw_cancer_types",
         "raw_therapeutics",
+        "requires_biomarker",
         "superseded_by"
       ],
       "description": "Root type shared by every organization. Organization-specific types below extend it; the top-level schema closes the record with unevaluatedProperties."

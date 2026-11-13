@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +19,7 @@
     {
       "id": "ctrb:hse:2018-07-09:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2018-07-09",
       "contributor": {
         "id": "agent:org:hse",
@@ -102,8 +102,13 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved tretinoin (ATRA) with arsenic trioxide (ATO) for reimbursement as a treatment option for the treatment of patients with newly diagnosed low to intermediate risk Acute Promyelocytic Leukaemia (APL) (defined as WCC <= 10x10^9L). This regimen contains the eligibility criteria of a clinical diagnosis of APL and subsequently confirmed to have PML::RARA rearrangements by a valid test method.",
+      "value": "Ireland's Health Service Executive (HSE) has approved tretinoin (ATRA) with arsenic trioxide (ATO) as available to patients within the public health system as a treatment option for the treatment of patients with newly diagnosed low to intermediate risk Acute Promyelocytic Leukaemia (APL) (defined as WCC <= 10x10^9L). This regimen contains the eligibility criteria of a clinical diagnosis of APL and subsequently confirmed to have PML::RARA rearrangements by a valid test method.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     },
     {
       "name": "reimbursement_scheme",

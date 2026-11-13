@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2025-01-10:0",
       "type": "Contribution",
-      "description": "Additional FDA approvals for initial version",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2025-01-10",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to durvalumab in combination with tremelimumab-actl and platinum-based chemotherapy for the treatment of adult patients with metastatic non-small cell lung cancer (NSCLC) with no sensitizing epidermal growth factor receptor (EGFR) mutations or anaplastic lymphoma kinase (ALK) genomic aberrations. This indication is based on POSEIDON (NCT03164616), a randomized, open-label, and multicenter study where patients received one of the following chemotherapy regimes: pemetrexed in combination with carboplatin or cisplatin for patients with non-squamous NSCLC, gemcitabine with cisplatin or carboplatin for patients with squamous NSCLC, and nab-paclitaxel with carboplatin for either non-squamous or squamous NSCLC.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

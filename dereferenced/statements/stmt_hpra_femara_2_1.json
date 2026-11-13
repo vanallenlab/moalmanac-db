@@ -1,12 +1,25 @@
 {
   "id": "stmt:hpra:femara:2:1",
   "type": "Statement",
-  "description": "The Republic of Ireland's Health Products Regulatory Authority (HPRA) has authorized letrozole for the first-line treatment of patients who are postmenopausal women with hormone-dependent advanced breast cancer.",
+  "description": "Ireland's Health Products Regulatory Authority (HPRA) has authorized letrozole for the first-line treatment of patients who are postmenopausal women with hormone-dependent advanced breast cancer.",
   "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-10-26:1",
+      "type": "Contribution",
+      "description": "HPRA approval date set to the 'Date of first authorisation' in section 9 of the HPRA's Summary of Product Characteristics.",
+      "date": "2026-10-26",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
     {
       "id": "ctrb:vanallenlab:2024-11-10:0",
       "type": "Contribution",
-      "description": "Adding HRPA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-11-10",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +32,7 @@
     {
       "id": "ctrb:hpra:1997-01-10:0",
       "type": "Contribution",
-      "description": "Initial marketing authorisation of Femara in Ireland, from 'Date of first authorisation' in section 9 of the HPRA's Summary of Product Characteristics.",
+      "description": "Indication received marketing authorisation from the HPRA.",
       "date": "1997-01-10",
       "contributor": {
         "id": "agent:org:hpra",
@@ -269,9 +282,22 @@
         "description": "First-line treatment in postmenopausal women with hormone-dependent advanced breast cancer.",
         "contributions": [
           {
+            "id": "ctrb:vanallenlab:2026-10-26:1",
+            "type": "Contribution",
+            "description": "HPRA approval date set to the 'Date of first authorisation' in section 9 of the HPRA's Summary of Product Characteristics.",
+            "date": "2026-10-26",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
             "id": "ctrb:vanallenlab:2024-11-10:0",
             "type": "Contribution",
-            "description": "Adding HRPA approvals for use to database",
+            "description": "Initial curation of this indication into moalmanac-db.",
             "date": "2024-11-10",
             "contributor": {
               "id": "agent:user:vanallenlab",
@@ -284,7 +310,7 @@
           {
             "id": "ctrb:hpra:1997-01-10:0",
             "type": "Contribution",
-            "description": "Initial marketing authorisation of Femara in Ireland, from 'Date of first authorisation' in section 9 of the HPRA's Summary of Product Characteristics.",
+            "description": "Indication received marketing authorisation from the HPRA.",
             "date": "1997-01-10",
             "contributor": {
               "id": "agent:org:hpra",

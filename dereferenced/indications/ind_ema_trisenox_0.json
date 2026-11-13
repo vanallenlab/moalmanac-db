@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
-      "description": "Adding EMA approvals for use to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-10-20",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized arsenic trioxide for induction of remission, and consolidation in adult patients with either newly diagnosed low-to-intermediate risk acute promyelocytic leukemia (APL) (white blood cell count, <= 10 x 10^3 / ul) in combination with all-trans-retinoic acid (ATRA) or relapsed / refractory acute promyelocytic leukemia (APL) (previous treatment should have included a retinoid and chemotherapy). Both contexts should be characterized by the presence of the t(15;17) translocation and/or the presence of the promyelocytic leukemia / retinoic-acid-receptor-alpha (PML/RAR-alpha) gene.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

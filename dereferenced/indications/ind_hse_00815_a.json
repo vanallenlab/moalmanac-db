@@ -1,0 +1,150 @@
+{
+  "id": "ind:hse:00815:a",
+  "type": "Indication",
+  "description": "Adjuvant treatment of HER2 positive, node-negative breast cancer of tumour size <= 3cm.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-04:0",
+      "type": "Contribution",
+      "description": "HSE approval date set to the version 1 date in the NCCP regimen's version history.",
+      "date": "2026-11-04",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:1",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hse:2023-05-11:0",
+      "type": "Contribution",
+      "description": "Indication approved for use within the public health system.",
+      "date": "2023-05-11",
+      "contributor": {
+        "id": "agent:org:hse",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Service Executive",
+        "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hse:00815",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "PACLitaxel 80 (7 day) and Trastuzumab (21 day) Therapy. NCCP National SACT Regimen. HSE.",
+      "title": null,
+      "aliases": [],
+      "description": "PACLitaxel 80 (7 day) and Trastuzumab (21 day) Therapy, 2025, version number 3, NCCP National SACT Regimen, NCCP, viewed 03/11/2026, https://healthservice.hse.ie/documents/6427/815_v3_Paclitaxel_weekly_Trastuzumab_3weekly.pdf",
+      "urls": [
+        "https://healthservice.hse.ie/documents/6427/815_v3_Paclitaxel_weekly_Trastuzumab_3weekly.pdf"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hse",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Service Executive",
+            "description": "Public health service of Ireland, which determines reimbursement of medicines in the public system."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": null,
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": null,
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": null,
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": "2023-05-11",
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2025-04-28",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": null,
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Approved",
+      "description": "Current approval status."
+    },
+    {
+      "name": "statement description",
+      "value": "Ireland's Health Service Executive (HSE) has approved weekly paclitaxel in combination with trastuzumab (21 days) as available to patients within the public health system as a treatment option for the adjuvant treatment of patients with HER2 positive, node-negative breast cancer of tumor size <= 3cm. The European Medicines Agency product information for trastuzumab notes that trastuzumab should only be used in patients with metastatic or early breast cancer whose tumors have either HER2 overexpression or HER2 gene amplification as determined by an accurate and validated assay.",
+      "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
+    },
+    {
+      "name": "reimbursement_scheme",
+      "value": "N/A",
+      "description": "Current scheme used to reimburse indication."
+    },
+    {
+      "name": "reimbursement_comment",
+      "value": "Reimbursement status listed as N/A on the NCCP regimen; confirmed available within the public health system by personal correspondence with the NCCP, 2026-11-03.",
+      "description": "More details about the current reimbursement scheme(s)."
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2025-10-03:0",
       "type": "Contribution",
-      "description": "On 2023-01-19 the FDA granted accelerated approval to tucatinib in combination with trastuzumab for the treatment of adult patients with RAS wild-type HER2-positive unresectable or metastatic colorectal cancer.",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2025-10-03",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted accelerated approval to tucatinib in combination with trastuzumab for the treatment of adult patients with RAS wild-type HER2-positive unresectable or metastatic colorectal cancer that has progressed following treatment with fluoropyrimidine-, oxaliplatin-, and irinotecan-based chemotherapy. The label notes that this indication is approved under accelerated approval based on tumor response rate and durability of response and that continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trials. This indication is based on MOUNTAINEER (NCT03043313), an open-label, multicenter trial where RAS status was performed as standard of care prior to study entry based on expanded RAS testing including KRAS exons 2, 3, and 4 and NRAS exons 2, 3, and 4.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

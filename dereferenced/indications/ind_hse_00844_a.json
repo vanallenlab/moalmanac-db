@@ -4,9 +4,35 @@
   "description": "Nivolumab in combination with fluoropyrimidine and platinum-based combination chemotherapy for the first-line treatment of adult patients with unresectable advanced, recurrent or metastatic oesophageal squamous cell carcinoma (OSCC) with tumour cell programmed death ligand 1 (PD-L1) expression >= 1%.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-03:4",
+      "type": "Contribution",
+      "description": "Reimbursement scheme changed from Incomplete Reimbursement to Hybrid. Agents listed as N/A on the NCCP regimen are available within the public health system.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +45,7 @@
     {
       "id": "ctrb:hse:2023-07-01:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2023-07-01",
       "contributor": {
         "id": "agent:org:hse",
@@ -102,17 +128,22 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved nivolumab in combination with fluoropyrimidine and platinum-based combination chemotherapy for reimbursement as a treatment option for the first-line treatment of adult patients with unresectable advanced, recurrent, or metastatic esophageal squamous cell carcinoma with tumor cell programmed death ligand 1 (PD-L1) expression >= 1%. This regimen specifically cites cisplatin and 5-fluorouracil as the chemotherapy. It also notes that, as the platinum and fluoropyrimidine based chemotherapy is not defined in the EMA licensed indication, other evidence-based platinum and fluoropyrimidine regimens may be used in combination with nivolumab.",
+      "value": "Ireland's Health Service Executive (HSE) has approved nivolumab in combination with fluoropyrimidine and platinum-based combination chemotherapy as available to patients within the public health system as a treatment option for the first-line treatment of adult patients with unresectable advanced, recurrent, or metastatic esophageal squamous cell carcinoma with tumor cell programmed death ligand 1 (PD-L1) expression >= 1%. This regimen specifically cites cisplatin and 5-fluorouracil as the chemotherapy. It also notes that, as the platinum and fluoropyrimidine based chemotherapy is not defined in the EMA licensed indication, other evidence-based platinum and fluoropyrimidine regimens may be used in combination with nivolumab.",
       "description": "The description text for all Statements derived from this Indication."
     },
     {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
+    },
+    {
       "name": "reimbursement_scheme",
-      "value": "Incomplete Reimbursement",
+      "value": "Hybrid",
       "description": "Current scheme used to reimburse indication."
     },
     {
       "name": "reimbursement_comment",
-      "value": "Nivolumab - ODMS; Oxaliplatin, 5-Flourouracil - N/A",
+      "value": "Nivolumab - ODMS; Oxaliplatin, 5-Fluorouracil - N/A",
       "description": "More details about the current reimbursement scheme(s)."
     }
   ]

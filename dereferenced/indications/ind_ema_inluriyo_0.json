@@ -6,7 +6,7 @@
     {
       "id": "ctrb:vanallenlab:2026-05-05:0",
       "type": "Contribution",
-      "description": "Initial curation of EMA's approval of Inluriyo (imlunestrant)",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2026-05-05",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized imlunestrant as a monotherapy for the treatment of adult patients with estrogen receptor (ER-positive), HER2-negative, locally advanced or metastatic breast cancer with an activating ESR1-mutation, who have disease progression following prior treatment with an endocrine based regimen. The EPAR notes that in pre- or perimenopausal women, or men, imlunestrant should be combined with a luteinising hormone-releasing hormone (LHRH) agonist. Furthermore, it notes that patients should be selected based on the presence of an activating ESR1-variant in tumor or in plasma specimens, using a CE-marked in vitro diagnostic with the corresponding intended purpose or an alternative validated test.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

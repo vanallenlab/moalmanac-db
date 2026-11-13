@@ -4,9 +4,35 @@
   "description": "Induction of remission in newly diagnosed, previously untreated adult acute lymphoblastic leukaemia (ALL) patients (aged 25-65 years) treated on UKALL14-protocol.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-03:4",
+      "type": "Contribution",
+      "description": "Reimbursement scheme changed from Incomplete Reimbursement to Hybrid. Agents listed as N/A on the NCCP regimen are available within the public health system.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2026-08-02:0",
       "type": "Contribution",
-      "description": "Initial curation of into moalmanac-db",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2026-08-02",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +45,7 @@
     {
       "id": "ctrb:hse:2025-10-01:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2025-10-01",
       "contributor": {
         "id": "agent:org:hse",
@@ -102,12 +128,17 @@
     },
     {
       "name": "statement description",
-      "value": "The Republic of Ireland's Health Service Executive (HSE) has approved UKALL14 phase 1 standard induction therapy as a treatment option for the induction of remission in newly diagnosed, previously untreated adult patients with acute lymphoblastic leukaemia (ALL) patients (aged 25-65 years) treated on UKALL14-protocol. The treatment regimen notes that this is a clinical trial protocol intended for off-trial use, and that rituximab is to be included in CD20 positive patients (defined as >20% positivity). The treatment regimen also defines eligibility criteria as aged >= 25 and <= 65. years old with acute lymphoblastic leukaemia OR >= 19 and <= 65 years old with Philadelphia Chromosome Positive acute lymphoblastic leukaemia. Core treatments constituting the regimen are dexamethasone, daunorubicin, vincristine, and methotrexate, with rituximab to be included for CD20 positive patients, imatinib to be included for Philadelphia chromosome positive patients, or PEG-asparaginase for philadelphia chromosome negative patients.",
+      "value": "Ireland's Health Service Executive (HSE) has approved UKALL14 phase 1 standard induction therapy as a treatment option for the induction of remission in newly diagnosed, previously untreated adult patients with acute lymphoblastic leukaemia (ALL) patients (aged 25-65 years) treated on UKALL14-protocol. The treatment regimen notes that this is a clinical trial protocol intended for off-trial use, and that rituximab is to be included in CD20 positive patients (defined as >20% positivity). The treatment regimen also defines eligibility criteria as aged >= 25 and <= 65. years old with acute lymphoblastic leukaemia OR >= 19 and <= 65 years old with Philadelphia Chromosome Positive acute lymphoblastic leukaemia. Core treatments constituting the regimen are dexamethasone, daunorubicin, vincristine, and methotrexate, with rituximab to be included for CD20 positive patients, imatinib to be included for Philadelphia chromosome positive patients, or PEG-asparaginase for philadelphia chromosome negative patients.",
       "description": "The description text for all Statements derived from this Indication."
     },
     {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
+    },
+    {
       "name": "reimbursement_scheme",
-      "value": "Incomplete Reimbursement",
+      "value": "Hybrid",
       "description": "Current scheme used to reimburse indication."
     },
     {
