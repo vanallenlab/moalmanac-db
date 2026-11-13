@@ -1065,6 +1065,7 @@ class Indications(BaseTable):
         extension_fields = [
             "status",
             "statement_description",
+            "requires_biomarker",
             "superseded_by",
             "reimbursement_scheme",
             "reimbursement_comment",
@@ -1082,6 +1083,15 @@ class Indications(BaseTable):
                     "value": record["statement_description"],
                     "description": (
                         "The description text for all Statements derived from this Indication."
+                    ),
+                },
+                {
+                    "name": "requires biomarker",
+                    "value": record["requires_biomarker"],
+                    "description": (
+                        "Whether the indication's population is defined by a biomarker. "
+                        "False for non-precision indications curated as analogs for "
+                        "reimbursement, which have no statements."
                     ),
                 },
             ]
@@ -1126,7 +1136,6 @@ class Indications(BaseTable):
             "raw_biomarkers",
             "raw_cancer_types",
             "raw_therapeutics",
-            "requires_biomarker",
         ]
         for record in self.records:
             for field in fields_to_remove:
@@ -1310,7 +1319,7 @@ class Statements(BaseTable):
             "indication_id",
             "indication",
             lambda db: db.indications,
-            post=strip_extensions("statement description"),
+            post=strip_extensions("statement description", "requires biomarker"),
         ),
         FKSingle("proposition_id", "proposition", lambda db: db.propositions),
         FKSingle("strength_id", "strength", lambda db: db.strengths),
