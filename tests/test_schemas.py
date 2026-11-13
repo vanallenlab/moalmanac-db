@@ -389,3 +389,40 @@ def validator(tree, name, registry):
         registry=registry,
         format_checker=jsonschema.Draft202012Validator.FORMAT_CHECKER,
     )
+
+
+def test_dereferenced_indications_include_requires_biomarker():
+    """
+    Ensures every standalone dereferenced indication carries a boolean
+    `requires biomarker` extension that matches its referenced `requires_biomarker`.
+    """
+    referenced = {
+        record["id"]: record["requires_biomarker"]
+        for record in json.loads(
+            (DEREFERENCED_ROOT.parent / "referenced" / "indications.json").read_text()
+        )
+    }
+    files = sorted((DEREFERENCED_ROOT / "indications").glob("*.json"))
+    assert files, "No dereferenced files found for indications"
+    for path in files:
+        record = json.loads(path.read_text())
+        values = [
+            e["value"]
+            for e in record["extensions"]
+            if e["name"] == "requires biomarker"
+        ]
+        assert values == [referenced[record["id"]]], record["id"]
+
+
+def test_dereferenced_statements_omit_indication_requires_biomarker():
+    """
+    Ensures the `requires biomarker` extension appears only on standalone dereferenced
+    indications, not on the indication embedded in a dereferenced statement.
+    """
+    files = sorted((DEREFERENCED_ROOT / "statements").glob("*.json"))
+    assert files, "No dereferenced files found for statements"
+    for path in files:
+        record = json.loads(path.read_text())
+        indication = next(e for e in record["extensions"] if e["name"] == "indication")
+        names = {e["name"] for e in indication["value"]["extensions"]}
+        assert "requires biomarker" not in names, record["id"]
