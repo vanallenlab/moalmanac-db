@@ -138,7 +138,7 @@
         },
         "requires_biomarker": {
           "type": "boolean",
-          "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursements, which have no statements. Referenced only; not carried into dereferenced records."
+          "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursements, which have no statements. Carried into dereferenced standalone indications as the `requires biomarker` extension."
         },
         "superseded_by": {
           "type": "array",
