@@ -1,12 +1,25 @@
 {
   "id": "stmt:hse:00746:abc:2",
   "type": "Statement",
-  "description": "The Republic of Ireland's Health Service Executive (HSE) has approved olaparib (tablet) in combination with bevacizumab for reimbursement as a treatment option for the maintenance treatment of adult patients with advanced (FIGO stages III and IV) high-grade epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in response (complete or partial) following first-line platinum-based chemotherapy in combination with bevacizumab and whose cancer is associated with homologous recombination deficiency (HRD) positive status defined by either a BRCA1/2 mutation and/or genomic instability.",
+  "description": "Ireland's Health Service Executive (HSE) has approved olaparib (tablet) in combination with bevacizumab as available to patients within the public health system as a treatment option for the maintenance treatment of adult patients with advanced (FIGO stages III and IV) high-grade epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in response (complete or partial) following first-line platinum-based chemotherapy in combination with bevacizumab and whose cancer is associated with homologous recombination deficiency (HRD) positive status defined by either a BRCA1/2 mutation and/or genomic instability.",
   "contributions": [
     {
       "id": "ctrb:vanallenlab:2026-11-03:4",
       "type": "Contribution",
-      "description": "Reimbursement scheme changed from Incomplete Reimbursement to Hybrid. Agents listed as N/A on the NCCP regimen are available within the public health system, confirmed by personal correspondence with the NCCP on 2026-11-03.",
+      "description": "Reimbursement scheme changed from Incomplete Reimbursement to Hybrid. Agents listed as N/A on the NCCP regimen are available within the public health system.",
+      "date": "2026-11-03",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-11-03:2",
+      "type": "Contribution",
+      "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
       "date": "2026-11-03",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -19,7 +32,7 @@
     {
       "id": "ctrb:vanallenlab:2026-08-02:0",
       "type": "Contribution",
-      "description": "Initial curation of into moalmanac-db",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2026-08-02",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -32,7 +45,7 @@
     {
       "id": "ctrb:vanallenlab:2024-01-16:0",
       "type": "Contribution",
-      "description": "Adding HSE approvals for reimbursement to database",
+      "description": "Initial curation of this indication into moalmanac-db.",
       "date": "2024-01-16",
       "contributor": {
         "id": "agent:user:vanallenlab",
@@ -45,7 +58,7 @@
     {
       "id": "ctrb:hse:2023-09-01:0",
       "type": "Contribution",
-      "description": "Indication approved for reimbursement.",
+      "description": "Indication approved for use within the public health system.",
       "date": "2023-09-01",
       "contributor": {
         "id": "agent:org:hse",
@@ -482,7 +495,20 @@
           {
             "id": "ctrb:vanallenlab:2026-11-03:4",
             "type": "Contribution",
-            "description": "Reimbursement scheme changed from Incomplete Reimbursement to Hybrid. Agents listed as N/A on the NCCP regimen are available within the public health system, confirmed by personal correspondence with the NCCP on 2026-11-03.",
+            "description": "Reimbursement scheme changed from Incomplete Reimbursement to Hybrid. Agents listed as N/A on the NCCP regimen are available within the public health system.",
+            "date": "2026-11-03",
+            "contributor": {
+              "id": "agent:user:vanallenlab",
+              "type": "Agent",
+              "agentType": "contributor",
+              "name": "Van Allen lab",
+              "description": "Van Allen lab, Dana-Farber Cancer Institute"
+            }
+          },
+          {
+            "id": "ctrb:vanallenlab:2026-11-03:2",
+            "type": "Contribution",
+            "description": "Availability within the public health system confirmed by personal correspondence with the NCCP on 2026-11-03.",
             "date": "2026-11-03",
             "contributor": {
               "id": "agent:user:vanallenlab",
@@ -495,7 +521,7 @@
           {
             "id": "ctrb:vanallenlab:2026-08-02:0",
             "type": "Contribution",
-            "description": "Initial curation of into moalmanac-db",
+            "description": "Initial curation of this indication into moalmanac-db.",
             "date": "2026-08-02",
             "contributor": {
               "id": "agent:user:vanallenlab",
@@ -508,7 +534,7 @@
           {
             "id": "ctrb:vanallenlab:2024-01-16:0",
             "type": "Contribution",
-            "description": "Adding HSE approvals for reimbursement to database",
+            "description": "Initial curation of this indication into moalmanac-db.",
             "date": "2024-01-16",
             "contributor": {
               "id": "agent:user:vanallenlab",
@@ -521,7 +547,7 @@
           {
             "id": "ctrb:hse:2023-09-01:0",
             "type": "Contribution",
-            "description": "Indication approved for reimbursement.",
+            "description": "Indication approved for use within the public health system.",
             "date": "2023-09-01",
             "contributor": {
               "id": "agent:org:hse",
