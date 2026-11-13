@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to trastuzumab for the treatment of patients with HER2-overexpressing breast cancer. The product label specifies to select  patients for therapy based on an FDA-approved companion diagnostic for herceptin.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

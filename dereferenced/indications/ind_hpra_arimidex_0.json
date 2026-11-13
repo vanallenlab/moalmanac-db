@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The Republic of Ireland's Health Products Regulatory Authority (HPRA) has authorized anastrozole for the treatment of patients who are postmenopausal women with hormone receptor-positive advanced breast cancer.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

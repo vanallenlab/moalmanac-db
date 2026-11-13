@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved osimertinib for the first-line  treatment of patients with locally advanced (not amenable to curative therapies), or metastatic NSCLC whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

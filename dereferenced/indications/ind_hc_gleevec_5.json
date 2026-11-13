@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved imatinib mesylate for the treatment of adult patients with aggressive sub-types of systemic mastocytosis (ASM and SMAHNMD) without the D816V c-Kit mutation.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

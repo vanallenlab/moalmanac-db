@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to osimertinib for the treatment of adult patients with metastatic epidermal growth factor receptor (EGFR) T790M mutation-positive non-small cell lung cancer (NSCLC), as detected by an FDA-approved test, whose disease has progressed on or after EGFR TKI therapy.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

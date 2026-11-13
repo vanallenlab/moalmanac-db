@@ -78,6 +78,11 @@
       "name": "statement description",
       "value": "Health Canada approved atezolizumab for the treatment of adult patients with locally advanced or metastatic NSCLC with progression on or after platinum-based chemotherapy. Patients with EGFR or ALK genomic tumour aberrations should have disease progression on a therapy for these aberrations prior to receiving TECENTRIQ.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

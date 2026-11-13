@@ -118,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized rituximab as maintenance therapy for the treatment of patients with relapsed/refractory follicular lymphoma responding to induction therapy with chemotherapy with or without rituximab.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": false,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

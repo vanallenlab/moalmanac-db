@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved trastuzumab deruxtecan as a monotherapy for the treatment of adult patients with unresectable or metastatic HER2-positive breast cancer who have received prior treatment with trastuzumab emtansine (T-DM1).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

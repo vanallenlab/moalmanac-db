@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to everolimus in combination with exemestane for the treatment of patients who are postmenopausal women with advanced hormone receptor-positive, HER2 negative breast cancer after failure of treatment with letrozole or anastrozole.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

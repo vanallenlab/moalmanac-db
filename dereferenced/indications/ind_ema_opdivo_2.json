@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized nivolumab as a monotherapy for the adjuvant treatment of adult patients with muscle invasive urothelial carcinoma (MIUC) with tumor cell PD-L1 expression >= 1%, who are at high risk of recurrence after undergoing radical resection of MIUC.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized brentuximab vedotin in combination with etoposide, cyclophosphamide, doxorubicin, dacarbazine, and dexamethasone (BrECADD) for the treatment of adult patients with previously untreated CD30+ Stage IIB with risk factors, Stage III, or Stage IV Hodgkin lymphoma (HL).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

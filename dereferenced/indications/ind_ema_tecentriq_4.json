@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized atezolizumab for the first-line treatment of adult patients with metastatic non-small cell lung cancer (NSCLC) whose tumors have PD-L1 expression >= 50% tumor cells or >= 10% tumor-infiltrating immune cells (IC) and who do not hvae EGFR mutant or ALK-positive NSCLC.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

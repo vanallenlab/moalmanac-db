@@ -118,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized pembrolizumab in combination with platinum and fluoropyrimidine-based chemotherapy as a first-line treatment for adult patients with locally advanced unresectable or metastatic esophageal carcinoma or HER2-negative gastroesophageal junction adenocarcinoma whose tumors express PD-L1 with a combined positive score (CPS) >= 10.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

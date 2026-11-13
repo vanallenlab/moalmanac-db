@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved ipilimumab in combination with nivolumab for the treatment of adult patients with metastatic NSCLC, expressing PD-L1 >= 1% as determined by a validated test, with no EGFR or ALK genomic tumour aberrations, and no prior systemic therapy for metastatic NSCLC.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized imatinib for the treatment of adult and pediatric patients with newly diagnosed Philadelphia chromosome (bcr-abl) positive (Ph+) chronic myeloid leukemia (CML) for whom bone marrow transplantation is not considered as the first line of treatment.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

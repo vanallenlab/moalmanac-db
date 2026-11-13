@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved ribociclib, in combination with fulvestrant, for the treatment ostmenopausal women, with HR-positive, HER2-negative advanced or metastatic breast cancer, as initial endocrine-based therapy or following disease progression on endocrine therapy.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

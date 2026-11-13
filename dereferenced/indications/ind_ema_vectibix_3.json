@@ -118,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized panitumumab as a monotherapy for the treatment of patients with EGFR expressing metastatic colorectal carcinoma with non-mutated (wild-type) KRAS after failure of fluoropyrimidine-, oxaliplatin-, and irinotecan-containing chemotherapy regimens.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

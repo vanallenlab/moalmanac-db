@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized osimertinib for the adjuvant treatment after complete tumor resection in adult patients with stage IB-IIIA non-small cell lung cancer (NSCLC) whose tumors have epidermal growth factor (EGFR) exon 19 deletions or exon 21 (L858R) substitution variants.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

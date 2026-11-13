@@ -4,6 +4,19 @@
   "description": "TAXOTERE in combination with trastuzumab is indicated for the treatment of patients with metastatic breast cancer whose tumours over express HER2 and who previously have not received chemotherapy for metastatic disease.",
   "contributions": [
     {
+      "id": "ctrb:vanallenlab:2026-11-12:4",
+      "type": "Contribution",
+      "description": "European Commission decision date set to 2005-01-05 for II/0054 (CHMP opinion 18/11/2004). The combination with trastuzumab is absent from the product information annexed to the 2004-10-20 decision and present in the one annexed to the 2005-01-05 decision, per the Union Register.",
+      "date": "2026-11-12",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
       "id": "ctrb:vanallenlab:2024-10-20:0",
       "type": "Contribution",
       "description": "Adding EMA approvals for use to database",
@@ -17,10 +30,10 @@
       }
     },
     {
-      "id": "ctrb:ema:1995-11-27:0",
+      "id": "ctrb:ema:2005-01-05:0",
       "type": "Contribution",
       "description": "Indication received approval from the European Commission.",
-      "date": "1995-11-27",
+      "date": "2005-01-05",
       "contributor": {
         "id": "agent:org:ema",
         "type": "Agent",
@@ -105,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized docetaxel in combination with trastuzumab for the treatment of patients with metastatic breast cancer whose tumors over express HER2 and who previously have not received chemotherapy for metastatic disease.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

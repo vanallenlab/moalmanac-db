@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized atezolizumab for the adjuvant treatment following complete resection and platinum-based chemotherapy of adult patients with non-small cell lung cancer with a high risk of recurrence whose tumors have PD-L1 expression on >= 50% of tumor cells (TC) and who do not have EGFR mutant or ALK-positive NSCLC.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to dasatinib for the treatment of adult patients with chronic, accelerated, or myeloid or lymphoid blast phase Philadelphia chromosome-positive (Ph+) chronic myeloid leukemia (CML) with resistance or intolerance to prior therapy including imatinib.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

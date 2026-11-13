@@ -92,6 +92,11 @@
       "name": "statement description",
       "value": "Health Canada approved alectinib for the first-line treatment of patients with ALK-positive, locally advanced or metastatic non-small cell lung cancer (NSCLC) that is not amenable to curative therapy.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized ipilimumab in combination with nivolumab for the first-line treatment of adult patients with unresectable advanced, recurrent, or metastatic esophageal squamous cell carcinoma with tumor cell PD-L1 expression >= 1%.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

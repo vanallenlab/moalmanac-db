@@ -118,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized bosutinib for the treatment of adult patients with newly-diagnosed chronic phase Philadelphia chromosome-positive chronic myelogenous leukemia (Ph+ CML).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

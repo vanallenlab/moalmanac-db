@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to fulvestrant in combination with either palbociclib or abemaciclib for the treatment of patients who are women with hormone receptor (HR)-positive, HER2-negative advanced or metastatic breast cancer with disease after endocrine therapy.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

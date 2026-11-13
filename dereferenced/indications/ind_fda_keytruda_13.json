@@ -155,6 +155,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted accelerated approval to pembrolizumab for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [>=10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-approved test, that have progressed following prior treatment and who have no satisfactory alternative treatment options. The product label states that the safety and effectiveness of pembrolizumab in pediatric patients with TMB-H central nervous system cancers have not been established and that this indication is approved under accelerated approval based on tumor response rate and durability of response. Furthermore, it states that continued approval for this indication may be contingent upon verification and description of clinical benefit in the confirmatory trials.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

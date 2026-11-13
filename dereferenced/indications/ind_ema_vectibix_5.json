@@ -118,6 +118,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized panitumumab in combination with FOLFOX for the first-line treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC). Panitumumab's product information further states that evidence of wild-type RAS (KRAS and NRAS) status is required before initiating treatment with panitumumab and that mutational status should be determined using a validated test method by an experienced laboratory.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

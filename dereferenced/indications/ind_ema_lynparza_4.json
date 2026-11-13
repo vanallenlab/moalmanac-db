@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The European Medicines Agency (EMA) has authorized olaparib as a monotherapy for the maintenance treatment of adult patients with germline BRCA1/2-mutations who have metastatic adenocarcinoma of the pancreas and have not progressed after a minimum of 16 weeks of platinum treatment within a first-line chemotherapy regimen.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

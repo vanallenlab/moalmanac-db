@@ -105,6 +105,11 @@
       "name": "statement description",
       "value": "The Republic of Ireland's Health Products Regulatory Authority (HPRA) has authorized letrozole for the neo-adjuvant treatment of patients who are postmenopausal women with hormone receptor positive, HER-2 negative breast cancer where chemotherapy is not suitable and immediate surgery is not indicated.",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }

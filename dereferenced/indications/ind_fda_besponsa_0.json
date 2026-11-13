@@ -168,6 +168,11 @@
       "name": "statement description",
       "value": "The U.S. Food and Drug Administration granted approval to inotuzumab ozogamicin for the treatment of adult and pediatric patients 1 year and older with relapsed or refractory CD22-positive B-cell precursor acute lymphoblastic leukemia (ALL).",
       "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
     }
   ]
 }
