@@ -5883,8 +5883,9 @@
     "type": "Indication",
     "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, RAS wild-type metastatic colorectal cancer as a single agent in patients who have failed oxaliplatin- and irinotecan-based therapy and who are intolerant to irinotecan.",
     "contributions": [
+      "ctrb:vanallenlab:2026-11-15:1",
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2008-07-17:0"
+      "ctrb:ema:2013-12-18:0"
     ],
     "reportedIn": [
       "doc:ema:erbitux"
@@ -5902,8 +5903,9 @@
     "type": "Indication",
     "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, RAS wild-type metastatic colorectal cancer in combination with irinotecan-based chemotherapy.",
     "contributions": [
+      "ctrb:vanallenlab:2026-11-15:1",
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2008-07-17:0"
+      "ctrb:ema:2013-12-18:0"
     ],
     "reportedIn": [
       "doc:ema:erbitux"
@@ -5921,8 +5923,9 @@
     "type": "Indication",
     "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, RAS wild-type metastatic colorectal cancer in first-line in combination with FOLFOX.",
     "contributions": [
+      "ctrb:vanallenlab:2026-11-15:1",
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2012-01-13:0"
+      "ctrb:ema:2013-12-18:0"
     ],
     "reportedIn": [
       "doc:ema:erbitux"
@@ -5972,6 +5975,139 @@
     "raw_therapeutics": "Erbitux (cetuximab) in combination with 5-fluorouracil and oxaliplatin",
     "requires_biomarker": true,
     "superseded_by": []
+  },
+  {
+    "id": "ind:ema:erbitux:5",
+    "type": "Indication",
+    "description": "Erbitux in combination with irinotecan is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing metastatic colorectal cancer after failure of irinotecan-including cytotoxic therapy.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2008-07-17:1",
+      "ctrb:ema:2004-06-29:0"
+    ],
+    "reportedIn": [
+      "doc:ema:erbitux"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with irinotecan for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing metastatic colorectal cancer after failure of irinotecan-including cytotoxic therapy.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab) in combination with irinotecan",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:erbitux:6"
+    ]
+  },
+  {
+    "id": "ind:ema:erbitux:6",
+    "type": "Indication",
+    "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer in combination with chemotherapy.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2011-06-23:1",
+      "ctrb:ema:2008-07-17:0"
+    ],
+    "reportedIn": [
+      "doc:ema:erbitux"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with chemotherapy for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer. Cetuximab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with cetuximab.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab) in combination with chemotherapy",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:erbitux:8"
+    ]
+  },
+  {
+    "id": "ind:ema:erbitux:7",
+    "type": "Indication",
+    "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer as a single agent in patients who have failed oxaliplatin- and irinotecan-based therapy and who are intolerant to irinotecan.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2013-12-18:1",
+      "ctrb:ema:2008-07-17:0"
+    ],
+    "reportedIn": [
+      "doc:ema:erbitux"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized cetuximab as a single agent for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer who have failed oxaliplatin- and irinotecan-based therapy and who are intolerant to irinotecan. Cetuximab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with cetuximab.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:erbitux:0"
+    ]
+  },
+  {
+    "id": "ind:ema:erbitux:8",
+    "type": "Indication",
+    "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer in combination with irinotecan-based chemotherapy or FOLFOX4.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2012-01-13:1",
+      "ctrb:ema:2011-06-23:0"
+    ],
+    "reportedIn": [
+      "doc:ema:erbitux"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with irinotecan-based chemotherapy or FOLFOX4 (folinic acid, 5-fluorouracil, and oxaliplatin) for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer. Cetuximab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with cetuximab.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab) in combination with irinotecan or with 5-fluorouracil and oxaliplatin",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:erbitux:9",
+      "ind:ema:erbitux:10"
+    ]
+  },
+  {
+    "id": "ind:ema:erbitux:9",
+    "type": "Indication",
+    "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer in combination with irinotecan-based chemotherapy.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2013-12-18:1",
+      "ctrb:ema:2012-01-13:0"
+    ],
+    "reportedIn": [
+      "doc:ema:erbitux"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with irinotecan-based chemotherapy for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer. Cetuximab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with cetuximab.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab) in combination with irinotecan",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:erbitux:1"
+    ]
+  },
+  {
+    "id": "ind:ema:erbitux:10",
+    "type": "Indication",
+    "description": "Erbitux is indicated for the treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer in first-line in combination with FOLFOX.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2013-12-18:1",
+      "ctrb:ema:2012-01-13:0"
+    ],
+    "reportedIn": [
+      "doc:ema:erbitux"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized cetuximab in combination with FOLFOX (folinic acid, 5-fluorouracil, and oxaliplatin) for the first-line treatment of patients with epidermal growth factor receptor (EGFR)-expressing, KRAS wild-type metastatic colorectal cancer. Cetuximab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with cetuximab.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Erbitux (cetuximab) in combination with 5-fluorouracil and oxaliplatin",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:erbitux:2"
+    ]
   },
   {
     "id": "ind:ema:faslodex:0",
@@ -8822,6 +8958,28 @@
     "superseded_by": []
   },
   {
+    "id": "ind:ema:tarceva:2",
+    "type": "Indication",
+    "description": "Tarceva is indicated as monotherapy for maintenance treatment in patients with locally advanced or metastatic non-small cell lung cancer with stable disease after 4 cycles of standard platinum-based first-line chemotherapy.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2016-01-25:1",
+      "ctrb:ema:2010-04-27:0"
+    ],
+    "reportedIn": [
+      "doc:ema:tarceva"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized erlotinib as monotherapy for maintenance treatment of patients with locally advanced or metastatic non-small cell lung cancer with stable disease after 4 cycles of standard platinum-based first-line chemotherapy.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Non-small cell lung cancer",
+    "raw_therapeutics": "Tarceva (erlotinib)",
+    "requires_biomarker": false,
+    "superseded_by": [
+      "ind:ema:tarceva:1"
+    ]
+  },
+  {
     "id": "ind:ema:tasigna:0",
     "type": "Indication",
     "description": "Tasigna is indicated for the treatment of adult and paediatric patients with newly diagnosed Philadelphia chromosome positive chronic myelogenous leukaemia (CML) in the chronic phase.",
@@ -8877,6 +9035,28 @@
     "raw_therapeutics": "Tasigna (nilotinib)",
     "requires_biomarker": true,
     "superseded_by": []
+  },
+  {
+    "id": "ind:ema:tasigna:3",
+    "type": "Indication",
+    "description": "Tasigna is indicated for the treatment of adult patients with newly diagnosed Philadelphia chromosome positive chronic myelogenous leukaemia (CML) in the chronic phase.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-15:0",
+      "ctrb:ema:2017-11-15:1",
+      "ctrb:ema:2010-12-20:0"
+    ],
+    "reportedIn": [
+      "doc:ema:tasigna"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized nilotinib for the treatment of adult patients with newly diagnosed Philadelphia chromosome positive chronic myelogenous leukemia (CML) in the chronic phase.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Chronic Myelogenous Leukemia",
+    "raw_therapeutics": "Tasigna (nilotinib)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:tasigna:0"
+    ]
   },
   {
     "id": "ind:ema:tecentriq:0",
