@@ -2,12 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/referenced/statements.schema.json",
   "title": "Statement",
-  "description": "A knowledge claim: a proposition, the direction and strength of its support, and its source documents.",
+  "description": "A knowledge claim: a proposition, the direction and strength of its support, and its source documents. Regulatory statements belong to an indication; journal statements (`stmt:pmid:{pmid}:{n}`) do not.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^stmt:(fda|ema|hse|hc|hpra):.+$"
+      "pattern": "^stmt:(fda|ema|hse|hc|hpra|pmid):.+$"
     },
     "type": {
       "const": "Statement"
@@ -27,13 +27,13 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$",
+        "pattern": "^doc:(fda|ema|hse|hc|hpra|pmid):.+$",
         "description": "Foreign key to `documents.id`."
       }
     },
     "proposition_id": {
       "type": "string",
-      "pattern": "^prop:vtxr:\\d+$",
+      "pattern": "^prop:(vtxr|vprog):\\d+$",
       "description": "Foreign key to `propositions.id`."
     },
     "direction": {
@@ -70,8 +70,41 @@
     "proposition_id",
     "direction",
     "strength_id",
-    "status",
-    "indication_id"
+    "status"
   ],
-  "additionalProperties": false
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^stmt:pmid:"
+          }
+        }
+      },
+      "then": {
+        "not": {
+          "required": [
+            "indication_id"
+          ]
+        },
+        "properties": {
+          "id": {
+            "pattern": "^stmt:pmid:\\d+:\\d+$"
+          },
+          "reportedIn": {
+            "minItems": 1
+          }
+        }
+      },
+      "else": {
+        "required": [
+          "indication_id"
+        ]
+      }
+    }
+  ]
 }

@@ -2,146 +2,241 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/referenced/documents.schema.json",
   "title": "Document",
-  "description": "A source document. At present every document is a regulatory approval.",
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$"
-    },
-    "type": {
-      "const": "Document"
-    },
-    "documentType": {
-      "enum": [
-        "Regulatory approval"
-      ]
-    },
-    "name": {
-      "type": "string"
-    },
-    "title": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "aliases": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "description": {
-      "type": "string"
-    },
-    "urls": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^url:(fda|ema|hse|hc|hpra):.+$",
-        "description": "Foreign key to `urls.id`."
-      }
-    },
-    "doi": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "pmid": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "agent_id": {
-      "type": "string",
-      "pattern": "^agent:(org|user):[a-z0-9]+$",
-      "description": "Foreign key to `agents.id`."
-    },
-    "company": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "drug_name_brand": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "drug_name_generic": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "first_publication_date": {
-      "$ref": "#/$defs/iso_date_or_null"
-    },
-    "publication_date": {
-      "$ref": "#/$defs/iso_date_or_null"
-    },
-    "regulatory_identifier": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "Identifier assigned by the regulatory agency. FDA documents use the application type and six-digit application number (e.g. NDA208716, BLA125427); EMA documents use the product number (e.g. EMEA/H/C/006184)."
-    },
-    "status": {
-      "enum": [
-        "Active",
-        "Deprecated"
-      ]
-    }
-  },
-  "required": [
-    "id",
-    "type",
-    "documentType",
-    "name",
-    "title",
-    "aliases",
-    "description",
-    "urls",
-    "doi",
-    "pmid",
-    "agent_id",
-    "company",
-    "drug_name_brand",
-    "drug_name_generic",
-    "first_publication_date",
-    "publication_date",
-    "regulatory_identifier",
-    "status"
-  ],
-  "additionalProperties": false,
+  "description": "A source document. Root type `Document` with one subtype per `documentType` value.",
+  "$ref": "#/$defs/Document",
   "allOf": [
     {
       "if": {
         "required": [
-          "id"
+          "documentType"
         ],
         "properties": {
-          "id": {
-            "pattern": "^doc:fda:"
+          "documentType": {
+            "const": "Regulatory approval"
           }
         }
       },
       "then": {
+        "$ref": "#/$defs/Regulatory approval"
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "documentType"
+        ],
         "properties": {
-          "regulatory_identifier": {
-            "type": "string",
-            "pattern": "^(BLA|NDA)[0-9]{6}$"
+          "documentType": {
+            "const": "Journal article"
           }
         }
+      },
+      "then": {
+        "$ref": "#/$defs/Journal article"
       }
     }
   ],
+  "unevaluatedProperties": false,
   "$defs": {
+    "Document": {
+      "description": "Root type shared by every document. Subtypes below are selected by the `documentType` field; the top-level schema closes the record.",
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "documentType",
+        "name",
+        "title",
+        "aliases",
+        "description",
+        "urls",
+        "doi",
+        "pmid",
+        "publication_date",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^doc:(fda|ema|hse|hc|hpra|pmid):.+$"
+        },
+        "type": {
+          "const": "Document"
+        },
+        "documentType": {
+          "enum": [
+            "Regulatory approval",
+            "Journal article"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^url:(fda|ema|hse|hc|hpra|pmid):.+$",
+            "description": "Foreign key to `urls.id`."
+          }
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publication_date": {
+          "$ref": "#/$defs/iso_date_or_null"
+        },
+        "status": {
+          "enum": [
+            "Active",
+            "Deprecated"
+          ]
+        }
+      }
+    },
+    "Regulatory approval": {
+      "description": "A label, product information document or regimen published by a regulatory or reimbursement agency.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Document"
+        },
+        {
+          "required": [
+            "agent_id",
+            "company",
+            "drug_name_brand",
+            "drug_name_generic",
+            "first_publication_date",
+            "regulatory_identifier"
+          ],
+          "properties": {
+            "documentType": {
+              "const": "Regulatory approval"
+            },
+            "id": {
+              "pattern": "^doc:(fda|ema|hse|hc|hpra):.+$"
+            },
+            "urls": {
+              "items": {
+                "pattern": "^url:(fda|ema|hse|hc|hpra):.+$"
+              }
+            },
+            "agent_id": {
+              "type": "string",
+              "pattern": "^agent:(org|user):[a-z0-9]+$",
+              "description": "Foreign key to `agents.id`."
+            },
+            "company": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "drug_name_brand": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "drug_name_generic": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "first_publication_date": {
+              "$ref": "#/$defs/iso_date_or_null"
+            },
+            "regulatory_identifier": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Identifier assigned by the regulatory agency. FDA documents use the application type and six-digit application number (e.g. NDA208716, BLA125427); EMA documents use the product number (e.g. EMEA/H/C/006184)."
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "pattern": "^doc:fda:"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "regulatory_identifier": {
+                "type": "string",
+                "pattern": "^(BLA|NDA)[0-9]{6}$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Journal article": {
+      "description": "A journal article, identified by its PubMed id. It has no agent, company, drug name or regulatory identifier fields.",
+      "allOf": [
+        {
+          "$ref": "#/$defs/Document"
+        },
+        {
+          "properties": {
+            "documentType": {
+              "const": "Journal article"
+            },
+            "id": {
+              "pattern": "^doc:pmid:\\d+$"
+            },
+            "title": {
+              "type": "string"
+            },
+            "pmid": {
+              "type": "string",
+              "pattern": "^\\d+$"
+            },
+            "publication_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "urls": {
+              "minItems": 1,
+              "items": {
+                "pattern": "^url:pmid:\\d+:.+$"
+              }
+            }
+          }
+        }
+      ]
+    },
     "iso_date_or_null": {
       "description": "An ISO 8601 date (YYYY-MM-DD) or null.",
       "oneOf": [

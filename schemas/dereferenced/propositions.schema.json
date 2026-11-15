@@ -2,21 +2,21 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/dereferenced/propositions.schema.json",
   "title": "Proposition",
-  "description": "A VariantTherapeuticResponseProposition. Because Cat-VRS does not yet support sets of categorical variants, `subjectVariant` is a placeholder and the biomarker criteria are held in the `biomarkers` extension.",
+  "description": "A VA-Spec proposition, selected by `type`. Because Cat-VRS does not yet support sets of categorical variants, `subjectVariant` is a placeholder and the biomarker criteria are held in the `biomarkers` extension.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^prop:vtxr:\\d+$"
+      "pattern": "^prop:(vtxr|vprog):\\d+$"
     },
     "type": {
-      "const": "VariantTherapeuticResponseProposition"
+      "enum": [
+        "VariantTherapeuticResponseProposition",
+        "VariantPrognosticProposition"
+      ]
     },
     "predicate": {
-      "enum": [
-        "predictsSensitivityTo",
-        "predictsResistanceTo"
-      ]
+      "type": "string"
     },
     "subjectVariant": {
       "type": "object",
@@ -87,6 +87,9 @@
           }
         }
       ]
+    },
+    "objectCondition": {
+      "$ref": "diseases.schema.json"
     }
   },
   "required": [
@@ -94,9 +97,85 @@
     "type",
     "predicate",
     "subjectVariant",
-    "conditionQualifier",
-    "objectTherapeutic",
     "extensions"
   ],
-  "additionalProperties": false
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "const": "VariantTherapeuticResponseProposition"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "conditionQualifier",
+          "objectTherapeutic"
+        ],
+        "not": {
+          "required": [
+            "objectCondition"
+          ]
+        },
+        "properties": {
+          "id": {
+            "pattern": "^prop:vtxr:\\d+$"
+          },
+          "predicate": {
+            "enum": [
+              "predictsSensitivityTo",
+              "predictsResistanceTo"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "const": "VariantPrognosticProposition"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "objectCondition"
+        ],
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "conditionQualifier"
+              ]
+            },
+            {
+              "required": [
+                "objectTherapeutic"
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "id": {
+            "pattern": "^prop:vprog:\\d+$"
+          },
+          "predicate": {
+            "enum": [
+              "associatedWithBetterOutcomeFor",
+              "associatedWithWorseOutcomeFor"
+            ]
+          }
+        }
+      }
+    }
+  ]
 }

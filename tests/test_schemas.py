@@ -28,6 +28,11 @@ def first_record(data, key, predicate):
     return copy.deepcopy(next(r for r in data[key] if predicate(r)))
 
 
+def is_journal_statement(record):
+    """Journal statements (`stmt:pmid:{pmid}:{n}`) have no indication."""
+    return record["id"].startswith("stmt:pmid:")
+
+
 def load_schema(path):
     return json.loads(path.read_text())
 
@@ -53,10 +58,11 @@ def schema_paths(tree):
     return sorted((SCHEMA_ROOT / tree).glob("*.schema.json"))
 
 
-def assert_required_shape(schema, record):
+def assert_required_shape(schema, record, optional_extensions=()):
     """
     Asserts a record has every required top-level key and every expected extension name,
-    without validating the contents of `$ref`-based fields or extension values.
+    without validating the contents of `$ref`-based fields or extension values. Names in
+    `optional_extensions` are not expected on this record.
     """
     missing_keys = set(schema["required"]) - record.keys()
     assert not missing_keys, f"{record.get('id')} missing keys: {missing_keys}"
@@ -65,7 +71,9 @@ def assert_required_shape(schema, record):
         for branch in schema["properties"]["extensions"]["items"]["anyOf"]
     }
     extension_names = {e["name"] for e in record["extensions"]}
-    missing_extensions = expected_extensions - extension_names
+    missing_extensions = (
+        expected_extensions - extension_names - set(optional_extensions)
+    )
     assert not missing_extensions, (
         f"{record.get('id')} missing extensions: {missing_extensions}"
     )
@@ -170,7 +178,7 @@ def test_dereferenced_records_match_schema(name, registry):
 def test_dereferenced_statements():
     """
     Ensures dereferenced statements have their required keys and `status`/`indication`
-    extensions, without revalidating nested contributions/documents/proposition/strength
+    extensions (journal statements have no indication), without revalidating nested contributions/documents/proposition/strength
     or the indication's contents — those are covered by their own dereferenced schemas
     and by test_references.py's foreign-key checks.
     """
@@ -178,7 +186,9 @@ def test_dereferenced_statements():
     files = sorted((DEREFERENCED_ROOT / "statements").glob("*.json"))
     assert files, "No dereferenced files found for statements"
     for path in files:
-        assert_required_shape(schema, json.loads(path.read_text()))
+        record = json.loads(path.read_text())
+        optional = ("indication",) if is_journal_statement(record) else ()
+        assert_required_shape(schema, record, optional_extensions=optional)
 
 
 def test_dereferenced_indications_include_statement_description():
@@ -203,6 +213,8 @@ def test_dereferenced_statements_omit_indication_statement_description():
     assert files, "No dereferenced files found for statements"
     for path in files:
         record = json.loads(path.read_text())
+        if is_journal_statement(record):
+            continue
         indication = next(e for e in record["extensions"] if e["name"] == "indication")
         names = {e["name"] for e in indication["value"]["extensions"]}
         assert "statement description" not in names, record["id"]
@@ -423,6 +435,8 @@ def test_dereferenced_statements_omit_indication_requires_biomarker():
     assert files, "No dereferenced files found for statements"
     for path in files:
         record = json.loads(path.read_text())
+        if is_journal_statement(record):
+            continue
         indication = next(e for e in record["extensions"] if e["name"] == "indication")
         names = {e["name"] for e in indication["value"]["extensions"]}
         assert "requires biomarker" not in names, record["id"]

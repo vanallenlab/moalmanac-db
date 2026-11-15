@@ -1,0 +1,23 @@
+[
+  {
+    "id": "prop:vtxr:9000",
+    "type": "VariantTherapeuticResponseProposition",
+    "predicate": "predictsResistanceTo",
+    "biomarker_criteria": [
+      "bmkr.criterion:9000",
+      "bmkr.criterion:16"
+    ],
+    "conditionQualifier_id": "dis:ncit:C5105",
+    "therapy_id": "tx:ncit:C66939",
+    "therapy_group_id": null
+  },
+  {
+    "id": "prop:vprog:9000",
+    "type": "VariantPrognosticProposition",
+    "predicate": "associatedWithWorseOutcomeFor",
+    "biomarker_criteria": [
+      "bmkr.criterion:80"
+    ],
+    "objectCondition_id": "dis:ncit:C2919"
+  }
+]

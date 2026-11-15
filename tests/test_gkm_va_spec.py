@@ -5,8 +5,14 @@ from ga4gh.va_spec.base.core import Contribution
 from ga4gh.va_spec.base.core import Document
 from ga4gh.va_spec.base.core import InformationEntity
 from ga4gh.va_spec.base.core import Statement
+from ga4gh.va_spec.base.core import VariantPrognosticProposition
 from ga4gh.va_spec.base.core import VariantTherapeuticResponseProposition
 from ga4gh.va_spec.base.domain_entities import TherapyGroup
+
+PROPOSITION_MODELS = {
+    "VariantPrognosticProposition": VariantPrognosticProposition,
+    "VariantTherapeuticResponseProposition": VariantTherapeuticResponseProposition,
+}
 
 
 def with_valid_subject_variant(proposition):
@@ -87,13 +93,13 @@ def test_indications(dereferenced_records):
             pytest.fail(error_message)
 
 
-def test_therapeutic_response_propositions(dereferenced_records):
+def test_propositions(dereferenced_records):
     """
-    Assess if therapy response propositions are following VA-Spec schema for Therapeutic Response Proposition
+    Assess if propositions are following the VA-Spec schema for their proposition type
     """
     for proposition in dereferenced_records["propositions"]:
         try:
-            VariantTherapeuticResponseProposition.model_validate(
+            PROPOSITION_MODELS[proposition["type"]].model_validate(
                 with_valid_subject_variant(proposition)
             )
         except pydantic.ValidationError as e:

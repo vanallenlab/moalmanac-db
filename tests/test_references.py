@@ -8,9 +8,12 @@ from utils import json_utils
 
 def test_associated_indication_ids_are_valid(data):
     """
-    Ensures that the indication_id associated with each statement is valid
+    Ensures that the indication_id associated with each statement is valid. Journal
+    statements have no indication and are skipped.
     """
     for statement in data["statements"]:
+        if "indication_id" not in statement:
+            continue
         matched_indications = json_utils.get_records_by_key_value(
             records=data["indications"], key="id", value=statement["indication_id"]
         )
@@ -24,9 +27,12 @@ def test_associated_indication_ids_are_valid(data):
 
 def test_no_mismatch_between_document_for_indication_and_statement(data):
     """
-    Assess if document associated with indications and associated statements differ
+    Assess if document associated with indications and associated statements differ.
+    Journal statements have no indication and are skipped.
     """
     for statement in data["statements"]:
+        if "indication_id" not in statement:
+            continue
         statement_docs = statement["reportedIn"]
         matched_indications = json_utils.get_records_by_key_value(
             records=data["indications"], key="id", value=statement["indication_id"]

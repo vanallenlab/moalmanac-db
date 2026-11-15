@@ -32,6 +32,8 @@ class FKSingle:
         dest_key (str): The key name written after dereferencing (replaces src_key).
         get_table (typing.Callable[[Database], BaseTable]): Returns the referenced table from the Database.
         nullable (bool): If True, a None value in src_key is left as None instead of being looked up.
+        optional (bool): If True, a record without src_key is skipped. Used for keys that only
+            some record subtypes carry, e.g. `indication_id` on regulatory statements.
         post (typing.Callable[[dict], dict] | None): Optional function applied to the resolved record.
             Not applied when the resolved value is None.
     """
@@ -40,6 +42,7 @@ class FKSingle:
     dest_key: str
     get_table: typing.Callable[[Database], BaseTable]
     nullable: bool = False
+    optional: bool = False
     post: typing.Callable[[dict], dict] | None = None
 
 
@@ -161,6 +164,8 @@ class BaseTable:
             table.dereference(db)
             for record in self.records:
                 if isinstance(fk, FKSingle):
+                    if fk.optional and fk.src_key not in record:
+                        continue
                     if not (fk.nullable and record.get(fk.src_key) is None):
                         self.dereference_single(record, fk.src_key, table.records)
                     self.replace_key(record, fk.src_key, fk.dest_key)
@@ -820,7 +825,7 @@ class Documents(BaseTable):
     """
     Represents the Documents table. This class inherits common functionality from the BaseTable class and
     dereferences keys that reference other tables. This table references the following tables:
-    - Agents (initial key: `agent_id`, resulting key: `agent`)
+    - Agents (initial key: `agent_id`, resulting key: `agent`; regulatory approvals only)
     - URLs (initial key: `urls`, resulting key: `urls`)
 
     Attributes:
@@ -832,6 +837,7 @@ class Documents(BaseTable):
             "agent_id",
             "agent",
             lambda db: db.agents,
+            optional=True,
             post=strip_keys("extensions"),
         ),
         FKList(
@@ -845,63 +851,51 @@ class Documents(BaseTable):
     def convert_fields_to_extensions(self):
         """
         Converts relevant keys to extensions.
+
+        A key becomes an extension only if the record has it, so a journal article, which
+        has no agent, company, drug name or regulatory identifier, gets `publication_date`
+        and `status` alone.
         """
         extension_fields = [
-            "agent",
-            "company",
-            "drug_name_brand",
-            "drug_name_generic",
-            "first_publication_date",
-            "publication_date",
-            "regulatory_identifier",
-            "status",
+            (
+                "agent",
+                "The organization that published this document.",
+            ),
+            (
+                "company",
+                "The company that manufactures the cancer drug. Only applicable to market authorization documents.",
+            ),
+            (
+                "drug_name_brand",
+                "The brand name of the cancer drug, per this document. Only applicable to market authorization documents.",
+            ),
+            (
+                "drug_name_generic",
+                "The generic name of the cancer drug, per this document. Only applicable to market authorization documents.",
+            ),
+            (
+                "first_publication_date",
+                "The publication date for the initial version of this document.",
+            ),
+            (
+                "publication_date",
+                "The publication date for the document.",
+            ),
+            (
+                "regulatory_identifier",
+                "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184).",
+            ),
+            (
+                "status",
+                "Whether this document is Active or Deprecated within moalmanac-db.",
+            ),
         ]
         for record in self.records:
-            extensions = [
-                {
-                    "name": "agent",
-                    "value": record["agent"],
-                    "description": "The organization that published this document.",
-                },
-                {
-                    "name": "company",
-                    "value": record["company"],
-                    "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents.",
-                },
-                {
-                    "name": "drug_name_brand",
-                    "value": record["drug_name_brand"],
-                    "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents.",
-                },
-                {
-                    "name": "drug_name_generic",
-                    "value": record["drug_name_generic"],
-                    "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents.",
-                },
-                {
-                    "name": "first_publication_date",
-                    "value": record["first_publication_date"],
-                    "description": "The publication date for the initial version of this document.",
-                },
-                {
-                    "name": "publication_date",
-                    "value": record["publication_date"],
-                    "description": "The publication date for the document.",
-                },
-                {
-                    "name": "regulatory_identifier",
-                    "value": record["regulatory_identifier"],
-                    "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184).",
-                },
-                {
-                    "name": "status",
-                    "value": record["status"],
-                    "description": "Whether this document is Active or Deprecated within moalmanac-db.",
-                },
+            record["extensions"] = [
+                {"name": name, "value": record.pop(name), "description": description}
+                for name, description in extension_fields
+                if name in record
             ]
-            record["extensions"] = extensions
-            for field in extension_fields:
-                self.remove_key(record=record, key=field)
 
     def dereference(self, db: Database) -> None:
         """
@@ -1177,16 +1171,32 @@ class Propositions(BaseTable):
       `subject` itself resolved to the full biomarker record). Since Cat-VRS does not yet support
       sets of categorical variants, `biomarkers` is then moved into an extension of the same name
       and `subjectVariant` is set to `SUBJECT_VARIANT_PLACEHOLDER`.
-    - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`)
+    - Diseases (initial key: `conditionQualifier_id`, resulting key: `conditionQualifier`;
+      therapeutic response propositions only)
+    - Diseases (initial key: `objectCondition_id`, resulting key: `objectCondition`;
+      prognostic propositions only)
     - Therapies (initial key: `therapy_id`, resulting key: `objectTherapeutic`)
     - TherapyGroups (initial_key: `therapy_group_id`, resulting key: `objectTherapeutic`)
+
+    Which keys a record carries depends on its `type`; see schemas/referenced/propositions.schema.json.
 
     Attributes:
         records (list[dict]): A list of dictionaries representing the proposition records.
     """
 
     foreign_keys = [
-        FKSingle("conditionQualifier_id", "conditionQualifier", lambda db: db.diseases),
+        FKSingle(
+            "conditionQualifier_id",
+            "conditionQualifier",
+            lambda db: db.diseases,
+            optional=True,
+        ),
+        FKSingle(
+            "objectCondition_id",
+            "objectCondition",
+            lambda db: db.diseases,
+            optional=True,
+        ),
         FKList(
             "biomarker_criteria",
             "biomarkers",
@@ -1199,10 +1209,11 @@ class Propositions(BaseTable):
         Moves the dereferenced `biomarkers` into a `biomarkers` extension and adds the placeholder `subjectVariant`.
 
         Each record is rebuilt in place with the key order `id`, `type`, `predicate`, `subjectVariant`,
-        `conditionQualifier`, `objectTherapeutic`, `extensions`, followed by any other keys.
+        `conditionQualifier`, `objectTherapeutic`, `objectCondition`, `extensions`, followed by
+        any other keys. A record has only the object and qualifier keys of its `type`.
         """
         leading_keys = ["id", "type", "predicate"]
-        middle_keys = ["conditionQualifier", "objectTherapeutic"]
+        middle_keys = ["conditionQualifier", "objectTherapeutic", "objectCondition"]
         for record in self.records:
             extensions = [
                 {
@@ -1218,7 +1229,8 @@ class Propositions(BaseTable):
             ordered = {key: record.pop(key) for key in leading_keys}
             ordered["subjectVariant"] = copy.deepcopy(SUBJECT_VARIANT_PLACEHOLDER)
             for key in middle_keys:
-                ordered[key] = record.pop(key)
+                if key in record:
+                    ordered[key] = record.pop(key)
             ordered.update(record)
             ordered["extensions"] = extensions
             record.clear()
@@ -1261,10 +1273,14 @@ class Propositions(BaseTable):
             therapies (Therapies): list of dictionaries to dereference `therapy_ids` against.
             therapy_groups (TherapyGroups): list of dictionaries to dereference `therapy_group_ids` against.
 
+        Propositions of other types have no therapeutic and are left unchanged.
+
         Raises:
             KeyError: If neither referenced_key values, `therapy_id` or `therapy_group_id, are not found in a record.
         """
         for record in self.records:
+            if record["type"] != "VariantTherapeuticResponseProposition":
+                continue
             if isinstance(record["therapy_id"], str):
                 self.dereference_single(
                     record=record,
@@ -1301,7 +1317,8 @@ class Statements(BaseTable):
     dereferences keys that reference other tables. This table references the following tables:
     - Contributions (initial key: `contributions`, resulting key: `contributions`)
     - Documents (initial key: `reportedIn`, resulting key: `reportedIn`)
-    - Indications (initial key: `indication_id, resulting key: `indication`)
+    - Indications (initial key: `indication_id, resulting key: `indication`; regulatory
+      statements only, journal statements have no indication)
     - Propositions (initial key: `proposition_id`, resulting key: `proposition`)
     - Strengths (initial key: `strength_id`, resulting key: `strength`)
 
@@ -1319,6 +1336,7 @@ class Statements(BaseTable):
             "indication_id",
             "indication",
             lambda db: db.indications,
+            optional=True,
             post=strip_extensions("statement description", "requires biomarker"),
         ),
         FKSingle("proposition_id", "proposition", lambda db: db.propositions),
@@ -1327,30 +1345,29 @@ class Statements(BaseTable):
 
     def convert_fields_to_extensions(self) -> None:
         """
-        Converts `status` and the dereferenced `indication` record to extensions.
+        Converts `status` and, where present, the dereferenced `indication` record to extensions.
         """
-        extension_fields = ["status", "indication"]
         for record in self.records:
             extensions = [
                 {
                     "name": "status",
-                    "value": record["status"],
+                    "value": record.pop("status"),
                     "description": (
                         "Whether this Statement is Active, Superseded, or Deprecated within moalmanac-db."
                     ),
                 },
-                {
-                    "name": "indication",
-                    "value": record["indication"],
-                    "description": (
-                        "The underlying Indication supporting this Statement."
-                    ),
-                },
             ]
+            if "indication" in record:
+                extensions.append(
+                    {
+                        "name": "indication",
+                        "value": record.pop("indication"),
+                        "description": (
+                            "The underlying Indication supporting this Statement."
+                        ),
+                    }
+                )
             record["extensions"] = extensions
-            for field in extension_fields:
-                if field in record:
-                    self.remove_key(record=record, key=field)
 
     def dereference(self, db: Database) -> None:
         """

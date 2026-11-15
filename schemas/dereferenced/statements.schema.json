@@ -2,12 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://moalmanac.org/schemas/dereferenced/statements.schema.json",
   "title": "Statement",
-  "description": "A knowledge claim, with contributions, documents, proposition, and strength embedded. `status` and the underlying `indication` are extensions.",
+  "description": "A knowledge claim, with contributions, documents, proposition, and strength embedded. `status` is an extension, as is the underlying `indication` of a regulatory statement. Journal statements have no `indication` extension.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^stmt:(fda|ema|hse|hc|hpra):.+$"
+      "pattern": "^stmt:(fda|ema|hse|hc|hpra|pmid):.+$"
     },
     "type": {
       "const": "Statement"
@@ -106,36 +106,6 @@
               }
             }
           }
-        },
-        {
-          "contains": {
-            "$ref": "extension.schema.json",
-            "properties": {
-              "name": {
-                "const": "indication"
-              },
-              "value": {
-                "$ref": "indications.schema.json",
-                "properties": {
-                  "extensions": {
-                    "not": {
-                      "contains": {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "const": "statement description"
-                          }
-                        },
-                        "required": [
-                          "name"
-                        ]
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       ]
     }
@@ -151,5 +121,72 @@
     "strength",
     "extensions"
   ],
-  "additionalProperties": false
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^stmt:pmid:"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "extensions": {
+            "items": {
+              "properties": {
+                "name": {
+                  "enum": [
+                    "status"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "extensions": {
+            "allOf": [
+              {
+                "contains": {
+                  "$ref": "extension.schema.json",
+                  "properties": {
+                    "name": {
+                      "const": "indication"
+                    },
+                    "value": {
+                      "$ref": "indications.schema.json",
+                      "properties": {
+                        "extensions": {
+                          "not": {
+                            "contains": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "const": "statement description"
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
 }
