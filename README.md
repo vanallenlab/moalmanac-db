@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17089309.svg)](https://doi.org/10.5281/zenodo.17089309)
+[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs43018--021--00243--3-blue)](https://doi.org/10.1038/s43018-021-00243-3)
 [![License: CC BY 4.0](https://img.shields.io/badge/Database-CC%20BY%204.0-informational)](./LICENSE)
 [![License: GPL v2](https://img.shields.io/badge/Code-GPL%20v2-informational)](./LICENSE-code)
 
