@@ -1,0 +1,128 @@
+{
+  "id": "ind:hpra:paclitaxel:0",
+  "type": "Indication",
+  "description": "Paclitaxel is indicated for the initial treatment of locally advanced or metastatic breast cancer in combination with trastuzumab, in patients who over-express HER-2 (human epidermal growth factor receptor 2) at a 3+ level as determined by immunohistochemistry and for whom an anthracycline is not suitable.",
+  "contributions": [
+    {
+      "id": "ctrb:vanallenlab:2026-11-16:0",
+      "type": "Contribution",
+      "description": "Initial curation of this indication into moalmanac-db.",
+      "date": "2026-11-16",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:vanallenlab:2026-10-26:1",
+      "type": "Contribution",
+      "description": "HPRA approval date set to the 'Date of first authorisation' in section 9 of the HPRA's Summary of Product Characteristics.",
+      "date": "2026-10-26",
+      "contributor": {
+        "id": "agent:user:vanallenlab",
+        "type": "Agent",
+        "agentType": "contributor",
+        "name": "Van Allen lab",
+        "description": "Van Allen lab, Dana-Farber Cancer Institute"
+      }
+    },
+    {
+      "id": "ctrb:hpra:2009-04-03:0",
+      "type": "Contribution",
+      "description": "Indication received marketing authorisation from the HPRA.",
+      "date": "2009-04-03",
+      "contributor": {
+        "id": "agent:org:hpra",
+        "type": "Agent",
+        "agentType": "organization",
+        "name": "Health Products Regulatory Authority",
+        "description": "Regulatory agency that authorises medicines for marketing in Ireland and maintains the national register of authorised medicines."
+      }
+    }
+  ],
+  "reportedIn": [
+    {
+      "id": "doc:hpra:paclitaxel",
+      "type": "Document",
+      "documentType": "Regulatory approval",
+      "name": "Paclitaxel (paclitaxel) [summary of product characteristics]. HPRA.",
+      "title": null,
+      "aliases": [],
+      "description": "Fresenius Kabi Deutschland GmbH. Paclitaxel 6 mg/ml concentrate for solution for infusion (Paclitaxel) [summary of product characteristics]. Health Products Regulatory Authority website. https://assets.hpra.ie/products/Human/18453/Licence_PA2059-050-001_21092022103217.pdf. Revised September 2022. Accessed November 16, 2026.",
+      "urls": [
+        "https://assets.hpra.ie/products/Human/18453/Licence_PA2059-050-001_21092022103217.pdf",
+        "https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/18453"
+      ],
+      "doi": null,
+      "pmid": null,
+      "extensions": [
+        {
+          "name": "agent",
+          "value": {
+            "id": "agent:org:hpra",
+            "type": "Agent",
+            "agentType": "organization",
+            "name": "Health Products Regulatory Authority",
+            "description": "Regulatory agency that authorises medicines for marketing in Ireland and maintains the national register of authorised medicines."
+          },
+          "description": "The organization that published this document."
+        },
+        {
+          "name": "company",
+          "value": "Fresenius Kabi Deutschland GmbH",
+          "description": "The company that manufactures the cancer drug. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_brand",
+          "value": "Paclitaxel",
+          "description": "The brand name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "drug_name_generic",
+          "value": "paclitaxel",
+          "description": "The generic name of the cancer drug, per this document. Only applicable to market authorization documents."
+        },
+        {
+          "name": "first_publication_date",
+          "value": null,
+          "description": "The publication date for the initial version of this document."
+        },
+        {
+          "name": "publication_date",
+          "value": "2022-09-21",
+          "description": "The publication date for the document."
+        },
+        {
+          "name": "regulatory_identifier",
+          "value": "PA2059/050/001",
+          "description": "Identifier assigned by the regulatory agency, such as an FDA application number (e.g. NDA208716, BLA125427) or an EMA product number (e.g. EMEA/H/C/006184)."
+        },
+        {
+          "name": "status",
+          "value": "Active",
+          "description": "Whether this document is Active or Deprecated within moalmanac-db."
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "status",
+      "value": "Approved",
+      "description": "Current approval status."
+    },
+    {
+      "name": "statement description",
+      "value": "Ireland's Health Products Regulatory Authority (HPRA) has authorized paclitaxel in combination with trastuzumab for the initial treatment of patients with locally advanced or metastatic breast cancer that over-express HER-2 (human epidermal growth factor receptor 2) at a 3+ level as determined by immunohistochemistry and for whom an anthracycline is not suitable.",
+      "description": "The description text for all Statements derived from this Indication."
+    },
+    {
+      "name": "requires biomarker",
+      "value": true,
+      "description": "Whether the indication's population is defined by a biomarker. False for non-precision indications curated as analogs for reimbursement, which have no statements."
+    }
+  ]
+}
