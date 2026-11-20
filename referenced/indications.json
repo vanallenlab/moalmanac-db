@@ -5289,7 +5289,7 @@
     "description": "BESPONSA is indicated as monotherapy for the treatment of adults with relapsed or refractory CD22-positive B cell precursor acute lymphoblastic leukaemia (ALL). Adult patients with Philadelphia chromosome positive (Ph+) relapsed or refractory B cell precursor ALL should have failed treatment with at least 1 tyrosine kinase inhibitor (TKI).",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2017-06-28:0"
+      "ctrb:ema:2017-06-29:0"
     ],
     "reportedIn": [
       "doc:ema:besponsa"
@@ -5470,7 +5470,7 @@
     "description": "BLINCYTO is indicated for the treatment of adults with Philadelphia chromosome negative relapsed or refractory B-precursor acute lymphoblastic leukaemia (ALL).",
     "contributions": [
       "ctrb:vanallenlab:2026-11-12:0",
-      "ctrb:ema:2020-12-22:1",
+      "ctrb:ema:2018-08-23:1",
       "ctrb:ema:2015-11-23:0"
     ],
     "reportedIn": [
@@ -5479,6 +5479,28 @@
     "status": "Superseded",
     "statement_description": "The European Medicines Agency (EMA) has authorized blinatumomab for the treatment of adult patients with Philadelphia chromosome negative relapsed or refractory B-precursor acute lymphoblastic leukemia (ALL).",
     "raw_biomarkers": "Philadelphia chromosome negative",
+    "raw_cancer_types": "Acute lymphoblastic leukemia (ALL)",
+    "raw_therapeutics": "Blincyto (blinatumomab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:blincyto:8"
+    ]
+  },
+  {
+    "id": "ind:ema:blincyto:8",
+    "type": "Indication",
+    "description": "BLINCYTO is indicated as monotherapy for the treatment of adults with Philadelphia chromosome negative CD19 positive relapsed or refractory B-precursor acute lymphoblastic leukaemia (ALL).",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2020-12-22:1",
+      "ctrb:ema:2018-08-23:0"
+    ],
+    "reportedIn": [
+      "doc:ema:blincyto"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized blinatumomab as a monotherapy for the treatment of adult patients with Philadelphia chromosome negative CD19 positive relapsed or refractory B-precursor acute lymphoblastic leukemia (ALL).",
+    "raw_biomarkers": "Philadelphia chromosome negative, CD19 positive",
     "raw_cancer_types": "Acute lymphoblastic leukemia (ALL)",
     "raw_therapeutics": "Blincyto (blinatumomab)",
     "requires_biomarker": true,
@@ -5596,7 +5618,7 @@
     "description": "Encorafenib is indicated in combination with binimetinib for the treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2018-09-19:0"
+      "ctrb:ema:2018-09-20:0"
     ],
     "reportedIn": [
       "doc:ema:braftovi"
@@ -5672,7 +5694,7 @@
     "description": "Caprelsa is indicated for the treatment of aggressive and symptomatic medullary thyroid cancer (MTC) in patients with unresectable locally advanced or metastatic disease. For patients in whom rearranged during transfection (RET) mutation is not known or is negative, a possible lower benefit should be taken into account before individual treatment decision.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2022-11-28:1",
+      "ctrb:ema:2016-12-16:1",
       "ctrb:ema:2012-02-17:0"
     ],
     "reportedIn": [
@@ -5685,7 +5707,7 @@
     "raw_therapeutics": "Caprelsa (vandetanib)",
     "requires_biomarker": false,
     "superseded_by": [
-      "ind:ema:caprelsa:1"
+      "ind:ema:caprelsa:2"
     ]
   },
   {
@@ -5706,6 +5728,28 @@
     "raw_therapeutics": "Caprelsa (vandetanib)",
     "requires_biomarker": true,
     "superseded_by": []
+  },
+  {
+    "id": "ind:ema:caprelsa:2",
+    "type": "Indication",
+    "description": "Caprelsa is indicated for the treatment of aggressive and symptomatic medullary thyroid cancer (MTC) in patients with unresectable locally advanced or metastatic disease. Caprelsa is indicated in adults, children and adolescents aged 5 years and older. For patients in whom Rearranged during Transfection (RET) mutation is not known or is negative, a possible lower benefit should be taken into account before individual treatment decision.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2022-11-28:1",
+      "ctrb:ema:2016-12-16:0"
+    ],
+    "reportedIn": [
+      "doc:ema:caprelsa"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized vandetanib for the treatment of aggressive and symptomatic medullary thyroid cancer (MTC) in patients with unresectable locally advanced or metastatic disease. Vandetanib is indicated in adults, children, and adolescents aged 5 years and older. For patients in whom rearranged during transfection (RET) mutation is not known or is negative, a possible lower benefit should be taken into account before individual treatment decision.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Medullary thyroid cancer",
+    "raw_therapeutics": "Caprelsa (vandetanib)",
+    "requires_biomarker": false,
+    "superseded_by": [
+      "ind:ema:caprelsa:1"
+    ]
   },
   {
     "id": "ind:ema:cotellic:0",
@@ -5751,7 +5795,7 @@
     "description": "TAXOTERE in combination with trastuzumab is indicated for the treatment of patients with metastatic breast cancer whose tumours over express HER2 and who previously have not received chemotherapy for metastatic disease.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2005-01-05:0"
+      "ctrb:ema:2004-12-22:0"
     ],
     "reportedIn": [
       "doc:ema:taxotere"
@@ -6980,16 +7024,16 @@
   {
     "id": "ind:ema:keytruda:6",
     "type": "Indication",
-    "description": "KEYTRUDA as monotherapy is indicated for adults with MSI-H or dMMR colorectal cancer in the following settings: first-line treatment of metastatic colorectal cancer; treatment of unresectable or metastatic colorectal cancer after previous fluoropyrimidine -based combination therapy.",
+    "description": "KEYTRUDA as monotherapy is indicated for adults with MSI-H or dMMR colorectal cancer in the following settings: first-line treatment of metastatic colorectal cancer.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2021-01-21:0"
+      "ctrb:ema:2022-06-22:0"
     ],
     "reportedIn": [
       "doc:ema:keytruda"
     ],
     "status": "Approved",
-    "statement_description": "The European Medicines Agency (EMA) has authorized pembrolizumab as a monotherapy for the treatment of adult patients with microsatellite instability high (MSI-H) or mismatch repair deficiency (dMMR) colorectal cancer as a first line-treatment for metastatic colorectal cancer or treatment of unresectable or metastatic colorectal cancer after previously fluoropryimidine-based combination therapy.",
+    "statement_description": "The European Medicines Agency (EMA) has authorized pembrolizumab as a monotherapy for the first-line treatment of adult patients with microsatellite instability high (MSI-H) or mismatch repair deficient (dMMR) metastatic colorectal cancer.",
     "raw_biomarkers": null,
     "raw_cancer_types": "Colorectal cancer",
     "raw_therapeutics": "Keytruda (pembrolizumab)",
@@ -7189,6 +7233,69 @@
     "superseded_by": [
       "ind:ema:keytruda:9",
       "ind:ema:keytruda:14"
+    ]
+  },
+  {
+    "id": "ind:ema:keytruda:17",
+    "type": "Indication",
+    "description": "KEYTRUDA as monotherapy is indicated for adults with MSI-H or dMMR colorectal cancer in the following settings: treatment of unresectable or metastatic colorectal cancer after previous fluoropyrimidine-based combination therapy.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2022-06-22:0"
+    ],
+    "reportedIn": [
+      "doc:ema:keytruda"
+    ],
+    "status": "Approved",
+    "statement_description": "The European Medicines Agency (EMA) has authorized pembrolizumab as a monotherapy for the treatment of adult patients with microsatellite instability high (MSI-H) or mismatch repair deficient (dMMR) unresectable or metastatic colorectal cancer after previous fluoropyrimidine-based combination therapy.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Keytruda (pembrolizumab)",
+    "requires_biomarker": true,
+    "superseded_by": []
+  },
+  {
+    "id": "ind:ema:keytruda:18",
+    "type": "Indication",
+    "description": "KEYTRUDA as monotherapy is indicated for the first-line treatment of metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer in adults.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2022-06-22:1",
+      "ctrb:ema:2021-01-21:0"
+    ],
+    "reportedIn": [
+      "doc:ema:keytruda"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized pembrolizumab as a monotherapy for the first-line treatment of adult patients with metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Keytruda (pembrolizumab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:keytruda:6"
+    ]
+  },
+  {
+    "id": "ind:ema:keytruda:19",
+    "type": "Indication",
+    "description": "KEYTRUDA as monotherapy is indicated for the treatment of the following MSI-H or dMMR tumours in adults with unresectable or metastatic colorectal cancer after previous fluoropyrimidine-based combination therapy.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2022-06-22:1",
+      "ctrb:ema:2022-04-25:0"
+    ],
+    "reportedIn": [
+      "doc:ema:keytruda"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized pembrolizumab as a monotherapy for the treatment of adult patients with microsatellite instability high (MSI-H) or mismatch repair deficient (dMMR) unresectable or metastatic colorectal cancer after previous fluoropyrimidine-based combination therapy.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Keytruda (pembrolizumab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:keytruda:17"
     ]
   },
   {
@@ -8438,7 +8545,7 @@
   {
     "id": "ind:ema:rozlytrek:1",
     "type": "Indication",
-    "description": "Rozlytrek as monotherapy is indicated for the treatment of adult and paediatric patients older than one month with solid tumours expressing a neurotrophic tyrosine receptor kinase (NTRK) gene fusion (i) who have a disease that is locally advanced, metastatic or where surgical resection is likely to result in severe morbidity, and (ii) who have not received a prior NTRK inhibitor, (iii) who have no satisfactory treatment options.",
+    "description": "Rozlytrek as monotherapy is indicated for the treatment of adult and paediatric patients older than 1 month with solid tumours that have a NTRK gene fusion (i) who have a disease that is locally advanced, metastatic or where surgical resection is likely to result in severe morbidity, and (ii) who have not received a prior NTRK inhibitor, (iii) who have no satisfactory treatment options.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
       "ctrb:ema:2024-06-27:0"
@@ -8447,12 +8554,34 @@
       "doc:ema:rozlytrek"
     ],
     "status": "Approved",
-    "statement_description": "The European Medicines Agency (EMA) has conditionally authorized entrectinib for the treatment of adult and pediatric patients 12 years of age and older with solid tumors expressing a neuotrophic tyrosine receptor kinase (NTRK) gene fusion who have a disease that is locally advanced, metastatic, or where surgical resection is likely to result in severe morbidity, and who have not received a prior NTRK inhibitor, and who have no satisfactory treatment options.",
+    "statement_description": "The European Medicines Agency (EMA) has conditionally authorized entrectinib for the treatment of adult and pediatric patients older than 1 month with solid tumors that have a neurotrophic tyrosine receptor kinase (NTRK) gene fusion who have a disease that is locally advanced, metastatic, or where surgical resection is likely to result in severe morbidity, and who have not received a prior NTRK inhibitor, and who have no satisfactory treatment options.",
     "raw_biomarkers": null,
     "raw_cancer_types": "Any solid tumor",
     "raw_therapeutics": "Rozlytrek (entrectinib)",
     "requires_biomarker": true,
     "superseded_by": []
+  },
+  {
+    "id": "ind:ema:rozlytrek:2",
+    "type": "Indication",
+    "description": "Rozlytrek as monotherapy is indicated for the treatment of adult and paediatric patients 12 years of age and older with solid tumours expressing a neurotrophic tyrosine receptor kinase (NTRK) gene fusion, (i) who have a disease that is locally advanced, metastatic or where surgical resection is likely to result in severe morbidity, and (ii) who have not received a prior NTRK inhibitor, (iii) who have no satisfactory treatment options.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2024-06-27:1",
+      "ctrb:ema:2020-07-31:0"
+    ],
+    "reportedIn": [
+      "doc:ema:rozlytrek"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has conditionally authorized entrectinib for the treatment of adult and pediatric patients 12 years of age and older with solid tumors expressing a neurotrophic tyrosine receptor kinase (NTRK) gene fusion who have a disease that is locally advanced, metastatic, or where surgical resection is likely to result in severe morbidity, and who have not received a prior NTRK inhibitor, and who have no satisfactory treatment options.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Any solid tumor",
+    "raw_therapeutics": "Rozlytrek (entrectinib)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:rozlytrek:1"
+    ]
   },
   {
     "id": "ind:ema:rydapt:0",
@@ -8713,7 +8842,7 @@
     "description": "Dabrafenib in combination with trametinib is indicated for the treatment of adult patients with advanced non-small cell lung cancer with a BRAF V600 mutation.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2017-03-27:0"
+      "ctrb:ema:2017-03-29:0"
     ],
     "reportedIn": [
       "doc:ema:tafinlar"
@@ -8849,7 +8978,7 @@
     "description": "TAGRISSO as monotherapy is indicated for the treatment of adult patients with locally advanced or metastatic EGFR T790M mutation-positive NSCLC.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2016-02-01:0"
+      "ctrb:ema:2016-02-02:0"
     ],
     "reportedIn": [
       "doc:ema:tagrisso"
@@ -9159,7 +9288,7 @@
     "description": "Tecentriq as monotherapy is indicated for the treatment of adult patients with locally advanced or metastatic NSCLC after prior chemotherapy. Patients with EGFR mutant or ALK-positive NSCLC should also have received targeted therapies before receiving Tecentriq.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2017-09-20:0"
+      "ctrb:ema:2017-09-21:0"
     ],
     "reportedIn": [
       "doc:ema:tecentriq"
@@ -9407,7 +9536,7 @@
     "description": "Tyverb is indicated for the treatment of adult patients with breast cancer, whose tumours overexpress HER2 (ErbB2) in combination with an aromatase inhibitor for postmenopausal women with hormone receptor positive metastatic disease, not currently intended for chemotherapy. The patients in the registration study were not previously treated with trastuzumab or an aromatase inhibitor. No data are available on the efficacy of this combination relative to trastuzumab in combination with an aromatase inhibitor in this patient population.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2010-05-05:0"
+      "ctrb:ema:2010-06-17:0"
     ],
     "reportedIn": [
       "doc:ema:tyverb"
@@ -9426,7 +9555,7 @@
     "description": "Vectibix is indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC) in first-line in combination with FOLFOX or FOLFIRI.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2015-03-31:0"
+      "ctrb:ema:2015-03-30:0"
     ],
     "reportedIn": [
       "doc:ema:vectibix"
@@ -9481,10 +9610,10 @@
   {
     "id": "ind:ema:vectibix:3",
     "type": "Indication",
-    "description": "Vectibix as monotherapy for the treatment of patients with EGFR expressing metastatic colorectal carcinoma with non-mutated (wild-type) KRAS after failure of fluoropyrimidine-, oxaliplatin-, and irinotecan-containing chemotherapy regimens.",
+    "description": "Vectibix is indicated as monotherapy for the treatment of patients with EGFR expressing metastatic colorectal carcinoma with non-mutated (wild-type) KRAS after failure of fluoropyrimidine-, oxaliplatin-, and irinotecan-containing chemotherapy regimens.",
     "contributions": [
       "ctrb:vanallenlab:2026-11-01:0",
-      "ctrb:ema:2013-07-25:1",
+      "ctrb:ema:2011-11-10:1",
       "ctrb:ema:2007-12-03:0"
     ],
     "reportedIn": [
@@ -9497,7 +9626,7 @@
     "raw_therapeutics": "Vectibix (panitumumab)",
     "requires_biomarker": true,
     "superseded_by": [
-      "ind:ema:vectibix:2"
+      "ind:ema:vectibix:7"
     ]
   },
   {
@@ -9528,7 +9657,7 @@
     "description": "Vectibix is indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC) in first-line in combination with FOLFOX.",
     "contributions": [
       "ctrb:vanallenlab:2026-11-03:1",
-      "ctrb:ema:2015-03-31:1",
+      "ctrb:ema:2015-03-30:1",
       "ctrb:ema:2013-07-25:0"
     ],
     "reportedIn": [
@@ -9567,12 +9696,34 @@
     ]
   },
   {
+    "id": "ind:ema:vectibix:7",
+    "type": "Indication",
+    "description": "Vectibix is indicated for the treatment of patients with wild-type KRAS metastatic colorectal cancer (mCRC) as monotherapy after failure of fluoropyrimidine-, oxaliplatin-, and irinotecan-containing chemotherapy regimens.",
+    "contributions": [
+      "ctrb:vanallenlab:2026-11-19:0",
+      "ctrb:ema:2013-07-25:1",
+      "ctrb:ema:2011-11-10:0"
+    ],
+    "reportedIn": [
+      "doc:ema:vectibix"
+    ],
+    "status": "Superseded",
+    "statement_description": "The European Medicines Agency (EMA) has authorized panitumumab as a monotherapy for the treatment of patients with wild-type KRAS metastatic colorectal cancer (mCRC) after failure of fluoropyrimidine-, oxaliplatin-, and irinotecan-containing chemotherapy regimens. Panitumumab's product information further states that evidence of wild-type KRAS status is required before initiating treatment with panitumumab and that KRAS mutational status should be determined using a validated test method by an experienced laboratory.",
+    "raw_biomarkers": null,
+    "raw_cancer_types": "Colorectal cancer",
+    "raw_therapeutics": "Vectibix (panitumumab)",
+    "requires_biomarker": true,
+    "superseded_by": [
+      "ind:ema:vectibix:2"
+    ]
+  },
+  {
     "id": "ind:ema:venclyxto:0",
     "type": "Indication",
     "description": "Venclyxto monotherapy is indicated for the treatment of CLL in the presence of 17p deletion or TP53 mutation in adult patients who are unsuitable for or have failed a B-cell receptor pathway inhibitor.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2016-12-04:0"
+      "ctrb:ema:2016-12-05:0"
     ],
     "reportedIn": [
       "doc:ema:venclyxto"
@@ -9591,7 +9742,7 @@
     "description": "Venclyxto monotherapy is indicated for the treatment of CLL in the absence of 17p deletion or TP53 mutation in adult patients who have failed chemoimmunotherapy and a B-cell receptor pathway inhibitor.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2016-12-04:0"
+      "ctrb:ema:2016-12-05:0"
     ],
     "reportedIn": [
       "doc:ema:venclyxto"
@@ -9629,7 +9780,7 @@
     "description": "Verzenios is indicated for the treatment of women with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer in combination with an aromatase inhibitor or fulvestrant as initial endocrine-based therapy, or in women who have received prior endocrine therapy.",
     "contributions": [
       "ctrb:vanallenlab:2024-10-20:0",
-      "ctrb:ema:2018-09-26:0"
+      "ctrb:ema:2018-09-27:0"
     ],
     "reportedIn": [
       "doc:ema:verzenios"
